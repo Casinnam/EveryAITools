@@ -1,4 +1,5 @@
 import { Tool } from '../types';
+import { additionalTools } from './additionalTools';
 
 export const tools: Tool[] = [
   // --- Writing & Content ---
@@ -201,7 +202,7 @@ export const tools: Tool[] = [
       ko: '컴퓨터가 그려낸 똑똑한 가상 직원이 등장하는 교육/발표 영상을 만듭니다. 줄글 대본을 적고 버튼을 누르면 인공지능 강사가 아주 깔끔한 발음으로 화면에 등장해 설명을 진행합니다.'
     },
     websiteUrl: 'https://synthesia.io',
-    categoryId: 'video-generation-ai',
+    categoryId: 'video-generation',
     pricingType: 'Paid',
     startingPrice: '$22/mo',
     rating: 4.7,
@@ -246,7 +247,7 @@ export const tools: Tool[] = [
       ko: '영화 속 한 장면을 내 생각대로 상상해 보세요. 텍스트로 상황을 묘사하거나 원하는 정지 사진 한 장을 올리면, 그것을 멋지게 움직이는 초고화질 시네마틱 영상 비디오로 즉시 변환해 줍니다.'
     },
     websiteUrl: 'https://runwayml.com',
-    categoryId: 'video-generation-ai',
+    categoryId: 'video-generation',
     pricingType: 'Freemium',
     startingPrice: '$12/mo',
     rating: 4.8,
@@ -291,7 +292,7 @@ export const tools: Tool[] = [
       ko: '적어놓은 글을 아주 감미롭고 매끄러운 목소리로 읽어주는 AI 성우입니다. 유튜브 나레이션, 오디오 북 녹음에 적격이며, 클릭 몇 번으로 실제 전문 나레이터 못지않은 목소리를 대량 출력할 수 있습니다.'
     },
     websiteUrl: 'https://elevenlabs.io',
-    categoryId: 'audio-voice-ai',
+    categoryId: 'audio-voice',
     pricingType: 'Freemium',
     startingPrice: '$5/mo',
     rating: 4.9,
@@ -383,7 +384,7 @@ export const tools: Tool[] = [
       ko: '키보드 하나로 소환할 수 있는 천재 미술 작가입니다. "모나리자 스타일로 그린 로봇 그림"처럼 원하는 그림 묘사를 타이핑하면 30초 안에 눈부실 만큼 고퀄리티의 이미지 4장을 그려 제안합니다.'
     },
     websiteUrl: 'https://www.midjourney.com',
-    categoryId: 'image-generation-ai',
+    categoryId: 'image-generation',
     pricingType: 'Paid',
     startingPrice: '$10/mo',
     rating: 4.9,
@@ -641,6 +642,7 @@ export const tools: Tool[] = [
       { en: 'Conducting rapid business research and analyzing current competitors', ko: '신규 사업 시장성 검토 및 최신 테크 경쟁사 보도 자료 실시간 모니터링' },
       { en: 'Fact-checking statistics for essay writing or blog publishing', ko: '논문이나 공신력 있는 기관의 보고서 속 통계 수치 및 팩트 체크' }
     ]
-  }
+  },
+  ...additionalTools
 ];
 export default tools;
