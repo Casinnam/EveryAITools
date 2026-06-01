@@ -1,256 +1,321 @@
 'use client';
 
-import React, { useState, useEffect, Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
+import React, { Suspense, useMemo } from 'react';
+import Link from 'next/link';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { useLanguage } from '@/context/LanguageContext';
 import { tools } from '@/data/tools';
 import { categories } from '@/data/categories';
 import { ToolCard } from '@/components/ToolCard';
-import { Search, Filter, SlidersHorizontal, RefreshCw } from 'lucide-react';
+import {
+  ArrowRight,
+  Bot,
+  Check,
+  Filter,
+  RefreshCw,
+  Search,
+  SlidersHorizontal,
+  Sparkles,
+  X,
+} from 'lucide-react';
+import {
+  filterTools,
+  parseToolFilters,
+  toolFiltersToSearchParams,
+  type ToolFilters,
+  type ToolPricingFilter,
+} from '@/lib/toolFilters';
+
+const pricingOptions: Array<{ value: ToolPricingFilter; label: string }> = [
+  { value: 'all', label: 'Any pricing' },
+  { value: 'Free', label: 'Free' },
+  { value: 'Freemium', label: 'Freemium' },
+  { value: 'Paid', label: 'Paid' },
+];
+
+const quickFilters: Array<{ key: keyof Pick<ToolFilters, 'beginner' | 'korean' | 'mobile' | 'commercial'>; label: string }> = [
+  { key: 'beginner', label: 'Beginner friendly' },
+  { key: 'korean', label: 'Korean support' },
+  { key: 'mobile', label: 'Mobile support' },
+  { key: 'commercial', label: 'Commercial use' },
+];
+
+const popularSearches = ['ChatGPT', 'Claude', 'video', 'coding', 'design', 'free'];
 
 function ToolsListContent() {
-  const { t, language } = useLanguage();
+  const { language } = useLanguage();
+  const router = useRouter();
   const searchParams = useSearchParams();
 
-  // Search and Filter states
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedCategory, setSelectedCategory] = useState('all');
-  const [selectedPricing, setSelectedPricing] = useState('all');
-  const [beginnerFriendlyOnly, setBeginnerFriendlyOnly] = useState(false);
-  const [koreanSupportOnly, setKoreanSupportOnly] = useState(false);
-  const [mobileSupportOnly, setMobileSupportOnly] = useState(false);
-  const [commercialUseOnly, setCommercialUseOnly] = useState(false);
+  const filters = useMemo(() => parseToolFilters(searchParams), [searchParams]);
+  const filteredTools = useMemo(() => filterTools(tools, filters, language), [filters, language]);
 
-  // Sync state with URL search parameters
-  useEffect(() => {
-    const q = searchParams.get('q');
-    const cat = searchParams.get('category');
-    const price = searchParams.get('pricing');
-    const friendly = searchParams.get('friendly');
+  const selectedCategory = categories.find((category) => category.id === filters.category);
+  const activeFilterCount = [
+    filters.query,
+    filters.category !== 'all',
+    filters.pricing !== 'all',
+    filters.beginner,
+    filters.korean,
+    filters.mobile,
+    filters.commercial,
+  ].filter(Boolean).length;
 
-    if (q) setSearchQuery(q);
-    if (cat) setSelectedCategory(cat);
-    if (price) setSelectedPricing(price);
-    if (friendly === 'true') setBeginnerFriendlyOnly(true);
-  }, [searchParams]);
+  const updateFilters = (nextPartial: Partial<ToolFilters>, mode: 'push' | 'replace' = 'replace') => {
+    const nextFilters = { ...filters, ...nextPartial };
+    const params = toolFiltersToSearchParams(nextFilters);
+    const nextUrl = params.toString() ? `/tools?${params.toString()}` : '/tools';
 
-  // Clear all filters
-  const handleClearFilters = () => {
-    setSearchQuery('');
-    setSelectedCategory('all');
-    setSelectedPricing('all');
-    setBeginnerFriendlyOnly(false);
-    setKoreanSupportOnly(false);
-    setMobileSupportOnly(false);
-    setCommercialUseOnly(false);
+    if (mode === 'push') {
+      router.push(nextUrl);
+    } else {
+      router.replace(nextUrl, { scroll: false });
+    }
   };
 
-  // Real-time filtering logic
-  const filteredTools = tools.filter((tool) => {
-    // 1. Search Query (Name, tags, description matching)
-    if (searchQuery.trim()) {
-      const q = searchQuery.toLowerCase().trim();
-      const nameMatch = tool.name.toLowerCase().includes(q);
-      const tagMatch = tool.tags.some((tag) => tag.toLowerCase().includes(q));
-      const descMatch = tool.description[language]?.toLowerCase().includes(q) || tool.description['en']?.toLowerCase().includes(q);
-      if (!nameMatch && !tagMatch && !descMatch) return false;
-    }
-
-    // 2. Category Filter
-    if (selectedCategory !== 'all' && selectedCategory !== 'free-tools') {
-      if (tool.categoryId !== selectedCategory) return false;
-    }
-    // Special free-tools category
-    if (selectedCategory === 'free-tools' && tool.pricingType !== 'Free') {
-      return false;
-    }
-
-    // 3. Pricing Filter
-    if (selectedPricing !== 'all') {
-      if (tool.pricingType !== selectedPricing) return false;
-    }
-
-    // 4. Checkbox toggles
-    if (beginnerFriendlyOnly && !tool.beginnerFriendly) return false;
-    if (koreanSupportOnly && !tool.koreanSupport) return false;
-    if (mobileSupportOnly && !tool.mobileSupport) return false;
-    if (commercialUseOnly && !tool.commercialUse) return false;
-
-    return true;
-  });
+  const clearFilters = () => {
+    router.push('/tools');
+  };
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 space-y-10 transition-all duration-300">
-      
-      {/* Page Header */}
-      <div className="space-y-2 text-center md:text-left">
-        <h1 className="text-3xl font-extrabold text-slate-950 dark:text-white tracking-tight sm:text-4xl">
-          {t('searchTools')}
-        </h1>
-        <p className="text-sm text-slate-500 max-w-xl">
-          Discover high-quality software tools. Filter by budget, localization, or ease of use instantly.
-        </p>
-      </div>
-
-      {/* Main Grid: Sidebar Filters + Main Cards Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 items-start">
-        
-        {/* SIDEBAR FILTERS CARD */}
-        <aside className="rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900 space-y-6">
-          <div className="flex items-center justify-between border-b border-slate-100 pb-4 dark:border-slate-800">
-            <div className="flex items-center space-x-2 text-slate-900 dark:text-white font-extrabold text-sm">
-              <SlidersHorizontal className="h-4.5 w-4.5 text-indigo-500" />
-              <span>{t('filterTitle')}</span>
+    <div className="min-h-screen bg-[#f7f8fc] text-slate-950 dark:bg-slate-950 dark:text-white">
+      <section className="border-b border-slate-200/80 bg-[linear-gradient(135deg,#ffffff_0%,#eef6ff_48%,#f4edff_100%)] dark:border-slate-800 dark:bg-[linear-gradient(135deg,#020617_0%,#10172a_60%,#1b1230_100%)]">
+        <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[0.75fr_1.25fr] lg:items-end">
+            <div>
+              <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-indigo-100 bg-white/80 px-3 py-1.5 text-xs font-black text-indigo-700 shadow-sm dark:border-indigo-500/20 dark:bg-white/10 dark:text-indigo-200">
+                <SlidersHorizontal className="h-3.5 w-3.5" />
+                AI tool discovery
+              </div>
+              <h1 className="text-4xl font-black tracking-normal text-slate-950 sm:text-5xl dark:text-white">
+                Explore AI Tools
+              </h1>
+              <p className="mt-4 max-w-xl text-sm font-medium leading-relaxed text-slate-600 sm:text-base dark:text-slate-300">
+                Search by task, category, price, language support, and practical fit. Every filter stays in the URL so you can share the exact view.
+              </p>
             </div>
-            <button
-              onClick={handleClearFilters}
-              className="flex items-center space-x-1 text-xs font-bold text-indigo-600 hover:text-indigo-700 dark:text-indigo-400"
-            >
-              <RefreshCw className="h-3 w-3" />
-              <span>{t('filterClear')}</span>
-            </button>
+
+            <div className="rounded-[26px] border border-white/70 bg-white/85 p-4 shadow-xl shadow-indigo-950/10 backdrop-blur dark:border-white/10 dark:bg-slate-900/85">
+              <form
+                onSubmit={(event) => {
+                  event.preventDefault();
+                  updateFilters({ query: filters.query }, 'push');
+                }}
+                className="flex flex-col gap-3 sm:flex-row"
+              >
+                <div className="relative flex-1">
+                  <Search className="pointer-events-none absolute left-4 top-1/2 h-4.5 w-4.5 -translate-y-1/2 text-slate-400" />
+                  <input
+                    value={filters.query}
+                    onChange={(event) => updateFilters({ query: event.target.value })}
+                    placeholder="Search ChatGPT, image AI, coding tools..."
+                    className="h-13 w-full rounded-xl border border-slate-200 bg-white pl-11 pr-4 text-sm font-semibold text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-indigo-400 focus:ring-4 focus:ring-indigo-100 dark:border-slate-700 dark:bg-slate-950 dark:text-white dark:focus:ring-indigo-500/15"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="h-13 rounded-xl bg-indigo-600 px-6 text-sm font-black text-white transition hover:bg-indigo-700"
+                >
+                  Search
+                </button>
+              </form>
+
+              <div className="mt-4 flex flex-wrap items-center gap-2 text-xs">
+                <span className="font-bold text-slate-500 dark:text-slate-400">Popular:</span>
+                {popularSearches.map((item) => (
+                  <button
+                    key={item}
+                    onClick={() => updateFilters({ query: item }, 'push')}
+                    className="rounded-full bg-slate-100 px-3 py-1 font-bold text-slate-600 transition hover:bg-indigo-50 hover:text-indigo-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-indigo-500/10 dark:hover:text-indigo-200"
+                  >
+                    {item}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <main className="mx-auto grid max-w-7xl grid-cols-1 gap-6 px-4 py-8 sm:px-6 lg:grid-cols-[300px_1fr] lg:px-8">
+        <aside className="space-y-4 lg:sticky lg:top-24 lg:self-start">
+          <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+            <div className="mb-5 flex items-center justify-between border-b border-slate-100 pb-4 dark:border-slate-800">
+              <div className="flex items-center gap-2 text-sm font-black text-slate-950 dark:text-white">
+                <Filter className="h-4.5 w-4.5 text-indigo-600 dark:text-indigo-300" />
+                Filters
+              </div>
+              <button
+                onClick={clearFilters}
+                className="inline-flex items-center gap-1 rounded-lg px-2 py-1 text-xs font-black text-indigo-600 transition hover:bg-indigo-50 dark:text-indigo-300 dark:hover:bg-indigo-500/10"
+              >
+                <RefreshCw className="h-3.5 w-3.5" />
+                Clear
+              </button>
+            </div>
+
+            <div className="space-y-5">
+              <div>
+                <label className="mb-2 block text-xs font-black uppercase text-slate-500 dark:text-slate-400">Category</label>
+                <select
+                  value={filters.category}
+                  onChange={(event) => updateFilters({ category: event.target.value }, 'push')}
+                  className="h-11 w-full rounded-xl border border-slate-200 bg-slate-50 px-3 text-sm font-bold text-slate-700 outline-none transition focus:border-indigo-400 focus:ring-4 focus:ring-indigo-100 dark:border-slate-700 dark:bg-slate-950 dark:text-white dark:focus:ring-indigo-500/15"
+                >
+                  <option value="all">All categories</option>
+                  {categories.map((category) => (
+                    <option key={category.id} value={category.id}>
+                      {category.name[language] || category.name.en}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <label className="mb-2 block text-xs font-black uppercase text-slate-500 dark:text-slate-400">Pricing</label>
+                <div className="grid grid-cols-2 gap-2">
+                  {pricingOptions.map((option) => (
+                    <button
+                      key={option.value}
+                      onClick={() => updateFilters({ pricing: option.value }, 'push')}
+                      className={`rounded-xl border px-3 py-2 text-xs font-black transition ${
+                        filters.pricing === option.value
+                          ? 'border-indigo-200 bg-indigo-50 text-indigo-700 dark:border-indigo-500/20 dark:bg-indigo-500/10 dark:text-indigo-200'
+                          : 'border-slate-200 bg-white text-slate-600 hover:border-indigo-200 hover:text-indigo-700 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-300'
+                      }`}
+                    >
+                      {option.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <label className="mb-2 block text-xs font-black uppercase text-slate-500 dark:text-slate-400">Practical fit</label>
+                <div className="space-y-2">
+                  {quickFilters.map((item) => {
+                    const active = filters[item.key];
+                    return (
+                      <button
+                        key={item.key}
+                        onClick={() => updateFilters({ [item.key]: !active }, 'push')}
+                        className={`flex w-full items-center justify-between rounded-xl border px-3 py-2.5 text-left text-xs font-black transition ${
+                          active
+                            ? 'border-emerald-200 bg-emerald-50 text-emerald-700 dark:border-emerald-500/20 dark:bg-emerald-500/10 dark:text-emerald-200'
+                            : 'border-slate-200 bg-white text-slate-600 hover:border-indigo-200 hover:text-indigo-700 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-300'
+                        }`}
+                      >
+                        {item.label}
+                        {active ? <Check className="h-4 w-4" /> : <span className="h-4 w-4 rounded-full border border-slate-300 dark:border-slate-600" />}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
           </div>
 
-          {/* Category Dropdown */}
-          <div className="space-y-2">
-            <label className="text-xs font-extrabold text-slate-900 dark:text-slate-200 uppercase tracking-wide">
-              {t('filterCategory')}
-            </label>
-            <select
-              value={selectedCategory}
-              onChange={(e) => setSelectedCategory(e.target.value)}
-              className="block w-full rounded-xl border border-slate-200 bg-slate-50/50 px-3 py-2.5 text-sm text-slate-700 focus:border-indigo-500 focus:outline-none dark:border-slate-800 dark:bg-slate-950 dark:text-slate-300"
+          <div className="rounded-2xl border border-indigo-100 bg-indigo-50 p-5 dark:border-indigo-500/20 dark:bg-indigo-500/10">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-indigo-600 shadow-sm dark:bg-slate-950 dark:text-indigo-200">
+              <Sparkles className="h-5 w-5" />
+            </div>
+            <h2 className="mt-4 text-sm font-black text-slate-950 dark:text-white">Need a guided pick?</h2>
+            <p className="mt-2 text-xs font-medium leading-relaxed text-slate-600 dark:text-slate-300">
+              Answer a few questions and get a short list of tools for your exact job.
+            </p>
+            <Link
+              href="/finder"
+              className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-indigo-600 px-4 py-3 text-xs font-black text-white transition hover:bg-indigo-700"
             >
-              <option value="all">All Categories</option>
-              {categories.map((cat) => (
-                <option key={cat.id} value={cat.id}>
-                  {cat.name[language] || cat.name['en']}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          {/* Pricing Dropdown */}
-          <div className="space-y-2">
-            <label className="text-xs font-extrabold text-slate-900 dark:text-slate-200 uppercase tracking-wide">
-              {t('filterPricing')}
-            </label>
-            <select
-              value={selectedPricing}
-              onChange={(e) => setSelectedPricing(e.target.value)}
-              className="block w-full rounded-xl border border-slate-200 bg-slate-50/50 px-3 py-2.5 text-sm text-slate-700 focus:border-indigo-500 focus:outline-none dark:border-slate-800 dark:bg-slate-950 dark:text-slate-300"
-            >
-              <option value="all">Any Pricing</option>
-              <option value="Free">{t('pricingFree')}</option>
-              <option value="Freemium">{t('pricingFreemium')}</option>
-              <option value="Paid">{t('pricingPaid')}</option>
-            </select>
-          </div>
-
-          {/* Features Checkbox list */}
-          <div className="space-y-3.5 pt-4 border-t border-slate-100 dark:border-slate-800">
-            <label className="text-xs font-extrabold text-slate-900 dark:text-slate-200 uppercase tracking-wide block">
-              {t('filterFeatures')}
-            </label>
-
-            {/* Beginner Friendly */}
-            <label className="flex items-center space-x-3 text-xs font-semibold text-slate-700 dark:text-slate-300 cursor-pointer select-none">
-              <input
-                type="checkbox"
-                checked={beginnerFriendlyOnly}
-                onChange={(e) => setBeginnerFriendlyOnly(e.target.checked)}
-                className="h-4.5 w-4.5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
-              />
-              <span>{t('filterBeginnerFriendly')}</span>
-            </label>
-
-            {/* Korean Support */}
-            <label className="flex items-center space-x-3 text-xs font-semibold text-slate-700 dark:text-slate-300 cursor-pointer select-none">
-              <input
-                type="checkbox"
-                checked={koreanSupportOnly}
-                onChange={(e) => setKoreanSupportOnly(e.target.checked)}
-                className="h-4.5 w-4.5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
-              />
-              <span>{t('filterKoreanSupport')}</span>
-            </label>
-
-            {/* Mobile Support */}
-            <label className="flex items-center space-x-3 text-xs font-semibold text-slate-700 dark:text-slate-300 cursor-pointer select-none">
-              <input
-                type="checkbox"
-                checked={mobileSupportOnly}
-                onChange={(e) => setMobileSupportOnly(e.target.checked)}
-                className="h-4.5 w-4.5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
-              />
-              <span>{t('filterMobileSupport')}</span>
-            </label>
-
-            {/* Commercial Use */}
-            <label className="flex items-center space-x-3 text-xs font-semibold text-slate-700 dark:text-slate-300 cursor-pointer select-none">
-              <input
-                type="checkbox"
-                checked={commercialUseOnly}
-                onChange={(e) => setCommercialUseOnly(e.target.checked)}
-                className="h-4.5 w-4.5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
-              />
-              <span>{t('filterCommercialUse')}</span>
-            </label>
+              Start Finder
+              <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
           </div>
         </aside>
 
-        {/* MAIN CARDS LIST */}
-        <main className="lg:col-span-3 space-y-6">
-          
-          {/* Top Search bar & Stats */}
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 rounded-2xl bg-white border border-slate-200/80 dark:bg-slate-900 dark:border-slate-800">
-            <div className="relative w-full sm:max-w-xs">
-              <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                <Search className="h-4 w-4 text-slate-400" />
+        <section className="space-y-5">
+          <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+            <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+              <div>
+                <p className="text-xs font-black uppercase text-slate-400">Results</p>
+                <h2 className="mt-1 text-2xl font-black text-slate-950 dark:text-white">
+                  {filteredTools.length} tools found
+                </h2>
+                <p className="mt-1 text-sm font-medium text-slate-500 dark:text-slate-400">
+                  {selectedCategory ? `Showing ${selectedCategory.name[language] || selectedCategory.name.en}.` : 'Showing all categories.'}
+                  {filters.query ? ` Search: "${filters.query}".` : ''}
+                </p>
               </div>
-              <input
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search tools..."
-                className="block w-full rounded-xl border border-slate-200 bg-slate-50/50 py-2 pl-9 pr-3 text-xs placeholder-slate-400 focus:border-indigo-500 focus:bg-white focus:outline-none dark:border-slate-800 dark:bg-slate-950 dark:text-white"
-              />
-            </div>
-            
-            <div className="text-xs font-bold text-slate-500 dark:text-slate-400">
-              <span className="text-indigo-600 dark:text-indigo-400">{filteredTools.length}</span> {t('toolsFound')}
+
+              <div className="flex flex-wrap gap-2">
+                {activeFilterCount > 0 ? (
+                  <>
+                    {filters.query && <FilterChip label={`Search: ${filters.query}`} onClear={() => updateFilters({ query: '' })} />}
+                    {filters.category !== 'all' && (
+                      <FilterChip label={selectedCategory?.name[language] || selectedCategory?.name.en || filters.category} onClear={() => updateFilters({ category: 'all' }, 'push')} />
+                    )}
+                    {filters.pricing !== 'all' && <FilterChip label={filters.pricing} onClear={() => updateFilters({ pricing: 'all' }, 'push')} />}
+                    {quickFilters.map((item) =>
+                      filters[item.key] ? <FilterChip key={item.key} label={item.label} onClear={() => updateFilters({ [item.key]: false }, 'push')} /> : null,
+                    )}
+                  </>
+                ) : (
+                  <span className="rounded-full bg-slate-100 px-3 py-1.5 text-xs font-black text-slate-500 dark:bg-slate-800 dark:text-slate-300">
+                    No active filters
+                  </span>
+                )}
+              </div>
             </div>
           </div>
 
-          {/* Tools Grid */}
           {filteredTools.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
               {filteredTools.map((tool) => (
                 <ToolCard key={tool.id} tool={tool} />
               ))}
             </div>
           ) : (
-            <div className="rounded-3xl border border-dashed border-slate-200 bg-white py-16 px-4 text-center dark:border-slate-800 dark:bg-slate-900">
-              <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 dark:bg-indigo-950/40 dark:text-indigo-400">
-                <Filter className="h-6 w-6" />
+            <div className="rounded-[28px] border border-dashed border-slate-300 bg-white px-5 py-14 text-center shadow-sm dark:border-slate-700 dark:bg-slate-900">
+              <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600 dark:bg-indigo-500/10 dark:text-indigo-200">
+                <Bot className="h-7 w-7" />
               </div>
-              <h3 className="mt-4 text-sm font-extrabold text-slate-900 dark:text-white">No tools found</h3>
-              <p className="mt-1 text-xs text-slate-500">
-                Try adjusting your search keywords or clearing active sidebar filters.
+              <h3 className="mt-5 text-xl font-black text-slate-950 dark:text-white">No matching tools yet</h3>
+              <p className="mx-auto mt-2 max-w-md text-sm font-medium leading-relaxed text-slate-500 dark:text-slate-400">
+                Try a broader keyword, remove one filter, or jump into popular tools while the directory grows.
               </p>
-              <button
-                onClick={handleClearFilters}
-                className="mt-6 inline-flex items-center space-x-1.5 rounded-xl bg-indigo-600 px-4 py-2.5 text-xs font-bold text-white hover:bg-indigo-700 transition-colors"
-              >
-                <span>Clear All Filters</span>
-              </button>
+              <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
+                <button
+                  onClick={clearFilters}
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-indigo-600 px-5 py-3 text-sm font-black text-white transition hover:bg-indigo-700"
+                >
+                  Clear filters
+                  <RefreshCw className="h-4 w-4" />
+                </button>
+                <Link
+                  href="/submit"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-black text-slate-800 transition hover:border-indigo-200 hover:text-indigo-700 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100"
+                >
+                  Submit a tool
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
             </div>
           )}
-        </main>
-
-      </div>
-      
+        </section>
+      </main>
     </div>
+  );
+}
+
+function FilterChip({ label, onClear }: { label: string; onClear: () => void }) {
+  return (
+    <button
+      onClick={onClear}
+      className="inline-flex items-center gap-1.5 rounded-full border border-indigo-100 bg-indigo-50 px-3 py-1.5 text-xs font-black text-indigo-700 transition hover:border-indigo-200 hover:bg-indigo-100 dark:border-indigo-500/20 dark:bg-indigo-500/10 dark:text-indigo-200"
+    >
+      {label}
+      <X className="h-3.5 w-3.5" />
+    </button>
   );
 }
 
