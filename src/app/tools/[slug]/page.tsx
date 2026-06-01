@@ -8,6 +8,8 @@ import { tools } from '@/data/tools';
 import { categories } from '@/data/categories';
 import { Star, ExternalLink, ArrowLeft, Check, AlertTriangle, Lightbulb, Compass, Award, X } from 'lucide-react';
 
+export const runtime = 'edge';
+
 interface ToolDetailPageProps {
   params: Promise<{ slug: string }>;
 }

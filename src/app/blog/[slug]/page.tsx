@@ -7,6 +7,8 @@ import { useLanguage } from '@/context/LanguageContext';
 import { blogPosts } from '@/data/blogPosts';
 import { ArrowLeft, Calendar, User, Clock, Share2, Send } from 'lucide-react';
 
+export const runtime = 'edge';
+
 interface BlogDetailPageProps {
   params: Promise<{ slug: string }>;
 }

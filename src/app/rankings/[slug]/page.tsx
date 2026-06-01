@@ -8,6 +8,8 @@ import { blogPosts } from '@/data/blogPosts';
 import { tools } from '@/data/tools';
 import { Star, Award, ChevronRight, HelpCircle, ArrowLeft, ShieldCheck, HelpCircleIcon } from 'lucide-react';
 
+export const runtime = 'edge';
+
 interface RankingsDetailPageProps {
   params: Promise<{ slug: string }>;
 }
