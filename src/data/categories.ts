@@ -1,136 +1,24 @@
 import { Category } from '../types';
 
 export const categories: Category[] = [
-  {
-    id: 'blog-writing',
-    name: { en: 'Blog Writing AI', ko: '블로그 글쓰기 AI' },
-    slug: 'blog-writing-ai',
-    description: {
-      en: 'AI tools for long-form content, SEO optimization, and article writing.',
-      ko: '블로그 콘텐츠, SEO 최적화 및 고품질 칼럼 작성을 지원하는 AI 도구'
-    },
-    icon: 'PenTool',
-    sortOrder: 1
-  },
-  {
-    id: 'youtube-tools',
-    name: { en: 'YouTube AI Tools', ko: '유튜브 영상 제작 AI' },
-    slug: 'youtube-ai-tools',
-    description: {
-      en: 'AI assistance for scripts, description generation, thumbnails, and viral shorts.',
-      ko: '유튜브 대본 작성, 태그/설명 생성, 썸네일 및 쇼츠 편집을 위한 AI 비서'
-    },
-    icon: 'Youtube',
-    sortOrder: 2
-  },
-  {
-    id: 'image-generation',
-    name: { en: 'Image Generation AI', ko: '이미지 생성 AI' },
-    slug: 'image-generation-ai',
-    description: {
-      en: 'Create stunning artwork, graphics, and custom illustrations from text prompts.',
-      ko: '간단한 텍스트 입력만으로 초고화질 예술작품, 웹용 그래픽, 일러스트를 생성하는 AI'
-    },
-    icon: 'Image',
-    sortOrder: 3
-  },
-  {
-    id: 'video-generation',
-    name: { en: 'Video Generation AI', ko: '비디오 제작 AI' },
-    slug: 'video-generation-ai',
-    description: {
-      en: 'Generate high-quality video clips, avatars, and visual stories with artificial intelligence.',
-      ko: '인공지능을 통해 고품질 비디오 클립, 가상 아바타 및 영상 스토리를 창작하는 도구'
-    },
-    icon: 'Video',
-    sortOrder: 4
-  },
-  {
-    id: 'coding-ai',
-    name: { en: 'Coding AI', ko: '코딩 및 개발 AI' },
-    slug: 'coding-ai',
-    description: {
-      en: 'AI programmers and autocomplete tools that help you write, debug, and understand code.',
-      ko: '코드 작성, 버그 수정 및 코드 해설을 지원하는 AI 프로그래머 및 에디터 도구'
-    },
-    icon: 'Code',
-    sortOrder: 5
-  },
-  {
-    id: 'presentation-ai',
-    name: { en: 'Presentation AI', ko: 'PPT 및 문서 생성 AI' },
-    slug: 'presentation-ai',
-    description: {
-      en: 'Create professional presentation decks, outlines, and documents in seconds.',
-      ko: '몇 초 만에 프로페셔널한 프레젠테이션 디자인 및 문서를 완성해 주는 AI'
-    },
-    icon: 'FileText',
-    sortOrder: 6
-  },
-  {
-    id: 'business-ai',
-    name: { en: 'Business AI', ko: '비즈니스 및 행정 AI' },
-    slug: 'business-ai',
-    description: {
-      en: 'AI systems to automate operational processes, reporting, and customer service.',
-      ko: '사무 행정 자동화, 전문 리포트 작성 및 비즈니스 프로세스 개선을 위한 AI 시스템'
-    },
-    icon: 'Briefcase',
-    sortOrder: 7
-  },
-  {
-    id: 'marketing-ai',
-    name: { en: 'Marketing AI', ko: '마케팅 및 카피라이팅 AI' },
-    slug: 'marketing-ai',
-    description: {
-      en: 'Generate high-converting ad copy, landing pages, and automated campaigns.',
-      ko: '고객 전환율을 높이는 광고 카피, 랜딩 페이지 생성 및 자동화 마케팅 솔루션'
-    },
-    icon: 'Megaphone',
-    sortOrder: 8
-  },
-  {
-    id: 'productivity-ai',
-    name: { en: 'Productivity AI', ko: '업무 생산성 AI' },
-    slug: 'productivity-ai',
-    description: {
-      en: 'Note-taking, summary generators, meeting recorders, and daily schedule organizers.',
-      ko: '노트 필기, 회의록 자동 작성 및 하루 일정을 스마트하게 요약 관리해 주는 비서'
-    },
-    icon: 'CheckSquare',
-    sortOrder: 9
-  },
-  {
-    id: 'design-ai',
-    name: { en: 'Design & UI AI', ko: '디자인 및 UI AI' },
-    slug: 'design-ai',
-    description: {
-      en: 'AI tools assisting with UI mockups, color palettes, and standard asset design.',
-      ko: '웹/앱 사용자 화면 프로토타입 설계, 색상 배합 및 디자인 리소스 완성을 돕는 AI'
-    },
-    icon: 'Palette',
-    sortOrder: 10
-  },
-  {
-    id: 'audio-voice',
-    name: { en: 'Audio & Voice AI', ko: '오디오 및 음성 AI' },
-    slug: 'audio-voice-ai',
-    description: {
-      en: 'Natural-sounding voice synthesis, voice clones, and professional sound editing.',
-      ko: '자연스러운 인공지능 성우 나레이션, 목소리 복제 및 오디오 잡음 제거 도구'
-    },
-    icon: 'Mic',
-    sortOrder: 11
-  },
-  {
-    id: 'free-tools',
-    name: { en: '100% Free AI Tools', ko: '완전 무료 AI 도구' },
-    slug: 'free-ai-tools',
-    description: {
-      en: 'Powerful and accessible artificial intelligence tools with no subscription costs.',
-      ko: '구독료 결제 없이도 언제든 누구나 무료로 사용할 수 있는 파워풀한 AI 모음'
-    },
-    icon: 'Gift',
-    sortOrder: 12
-  }
+  { id: 'chatbots', name: { en: 'Chatbots & Assistants', ko: '챗봇 및 비서' }, slug: 'chatbots', description: { en: 'Conversational AI, versatile Q&A, and brainstorming.', ko: '대화형 어시스턴트, 다목적 질문 답변 및 아이디어 구상' }, icon: 'MessageSquare', sortOrder: 1 },
+  { id: 'writing', name: { en: 'Writing & Copywriting', ko: '글쓰기 및 카피라이팅' }, slug: 'writing', description: { en: 'Blog posts, marketing copy, SEO content, and grammar.', ko: '블로그 글 작성, 마케팅 문구, SEO 콘텐츠 및 문법 교정' }, icon: 'PenTool', sortOrder: 2 },
+  { id: 'research', name: { en: 'Research & Search', ko: '리서치 및 검색' }, slug: 'research', description: { en: 'Paper search, source-based summarization, and web search.', ko: '논문 검색, 출처 기반 정보 요약 및 웹 검색 보조' }, icon: 'Search', sortOrder: 3 },
+  { id: 'image-generation', name: { en: 'Image Generation & Editing', ko: '이미지 생성 및 편집' }, slug: 'image-generation', description: { en: 'Thumbnails, photo editing, background removal, and upscaling.', ko: '썸네일, 사진 편집, 배경 제거 및 화질 개선' }, icon: 'Image', sortOrder: 4 },
+  { id: 'design-ui', name: { en: 'Design & UI', ko: '디자인 및 UI' }, slug: 'design-ui', description: { en: 'Website mockups, social banners, presentations, and logos.', ko: '웹사이트 목업, SNS 배너, 발표 자료 디자인 및 로고 생성' }, icon: 'Palette', sortOrder: 5 },
+  { id: 'video-generation', name: { en: 'Video Generation & Editing', ko: '비디오 생성 및 편집' }, slug: 'video-generation', description: { en: 'Text-to-video, shorts extraction, and subtitle generation.', ko: '텍스트 기반 영상 생성, 쇼츠 추출, 자막 생성 및 편집' }, icon: 'Video', sortOrder: 6 },
+  { id: 'audio-voice', name: { en: 'Voice & Text-to-Speech', ko: '음성 및 TTS' }, slug: 'audio-voice', description: { en: 'High-quality voice synthesis, narration, and voice cloning.', ko: '고품질 음성 합성, 다국어 내레이션 및 유튜브 더빙' }, icon: 'Mic', sortOrder: 7 },
+  { id: 'music-audio', name: { en: 'Music & Audio', ko: '음악 및 오디오' }, slug: 'music-audio', description: { en: 'BGM composition, song generation, and vocal separation.', ko: 'BGM 작곡, 곡 생성, 보컬 및 악기 분리' }, icon: 'Music', sortOrder: 8 },
+  { id: 'coding-dev', name: { en: 'Coding, Dev & APIs', ko: '코딩, 개발 및 API' }, slug: 'coding-dev', description: { en: 'Code autocomplete, debugging, web development, and APIs.', ko: '코드 자동 완성, 버그 수정, 웹 개발 보조 및 개발자 API' }, icon: 'Code', sortOrder: 9 },
+  { id: 'no-code', name: { en: 'No-Code & Website Builders', ko: '노코드 및 웹사이트 빌더' }, slug: 'no-code', description: { en: 'Build websites and landing pages without coding.', ko: '코딩 없이 웹사이트, 랜딩페이지 구축' }, icon: 'Layout', sortOrder: 10 },
+  { id: 'automation', name: { en: 'Automation & Agents', ko: '업무 자동화 및 에이전트' }, slug: 'automation', description: { en: 'App integration, complex workflows, and autonomous agents.', ko: '앱 간 연동 자동화, 복잡한 워크플로 구축' }, icon: 'Zap', sortOrder: 11 },
+  { id: 'meeting', name: { en: 'Meeting & Transcription', ko: '회의 및 요약' }, slug: 'meeting', description: { en: 'Video call recording, transcription, and action items.', ko: '화상 회의 녹화, 음성 기록, 회의록 및 액션 아이템 추출' }, icon: 'Video', sortOrder: 12 },
+  { id: 'presentation-docs', name: { en: 'Presentation, Documents & Legal', ko: '프레젠테이션, 문서 및 법률' }, slug: 'presentation-docs', description: { en: 'Slide generation, PDF analysis, and legal document review.', ko: '슬라이드 자동 생성, PDF 문서 분석 및 요약' }, icon: 'FileText', sortOrder: 13 },
+  { id: 'marketing-seo', name: { en: 'Marketing & SEO', ko: '마케팅 및 SEO' }, slug: 'marketing-seo', description: { en: 'Keyword analysis, social media automation, and sales outreach.', ko: '키워드 분석, 소셜 미디어 자동화, 세일즈 이메일 최적화' }, icon: 'TrendingUp', sortOrder: 14 },
+  { id: 'data-analysis', name: { en: 'Data Analysis & Spreadsheets', ko: '데이터 분석 및 스프레드시트' }, slug: 'data-analysis', description: { en: 'Excel/CSV visualization, statistical analysis, and automated formulas.', ko: '엑셀 데이터 시각화, 통계 분석, 복잡한 수식 자동 작성' }, icon: 'BarChart2', sortOrder: 15 },
+  { id: 'customer-support', name: { en: 'Customer Support', ko: '고객 지원' }, slug: 'customer-support', description: { en: 'Website chatbots, ticketing automation, and CRM.', ko: '웹사이트 챗봇 구축, 고객 CS 자동화' }, icon: 'Headphones', sortOrder: 16 },
+  { id: 'translation', name: { en: 'Translation & Localization', ko: '번역 및 로컬라이제이션' }, slug: 'translation', description: { en: 'Natural translation, software localization, and live translation.', ko: '다국어 고품질 번역, 영상 실시간 번역' }, icon: 'Globe', sortOrder: 17 },
+  { id: '3d-architecture', name: { en: '3D & Architecture', ko: '3D 및 건축' }, slug: '3d-architecture', description: { en: 'Interior rendering, 3D modeling, and architectural design.', ko: '인테리어 렌더링, 3D 모델링, 공간 디자인' }, icon: 'Box', sortOrder: 18 },
+  { id: 'ecommerce-business', name: { en: 'E-commerce, Local & Business', ko: '이커머스 및 로컬 비즈니스' }, slug: 'ecommerce-business', description: { en: 'Product descriptions, real estate staging, and local reviews.', ko: '쇼핑몰 상품 설명, 로컬 비즈니스 리뷰 관리' }, icon: 'ShoppingCart', sortOrder: 19 },
+  { id: 'productivity-education', name: { en: 'Productivity, Education & Notes', ko: '생산성, 교육 및 노트' }, slug: 'productivity-education', description: { en: 'Knowledge management, scheduling, and personalized learning.', ko: '개인 지식 관리, 일정 자동화, 이메일 효율화' }, icon: 'CheckSquare', sortOrder: 20 }
 ];

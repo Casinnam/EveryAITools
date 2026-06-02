@@ -1,0 +1,866 @@
+아래는 **2026년 현재 기준으로 검색해서 정리한 AI 도구 카테고리별 목록**입니다. 가격, 무료 플랜, 기능은 자주 바뀌기 때문에 실제 사용 전에는 각 사이트에서 한 번 더 확인하는 게 좋습니다. Product Hunt, G2, Zapier, AI Tool Directory, AIxploria 같은 디렉터리에서도 AI 도구가 카테고리별로 계속 업데이트되고 있습니다. ([Product Hunt][1])
+
+---
+
+# 1. 종합 AI 챗봇 / 업무 비서
+
+가장 기본이 되는 AI 도구입니다. 글쓰기, 번역, 요약, 코딩, 기획, 아이디어, 이미지 분석 등에 사용합니다.
+
+| 도구                | 용도                          |
+| ----------------- | --------------------------- |
+| ChatGPT           | 글쓰기, 코딩, 이미지, 자료 정리, 콘텐츠 제작 |
+| Claude            | 긴 문서 분석, 글쓰기, 코딩, 기획        |
+| Gemini            | 구글 검색/문서/메일/워크스페이스 연동       |
+| Perplexity        | 검색형 AI, 자료 조사, 출처 기반 답변     |
+| Microsoft Copilot | 문서, 엑셀, 파워포인트, 업무 자동화       |
+| Grok              | X 기반 정보 탐색, 실시간 트렌드 확인      |
+| Poe               | 여러 AI 모델을 한곳에서 사용           |
+| You.com           | 검색 + AI 답변                  |
+| Phind             | 개발자용 검색형 AI                 |
+| HuggingChat       | 오픈소스 AI 챗봇                  |
+
+**추천 조합:**
+하이쟉님처럼 블로그, 유튜브, 앱 기획, 웹사이트 제작을 같이 한다면 **ChatGPT + Claude + Perplexity** 조합이 가장 실용적입니다.
+
+---
+
+# 2. 글쓰기 / 블로그 / 카피라이팅 AI
+
+블로그 글, 광고 문구, 랜딩페이지 문구, 이메일, SEO 글 작성에 좋습니다. G2는 AI 글쓰기 도구를 “문법 개선, 가독성 향상, 콘텐츠 생성”에 쓰는 소프트웨어로 분류하고 있습니다. ([G2][2])
+
+| 도구                             | 용도                       |
+| ------------------------------ | ------------------------ |
+| Jasper                         | 마케팅 카피, 블로그, 광고 문구       |
+| Copy.ai                        | 세일즈 이메일, 광고 문구, 콘텐츠 아이디어 |
+| Writesonic                     | 블로그, 랜딩페이지, SEO 글        |
+| Rytr                           | 저렴한 글쓰기 도구               |
+| Anyword                        | 광고 카피 성과 예측              |
+| Grammarly                      | 영어 문법, 톤 교정              |
+| QuillBot                       | 문장 바꾸기, 요약, 문법           |
+| Wordtune                       | 영어 문장 개선                 |
+| Sudowrite                      | 소설, 창작 글쓰기               |
+| HyperWrite                     | 이메일, 문서 작성               |
+| Notion AI                      | 노트, 문서, 요약               |
+| Craft AI                       | 문서 작성 보조                 |
+| Lex                            | 깔끔한 AI 글쓰기 에디터           |
+| Frase                          | SEO 블로그 글 작성             |
+| Surfer AI                      | SEO 최적화 글 작성             |
+| Semrush SEO Writing Assistant  | 검색엔진 최적화 글쓰기             |
+| Conductor AI Writing Assistant | SEO/AEO 콘텐츠 작성           |
+| Writer                         | 기업용 AI 글쓰기               |
+| Simplified                     | 마케팅 콘텐츠 제작               |
+| Neuroflash                     | 브랜드 카피, 광고 문구            |
+
+**블로그 운영자 추천:**
+`ChatGPT / Claude`로 초안 작성 → `Surfer SEO / Frase / Semrush`로 SEO 보강 → `Grammarly / QuillBot`으로 영어 문장 다듬기.
+
+---
+
+# 3. 검색 / 리서치 / 자료조사 AI
+
+뉴스, 논문, 시장조사, 블로그 근거 자료 찾기에 좋습니다.
+
+| 도구               | 용도               |
+| ---------------- | ---------------- |
+| Perplexity       | 출처 기반 검색형 AI     |
+| Elicit           | 논문 검색, 연구 요약     |
+| Consensus        | 논문 기반 질문 답변      |
+| Semantic Scholar | 학술 논문 검색         |
+| Scite            | 논문 인용 맥락 분석      |
+| Research Rabbit  | 논문 관계 시각화        |
+| Connected Papers | 관련 논문 지도         |
+| Google Scholar   | 학술 검색            |
+| NotebookLM       | 업로드한 자료 기반 요약/질문 |
+| Genei            | 리서치 문서 요약        |
+| Humata AI        | PDF 분석           |
+| ChatPDF          | PDF 질문 답변        |
+| SciSpace         | 논문 이해, 요약        |
+| Scholarcy        | 논문 요약 카드         |
+| AskYourPDF       | PDF 기반 대화        |
+| Perlego AI       | 책/학습 자료 탐색       |
+| You.com Research | 웹 리서치            |
+| Komo Search      | AI 검색            |
+| Andi             | 대화형 검색           |
+| Exa              | AI 앱용 검색 API     |
+
+**콘텐츠 제작자 추천:**
+뉴스성 블로그는 **Perplexity**, 긴 PDF나 자료 분석은 **NotebookLM**, 논문 기반 글은 **Elicit / Consensus**가 좋습니다.
+
+---
+
+# 4. 이미지 생성 AI
+
+블로그 썸네일, 유튜브 썸네일, 광고 이미지, 앱 화면 콘셉트 제작에 사용합니다. 2026년 이미지 생성 도구 비교 글들에서는 ChatGPT/OpenAI, Midjourney, Stable Diffusion, FLUX, Adobe Firefly, Leonardo AI, Ideogram 등이 주요 도구로 자주 언급됩니다. ([pickaxe.co][3])
+
+| 도구               | 용도                      |
+| ---------------- | ----------------------- |
+| Midjourney       | 고퀄리티 예술 이미지, 썸네일        |
+| ChatGPT Image    | 대화형 이미지 생성/수정           |
+| DALL·E           | 이미지 생성                  |
+| Adobe Firefly    | 상업용 디자인, 포토샵 연동         |
+| Leonardo AI      | 게임, 캐릭터, 제품 이미지         |
+| Ideogram         | 글자가 들어간 이미지 생성          |
+| Stable Diffusion | 오픈소스 이미지 생성             |
+| DreamStudio      | Stable Diffusion 기반 이미지 |
+| FLUX             | 고품질 오픈 이미지 모델           |
+| Canva AI         | 쉬운 디자인 + 이미지 생성         |
+| Freepik AI       | 디자인용 이미지 생성             |
+| Krea AI          | 실시간 이미지 생성              |
+| Playground AI    | 이미지 생성/편집               |
+| NightCafe        | 아트 이미지 생성               |
+| BlueWillow       | 무료 이미지 생성 대안            |
+| Mage.space       | Stable Diffusion 기반 생성  |
+| Clipdrop         | 배경 제거, 업스케일, 이미지 편집     |
+| Recraft          | 벡터/브랜드 이미지              |
+| Pebblely         | 제품 사진 생성                |
+| Photoroom        | 제품 사진 배경 편집             |
+
+**하이쟉님 스타일 추천:**
+블로그/유튜브 썸네일은 **ChatGPT Image + Midjourney + Ideogram** 조합이 좋습니다. 특히 글자가 들어간 이미지는 Ideogram이 강한 편입니다.
+
+---
+
+# 5. 디자인 / 썸네일 / SNS 이미지 AI
+
+인스타그램, 유튜브 썸네일, 광고 배너, 웹사이트 목업 만들 때 좋습니다.
+
+| 도구                 | 용도                   |
+| ------------------ | -------------------- |
+| Canva              | SNS 이미지, 썸네일, 프레젠테이션 |
+| Adobe Express      | 빠른 디자인 제작            |
+| Microsoft Designer | AI 디자인 생성            |
+| Figma AI           | UI 디자인 보조            |
+| Uizard             | 앱/웹 UI 목업 생성         |
+| Galileo AI         | UI 화면 생성             |
+| Visily             | 와이어프레임, UI 디자인       |
+| Khroma             | AI 컬러 팔레트            |
+| Looka              | 로고 제작                |
+| Brandmark          | 브랜드 로고 생성            |
+| Designs.ai         | 로고, 영상, 디자인          |
+| LogoAI             | 로고 생성                |
+| Flair AI           | 제품 광고 이미지            |
+| Mokker AI          | 제품 사진 생성             |
+| Booth AI           | 상품 사진 제작             |
+| AdCreative.ai      | 광고 배너 생성             |
+| Creatopy           | 광고 디자인 자동화           |
+| Predis.ai          | SNS 포스트 생성           |
+| Ocoya              | SNS 콘텐츠 제작           |
+| Simplified         | 디자인 + 글쓰기 + SNS      |
+
+**추천:**
+웹사이트/앱 아이디어를 빠르게 시각화하려면 **Uizard / Galileo AI / Figma AI / Canva**가 좋습니다.
+
+---
+
+# 6. 동영상 생성 AI
+
+유튜브 쇼츠, 광고 영상, 설명 영상, AI B-roll 제작에 사용합니다. 2026년 AI 영상 도구 비교에서는 Runway, HeyGen, Sora, Kling, Synthesia, Luma, Pika, Veo 등이 주요 도구로 언급됩니다. ([manus.im][4])
+
+| 도구                 | 용도               |
+| ------------------ | ---------------- |
+| Sora               | 텍스트/이미지 기반 영상 생성 |
+| Runway             | 영상 생성, 편집, 모션    |
+| Google Veo         | 고품질 영상 생성        |
+| Pika               | 쇼츠, SNS용 영상      |
+| Kling AI           | 사실적인 인물/장면 영상    |
+| Luma Dream Machine | 시네마틱 영상          |
+| PixVerse           | 짧은 AI 영상 생성      |
+| Haiper             | 텍스트/이미지 → 영상     |
+| Kaiber             | 음악 영상, 애니메이션     |
+| Synthesia          | AI 아바타 강의/교육 영상  |
+| HeyGen             | AI 아바타, 번역 영상    |
+| D-ID               | 사진 말하게 만들기       |
+| Colossyan          | 교육/기업 영상         |
+| Elai.io            | AI 프레젠터 영상       |
+| DeepBrain AI       | 아바타 뉴스/강의 영상     |
+| InVideo AI         | 유튜브 영상 자동 제작     |
+| Pictory            | 블로그 글 → 영상       |
+| Lumen5             | 글 → SNS 영상       |
+| Fliki              | 글 → 음성/영상        |
+| Kapwing AI         | 영상 편집, 자막, 쇼츠    |
+
+**유튜브 운영자 추천:**
+블로그 글을 영상으로 바꾸려면 **Pictory / InVideo / Fliki**.
+AI 아바타 설명 영상은 **HeyGen / Synthesia**.
+시네마틱 B-roll은 **Runway / Sora / Veo / Kling**.
+
+---
+
+# 7. 영상 편집 / 자막 / 쇼츠 제작 AI
+
+| 도구                    | 용도              |
+| --------------------- | --------------- |
+| Descript              | 텍스트 기반 영상 편집    |
+| CapCut AI             | 쇼츠 편집, 자막, 효과   |
+| OpusClip              | 긴 영상 → 쇼츠 자동 추출 |
+| Vidyo.ai              | 긴 영상 쇼츠화        |
+| Vizard.ai             | 웨비나/긴 영상 클립화    |
+| Klap                  | 유튜브 → 쇼츠        |
+| Captions.ai           | 자동 자막, 립싱크      |
+| Submagic              | 쇼츠 자막 스타일링      |
+| VEED.io               | 온라인 영상 편집       |
+| Wisecut               | 무음 제거, 자동 편집    |
+| Riverside             | 녹화 + AI 클립      |
+| Runway                | 영상 편집/배경 제거     |
+| Unscreen              | 영상 배경 제거        |
+| Topaz Video AI        | 영상 업스케일         |
+| Filmora AI            | 쉬운 영상 편집        |
+| Adobe Premiere Pro AI | 전문가용 영상 편집      |
+| DaVinci Resolve AI    | 색보정/편집 보조       |
+| AutoPod               | 팟캐스트 편집 자동화     |
+| Gling AI              | 유튜브 영상 컷 편집     |
+| FireCut               | 프리미어 자동 컷 편집    |
+
+**추천:**
+하이쟉님처럼 유튜브 쇼츠와 블로그를 같이 운영하면 **OpusClip + CapCut + Submagic** 조합이 실용적입니다.
+
+---
+
+# 8. 음성 / TTS / 내레이션 AI
+
+Product Hunt의 AI 에이전트 카테고리에서도 ElevenLabs는 자연스러운 다국어 음성 생성 도구로 소개됩니다. ([Product Hunt][5])
+
+| 도구                  | 용도          |
+| ------------------- | ----------- |
+| ElevenLabs          | 자연스러운 AI 음성 |
+| PlayHT              | TTS, 음성 복제  |
+| Murf AI             | 내레이션, 광고 음성 |
+| WellSaid Labs       | 기업용 음성      |
+| LOVO AI             | 광고/유튜브 음성   |
+| Speechify           | 텍스트 읽기      |
+| NaturalReader       | TTS         |
+| Resemble AI         | 음성 복제       |
+| Replica Studios     | 캐릭터 음성      |
+| Altered Studio      | 음성 변환       |
+| Typecast            | 한국어 AI 성우   |
+| Naver Clova Dubbing | 한국어 더빙      |
+| Google Cloud TTS    | 개발자용 TTS    |
+| Amazon Polly        | 개발자용 음성 합성  |
+| Azure AI Speech     | 음성 합성/인식    |
+| Listnr              | 팟캐스트 음성     |
+| Voicemaker          | TTS         |
+| Dubverse            | 더빙/번역       |
+| Rask AI             | 영상 번역/더빙    |
+| Papercup            | 영상 자동 더빙    |
+
+**한국어 콘텐츠 추천:**
+한국어 더빙은 **Typecast / Clova Dubbing**, 영어권 자연스러운 음성은 **ElevenLabs**가 좋습니다.
+
+---
+
+# 9. 음악 생성 AI
+
+| 도구           | 용도           |
+| ------------ | ------------ |
+| Suno         | 노래 생성        |
+| Udio         | 음악/노래 생성     |
+| AIVA         | 배경음악 작곡      |
+| Soundraw     | 유튜브 배경음악     |
+| Beatoven.ai  | 영상용 BGM      |
+| Mubert       | AI 배경음악      |
+| Boomy        | 음악 생성/배포     |
+| Loudly       | 음악 생성        |
+| Stable Audio | 고품질 오디오 생성   |
+| MusicGen     | 오픈소스 음악 생성   |
+| Riffusion    | 음악 아이디어 생성   |
+| Splash Pro   | 음악 제작        |
+| Ecrett Music | 영상 BGM       |
+| Amper Music  | AI 작곡        |
+| Soundful     | 상업용 BGM      |
+| WavTool      | AI 음악 제작 DAW |
+| Moises AI    | 보컬/악기 분리     |
+| Lalal.ai     | 음원 분리        |
+| AudioStrip   | 보컬 제거        |
+| BandLab AI   | 음악 제작 보조     |
+
+**유튜브 배경음악 추천:**
+수면음악, 감성음악, 쇼츠 BGM은 **Suno / Udio / Soundraw / Beatoven**을 함께 써보면 좋습니다.
+
+---
+
+# 10. 코딩 / 앱 개발 / 웹 개발 AI
+
+2026년 코딩 AI 비교 글들에서는 Cursor, Claude Code, GitHub Copilot, Windsurf, Tabnine, Amazon Q 등이 주요 도구로 반복 언급됩니다. ([Vibe Coding Academy][6])
+
+| 도구                 | 용도                |
+| ------------------ | ----------------- |
+| ChatGPT Codex      | 코딩, 앱/웹 개발 보조     |
+| Claude Code        | 복잡한 코드 분석/수정      |
+| Cursor             | AI 코드 에디터         |
+| GitHub Copilot     | 코드 자동완성, 개발 보조    |
+| Windsurf           | AI 코딩 에디터         |
+| Replit Agent       | 앱 자동 생성/배포        |
+| Bolt.new           | 웹앱 빠른 제작          |
+| Lovable            | 노코드/AI 웹앱 제작      |
+| v0 by Vercel       | UI 생성, React 컴포넌트 |
+| Codeium / Windsurf | 코드 자동완성           |
+| Tabnine            | AI 코드 자동완성        |
+| Amazon Q Developer | AWS 개발 보조         |
+| Sourcegraph Cody   | 코드베이스 검색/수정       |
+| CodeRabbit         | PR 리뷰             |
+| Sweep AI           | GitHub 이슈 → PR    |
+| Devin              | AI 소프트웨어 엔지니어     |
+| Cline              | VS Code 에이전트      |
+| Roo Code           | VS Code 코딩 에이전트   |
+| Continue           | 오픈소스 코딩 어시스턴트     |
+| Aider              | 터미널 기반 AI 코딩      |
+
+**비개발자 추천:**
+하이쟉님처럼 아이디어를 앱/웹으로 만들고 싶다면 **Lovable / Bolt / Replit Agent / v0 / Cursor / Codex** 순서로 접근하면 좋습니다.
+
+---
+
+# 11. 노코드 웹사이트 / 랜딩페이지 제작 AI
+
+| 도구                           | 용도             |
+| ---------------------------- | -------------- |
+| Framer AI                    | 랜딩페이지/웹사이트 제작  |
+| Wix AI                       | 웹사이트 자동 생성     |
+| Webflow AI                   | 노코드 웹사이트       |
+| Durable                      | 사업용 웹사이트 자동 생성 |
+| 10Web                        | 워드프레스 AI 사이트   |
+| Hostinger AI Website Builder | 저렴한 AI 사이트 빌더  |
+| GoDaddy AI Website Builder   | 간단한 비즈니스 사이트   |
+| Relume                       | 사이트맵/와이어프레임 생성 |
+| Dora AI                      | 3D 느낌 웹사이트     |
+| Typedream                    | 노션 스타일 웹사이트    |
+| Carrd                        | 간단한 랜딩페이지      |
+| Gamma                        | 문서/슬라이드형 웹페이지  |
+| Softr                        | Airtable 기반 웹앱 |
+| Bubble AI                    | 노코드 앱 제작       |
+| Glide AI                     | 스프레드시트 기반 앱    |
+| Pory                         | Airtable 웹앱    |
+| Webstudio                    | 오픈소스 웹빌더       |
+| TeleportHQ                   | UI → 코드        |
+| Builder.io AI                | 디자인 → 코드       |
+| Locofy                       | Figma → 코드     |
+
+**추천:**
+수익형 계산기 사이트, AI 도구 추천 사이트, 변환 도구 사이트는 **Framer / Webflow / v0 / Lovable / Bubble** 쪽이 잘 맞습니다.
+
+---
+
+# 12. 업무 자동화 / AI 에이전트
+
+Zapier는 9,000개 이상의 앱과 연결되는 자동화 플랫폼으로 소개하고 있으며, 2026년 자동화 도구 비교에서는 Zapier, Make, n8n, Gumloop 등이 많이 언급됩니다. ([zapier.com][7])
+
+| 도구           | 용도            |
+| ------------ | ------------- |
+| Zapier       | 앱 연결 자동화      |
+| Make         | 시각적 워크플로 자동화  |
+| n8n          | 개발자 친화 자동화    |
+| Gumloop      | AI 워크플로 자동화   |
+| Relay.app    | 팀 업무 자동화      |
+| IFTTT        | 간단한 자동화       |
+| Pipedream    | 개발자용 자동화      |
+| Bardeen      | 브라우저 자동화      |
+| Lindy AI     | AI 개인비서/에이전트  |
+| Relevance AI | AI 에이전트 제작    |
+| CrewAI       | 멀티 에이전트 개발    |
+| LangChain    | AI 앱/에이전트 개발  |
+| LangGraph    | 복잡한 에이전트 워크플로 |
+| AutoGen      | 멀티 에이전트 프레임워크 |
+| Flowise      | 노코드 LangChain |
+| Dify         | AI 앱/챗봇 제작    |
+| Voiceflow    | 챗봇/보이스봇 제작    |
+| Botpress     | AI 챗봇 제작      |
+| Stack AI     | AI 워크플로 제작    |
+| AgentOps     | AI 에이전트 모니터링  |
+
+**추천:**
+블로그 자동화, 뉴스 수집, 유튜브 아이디어 자동 생성은 **Zapier / Make / n8n / Gumloop**이 좋습니다.
+
+---
+
+# 13. 회의록 / 녹음 / 요약 AI
+
+| 도구                 | 용도            |
+| ------------------ | ------------- |
+| Otter.ai           | 회의 녹음/요약      |
+| Fireflies.ai       | 회의록 자동화       |
+| Fathom             | Zoom 회의 요약    |
+| tl;dv              | 화상회의 녹화/요약    |
+| Notta              | 음성 → 텍스트      |
+| Krisp              | 잡음 제거 + 회의 보조 |
+| Avoma              | 세일즈 회의 분석     |
+| Sembly AI          | 회의록/액션아이템     |
+| MeetGeek           | 회의 자동 요약      |
+| Supernormal        | 회의 노트         |
+| Granola            | 맥용 회의 메모      |
+| Jamie              | 회의록 AI        |
+| Read AI            | 회의 분석         |
+| Circleback         | 회의 요약         |
+| Tactiq             | 구글미트 요약       |
+| Fireflies + Zapier | 회의 후 자동 이메일   |
+| Fellow AI          | 팀 미팅 관리       |
+| Rewatch            | 사내 영상 지식관리    |
+| Grain              | 고객 인터뷰 클립     |
+| Descript           | 녹음 편집/요약      |
+
+---
+
+# 14. 프레젠테이션 / 문서 / PDF AI
+
+| 도구                           | 용도            |
+| ---------------------------- | ------------- |
+| Gamma                        | 프레젠테이션/문서 생성  |
+| Tome                         | AI 발표자료       |
+| Beautiful.ai                 | 디자인 좋은 PPT    |
+| Canva Docs/Presentations     | 쉬운 발표자료       |
+| Microsoft Copilot PowerPoint | PPT 자동 생성     |
+| Google Gemini for Slides     | 구글 슬라이드 보조    |
+| Pitch                        | 팀 발표자료        |
+| Decktopus                    | 자동 프레젠테이션     |
+| SlidesAI                     | 텍스트 → 구글 슬라이드 |
+| Plus AI                      | 구글 슬라이드 AI    |
+| ChatPDF                      | PDF 질문 답변     |
+| Humata                       | PDF 분석        |
+| AskYourPDF                   | PDF 대화        |
+| PDF.ai                       | PDF 요약/질문     |
+| UPDF AI                      | PDF 편집/요약     |
+| Adobe Acrobat AI Assistant   | PDF 요약/질문     |
+| NotebookLM                   | 자료 기반 문서 요약   |
+| Documind                     | 문서 분석         |
+| Unriddle                     | 논문/PDF 이해     |
+| Explainpaper                 | 논문 쉽게 설명      |
+
+---
+
+# 15. 마케팅 / 광고 / 세일즈 AI
+
+| 도구                   | 용도            |
+| -------------------- | ------------- |
+| HubSpot AI           | CRM/마케팅 자동화   |
+| Salesforce Einstein  | 세일즈 AI        |
+| Clay                 | 리드 수집/세일즈 자동화 |
+| Apollo AI            | B2B 리드/이메일    |
+| Lavender             | 세일즈 이메일 개선    |
+| Instantly AI         | 콜드 이메일        |
+| Smartlead            | 이메일 캠페인       |
+| Lemlist              | 세일즈 아웃리치      |
+| Copy.ai              | 세일즈 카피        |
+| Jasper               | 마케팅 글쓰기       |
+| AdCreative.ai        | 광고 이미지/카피     |
+| Pencil               | 광고 크리에이티브 생성  |
+| Predis.ai            | SNS 마케팅       |
+| Ocoya                | SNS 콘텐츠 예약    |
+| Hootsuite OwlyWriter | SNS 글 작성      |
+| Buffer AI            | SNS 글쓰기       |
+| Taplio               | LinkedIn 콘텐츠  |
+| Tweet Hunter         | X/Twitter 콘텐츠 |
+| PhantomBuster        | 리드 자동화        |
+| Browse AI            | 웹 데이터 수집      |
+
+---
+
+# 16. SEO / 블로그 성장 AI
+
+| 도구                  | 용도             |
+| ------------------- | -------------- |
+| Semrush             | 키워드/SEO 분석     |
+| Ahrefs              | SEO/백링크 분석     |
+| Surfer SEO          | 글 SEO 최적화      |
+| Frase               | SEO 글 구조 작성    |
+| Clearscope          | 콘텐츠 최적화        |
+| MarketMuse          | 콘텐츠 전략         |
+| NeuronWriter        | SEO 글 작성       |
+| Scalenut            | SEO 콘텐츠 생성     |
+| SE Ranking          | SEO 관리         |
+| LowFruits           | 약한 키워드 찾기      |
+| WriterZen           | 키워드 클러스터       |
+| KoalaWriter         | SEO 블로그 자동 작성  |
+| Autoblogging.ai     | 블로그 자동화        |
+| ContentShake AI     | Semrush 기반 콘텐츠 |
+| RankIQ              | 블로거용 키워드       |
+| Page Optimizer Pro  | 온페이지 SEO       |
+| Surfer AI Humanizer | AI 글 자연화       |
+| Originality.ai      | AI 글 감지/표절     |
+| Content at Scale    | AI 콘텐츠         |
+| ChatGPT             | 제목/구조/메타 설명 생성 |
+
+**하이쟉님 블로그용 추천:**
+`키워드 찾기: Ahrefs / Semrush / LowFruits`
+`글 작성: ChatGPT / Claude / KoalaWriter`
+`SEO 보강: Surfer SEO / Frase / NeuronWriter`
+
+---
+
+# 17. 데이터 분석 / 엑셀 / 업무 생산성 AI
+
+| 도구                             | 용도         |
+| ------------------------------ | ---------- |
+| ChatGPT Advanced Data Analysis | 엑셀/CSV 분석  |
+| Microsoft Copilot Excel        | 엑셀 자동화     |
+| Google Gemini Sheets           | 구글시트 분석    |
+| Rows AI                        | 스프레드시트 AI  |
+| Numerous.ai                    | 구글시트 AI 함수 |
+| SheetAI                        | 시트 자동화     |
+| Akkio                          | 노코드 데이터 분석 |
+| Julius AI                      | 데이터 분석 대화  |
+| Polymer                        | 데이터 시각화    |
+| Obviously AI                   | 예측 분석      |
+| DataRobot                      | 머신러닝 자동화   |
+| Tableau AI                     | BI 분석      |
+| Power BI Copilot               | 대시보드 생성    |
+| ThoughtSpot Sage               | 검색형 BI     |
+| Hex                            | 데이터 노트북    |
+| Mode AI                        | 데이터 분석     |
+| Databricks Assistant           | 데이터/코드 보조  |
+| Snowflake Cortex               | 데이터 AI     |
+| BigQuery Gemini                | 데이터 분석 보조  |
+| MonkeyLearn                    | 텍스트 분석     |
+
+---
+
+# 18. 고객지원 / 챗봇 AI
+
+| 도구                  | 용도           |
+| ------------------- | ------------ |
+| Intercom Fin        | 고객지원 AI 에이전트 |
+| Zendesk AI          | 고객센터 자동화     |
+| Freshdesk Freddy AI | 고객지원         |
+| Help Scout AI       | 이메일 지원       |
+| Tidio               | 쇼핑몰 챗봇       |
+| Drift               | B2B 챗봇       |
+| Ada                 | 고객지원 자동화     |
+| Forethought         | 지원 티켓 자동화    |
+| Kustomer AI         | CRM 고객지원     |
+| Crisp AI            | 채팅 상담        |
+| Botpress            | 챗봇 제작        |
+| Voiceflow           | 챗봇/음성봇       |
+| Manychat AI         | 인스타/메신저 자동화  |
+| Chatbase            | 사이트용 GPT 챗봇  |
+| CustomGPT           | 문서 기반 챗봇     |
+| SiteGPT             | 웹사이트 챗봇      |
+| DocsBot AI          | 문서 기반 지원봇    |
+| Wonderchat          | 사이트 챗봇       |
+| Kommunicate         | 고객지원 챗봇      |
+| Gorgias AI          | 쇼핑몰 고객지원     |
+
+---
+
+# 19. 번역 / 다국어 / 더빙 AI
+
+| 도구                     | 용도        |
+| ---------------------- | --------- |
+| DeepL                  | 고품질 번역    |
+| Google Translate       | 기본 번역     |
+| Papago                 | 한국어 번역    |
+| ChatGPT                | 문맥 번역     |
+| Gemini                 | 문서 번역     |
+| Claude                 | 긴 글 번역    |
+| DeepL Write            | 영어 문장 개선  |
+| Grammarly Translate    | 영어 보조     |
+| Lokalise AI            | 앱/웹 번역 관리 |
+| Weglot                 | 웹사이트 다국어화 |
+| Crowdin AI             | 소프트웨어 번역  |
+| Smartcat               | 번역 협업     |
+| Phrase                 | 로컬라이제이션   |
+| Rask AI                | 영상 번역/더빙  |
+| HeyGen Video Translate | 영상 번역     |
+| Dubverse               | 영상 더빙     |
+| ElevenLabs Dubbing     | 음성 더빙     |
+| Papercup               | 영상 자동 더빙  |
+| Maestra                | 자막/번역     |
+| Sonix                  | 녹취/번역     |
+
+---
+
+# 20. 이미지/사진 편집 AI
+
+| 도구                        | 용도          |
+| ------------------------- | ----------- |
+| Photoshop Generative Fill | 사진 수정       |
+| Lightroom AI              | 사진 보정       |
+| Luminar Neo               | AI 사진 편집    |
+| Topaz Photo AI            | 업스케일/노이즈 제거 |
+| Remini                    | 얼굴/사진 보정    |
+| Let’s Enhance             | 이미지 업스케일    |
+| Upscale.media             | 이미지 확대      |
+| Clipdrop                  | 배경 제거/편집    |
+| Remove.bg                 | 배경 제거       |
+| Cleanup.pictures          | 물체 제거       |
+| Photoroom                 | 상품 사진       |
+| Pixelcut                  | 쇼핑몰 이미지     |
+| Fotor AI                  | 사진 편집       |
+| Picsart AI                | 모바일 이미지 편집  |
+| Canva AI                  | 쉬운 이미지 편집   |
+| Krea AI                   | 실시간 이미지 수정  |
+| Magnific AI               | 이미지 업스케일    |
+| Leonardo Canvas           | 이미지 수정      |
+| Runway Image Tools        | 이미지/영상 편집   |
+| OpenArt                   | 이미지 생성/수정   |
+
+---
+
+# 21. 3D / 인테리어 / 제품 디자인 AI
+
+| 도구               | 용도           |
+| ---------------- | ------------ |
+| Interior AI      | 방 인테리어 변경    |
+| RoomGPT          | 방 사진 → 인테리어  |
+| ReimagineHome    | 인테리어/외관 변경   |
+| Planner 5D AI    | 인테리어 플래너     |
+| Homestyler AI    | 공간 디자인       |
+| DecorMatters     | 인테리어 스타일링    |
+| Spacely AI       | 인테리어 렌더링     |
+| Architechtures   | 건축 설계 보조     |
+| Maket AI         | 평면도 생성       |
+| TestFit          | 부동산/건축 배치    |
+| Kaedim           | 이미지 → 3D     |
+| Meshy            | 텍스트/이미지 → 3D |
+| Luma AI          | 3D 캡처        |
+| Spline AI        | 3D 웹 디자인     |
+| Masterpiece X    | 3D 모델 생성     |
+| Alpha3D          | 이미지 → 3D 모델  |
+| Tripo AI         | 3D 생성        |
+| CSM AI           | 3D 월드 생성     |
+| NVIDIA Omniverse | 3D/시뮬레이션     |
+| Scenario         | 게임 에셋 생성     |
+
+**하이쟉님 인테리어 앱 아이디어용 추천:**
+초기 MVP는 **RoomGPT / Interior AI / ReimagineHome** 기능을 참고하고, 실제 앱은 **이미지 업로드 → 스타일 선택 → 4개 결과 생성 → before/after 비교** 구조가 좋습니다.
+
+---
+
+# 22. 이커머스 / 상품 사진 / 쇼핑몰 AI
+
+| 도구               | 용도            |
+| ---------------- | ------------- |
+| Shopify Magic    | 쇼핑몰 글/상품 설명   |
+| Shopify Sidekick | 쇼핑몰 운영 AI     |
+| Photoroom        | 상품 사진 편집      |
+| Pebblely         | 상품 사진 배경 생성   |
+| Flair AI         | 제품 광고 이미지     |
+| Mokker AI        | 제품 사진 생성      |
+| Booth AI         | 상품 촬영 대체      |
+| Claid.ai         | 제품 사진 보정      |
+| Pixelcut         | 쇼핑몰 이미지       |
+| AdCreative.ai    | 광고 이미지        |
+| Copy.ai          | 상품 설명         |
+| Jasper           | 마케팅 카피        |
+| Writesonic       | 상품 설명/광고      |
+| Prisync AI       | 가격 모니터링       |
+| Octane AI        | 쇼핑몰 퀴즈/추천     |
+| Clerk.io         | 상품 추천         |
+| Nosto            | 개인화 추천        |
+| Gorgias AI       | 고객지원          |
+| Tidio            | 쇼핑몰 챗봇        |
+| ChatGPT          | 상품명/설명/FAQ 생성 |
+
+---
+
+# 23. 교육 / 학습 AI
+
+| 도구             | 용도        |
+| -------------- | --------- |
+| Khanmigo       | 학습 튜터     |
+| Duolingo Max   | 언어 학습     |
+| Quizlet AI     | 플래시카드/퀴즈  |
+| MagicSchool AI | 교사용 자료    |
+| Eduaide.AI     | 수업 자료 생성  |
+| Curipod        | 수업 프레젠테이션 |
+| Socratic       | 학생용 문제 풀이 |
+| Photomath      | 수학 풀이     |
+| Wolfram Alpha  | 계산/수학     |
+| NotebookLM     | 학습 자료 요약  |
+| Perplexity     | 공부 자료 검색  |
+| Elicit         | 논문 조사     |
+| Explainpaper   | 어려운 논문 설명 |
+| Grammarly      | 영어 글쓰기    |
+| Elsa Speak     | 영어 발음     |
+| Speak          | 영어 회화     |
+| QuillBot       | 문장 개선     |
+| TutorAI        | 맞춤 학습     |
+| Coursebox AI   | 온라인 강의 제작 |
+| LearnWorlds AI | 강의 플랫폼    |
+
+---
+
+# 24. 법률 / 계약서 / 문서 검토 AI
+
+| 도구                   | 용도        |
+| -------------------- | --------- |
+| Harvey               | 법률 AI     |
+| Spellbook            | 계약서 검토    |
+| Lawgeex              | 계약서 자동 검토 |
+| Luminance            | 법률 문서 분석  |
+| Casetext CoCounsel   | 법률 리서치    |
+| Lexis+ AI            | 법률 검색     |
+| Westlaw Precision AI | 법률 검색     |
+| Ironclad AI          | 계약 관리     |
+| Juro AI              | 계약 자동화    |
+| Evisort              | 계약 분석     |
+| LinkSquares          | 계약 관리     |
+| LegalOn              | 계약 검토     |
+| Robin AI             | 법무 계약 보조  |
+| DocuSign AI          | 계약 요약     |
+| PandaDoc AI          | 제안서/계약서   |
+| ChatGPT              | 일반 계약서 초안 |
+| Claude               | 긴 계약서 검토  |
+| Notion AI            | 문서 정리     |
+| PDF.ai               | 계약 PDF 질문 |
+| Humata               | 법률 문서 분석  |
+
+주의: 법률 AI는 초안/검토 보조용이고, 실제 법적 판단은 전문가 확인이 필요합니다.
+
+---
+
+# 25. 부동산 / 로컬 비즈니스 AI
+
+| 도구                 | 용도          |
+| ------------------ | ----------- |
+| Zillow AI          | 부동산 검색/추천   |
+| Redfin AI          | 주택 검색       |
+| Restb.ai           | 부동산 이미지 분석  |
+| Epique AI          | 부동산 중개인 마케팅 |
+| ListingAI          | 매물 설명 작성    |
+| Write.homes        | 부동산 카피      |
+| ReimagineHome      | 집 인테리어 변경   |
+| Virtual Staging AI | 가상 홈스테이징    |
+| Styldod            | 부동산 사진 보정   |
+| BoxBrownie         | 부동산 이미지 편집  |
+| Matterport         | 3D 투어       |
+| Placer.ai          | 상권 분석       |
+| Localo             | 로컬 SEO      |
+| BrightLocal        | 로컬 마케팅      |
+| Birdeye AI         | 리뷰 관리       |
+| Podium AI          | 고객 메시지      |
+| Yext AI            | 비즈니스 정보 관리  |
+| ChatGPT            | 매물 설명/광고 문구 |
+| Canva AI           | 부동산 광고 이미지  |
+| AdCreative.ai      | 로컬 광고 이미지   |
+
+---
+
+# 26. 개발자용 AI API / 모델 플랫폼
+
+| 도구                | 용도                 |
+| ----------------- | ------------------ |
+| OpenAI API        | GPT, 이미지, 음성, 에이전트 |
+| Anthropic API     | Claude 모델          |
+| Google Gemini API | Gemini 모델          |
+| Mistral AI        | 오픈/상용 LLM          |
+| Cohere            | 검색/RAG/기업 AI       |
+| Groq              | 빠른 LLM 추론          |
+| Together AI       | 오픈모델 API           |
+| Replicate         | 이미지/영상/음성 모델 API   |
+| Hugging Face      | 모델 허브              |
+| Fireworks AI      | 빠른 모델 서빙           |
+| Perplexity API    | 검색 기반 AI           |
+| Stability AI API  | 이미지 생성             |
+| ElevenLabs API    | 음성 생성              |
+| Runway API        | 영상 생성              |
+| AssemblyAI        | 음성인식               |
+| Deepgram          | 음성인식               |
+| Pinecone          | 벡터 DB              |
+| Weaviate          | 벡터 DB              |
+| Chroma            | 벡터 DB              |
+| Supabase Vector   | 벡터 검색              |
+
+---
+
+# 27. 개인 생산성 / 노트 / 지식관리 AI
+
+| 도구                      | 용도            |
+| ----------------------- | ------------- |
+| Notion AI               | 노트/문서/프로젝트 관리 |
+| Obsidian AI 플러그인        | 개인 지식관리       |
+| Mem AI                  | 자동 정리 노트      |
+| Reflect AI              | 개인 노트         |
+| Evernote AI             | 노트 요약         |
+| Craft AI                | 문서 작성         |
+| Coda AI                 | 문서+DB 자동화     |
+| ClickUp AI              | 프로젝트 관리       |
+| Asana AI                | 업무 관리         |
+| Monday AI               | 팀 업무 관리       |
+| Trello AI               | 카드 업무 관리      |
+| Slack AI                | 대화 요약         |
+| Microsoft Copilot       | 업무 문서/메일      |
+| Google Gemini Workspace | 지메일/문서/시트     |
+| Superhuman AI           | 이메일 생산성       |
+| Shortwave AI            | 이메일 요약        |
+| Motion                  | 일정 자동 관리      |
+| Reclaim AI              | 일정 자동화        |
+| Sunsama                 | 하루 계획         |
+| Akiflow                 | 태스크/캘린더 통합    |
+
+---
+
+# 하이쟉님에게 특히 추천하는 “실전 조합”
+
+## 1) 블로그 + 애드센스 수익화 조합
+
+| 단계       | 추천 도구                                       |
+| -------- | ------------------------------------------- |
+| 주제 찾기    | Google Trends, Perplexity, Exploding Topics |
+| 키워드 조사   | Ahrefs, Semrush, LowFruits                  |
+| 글 초안     | ChatGPT, Claude                             |
+| SEO 보강   | Surfer SEO, Frase, NeuronWriter             |
+| 썸네일      | ChatGPT Image, Canva, Ideogram              |
+| 자동 발행 보조 | Zapier, Make, n8n                           |
+
+---
+
+## 2) 유튜브 콘텐츠 제작 조합
+
+| 단계    | 추천 도구                      |
+| ----- | -------------------------- |
+| 아이디어  | ChatGPT, Perplexity        |
+| 대본    | ChatGPT, Claude            |
+| 음성    | ElevenLabs, Typecast       |
+| 이미지   | Midjourney, ChatGPT Image  |
+| 영상    | Runway, Sora, Pika, Kling  |
+| 자막/편집 | CapCut, Descript, Submagic |
+| 쇼츠 변환 | OpusClip, Vidyo.ai         |
+
+---
+
+## 3) 앱/웹사이트 제작 조합
+
+| 단계       | 추천 도구                            |
+| -------- | -------------------------------- |
+| 기획서      | ChatGPT, Claude                  |
+| UI 디자인   | v0, Uizard, Galileo AI, Figma AI |
+| 프론트엔드 제작 | Codex, Cursor, Lovable, Bolt     |
+| 백엔드      | Supabase, Firebase               |
+| 결제       | Stripe                           |
+| 배포       | Vercel, Cloudflare Pages         |
+| 자동화      | n8n, Make, Zapier                |
+
+---
+
+## 4) AI 도구 추천 사이트를 만들 때 넣으면 좋은 카테고리
+
+하이쟉님이 **EveryAiTools** 같은 사이트를 만든다면, 아래 카테고리 구조가 좋습니다.
+
+1. AI Chatbots
+2. AI Writing Tools
+3. AI Image Generators
+4. AI Video Generators
+5. AI Voice Tools
+6. AI Music Tools
+7. AI Coding Tools
+8. AI Website Builders
+9. AI SEO Tools
+10. AI Marketing Tools
+11. AI Automation Tools
+12. AI Research Tools
+13. AI Presentation Tools
+14. AI PDF Tools
+15. AI Design Tools
+16. AI Social Media Tools
+17. AI E-commerce Tools
+18. AI Customer Support Tools
+19. AI Education Tools
+20. AI Business Tools
+
+이렇게 만들면 제휴 링크, 광고, 리뷰 글, 비교표, “Top 10” 콘텐츠로 확장하기 좋습니다.
+
+[1]: https://www.producthunt.com/topics/artificial-intelligence?utm_source=chatgpt.com "Artificial Intelligence"
+[2]: https://www.g2.com/categories/ai-writing-assistant?utm_source=chatgpt.com "Best AI Writing Assistants: User Reviews from May 2026"
+[3]: https://pickaxe.co/post/top-ai-image-generators?utm_source=chatgpt.com "Top 16 AI Image Generators (Tested & Ranked)"
+[4]: https://manus.im/blog/best-ai-video-generator?utm_source=chatgpt.com "Top 10 Best AI Video Generators of 2026 (Tested & ..."
+[5]: https://www.producthunt.com/categories/ai-agents?utm_source=chatgpt.com "The best AI agents in 2026"
+[6]: https://www.vibecodingacademy.ai/blog/best-ai-coding-assistant-2026?utm_source=chatgpt.com "Best AI Coding Assistants 2026: Cursor, Copilot & More"
+[7]: https://zapier.com/?utm_source=chatgpt.com "Zapier: Automate AI Workflows, Agents, and Apps"

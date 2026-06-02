@@ -1,7 +1,8 @@
 import { Tool } from '../types';
 import { additionalTools } from './additionalTools';
+import { generatedTools } from './generatedTools';
 
-export const tools: Tool[] = [
+const baseTools: Tool[] = [
   // --- Writing & Content ---
   {
     id: 'chatgpt',
@@ -645,4 +646,9 @@ export const tools: Tool[] = [
   },
   ...additionalTools
 ];
+
+const existingIds = new Set(baseTools.map(t => t.id));
+const filteredGeneratedTools = generatedTools.filter(t => !existingIds.has(t.id));
+
+export const tools: Tool[] = [...baseTools, ...filteredGeneratedTools];
 export default tools;
