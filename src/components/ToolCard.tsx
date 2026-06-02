@@ -43,7 +43,7 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
     } else {
       if (ids.length >= 3) {
         // Simple alert if more than 3 tools selected
-        alert(language === 'ko' ? '비교는 최대 3개 도구까지만 가능합니다.' : 'You can compare up to 3 tools at a time.');
+        alert(t('maxCompareAlert'));
         return;
       }
       ids.push(tool.id);
@@ -120,7 +120,7 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
           ))}
           {tool.koreanSupport && (
             <span className="rounded-md bg-indigo-50/50 px-2 py-0.5 text-[10px] font-semibold text-indigo-600 dark:bg-indigo-950/20 dark:text-indigo-400">
-              KO Support
+              {t('koSupport')}
             </span>
           )}
         </div>
@@ -140,7 +140,7 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
           {isInCompare ? (
             <>
               <CheckCircle2 className="h-3.5 w-3.5" />
-              <span>Compared</span>
+              <span>{t('compared')}</span>
             </>
           ) : (
             <>
@@ -160,7 +160,7 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
             <ArrowRight className="h-3.5 w-3.5" />
           </Link>
 
-          {/* Official Website 제휴 링크 */}
+          {/* Official website affiliate link */}
           <a
             href={tool.affiliateUrl || tool.websiteUrl}
             target="_blank"

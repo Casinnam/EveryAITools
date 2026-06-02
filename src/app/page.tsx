@@ -61,7 +61,7 @@ const iconMap = {
 };
 
 export default function HomePage() {
-  const { language } = useLanguage();
+  const { language, t } = useLanguage();
   const router = useRouter();
   const [searchQuery, setSearchQuery] = useState('');
   const [newsletterEmail, setNewsletterEmail] = useState('');
@@ -107,15 +107,15 @@ export default function HomePage() {
           <div className="flex flex-col justify-center">
             <div className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-indigo-100 bg-white/80 px-3 py-1.5 text-xs font-extrabold text-indigo-700 shadow-sm dark:border-indigo-500/20 dark:bg-white/10 dark:text-indigo-200">
               <Zap className="h-3.5 w-3.5" />
-              AI tool discovery, comparison, and ranking hub
+              {t('homeEyebrow')}
             </div>
 
             <h1 className="max-w-xl text-4xl font-black leading-[1.05] tracking-normal text-slate-950 sm:text-5xl lg:text-6xl dark:text-white">
-              Find The Best <span className="text-indigo-600 dark:text-indigo-300">AI Tools</span> For Your Work
+              {t('homeHeroTitlePrefix')} <span className="text-indigo-600 dark:text-indigo-300">{t('homeHeroTitleHighlight')}</span> {t('homeHeroTitleSuffix')}
             </h1>
 
             <p className="mt-6 max-w-xl text-base font-medium leading-relaxed text-slate-600 dark:text-slate-300">
-              Stop testing random apps. Search, compare, and choose practical AI tools for writing, video, coding, design, business, and productivity.
+              {t('homeHeroSubtitle')}
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -123,7 +123,7 @@ export default function HomePage() {
                 href="/tools"
                 className="inline-flex items-center justify-center gap-2 rounded-xl bg-indigo-600 px-5 py-3 text-sm font-extrabold text-white shadow-lg shadow-indigo-600/15 transition hover:bg-indigo-700"
               >
-                Explore Tools
+                {t('homeExploreTools')}
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
@@ -131,7 +131,7 @@ export default function HomePage() {
                 className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-extrabold text-slate-800 shadow-sm transition hover:border-indigo-200 hover:text-indigo-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100"
               >
                 <Sparkles className="h-4 w-4 text-indigo-500" />
-                Find My AI Tool
+                {t('homeFindMyTool')}
               </Link>
             </div>
           </div>
@@ -141,8 +141,8 @@ export default function HomePage() {
               <div>
                 <div className="mb-4 flex items-center justify-between gap-3">
                   <div>
-                    <p className="text-sm font-black text-slate-500 dark:text-slate-400">Find your perfect AI tool</p>
-                    <h2 className="mt-1 text-2xl font-black text-slate-950 dark:text-white">Search the tool map</h2>
+                    <p className="text-sm font-black text-slate-500 dark:text-slate-400">{t('homeFinderLabel')}</p>
+                    <h2 className="mt-1 text-2xl font-black text-slate-950 dark:text-white">{t('homeSearchMapTitle')}</h2>
                   </div>
                   <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-violet-50 text-violet-600 dark:bg-violet-500/10 dark:text-violet-200">
                     <Search className="h-5 w-5" />
@@ -155,7 +155,7 @@ export default function HomePage() {
                     <input
                       value={searchQuery}
                       onChange={(event) => setSearchQuery(event.target.value)}
-                      placeholder="Search ChatGPT, image AI, coding tools..."
+                      placeholder={t('homeSearchPlaceholder')}
                       className="h-13 w-full rounded-xl border border-slate-200 bg-white pl-11 pr-4 text-sm font-semibold text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-indigo-400 focus:ring-4 focus:ring-indigo-100 dark:border-slate-700 dark:bg-slate-950 dark:text-white dark:focus:ring-indigo-500/15"
                     />
                   </div>
@@ -163,12 +163,12 @@ export default function HomePage() {
                     type="submit"
                     className="h-13 rounded-xl bg-indigo-600 px-6 text-sm font-extrabold text-white transition hover:bg-indigo-700"
                   >
-                    Search
+                    {t('homeSearchButton')}
                   </button>
                 </form>
 
                 <div className="mt-4 flex flex-wrap items-center gap-2 text-xs">
-                  <span className="font-bold text-slate-500 dark:text-slate-400">Popular:</span>
+                  <span className="font-bold text-slate-500 dark:text-slate-400">{t('popularSearches')}</span>
                   {popularSearches.map((item) => (
                     <button
                       key={item}
@@ -183,10 +183,10 @@ export default function HomePage() {
 
               <div className="grid grid-cols-2 gap-3 border-t border-slate-100 pt-5 sm:grid-cols-4 dark:border-slate-800">
                 {[
-                  { label: 'AI Tools', value: `${statToolCount}+`, icon: Bot, tone: 'text-violet-600 bg-violet-50' },
-                  { label: 'Categories', value: `${statCategoryCount}`, icon: BarChart3, tone: 'text-sky-600 bg-sky-50' },
-                  { label: 'Use Cases', value: '25+', icon: Users, tone: 'text-emerald-600 bg-emerald-50' },
-                  { label: 'Reviews', value: `${statReviewCount}+`, icon: Star, tone: 'text-amber-600 bg-amber-50' },
+                  { label: t('statAiTools'), value: `${statToolCount}+`, icon: Bot, tone: 'text-violet-600 bg-violet-50' },
+                  { label: t('statCategories'), value: `${statCategoryCount}`, icon: BarChart3, tone: 'text-sky-600 bg-sky-50' },
+                  { label: t('statUseCases'), value: '25+', icon: Users, tone: 'text-emerald-600 bg-emerald-50' },
+                  { label: t('statReviews'), value: `${statReviewCount}+`, icon: Star, tone: 'text-amber-600 bg-amber-50' },
                 ].map((stat) => {
                   const StatIcon = stat.icon;
                   return (
@@ -209,11 +209,11 @@ export default function HomePage() {
         <section className="rounded-[28px] border border-slate-200 bg-white p-5 shadow-sm sm:p-8 dark:border-slate-800 dark:bg-slate-900">
           <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <h2 className="text-xl font-black text-slate-950 sm:text-2xl dark:text-white">Browse AI Tools By Category</h2>
-              <p className="mt-1 text-sm font-medium text-slate-500 dark:text-slate-400">Start from a job, then narrow down the right tool.</p>
+              <h2 className="text-xl font-black text-slate-950 sm:text-2xl dark:text-white">{t('homeBrowseCategories')}</h2>
+              <p className="mt-1 text-sm font-medium text-slate-500 dark:text-slate-400">{t('homeBrowseCategoriesSubtitle')}</p>
             </div>
             <Link href="/tools" className="inline-flex items-center gap-1 text-sm font-extrabold text-indigo-600 hover:text-indigo-700 dark:text-indigo-300">
-              View all categories
+              {t('homeViewAllCategories')}
               <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
@@ -222,6 +222,7 @@ export default function HomePage() {
             {visibleCategories.map((category, index) => {
               const Icon = iconMap[category.id as keyof typeof iconMap] || Bot;
               const accent = categoryAccents[index % categoryAccents.length];
+              const categoryToolCount = tools.filter((tool) => tool.categoryId === category.id).length;
               return (
                 <Link
                   key={category.id}
@@ -234,7 +235,9 @@ export default function HomePage() {
                   <h3 className="text-sm font-black leading-tight text-slate-950 group-hover:text-indigo-700 dark:text-white dark:group-hover:text-indigo-200">
                     {category.name[language] || category.name.en}
                   </h3>
-                  <p className="mt-2 text-xs font-bold text-slate-400">{tools.filter((tool) => tool.categoryId === category.id).length || 'New'} tools</p>
+                  <p className="mt-2 text-xs font-bold text-slate-400">
+                    {categoryToolCount > 0 ? `${categoryToolCount} ${t('homeToolsCount')}` : t('homeNew')}
+                  </p>
                 </Link>
               );
             })}
@@ -243,11 +246,11 @@ export default function HomePage() {
           <div className="mt-8 border-t border-slate-100 pt-8 dark:border-slate-800">
             <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <div>
-                <h2 className="text-xl font-black text-slate-950 sm:text-2xl dark:text-white">Featured AI Tools</h2>
-                <p className="mt-1 text-sm font-medium text-slate-500 dark:text-slate-400">Hand-picked top tools to start comparing today.</p>
+                <h2 className="text-xl font-black text-slate-950 sm:text-2xl dark:text-white">{t('homeFeaturedTools')}</h2>
+                <p className="mt-1 text-sm font-medium text-slate-500 dark:text-slate-400">{t('homeFeaturedSubtitle')}</p>
               </div>
               <Link href="/tools" className="inline-flex items-center gap-1 text-sm font-extrabold text-indigo-600 hover:text-indigo-700 dark:text-indigo-300">
-                View all tools
+                {t('homeViewAllTools')}
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
@@ -265,7 +268,7 @@ export default function HomePage() {
                         {tool.name.charAt(0)}
                       </div>
                       <span className="rounded-full bg-indigo-50 px-2.5 py-1 text-[10px] font-black text-indigo-700 dark:bg-indigo-500/10 dark:text-indigo-200">
-                        Featured
+                        {t('homeFeaturedBadge')}
                       </span>
                     </div>
                     <h3 className="text-lg font-black text-slate-950 group-hover:text-indigo-700 dark:text-white dark:group-hover:text-indigo-200">{tool.name}</h3>
@@ -280,10 +283,10 @@ export default function HomePage() {
                   </div>
                   <div className="mt-5 flex items-center justify-between">
                     <span className="rounded-lg border border-sky-100 bg-sky-50 px-2.5 py-1 text-[10px] font-black text-sky-700 dark:border-sky-500/10 dark:bg-sky-500/10 dark:text-sky-200">
-                      {tool.pricingType}
+                      {tool.pricingType === 'Free' ? t('pricingFree') : tool.pricingType === 'Freemium' ? t('pricingFreemium') : t('pricingPaid')}
                     </span>
                     <span className="inline-flex items-center gap-1 text-xs font-black text-indigo-600 dark:text-indigo-300">
-                      View Details
+                      {t('homeViewDetails')}
                       <ChevronRight className="h-3.5 w-3.5" />
                     </span>
                   </div>
@@ -303,8 +306,8 @@ export default function HomePage() {
                 <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-cyan-50 text-cyan-600 dark:bg-cyan-500/10 dark:text-cyan-200">
                   <BarChart3 className="h-5 w-5" />
                 </div>
-                <h3 className="text-lg font-black text-slate-950 dark:text-white">Compare Tools</h3>
-                <p className="mt-2 text-sm font-medium leading-relaxed text-slate-500 dark:text-slate-400">Compare features, pricing, and practical fit side by side.</p>
+                <h3 className="text-lg font-black text-slate-950 dark:text-white">{t('homeCompareTools')}</h3>
+                <p className="mt-2 text-sm font-medium leading-relaxed text-slate-500 dark:text-slate-400">{t('homeCompareToolsDesc')}</p>
               </div>
               <ArrowRight className="mt-1 h-5 w-5 text-slate-300 transition group-hover:translate-x-1 group-hover:text-indigo-500" />
             </div>
@@ -319,8 +322,8 @@ export default function HomePage() {
                 <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-amber-50 text-amber-600 dark:bg-amber-500/10 dark:text-amber-200">
                   <Trophy className="h-5 w-5" />
                 </div>
-                <h3 className="text-lg font-black text-slate-950 dark:text-white">Top Rankings</h3>
-                <p className="mt-2 text-sm font-medium leading-relaxed text-slate-500 dark:text-slate-400">Explore ranked lists for creators, teams, and beginners.</p>
+                <h3 className="text-lg font-black text-slate-950 dark:text-white">{t('homeTopRankings')}</h3>
+                <p className="mt-2 text-sm font-medium leading-relaxed text-slate-500 dark:text-slate-400">{t('homeTopRankingsDesc')}</p>
               </div>
               <ArrowRight className="mt-1 h-5 w-5 text-slate-300 transition group-hover:translate-x-1 group-hover:text-indigo-500" />
             </div>
@@ -330,11 +333,11 @@ export default function HomePage() {
             <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-rose-50 text-rose-600 dark:bg-rose-500/10 dark:text-rose-200">
               <Mail className="h-5 w-5" />
             </div>
-            <h3 className="text-lg font-black text-slate-950 dark:text-white">Stay Updated</h3>
-            <p className="mt-2 text-sm font-medium leading-relaxed text-slate-500 dark:text-slate-400">Get useful AI tool updates and ranking notes.</p>
+            <h3 className="text-lg font-black text-slate-950 dark:text-white">{t('homeStayUpdated')}</h3>
+            <p className="mt-2 text-sm font-medium leading-relaxed text-slate-500 dark:text-slate-400">{t('homeStayUpdatedDesc')}</p>
             {newsletterSubmitted ? (
               <div className="mt-5 rounded-xl bg-emerald-50 px-4 py-3 text-sm font-extrabold text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-200">
-                You are on the list.
+                {t('homeNewsletterSuccess')}
               </div>
             ) : (
               <form onSubmit={handleNewsletter} className="mt-5 flex gap-2">
@@ -343,11 +346,11 @@ export default function HomePage() {
                   required
                   value={newsletterEmail}
                   onChange={(event) => setNewsletterEmail(event.target.value)}
-                  placeholder="Enter your email"
+                  placeholder={t('homeEmailPlaceholder')}
                   className="min-w-0 flex-1 rounded-xl border border-slate-200 bg-white px-3 py-3 text-sm font-semibold outline-none transition focus:border-indigo-400 focus:ring-4 focus:ring-indigo-100 dark:border-slate-700 dark:bg-slate-950 dark:text-white dark:focus:ring-indigo-500/15"
                 />
                 <button type="submit" className="rounded-xl bg-indigo-600 px-4 py-3 text-sm font-extrabold text-white transition hover:bg-indigo-700">
-                  Subscribe
+                  {t('homeSubscribe')}
                 </button>
               </form>
             )}
@@ -360,15 +363,15 @@ export default function HomePage() {
               <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-white/10 text-amber-200 ring-1 ring-white/15">
                 <Crown className="h-5 w-5" />
               </div>
-              <h2 className="text-2xl font-black">Unlock Premium Benefits</h2>
+              <h2 className="text-2xl font-black">{t('homePremiumTitle')}</h2>
               <p className="mt-3 max-w-xl text-sm font-medium leading-relaxed text-indigo-100">
-                Prepare premium comparison reports, deeper tool audits, early tool alerts, and ad-free research notes.
+                {t('homePremiumDesc')}
               </p>
               <div className="mt-5 flex flex-wrap gap-4 text-xs font-bold text-indigo-100">
-                {['Premium comparisons', 'Detailed analytics', 'Early access', 'Ad-free experience'].map((item) => (
+                {['homePremiumComparisons', 'homeDetailedAnalytics', 'homeEarlyAccess', 'homeAdFreeExperience'].map((item) => (
                   <span key={item} className="inline-flex items-center gap-1.5">
                     <Check className="h-3.5 w-3.5 text-emerald-200" />
-                    {item}
+                    {t(item)}
                   </span>
                 ))}
               </div>
@@ -380,15 +383,15 @@ export default function HomePage() {
                   <FileText className="h-5 w-5" />
                 </div>
                 <div>
-                  <p className="text-xs font-bold text-indigo-100">Premium Report</p>
-                  <h3 className="mt-1 text-lg font-black">Top 100 AI Tools</h3>
-                  <p className="mt-1 text-sm font-medium text-indigo-100">Detailed analysis and comparison matrix</p>
+                  <p className="text-xs font-bold text-indigo-100">{t('homePremiumReport')}</p>
+                  <h3 className="mt-1 text-lg font-black">{t('homeTop100Tools')}</h3>
+                  <p className="mt-1 text-sm font-medium text-indigo-100">{t('homeReportDesc')}</p>
                 </div>
               </div>
             </div>
 
             <Link href="/submit" className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-black text-indigo-700 transition hover:bg-indigo-50">
-              Submit Tool
+              {t('navSubmit')}
               <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
@@ -414,7 +417,7 @@ export default function HomePage() {
               <div className="mt-5 flex items-center justify-between border-t border-slate-100 pt-4 text-xs font-bold text-slate-400 dark:border-slate-800">
                 <span>{post.date}</span>
                 <span className="inline-flex items-center gap-1 text-indigo-600 dark:text-indigo-300">
-                  Read Article
+                  {t('homeReadArticle')}
                   <ArrowRight className="h-3.5 w-3.5" />
                 </span>
               </div>
@@ -429,12 +432,12 @@ export default function HomePage() {
                 <ShieldCheck className="h-5 w-5" />
               </div>
               <div>
-                <h2 className="text-lg font-black text-slate-950 dark:text-white">Built for practical decisions</h2>
-                <p className="mt-1 text-sm font-medium text-slate-500 dark:text-slate-400">Every listing is organized around price, use case, beginner fit, Korean support, and commercial use.</p>
+                <h2 className="text-lg font-black text-slate-950 dark:text-white">{t('homeDecisionTitle')}</h2>
+                <p className="mt-1 text-sm font-medium text-slate-500 dark:text-slate-400">{t('homeDecisionDesc')}</p>
               </div>
             </div>
             <Link href="/finder" className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 px-5 py-3 text-sm font-black text-slate-800 transition hover:border-indigo-200 hover:text-indigo-700 dark:border-slate-700 dark:text-slate-100">
-              Start Finder
+              {t('homeStartFinder')}
               <ArrowRight className="h-4 w-4" />
             </Link>
           </div>

@@ -32,15 +32,15 @@ interface ToolDetailPageProps {
 }
 
 const capabilityItems = [
-  { key: 'beginnerFriendly', label: 'Beginner friendly' },
-  { key: 'koreanSupport', label: 'Korean support' },
-  { key: 'mobileSupport', label: 'Mobile support' },
-  { key: 'commercialUse', label: 'Commercial use' },
+  { key: 'beginnerFriendly', labelKey: 'filterBeginnerFriendly' },
+  { key: 'koreanSupport', labelKey: 'filterKoreanSupport' },
+  { key: 'mobileSupport', labelKey: 'filterMobileSupport' },
+  { key: 'commercialUse', labelKey: 'filterCommercialUse' },
 ] as const;
 
 export default function ToolDetailPage({ params }: ToolDetailPageProps) {
   const { slug } = use(params);
-  const { language, isBeginnerMode } = useLanguage();
+  const { language, isBeginnerMode, t } = useLanguage();
   const [isInCompare, setIsInCompare] = useState(false);
 
   const tool = tools.find((item) => item.slug === slug);
@@ -54,6 +54,10 @@ export default function ToolDetailPage({ params }: ToolDetailPageProps) {
     ? tool.beginnerDescription[language] || tool.beginnerDescription.en
     : tool.longDescription[language] || tool.longDescription.en;
   const shortDescription = tool.description[language] || tool.description.en;
+  const pricingLabel = tool.pricingType === 'Free' ? t('pricingFree') : tool.pricingType === 'Freemium' ? t('pricingFreemium') : t('pricingPaid');
+  const bestForTitle = language === 'ko'
+    ? `${tool.name} ${t('detailBestForSuffix')}`
+    : `${t('detailBestForPrefix')} ${tool.name} ${t('detailBestForSuffix')}`;
   const alternatives = tools
     .filter((item) => item.categoryId === tool.categoryId && item.id !== tool.id)
     .sort((a, b) => b.rating - a.rating)
@@ -84,10 +88,10 @@ export default function ToolDetailPage({ params }: ToolDetailPageProps) {
               className="inline-flex w-fit items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-black text-slate-600 shadow-sm transition hover:border-indigo-200 hover:text-indigo-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300"
             >
               <ArrowLeft className="h-3.5 w-3.5" />
-              Back to all tools
+              {t('detailBackToTools')}
             </Link>
             <div className="text-xs font-bold text-slate-400">
-              Tools / <span className="text-indigo-600 dark:text-indigo-300">{tool.name}</span>
+              {t('navTools')} / <span className="text-indigo-600 dark:text-indigo-300">{tool.name}</span>
             </div>
           </div>
 
@@ -101,7 +105,7 @@ export default function ToolDetailPage({ params }: ToolDetailPageProps) {
                 {tool.featured && (
                   <span className="inline-flex items-center gap-1.5 rounded-full border border-amber-100 bg-amber-50 px-3 py-1.5 text-xs font-black text-amber-700 dark:border-amber-500/20 dark:bg-amber-500/10 dark:text-amber-200">
                     <Award className="h-3.5 w-3.5" />
-                    Featured pick
+                    {t('detailFeaturedPick')}
                   </span>
                 )}
               </div>
@@ -135,10 +139,10 @@ export default function ToolDetailPage({ params }: ToolDetailPageProps) {
 
             <aside className="rounded-[28px] border border-white/70 bg-white/90 p-5 shadow-2xl shadow-indigo-950/10 backdrop-blur dark:border-white/10 dark:bg-slate-900/90">
               <div className="grid grid-cols-2 gap-3">
-                <Metric label="Rating" value={`${tool.rating}`} icon={<Star className="h-4.5 w-4.5 fill-amber-400 text-amber-400" />} />
-                <Metric label="Pricing" value={tool.pricingType} icon={<BadgeCheck className="h-4.5 w-4.5 text-indigo-600" />} />
-                <Metric label="Starts at" value={tool.startingPrice || 'Free'} icon={<Zap className="h-4.5 w-4.5 text-violet-600" />} />
-                <Metric label="Category" value={categoryName} icon={<Target className="h-4.5 w-4.5 text-emerald-600" />} />
+                <Metric label={t('ratingLabel')} value={`${tool.rating}`} icon={<Star className="h-4.5 w-4.5 fill-amber-400 text-amber-400" />} />
+                <Metric label={t('pricingLabel')} value={pricingLabel} icon={<BadgeCheck className="h-4.5 w-4.5 text-indigo-600" />} />
+                <Metric label={t('pricingStartingFrom')} value={tool.startingPrice || t('pricingFree')} icon={<Zap className="h-4.5 w-4.5 text-violet-600" />} />
+                <Metric label={t('categoryLabel')} value={categoryName} icon={<Target className="h-4.5 w-4.5 text-emerald-600" />} />
               </div>
 
               <div className="mt-5 space-y-3">
@@ -148,7 +152,7 @@ export default function ToolDetailPage({ params }: ToolDetailPageProps) {
                   rel="noopener noreferrer"
                   className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-indigo-600 px-5 py-3.5 text-sm font-black text-white transition hover:bg-indigo-700"
                 >
-                  Visit official site
+                  {t('visitOfficialSite')}
                   <ExternalLink className="h-4 w-4" />
                 </a>
                 <button
@@ -160,13 +164,13 @@ export default function ToolDetailPage({ params }: ToolDetailPageProps) {
                   }`}
                 >
                   {isInCompare ? <CheckCircle2 className="h-4 w-4" /> : <Plus className="h-4 w-4" />}
-                  {isInCompare ? 'Added to compare' : 'Add to compare'}
+                  {isInCompare ? t('detailAddedToCompare') : t('detailAddToCompare')}
                 </button>
                 <Link
                   href="/compare"
                   className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3.5 text-sm font-black text-slate-800 transition hover:border-indigo-200 hover:text-indigo-700 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100"
                 >
-                  Open comparison
+                  {t('detailOpenComparison')}
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
@@ -191,8 +195,8 @@ export default function ToolDetailPage({ params }: ToolDetailPageProps) {
                 <div className={`mb-3 flex h-10 w-10 items-center justify-center rounded-xl ${enabled ? 'bg-emerald-50 text-emerald-600 dark:bg-emerald-500/10 dark:text-emerald-200' : 'bg-slate-100 text-slate-400 dark:bg-slate-800'}`}>
                   {enabled ? <Check className="h-5 w-5" /> : <X className="h-5 w-5" />}
                 </div>
-                <p className="text-sm font-black text-slate-950 dark:text-white">{item.label}</p>
-                <p className="mt-1 text-xs font-bold text-slate-400">{enabled ? 'Supported' : 'Limited'}</p>
+                <p className="text-sm font-black text-slate-950 dark:text-white">{t(item.labelKey)}</p>
+                <p className="mt-1 text-xs font-bold text-slate-400">{enabled ? t('detailSupported') : t('detailLimited')}</p>
               </div>
             );
           })}
@@ -202,16 +206,16 @@ export default function ToolDetailPage({ params }: ToolDetailPageProps) {
           <article className="rounded-[28px] border border-slate-200 bg-white p-6 shadow-sm sm:p-8 dark:border-slate-800 dark:bg-slate-900">
             <div className="mb-5 flex items-center gap-2 text-sm font-black uppercase text-indigo-600 dark:text-indigo-300">
               <ShieldCheck className="h-4.5 w-4.5" />
-              Review summary
+              {t('detailReviewSummary')}
             </div>
-            <h2 className="text-2xl font-black text-slate-950 dark:text-white">What {tool.name} is best for</h2>
+            <h2 className="text-2xl font-black text-slate-950 dark:text-white">{bestForTitle}</h2>
             <p className="mt-4 text-base font-medium leading-relaxed text-slate-600 dark:text-slate-300">
               {description}
             </p>
 
             <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2">
-              <ListPanel title="Pros" tone="emerald" icon={<Check className="h-5 w-5" />} items={tool.pros.map((item) => item[language] || item.en)} />
-              <ListPanel title="Cons" tone="rose" icon={<AlertTriangle className="h-5 w-5" />} items={tool.cons.map((item) => item[language] || item.en)} />
+              <ListPanel title={t('pros')} tone="emerald" icon={<Check className="h-5 w-5" />} items={tool.pros.map((item) => item[language] || item.en)} />
+              <ListPanel title={t('cons')} tone="rose" icon={<AlertTriangle className="h-5 w-5" />} items={tool.cons.map((item) => item[language] || item.en)} />
             </div>
           </article>
 
@@ -219,16 +223,16 @@ export default function ToolDetailPage({ params }: ToolDetailPageProps) {
             <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-indigo-600 shadow-sm dark:bg-slate-950 dark:text-indigo-200">
               <Lightbulb className="h-6 w-6" />
             </div>
-            <h2 className="mt-5 text-xl font-black text-slate-950 dark:text-white">Decision notes</h2>
+            <h2 className="mt-5 text-xl font-black text-slate-950 dark:text-white">{t('detailDecisionNotes')}</h2>
             <div className="mt-4 space-y-3 text-sm font-medium leading-relaxed text-slate-600 dark:text-slate-300">
-              <p>Choose this when its pricing, category, and practical fit match your workflow.</p>
-              <p>Use the compare button if you are deciding between tools in the same category.</p>
+              <p>{t('detailDecisionP1')}</p>
+              <p>{t('detailDecisionP2')}</p>
             </div>
             <Link
               href={`/tools?category=${tool.categoryId}`}
               className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-indigo-600 px-4 py-3 text-sm font-black text-white transition hover:bg-indigo-700"
             >
-              Browse similar tools
+              {t('detailBrowseSimilar')}
               <ArrowRight className="h-4 w-4" />
             </Link>
           </aside>
@@ -236,12 +240,12 @@ export default function ToolDetailPage({ params }: ToolDetailPageProps) {
 
         <section className="grid grid-cols-1 gap-6 lg:grid-cols-2">
           <DetailPanel
-            title="Key features"
+            title={t('featuresLabel')}
             icon={<Sparkles className="h-5 w-5" />}
             items={tool.features.map((item) => item[language] || item.en)}
           />
           <DetailPanel
-            title="Best use cases"
+            title={t('useCasesLabel')}
             icon={<Target className="h-5 w-5" />}
             items={tool.useCases.map((item) => item[language] || item.en)}
           />
@@ -251,11 +255,11 @@ export default function ToolDetailPage({ params }: ToolDetailPageProps) {
           <section className="rounded-[28px] border border-slate-200 bg-white p-6 shadow-sm sm:p-8 dark:border-slate-800 dark:bg-slate-900">
             <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <div>
-                <h2 className="text-2xl font-black text-slate-950 dark:text-white">Alternatives in {categoryName}</h2>
-                <p className="mt-1 text-sm font-medium text-slate-500 dark:text-slate-400">Compare nearby options before you commit.</p>
+                <h2 className="text-2xl font-black text-slate-950 dark:text-white">{t('detailAlternativesIn')} {categoryName}</h2>
+                <p className="mt-1 text-sm font-medium text-slate-500 dark:text-slate-400">{t('detailAlternativesDesc')}</p>
               </div>
               <Link href={`/tools?category=${tool.categoryId}`} className="inline-flex items-center gap-1 text-sm font-black text-indigo-600 hover:text-indigo-700 dark:text-indigo-300">
-                View category
+                {t('detailViewCategory')}
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
@@ -283,7 +287,7 @@ export default function ToolDetailPage({ params }: ToolDetailPageProps) {
                     {alternative.description[language] || alternative.description.en}
                   </p>
                   <div className="mt-5 inline-flex items-center gap-1 text-xs font-black text-indigo-600 dark:text-indigo-300">
-                    Read review
+                    {t('readReview')}
                     <ArrowRight className="h-3.5 w-3.5" />
                   </div>
                 </Link>
@@ -294,7 +298,7 @@ export default function ToolDetailPage({ params }: ToolDetailPageProps) {
 
         <div className="rounded-2xl border border-slate-200 bg-white p-4 text-center shadow-sm dark:border-slate-800 dark:bg-slate-900">
           <p className="mx-auto max-w-3xl text-xs font-medium leading-relaxed text-slate-500 dark:text-slate-400">
-            Affiliate disclosure: we may earn a commission if you visit or purchase through links on this site. Tool details are summarized for decision support and should be verified on the official website before purchase.
+            {t('detailAffiliateDisclosure')}
           </p>
         </div>
       </main>

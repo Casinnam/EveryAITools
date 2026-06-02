@@ -26,29 +26,30 @@ import {
   type ToolPricingFilter,
 } from '@/lib/toolFilters';
 
-const pricingOptions: Array<{ value: ToolPricingFilter; label: string }> = [
-  { value: 'all', label: 'Any pricing' },
-  { value: 'Free', label: 'Free' },
-  { value: 'Freemium', label: 'Freemium' },
-  { value: 'Paid', label: 'Paid' },
+const pricingOptions: Array<{ value: ToolPricingFilter; labelKey: string }> = [
+  { value: 'all', labelKey: 'filterAnyPricing' },
+  { value: 'Free', labelKey: 'pricingFree' },
+  { value: 'Freemium', labelKey: 'pricingFreemium' },
+  { value: 'Paid', labelKey: 'pricingPaid' },
 ];
 
-const quickFilters: Array<{ key: keyof Pick<ToolFilters, 'beginner' | 'korean' | 'mobile' | 'commercial'>; label: string }> = [
-  { key: 'beginner', label: 'Beginner friendly' },
-  { key: 'korean', label: 'Korean support' },
-  { key: 'mobile', label: 'Mobile support' },
-  { key: 'commercial', label: 'Commercial use' },
+const quickFilters: Array<{ key: keyof Pick<ToolFilters, 'beginner' | 'korean' | 'mobile' | 'commercial'>; labelKey: string }> = [
+  { key: 'beginner', labelKey: 'filterBeginnerFriendly' },
+  { key: 'korean', labelKey: 'filterKoreanSupport' },
+  { key: 'mobile', labelKey: 'filterMobileSupport' },
+  { key: 'commercial', labelKey: 'filterCommercialUse' },
 ];
-
-const popularSearches = ['ChatGPT', 'Claude', 'video', 'coding', 'design', 'free'];
 
 function ToolsListContent() {
-  const { language } = useLanguage();
+  const { language, t } = useLanguage();
   const router = useRouter();
   const searchParams = useSearchParams();
 
   const filters = useMemo(() => parseToolFilters(searchParams), [searchParams]);
   const filteredTools = useMemo(() => filterTools(tools, filters, language), [filters, language]);
+  const popularSearches = language === 'ko'
+    ? ['ChatGPT', 'Claude', '영상', '코딩', '디자인', '무료']
+    : ['ChatGPT', 'Claude', 'video', 'coding', 'design', 'free'];
 
   const selectedCategory = categories.find((category) => category.id === filters.category);
   const activeFilterCount = [
@@ -85,13 +86,13 @@ function ToolsListContent() {
             <div>
               <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-indigo-100 bg-white/80 px-3 py-1.5 text-xs font-black text-indigo-700 shadow-sm dark:border-indigo-500/20 dark:bg-white/10 dark:text-indigo-200">
                 <SlidersHorizontal className="h-3.5 w-3.5" />
-                AI tool discovery
+                {t('toolsEyebrow')}
               </div>
               <h1 className="text-4xl font-black tracking-normal text-slate-950 sm:text-5xl dark:text-white">
-                Explore AI Tools
+                {t('toolsTitle')}
               </h1>
               <p className="mt-4 max-w-xl text-sm font-medium leading-relaxed text-slate-600 sm:text-base dark:text-slate-300">
-                Search by task, category, price, language support, and practical fit. Every filter stays in the URL so you can share the exact view.
+                {t('toolsSubtitle')}
               </p>
             </div>
 
@@ -108,7 +109,7 @@ function ToolsListContent() {
                   <input
                     value={filters.query}
                     onChange={(event) => updateFilters({ query: event.target.value })}
-                    placeholder="Search ChatGPT, image AI, coding tools..."
+                    placeholder={t('homeSearchPlaceholder')}
                     className="h-13 w-full rounded-xl border border-slate-200 bg-white pl-11 pr-4 text-sm font-semibold text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-indigo-400 focus:ring-4 focus:ring-indigo-100 dark:border-slate-700 dark:bg-slate-950 dark:text-white dark:focus:ring-indigo-500/15"
                   />
                 </div>
@@ -116,12 +117,12 @@ function ToolsListContent() {
                   type="submit"
                   className="h-13 rounded-xl bg-indigo-600 px-6 text-sm font-black text-white transition hover:bg-indigo-700"
                 >
-                  Search
+                  {t('homeSearchButton')}
                 </button>
               </form>
 
               <div className="mt-4 flex flex-wrap items-center gap-2 text-xs">
-                <span className="font-bold text-slate-500 dark:text-slate-400">Popular:</span>
+                <span className="font-bold text-slate-500 dark:text-slate-400">{t('popularSearches')}</span>
                 {popularSearches.map((item) => (
                   <button
                     key={item}
@@ -143,26 +144,26 @@ function ToolsListContent() {
             <div className="mb-5 flex items-center justify-between border-b border-slate-100 pb-4 dark:border-slate-800">
               <div className="flex items-center gap-2 text-sm font-black text-slate-950 dark:text-white">
                 <Filter className="h-4.5 w-4.5 text-indigo-600 dark:text-indigo-300" />
-                Filters
+                {t('filterTitle')}
               </div>
               <button
                 onClick={clearFilters}
                 className="inline-flex items-center gap-1 rounded-lg px-2 py-1 text-xs font-black text-indigo-600 transition hover:bg-indigo-50 dark:text-indigo-300 dark:hover:bg-indigo-500/10"
               >
                 <RefreshCw className="h-3.5 w-3.5" />
-                Clear
+                {t('filterClear')}
               </button>
             </div>
 
             <div className="space-y-5">
               <div>
-                <label className="mb-2 block text-xs font-black uppercase text-slate-500 dark:text-slate-400">Category</label>
+                <label className="mb-2 block text-xs font-black uppercase text-slate-500 dark:text-slate-400">{t('filterCategory')}</label>
                 <select
                   value={filters.category}
                   onChange={(event) => updateFilters({ category: event.target.value }, 'push')}
                   className="h-11 w-full rounded-xl border border-slate-200 bg-slate-50 px-3 text-sm font-bold text-slate-700 outline-none transition focus:border-indigo-400 focus:ring-4 focus:ring-indigo-100 dark:border-slate-700 dark:bg-slate-950 dark:text-white dark:focus:ring-indigo-500/15"
                 >
-                  <option value="all">All categories</option>
+                  <option value="all">{t('filterAllCategories')}</option>
                   {categories.map((category) => (
                     <option key={category.id} value={category.id}>
                       {category.name[language] || category.name.en}
@@ -172,7 +173,7 @@ function ToolsListContent() {
               </div>
 
               <div>
-                <label className="mb-2 block text-xs font-black uppercase text-slate-500 dark:text-slate-400">Pricing</label>
+                <label className="mb-2 block text-xs font-black uppercase text-slate-500 dark:text-slate-400">{t('filterPricing')}</label>
                 <div className="grid grid-cols-2 gap-2">
                   {pricingOptions.map((option) => (
                     <button
@@ -184,14 +185,14 @@ function ToolsListContent() {
                           : 'border-slate-200 bg-white text-slate-600 hover:border-indigo-200 hover:text-indigo-700 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-300'
                       }`}
                     >
-                      {option.label}
+                      {t(option.labelKey)}
                     </button>
                   ))}
                 </div>
               </div>
 
               <div>
-                <label className="mb-2 block text-xs font-black uppercase text-slate-500 dark:text-slate-400">Practical fit</label>
+                <label className="mb-2 block text-xs font-black uppercase text-slate-500 dark:text-slate-400">{t('filterPracticalFit')}</label>
                 <div className="space-y-2">
                   {quickFilters.map((item) => {
                     const active = filters[item.key];
@@ -205,7 +206,7 @@ function ToolsListContent() {
                             : 'border-slate-200 bg-white text-slate-600 hover:border-indigo-200 hover:text-indigo-700 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-300'
                         }`}
                       >
-                        {item.label}
+                        {t(item.labelKey)}
                         {active ? <Check className="h-4 w-4" /> : <span className="h-4 w-4 rounded-full border border-slate-300 dark:border-slate-600" />}
                       </button>
                     );
@@ -219,15 +220,15 @@ function ToolsListContent() {
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-indigo-600 shadow-sm dark:bg-slate-950 dark:text-indigo-200">
               <Sparkles className="h-5 w-5" />
             </div>
-            <h2 className="mt-4 text-sm font-black text-slate-950 dark:text-white">Need a guided pick?</h2>
+            <h2 className="mt-4 text-sm font-black text-slate-950 dark:text-white">{t('toolsGuidedTitle')}</h2>
             <p className="mt-2 text-xs font-medium leading-relaxed text-slate-600 dark:text-slate-300">
-              Answer a few questions and get a short list of tools for your exact job.
+              {t('toolsGuidedDesc')}
             </p>
             <Link
               href="/finder"
               className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-indigo-600 px-4 py-3 text-xs font-black text-white transition hover:bg-indigo-700"
             >
-              Start Finder
+              {t('homeStartFinder')}
               <ArrowRight className="h-3.5 w-3.5" />
             </Link>
           </div>
@@ -237,31 +238,31 @@ function ToolsListContent() {
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900">
             <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
               <div>
-                <p className="text-xs font-black uppercase text-slate-400">Results</p>
+                <p className="text-xs font-black uppercase text-slate-400">{t('toolsResults')}</p>
                 <h2 className="mt-1 text-2xl font-black text-slate-950 dark:text-white">
-                  {filteredTools.length} tools found
+                  {filteredTools.length} {t('toolsFound')}
                 </h2>
                 <p className="mt-1 text-sm font-medium text-slate-500 dark:text-slate-400">
-                  {selectedCategory ? `Showing ${selectedCategory.name[language] || selectedCategory.name.en}.` : 'Showing all categories.'}
-                  {filters.query ? ` Search: "${filters.query}".` : ''}
+                  {selectedCategory ? `${t('toolsShowingCategoryPrefix')} ${selectedCategory.name[language] || selectedCategory.name.en}.` : t('toolsShowingAll')}
+                  {filters.query ? ` ${t('toolsSearchPrefix')}: "${filters.query}".` : ''}
                 </p>
               </div>
 
               <div className="flex flex-wrap gap-2">
                 {activeFilterCount > 0 ? (
                   <>
-                    {filters.query && <FilterChip label={`Search: ${filters.query}`} onClear={() => updateFilters({ query: '' })} />}
+                    {filters.query && <FilterChip label={`${t('toolsSearchPrefix')}: ${filters.query}`} onClear={() => updateFilters({ query: '' })} />}
                     {filters.category !== 'all' && (
                       <FilterChip label={selectedCategory?.name[language] || selectedCategory?.name.en || filters.category} onClear={() => updateFilters({ category: 'all' }, 'push')} />
                     )}
-                    {filters.pricing !== 'all' && <FilterChip label={filters.pricing} onClear={() => updateFilters({ pricing: 'all' }, 'push')} />}
+                    {filters.pricing !== 'all' && <FilterChip label={t(pricingOptions.find((option) => option.value === filters.pricing)?.labelKey || 'filterAnyPricing')} onClear={() => updateFilters({ pricing: 'all' }, 'push')} />}
                     {quickFilters.map((item) =>
-                      filters[item.key] ? <FilterChip key={item.key} label={item.label} onClear={() => updateFilters({ [item.key]: false }, 'push')} /> : null,
+                      filters[item.key] ? <FilterChip key={item.key} label={t(item.labelKey)} onClear={() => updateFilters({ [item.key]: false }, 'push')} /> : null,
                     )}
                   </>
                 ) : (
                   <span className="rounded-full bg-slate-100 px-3 py-1.5 text-xs font-black text-slate-500 dark:bg-slate-800 dark:text-slate-300">
-                    No active filters
+                    {t('toolsNoActiveFilters')}
                   </span>
                 )}
               </div>
@@ -279,23 +280,23 @@ function ToolsListContent() {
               <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600 dark:bg-indigo-500/10 dark:text-indigo-200">
                 <Bot className="h-7 w-7" />
               </div>
-              <h3 className="mt-5 text-xl font-black text-slate-950 dark:text-white">No matching tools yet</h3>
+              <h3 className="mt-5 text-xl font-black text-slate-950 dark:text-white">{t('toolsNoMatchesTitle')}</h3>
               <p className="mx-auto mt-2 max-w-md text-sm font-medium leading-relaxed text-slate-500 dark:text-slate-400">
-                Try a broader keyword, remove one filter, or jump into popular tools while the directory grows.
+                {t('toolsNoMatchesDesc')}
               </p>
               <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
                 <button
                   onClick={clearFilters}
                   className="inline-flex items-center justify-center gap-2 rounded-xl bg-indigo-600 px-5 py-3 text-sm font-black text-white transition hover:bg-indigo-700"
                 >
-                  Clear filters
+                  {t('filterClearAll')}
                   <RefreshCw className="h-4 w-4" />
                 </button>
                 <Link
                   href="/submit"
                   className="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-black text-slate-800 transition hover:border-indigo-200 hover:text-indigo-700 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100"
                 >
-                  Submit a tool
+                  {t('toolsSubmitTool')}
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </div>
@@ -320,8 +321,10 @@ function FilterChip({ label, onClear }: { label: string; onClear: () => void }) 
 }
 
 export default function ToolsListPage() {
+  const { t } = useLanguage();
+
   return (
-    <Suspense fallback={<div className="p-8 text-center text-sm text-slate-500">Loading tools...</div>}>
+    <Suspense fallback={<div className="p-8 text-center text-sm text-slate-500">{t('loadingTools')}</div>}>
       <ToolsListContent />
     </Suspense>
   );
