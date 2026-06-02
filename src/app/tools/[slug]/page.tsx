@@ -1,12 +1,29 @@
 'use client';
 
-import React, { use } from 'react';
+import React, { use, useState } from 'react';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { useLanguage } from '@/context/LanguageContext';
 import { tools } from '@/data/tools';
 import { categories } from '@/data/categories';
-import { Star, ExternalLink, ArrowLeft, Check, AlertTriangle, Lightbulb, Compass, Award, X } from 'lucide-react';
+import {
+  AlertTriangle,
+  ArrowLeft,
+  ArrowRight,
+  Award,
+  BadgeCheck,
+  Check,
+  CheckCircle2,
+  ExternalLink,
+  Lightbulb,
+  Plus,
+  ShieldCheck,
+  Sparkles,
+  Star,
+  Target,
+  X,
+  Zap,
+} from 'lucide-react';
 
 export const runtime = 'edge';
 
@@ -14,270 +31,330 @@ interface ToolDetailPageProps {
   params: Promise<{ slug: string }>;
 }
 
+const capabilityItems = [
+  { key: 'beginnerFriendly', label: 'Beginner friendly' },
+  { key: 'koreanSupport', label: 'Korean support' },
+  { key: 'mobileSupport', label: 'Mobile support' },
+  { key: 'commercialUse', label: 'Commercial use' },
+] as const;
+
 export default function ToolDetailPage({ params }: ToolDetailPageProps) {
   const { slug } = use(params);
-  const { t, language, isBeginnerMode } = useLanguage();
+  const { language, isBeginnerMode } = useLanguage();
+  const [isInCompare, setIsInCompare] = useState(false);
 
-  // Find the current tool based on slug
-  const tool = tools.find((t) => t.slug === slug);
+  const tool = tools.find((item) => item.slug === slug);
   if (!tool) {
     notFound();
   }
 
-  // Get current category name
-  const category = categories.find((c) => c.id === tool.categoryId);
-  const categoryName = category ? category.name[language] || category.name['en'] : 'AI Tool';
-
-  // Get alternative tools in the same category (excluding this one)
+  const category = categories.find((item) => item.id === tool.categoryId);
+  const categoryName = category ? category.name[language] || category.name.en : 'AI Tool';
+  const description = isBeginnerMode && tool.beginnerDescription
+    ? tool.beginnerDescription[language] || tool.beginnerDescription.en
+    : tool.longDescription[language] || tool.longDescription.en;
+  const shortDescription = tool.description[language] || tool.description.en;
   const alternatives = tools
-    .filter((t) => t.categoryId === tool.categoryId && t.id !== tool.id)
-    .slice(0, 2);
+    .filter((item) => item.categoryId === tool.categoryId && item.id !== tool.id)
+    .sort((a, b) => b.rating - a.rating)
+    .slice(0, 3);
 
-  // Dynamic description
-  const mainDesc = isBeginnerMode && tool.beginnerDescription
-    ? tool.beginnerDescription[language] || tool.beginnerDescription['en']
-    : tool.longDescription[language] || tool.longDescription['en'];
+  const toggleCompare = () => {
+    const saved = localStorage.getItem('everyaitools_compare');
+    let ids = saved ? (JSON.parse(saved) as string[]) : [];
+
+    if (ids.includes(tool.id)) {
+      ids = ids.filter((id) => id !== tool.id);
+    } else {
+      ids = [...ids, tool.id].slice(-3);
+    }
+
+    localStorage.setItem('everyaitools_compare', JSON.stringify(ids));
+    setIsInCompare(ids.includes(tool.id));
+    window.dispatchEvent(new Event('compareChanged'));
+  };
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8 space-y-12 transition-all duration-300">
-      
-      {/* 1. BACK TO LIST & BREADCRUMBS */}
-      <div className="flex items-center justify-between">
-        <Link
-          href="/tools"
-          className="flex items-center space-x-1.5 text-xs font-bold text-slate-500 hover:text-indigo-600 transition-colors"
-        >
-          <ArrowLeft className="h-4 w-4" />
-          <span>Back to all tools</span>
-        </Link>
-        <div className="text-[11px] font-semibold text-slate-400">
-          <span>Tools</span> / <span className="text-indigo-600">{tool.name}</span>
-        </div>
-      </div>
-
-      {/* 2. HEADER OVERVIEW SECTION */}
-      <section className="rounded-3xl border border-slate-200/80 bg-white p-6 sm:p-8 shadow-sm dark:border-slate-800 dark:bg-slate-900 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-        
-        {/* Logo and Primary Meta */}
-        <div className="md:col-span-2 flex items-center space-x-5">
-          <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-tr from-indigo-500 to-purple-500 text-3xl font-black text-white shadow-lg shadow-indigo-500/10">
-            {tool.name.charAt(0)}
+    <div className="min-h-screen bg-[#f7f8fc] text-slate-950 dark:bg-slate-950 dark:text-white">
+      <section className="border-b border-slate-200/80 bg-[linear-gradient(135deg,#ffffff_0%,#eef6ff_48%,#f4edff_100%)] dark:border-slate-800 dark:bg-[linear-gradient(135deg,#020617_0%,#10172a_60%,#1b1230_100%)]">
+        <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+          <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <Link
+              href="/tools"
+              className="inline-flex w-fit items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-black text-slate-600 shadow-sm transition hover:border-indigo-200 hover:text-indigo-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300"
+            >
+              <ArrowLeft className="h-3.5 w-3.5" />
+              Back to all tools
+            </Link>
+            <div className="text-xs font-bold text-slate-400">
+              Tools / <span className="text-indigo-600 dark:text-indigo-300">{tool.name}</span>
+            </div>
           </div>
-          <div className="space-y-2">
-            <div className="flex items-center space-x-2">
-              <h1 className="text-2xl sm:text-3xl font-black text-slate-950 dark:text-white leading-tight">
-                {tool.name}
-              </h1>
-              {tool.featured && (
-                <span className="inline-flex items-center space-x-1 rounded-full bg-amber-50 px-2.5 py-0.5 text-[10px] font-bold text-amber-700 border border-amber-200/50">
-                  <Award className="h-3 w-3" />
-                  <span>Featured</span>
+
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_360px] lg:items-stretch">
+            <div className="flex flex-col justify-center">
+              <div className="mb-5 flex flex-wrap items-center gap-2">
+                <span className="inline-flex items-center gap-1.5 rounded-full border border-indigo-100 bg-white/80 px-3 py-1.5 text-xs font-black text-indigo-700 shadow-sm dark:border-indigo-500/20 dark:bg-white/10 dark:text-indigo-200">
+                  <Sparkles className="h-3.5 w-3.5" />
+                  {categoryName}
                 </span>
-              )}
-            </div>
-            
-            <div className="flex flex-wrap items-center gap-3 text-xs font-semibold text-slate-500 dark:text-slate-400">
-              <div className="flex items-center space-x-1">
-                <Star className="h-4 w-4 fill-amber-400 text-amber-400" />
-                <span className="text-slate-800 dark:text-white font-extrabold">{tool.rating}</span>
-                <span>/ 5.0</span>
+                {tool.featured && (
+                  <span className="inline-flex items-center gap-1.5 rounded-full border border-amber-100 bg-amber-50 px-3 py-1.5 text-xs font-black text-amber-700 dark:border-amber-500/20 dark:bg-amber-500/10 dark:text-amber-200">
+                    <Award className="h-3.5 w-3.5" />
+                    Featured pick
+                  </span>
+                )}
               </div>
-              <span>•</span>
-              <span className="text-indigo-600 dark:text-indigo-400">{categoryName}</span>
-              <span>•</span>
-              <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-[10px] uppercase font-bold dark:bg-slate-800">
-                {tool.pricingType}
-              </span>
-            </div>
-          </div>
-        </div>
 
-        {/* Pricing Info & Primary CTA */}
-        <div className="rounded-2xl bg-slate-50 border border-slate-100 p-5 flex flex-col justify-center space-y-4 dark:bg-slate-950 dark:border-slate-800/80">
-          <div>
-            <div className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">{t('pricingStartingFrom')}</div>
-            <div className="text-2xl font-black text-slate-950 dark:text-white mt-1">
-              {tool.startingPrice || 'Free'}
-            </div>
-          </div>
-
-          <a
-            href={tool.affiliateUrl || tool.websiteUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full flex items-center justify-center space-x-2 rounded-xl bg-indigo-600 px-5 py-3 text-sm font-extrabold text-white hover:bg-indigo-700 shadow-md shadow-indigo-600/10 active:scale-98 transition-all"
-          >
-            <span>{t('visitWebsite')}</span>
-            <ExternalLink className="h-4 w-4" />
-          </a>
-        </div>
-      </section>
-
-      {/* 3. CAPABILITIES GRID */}
-      <section className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        {[
-          { label: t('filterBeginnerFriendly'), val: tool.beginnerFriendly },
-          { label: t('filterKoreanSupport'), val: tool.koreanSupport },
-          { label: t('filterMobileSupport'), val: tool.mobileSupport },
-          { label: t('filterCommercialUse'), val: tool.commercialUse }
-        ].map((item, i) => (
-          <div
-            key={i}
-            className={`rounded-2xl border p-4 text-center space-y-1.5 shadow-sm bg-white dark:bg-slate-900 ${
-              item.val
-                ? 'border-emerald-200/60 dark:border-emerald-950/40'
-                : 'border-slate-200/80 dark:border-slate-800'
-            }`}
-          >
-            <div className={`mx-auto flex h-8 w-8 items-center justify-center rounded-lg ${
-              item.val ? 'bg-emerald-50 text-emerald-500 dark:bg-emerald-950/40' : 'bg-slate-50 text-slate-400 dark:bg-slate-800'
-            }`}>
-              {item.val ? <Check className="h-5 w-5" /> : <X className="h-5 w-5 text-slate-400" />}
-            </div>
-            <div className="text-[11px] font-extrabold text-slate-800 dark:text-slate-200 uppercase tracking-wide leading-tight">
-              {item.label}
-            </div>
-          </div>
-        ))}
-      </section>
-
-      {/* 4. MAIN LONG DESCRIPTION / ARTICLE */}
-      <section className="space-y-4">
-        <h2 className="text-xl font-extrabold text-slate-950 dark:text-white border-l-4 border-indigo-600 pl-3 leading-none">
-          Detailed Review & Explanation
-        </h2>
-        <div className="rounded-3xl border border-slate-200/80 bg-white p-6 sm:p-8 shadow-sm dark:border-slate-800 dark:bg-slate-900">
-          <p className="text-sm sm:text-base leading-relaxed font-medium text-slate-700 dark:text-slate-300">
-            {mainDesc}
-          </p>
-        </div>
-      </section>
-
-      {/* 5. PROS AND CONS GRID */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        
-        {/* Pros Card */}
-        <div className="rounded-3xl border border-emerald-200 bg-white p-6 sm:p-8 shadow-sm dark:border-emerald-950/40 dark:bg-slate-900">
-          <div className="flex items-center space-x-2 text-emerald-600 dark:text-emerald-400 font-extrabold text-base mb-4 border-b border-emerald-100 pb-3 dark:border-emerald-950/40">
-            <Check className="h-5 w-5 shrink-0" />
-            <span>{t('pros')}</span>
-          </div>
-          <ul className="space-y-3">
-            {tool.pros.map((pro, i) => (
-              <li key={i} className="text-sm font-semibold text-slate-700 dark:text-slate-300 flex items-start space-x-2">
-                <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded bg-emerald-50 text-emerald-500 font-bold text-xs dark:bg-emerald-950/40">✓</span>
-                <span>{pro[language] || pro['en']}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Cons Card */}
-        <div className="rounded-3xl border border-rose-200 bg-white p-6 sm:p-8 shadow-sm dark:border-rose-950/40 dark:bg-slate-900">
-          <div className="flex items-center space-x-2 text-rose-600 dark:text-rose-400 font-extrabold text-base mb-4 border-b border-rose-100 pb-3 dark:border-rose-950/40">
-            <AlertTriangle className="h-5 w-5 shrink-0" />
-            <span>{t('cons')}</span>
-          </div>
-          <ul className="space-y-3">
-            {tool.cons.map((con, i) => (
-              <li key={i} className="text-sm font-semibold text-slate-700 dark:text-slate-300 flex items-start space-x-2">
-                <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded bg-rose-50 text-rose-500 font-bold text-xs dark:bg-rose-950/40">!</span>
-                <span>{con[language] || con['en']}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-      </section>
-
-      {/* 6. KEY FEATURES & USE CASES TABS */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        
-        {/* Features Column */}
-        <div className="space-y-4">
-          <h3 className="text-base font-extrabold text-slate-950 dark:text-white uppercase tracking-wider">
-            {t('featuresLabel')}
-          </h3>
-          <div className="rounded-3xl border border-slate-200/80 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900 space-y-4">
-            {tool.features.map((feat, i) => (
-              <div key={i} className="flex items-start space-x-3 text-sm">
-                <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-md bg-indigo-50 text-indigo-600 dark:bg-indigo-950/40 dark:text-indigo-400 mt-0.5">
-                  <Compass className="h-3.5 w-3.5" />
+              <div className="flex items-start gap-5">
+                <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-3xl bg-indigo-600 text-4xl font-black text-white shadow-xl shadow-indigo-600/20">
+                  {tool.name.charAt(0)}
                 </div>
-                <p className="font-semibold text-slate-700 dark:text-slate-300">
-                  {feat[language] || feat['en']}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Use Cases Column */}
-        <div className="space-y-4">
-          <h3 className="text-base font-extrabold text-slate-950 dark:text-white uppercase tracking-wider">
-            {t('useCasesLabel')}
-          </h3>
-          <div className="rounded-3xl border border-slate-200/80 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900 space-y-4">
-            {tool.useCases.map((uc, i) => (
-              <div key={i} className="flex items-start space-x-3 text-sm">
-                <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-md bg-purple-50 text-purple-600 dark:bg-purple-950/40 dark:text-purple-400 mt-0.5">
-                  <Lightbulb className="h-3.5 w-3.5" />
+                <div>
+                  <h1 className="text-4xl font-black leading-tight tracking-normal text-slate-950 sm:text-5xl dark:text-white">
+                    {tool.name}
+                  </h1>
+                  <p className="mt-4 max-w-3xl text-base font-medium leading-relaxed text-slate-600 dark:text-slate-300">
+                    {shortDescription}
+                  </p>
                 </div>
-                <p className="font-semibold text-slate-700 dark:text-slate-300">
-                  {uc[language] || uc['en']}
-                </p>
               </div>
-            ))}
+
+              <div className="mt-7 flex flex-wrap gap-2">
+                {tool.tags.slice(0, 6).map((tag) => (
+                  <Link
+                    key={tag}
+                    href={`/tools?q=${encodeURIComponent(tag)}`}
+                    className="rounded-full bg-white px-3 py-1.5 text-xs font-black uppercase text-slate-500 shadow-sm ring-1 ring-slate-200 transition hover:text-indigo-700 hover:ring-indigo-200 dark:bg-slate-900 dark:text-slate-300 dark:ring-slate-700"
+                  >
+                    #{tag}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <aside className="rounded-[28px] border border-white/70 bg-white/90 p-5 shadow-2xl shadow-indigo-950/10 backdrop-blur dark:border-white/10 dark:bg-slate-900/90">
+              <div className="grid grid-cols-2 gap-3">
+                <Metric label="Rating" value={`${tool.rating}`} icon={<Star className="h-4.5 w-4.5 fill-amber-400 text-amber-400" />} />
+                <Metric label="Pricing" value={tool.pricingType} icon={<BadgeCheck className="h-4.5 w-4.5 text-indigo-600" />} />
+                <Metric label="Starts at" value={tool.startingPrice || 'Free'} icon={<Zap className="h-4.5 w-4.5 text-violet-600" />} />
+                <Metric label="Category" value={categoryName} icon={<Target className="h-4.5 w-4.5 text-emerald-600" />} />
+              </div>
+
+              <div className="mt-5 space-y-3">
+                <a
+                  href={tool.affiliateUrl || tool.websiteUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-indigo-600 px-5 py-3.5 text-sm font-black text-white transition hover:bg-indigo-700"
+                >
+                  Visit official site
+                  <ExternalLink className="h-4 w-4" />
+                </a>
+                <button
+                  onClick={toggleCompare}
+                  className={`inline-flex w-full items-center justify-center gap-2 rounded-xl border px-5 py-3.5 text-sm font-black transition ${
+                    isInCompare
+                      ? 'border-emerald-200 bg-emerald-50 text-emerald-700 dark:border-emerald-500/20 dark:bg-emerald-500/10 dark:text-emerald-200'
+                      : 'border-slate-200 bg-white text-slate-800 hover:border-indigo-200 hover:text-indigo-700 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100'
+                  }`}
+                >
+                  {isInCompare ? <CheckCircle2 className="h-4 w-4" /> : <Plus className="h-4 w-4" />}
+                  {isInCompare ? 'Added to compare' : 'Add to compare'}
+                </button>
+                <Link
+                  href="/compare"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3.5 text-sm font-black text-slate-800 transition hover:border-indigo-200 hover:text-indigo-700 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100"
+                >
+                  Open comparison
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
+            </aside>
           </div>
         </div>
-
       </section>
 
-      {/* 7. ALTERNATIVE RECOMMENDATIONS */}
-      {alternatives.length > 0 && (
-        <section className="space-y-5 pt-8 border-t border-slate-200/80 dark:border-slate-800/80">
-          <h3 className="text-lg font-black text-slate-950 dark:text-white">
-            {t('alternatives')} in {categoryName}
-          </h3>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {alternatives.map((alt) => (
-              <Link
-                key={alt.id}
-                href={`/tools/${alt.slug}`}
-                className="group flex items-center justify-between p-5 rounded-2xl border border-slate-200/80 bg-white hover:border-indigo-300 dark:border-slate-800 dark:bg-slate-900 transition-all duration-300 shadow-sm"
+      <main className="mx-auto max-w-7xl space-y-8 px-4 py-8 sm:px-6 lg:px-8">
+        <section className="grid grid-cols-2 gap-3 md:grid-cols-4">
+          {capabilityItems.map((item) => {
+            const enabled = Boolean(tool[item.key]);
+            return (
+              <div
+                key={item.key}
+                className={`rounded-2xl border bg-white p-4 shadow-sm dark:bg-slate-900 ${
+                  enabled
+                    ? 'border-emerald-200 dark:border-emerald-500/20'
+                    : 'border-slate-200 dark:border-slate-800'
+                }`}
               >
-                <div className="flex items-center space-x-3.5">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-slate-50 font-black text-indigo-600 dark:bg-slate-800 group-hover:scale-105 transition-transform">
-                    {alt.name.charAt(0)}
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-slate-950 group-hover:text-indigo-600 dark:text-white transition-colors duration-200">
-                      {alt.name}
-                    </h4>
-                    <div className="flex items-center space-x-1.5 mt-0.5">
-                      <Star className="h-3 w-3 fill-amber-400 text-amber-400" />
-                      <span className="text-[11px] font-semibold text-slate-500">{alt.rating}</span>
+                <div className={`mb-3 flex h-10 w-10 items-center justify-center rounded-xl ${enabled ? 'bg-emerald-50 text-emerald-600 dark:bg-emerald-500/10 dark:text-emerald-200' : 'bg-slate-100 text-slate-400 dark:bg-slate-800'}`}>
+                  {enabled ? <Check className="h-5 w-5" /> : <X className="h-5 w-5" />}
+                </div>
+                <p className="text-sm font-black text-slate-950 dark:text-white">{item.label}</p>
+                <p className="mt-1 text-xs font-bold text-slate-400">{enabled ? 'Supported' : 'Limited'}</p>
+              </div>
+            );
+          })}
+        </section>
+
+        <section className="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_360px]">
+          <article className="rounded-[28px] border border-slate-200 bg-white p-6 shadow-sm sm:p-8 dark:border-slate-800 dark:bg-slate-900">
+            <div className="mb-5 flex items-center gap-2 text-sm font-black uppercase text-indigo-600 dark:text-indigo-300">
+              <ShieldCheck className="h-4.5 w-4.5" />
+              Review summary
+            </div>
+            <h2 className="text-2xl font-black text-slate-950 dark:text-white">What {tool.name} is best for</h2>
+            <p className="mt-4 text-base font-medium leading-relaxed text-slate-600 dark:text-slate-300">
+              {description}
+            </p>
+
+            <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2">
+              <ListPanel title="Pros" tone="emerald" icon={<Check className="h-5 w-5" />} items={tool.pros.map((item) => item[language] || item.en)} />
+              <ListPanel title="Cons" tone="rose" icon={<AlertTriangle className="h-5 w-5" />} items={tool.cons.map((item) => item[language] || item.en)} />
+            </div>
+          </article>
+
+          <aside className="rounded-[28px] border border-indigo-100 bg-indigo-50 p-6 shadow-sm dark:border-indigo-500/20 dark:bg-indigo-500/10">
+            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-indigo-600 shadow-sm dark:bg-slate-950 dark:text-indigo-200">
+              <Lightbulb className="h-6 w-6" />
+            </div>
+            <h2 className="mt-5 text-xl font-black text-slate-950 dark:text-white">Decision notes</h2>
+            <div className="mt-4 space-y-3 text-sm font-medium leading-relaxed text-slate-600 dark:text-slate-300">
+              <p>Choose this when its pricing, category, and practical fit match your workflow.</p>
+              <p>Use the compare button if you are deciding between tools in the same category.</p>
+            </div>
+            <Link
+              href={`/tools?category=${tool.categoryId}`}
+              className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-indigo-600 px-4 py-3 text-sm font-black text-white transition hover:bg-indigo-700"
+            >
+              Browse similar tools
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </aside>
+        </section>
+
+        <section className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+          <DetailPanel
+            title="Key features"
+            icon={<Sparkles className="h-5 w-5" />}
+            items={tool.features.map((item) => item[language] || item.en)}
+          />
+          <DetailPanel
+            title="Best use cases"
+            icon={<Target className="h-5 w-5" />}
+            items={tool.useCases.map((item) => item[language] || item.en)}
+          />
+        </section>
+
+        {alternatives.length > 0 && (
+          <section className="rounded-[28px] border border-slate-200 bg-white p-6 shadow-sm sm:p-8 dark:border-slate-800 dark:bg-slate-900">
+            <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <h2 className="text-2xl font-black text-slate-950 dark:text-white">Alternatives in {categoryName}</h2>
+                <p className="mt-1 text-sm font-medium text-slate-500 dark:text-slate-400">Compare nearby options before you commit.</p>
+              </div>
+              <Link href={`/tools?category=${tool.categoryId}`} className="inline-flex items-center gap-1 text-sm font-black text-indigo-600 hover:text-indigo-700 dark:text-indigo-300">
+                View category
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+              {alternatives.map((alternative) => (
+                <Link
+                  key={alternative.id}
+                  href={`/tools/${alternative.slug}`}
+                  className="group rounded-2xl border border-slate-200 bg-white p-5 transition hover:border-indigo-200 hover:shadow-md dark:border-slate-800 dark:bg-slate-950"
+                >
+                  <div className="mb-4 flex items-center justify-between">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-50 text-xl font-black text-indigo-600 dark:bg-slate-900 dark:text-indigo-200">
+                      {alternative.name.charAt(0)}
+                    </div>
+                    <div className="flex items-center gap-1 text-sm font-black text-slate-600 dark:text-slate-300">
+                      <Star className="h-4 w-4 fill-amber-400 text-amber-400" />
+                      {alternative.rating}
                     </div>
                   </div>
-                </div>
-                
-                <span className="rounded-full bg-slate-50 border border-slate-100 px-2.5 py-1 text-[10px] font-extrabold uppercase dark:bg-slate-800 dark:border-slate-800">
-                  Read
-                </span>
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
+                  <h3 className="text-lg font-black text-slate-950 group-hover:text-indigo-700 dark:text-white dark:group-hover:text-indigo-200">
+                    {alternative.name}
+                  </h3>
+                  <p className="mt-2 line-clamp-2 text-sm font-medium leading-relaxed text-slate-500 dark:text-slate-400">
+                    {alternative.description[language] || alternative.description.en}
+                  </p>
+                  <div className="mt-5 inline-flex items-center gap-1 text-xs font-black text-indigo-600 dark:text-indigo-300">
+                    Read review
+                    <ArrowRight className="h-3.5 w-3.5" />
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
 
-      {/* Disclaimer */}
-      <div className="rounded-xl bg-slate-50 p-4 border border-slate-100 dark:bg-slate-950 dark:border-slate-800/60 text-center">
-        <p className="text-[10px] text-slate-500 leading-relaxed max-w-2xl mx-auto">
-          {t('footerAffiliate')}
-        </p>
-      </div>
-
+        <div className="rounded-2xl border border-slate-200 bg-white p-4 text-center shadow-sm dark:border-slate-800 dark:bg-slate-900">
+          <p className="mx-auto max-w-3xl text-xs font-medium leading-relaxed text-slate-500 dark:text-slate-400">
+            Affiliate disclosure: we may earn a commission if you visit or purchase through links on this site. Tool details are summarized for decision support and should be verified on the official website before purchase.
+          </p>
+        </div>
+      </main>
     </div>
+  );
+}
+
+function Metric({ label, value, icon }: { label: string; value: string; icon: React.ReactNode }) {
+  return (
+    <div className="rounded-2xl border border-slate-100 bg-white p-4 dark:border-slate-800 dark:bg-slate-950">
+      <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-xl bg-slate-50 dark:bg-slate-900">
+        {icon}
+      </div>
+      <div className="min-h-10 break-words text-base font-black leading-tight text-slate-950 dark:text-white">
+        {value}
+      </div>
+      <div className="mt-1 text-xs font-bold uppercase text-slate-400">{label}</div>
+    </div>
+  );
+}
+
+function ListPanel({ title, tone, icon, items }: { title: string; tone: 'emerald' | 'rose'; icon: React.ReactNode; items: string[] }) {
+  const toneClass = tone === 'emerald'
+    ? 'border-emerald-100 bg-emerald-50 text-emerald-700 dark:border-emerald-500/20 dark:bg-emerald-500/10 dark:text-emerald-200'
+    : 'border-rose-100 bg-rose-50 text-rose-700 dark:border-rose-500/20 dark:bg-rose-500/10 dark:text-rose-200';
+
+  return (
+    <div className={`rounded-2xl border p-5 ${toneClass}`}>
+      <div className="mb-4 flex items-center gap-2 text-sm font-black">
+        {icon}
+        {title}
+      </div>
+      <ul className="space-y-3">
+        {items.map((item) => (
+          <li key={item} className="text-sm font-semibold leading-relaxed">
+            {item}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function DetailPanel({ title, icon, items }: { title: string; icon: React.ReactNode; items: string[] }) {
+  return (
+    <section className="rounded-[28px] border border-slate-200 bg-white p-6 shadow-sm sm:p-8 dark:border-slate-800 dark:bg-slate-900">
+      <div className="mb-6 flex items-center gap-2 text-lg font-black text-slate-950 dark:text-white">
+        <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 dark:bg-indigo-500/10 dark:text-indigo-200">
+          {icon}
+        </span>
+        {title}
+      </div>
+      <div className="space-y-3">
+        {items.map((item) => (
+          <div key={item} className="flex items-start gap-3 rounded-2xl border border-slate-100 bg-slate-50 p-4 dark:border-slate-800 dark:bg-slate-950">
+            <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-indigo-600 dark:text-indigo-300" />
+            <p className="text-sm font-semibold leading-relaxed text-slate-600 dark:text-slate-300">{item}</p>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }
