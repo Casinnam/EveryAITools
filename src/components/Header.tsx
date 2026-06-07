@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useLanguage } from '../context/LanguageContext';
+import type { Language } from '../data/translations';
 import { Menu, X, Compass, Globe, HelpCircle, ArrowRight } from 'lucide-react';
 
 export const Header: React.FC = () => {
@@ -27,20 +28,20 @@ export const Header: React.FC = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-slate-200/80 bg-white/80 backdrop-blur-md dark:border-slate-800/80 dark:bg-slate-900/80 transition-all duration-300">
-      <div className="mx-auto flex max-w-7xl h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-7xl h-16 items-center justify-between gap-3 px-4 sm:px-6 lg:px-8">
         
         {/* LOGO */}
-        <Link href="/" className="flex items-center space-x-2 group">
+        <Link href="/" className="flex min-w-0 items-center space-x-2 group">
           <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 text-white shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-300">
             <Compass className="h-5 w-5 animate-pulse" />
           </div>
-          <span className="text-xl font-bold tracking-tight bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 bg-clip-text text-transparent dark:from-white dark:to-slate-200">
+          <span className="whitespace-nowrap text-lg font-bold tracking-tight bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 bg-clip-text text-transparent dark:from-white dark:to-slate-200 sm:text-xl">
             Every AI Tools
           </span>
         </Link>
 
         {/* DESKTOP NAV */}
-        <nav className="hidden md:flex space-x-1 lg:space-x-2">
+        <nav className="hidden lg:flex space-x-1 xl:space-x-2">
           {navItems.map((item) => (
             <Link
               key={item.path}
@@ -57,7 +58,7 @@ export const Header: React.FC = () => {
         </nav>
 
         {/* UTILITIES (Language Switcher, Beginner Mode Toggle, Desktop Admin Link) */}
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden lg:flex items-center space-x-4">
           
           {/* Beginner Mode Toggle */}
           <div className="flex items-center space-x-2 px-3 py-1.5 rounded-full border border-indigo-100 bg-indigo-50/30 dark:border-indigo-950 dark:bg-indigo-950/20">
@@ -82,7 +83,7 @@ export const Header: React.FC = () => {
             <Globe className="h-4 w-4 text-slate-400" />
             <select
               value={language}
-              onChange={(e) => setLanguage(e.target.value as any)}
+              onChange={(e) => setLanguage(e.target.value as Language)}
               className="bg-transparent text-xs font-semibold text-slate-700 dark:text-slate-300 focus:outline-none cursor-pointer hover:text-indigo-600"
             >
               <option value="en" className="dark:bg-slate-900">English</option>
@@ -101,12 +102,13 @@ export const Header: React.FC = () => {
         </div>
 
         {/* MOBILE MENU BUTTON */}
-        <div className="flex md:hidden items-center space-x-2">
+        <div className="flex lg:hidden items-center space-x-2">
           {/* Quick Language toggle on Mobile */}
           <button
             onClick={() => setLanguage(language === 'en' ? 'ko' : 'en')}
             className="p-2 rounded-lg text-slate-500 hover:bg-slate-100 focus:outline-none"
-            title="Toggle Language"
+            title={t('language')}
+            aria-label={t('language')}
           >
             <Globe className="h-5 w-5 text-indigo-500" />
           </button>
@@ -114,6 +116,8 @@ export const Header: React.FC = () => {
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="p-2 rounded-lg text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800"
+            aria-label="Toggle menu"
+            aria-expanded={mobileMenuOpen}
           >
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -123,7 +127,7 @@ export const Header: React.FC = () => {
 
       {/* MOBILE DROPDOWN NAV */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900 px-4 pt-2 pb-4 space-y-3 animate-in slide-in-from-top-4 duration-200">
+        <div className="lg:hidden border-t border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900 px-4 pt-2 pb-4 space-y-3 animate-in slide-in-from-top-4 duration-200">
           <nav className="flex flex-col space-y-1">
             {navItems.map((item) => (
               <Link
