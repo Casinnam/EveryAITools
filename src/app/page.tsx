@@ -7,6 +7,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import { categories } from '@/data/categories';
 import { tools } from '@/data/tools';
 import { blogPosts } from '@/data/blogPosts';
+import { getToolText } from '@/lib/localizedToolText';
 import {
   ArrowRight,
   BarChart3,
@@ -278,7 +279,12 @@ export default function HomePage() {
                       <span className="text-xs text-slate-400">({Math.round(tool.rating * 4.8)}K)</span>
                     </div>
                     <p className="mt-4 line-clamp-3 text-sm font-medium leading-relaxed text-slate-500 dark:text-slate-400">
-                      {tool.description[language] || tool.description.en}
+                      {getToolText(
+                        tool,
+                        'description',
+                        language,
+                        categories.find((category) => category.id === tool.categoryId)?.name[language] || 'AI Tool',
+                      )}
                     </p>
                   </div>
                   <div className="mt-5 flex items-center justify-between">

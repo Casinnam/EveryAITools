@@ -4,6 +4,8 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Tool } from '../types';
 import { useLanguage } from '../context/LanguageContext';
+import { categories } from '../data/categories';
+import { getToolText } from '../lib/localizedToolText';
 import { Star, ExternalLink, ArrowRight, CheckCircle2, Plus } from 'lucide-react';
 
 interface ToolCardProps {
@@ -13,6 +15,8 @@ interface ToolCardProps {
 export const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
   const { language, isBeginnerMode, t } = useLanguage();
   const [isInCompare, setIsInCompare] = useState(false);
+  const category = categories.find((item) => item.id === tool.categoryId);
+  const categoryName = category ? category.name[language] || category.name.en : 'AI Tool';
 
   // Check if this tool is currently in the comparison list
   useEffect(() => {
@@ -58,10 +62,7 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
 
   // Determine which description text to display based on Beginner Mode and Language
   const displayDescription = () => {
-    if (isBeginnerMode && tool.beginnerDescription) {
-      return tool.beginnerDescription[language] || tool.beginnerDescription['en'];
-    }
-    return tool.description[language] || tool.description['en'];
+    return getToolText(tool, isBeginnerMode && tool.beginnerDescription ? 'beginnerDescription' : 'description', language, categoryName);
   };
 
   // Pricing badge color scheme

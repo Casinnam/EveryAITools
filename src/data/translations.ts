@@ -179,6 +179,7 @@ export const translations: TranslationDict = {
   detailSupported: { en: 'Supported', ko: '지원' },
   detailLimited: { en: 'Limited', ko: '제한적' },
   detailReviewSummary: { en: 'Review summary', ko: '리뷰 요약' },
+  detailFaqTitle: { en: 'Frequently asked questions', ko: '자주 하는 질문' },
   detailBestForPrefix: { en: 'What', ko: '' },
   detailBestForSuffix: { en: 'is best for', ko: '추천 활용' },
   detailDecisionNotes: { en: 'Decision notes', ko: '선택 가이드' },

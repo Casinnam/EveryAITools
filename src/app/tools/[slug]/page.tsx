@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import { useLanguage } from '@/context/LanguageContext';
 import { tools } from '@/data/tools';
 import { categories } from '@/data/categories';
+import { getToolFaqs, getToolList, getToolText } from '@/lib/localizedToolText';
 import {
   AlertTriangle,
   ArrowLeft,
@@ -50,10 +51,13 @@ export default function ToolDetailPage({ params }: ToolDetailPageProps) {
 
   const category = categories.find((item) => item.id === tool.categoryId);
   const categoryName = category ? category.name[language] || category.name.en : 'AI Tool';
-  const description = isBeginnerMode && tool.beginnerDescription
-    ? tool.beginnerDescription[language] || tool.beginnerDescription.en
-    : tool.longDescription[language] || tool.longDescription.en;
-  const shortDescription = tool.description[language] || tool.description.en;
+  const description = getToolText(tool, isBeginnerMode && tool.beginnerDescription ? 'beginnerDescription' : 'longDescription', language, categoryName);
+  const shortDescription = getToolText(tool, 'description', language, categoryName);
+  const featureItems = getToolList(tool, 'features', language);
+  const proItems = getToolList(tool, 'pros', language);
+  const conItems = getToolList(tool, 'cons', language);
+  const useCaseItems = getToolList(tool, 'useCases', language);
+  const faqItems = getToolFaqs(tool, language, categoryName);
   const pricingLabel = tool.pricingType === 'Free' ? t('pricingFree') : tool.pricingType === 'Freemium' ? t('pricingFreemium') : t('pricingPaid');
   const bestForTitle = language === 'ko'
     ? `${tool.name} ${t('detailBestForSuffix')}`
@@ -214,8 +218,8 @@ export default function ToolDetailPage({ params }: ToolDetailPageProps) {
             </p>
 
             <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2">
-              <ListPanel title={t('pros')} tone="emerald" icon={<Check className="h-5 w-5" />} items={tool.pros.map((item) => item[language] || item.en)} />
-              <ListPanel title={t('cons')} tone="rose" icon={<AlertTriangle className="h-5 w-5" />} items={tool.cons.map((item) => item[language] || item.en)} />
+              <ListPanel title={t('pros')} tone="emerald" icon={<Check className="h-5 w-5" />} items={proItems} />
+              <ListPanel title={t('cons')} tone="rose" icon={<AlertTriangle className="h-5 w-5" />} items={conItems} />
             </div>
           </article>
 
@@ -242,13 +246,30 @@ export default function ToolDetailPage({ params }: ToolDetailPageProps) {
           <DetailPanel
             title={t('featuresLabel')}
             icon={<Sparkles className="h-5 w-5" />}
-            items={tool.features.map((item) => item[language] || item.en)}
+            items={featureItems}
           />
           <DetailPanel
             title={t('useCasesLabel')}
             icon={<Target className="h-5 w-5" />}
-            items={tool.useCases.map((item) => item[language] || item.en)}
+            items={useCaseItems}
           />
+        </section>
+
+        <section className="rounded-[28px] border border-slate-200 bg-white p-6 shadow-sm sm:p-8 dark:border-slate-800 dark:bg-slate-900">
+          <div className="mb-6 flex items-center gap-2 text-lg font-black text-slate-950 dark:text-white">
+            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 dark:bg-indigo-500/10 dark:text-indigo-200">
+              <Lightbulb className="h-5 w-5" />
+            </span>
+            {t('detailFaqTitle')}
+          </div>
+          <div className="divide-y divide-slate-100 dark:divide-slate-800">
+            {faqItems.map((faq) => (
+              <div key={faq.question} className="py-5 first:pt-0 last:pb-0">
+                <h3 className="text-base font-black text-slate-950 dark:text-white">{faq.question}</h3>
+                <p className="mt-2 text-sm font-medium leading-relaxed text-slate-600 dark:text-slate-300">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
         </section>
 
         {alternatives.length > 0 && (
@@ -284,7 +305,7 @@ export default function ToolDetailPage({ params }: ToolDetailPageProps) {
                     {alternative.name}
                   </h3>
                   <p className="mt-2 line-clamp-2 text-sm font-medium leading-relaxed text-slate-500 dark:text-slate-400">
-                    {alternative.description[language] || alternative.description.en}
+                    {getToolText(alternative, 'description', language, categoryName)}
                   </p>
                   <div className="mt-5 inline-flex items-center gap-1 text-xs font-black text-indigo-600 dark:text-indigo-300">
                     {t('readReview')}

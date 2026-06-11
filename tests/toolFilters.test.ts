@@ -5,11 +5,11 @@ import { tools } from '../src/data/tools';
 
 describe('tool filtering', () => {
   it('parses URL search params into typed filter state', () => {
-    const params = new URLSearchParams('q=chatgpt&category=blog-writing&pricing=Freemium&beginner=true&korean=true&mobile=true&commercial=true');
+    const params = new URLSearchParams('q=chatgpt&category=writing&pricing=Freemium&beginner=true&korean=true&mobile=true&commercial=true');
 
     assert.deepEqual(parseToolFilters(params), {
       query: 'chatgpt',
-      category: 'blog-writing',
+      category: 'writing',
       pricing: 'Freemium',
       beginner: true,
       korean: true,
@@ -21,7 +21,7 @@ describe('tool filtering', () => {
   it('filters by text, category, pricing, and support toggles', () => {
     const result = filterTools(tools, {
       query: 'chatgpt',
-      category: 'blog-writing',
+      category: 'writing',
       pricing: 'Freemium',
       beginner: true,
       korean: true,

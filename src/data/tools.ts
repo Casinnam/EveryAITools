@@ -647,8 +647,29 @@ const baseTools: Tool[] = [
   ...additionalTools
 ];
 
-const existingIds = new Set(baseTools.map(t => t.id));
-const filteredGeneratedTools = generatedTools.filter(t => !existingIds.has(t.id));
+const legacyCategoryMap: Record<string, string> = {
+  'blog-writing': 'writing',
+  'youtube-tools': 'video-generation',
+  'coding-ai': 'coding-dev',
+  'presentation-ai': 'presentation-docs',
+  'productivity-ai': 'productivity-education',
+  'business-ai': 'ecommerce-business',
+  'marketing-ai': 'marketing-seo',
+  'design-ai': 'design-ui',
+};
 
-export const tools: Tool[] = [...baseTools, ...filteredGeneratedTools];
+const normalizeTool = (tool: Tool): Tool => ({
+  ...tool,
+  categoryId: legacyCategoryMap[tool.categoryId] ?? tool.categoryId,
+});
+
+const toolsById = new Map<string, Tool>();
+
+for (const tool of [...baseTools, ...generatedTools].map(normalizeTool)) {
+  if (!toolsById.has(tool.id)) {
+    toolsById.set(tool.id, tool);
+  }
+}
+
+export const tools: Tool[] = [...toolsById.values()];
 export default tools;
