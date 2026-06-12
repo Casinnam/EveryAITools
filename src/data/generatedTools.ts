@@ -14,7 +14,7 @@ export const generatedTools: Tool[] = [
       en: 'ChatGPT is an AI tool designed for chatbots & assistants. It provides essential features to help users automate and improve their workflows.',
       ko: 'ChatGPT 도구는 챗봇 및 비서 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=ChatGPT+AI',
+    websiteUrl: 'https://chatgpt.com',
     categoryId: 'chatbots',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -50,7 +50,7 @@ export const generatedTools: Tool[] = [
       en: 'Claude is an AI tool designed for chatbots & assistants. It provides essential features to help users automate and improve their workflows.',
       ko: 'Claude 도구는 챗봇 및 비서 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Claude+AI',
+    websiteUrl: 'https://claude.ai',
     categoryId: 'chatbots',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -86,7 +86,7 @@ export const generatedTools: Tool[] = [
       en: 'Gemini is an AI tool designed for chatbots & assistants. It provides essential features to help users automate and improve their workflows.',
       ko: 'Gemini 도구는 챗봇 및 비서 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Gemini+AI',
+    websiteUrl: 'https://gemini.google.com',
     categoryId: 'chatbots',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -122,7 +122,7 @@ export const generatedTools: Tool[] = [
       en: 'Perplexity is an AI tool designed for chatbots & assistants. It provides essential features to help users automate and improve their workflows.',
       ko: 'Perplexity 도구는 챗봇 및 비서 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Perplexity+AI',
+    websiteUrl: 'https://www.perplexity.ai',
     categoryId: 'chatbots',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -158,7 +158,7 @@ export const generatedTools: Tool[] = [
       en: 'Microsoft Copilot is an AI tool designed for chatbots & assistants. It provides essential features to help users automate and improve their workflows.',
       ko: 'Microsoft Copilot 도구는 챗봇 및 비서 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Microsoft%20Copilot+AI',
+    websiteUrl: 'https://copilot.microsoft.com',
     categoryId: 'chatbots',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -194,7 +194,7 @@ export const generatedTools: Tool[] = [
       en: 'Grok is an AI tool designed for chatbots & assistants. It provides essential features to help users automate and improve their workflows.',
       ko: 'Grok 도구는 챗봇 및 비서 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Grok+AI',
+    websiteUrl: 'https://grok.com',
     categoryId: 'chatbots',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -230,7 +230,7 @@ export const generatedTools: Tool[] = [
       en: 'Poe is an AI tool designed for chatbots & assistants. It provides essential features to help users automate and improve their workflows.',
       ko: 'Poe 도구는 챗봇 및 비서 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Poe+AI',
+    websiteUrl: 'https://poe.com',
     categoryId: 'chatbots',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -266,7 +266,7 @@ export const generatedTools: Tool[] = [
       en: 'You.com is an AI tool designed for chatbots & assistants. It provides essential features to help users automate and improve their workflows.',
       ko: 'You.com 도구는 챗봇 및 비서 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=You.com+AI',
+    websiteUrl: 'https://you.com',
     categoryId: 'chatbots',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -302,7 +302,7 @@ export const generatedTools: Tool[] = [
       en: 'Phind is an AI tool designed for chatbots & assistants. It provides essential features to help users automate and improve their workflows.',
       ko: 'Phind 도구는 챗봇 및 비서 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Phind+AI',
+    websiteUrl: 'https://www.phind.com',
     categoryId: 'chatbots',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -338,7 +338,7 @@ export const generatedTools: Tool[] = [
       en: 'HuggingChat is an AI tool designed for chatbots & assistants. It provides essential features to help users automate and improve their workflows.',
       ko: 'HuggingChat 도구는 챗봇 및 비서 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=HuggingChat+AI',
+    websiteUrl: 'https://huggingface.co/chat/',
     categoryId: 'chatbots',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -374,7 +374,7 @@ export const generatedTools: Tool[] = [
       en: 'Jasper is an AI tool designed for writing & copywriting. It provides essential features to help users automate and improve their workflows.',
       ko: 'Jasper 도구는 글쓰기 및 카피라이팅 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Jasper+AI',
+    websiteUrl: 'https://www.jasper.ai',
     categoryId: 'writing',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -410,7 +410,7 @@ export const generatedTools: Tool[] = [
       en: 'Copy.ai is an AI tool designed for writing & copywriting. It provides essential features to help users automate and improve their workflows.',
       ko: 'Copy.ai 도구는 글쓰기 및 카피라이팅 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Copy.ai+AI',
+    websiteUrl: 'https://www.copy.ai',
     categoryId: 'writing',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -446,7 +446,7 @@ export const generatedTools: Tool[] = [
       en: 'Writesonic is an AI tool designed for writing & copywriting. It provides essential features to help users automate and improve their workflows.',
       ko: 'Writesonic 도구는 글쓰기 및 카피라이팅 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Writesonic+AI',
+    websiteUrl: 'https://writesonic.com',
     categoryId: 'writing',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -482,7 +482,7 @@ export const generatedTools: Tool[] = [
       en: 'Rytr is an AI tool designed for writing & copywriting. It provides essential features to help users automate and improve their workflows.',
       ko: 'Rytr 도구는 글쓰기 및 카피라이팅 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Rytr+AI',
+    websiteUrl: 'https://rytr.me',
     categoryId: 'writing',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -518,7 +518,7 @@ export const generatedTools: Tool[] = [
       en: 'Anyword is an AI tool designed for writing & copywriting. It provides essential features to help users automate and improve their workflows.',
       ko: 'Anyword 도구는 글쓰기 및 카피라이팅 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Anyword+AI',
+    websiteUrl: 'https://www.anyword.com',
     categoryId: 'writing',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -554,7 +554,7 @@ export const generatedTools: Tool[] = [
       en: 'Grammarly is an AI tool designed for writing & copywriting. It provides essential features to help users automate and improve their workflows.',
       ko: 'Grammarly 도구는 글쓰기 및 카피라이팅 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Grammarly+AI',
+    websiteUrl: 'https://www.grammarly.com',
     categoryId: 'writing',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -590,7 +590,7 @@ export const generatedTools: Tool[] = [
       en: 'QuillBot is an AI tool designed for writing & copywriting. It provides essential features to help users automate and improve their workflows.',
       ko: 'QuillBot 도구는 글쓰기 및 카피라이팅 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=QuillBot+AI',
+    websiteUrl: 'https://quillbot.com',
     categoryId: 'writing',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -626,7 +626,7 @@ export const generatedTools: Tool[] = [
       en: 'Wordtune is an AI tool designed for writing & copywriting. It provides essential features to help users automate and improve their workflows.',
       ko: 'Wordtune 도구는 글쓰기 및 카피라이팅 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Wordtune+AI',
+    websiteUrl: 'https://www.wordtune.com',
     categoryId: 'writing',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -662,7 +662,7 @@ export const generatedTools: Tool[] = [
       en: 'Sudowrite is an AI tool designed for writing & copywriting. It provides essential features to help users automate and improve their workflows.',
       ko: 'Sudowrite 도구는 글쓰기 및 카피라이팅 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Sudowrite+AI',
+    websiteUrl: 'https://www.sudowrite.com',
     categoryId: 'writing',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -698,7 +698,7 @@ export const generatedTools: Tool[] = [
       en: 'HyperWrite is an AI tool designed for writing & copywriting. It provides essential features to help users automate and improve their workflows.',
       ko: 'HyperWrite 도구는 글쓰기 및 카피라이팅 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=HyperWrite+AI',
+    websiteUrl: 'https://www.hyperwriteai.com',
     categoryId: 'writing',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -734,7 +734,7 @@ export const generatedTools: Tool[] = [
       en: 'Notion AI is an AI tool designed for writing & copywriting. It provides essential features to help users automate and improve their workflows.',
       ko: 'Notion AI 도구는 글쓰기 및 카피라이팅 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Notion%20AI+AI',
+    websiteUrl: 'https://www.notion.com/product/ai',
     categoryId: 'writing',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -770,7 +770,7 @@ export const generatedTools: Tool[] = [
       en: 'Craft AI is an AI tool designed for writing & copywriting. It provides essential features to help users automate and improve their workflows.',
       ko: 'Craft AI 도구는 글쓰기 및 카피라이팅 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Craft%20AI+AI',
+    websiteUrl: 'https://www.craft.do',
     categoryId: 'writing',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -806,7 +806,7 @@ export const generatedTools: Tool[] = [
       en: 'Lex is an AI tool designed for writing & copywriting. It provides essential features to help users automate and improve their workflows.',
       ko: 'Lex 도구는 글쓰기 및 카피라이팅 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Lex+AI',
+    websiteUrl: 'https://lex.page',
     categoryId: 'writing',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -842,7 +842,7 @@ export const generatedTools: Tool[] = [
       en: 'Frase is an AI tool designed for writing & copywriting. It provides essential features to help users automate and improve their workflows.',
       ko: 'Frase 도구는 글쓰기 및 카피라이팅 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Frase+AI',
+    websiteUrl: 'https://www.frase.io',
     categoryId: 'writing',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -878,7 +878,7 @@ export const generatedTools: Tool[] = [
       en: 'Surfer AI is an AI tool designed for writing & copywriting. It provides essential features to help users automate and improve their workflows.',
       ko: 'Surfer AI 도구는 글쓰기 및 카피라이팅 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Surfer%20AI+AI',
+    websiteUrl: 'https://surferseo.com',
     categoryId: 'writing',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -914,7 +914,7 @@ export const generatedTools: Tool[] = [
       en: 'Semrush SEO Writing Assistant is an AI tool designed for writing & copywriting. It provides essential features to help users automate and improve their workflows.',
       ko: 'Semrush SEO Writing Assistant 도구는 글쓰기 및 카피라이팅 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Semrush%20SEO%20Writing%20Assistant+AI',
+    websiteUrl: 'https://www.semrush.com/swa/',
     categoryId: 'writing',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -950,7 +950,7 @@ export const generatedTools: Tool[] = [
       en: 'Conductor AI Writing Assistant is an AI tool designed for writing & copywriting. It provides essential features to help users automate and improve their workflows.',
       ko: 'Conductor AI Writing Assistant 도구는 글쓰기 및 카피라이팅 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Conductor%20AI%20Writing%20Assistant+AI',
+    websiteUrl: 'https://www.conductor.com',
     categoryId: 'writing',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -986,7 +986,7 @@ export const generatedTools: Tool[] = [
       en: 'Writer is an AI tool designed for writing & copywriting. It provides essential features to help users automate and improve their workflows.',
       ko: 'Writer 도구는 글쓰기 및 카피라이팅 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Writer+AI',
+    websiteUrl: 'https://writer.com',
     categoryId: 'writing',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1022,7 +1022,7 @@ export const generatedTools: Tool[] = [
       en: 'Simplified is an AI tool designed for writing & copywriting. It provides essential features to help users automate and improve their workflows.',
       ko: 'Simplified 도구는 글쓰기 및 카피라이팅 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Simplified+AI',
+    websiteUrl: 'https://simplified.com',
     categoryId: 'writing',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1058,7 +1058,7 @@ export const generatedTools: Tool[] = [
       en: 'Neuroflash is an AI tool designed for writing & copywriting. It provides essential features to help users automate and improve their workflows.',
       ko: 'Neuroflash 도구는 글쓰기 및 카피라이팅 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Neuroflash+AI',
+    websiteUrl: 'https://neuroflash.com',
     categoryId: 'writing',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1094,7 +1094,7 @@ export const generatedTools: Tool[] = [
       en: 'Perplexity is an AI tool designed for research & search. It provides essential features to help users automate and improve their workflows.',
       ko: 'Perplexity 도구는 리서치 및 검색 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Perplexity+AI',
+    websiteUrl: 'https://www.perplexity.ai',
     categoryId: 'research',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1130,7 +1130,7 @@ export const generatedTools: Tool[] = [
       en: 'Elicit is an AI tool designed for research & search. It provides essential features to help users automate and improve their workflows.',
       ko: 'Elicit 도구는 리서치 및 검색 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Elicit+AI',
+    websiteUrl: 'https://elicit.com',
     categoryId: 'research',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1166,7 +1166,7 @@ export const generatedTools: Tool[] = [
       en: 'Consensus is an AI tool designed for research & search. It provides essential features to help users automate and improve their workflows.',
       ko: 'Consensus 도구는 리서치 및 검색 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Consensus+AI',
+    websiteUrl: 'https://consensus.app',
     categoryId: 'research',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1202,7 +1202,7 @@ export const generatedTools: Tool[] = [
       en: 'Semantic Scholar is an AI tool designed for research & search. It provides essential features to help users automate and improve their workflows.',
       ko: 'Semantic Scholar 도구는 리서치 및 검색 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Semantic%20Scholar+AI',
+    websiteUrl: 'https://www.semanticscholar.org',
     categoryId: 'research',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1238,7 +1238,7 @@ export const generatedTools: Tool[] = [
       en: 'Scite is an AI tool designed for research & search. It provides essential features to help users automate and improve their workflows.',
       ko: 'Scite 도구는 리서치 및 검색 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Scite+AI',
+    websiteUrl: 'https://scite.ai',
     categoryId: 'research',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1274,7 +1274,7 @@ export const generatedTools: Tool[] = [
       en: 'Research Rabbit is an AI tool designed for research & search. It provides essential features to help users automate and improve their workflows.',
       ko: 'Research Rabbit 도구는 리서치 및 검색 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Research%20Rabbit+AI',
+    websiteUrl: 'https://www.researchrabbit.ai',
     categoryId: 'research',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1310,7 +1310,7 @@ export const generatedTools: Tool[] = [
       en: 'Connected Papers is an AI tool designed for research & search. It provides essential features to help users automate and improve their workflows.',
       ko: 'Connected Papers 도구는 리서치 및 검색 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Connected%20Papers+AI',
+    websiteUrl: 'https://www.connectedpapers.com',
     categoryId: 'research',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1346,7 +1346,7 @@ export const generatedTools: Tool[] = [
       en: 'Google Scholar is an AI tool designed for research & search. It provides essential features to help users automate and improve their workflows.',
       ko: 'Google Scholar 도구는 리서치 및 검색 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Google%20Scholar+AI',
+    websiteUrl: 'https://scholar.google.com',
     categoryId: 'research',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1382,7 +1382,7 @@ export const generatedTools: Tool[] = [
       en: 'NotebookLM is an AI tool designed for research & search. It provides essential features to help users automate and improve their workflows.',
       ko: 'NotebookLM 도구는 리서치 및 검색 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=NotebookLM+AI',
+    websiteUrl: 'https://notebooklm.google.com',
     categoryId: 'research',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1418,7 +1418,7 @@ export const generatedTools: Tool[] = [
       en: 'Genei is an AI tool designed for research & search. It provides essential features to help users automate and improve their workflows.',
       ko: 'Genei 도구는 리서치 및 검색 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Genei+AI',
+    websiteUrl: 'https://www.genei.io',
     categoryId: 'research',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1454,7 +1454,7 @@ export const generatedTools: Tool[] = [
       en: 'Humata AI is an AI tool designed for research & search. It provides essential features to help users automate and improve their workflows.',
       ko: 'Humata AI 도구는 리서치 및 검색 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Humata%20AI+AI',
+    websiteUrl: 'https://www.humata.ai',
     categoryId: 'research',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1490,7 +1490,7 @@ export const generatedTools: Tool[] = [
       en: 'ChatPDF is an AI tool designed for research & search. It provides essential features to help users automate and improve their workflows.',
       ko: 'ChatPDF 도구는 리서치 및 검색 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=ChatPDF+AI',
+    websiteUrl: 'https://www.chatpdf.com',
     categoryId: 'research',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1526,7 +1526,7 @@ export const generatedTools: Tool[] = [
       en: 'SciSpace is an AI tool designed for research & search. It provides essential features to help users automate and improve their workflows.',
       ko: 'SciSpace 도구는 리서치 및 검색 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=SciSpace+AI',
+    websiteUrl: 'https://scispace.com',
     categoryId: 'research',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1562,7 +1562,7 @@ export const generatedTools: Tool[] = [
       en: 'Scholarcy is an AI tool designed for research & search. It provides essential features to help users automate and improve their workflows.',
       ko: 'Scholarcy 도구는 리서치 및 검색 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Scholarcy+AI',
+    websiteUrl: 'https://www.scholarcy.com',
     categoryId: 'research',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1598,7 +1598,7 @@ export const generatedTools: Tool[] = [
       en: 'AskYourPDF is an AI tool designed for research & search. It provides essential features to help users automate and improve their workflows.',
       ko: 'AskYourPDF 도구는 리서치 및 검색 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=AskYourPDF+AI',
+    websiteUrl: 'https://askyourpdf.com',
     categoryId: 'research',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1634,7 +1634,7 @@ export const generatedTools: Tool[] = [
       en: 'Perlego AI is an AI tool designed for research & search. It provides essential features to help users automate and improve their workflows.',
       ko: 'Perlego AI 도구는 리서치 및 검색 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Perlego%20AI+AI',
+    websiteUrl: 'https://www.perlego.com',
     categoryId: 'research',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1670,7 +1670,7 @@ export const generatedTools: Tool[] = [
       en: 'You.com Research is an AI tool designed for research & search. It provides essential features to help users automate and improve their workflows.',
       ko: 'You.com Research 도구는 리서치 및 검색 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=You.com%20Research+AI',
+    websiteUrl: 'https://you.com',
     categoryId: 'research',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1706,7 +1706,7 @@ export const generatedTools: Tool[] = [
       en: 'Komo Search is an AI tool designed for research & search. It provides essential features to help users automate and improve their workflows.',
       ko: 'Komo Search 도구는 리서치 및 검색 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Komo%20Search+AI',
+    websiteUrl: 'https://komo.ai',
     categoryId: 'research',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1742,7 +1742,7 @@ export const generatedTools: Tool[] = [
       en: 'Andi is an AI tool designed for research & search. It provides essential features to help users automate and improve their workflows.',
       ko: 'Andi 도구는 리서치 및 검색 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Andi+AI',
+    websiteUrl: 'https://andisearch.com',
     categoryId: 'research',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1778,7 +1778,7 @@ export const generatedTools: Tool[] = [
       en: 'Exa is an AI tool designed for research & search. It provides essential features to help users automate and improve their workflows.',
       ko: 'Exa 도구는 리서치 및 검색 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Exa+AI',
+    websiteUrl: 'https://exa.ai',
     categoryId: 'research',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1814,7 +1814,7 @@ export const generatedTools: Tool[] = [
       en: 'Midjourney is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Midjourney 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Midjourney+AI',
+    websiteUrl: 'https://www.midjourney.com',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1850,7 +1850,7 @@ export const generatedTools: Tool[] = [
       en: 'ChatGPT Image is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'ChatGPT Image 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=ChatGPT%20Image+AI',
+    websiteUrl: 'https://chatgpt.com',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1886,7 +1886,7 @@ export const generatedTools: Tool[] = [
       en: 'DALL·E is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'DALL·E 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=DALL%C2%B7E+AI',
+    websiteUrl: 'https://openai.com/index/dall-e-3/',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1922,7 +1922,7 @@ export const generatedTools: Tool[] = [
       en: 'Adobe Firefly is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Adobe Firefly 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Adobe%20Firefly+AI',
+    websiteUrl: 'https://www.adobe.com/products/firefly.html',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1958,7 +1958,7 @@ export const generatedTools: Tool[] = [
       en: 'Leonardo AI is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Leonardo AI 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Leonardo%20AI+AI',
+    websiteUrl: 'https://leonardo.ai',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -1994,7 +1994,7 @@ export const generatedTools: Tool[] = [
       en: 'Ideogram is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Ideogram 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Ideogram+AI',
+    websiteUrl: 'https://ideogram.ai',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2030,7 +2030,7 @@ export const generatedTools: Tool[] = [
       en: 'Stable Diffusion is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Stable Diffusion 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Stable%20Diffusion+AI',
+    websiteUrl: 'https://stability.ai',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2066,7 +2066,7 @@ export const generatedTools: Tool[] = [
       en: 'DreamStudio is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'DreamStudio 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=DreamStudio+AI',
+    websiteUrl: 'https://dreamstudio.ai',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2102,7 +2102,7 @@ export const generatedTools: Tool[] = [
       en: 'FLUX is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'FLUX 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=FLUX+AI',
+    websiteUrl: 'https://bfl.ai',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2138,7 +2138,7 @@ export const generatedTools: Tool[] = [
       en: 'Canva AI is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Canva AI 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Canva%20AI+AI',
+    websiteUrl: 'https://www.canva.com/ai/',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2174,7 +2174,7 @@ export const generatedTools: Tool[] = [
       en: 'Freepik AI is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Freepik AI 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Freepik%20AI+AI',
+    websiteUrl: 'https://www.freepik.com/ai',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2210,7 +2210,7 @@ export const generatedTools: Tool[] = [
       en: 'Krea AI is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Krea AI 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Krea%20AI+AI',
+    websiteUrl: 'https://www.krea.ai',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2246,7 +2246,7 @@ export const generatedTools: Tool[] = [
       en: 'Playground AI is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Playground AI 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Playground%20AI+AI',
+    websiteUrl: 'https://playground.com',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2282,7 +2282,7 @@ export const generatedTools: Tool[] = [
       en: 'NightCafe is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'NightCafe 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=NightCafe+AI',
+    websiteUrl: 'https://creator.nightcafe.studio',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2318,7 +2318,7 @@ export const generatedTools: Tool[] = [
       en: 'BlueWillow is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'BlueWillow 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=BlueWillow+AI',
+    websiteUrl: 'https://www.bluewillow.ai',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2354,7 +2354,7 @@ export const generatedTools: Tool[] = [
       en: 'Mage.space is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Mage.space 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Mage.space+AI',
+    websiteUrl: 'https://www.mage.space',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2390,7 +2390,7 @@ export const generatedTools: Tool[] = [
       en: 'Clipdrop is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Clipdrop 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Clipdrop+AI',
+    websiteUrl: 'https://clipdrop.co',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2426,7 +2426,7 @@ export const generatedTools: Tool[] = [
       en: 'Recraft is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Recraft 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Recraft+AI',
+    websiteUrl: 'https://www.recraft.ai',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2462,7 +2462,7 @@ export const generatedTools: Tool[] = [
       en: 'Pebblely is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Pebblely 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Pebblely+AI',
+    websiteUrl: 'https://pebblely.com',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2498,7 +2498,7 @@ export const generatedTools: Tool[] = [
       en: 'Photoroom is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Photoroom 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Photoroom+AI',
+    websiteUrl: 'https://www.photoroom.com',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2534,7 +2534,7 @@ export const generatedTools: Tool[] = [
       en: 'Photoshop Generative Fill is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Photoshop Generative Fill 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Photoshop%20Generative%20Fill+AI',
+    websiteUrl: 'https://www.adobe.com/products/photoshop/generative-fill.html',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2570,7 +2570,7 @@ export const generatedTools: Tool[] = [
       en: 'Lightroom AI is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Lightroom AI 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Lightroom%20AI+AI',
+    websiteUrl: 'https://www.adobe.com/products/photoshop-lightroom.html',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2606,7 +2606,7 @@ export const generatedTools: Tool[] = [
       en: 'Luminar Neo is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Luminar Neo 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Luminar%20Neo+AI',
+    websiteUrl: 'https://skylum.com/luminar',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2642,7 +2642,7 @@ export const generatedTools: Tool[] = [
       en: 'Topaz Photo AI is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Topaz Photo AI 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Topaz%20Photo%20AI+AI',
+    websiteUrl: 'https://www.topazlabs.com/topaz-photo-ai',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2678,7 +2678,7 @@ export const generatedTools: Tool[] = [
       en: 'Remini is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Remini 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Remini+AI',
+    websiteUrl: 'https://remini.ai',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2714,7 +2714,7 @@ export const generatedTools: Tool[] = [
       en: 'Let’s Enhance is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Let’s Enhance 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Let%E2%80%99s%20Enhance+AI',
+    websiteUrl: 'https://letsenhance.io',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2750,7 +2750,7 @@ export const generatedTools: Tool[] = [
       en: 'Upscale.media is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Upscale.media 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Upscale.media+AI',
+    websiteUrl: 'https://www.upscale.media',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2786,7 +2786,7 @@ export const generatedTools: Tool[] = [
       en: 'Remove.bg is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Remove.bg 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Remove.bg+AI',
+    websiteUrl: 'https://www.remove.bg',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2822,7 +2822,7 @@ export const generatedTools: Tool[] = [
       en: 'Cleanup.pictures is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Cleanup.pictures 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Cleanup.pictures+AI',
+    websiteUrl: 'https://cleanup.pictures',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2858,7 +2858,7 @@ export const generatedTools: Tool[] = [
       en: 'Pixelcut is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Pixelcut 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Pixelcut+AI',
+    websiteUrl: 'https://www.pixelcut.ai',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2894,7 +2894,7 @@ export const generatedTools: Tool[] = [
       en: 'Fotor AI is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Fotor AI 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Fotor%20AI+AI',
+    websiteUrl: 'https://www.fotor.com',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2930,7 +2930,7 @@ export const generatedTools: Tool[] = [
       en: 'Picsart AI is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Picsart AI 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Picsart%20AI+AI',
+    websiteUrl: 'https://picsart.com',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -2966,7 +2966,7 @@ export const generatedTools: Tool[] = [
       en: 'Magnific AI is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Magnific AI 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Magnific%20AI+AI',
+    websiteUrl: 'https://magnific.ai',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3002,7 +3002,7 @@ export const generatedTools: Tool[] = [
       en: 'Leonardo Canvas is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Leonardo Canvas 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Leonardo%20Canvas+AI',
+    websiteUrl: 'https://leonardo.ai',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3038,7 +3038,7 @@ export const generatedTools: Tool[] = [
       en: 'Runway Image Tools is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Runway Image Tools 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Runway%20Image%20Tools+AI',
+    websiteUrl: 'https://runwayml.com',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3074,7 +3074,7 @@ export const generatedTools: Tool[] = [
       en: 'OpenArt is an AI tool designed for image generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'OpenArt 도구는 이미지 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=OpenArt+AI',
+    websiteUrl: 'https://openart.ai',
     categoryId: 'image-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3110,7 +3110,7 @@ export const generatedTools: Tool[] = [
       en: 'Canva is an AI tool designed for design & ui. It provides essential features to help users automate and improve their workflows.',
       ko: 'Canva 도구는 디자인 및 UI 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Canva+AI',
+    websiteUrl: 'https://www.canva.com',
     categoryId: 'design-ui',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3146,7 +3146,7 @@ export const generatedTools: Tool[] = [
       en: 'Adobe Express is an AI tool designed for design & ui. It provides essential features to help users automate and improve their workflows.',
       ko: 'Adobe Express 도구는 디자인 및 UI 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Adobe%20Express+AI',
+    websiteUrl: 'https://www.adobe.com/express/',
     categoryId: 'design-ui',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3182,7 +3182,7 @@ export const generatedTools: Tool[] = [
       en: 'Microsoft Designer is an AI tool designed for design & ui. It provides essential features to help users automate and improve their workflows.',
       ko: 'Microsoft Designer 도구는 디자인 및 UI 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Microsoft%20Designer+AI',
+    websiteUrl: 'https://designer.microsoft.com',
     categoryId: 'design-ui',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3218,7 +3218,7 @@ export const generatedTools: Tool[] = [
       en: 'Figma AI is an AI tool designed for design & ui. It provides essential features to help users automate and improve their workflows.',
       ko: 'Figma AI 도구는 디자인 및 UI 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Figma%20AI+AI',
+    websiteUrl: 'https://www.figma.com/ai/',
     categoryId: 'design-ui',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3254,7 +3254,7 @@ export const generatedTools: Tool[] = [
       en: 'Uizard is an AI tool designed for design & ui. It provides essential features to help users automate and improve their workflows.',
       ko: 'Uizard 도구는 디자인 및 UI 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Uizard+AI',
+    websiteUrl: 'https://uizard.io',
     categoryId: 'design-ui',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3290,7 +3290,7 @@ export const generatedTools: Tool[] = [
       en: 'Galileo AI is an AI tool designed for design & ui. It provides essential features to help users automate and improve their workflows.',
       ko: 'Galileo AI 도구는 디자인 및 UI 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Galileo%20AI+AI',
+    websiteUrl: 'https://www.usegalileo.ai',
     categoryId: 'design-ui',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3326,7 +3326,7 @@ export const generatedTools: Tool[] = [
       en: 'Visily is an AI tool designed for design & ui. It provides essential features to help users automate and improve their workflows.',
       ko: 'Visily 도구는 디자인 및 UI 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Visily+AI',
+    websiteUrl: 'https://www.visily.ai',
     categoryId: 'design-ui',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3362,7 +3362,7 @@ export const generatedTools: Tool[] = [
       en: 'Khroma is an AI tool designed for design & ui. It provides essential features to help users automate and improve their workflows.',
       ko: 'Khroma 도구는 디자인 및 UI 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Khroma+AI',
+    websiteUrl: 'https://www.khroma.co',
     categoryId: 'design-ui',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3398,7 +3398,7 @@ export const generatedTools: Tool[] = [
       en: 'Looka is an AI tool designed for design & ui. It provides essential features to help users automate and improve their workflows.',
       ko: 'Looka 도구는 디자인 및 UI 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Looka+AI',
+    websiteUrl: 'https://looka.com',
     categoryId: 'design-ui',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3434,7 +3434,7 @@ export const generatedTools: Tool[] = [
       en: 'Brandmark is an AI tool designed for design & ui. It provides essential features to help users automate and improve their workflows.',
       ko: 'Brandmark 도구는 디자인 및 UI 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Brandmark+AI',
+    websiteUrl: 'https://brandmark.io',
     categoryId: 'design-ui',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3470,7 +3470,7 @@ export const generatedTools: Tool[] = [
       en: 'Designs.ai is an AI tool designed for design & ui. It provides essential features to help users automate and improve their workflows.',
       ko: 'Designs.ai 도구는 디자인 및 UI 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Designs.ai+AI',
+    websiteUrl: 'https://designs.ai',
     categoryId: 'design-ui',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3506,7 +3506,7 @@ export const generatedTools: Tool[] = [
       en: 'LogoAI is an AI tool designed for design & ui. It provides essential features to help users automate and improve their workflows.',
       ko: 'LogoAI 도구는 디자인 및 UI 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=LogoAI+AI',
+    websiteUrl: 'https://www.logoai.com',
     categoryId: 'design-ui',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3542,7 +3542,7 @@ export const generatedTools: Tool[] = [
       en: 'Flair AI is an AI tool designed for design & ui. It provides essential features to help users automate and improve their workflows.',
       ko: 'Flair AI 도구는 디자인 및 UI 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Flair%20AI+AI',
+    websiteUrl: 'https://flair.ai',
     categoryId: 'design-ui',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3578,7 +3578,7 @@ export const generatedTools: Tool[] = [
       en: 'Mokker AI is an AI tool designed for design & ui. It provides essential features to help users automate and improve their workflows.',
       ko: 'Mokker AI 도구는 디자인 및 UI 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Mokker%20AI+AI',
+    websiteUrl: 'https://mokker.ai',
     categoryId: 'design-ui',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3614,7 +3614,7 @@ export const generatedTools: Tool[] = [
       en: 'Booth AI is an AI tool designed for design & ui. It provides essential features to help users automate and improve their workflows.',
       ko: 'Booth AI 도구는 디자인 및 UI 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Booth%20AI+AI',
+    websiteUrl: 'https://www.booth.ai',
     categoryId: 'design-ui',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3650,7 +3650,7 @@ export const generatedTools: Tool[] = [
       en: 'AdCreative.ai is an AI tool designed for design & ui. It provides essential features to help users automate and improve their workflows.',
       ko: 'AdCreative.ai 도구는 디자인 및 UI 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=AdCreative.ai+AI',
+    websiteUrl: 'https://www.adcreative.ai',
     categoryId: 'design-ui',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3686,7 +3686,7 @@ export const generatedTools: Tool[] = [
       en: 'Creatopy is an AI tool designed for design & ui. It provides essential features to help users automate and improve their workflows.',
       ko: 'Creatopy 도구는 디자인 및 UI 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Creatopy+AI',
+    websiteUrl: 'https://www.creatopy.com',
     categoryId: 'design-ui',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3722,7 +3722,7 @@ export const generatedTools: Tool[] = [
       en: 'Predis.ai is an AI tool designed for design & ui. It provides essential features to help users automate and improve their workflows.',
       ko: 'Predis.ai 도구는 디자인 및 UI 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Predis.ai+AI',
+    websiteUrl: 'https://predis.ai',
     categoryId: 'design-ui',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3758,7 +3758,7 @@ export const generatedTools: Tool[] = [
       en: 'Ocoya is an AI tool designed for design & ui. It provides essential features to help users automate and improve their workflows.',
       ko: 'Ocoya 도구는 디자인 및 UI 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Ocoya+AI',
+    websiteUrl: 'https://www.ocoya.com',
     categoryId: 'design-ui',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3794,7 +3794,7 @@ export const generatedTools: Tool[] = [
       en: 'Sora is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Sora 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Sora+AI',
+    websiteUrl: 'https://sora.com',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3830,7 +3830,7 @@ export const generatedTools: Tool[] = [
       en: 'Runway is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Runway 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Runway+AI',
+    websiteUrl: 'https://runwayml.com',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3866,7 +3866,7 @@ export const generatedTools: Tool[] = [
       en: 'Google Veo is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Google Veo 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Google%20Veo+AI',
+    websiteUrl: 'https://deepmind.google/technologies/veo/',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3902,7 +3902,7 @@ export const generatedTools: Tool[] = [
       en: 'Pika is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Pika 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Pika+AI',
+    websiteUrl: 'https://pika.art',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3938,7 +3938,7 @@ export const generatedTools: Tool[] = [
       en: 'Kling AI is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Kling AI 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Kling%20AI+AI',
+    websiteUrl: 'https://klingai.com',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -3974,7 +3974,7 @@ export const generatedTools: Tool[] = [
       en: 'Luma Dream Machine is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Luma Dream Machine 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Luma%20Dream%20Machine+AI',
+    websiteUrl: 'https://lumalabs.ai/dream-machine',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4010,7 +4010,7 @@ export const generatedTools: Tool[] = [
       en: 'PixVerse is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'PixVerse 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=PixVerse+AI',
+    websiteUrl: 'https://pixverse.ai',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4046,7 +4046,7 @@ export const generatedTools: Tool[] = [
       en: 'Haiper is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Haiper 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Haiper+AI',
+    websiteUrl: 'https://haiper.ai',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4082,7 +4082,7 @@ export const generatedTools: Tool[] = [
       en: 'Kaiber is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Kaiber 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Kaiber+AI',
+    websiteUrl: 'https://kaiber.ai',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4118,7 +4118,7 @@ export const generatedTools: Tool[] = [
       en: 'Synthesia is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Synthesia 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Synthesia+AI',
+    websiteUrl: 'https://www.synthesia.io',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4154,7 +4154,7 @@ export const generatedTools: Tool[] = [
       en: 'HeyGen is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'HeyGen 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=HeyGen+AI',
+    websiteUrl: 'https://www.heygen.com',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4190,7 +4190,7 @@ export const generatedTools: Tool[] = [
       en: 'D-ID is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'D-ID 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=D-ID+AI',
+    websiteUrl: 'https://www.d-id.com',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4226,7 +4226,7 @@ export const generatedTools: Tool[] = [
       en: 'Colossyan is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Colossyan 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Colossyan+AI',
+    websiteUrl: 'https://www.colossyan.com',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4262,7 +4262,7 @@ export const generatedTools: Tool[] = [
       en: 'Elai.io is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Elai.io 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Elai.io+AI',
+    websiteUrl: 'https://elai.io',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4298,7 +4298,7 @@ export const generatedTools: Tool[] = [
       en: 'DeepBrain AI is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'DeepBrain AI 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=DeepBrain%20AI+AI',
+    websiteUrl: 'https://www.aistudios.com',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4334,7 +4334,7 @@ export const generatedTools: Tool[] = [
       en: 'InVideo AI is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'InVideo AI 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=InVideo%20AI+AI',
+    websiteUrl: 'https://invideo.io',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4370,7 +4370,7 @@ export const generatedTools: Tool[] = [
       en: 'Pictory is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Pictory 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Pictory+AI',
+    websiteUrl: 'https://pictory.ai',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4406,7 +4406,7 @@ export const generatedTools: Tool[] = [
       en: 'Lumen5 is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Lumen5 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Lumen5+AI',
+    websiteUrl: 'https://lumen5.com',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4442,7 +4442,7 @@ export const generatedTools: Tool[] = [
       en: 'Fliki is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Fliki 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Fliki+AI',
+    websiteUrl: 'https://fliki.ai',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4478,7 +4478,7 @@ export const generatedTools: Tool[] = [
       en: 'Kapwing AI is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Kapwing AI 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Kapwing%20AI+AI',
+    websiteUrl: 'https://www.kapwing.com',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4514,7 +4514,7 @@ export const generatedTools: Tool[] = [
       en: 'Descript is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Descript 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Descript+AI',
+    websiteUrl: 'https://www.descript.com',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4550,7 +4550,7 @@ export const generatedTools: Tool[] = [
       en: 'CapCut AI is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'CapCut AI 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=CapCut%20AI+AI',
+    websiteUrl: 'https://www.capcut.com',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4586,7 +4586,7 @@ export const generatedTools: Tool[] = [
       en: 'OpusClip is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'OpusClip 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=OpusClip+AI',
+    websiteUrl: 'https://www.opus.pro',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4622,7 +4622,7 @@ export const generatedTools: Tool[] = [
       en: 'Vidyo.ai is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Vidyo.ai 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Vidyo.ai+AI',
+    websiteUrl: 'https://vidyo.ai',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4658,7 +4658,7 @@ export const generatedTools: Tool[] = [
       en: 'Vizard.ai is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Vizard.ai 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Vizard.ai+AI',
+    websiteUrl: 'https://vizard.ai',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4694,7 +4694,7 @@ export const generatedTools: Tool[] = [
       en: 'Klap is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Klap 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Klap+AI',
+    websiteUrl: 'https://klap.app',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4730,7 +4730,7 @@ export const generatedTools: Tool[] = [
       en: 'Captions.ai is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Captions.ai 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Captions.ai+AI',
+    websiteUrl: 'https://www.captions.ai',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4766,7 +4766,7 @@ export const generatedTools: Tool[] = [
       en: 'Submagic is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Submagic 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Submagic+AI',
+    websiteUrl: 'https://www.submagic.co',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4802,7 +4802,7 @@ export const generatedTools: Tool[] = [
       en: 'VEED.io is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'VEED.io 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=VEED.io+AI',
+    websiteUrl: 'https://www.veed.io',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4838,7 +4838,7 @@ export const generatedTools: Tool[] = [
       en: 'Wisecut is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Wisecut 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Wisecut+AI',
+    websiteUrl: 'https://www.wisecut.video',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4874,7 +4874,7 @@ export const generatedTools: Tool[] = [
       en: 'Riverside is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Riverside 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Riverside+AI',
+    websiteUrl: 'https://riverside.fm',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4910,7 +4910,7 @@ export const generatedTools: Tool[] = [
       en: 'Unscreen is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Unscreen 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Unscreen+AI',
+    websiteUrl: 'https://www.unscreen.com',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4946,7 +4946,7 @@ export const generatedTools: Tool[] = [
       en: 'Topaz Video AI is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Topaz Video AI 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Topaz%20Video%20AI+AI',
+    websiteUrl: 'https://www.topazlabs.com/topaz-video-ai',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -4982,7 +4982,7 @@ export const generatedTools: Tool[] = [
       en: 'Filmora AI is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Filmora AI 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Filmora%20AI+AI',
+    websiteUrl: 'https://filmora.wondershare.com',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5018,7 +5018,7 @@ export const generatedTools: Tool[] = [
       en: 'Adobe Premiere Pro AI is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Adobe Premiere Pro AI 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Adobe%20Premiere%20Pro%20AI+AI',
+    websiteUrl: 'https://www.adobe.com/products/premiere.html',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5054,7 +5054,7 @@ export const generatedTools: Tool[] = [
       en: 'DaVinci Resolve AI is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'DaVinci Resolve AI 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=DaVinci%20Resolve%20AI+AI',
+    websiteUrl: 'https://www.blackmagicdesign.com/products/davinciresolve',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5090,7 +5090,7 @@ export const generatedTools: Tool[] = [
       en: 'AutoPod is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'AutoPod 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=AutoPod+AI',
+    websiteUrl: 'https://www.autopod.fm',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5126,7 +5126,7 @@ export const generatedTools: Tool[] = [
       en: 'Gling AI is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'Gling AI 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Gling%20AI+AI',
+    websiteUrl: 'https://www.gling.ai',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5162,7 +5162,7 @@ export const generatedTools: Tool[] = [
       en: 'FireCut is an AI tool designed for video generation & editing. It provides essential features to help users automate and improve their workflows.',
       ko: 'FireCut 도구는 비디오 생성 및 편집 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=FireCut+AI',
+    websiteUrl: 'https://firecut.ai',
     categoryId: 'video-generation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5198,7 +5198,7 @@ export const generatedTools: Tool[] = [
       en: 'ElevenLabs is an AI tool designed for voice & text-to-speech. It provides essential features to help users automate and improve their workflows.',
       ko: 'ElevenLabs 도구는 음성 및 TTS 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=ElevenLabs+AI',
+    websiteUrl: 'https://elevenlabs.io',
     categoryId: 'audio-voice',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5234,7 +5234,7 @@ export const generatedTools: Tool[] = [
       en: 'PlayHT is an AI tool designed for voice & text-to-speech. It provides essential features to help users automate and improve their workflows.',
       ko: 'PlayHT 도구는 음성 및 TTS 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=PlayHT+AI',
+    websiteUrl: 'https://play.ht',
     categoryId: 'audio-voice',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5270,7 +5270,7 @@ export const generatedTools: Tool[] = [
       en: 'Murf AI is an AI tool designed for voice & text-to-speech. It provides essential features to help users automate and improve their workflows.',
       ko: 'Murf AI 도구는 음성 및 TTS 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Murf%20AI+AI',
+    websiteUrl: 'https://murf.ai',
     categoryId: 'audio-voice',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5306,7 +5306,7 @@ export const generatedTools: Tool[] = [
       en: 'WellSaid Labs is an AI tool designed for voice & text-to-speech. It provides essential features to help users automate and improve their workflows.',
       ko: 'WellSaid Labs 도구는 음성 및 TTS 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=WellSaid%20Labs+AI',
+    websiteUrl: 'https://wellsaidlabs.com',
     categoryId: 'audio-voice',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5342,7 +5342,7 @@ export const generatedTools: Tool[] = [
       en: 'LOVO AI is an AI tool designed for voice & text-to-speech. It provides essential features to help users automate and improve their workflows.',
       ko: 'LOVO AI 도구는 음성 및 TTS 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=LOVO%20AI+AI',
+    websiteUrl: 'https://lovo.ai',
     categoryId: 'audio-voice',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5378,7 +5378,7 @@ export const generatedTools: Tool[] = [
       en: 'Speechify is an AI tool designed for voice & text-to-speech. It provides essential features to help users automate and improve their workflows.',
       ko: 'Speechify 도구는 음성 및 TTS 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Speechify+AI',
+    websiteUrl: 'https://speechify.com',
     categoryId: 'audio-voice',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5414,7 +5414,7 @@ export const generatedTools: Tool[] = [
       en: 'NaturalReader is an AI tool designed for voice & text-to-speech. It provides essential features to help users automate and improve their workflows.',
       ko: 'NaturalReader 도구는 음성 및 TTS 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=NaturalReader+AI',
+    websiteUrl: 'https://www.naturalreaders.com',
     categoryId: 'audio-voice',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5450,7 +5450,7 @@ export const generatedTools: Tool[] = [
       en: 'Resemble AI is an AI tool designed for voice & text-to-speech. It provides essential features to help users automate and improve their workflows.',
       ko: 'Resemble AI 도구는 음성 및 TTS 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Resemble%20AI+AI',
+    websiteUrl: 'https://www.resemble.ai',
     categoryId: 'audio-voice',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5486,7 +5486,7 @@ export const generatedTools: Tool[] = [
       en: 'Replica Studios is an AI tool designed for voice & text-to-speech. It provides essential features to help users automate and improve their workflows.',
       ko: 'Replica Studios 도구는 음성 및 TTS 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Replica%20Studios+AI',
+    websiteUrl: 'https://replicastudios.com',
     categoryId: 'audio-voice',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5522,7 +5522,7 @@ export const generatedTools: Tool[] = [
       en: 'Altered Studio is an AI tool designed for voice & text-to-speech. It provides essential features to help users automate and improve their workflows.',
       ko: 'Altered Studio 도구는 음성 및 TTS 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Altered%20Studio+AI',
+    websiteUrl: 'https://www.altered.ai',
     categoryId: 'audio-voice',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5558,7 +5558,7 @@ export const generatedTools: Tool[] = [
       en: 'Typecast is an AI tool designed for voice & text-to-speech. It provides essential features to help users automate and improve their workflows.',
       ko: 'Typecast 도구는 음성 및 TTS 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Typecast+AI',
+    websiteUrl: 'https://typecast.ai',
     categoryId: 'audio-voice',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5594,7 +5594,7 @@ export const generatedTools: Tool[] = [
       en: 'Naver Clova Dubbing is an AI tool designed for voice & text-to-speech. It provides essential features to help users automate and improve their workflows.',
       ko: 'Naver Clova Dubbing 도구는 음성 및 TTS 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Naver%20Clova%20Dubbing+AI',
+    websiteUrl: 'https://clovadubbing.naver.com',
     categoryId: 'audio-voice',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5630,7 +5630,7 @@ export const generatedTools: Tool[] = [
       en: 'Google Cloud TTS is an AI tool designed for voice & text-to-speech. It provides essential features to help users automate and improve their workflows.',
       ko: 'Google Cloud TTS 도구는 음성 및 TTS 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Google%20Cloud%20TTS+AI',
+    websiteUrl: 'https://cloud.google.com/text-to-speech',
     categoryId: 'audio-voice',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5666,7 +5666,7 @@ export const generatedTools: Tool[] = [
       en: 'Amazon Polly is an AI tool designed for voice & text-to-speech. It provides essential features to help users automate and improve their workflows.',
       ko: 'Amazon Polly 도구는 음성 및 TTS 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Amazon%20Polly+AI',
+    websiteUrl: 'https://aws.amazon.com/polly/',
     categoryId: 'audio-voice',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5702,7 +5702,7 @@ export const generatedTools: Tool[] = [
       en: 'Azure AI Speech is an AI tool designed for voice & text-to-speech. It provides essential features to help users automate and improve their workflows.',
       ko: 'Azure AI Speech 도구는 음성 및 TTS 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Azure%20AI%20Speech+AI',
+    websiteUrl: 'https://azure.microsoft.com/en-us/products/ai-services/ai-speech',
     categoryId: 'audio-voice',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5738,7 +5738,7 @@ export const generatedTools: Tool[] = [
       en: 'Listnr is an AI tool designed for voice & text-to-speech. It provides essential features to help users automate and improve their workflows.',
       ko: 'Listnr 도구는 음성 및 TTS 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Listnr+AI',
+    websiteUrl: 'https://listnr.ai',
     categoryId: 'audio-voice',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5774,7 +5774,7 @@ export const generatedTools: Tool[] = [
       en: 'Voicemaker is an AI tool designed for voice & text-to-speech. It provides essential features to help users automate and improve their workflows.',
       ko: 'Voicemaker 도구는 음성 및 TTS 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Voicemaker+AI',
+    websiteUrl: 'https://voicemaker.in',
     categoryId: 'audio-voice',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5810,7 +5810,7 @@ export const generatedTools: Tool[] = [
       en: 'Dubverse is an AI tool designed for voice & text-to-speech. It provides essential features to help users automate and improve their workflows.',
       ko: 'Dubverse 도구는 음성 및 TTS 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Dubverse+AI',
+    websiteUrl: 'https://dubverse.ai',
     categoryId: 'audio-voice',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5846,7 +5846,7 @@ export const generatedTools: Tool[] = [
       en: 'Rask AI is an AI tool designed for voice & text-to-speech. It provides essential features to help users automate and improve their workflows.',
       ko: 'Rask AI 도구는 음성 및 TTS 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Rask%20AI+AI',
+    websiteUrl: 'https://www.rask.ai',
     categoryId: 'audio-voice',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5882,7 +5882,7 @@ export const generatedTools: Tool[] = [
       en: 'Papercup is an AI tool designed for voice & text-to-speech. It provides essential features to help users automate and improve their workflows.',
       ko: 'Papercup 도구는 음성 및 TTS 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Papercup+AI',
+    websiteUrl: 'https://www.papercup.com',
     categoryId: 'audio-voice',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5918,7 +5918,7 @@ export const generatedTools: Tool[] = [
       en: 'Suno is an AI tool designed for music & audio. It provides essential features to help users automate and improve their workflows.',
       ko: 'Suno 도구는 음악 및 오디오 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Suno+AI',
+    websiteUrl: 'https://suno.com',
     categoryId: 'music-audio',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5954,7 +5954,7 @@ export const generatedTools: Tool[] = [
       en: 'Udio is an AI tool designed for music & audio. It provides essential features to help users automate and improve their workflows.',
       ko: 'Udio 도구는 음악 및 오디오 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Udio+AI',
+    websiteUrl: 'https://www.udio.com',
     categoryId: 'music-audio',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -5990,7 +5990,7 @@ export const generatedTools: Tool[] = [
       en: 'AIVA is an AI tool designed for music & audio. It provides essential features to help users automate and improve their workflows.',
       ko: 'AIVA 도구는 음악 및 오디오 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=AIVA+AI',
+    websiteUrl: 'https://www.aiva.ai',
     categoryId: 'music-audio',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6026,7 +6026,7 @@ export const generatedTools: Tool[] = [
       en: 'Soundraw is an AI tool designed for music & audio. It provides essential features to help users automate and improve their workflows.',
       ko: 'Soundraw 도구는 음악 및 오디오 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Soundraw+AI',
+    websiteUrl: 'https://soundraw.io',
     categoryId: 'music-audio',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6062,7 +6062,7 @@ export const generatedTools: Tool[] = [
       en: 'Beatoven.ai is an AI tool designed for music & audio. It provides essential features to help users automate and improve their workflows.',
       ko: 'Beatoven.ai 도구는 음악 및 오디오 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Beatoven.ai+AI',
+    websiteUrl: 'https://www.beatoven.ai',
     categoryId: 'music-audio',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6098,7 +6098,7 @@ export const generatedTools: Tool[] = [
       en: 'Mubert is an AI tool designed for music & audio. It provides essential features to help users automate and improve their workflows.',
       ko: 'Mubert 도구는 음악 및 오디오 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Mubert+AI',
+    websiteUrl: 'https://mubert.com',
     categoryId: 'music-audio',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6134,7 +6134,7 @@ export const generatedTools: Tool[] = [
       en: 'Boomy is an AI tool designed for music & audio. It provides essential features to help users automate and improve their workflows.',
       ko: 'Boomy 도구는 음악 및 오디오 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Boomy+AI',
+    websiteUrl: 'https://boomy.com',
     categoryId: 'music-audio',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6170,7 +6170,7 @@ export const generatedTools: Tool[] = [
       en: 'Loudly is an AI tool designed for music & audio. It provides essential features to help users automate and improve their workflows.',
       ko: 'Loudly 도구는 음악 및 오디오 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Loudly+AI',
+    websiteUrl: 'https://www.loudly.com',
     categoryId: 'music-audio',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6206,7 +6206,7 @@ export const generatedTools: Tool[] = [
       en: 'Stable Audio is an AI tool designed for music & audio. It provides essential features to help users automate and improve their workflows.',
       ko: 'Stable Audio 도구는 음악 및 오디오 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Stable%20Audio+AI',
+    websiteUrl: 'https://stableaudio.com',
     categoryId: 'music-audio',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6242,7 +6242,7 @@ export const generatedTools: Tool[] = [
       en: 'MusicGen is an AI tool designed for music & audio. It provides essential features to help users automate and improve their workflows.',
       ko: 'MusicGen 도구는 음악 및 오디오 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=MusicGen+AI',
+    websiteUrl: 'https://audiocraft.metademolab.com',
     categoryId: 'music-audio',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6278,7 +6278,7 @@ export const generatedTools: Tool[] = [
       en: 'Riffusion is an AI tool designed for music & audio. It provides essential features to help users automate and improve their workflows.',
       ko: 'Riffusion 도구는 음악 및 오디오 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Riffusion+AI',
+    websiteUrl: 'https://www.riffusion.com',
     categoryId: 'music-audio',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6314,7 +6314,7 @@ export const generatedTools: Tool[] = [
       en: 'Splash Pro is an AI tool designed for music & audio. It provides essential features to help users automate and improve their workflows.',
       ko: 'Splash Pro 도구는 음악 및 오디오 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Splash%20Pro+AI',
+    websiteUrl: 'https://www.splashmusic.com',
     categoryId: 'music-audio',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6350,7 +6350,7 @@ export const generatedTools: Tool[] = [
       en: 'Ecrett Music is an AI tool designed for music & audio. It provides essential features to help users automate and improve their workflows.',
       ko: 'Ecrett Music 도구는 음악 및 오디오 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Ecrett%20Music+AI',
+    websiteUrl: 'https://ecrettmusic.com',
     categoryId: 'music-audio',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6386,7 +6386,7 @@ export const generatedTools: Tool[] = [
       en: 'Amper Music is an AI tool designed for music & audio. It provides essential features to help users automate and improve their workflows.',
       ko: 'Amper Music 도구는 음악 및 오디오 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Amper%20Music+AI',
+    websiteUrl: 'https://www.shutterstock.com/discover/ampermusic',
     categoryId: 'music-audio',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6422,7 +6422,7 @@ export const generatedTools: Tool[] = [
       en: 'Soundful is an AI tool designed for music & audio. It provides essential features to help users automate and improve their workflows.',
       ko: 'Soundful 도구는 음악 및 오디오 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Soundful+AI',
+    websiteUrl: 'https://soundful.com',
     categoryId: 'music-audio',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6458,7 +6458,7 @@ export const generatedTools: Tool[] = [
       en: 'WavTool is an AI tool designed for music & audio. It provides essential features to help users automate and improve their workflows.',
       ko: 'WavTool 도구는 음악 및 오디오 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=WavTool+AI',
+    websiteUrl: 'https://wavtool.com',
     categoryId: 'music-audio',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6494,7 +6494,7 @@ export const generatedTools: Tool[] = [
       en: 'Moises AI is an AI tool designed for music & audio. It provides essential features to help users automate and improve their workflows.',
       ko: 'Moises AI 도구는 음악 및 오디오 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Moises%20AI+AI',
+    websiteUrl: 'https://moises.ai',
     categoryId: 'music-audio',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6530,7 +6530,7 @@ export const generatedTools: Tool[] = [
       en: 'Lalal.ai is an AI tool designed for music & audio. It provides essential features to help users automate and improve their workflows.',
       ko: 'Lalal.ai 도구는 음악 및 오디오 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Lalal.ai+AI',
+    websiteUrl: 'https://www.lalal.ai',
     categoryId: 'music-audio',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6566,7 +6566,7 @@ export const generatedTools: Tool[] = [
       en: 'AudioStrip is an AI tool designed for music & audio. It provides essential features to help users automate and improve their workflows.',
       ko: 'AudioStrip 도구는 음악 및 오디오 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=AudioStrip+AI',
+    websiteUrl: 'https://www.audiostrip.co.uk',
     categoryId: 'music-audio',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6602,7 +6602,7 @@ export const generatedTools: Tool[] = [
       en: 'BandLab AI is an AI tool designed for music & audio. It provides essential features to help users automate and improve their workflows.',
       ko: 'BandLab AI 도구는 음악 및 오디오 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=BandLab%20AI+AI',
+    websiteUrl: 'https://www.bandlab.com',
     categoryId: 'music-audio',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6638,7 +6638,7 @@ export const generatedTools: Tool[] = [
       en: 'ChatGPT Codex is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'ChatGPT Codex 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=ChatGPT%20Codex+AI',
+    websiteUrl: 'https://chatgpt.com/codex',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6674,7 +6674,7 @@ export const generatedTools: Tool[] = [
       en: 'Claude Code is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Claude Code 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Claude%20Code+AI',
+    websiteUrl: 'https://claude.com/claude-code',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6710,7 +6710,7 @@ export const generatedTools: Tool[] = [
       en: 'Cursor is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Cursor 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Cursor+AI',
+    websiteUrl: 'https://cursor.com',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6746,7 +6746,7 @@ export const generatedTools: Tool[] = [
       en: 'GitHub Copilot is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'GitHub Copilot 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=GitHub%20Copilot+AI',
+    websiteUrl: 'https://github.com/features/copilot',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6782,7 +6782,7 @@ export const generatedTools: Tool[] = [
       en: 'Windsurf is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Windsurf 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Windsurf+AI',
+    websiteUrl: 'https://windsurf.com',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6818,7 +6818,7 @@ export const generatedTools: Tool[] = [
       en: 'Replit Agent is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Replit Agent 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Replit%20Agent+AI',
+    websiteUrl: 'https://replit.com',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6854,7 +6854,7 @@ export const generatedTools: Tool[] = [
       en: 'Bolt.new is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Bolt.new 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Bolt.new+AI',
+    websiteUrl: 'https://bolt.new',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6890,7 +6890,7 @@ export const generatedTools: Tool[] = [
       en: 'Lovable is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Lovable 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Lovable+AI',
+    websiteUrl: 'https://lovable.dev',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6926,7 +6926,7 @@ export const generatedTools: Tool[] = [
       en: 'v0 by Vercel is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'v0 by Vercel 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=v0%20by%20Vercel+AI',
+    websiteUrl: 'https://v0.dev',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6962,7 +6962,7 @@ export const generatedTools: Tool[] = [
       en: 'Codeium / Windsurf is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Codeium / Windsurf 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Codeium%20%2F%20Windsurf+AI',
+    websiteUrl: 'https://windsurf.com',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -6998,7 +6998,7 @@ export const generatedTools: Tool[] = [
       en: 'Tabnine is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Tabnine 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Tabnine+AI',
+    websiteUrl: 'https://www.tabnine.com',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7034,7 +7034,7 @@ export const generatedTools: Tool[] = [
       en: 'Amazon Q Developer is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Amazon Q Developer 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Amazon%20Q%20Developer+AI',
+    websiteUrl: 'https://aws.amazon.com/q/developer/',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7070,7 +7070,7 @@ export const generatedTools: Tool[] = [
       en: 'Sourcegraph Cody is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Sourcegraph Cody 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Sourcegraph%20Cody+AI',
+    websiteUrl: 'https://sourcegraph.com/cody',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7106,7 +7106,7 @@ export const generatedTools: Tool[] = [
       en: 'CodeRabbit is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'CodeRabbit 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=CodeRabbit+AI',
+    websiteUrl: 'https://www.coderabbit.ai',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7142,7 +7142,7 @@ export const generatedTools: Tool[] = [
       en: 'Sweep AI is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Sweep AI 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Sweep%20AI+AI',
+    websiteUrl: 'https://sweep.dev',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7178,7 +7178,7 @@ export const generatedTools: Tool[] = [
       en: 'Devin is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Devin 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Devin+AI',
+    websiteUrl: 'https://devin.ai',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7214,7 +7214,7 @@ export const generatedTools: Tool[] = [
       en: 'Cline is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Cline 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Cline+AI',
+    websiteUrl: 'https://cline.bot',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7250,7 +7250,7 @@ export const generatedTools: Tool[] = [
       en: 'Roo Code is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Roo Code 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Roo%20Code+AI',
+    websiteUrl: 'https://roocode.com',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7286,7 +7286,7 @@ export const generatedTools: Tool[] = [
       en: 'Continue is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Continue 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Continue+AI',
+    websiteUrl: 'https://www.continue.dev',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7322,7 +7322,7 @@ export const generatedTools: Tool[] = [
       en: 'Aider is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Aider 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Aider+AI',
+    websiteUrl: 'https://aider.chat',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7358,7 +7358,7 @@ export const generatedTools: Tool[] = [
       en: 'OpenAI API is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'OpenAI API 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=OpenAI%20API+AI',
+    websiteUrl: 'https://platform.openai.com',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7394,7 +7394,7 @@ export const generatedTools: Tool[] = [
       en: 'Anthropic API is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Anthropic API 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Anthropic%20API+AI',
+    websiteUrl: 'https://www.anthropic.com/api',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7430,7 +7430,7 @@ export const generatedTools: Tool[] = [
       en: 'Google Gemini API is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Google Gemini API 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Google%20Gemini%20API+AI',
+    websiteUrl: 'https://ai.google.dev',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7466,7 +7466,7 @@ export const generatedTools: Tool[] = [
       en: 'Mistral AI is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Mistral AI 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Mistral%20AI+AI',
+    websiteUrl: 'https://mistral.ai',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7502,7 +7502,7 @@ export const generatedTools: Tool[] = [
       en: 'Cohere is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Cohere 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Cohere+AI',
+    websiteUrl: 'https://cohere.com',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7538,7 +7538,7 @@ export const generatedTools: Tool[] = [
       en: 'Groq is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Groq 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Groq+AI',
+    websiteUrl: 'https://groq.com',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7574,7 +7574,7 @@ export const generatedTools: Tool[] = [
       en: 'Together AI is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Together AI 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Together%20AI+AI',
+    websiteUrl: 'https://www.together.ai',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7610,7 +7610,7 @@ export const generatedTools: Tool[] = [
       en: 'Replicate is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Replicate 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Replicate+AI',
+    websiteUrl: 'https://replicate.com',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7646,7 +7646,7 @@ export const generatedTools: Tool[] = [
       en: 'Hugging Face is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Hugging Face 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Hugging%20Face+AI',
+    websiteUrl: 'https://huggingface.co',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7682,7 +7682,7 @@ export const generatedTools: Tool[] = [
       en: 'Fireworks AI is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Fireworks AI 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Fireworks%20AI+AI',
+    websiteUrl: 'https://fireworks.ai',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7718,7 +7718,7 @@ export const generatedTools: Tool[] = [
       en: 'Perplexity API is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Perplexity API 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Perplexity%20API+AI',
+    websiteUrl: 'https://docs.perplexity.ai',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7754,7 +7754,7 @@ export const generatedTools: Tool[] = [
       en: 'Stability AI API is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Stability AI API 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Stability%20AI%20API+AI',
+    websiteUrl: 'https://platform.stability.ai',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7790,7 +7790,7 @@ export const generatedTools: Tool[] = [
       en: 'ElevenLabs API is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'ElevenLabs API 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=ElevenLabs%20API+AI',
+    websiteUrl: 'https://elevenlabs.io/api',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7826,7 +7826,7 @@ export const generatedTools: Tool[] = [
       en: 'Runway API is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Runway API 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Runway%20API+AI',
+    websiteUrl: 'https://dev.runwayml.com',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7862,7 +7862,7 @@ export const generatedTools: Tool[] = [
       en: 'AssemblyAI is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'AssemblyAI 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=AssemblyAI+AI',
+    websiteUrl: 'https://www.assemblyai.com',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7898,7 +7898,7 @@ export const generatedTools: Tool[] = [
       en: 'Deepgram is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Deepgram 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Deepgram+AI',
+    websiteUrl: 'https://deepgram.com',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7934,7 +7934,7 @@ export const generatedTools: Tool[] = [
       en: 'Pinecone is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Pinecone 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Pinecone+AI',
+    websiteUrl: 'https://www.pinecone.io',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -7970,7 +7970,7 @@ export const generatedTools: Tool[] = [
       en: 'Weaviate is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Weaviate 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Weaviate+AI',
+    websiteUrl: 'https://weaviate.io',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8006,7 +8006,7 @@ export const generatedTools: Tool[] = [
       en: 'Chroma is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Chroma 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Chroma+AI',
+    websiteUrl: 'https://www.trychroma.com',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8042,7 +8042,7 @@ export const generatedTools: Tool[] = [
       en: 'Supabase Vector is an AI tool designed for coding, dev & apis. It provides essential features to help users automate and improve their workflows.',
       ko: 'Supabase Vector 도구는 코딩, 개발 및 API 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Supabase%20Vector+AI',
+    websiteUrl: 'https://supabase.com/modules/vector',
     categoryId: 'coding-dev',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8078,7 +8078,7 @@ export const generatedTools: Tool[] = [
       en: 'Framer AI is an AI tool designed for no-code & website builders. It provides essential features to help users automate and improve their workflows.',
       ko: 'Framer AI 도구는 노코드 및 웹사이트 빌더 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Framer%20AI+AI',
+    websiteUrl: 'https://www.framer.com',
     categoryId: 'no-code',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8114,7 +8114,7 @@ export const generatedTools: Tool[] = [
       en: 'Wix AI is an AI tool designed for no-code & website builders. It provides essential features to help users automate and improve their workflows.',
       ko: 'Wix AI 도구는 노코드 및 웹사이트 빌더 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Wix%20AI+AI',
+    websiteUrl: 'https://www.wix.com',
     categoryId: 'no-code',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8150,7 +8150,7 @@ export const generatedTools: Tool[] = [
       en: 'Webflow AI is an AI tool designed for no-code & website builders. It provides essential features to help users automate and improve their workflows.',
       ko: 'Webflow AI 도구는 노코드 및 웹사이트 빌더 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Webflow%20AI+AI',
+    websiteUrl: 'https://webflow.com',
     categoryId: 'no-code',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8186,7 +8186,7 @@ export const generatedTools: Tool[] = [
       en: 'Durable is an AI tool designed for no-code & website builders. It provides essential features to help users automate and improve their workflows.',
       ko: 'Durable 도구는 노코드 및 웹사이트 빌더 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Durable+AI',
+    websiteUrl: 'https://durable.co',
     categoryId: 'no-code',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8222,7 +8222,7 @@ export const generatedTools: Tool[] = [
       en: '10Web is an AI tool designed for no-code & website builders. It provides essential features to help users automate and improve their workflows.',
       ko: '10Web 도구는 노코드 및 웹사이트 빌더 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=10Web+AI',
+    websiteUrl: 'https://10web.io',
     categoryId: 'no-code',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8258,7 +8258,7 @@ export const generatedTools: Tool[] = [
       en: 'Hostinger AI Website Builder is an AI tool designed for no-code & website builders. It provides essential features to help users automate and improve their workflows.',
       ko: 'Hostinger AI Website Builder 도구는 노코드 및 웹사이트 빌더 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Hostinger%20AI%20Website%20Builder+AI',
+    websiteUrl: 'https://www.hostinger.com/website-builder',
     categoryId: 'no-code',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8294,7 +8294,7 @@ export const generatedTools: Tool[] = [
       en: 'GoDaddy AI Website Builder is an AI tool designed for no-code & website builders. It provides essential features to help users automate and improve their workflows.',
       ko: 'GoDaddy AI Website Builder 도구는 노코드 및 웹사이트 빌더 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=GoDaddy%20AI%20Website%20Builder+AI',
+    websiteUrl: 'https://www.godaddy.com/websites/website-builder',
     categoryId: 'no-code',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8330,7 +8330,7 @@ export const generatedTools: Tool[] = [
       en: 'Relume is an AI tool designed for no-code & website builders. It provides essential features to help users automate and improve their workflows.',
       ko: 'Relume 도구는 노코드 및 웹사이트 빌더 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Relume+AI',
+    websiteUrl: 'https://www.relume.io',
     categoryId: 'no-code',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8366,7 +8366,7 @@ export const generatedTools: Tool[] = [
       en: 'Dora AI is an AI tool designed for no-code & website builders. It provides essential features to help users automate and improve their workflows.',
       ko: 'Dora AI 도구는 노코드 및 웹사이트 빌더 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Dora%20AI+AI',
+    websiteUrl: 'https://www.dora.run',
     categoryId: 'no-code',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8402,7 +8402,7 @@ export const generatedTools: Tool[] = [
       en: 'Typedream is an AI tool designed for no-code & website builders. It provides essential features to help users automate and improve their workflows.',
       ko: 'Typedream 도구는 노코드 및 웹사이트 빌더 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Typedream+AI',
+    websiteUrl: 'https://typedream.com',
     categoryId: 'no-code',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8438,7 +8438,7 @@ export const generatedTools: Tool[] = [
       en: 'Carrd is an AI tool designed for no-code & website builders. It provides essential features to help users automate and improve their workflows.',
       ko: 'Carrd 도구는 노코드 및 웹사이트 빌더 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Carrd+AI',
+    websiteUrl: 'https://carrd.co',
     categoryId: 'no-code',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8474,7 +8474,7 @@ export const generatedTools: Tool[] = [
       en: 'Gamma is an AI tool designed for no-code & website builders. It provides essential features to help users automate and improve their workflows.',
       ko: 'Gamma 도구는 노코드 및 웹사이트 빌더 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Gamma+AI',
+    websiteUrl: 'https://gamma.app',
     categoryId: 'no-code',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8510,7 +8510,7 @@ export const generatedTools: Tool[] = [
       en: 'Softr is an AI tool designed for no-code & website builders. It provides essential features to help users automate and improve their workflows.',
       ko: 'Softr 도구는 노코드 및 웹사이트 빌더 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Softr+AI',
+    websiteUrl: 'https://www.softr.io',
     categoryId: 'no-code',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8546,7 +8546,7 @@ export const generatedTools: Tool[] = [
       en: 'Bubble AI is an AI tool designed for no-code & website builders. It provides essential features to help users automate and improve their workflows.',
       ko: 'Bubble AI 도구는 노코드 및 웹사이트 빌더 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Bubble%20AI+AI',
+    websiteUrl: 'https://bubble.io',
     categoryId: 'no-code',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8582,7 +8582,7 @@ export const generatedTools: Tool[] = [
       en: 'Glide AI is an AI tool designed for no-code & website builders. It provides essential features to help users automate and improve their workflows.',
       ko: 'Glide AI 도구는 노코드 및 웹사이트 빌더 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Glide%20AI+AI',
+    websiteUrl: 'https://www.glideapps.com',
     categoryId: 'no-code',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8618,7 +8618,7 @@ export const generatedTools: Tool[] = [
       en: 'Pory is an AI tool designed for no-code & website builders. It provides essential features to help users automate and improve their workflows.',
       ko: 'Pory 도구는 노코드 및 웹사이트 빌더 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Pory+AI',
+    websiteUrl: 'https://pory.io',
     categoryId: 'no-code',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8654,7 +8654,7 @@ export const generatedTools: Tool[] = [
       en: 'Webstudio is an AI tool designed for no-code & website builders. It provides essential features to help users automate and improve their workflows.',
       ko: 'Webstudio 도구는 노코드 및 웹사이트 빌더 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Webstudio+AI',
+    websiteUrl: 'https://webstudio.is',
     categoryId: 'no-code',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8690,7 +8690,7 @@ export const generatedTools: Tool[] = [
       en: 'TeleportHQ is an AI tool designed for no-code & website builders. It provides essential features to help users automate and improve their workflows.',
       ko: 'TeleportHQ 도구는 노코드 및 웹사이트 빌더 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=TeleportHQ+AI',
+    websiteUrl: 'https://teleporthq.io',
     categoryId: 'no-code',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8726,7 +8726,7 @@ export const generatedTools: Tool[] = [
       en: 'Builder.io AI is an AI tool designed for no-code & website builders. It provides essential features to help users automate and improve their workflows.',
       ko: 'Builder.io AI 도구는 노코드 및 웹사이트 빌더 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Builder.io%20AI+AI',
+    websiteUrl: 'https://www.builder.io',
     categoryId: 'no-code',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8762,7 +8762,7 @@ export const generatedTools: Tool[] = [
       en: 'Locofy is an AI tool designed for no-code & website builders. It provides essential features to help users automate and improve their workflows.',
       ko: 'Locofy 도구는 노코드 및 웹사이트 빌더 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Locofy+AI',
+    websiteUrl: 'https://www.locofy.ai',
     categoryId: 'no-code',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8798,7 +8798,7 @@ export const generatedTools: Tool[] = [
       en: 'Zapier is an AI tool designed for automation & agents. It provides essential features to help users automate and improve their workflows.',
       ko: 'Zapier 도구는 업무 자동화 및 에이전트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Zapier+AI',
+    websiteUrl: 'https://zapier.com',
     categoryId: 'automation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8834,7 +8834,7 @@ export const generatedTools: Tool[] = [
       en: 'Make is an AI tool designed for automation & agents. It provides essential features to help users automate and improve their workflows.',
       ko: 'Make 도구는 업무 자동화 및 에이전트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Make+AI',
+    websiteUrl: 'https://www.make.com',
     categoryId: 'automation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8870,7 +8870,7 @@ export const generatedTools: Tool[] = [
       en: 'n8n is an AI tool designed for automation & agents. It provides essential features to help users automate and improve their workflows.',
       ko: 'n8n 도구는 업무 자동화 및 에이전트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=n8n+AI',
+    websiteUrl: 'https://n8n.io',
     categoryId: 'automation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8906,7 +8906,7 @@ export const generatedTools: Tool[] = [
       en: 'Gumloop is an AI tool designed for automation & agents. It provides essential features to help users automate and improve their workflows.',
       ko: 'Gumloop 도구는 업무 자동화 및 에이전트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Gumloop+AI',
+    websiteUrl: 'https://www.gumloop.com',
     categoryId: 'automation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8942,7 +8942,7 @@ export const generatedTools: Tool[] = [
       en: 'Relay.app is an AI tool designed for automation & agents. It provides essential features to help users automate and improve their workflows.',
       ko: 'Relay.app 도구는 업무 자동화 및 에이전트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Relay.app+AI',
+    websiteUrl: 'https://www.relay.app',
     categoryId: 'automation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -8978,7 +8978,7 @@ export const generatedTools: Tool[] = [
       en: 'IFTTT is an AI tool designed for automation & agents. It provides essential features to help users automate and improve their workflows.',
       ko: 'IFTTT 도구는 업무 자동화 및 에이전트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=IFTTT+AI',
+    websiteUrl: 'https://ifttt.com',
     categoryId: 'automation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9014,7 +9014,7 @@ export const generatedTools: Tool[] = [
       en: 'Pipedream is an AI tool designed for automation & agents. It provides essential features to help users automate and improve their workflows.',
       ko: 'Pipedream 도구는 업무 자동화 및 에이전트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Pipedream+AI',
+    websiteUrl: 'https://pipedream.com',
     categoryId: 'automation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9050,7 +9050,7 @@ export const generatedTools: Tool[] = [
       en: 'Bardeen is an AI tool designed for automation & agents. It provides essential features to help users automate and improve their workflows.',
       ko: 'Bardeen 도구는 업무 자동화 및 에이전트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Bardeen+AI',
+    websiteUrl: 'https://www.bardeen.ai',
     categoryId: 'automation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9086,7 +9086,7 @@ export const generatedTools: Tool[] = [
       en: 'Lindy AI is an AI tool designed for automation & agents. It provides essential features to help users automate and improve their workflows.',
       ko: 'Lindy AI 도구는 업무 자동화 및 에이전트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Lindy%20AI+AI',
+    websiteUrl: 'https://www.lindy.ai',
     categoryId: 'automation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9122,7 +9122,7 @@ export const generatedTools: Tool[] = [
       en: 'Relevance AI is an AI tool designed for automation & agents. It provides essential features to help users automate and improve their workflows.',
       ko: 'Relevance AI 도구는 업무 자동화 및 에이전트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Relevance%20AI+AI',
+    websiteUrl: 'https://relevanceai.com',
     categoryId: 'automation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9158,7 +9158,7 @@ export const generatedTools: Tool[] = [
       en: 'CrewAI is an AI tool designed for automation & agents. It provides essential features to help users automate and improve their workflows.',
       ko: 'CrewAI 도구는 업무 자동화 및 에이전트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=CrewAI+AI',
+    websiteUrl: 'https://www.crewai.com',
     categoryId: 'automation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9194,7 +9194,7 @@ export const generatedTools: Tool[] = [
       en: 'LangChain is an AI tool designed for automation & agents. It provides essential features to help users automate and improve their workflows.',
       ko: 'LangChain 도구는 업무 자동화 및 에이전트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=LangChain+AI',
+    websiteUrl: 'https://www.langchain.com',
     categoryId: 'automation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9230,7 +9230,7 @@ export const generatedTools: Tool[] = [
       en: 'LangGraph is an AI tool designed for automation & agents. It provides essential features to help users automate and improve their workflows.',
       ko: 'LangGraph 도구는 업무 자동화 및 에이전트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=LangGraph+AI',
+    websiteUrl: 'https://www.langchain.com/langgraph',
     categoryId: 'automation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9266,7 +9266,7 @@ export const generatedTools: Tool[] = [
       en: 'AutoGen is an AI tool designed for automation & agents. It provides essential features to help users automate and improve their workflows.',
       ko: 'AutoGen 도구는 업무 자동화 및 에이전트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=AutoGen+AI',
+    websiteUrl: 'https://microsoft.github.io/autogen/',
     categoryId: 'automation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9302,7 +9302,7 @@ export const generatedTools: Tool[] = [
       en: 'Flowise is an AI tool designed for automation & agents. It provides essential features to help users automate and improve their workflows.',
       ko: 'Flowise 도구는 업무 자동화 및 에이전트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Flowise+AI',
+    websiteUrl: 'https://flowiseai.com',
     categoryId: 'automation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9338,7 +9338,7 @@ export const generatedTools: Tool[] = [
       en: 'Dify is an AI tool designed for automation & agents. It provides essential features to help users automate and improve their workflows.',
       ko: 'Dify 도구는 업무 자동화 및 에이전트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Dify+AI',
+    websiteUrl: 'https://dify.ai',
     categoryId: 'automation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9374,7 +9374,7 @@ export const generatedTools: Tool[] = [
       en: 'Voiceflow is an AI tool designed for automation & agents. It provides essential features to help users automate and improve their workflows.',
       ko: 'Voiceflow 도구는 업무 자동화 및 에이전트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Voiceflow+AI',
+    websiteUrl: 'https://www.voiceflow.com',
     categoryId: 'automation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9410,7 +9410,7 @@ export const generatedTools: Tool[] = [
       en: 'Botpress is an AI tool designed for automation & agents. It provides essential features to help users automate and improve their workflows.',
       ko: 'Botpress 도구는 업무 자동화 및 에이전트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Botpress+AI',
+    websiteUrl: 'https://botpress.com',
     categoryId: 'automation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9446,7 +9446,7 @@ export const generatedTools: Tool[] = [
       en: 'Stack AI is an AI tool designed for automation & agents. It provides essential features to help users automate and improve their workflows.',
       ko: 'Stack AI 도구는 업무 자동화 및 에이전트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Stack%20AI+AI',
+    websiteUrl: 'https://www.stack-ai.com',
     categoryId: 'automation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9482,7 +9482,7 @@ export const generatedTools: Tool[] = [
       en: 'AgentOps is an AI tool designed for automation & agents. It provides essential features to help users automate and improve their workflows.',
       ko: 'AgentOps 도구는 업무 자동화 및 에이전트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=AgentOps+AI',
+    websiteUrl: 'https://www.agentops.ai',
     categoryId: 'automation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9518,7 +9518,7 @@ export const generatedTools: Tool[] = [
       en: 'Otter.ai is an AI tool designed for meeting & transcription. It provides essential features to help users automate and improve their workflows.',
       ko: 'Otter.ai 도구는 회의 및 요약 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Otter.ai+AI',
+    websiteUrl: 'https://otter.ai',
     categoryId: 'meeting',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9554,7 +9554,7 @@ export const generatedTools: Tool[] = [
       en: 'Fireflies.ai is an AI tool designed for meeting & transcription. It provides essential features to help users automate and improve their workflows.',
       ko: 'Fireflies.ai 도구는 회의 및 요약 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Fireflies.ai+AI',
+    websiteUrl: 'https://fireflies.ai',
     categoryId: 'meeting',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9590,7 +9590,7 @@ export const generatedTools: Tool[] = [
       en: 'Fathom is an AI tool designed for meeting & transcription. It provides essential features to help users automate and improve their workflows.',
       ko: 'Fathom 도구는 회의 및 요약 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Fathom+AI',
+    websiteUrl: 'https://fathom.video',
     categoryId: 'meeting',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9626,7 +9626,7 @@ export const generatedTools: Tool[] = [
       en: 'tl;dv is an AI tool designed for meeting & transcription. It provides essential features to help users automate and improve their workflows.',
       ko: 'tl;dv 도구는 회의 및 요약 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=tl%3Bdv+AI',
+    websiteUrl: 'https://tldv.io',
     categoryId: 'meeting',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9662,7 +9662,7 @@ export const generatedTools: Tool[] = [
       en: 'Notta is an AI tool designed for meeting & transcription. It provides essential features to help users automate and improve their workflows.',
       ko: 'Notta 도구는 회의 및 요약 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Notta+AI',
+    websiteUrl: 'https://www.notta.ai',
     categoryId: 'meeting',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9698,7 +9698,7 @@ export const generatedTools: Tool[] = [
       en: 'Krisp is an AI tool designed for meeting & transcription. It provides essential features to help users automate and improve their workflows.',
       ko: 'Krisp 도구는 회의 및 요약 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Krisp+AI',
+    websiteUrl: 'https://krisp.ai',
     categoryId: 'meeting',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9734,7 +9734,7 @@ export const generatedTools: Tool[] = [
       en: 'Avoma is an AI tool designed for meeting & transcription. It provides essential features to help users automate and improve their workflows.',
       ko: 'Avoma 도구는 회의 및 요약 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Avoma+AI',
+    websiteUrl: 'https://www.avoma.com',
     categoryId: 'meeting',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9770,7 +9770,7 @@ export const generatedTools: Tool[] = [
       en: 'Sembly AI is an AI tool designed for meeting & transcription. It provides essential features to help users automate and improve their workflows.',
       ko: 'Sembly AI 도구는 회의 및 요약 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Sembly%20AI+AI',
+    websiteUrl: 'https://www.sembly.ai',
     categoryId: 'meeting',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9806,7 +9806,7 @@ export const generatedTools: Tool[] = [
       en: 'MeetGeek is an AI tool designed for meeting & transcription. It provides essential features to help users automate and improve their workflows.',
       ko: 'MeetGeek 도구는 회의 및 요약 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=MeetGeek+AI',
+    websiteUrl: 'https://meetgeek.ai',
     categoryId: 'meeting',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9842,7 +9842,7 @@ export const generatedTools: Tool[] = [
       en: 'Supernormal is an AI tool designed for meeting & transcription. It provides essential features to help users automate and improve their workflows.',
       ko: 'Supernormal 도구는 회의 및 요약 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Supernormal+AI',
+    websiteUrl: 'https://supernormal.com',
     categoryId: 'meeting',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9878,7 +9878,7 @@ export const generatedTools: Tool[] = [
       en: 'Granola is an AI tool designed for meeting & transcription. It provides essential features to help users automate and improve their workflows.',
       ko: 'Granola 도구는 회의 및 요약 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Granola+AI',
+    websiteUrl: 'https://www.granola.ai',
     categoryId: 'meeting',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9914,7 +9914,7 @@ export const generatedTools: Tool[] = [
       en: 'Jamie is an AI tool designed for meeting & transcription. It provides essential features to help users automate and improve their workflows.',
       ko: 'Jamie 도구는 회의 및 요약 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Jamie+AI',
+    websiteUrl: 'https://www.meetjamie.ai',
     categoryId: 'meeting',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9950,7 +9950,7 @@ export const generatedTools: Tool[] = [
       en: 'Read AI is an AI tool designed for meeting & transcription. It provides essential features to help users automate and improve their workflows.',
       ko: 'Read AI 도구는 회의 및 요약 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Read%20AI+AI',
+    websiteUrl: 'https://www.read.ai',
     categoryId: 'meeting',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -9986,7 +9986,7 @@ export const generatedTools: Tool[] = [
       en: 'Circleback is an AI tool designed for meeting & transcription. It provides essential features to help users automate and improve their workflows.',
       ko: 'Circleback 도구는 회의 및 요약 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Circleback+AI',
+    websiteUrl: 'https://circleback.ai',
     categoryId: 'meeting',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10022,7 +10022,7 @@ export const generatedTools: Tool[] = [
       en: 'Tactiq is an AI tool designed for meeting & transcription. It provides essential features to help users automate and improve their workflows.',
       ko: 'Tactiq 도구는 회의 및 요약 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Tactiq+AI',
+    websiteUrl: 'https://tactiq.io',
     categoryId: 'meeting',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10058,7 +10058,7 @@ export const generatedTools: Tool[] = [
       en: 'Fellow AI is an AI tool designed for meeting & transcription. It provides essential features to help users automate and improve their workflows.',
       ko: 'Fellow AI 도구는 회의 및 요약 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Fellow%20AI+AI',
+    websiteUrl: 'https://fellow.app',
     categoryId: 'meeting',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10094,7 +10094,7 @@ export const generatedTools: Tool[] = [
       en: 'Rewatch is an AI tool designed for meeting & transcription. It provides essential features to help users automate and improve their workflows.',
       ko: 'Rewatch 도구는 회의 및 요약 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Rewatch+AI',
+    websiteUrl: 'https://rewatch.com',
     categoryId: 'meeting',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10130,7 +10130,7 @@ export const generatedTools: Tool[] = [
       en: 'Grain is an AI tool designed for meeting & transcription. It provides essential features to help users automate and improve their workflows.',
       ko: 'Grain 도구는 회의 및 요약 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Grain+AI',
+    websiteUrl: 'https://grain.com',
     categoryId: 'meeting',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10166,7 +10166,7 @@ export const generatedTools: Tool[] = [
       en: 'Gamma is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'Gamma 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Gamma+AI',
+    websiteUrl: 'https://gamma.app',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10202,7 +10202,7 @@ export const generatedTools: Tool[] = [
       en: 'Tome is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'Tome 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Tome+AI',
+    websiteUrl: 'https://tome.app',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10238,7 +10238,7 @@ export const generatedTools: Tool[] = [
       en: 'Beautiful.ai is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'Beautiful.ai 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Beautiful.ai+AI',
+    websiteUrl: 'https://www.beautiful.ai',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10274,7 +10274,7 @@ export const generatedTools: Tool[] = [
       en: 'Canva Docs/Presentations is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'Canva Docs/Presentations 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Canva%20Docs%2FPresentations+AI',
+    websiteUrl: 'https://www.canva.com/presentations/',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10310,7 +10310,7 @@ export const generatedTools: Tool[] = [
       en: 'Microsoft Copilot PowerPoint is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'Microsoft Copilot PowerPoint 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Microsoft%20Copilot%20PowerPoint+AI',
+    websiteUrl: 'https://www.microsoft.com/en-us/microsoft-365/powerpoint',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10346,7 +10346,7 @@ export const generatedTools: Tool[] = [
       en: 'Google Gemini for Slides is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'Google Gemini for Slides 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Google%20Gemini%20for%20Slides+AI',
+    websiteUrl: 'https://workspace.google.com/products/slides/',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10382,7 +10382,7 @@ export const generatedTools: Tool[] = [
       en: 'Pitch is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'Pitch 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Pitch+AI',
+    websiteUrl: 'https://pitch.com',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10418,7 +10418,7 @@ export const generatedTools: Tool[] = [
       en: 'Decktopus is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'Decktopus 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Decktopus+AI',
+    websiteUrl: 'https://www.decktopus.com',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10454,7 +10454,7 @@ export const generatedTools: Tool[] = [
       en: 'SlidesAI is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'SlidesAI 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=SlidesAI+AI',
+    websiteUrl: 'https://www.slidesai.io',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10490,7 +10490,7 @@ export const generatedTools: Tool[] = [
       en: 'Plus AI is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'Plus AI 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Plus%20AI+AI',
+    websiteUrl: 'https://plusai.com',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10526,7 +10526,7 @@ export const generatedTools: Tool[] = [
       en: 'ChatPDF is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'ChatPDF 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=ChatPDF+AI',
+    websiteUrl: 'https://www.chatpdf.com',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10562,7 +10562,7 @@ export const generatedTools: Tool[] = [
       en: 'Humata is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'Humata 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Humata+AI',
+    websiteUrl: 'https://www.humata.ai',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10598,7 +10598,7 @@ export const generatedTools: Tool[] = [
       en: 'AskYourPDF is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'AskYourPDF 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=AskYourPDF+AI',
+    websiteUrl: 'https://askyourpdf.com',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10634,7 +10634,7 @@ export const generatedTools: Tool[] = [
       en: 'PDF.ai is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'PDF.ai 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=PDF.ai+AI',
+    websiteUrl: 'https://pdf.ai',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10670,7 +10670,7 @@ export const generatedTools: Tool[] = [
       en: 'UPDF AI is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'UPDF AI 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=UPDF%20AI+AI',
+    websiteUrl: 'https://updf.com',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10706,7 +10706,7 @@ export const generatedTools: Tool[] = [
       en: 'Adobe Acrobat AI Assistant is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'Adobe Acrobat AI Assistant 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Adobe%20Acrobat%20AI%20Assistant+AI',
+    websiteUrl: 'https://www.adobe.com/acrobat/generative-ai-pdf.html',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10742,7 +10742,7 @@ export const generatedTools: Tool[] = [
       en: 'Documind is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'Documind 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Documind+AI',
+    websiteUrl: 'https://documind.chat',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10778,7 +10778,7 @@ export const generatedTools: Tool[] = [
       en: 'Unriddle is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'Unriddle 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Unriddle+AI',
+    websiteUrl: 'https://www.unriddle.ai',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10814,7 +10814,7 @@ export const generatedTools: Tool[] = [
       en: 'Explainpaper is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'Explainpaper 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Explainpaper+AI',
+    websiteUrl: 'https://www.explainpaper.com',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10850,7 +10850,7 @@ export const generatedTools: Tool[] = [
       en: 'Harvey is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'Harvey 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Harvey+AI',
+    websiteUrl: 'https://www.harvey.ai',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10886,7 +10886,7 @@ export const generatedTools: Tool[] = [
       en: 'Spellbook is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'Spellbook 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Spellbook+AI',
+    websiteUrl: 'https://www.spellbook.legal',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10922,7 +10922,7 @@ export const generatedTools: Tool[] = [
       en: 'Lawgeex is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'Lawgeex 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Lawgeex+AI',
+    websiteUrl: 'https://www.lawgeex.com',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10958,7 +10958,7 @@ export const generatedTools: Tool[] = [
       en: 'Luminance is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'Luminance 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Luminance+AI',
+    websiteUrl: 'https://www.luminance.com',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -10994,7 +10994,7 @@ export const generatedTools: Tool[] = [
       en: 'Casetext CoCounsel is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'Casetext CoCounsel 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Casetext%20CoCounsel+AI',
+    websiteUrl: 'https://casetext.com',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11030,7 +11030,7 @@ export const generatedTools: Tool[] = [
       en: 'Lexis+ AI is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'Lexis+ AI 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Lexis%2B%20AI+AI',
+    websiteUrl: 'https://www.lexisnexis.com/en-us/products/lexis-plus-ai.page',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11066,7 +11066,7 @@ export const generatedTools: Tool[] = [
       en: 'Westlaw Precision AI is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'Westlaw Precision AI 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Westlaw%20Precision%20AI+AI',
+    websiteUrl: 'https://legal.thomsonreuters.com/en/products/westlaw',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11102,7 +11102,7 @@ export const generatedTools: Tool[] = [
       en: 'Ironclad AI is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'Ironclad AI 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Ironclad%20AI+AI',
+    websiteUrl: 'https://ironcladapp.com',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11138,7 +11138,7 @@ export const generatedTools: Tool[] = [
       en: 'Juro AI is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'Juro AI 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Juro%20AI+AI',
+    websiteUrl: 'https://juro.com',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11174,7 +11174,7 @@ export const generatedTools: Tool[] = [
       en: 'Evisort is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'Evisort 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Evisort+AI',
+    websiteUrl: 'https://www.evisort.com',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11210,7 +11210,7 @@ export const generatedTools: Tool[] = [
       en: 'LinkSquares is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'LinkSquares 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=LinkSquares+AI',
+    websiteUrl: 'https://linksquares.com',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11246,7 +11246,7 @@ export const generatedTools: Tool[] = [
       en: 'LegalOn is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'LegalOn 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=LegalOn+AI',
+    websiteUrl: 'https://www.legalontech.com',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11282,7 +11282,7 @@ export const generatedTools: Tool[] = [
       en: 'Robin AI is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'Robin AI 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Robin%20AI+AI',
+    websiteUrl: 'https://www.robinai.com',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11318,7 +11318,7 @@ export const generatedTools: Tool[] = [
       en: 'DocuSign AI is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'DocuSign AI 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=DocuSign%20AI+AI',
+    websiteUrl: 'https://www.docusign.com',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11354,7 +11354,7 @@ export const generatedTools: Tool[] = [
       en: 'PandaDoc AI is an AI tool designed for presentation, documents & legal. It provides essential features to help users automate and improve their workflows.',
       ko: 'PandaDoc AI 도구는 프레젠테이션, 문서 및 법률 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=PandaDoc%20AI+AI',
+    websiteUrl: 'https://www.pandadoc.com',
     categoryId: 'presentation-docs',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11390,7 +11390,7 @@ export const generatedTools: Tool[] = [
       en: 'HubSpot AI is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'HubSpot AI 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=HubSpot%20AI+AI',
+    websiteUrl: 'https://www.hubspot.com/products/artificial-intelligence',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11426,7 +11426,7 @@ export const generatedTools: Tool[] = [
       en: 'Salesforce Einstein is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Salesforce Einstein 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Salesforce%20Einstein+AI',
+    websiteUrl: 'https://www.salesforce.com/artificial-intelligence/',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11462,7 +11462,7 @@ export const generatedTools: Tool[] = [
       en: 'Clay is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Clay 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Clay+AI',
+    websiteUrl: 'https://www.clay.com',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11498,7 +11498,7 @@ export const generatedTools: Tool[] = [
       en: 'Apollo AI is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Apollo AI 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Apollo%20AI+AI',
+    websiteUrl: 'https://www.apollo.io',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11534,7 +11534,7 @@ export const generatedTools: Tool[] = [
       en: 'Lavender is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Lavender 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Lavender+AI',
+    websiteUrl: 'https://www.lavender.ai',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11570,7 +11570,7 @@ export const generatedTools: Tool[] = [
       en: 'Instantly AI is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Instantly AI 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Instantly%20AI+AI',
+    websiteUrl: 'https://instantly.ai',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11606,7 +11606,7 @@ export const generatedTools: Tool[] = [
       en: 'Smartlead is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Smartlead 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Smartlead+AI',
+    websiteUrl: 'https://www.smartlead.ai',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11642,7 +11642,7 @@ export const generatedTools: Tool[] = [
       en: 'Lemlist is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Lemlist 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Lemlist+AI',
+    websiteUrl: 'https://www.lemlist.com',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11678,7 +11678,7 @@ export const generatedTools: Tool[] = [
       en: 'Copy.ai is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Copy.ai 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Copy.ai+AI',
+    websiteUrl: 'https://www.copy.ai',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11714,7 +11714,7 @@ export const generatedTools: Tool[] = [
       en: 'Jasper is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Jasper 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Jasper+AI',
+    websiteUrl: 'https://www.jasper.ai',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11750,7 +11750,7 @@ export const generatedTools: Tool[] = [
       en: 'AdCreative.ai is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'AdCreative.ai 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=AdCreative.ai+AI',
+    websiteUrl: 'https://www.adcreative.ai',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11786,7 +11786,7 @@ export const generatedTools: Tool[] = [
       en: 'Pencil is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Pencil 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Pencil+AI',
+    websiteUrl: 'https://www.trypencil.com',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11822,7 +11822,7 @@ export const generatedTools: Tool[] = [
       en: 'Predis.ai is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Predis.ai 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Predis.ai+AI',
+    websiteUrl: 'https://predis.ai',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11858,7 +11858,7 @@ export const generatedTools: Tool[] = [
       en: 'Ocoya is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Ocoya 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Ocoya+AI',
+    websiteUrl: 'https://www.ocoya.com',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11894,7 +11894,7 @@ export const generatedTools: Tool[] = [
       en: 'Hootsuite OwlyWriter is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Hootsuite OwlyWriter 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Hootsuite%20OwlyWriter+AI',
+    websiteUrl: 'https://www.hootsuite.com/platform/owly-writer-ai',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11930,7 +11930,7 @@ export const generatedTools: Tool[] = [
       en: 'Buffer AI is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Buffer AI 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Buffer%20AI+AI',
+    websiteUrl: 'https://buffer.com/ai-assistant',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -11966,7 +11966,7 @@ export const generatedTools: Tool[] = [
       en: 'Taplio is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Taplio 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Taplio+AI',
+    websiteUrl: 'https://taplio.com',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12002,7 +12002,7 @@ export const generatedTools: Tool[] = [
       en: 'Tweet Hunter is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Tweet Hunter 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Tweet%20Hunter+AI',
+    websiteUrl: 'https://tweethunter.io',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12038,7 +12038,7 @@ export const generatedTools: Tool[] = [
       en: 'PhantomBuster is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'PhantomBuster 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=PhantomBuster+AI',
+    websiteUrl: 'https://phantombuster.com',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12074,7 +12074,7 @@ export const generatedTools: Tool[] = [
       en: 'Browse AI is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Browse AI 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Browse%20AI+AI',
+    websiteUrl: 'https://www.browse.ai',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12110,7 +12110,7 @@ export const generatedTools: Tool[] = [
       en: 'Semrush is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Semrush 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Semrush+AI',
+    websiteUrl: 'https://www.semrush.com',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12146,7 +12146,7 @@ export const generatedTools: Tool[] = [
       en: 'Ahrefs is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Ahrefs 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Ahrefs+AI',
+    websiteUrl: 'https://ahrefs.com',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12182,7 +12182,7 @@ export const generatedTools: Tool[] = [
       en: 'Surfer SEO is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Surfer SEO 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Surfer%20SEO+AI',
+    websiteUrl: 'https://surferseo.com',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12218,7 +12218,7 @@ export const generatedTools: Tool[] = [
       en: 'Frase is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Frase 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Frase+AI',
+    websiteUrl: 'https://www.frase.io',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12254,7 +12254,7 @@ export const generatedTools: Tool[] = [
       en: 'Clearscope is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Clearscope 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Clearscope+AI',
+    websiteUrl: 'https://www.clearscope.io',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12290,7 +12290,7 @@ export const generatedTools: Tool[] = [
       en: 'MarketMuse is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'MarketMuse 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=MarketMuse+AI',
+    websiteUrl: 'https://www.marketmuse.com',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12326,7 +12326,7 @@ export const generatedTools: Tool[] = [
       en: 'NeuronWriter is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'NeuronWriter 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=NeuronWriter+AI',
+    websiteUrl: 'https://neuronwriter.com',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12362,7 +12362,7 @@ export const generatedTools: Tool[] = [
       en: 'Scalenut is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Scalenut 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Scalenut+AI',
+    websiteUrl: 'https://www.scalenut.com',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12398,7 +12398,7 @@ export const generatedTools: Tool[] = [
       en: 'SE Ranking is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'SE Ranking 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=SE%20Ranking+AI',
+    websiteUrl: 'https://seranking.com',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12434,7 +12434,7 @@ export const generatedTools: Tool[] = [
       en: 'LowFruits is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'LowFruits 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=LowFruits+AI',
+    websiteUrl: 'https://lowfruits.io',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12470,7 +12470,7 @@ export const generatedTools: Tool[] = [
       en: 'WriterZen is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'WriterZen 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=WriterZen+AI',
+    websiteUrl: 'https://writerzen.net',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12506,7 +12506,7 @@ export const generatedTools: Tool[] = [
       en: 'KoalaWriter is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'KoalaWriter 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=KoalaWriter+AI',
+    websiteUrl: 'https://koala.sh',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12542,7 +12542,7 @@ export const generatedTools: Tool[] = [
       en: 'Autoblogging.ai is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Autoblogging.ai 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Autoblogging.ai+AI',
+    websiteUrl: 'https://autoblogging.ai',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12578,7 +12578,7 @@ export const generatedTools: Tool[] = [
       en: 'ContentShake AI is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'ContentShake AI 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=ContentShake%20AI+AI',
+    websiteUrl: 'https://www.semrush.com/contentshake/',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12614,7 +12614,7 @@ export const generatedTools: Tool[] = [
       en: 'RankIQ is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'RankIQ 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=RankIQ+AI',
+    websiteUrl: 'https://www.rankiq.com',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12650,7 +12650,7 @@ export const generatedTools: Tool[] = [
       en: 'Page Optimizer Pro is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Page Optimizer Pro 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Page%20Optimizer%20Pro+AI',
+    websiteUrl: 'https://pageoptimizer.pro',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12686,7 +12686,7 @@ export const generatedTools: Tool[] = [
       en: 'Surfer AI Humanizer is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Surfer AI Humanizer 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Surfer%20AI%20Humanizer+AI',
+    websiteUrl: 'https://surferseo.com',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12722,7 +12722,7 @@ export const generatedTools: Tool[] = [
       en: 'Originality.ai is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Originality.ai 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Originality.ai+AI',
+    websiteUrl: 'https://originality.ai',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12758,7 +12758,7 @@ export const generatedTools: Tool[] = [
       en: 'Content at Scale is an AI tool designed for marketing & seo. It provides essential features to help users automate and improve their workflows.',
       ko: 'Content at Scale 도구는 마케팅 및 SEO 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Content%20at%20Scale+AI',
+    websiteUrl: 'https://contentatscale.ai',
     categoryId: 'marketing-seo',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12794,7 +12794,7 @@ export const generatedTools: Tool[] = [
       en: 'ChatGPT Advanced Data Analysis is an AI tool designed for data analysis & spreadsheets. It provides essential features to help users automate and improve their workflows.',
       ko: 'ChatGPT Advanced Data Analysis 도구는 데이터 분석 및 스프레드시트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=ChatGPT%20Advanced%20Data%20Analysis+AI',
+    websiteUrl: 'https://chatgpt.com',
     categoryId: 'data-analysis',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12830,7 +12830,7 @@ export const generatedTools: Tool[] = [
       en: 'Microsoft Copilot Excel is an AI tool designed for data analysis & spreadsheets. It provides essential features to help users automate and improve their workflows.',
       ko: 'Microsoft Copilot Excel 도구는 데이터 분석 및 스프레드시트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Microsoft%20Copilot%20Excel+AI',
+    websiteUrl: 'https://www.microsoft.com/en-us/microsoft-365/excel',
     categoryId: 'data-analysis',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12866,7 +12866,7 @@ export const generatedTools: Tool[] = [
       en: 'Google Gemini Sheets is an AI tool designed for data analysis & spreadsheets. It provides essential features to help users automate and improve their workflows.',
       ko: 'Google Gemini Sheets 도구는 데이터 분석 및 스프레드시트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Google%20Gemini%20Sheets+AI',
+    websiteUrl: 'https://workspace.google.com/products/sheets/',
     categoryId: 'data-analysis',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12902,7 +12902,7 @@ export const generatedTools: Tool[] = [
       en: 'Rows AI is an AI tool designed for data analysis & spreadsheets. It provides essential features to help users automate and improve their workflows.',
       ko: 'Rows AI 도구는 데이터 분석 및 스프레드시트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Rows%20AI+AI',
+    websiteUrl: 'https://rows.com',
     categoryId: 'data-analysis',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12938,7 +12938,7 @@ export const generatedTools: Tool[] = [
       en: 'Numerous.ai is an AI tool designed for data analysis & spreadsheets. It provides essential features to help users automate and improve their workflows.',
       ko: 'Numerous.ai 도구는 데이터 분석 및 스프레드시트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Numerous.ai+AI',
+    websiteUrl: 'https://numerous.ai',
     categoryId: 'data-analysis',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -12974,7 +12974,7 @@ export const generatedTools: Tool[] = [
       en: 'SheetAI is an AI tool designed for data analysis & spreadsheets. It provides essential features to help users automate and improve their workflows.',
       ko: 'SheetAI 도구는 데이터 분석 및 스프레드시트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=SheetAI+AI',
+    websiteUrl: 'https://www.sheetai.app',
     categoryId: 'data-analysis',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13010,7 +13010,7 @@ export const generatedTools: Tool[] = [
       en: 'Akkio is an AI tool designed for data analysis & spreadsheets. It provides essential features to help users automate and improve their workflows.',
       ko: 'Akkio 도구는 데이터 분석 및 스프레드시트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Akkio+AI',
+    websiteUrl: 'https://www.akkio.com',
     categoryId: 'data-analysis',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13046,7 +13046,7 @@ export const generatedTools: Tool[] = [
       en: 'Julius AI is an AI tool designed for data analysis & spreadsheets. It provides essential features to help users automate and improve their workflows.',
       ko: 'Julius AI 도구는 데이터 분석 및 스프레드시트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Julius%20AI+AI',
+    websiteUrl: 'https://julius.ai',
     categoryId: 'data-analysis',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13082,7 +13082,7 @@ export const generatedTools: Tool[] = [
       en: 'Polymer is an AI tool designed for data analysis & spreadsheets. It provides essential features to help users automate and improve their workflows.',
       ko: 'Polymer 도구는 데이터 분석 및 스프레드시트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Polymer+AI',
+    websiteUrl: 'https://www.polymersearch.com',
     categoryId: 'data-analysis',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13118,7 +13118,7 @@ export const generatedTools: Tool[] = [
       en: 'Obviously AI is an AI tool designed for data analysis & spreadsheets. It provides essential features to help users automate and improve their workflows.',
       ko: 'Obviously AI 도구는 데이터 분석 및 스프레드시트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Obviously%20AI+AI',
+    websiteUrl: 'https://www.obviously.ai',
     categoryId: 'data-analysis',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13154,7 +13154,7 @@ export const generatedTools: Tool[] = [
       en: 'DataRobot is an AI tool designed for data analysis & spreadsheets. It provides essential features to help users automate and improve their workflows.',
       ko: 'DataRobot 도구는 데이터 분석 및 스프레드시트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=DataRobot+AI',
+    websiteUrl: 'https://www.datarobot.com',
     categoryId: 'data-analysis',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13190,7 +13190,7 @@ export const generatedTools: Tool[] = [
       en: 'Tableau AI is an AI tool designed for data analysis & spreadsheets. It provides essential features to help users automate and improve their workflows.',
       ko: 'Tableau AI 도구는 데이터 분석 및 스프레드시트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Tableau%20AI+AI',
+    websiteUrl: 'https://www.tableau.com',
     categoryId: 'data-analysis',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13226,7 +13226,7 @@ export const generatedTools: Tool[] = [
       en: 'Power BI Copilot is an AI tool designed for data analysis & spreadsheets. It provides essential features to help users automate and improve their workflows.',
       ko: 'Power BI Copilot 도구는 데이터 분석 및 스프레드시트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Power%20BI%20Copilot+AI',
+    websiteUrl: 'https://www.microsoft.com/en-us/power-platform/products/power-bi',
     categoryId: 'data-analysis',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13262,7 +13262,7 @@ export const generatedTools: Tool[] = [
       en: 'ThoughtSpot Sage is an AI tool designed for data analysis & spreadsheets. It provides essential features to help users automate and improve their workflows.',
       ko: 'ThoughtSpot Sage 도구는 데이터 분석 및 스프레드시트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=ThoughtSpot%20Sage+AI',
+    websiteUrl: 'https://www.thoughtspot.com',
     categoryId: 'data-analysis',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13298,7 +13298,7 @@ export const generatedTools: Tool[] = [
       en: 'Hex is an AI tool designed for data analysis & spreadsheets. It provides essential features to help users automate and improve their workflows.',
       ko: 'Hex 도구는 데이터 분석 및 스프레드시트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Hex+AI',
+    websiteUrl: 'https://hex.tech',
     categoryId: 'data-analysis',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13334,7 +13334,7 @@ export const generatedTools: Tool[] = [
       en: 'Mode AI is an AI tool designed for data analysis & spreadsheets. It provides essential features to help users automate and improve their workflows.',
       ko: 'Mode AI 도구는 데이터 분석 및 스프레드시트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Mode%20AI+AI',
+    websiteUrl: 'https://mode.com',
     categoryId: 'data-analysis',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13370,7 +13370,7 @@ export const generatedTools: Tool[] = [
       en: 'Databricks Assistant is an AI tool designed for data analysis & spreadsheets. It provides essential features to help users automate and improve their workflows.',
       ko: 'Databricks Assistant 도구는 데이터 분석 및 스프레드시트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Databricks%20Assistant+AI',
+    websiteUrl: 'https://www.databricks.com',
     categoryId: 'data-analysis',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13406,7 +13406,7 @@ export const generatedTools: Tool[] = [
       en: 'Snowflake Cortex is an AI tool designed for data analysis & spreadsheets. It provides essential features to help users automate and improve their workflows.',
       ko: 'Snowflake Cortex 도구는 데이터 분석 및 스프레드시트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Snowflake%20Cortex+AI',
+    websiteUrl: 'https://www.snowflake.com/en/data-cloud/cortex/',
     categoryId: 'data-analysis',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13442,7 +13442,7 @@ export const generatedTools: Tool[] = [
       en: 'BigQuery Gemini is an AI tool designed for data analysis & spreadsheets. It provides essential features to help users automate and improve their workflows.',
       ko: 'BigQuery Gemini 도구는 데이터 분석 및 스프레드시트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=BigQuery%20Gemini+AI',
+    websiteUrl: 'https://cloud.google.com/bigquery',
     categoryId: 'data-analysis',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13478,7 +13478,7 @@ export const generatedTools: Tool[] = [
       en: 'MonkeyLearn is an AI tool designed for data analysis & spreadsheets. It provides essential features to help users automate and improve their workflows.',
       ko: 'MonkeyLearn 도구는 데이터 분석 및 스프레드시트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=MonkeyLearn+AI',
+    websiteUrl: 'https://monkeylearn.com',
     categoryId: 'data-analysis',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13514,7 +13514,7 @@ export const generatedTools: Tool[] = [
       en: 'Intercom Fin is an AI tool designed for customer support. It provides essential features to help users automate and improve their workflows.',
       ko: 'Intercom Fin 도구는 고객 지원 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Intercom%20Fin+AI',
+    websiteUrl: 'https://www.intercom.com/fin',
     categoryId: 'customer-support',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13550,7 +13550,7 @@ export const generatedTools: Tool[] = [
       en: 'Zendesk AI is an AI tool designed for customer support. It provides essential features to help users automate and improve their workflows.',
       ko: 'Zendesk AI 도구는 고객 지원 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Zendesk%20AI+AI',
+    websiteUrl: 'https://www.zendesk.com/service/ai/',
     categoryId: 'customer-support',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13586,7 +13586,7 @@ export const generatedTools: Tool[] = [
       en: 'Freshdesk Freddy AI is an AI tool designed for customer support. It provides essential features to help users automate and improve their workflows.',
       ko: 'Freshdesk Freddy AI 도구는 고객 지원 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Freshdesk%20Freddy%20AI+AI',
+    websiteUrl: 'https://www.freshworks.com/freddy-ai/',
     categoryId: 'customer-support',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13622,7 +13622,7 @@ export const generatedTools: Tool[] = [
       en: 'Help Scout AI is an AI tool designed for customer support. It provides essential features to help users automate and improve their workflows.',
       ko: 'Help Scout AI 도구는 고객 지원 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Help%20Scout%20AI+AI',
+    websiteUrl: 'https://www.helpscout.com',
     categoryId: 'customer-support',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13658,7 +13658,7 @@ export const generatedTools: Tool[] = [
       en: 'Tidio is an AI tool designed for customer support. It provides essential features to help users automate and improve their workflows.',
       ko: 'Tidio 도구는 고객 지원 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Tidio+AI',
+    websiteUrl: 'https://www.tidio.com',
     categoryId: 'customer-support',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13694,7 +13694,7 @@ export const generatedTools: Tool[] = [
       en: 'Drift is an AI tool designed for customer support. It provides essential features to help users automate and improve their workflows.',
       ko: 'Drift 도구는 고객 지원 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Drift+AI',
+    websiteUrl: 'https://www.drift.com',
     categoryId: 'customer-support',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13730,7 +13730,7 @@ export const generatedTools: Tool[] = [
       en: 'Ada is an AI tool designed for customer support. It provides essential features to help users automate and improve their workflows.',
       ko: 'Ada 도구는 고객 지원 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Ada+AI',
+    websiteUrl: 'https://www.ada.cx',
     categoryId: 'customer-support',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13766,7 +13766,7 @@ export const generatedTools: Tool[] = [
       en: 'Forethought is an AI tool designed for customer support. It provides essential features to help users automate and improve their workflows.',
       ko: 'Forethought 도구는 고객 지원 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Forethought+AI',
+    websiteUrl: 'https://forethought.ai',
     categoryId: 'customer-support',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13802,7 +13802,7 @@ export const generatedTools: Tool[] = [
       en: 'Kustomer AI is an AI tool designed for customer support. It provides essential features to help users automate and improve their workflows.',
       ko: 'Kustomer AI 도구는 고객 지원 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Kustomer%20AI+AI',
+    websiteUrl: 'https://www.kustomer.com',
     categoryId: 'customer-support',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13838,7 +13838,7 @@ export const generatedTools: Tool[] = [
       en: 'Crisp AI is an AI tool designed for customer support. It provides essential features to help users automate and improve their workflows.',
       ko: 'Crisp AI 도구는 고객 지원 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Crisp%20AI+AI',
+    websiteUrl: 'https://crisp.chat',
     categoryId: 'customer-support',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13874,7 +13874,7 @@ export const generatedTools: Tool[] = [
       en: 'Botpress is an AI tool designed for customer support. It provides essential features to help users automate and improve their workflows.',
       ko: 'Botpress 도구는 고객 지원 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Botpress+AI',
+    websiteUrl: 'https://botpress.com',
     categoryId: 'customer-support',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13910,7 +13910,7 @@ export const generatedTools: Tool[] = [
       en: 'Voiceflow is an AI tool designed for customer support. It provides essential features to help users automate and improve their workflows.',
       ko: 'Voiceflow 도구는 고객 지원 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Voiceflow+AI',
+    websiteUrl: 'https://www.voiceflow.com',
     categoryId: 'customer-support',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13946,7 +13946,7 @@ export const generatedTools: Tool[] = [
       en: 'Manychat AI is an AI tool designed for customer support. It provides essential features to help users automate and improve their workflows.',
       ko: 'Manychat AI 도구는 고객 지원 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Manychat%20AI+AI',
+    websiteUrl: 'https://manychat.com',
     categoryId: 'customer-support',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -13982,7 +13982,7 @@ export const generatedTools: Tool[] = [
       en: 'Chatbase is an AI tool designed for customer support. It provides essential features to help users automate and improve their workflows.',
       ko: 'Chatbase 도구는 고객 지원 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Chatbase+AI',
+    websiteUrl: 'https://www.chatbase.co',
     categoryId: 'customer-support',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14018,7 +14018,7 @@ export const generatedTools: Tool[] = [
       en: 'CustomGPT is an AI tool designed for customer support. It provides essential features to help users automate and improve their workflows.',
       ko: 'CustomGPT 도구는 고객 지원 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=CustomGPT+AI',
+    websiteUrl: 'https://customgpt.ai',
     categoryId: 'customer-support',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14054,7 +14054,7 @@ export const generatedTools: Tool[] = [
       en: 'SiteGPT is an AI tool designed for customer support. It provides essential features to help users automate and improve their workflows.',
       ko: 'SiteGPT 도구는 고객 지원 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=SiteGPT+AI',
+    websiteUrl: 'https://sitegpt.ai',
     categoryId: 'customer-support',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14090,7 +14090,7 @@ export const generatedTools: Tool[] = [
       en: 'DocsBot AI is an AI tool designed for customer support. It provides essential features to help users automate and improve their workflows.',
       ko: 'DocsBot AI 도구는 고객 지원 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=DocsBot%20AI+AI',
+    websiteUrl: 'https://docsbot.ai',
     categoryId: 'customer-support',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14126,7 +14126,7 @@ export const generatedTools: Tool[] = [
       en: 'Wonderchat is an AI tool designed for customer support. It provides essential features to help users automate and improve their workflows.',
       ko: 'Wonderchat 도구는 고객 지원 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Wonderchat+AI',
+    websiteUrl: 'https://wonderchat.io',
     categoryId: 'customer-support',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14162,7 +14162,7 @@ export const generatedTools: Tool[] = [
       en: 'Kommunicate is an AI tool designed for customer support. It provides essential features to help users automate and improve their workflows.',
       ko: 'Kommunicate 도구는 고객 지원 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Kommunicate+AI',
+    websiteUrl: 'https://www.kommunicate.io',
     categoryId: 'customer-support',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14198,7 +14198,7 @@ export const generatedTools: Tool[] = [
       en: 'Gorgias AI is an AI tool designed for customer support. It provides essential features to help users automate and improve their workflows.',
       ko: 'Gorgias AI 도구는 고객 지원 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Gorgias%20AI+AI',
+    websiteUrl: 'https://www.gorgias.com',
     categoryId: 'customer-support',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14234,7 +14234,7 @@ export const generatedTools: Tool[] = [
       en: 'DeepL is an AI tool designed for translation & localization. It provides essential features to help users automate and improve their workflows.',
       ko: 'DeepL 도구는 번역 및 로컬라이제이션 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=DeepL+AI',
+    websiteUrl: 'https://www.deepl.com',
     categoryId: 'translation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14270,7 +14270,7 @@ export const generatedTools: Tool[] = [
       en: 'Google Translate is an AI tool designed for translation & localization. It provides essential features to help users automate and improve their workflows.',
       ko: 'Google Translate 도구는 번역 및 로컬라이제이션 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Google%20Translate+AI',
+    websiteUrl: 'https://translate.google.com',
     categoryId: 'translation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14306,7 +14306,7 @@ export const generatedTools: Tool[] = [
       en: 'Papago is an AI tool designed for translation & localization. It provides essential features to help users automate and improve their workflows.',
       ko: 'Papago 도구는 번역 및 로컬라이제이션 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Papago+AI',
+    websiteUrl: 'https://papago.naver.com',
     categoryId: 'translation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14342,7 +14342,7 @@ export const generatedTools: Tool[] = [
       en: 'ChatGPT is an AI tool designed for translation & localization. It provides essential features to help users automate and improve their workflows.',
       ko: 'ChatGPT 도구는 번역 및 로컬라이제이션 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=ChatGPT+AI',
+    websiteUrl: 'https://chatgpt.com',
     categoryId: 'translation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14378,7 +14378,7 @@ export const generatedTools: Tool[] = [
       en: 'Gemini is an AI tool designed for translation & localization. It provides essential features to help users automate and improve their workflows.',
       ko: 'Gemini 도구는 번역 및 로컬라이제이션 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Gemini+AI',
+    websiteUrl: 'https://gemini.google.com',
     categoryId: 'translation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14414,7 +14414,7 @@ export const generatedTools: Tool[] = [
       en: 'Claude is an AI tool designed for translation & localization. It provides essential features to help users automate and improve their workflows.',
       ko: 'Claude 도구는 번역 및 로컬라이제이션 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Claude+AI',
+    websiteUrl: 'https://claude.ai',
     categoryId: 'translation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14450,7 +14450,7 @@ export const generatedTools: Tool[] = [
       en: 'DeepL Write is an AI tool designed for translation & localization. It provides essential features to help users automate and improve their workflows.',
       ko: 'DeepL Write 도구는 번역 및 로컬라이제이션 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=DeepL%20Write+AI',
+    websiteUrl: 'https://www.deepl.com/write',
     categoryId: 'translation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14486,7 +14486,7 @@ export const generatedTools: Tool[] = [
       en: 'Grammarly Translate is an AI tool designed for translation & localization. It provides essential features to help users automate and improve their workflows.',
       ko: 'Grammarly Translate 도구는 번역 및 로컬라이제이션 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Grammarly%20Translate+AI',
+    websiteUrl: 'https://www.grammarly.com',
     categoryId: 'translation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14522,7 +14522,7 @@ export const generatedTools: Tool[] = [
       en: 'Lokalise AI is an AI tool designed for translation & localization. It provides essential features to help users automate and improve their workflows.',
       ko: 'Lokalise AI 도구는 번역 및 로컬라이제이션 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Lokalise%20AI+AI',
+    websiteUrl: 'https://lokalise.com',
     categoryId: 'translation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14558,7 +14558,7 @@ export const generatedTools: Tool[] = [
       en: 'Weglot is an AI tool designed for translation & localization. It provides essential features to help users automate and improve their workflows.',
       ko: 'Weglot 도구는 번역 및 로컬라이제이션 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Weglot+AI',
+    websiteUrl: 'https://www.weglot.com',
     categoryId: 'translation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14594,7 +14594,7 @@ export const generatedTools: Tool[] = [
       en: 'Crowdin AI is an AI tool designed for translation & localization. It provides essential features to help users automate and improve their workflows.',
       ko: 'Crowdin AI 도구는 번역 및 로컬라이제이션 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Crowdin%20AI+AI',
+    websiteUrl: 'https://crowdin.com',
     categoryId: 'translation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14630,7 +14630,7 @@ export const generatedTools: Tool[] = [
       en: 'Smartcat is an AI tool designed for translation & localization. It provides essential features to help users automate and improve their workflows.',
       ko: 'Smartcat 도구는 번역 및 로컬라이제이션 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Smartcat+AI',
+    websiteUrl: 'https://www.smartcat.com',
     categoryId: 'translation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14666,7 +14666,7 @@ export const generatedTools: Tool[] = [
       en: 'Phrase is an AI tool designed for translation & localization. It provides essential features to help users automate and improve their workflows.',
       ko: 'Phrase 도구는 번역 및 로컬라이제이션 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Phrase+AI',
+    websiteUrl: 'https://phrase.com',
     categoryId: 'translation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14702,7 +14702,7 @@ export const generatedTools: Tool[] = [
       en: 'Rask AI is an AI tool designed for translation & localization. It provides essential features to help users automate and improve their workflows.',
       ko: 'Rask AI 도구는 번역 및 로컬라이제이션 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Rask%20AI+AI',
+    websiteUrl: 'https://www.rask.ai',
     categoryId: 'translation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14738,7 +14738,7 @@ export const generatedTools: Tool[] = [
       en: 'HeyGen Video Translate is an AI tool designed for translation & localization. It provides essential features to help users automate and improve their workflows.',
       ko: 'HeyGen Video Translate 도구는 번역 및 로컬라이제이션 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=HeyGen%20Video%20Translate+AI',
+    websiteUrl: 'https://www.heygen.com/translate',
     categoryId: 'translation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14774,7 +14774,7 @@ export const generatedTools: Tool[] = [
       en: 'Dubverse is an AI tool designed for translation & localization. It provides essential features to help users automate and improve their workflows.',
       ko: 'Dubverse 도구는 번역 및 로컬라이제이션 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Dubverse+AI',
+    websiteUrl: 'https://dubverse.ai',
     categoryId: 'translation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14810,7 +14810,7 @@ export const generatedTools: Tool[] = [
       en: 'ElevenLabs Dubbing is an AI tool designed for translation & localization. It provides essential features to help users automate and improve their workflows.',
       ko: 'ElevenLabs Dubbing 도구는 번역 및 로컬라이제이션 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=ElevenLabs%20Dubbing+AI',
+    websiteUrl: 'https://elevenlabs.io/dubbing',
     categoryId: 'translation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14846,7 +14846,7 @@ export const generatedTools: Tool[] = [
       en: 'Papercup is an AI tool designed for translation & localization. It provides essential features to help users automate and improve their workflows.',
       ko: 'Papercup 도구는 번역 및 로컬라이제이션 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Papercup+AI',
+    websiteUrl: 'https://www.papercup.com',
     categoryId: 'translation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14882,7 +14882,7 @@ export const generatedTools: Tool[] = [
       en: 'Maestra is an AI tool designed for translation & localization. It provides essential features to help users automate and improve their workflows.',
       ko: 'Maestra 도구는 번역 및 로컬라이제이션 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Maestra+AI',
+    websiteUrl: 'https://maestra.ai',
     categoryId: 'translation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14918,7 +14918,7 @@ export const generatedTools: Tool[] = [
       en: 'Sonix is an AI tool designed for translation & localization. It provides essential features to help users automate and improve their workflows.',
       ko: 'Sonix 도구는 번역 및 로컬라이제이션 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Sonix+AI',
+    websiteUrl: 'https://sonix.ai',
     categoryId: 'translation',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14954,7 +14954,7 @@ export const generatedTools: Tool[] = [
       en: 'Interior AI is an AI tool designed for 3d & architecture. It provides essential features to help users automate and improve their workflows.',
       ko: 'Interior AI 도구는 3D 및 건축 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Interior%20AI+AI',
+    websiteUrl: 'https://interiorai.com',
     categoryId: '3d-architecture',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -14990,7 +14990,7 @@ export const generatedTools: Tool[] = [
       en: 'RoomGPT is an AI tool designed for 3d & architecture. It provides essential features to help users automate and improve their workflows.',
       ko: 'RoomGPT 도구는 3D 및 건축 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=RoomGPT+AI',
+    websiteUrl: 'https://www.roomgpt.io',
     categoryId: '3d-architecture',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15026,7 +15026,7 @@ export const generatedTools: Tool[] = [
       en: 'ReimagineHome is an AI tool designed for 3d & architecture. It provides essential features to help users automate and improve their workflows.',
       ko: 'ReimagineHome 도구는 3D 및 건축 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=ReimagineHome+AI',
+    websiteUrl: 'https://www.reimaginehome.ai',
     categoryId: '3d-architecture',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15062,7 +15062,7 @@ export const generatedTools: Tool[] = [
       en: 'Planner 5D AI is an AI tool designed for 3d & architecture. It provides essential features to help users automate and improve their workflows.',
       ko: 'Planner 5D AI 도구는 3D 및 건축 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Planner%205D%20AI+AI',
+    websiteUrl: 'https://planner5d.com',
     categoryId: '3d-architecture',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15098,7 +15098,7 @@ export const generatedTools: Tool[] = [
       en: 'Homestyler AI is an AI tool designed for 3d & architecture. It provides essential features to help users automate and improve their workflows.',
       ko: 'Homestyler AI 도구는 3D 및 건축 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Homestyler%20AI+AI',
+    websiteUrl: 'https://www.homestyler.com',
     categoryId: '3d-architecture',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15134,7 +15134,7 @@ export const generatedTools: Tool[] = [
       en: 'DecorMatters is an AI tool designed for 3d & architecture. It provides essential features to help users automate and improve their workflows.',
       ko: 'DecorMatters 도구는 3D 및 건축 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=DecorMatters+AI',
+    websiteUrl: 'https://decormatters.com',
     categoryId: '3d-architecture',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15170,7 +15170,7 @@ export const generatedTools: Tool[] = [
       en: 'Spacely AI is an AI tool designed for 3d & architecture. It provides essential features to help users automate and improve their workflows.',
       ko: 'Spacely AI 도구는 3D 및 건축 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Spacely%20AI+AI',
+    websiteUrl: 'https://www.spacely.ai',
     categoryId: '3d-architecture',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15206,7 +15206,7 @@ export const generatedTools: Tool[] = [
       en: 'Architechtures is an AI tool designed for 3d & architecture. It provides essential features to help users automate and improve their workflows.',
       ko: 'Architechtures 도구는 3D 및 건축 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Architechtures+AI',
+    websiteUrl: 'https://architechtures.com',
     categoryId: '3d-architecture',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15242,7 +15242,7 @@ export const generatedTools: Tool[] = [
       en: 'Maket AI is an AI tool designed for 3d & architecture. It provides essential features to help users automate and improve their workflows.',
       ko: 'Maket AI 도구는 3D 및 건축 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Maket%20AI+AI',
+    websiteUrl: 'https://www.maket.ai',
     categoryId: '3d-architecture',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15278,7 +15278,7 @@ export const generatedTools: Tool[] = [
       en: 'TestFit is an AI tool designed for 3d & architecture. It provides essential features to help users automate and improve their workflows.',
       ko: 'TestFit 도구는 3D 및 건축 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=TestFit+AI',
+    websiteUrl: 'https://www.testfit.io',
     categoryId: '3d-architecture',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15314,7 +15314,7 @@ export const generatedTools: Tool[] = [
       en: 'Kaedim is an AI tool designed for 3d & architecture. It provides essential features to help users automate and improve their workflows.',
       ko: 'Kaedim 도구는 3D 및 건축 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Kaedim+AI',
+    websiteUrl: 'https://www.kaedim3d.com',
     categoryId: '3d-architecture',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15350,7 +15350,7 @@ export const generatedTools: Tool[] = [
       en: 'Meshy is an AI tool designed for 3d & architecture. It provides essential features to help users automate and improve their workflows.',
       ko: 'Meshy 도구는 3D 및 건축 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Meshy+AI',
+    websiteUrl: 'https://www.meshy.ai',
     categoryId: '3d-architecture',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15386,7 +15386,7 @@ export const generatedTools: Tool[] = [
       en: 'Luma AI is an AI tool designed for 3d & architecture. It provides essential features to help users automate and improve their workflows.',
       ko: 'Luma AI 도구는 3D 및 건축 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Luma%20AI+AI',
+    websiteUrl: 'https://lumalabs.ai',
     categoryId: '3d-architecture',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15422,7 +15422,7 @@ export const generatedTools: Tool[] = [
       en: 'Spline AI is an AI tool designed for 3d & architecture. It provides essential features to help users automate and improve their workflows.',
       ko: 'Spline AI 도구는 3D 및 건축 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Spline%20AI+AI',
+    websiteUrl: 'https://spline.design',
     categoryId: '3d-architecture',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15458,7 +15458,7 @@ export const generatedTools: Tool[] = [
       en: 'Masterpiece X is an AI tool designed for 3d & architecture. It provides essential features to help users automate and improve their workflows.',
       ko: 'Masterpiece X 도구는 3D 및 건축 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Masterpiece%20X+AI',
+    websiteUrl: 'https://www.masterpiecex.com',
     categoryId: '3d-architecture',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15494,7 +15494,7 @@ export const generatedTools: Tool[] = [
       en: 'Alpha3D is an AI tool designed for 3d & architecture. It provides essential features to help users automate and improve their workflows.',
       ko: 'Alpha3D 도구는 3D 및 건축 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Alpha3D+AI',
+    websiteUrl: 'https://www.alpha3d.io',
     categoryId: '3d-architecture',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15530,7 +15530,7 @@ export const generatedTools: Tool[] = [
       en: 'Tripo AI is an AI tool designed for 3d & architecture. It provides essential features to help users automate and improve their workflows.',
       ko: 'Tripo AI 도구는 3D 및 건축 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Tripo%20AI+AI',
+    websiteUrl: 'https://www.tripo3d.ai',
     categoryId: '3d-architecture',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15566,7 +15566,7 @@ export const generatedTools: Tool[] = [
       en: 'CSM AI is an AI tool designed for 3d & architecture. It provides essential features to help users automate and improve their workflows.',
       ko: 'CSM AI 도구는 3D 및 건축 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=CSM%20AI+AI',
+    websiteUrl: 'https://www.csm.ai',
     categoryId: '3d-architecture',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15602,7 +15602,7 @@ export const generatedTools: Tool[] = [
       en: 'NVIDIA Omniverse is an AI tool designed for 3d & architecture. It provides essential features to help users automate and improve their workflows.',
       ko: 'NVIDIA Omniverse 도구는 3D 및 건축 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=NVIDIA%20Omniverse+AI',
+    websiteUrl: 'https://www.nvidia.com/en-us/omniverse/',
     categoryId: '3d-architecture',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15638,7 +15638,7 @@ export const generatedTools: Tool[] = [
       en: 'Scenario is an AI tool designed for 3d & architecture. It provides essential features to help users automate and improve their workflows.',
       ko: 'Scenario 도구는 3D 및 건축 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Scenario+AI',
+    websiteUrl: 'https://www.scenario.com',
     categoryId: '3d-architecture',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15674,7 +15674,7 @@ export const generatedTools: Tool[] = [
       en: 'Shopify Magic is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Shopify Magic 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Shopify%20Magic+AI',
+    websiteUrl: 'https://www.shopify.com/magic',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15710,7 +15710,7 @@ export const generatedTools: Tool[] = [
       en: 'Shopify Sidekick is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Shopify Sidekick 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Shopify%20Sidekick+AI',
+    websiteUrl: 'https://www.shopify.com/magic',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15746,7 +15746,7 @@ export const generatedTools: Tool[] = [
       en: 'Photoroom is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Photoroom 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Photoroom+AI',
+    websiteUrl: 'https://www.photoroom.com',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15782,7 +15782,7 @@ export const generatedTools: Tool[] = [
       en: 'Pebblely is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Pebblely 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Pebblely+AI',
+    websiteUrl: 'https://pebblely.com',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15818,7 +15818,7 @@ export const generatedTools: Tool[] = [
       en: 'Flair AI is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Flair AI 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Flair%20AI+AI',
+    websiteUrl: 'https://flair.ai',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15854,7 +15854,7 @@ export const generatedTools: Tool[] = [
       en: 'Mokker AI is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Mokker AI 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Mokker%20AI+AI',
+    websiteUrl: 'https://mokker.ai',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15890,7 +15890,7 @@ export const generatedTools: Tool[] = [
       en: 'Booth AI is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Booth AI 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Booth%20AI+AI',
+    websiteUrl: 'https://www.booth.ai',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15926,7 +15926,7 @@ export const generatedTools: Tool[] = [
       en: 'Claid.ai is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Claid.ai 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Claid.ai+AI',
+    websiteUrl: 'https://claid.ai',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15962,7 +15962,7 @@ export const generatedTools: Tool[] = [
       en: 'Pixelcut is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Pixelcut 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Pixelcut+AI',
+    websiteUrl: 'https://www.pixelcut.ai',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -15998,7 +15998,7 @@ export const generatedTools: Tool[] = [
       en: 'AdCreative.ai is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'AdCreative.ai 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=AdCreative.ai+AI',
+    websiteUrl: 'https://www.adcreative.ai',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16034,7 +16034,7 @@ export const generatedTools: Tool[] = [
       en: 'Copy.ai is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Copy.ai 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Copy.ai+AI',
+    websiteUrl: 'https://www.copy.ai',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16070,7 +16070,7 @@ export const generatedTools: Tool[] = [
       en: 'Jasper is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Jasper 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Jasper+AI',
+    websiteUrl: 'https://www.jasper.ai',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16106,7 +16106,7 @@ export const generatedTools: Tool[] = [
       en: 'Writesonic is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Writesonic 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Writesonic+AI',
+    websiteUrl: 'https://writesonic.com',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16142,7 +16142,7 @@ export const generatedTools: Tool[] = [
       en: 'Prisync AI is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Prisync AI 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Prisync%20AI+AI',
+    websiteUrl: 'https://prisync.com',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16178,7 +16178,7 @@ export const generatedTools: Tool[] = [
       en: 'Octane AI is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Octane AI 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Octane%20AI+AI',
+    websiteUrl: 'https://www.octaneai.com',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16214,7 +16214,7 @@ export const generatedTools: Tool[] = [
       en: 'Clerk.io is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Clerk.io 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Clerk.io+AI',
+    websiteUrl: 'https://www.clerk.io',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16250,7 +16250,7 @@ export const generatedTools: Tool[] = [
       en: 'Nosto is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Nosto 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Nosto+AI',
+    websiteUrl: 'https://www.nosto.com',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16286,7 +16286,7 @@ export const generatedTools: Tool[] = [
       en: 'Gorgias AI is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Gorgias AI 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Gorgias%20AI+AI',
+    websiteUrl: 'https://www.gorgias.com',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16322,7 +16322,7 @@ export const generatedTools: Tool[] = [
       en: 'Tidio is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Tidio 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Tidio+AI',
+    websiteUrl: 'https://www.tidio.com',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16358,7 +16358,7 @@ export const generatedTools: Tool[] = [
       en: 'Zillow AI is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Zillow AI 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Zillow%20AI+AI',
+    websiteUrl: 'https://www.zillow.com',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16394,7 +16394,7 @@ export const generatedTools: Tool[] = [
       en: 'Redfin AI is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Redfin AI 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Redfin%20AI+AI',
+    websiteUrl: 'https://www.redfin.com',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16430,7 +16430,7 @@ export const generatedTools: Tool[] = [
       en: 'Restb.ai is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Restb.ai 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Restb.ai+AI',
+    websiteUrl: 'https://restb.ai',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16466,7 +16466,7 @@ export const generatedTools: Tool[] = [
       en: 'Epique AI is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Epique AI 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Epique%20AI+AI',
+    websiteUrl: 'https://epique.ai',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16502,7 +16502,7 @@ export const generatedTools: Tool[] = [
       en: 'ListingAI is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'ListingAI 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=ListingAI+AI',
+    websiteUrl: 'https://listingai.co',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16538,7 +16538,7 @@ export const generatedTools: Tool[] = [
       en: 'Write.homes is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Write.homes 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Write.homes+AI',
+    websiteUrl: 'https://write.homes',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16574,7 +16574,7 @@ export const generatedTools: Tool[] = [
       en: 'Virtual Staging AI is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Virtual Staging AI 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Virtual%20Staging%20AI+AI',
+    websiteUrl: 'https://www.virtualstagingai.app',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16610,7 +16610,7 @@ export const generatedTools: Tool[] = [
       en: 'Styldod is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Styldod 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Styldod+AI',
+    websiteUrl: 'https://www.styldod.com',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16646,7 +16646,7 @@ export const generatedTools: Tool[] = [
       en: 'BoxBrownie is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'BoxBrownie 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=BoxBrownie+AI',
+    websiteUrl: 'https://www.boxbrownie.com',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16682,7 +16682,7 @@ export const generatedTools: Tool[] = [
       en: 'Matterport is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Matterport 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Matterport+AI',
+    websiteUrl: 'https://matterport.com',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16718,7 +16718,7 @@ export const generatedTools: Tool[] = [
       en: 'Placer.ai is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Placer.ai 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Placer.ai+AI',
+    websiteUrl: 'https://www.placer.ai',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16754,7 +16754,7 @@ export const generatedTools: Tool[] = [
       en: 'Localo is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Localo 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Localo+AI',
+    websiteUrl: 'https://localo.com',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16790,7 +16790,7 @@ export const generatedTools: Tool[] = [
       en: 'BrightLocal is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'BrightLocal 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=BrightLocal+AI',
+    websiteUrl: 'https://www.brightlocal.com',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16826,7 +16826,7 @@ export const generatedTools: Tool[] = [
       en: 'Birdeye AI is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Birdeye AI 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Birdeye%20AI+AI',
+    websiteUrl: 'https://birdeye.com',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16862,7 +16862,7 @@ export const generatedTools: Tool[] = [
       en: 'Podium AI is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Podium AI 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Podium%20AI+AI',
+    websiteUrl: 'https://www.podium.com',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16898,7 +16898,7 @@ export const generatedTools: Tool[] = [
       en: 'Yext AI is an AI tool designed for e-commerce, local & business. It provides essential features to help users automate and improve their workflows.',
       ko: 'Yext AI 도구는 이커머스 및 로컬 비즈니스 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Yext%20AI+AI',
+    websiteUrl: 'https://www.yext.com',
     categoryId: 'ecommerce-business',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16934,7 +16934,7 @@ export const generatedTools: Tool[] = [
       en: 'Notion AI is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Notion AI 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Notion%20AI+AI',
+    websiteUrl: 'https://www.notion.com/product/ai',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -16970,7 +16970,7 @@ export const generatedTools: Tool[] = [
       en: 'Obsidian AI 플러그인 is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Obsidian AI 플러그인 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Obsidian%20AI%20%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8+AI',
+    websiteUrl: 'https://obsidian.md',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17006,7 +17006,7 @@ export const generatedTools: Tool[] = [
       en: 'Mem AI is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Mem AI 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Mem%20AI+AI',
+    websiteUrl: 'https://mem.ai',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17042,7 +17042,7 @@ export const generatedTools: Tool[] = [
       en: 'Reflect AI is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Reflect AI 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Reflect%20AI+AI',
+    websiteUrl: 'https://reflect.app',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17078,7 +17078,7 @@ export const generatedTools: Tool[] = [
       en: 'Evernote AI is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Evernote AI 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Evernote%20AI+AI',
+    websiteUrl: 'https://evernote.com',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17114,7 +17114,7 @@ export const generatedTools: Tool[] = [
       en: 'Craft AI is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Craft AI 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Craft%20AI+AI',
+    websiteUrl: 'https://www.craft.do',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17150,7 +17150,7 @@ export const generatedTools: Tool[] = [
       en: 'Coda AI is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Coda AI 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Coda%20AI+AI',
+    websiteUrl: 'https://coda.io',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17186,7 +17186,7 @@ export const generatedTools: Tool[] = [
       en: 'ClickUp AI is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'ClickUp AI 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=ClickUp%20AI+AI',
+    websiteUrl: 'https://clickup.com',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17222,7 +17222,7 @@ export const generatedTools: Tool[] = [
       en: 'Asana AI is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Asana AI 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Asana%20AI+AI',
+    websiteUrl: 'https://asana.com',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17258,7 +17258,7 @@ export const generatedTools: Tool[] = [
       en: 'Monday AI is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Monday AI 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Monday%20AI+AI',
+    websiteUrl: 'https://monday.com',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17294,7 +17294,7 @@ export const generatedTools: Tool[] = [
       en: 'Trello AI is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Trello AI 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Trello%20AI+AI',
+    websiteUrl: 'https://trello.com',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17330,7 +17330,7 @@ export const generatedTools: Tool[] = [
       en: 'Slack AI is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Slack AI 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Slack%20AI+AI',
+    websiteUrl: 'https://slack.com',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17366,7 +17366,7 @@ export const generatedTools: Tool[] = [
       en: 'Microsoft Copilot is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Microsoft Copilot 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Microsoft%20Copilot+AI',
+    websiteUrl: 'https://copilot.microsoft.com',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17402,7 +17402,7 @@ export const generatedTools: Tool[] = [
       en: 'Google Gemini Workspace is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Google Gemini Workspace 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Google%20Gemini%20Workspace+AI',
+    websiteUrl: 'https://workspace.google.com/solutions/ai/',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17438,7 +17438,7 @@ export const generatedTools: Tool[] = [
       en: 'Superhuman AI is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Superhuman AI 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Superhuman%20AI+AI',
+    websiteUrl: 'https://superhuman.com',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17474,7 +17474,7 @@ export const generatedTools: Tool[] = [
       en: 'Shortwave AI is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Shortwave AI 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Shortwave%20AI+AI',
+    websiteUrl: 'https://www.shortwave.com',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17510,7 +17510,7 @@ export const generatedTools: Tool[] = [
       en: 'Motion is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Motion 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Motion+AI',
+    websiteUrl: 'https://www.usemotion.com',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17546,7 +17546,7 @@ export const generatedTools: Tool[] = [
       en: 'Reclaim AI is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Reclaim AI 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Reclaim%20AI+AI',
+    websiteUrl: 'https://reclaim.ai',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17582,7 +17582,7 @@ export const generatedTools: Tool[] = [
       en: 'Sunsama is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Sunsama 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Sunsama+AI',
+    websiteUrl: 'https://www.sunsama.com',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17618,7 +17618,7 @@ export const generatedTools: Tool[] = [
       en: 'Akiflow is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Akiflow 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Akiflow+AI',
+    websiteUrl: 'https://akiflow.com',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17654,7 +17654,7 @@ export const generatedTools: Tool[] = [
       en: 'Khanmigo is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Khanmigo 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Khanmigo+AI',
+    websiteUrl: 'https://www.khanmigo.ai',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17690,7 +17690,7 @@ export const generatedTools: Tool[] = [
       en: 'Duolingo Max is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Duolingo Max 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Duolingo%20Max+AI',
+    websiteUrl: 'https://www.duolingo.com',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17726,7 +17726,7 @@ export const generatedTools: Tool[] = [
       en: 'Quizlet AI is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Quizlet AI 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Quizlet%20AI+AI',
+    websiteUrl: 'https://quizlet.com',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17762,7 +17762,7 @@ export const generatedTools: Tool[] = [
       en: 'MagicSchool AI is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'MagicSchool AI 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=MagicSchool%20AI+AI',
+    websiteUrl: 'https://www.magicschool.ai',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17798,7 +17798,7 @@ export const generatedTools: Tool[] = [
       en: 'Eduaide.AI is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Eduaide.AI 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Eduaide.AI+AI',
+    websiteUrl: 'https://www.eduaide.ai',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17834,7 +17834,7 @@ export const generatedTools: Tool[] = [
       en: 'Curipod is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Curipod 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Curipod+AI',
+    websiteUrl: 'https://curipod.com',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17870,7 +17870,7 @@ export const generatedTools: Tool[] = [
       en: 'Socratic is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Socratic 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Socratic+AI',
+    websiteUrl: 'https://socratic.org',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17906,7 +17906,7 @@ export const generatedTools: Tool[] = [
       en: 'Photomath is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Photomath 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Photomath+AI',
+    websiteUrl: 'https://photomath.com',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17942,7 +17942,7 @@ export const generatedTools: Tool[] = [
       en: 'Wolfram Alpha is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Wolfram Alpha 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Wolfram%20Alpha+AI',
+    websiteUrl: 'https://www.wolframalpha.com',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -17978,7 +17978,7 @@ export const generatedTools: Tool[] = [
       en: 'Elsa Speak is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Elsa Speak 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Elsa%20Speak+AI',
+    websiteUrl: 'https://elsaspeak.com',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -18014,7 +18014,7 @@ export const generatedTools: Tool[] = [
       en: 'Speak is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Speak 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Speak+AI',
+    websiteUrl: 'https://www.speak.com',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -18050,7 +18050,7 @@ export const generatedTools: Tool[] = [
       en: 'TutorAI is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'TutorAI 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=TutorAI+AI',
+    websiteUrl: 'https://www.tutorai.me',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -18086,7 +18086,7 @@ export const generatedTools: Tool[] = [
       en: 'Coursebox AI is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'Coursebox AI 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=Coursebox%20AI+AI',
+    websiteUrl: 'https://www.coursebox.ai',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
@@ -18122,7 +18122,7 @@ export const generatedTools: Tool[] = [
       en: 'LearnWorlds AI is an AI tool designed for productivity, education & notes. It provides essential features to help users automate and improve their workflows.',
       ko: 'LearnWorlds AI 도구는 생산성, 교육 및 노트 작업을 지원하는 AI 서비스입니다. 사용자의 워크플로를 자동화하고 향상시킬 수 있는 핵심 기능을 제공합니다.'
     },
-    websiteUrl: 'https://google.com/search?q=LearnWorlds%20AI+AI',
+    websiteUrl: 'https://www.learnworlds.com',
     categoryId: 'productivity-education',
     pricingType: 'Freemium',
     rating: 4.5,
