@@ -30,6 +30,14 @@ export interface Tool {
   pros: MultilingualString[];
   cons: MultilingualString[];
   useCases: MultilingualString[];
+  // Optional editorial fields; when absent, sensible notes are derived from the
+  // structured data above (see src/lib/toolInsights.ts).
+  bestFor?: MultilingualString[];
+  notIdealFor?: MultilingualString[];
+  freePlanNotes?: MultilingualString;
+  paidPlanNotes?: MultilingualString;
+  commercialNotes?: MultilingualString;
+  lastUpdated?: string; // ISO date of the last editorial review
 }
 
 export interface Category {

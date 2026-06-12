@@ -1,0 +1,41 @@
+import type { MetadataRoute } from 'next';
+import { tools } from '@/data/tools';
+import { blogPosts } from '@/data/blogPosts';
+import { absoluteUrl, DATA_LAST_UPDATED } from '@/lib/seo';
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const lastModified = new Date(`${DATA_LAST_UPDATED}T00:00:00Z`);
+
+  const staticRoutes: MetadataRoute.Sitemap = [
+    { url: absoluteUrl('/'), lastModified, changeFrequency: 'weekly', priority: 1 },
+    { url: absoluteUrl('/tools'), lastModified, changeFrequency: 'weekly', priority: 0.9 },
+    { url: absoluteUrl('/compare'), lastModified, changeFrequency: 'weekly', priority: 0.8 },
+    { url: absoluteUrl('/finder'), lastModified, changeFrequency: 'monthly', priority: 0.7 },
+    { url: absoluteUrl('/blog'), lastModified, changeFrequency: 'weekly', priority: 0.7 },
+    { url: absoluteUrl('/rankings/best-ai-tools-for-bloggers'), lastModified, changeFrequency: 'weekly', priority: 0.8 },
+    { url: absoluteUrl('/submit'), lastModified, changeFrequency: 'monthly', priority: 0.4 },
+  ];
+
+  const seenSlugs = new Set<string>();
+  const toolRoutes: MetadataRoute.Sitemap = tools
+    .filter((tool) => {
+      if (seenSlugs.has(tool.slug)) return false;
+      seenSlugs.add(tool.slug);
+      return true;
+    })
+    .map((tool) => ({
+      url: absoluteUrl(`/tools/${tool.slug}`),
+      lastModified: tool.lastUpdated ? new Date(`${tool.lastUpdated}T00:00:00Z`) : lastModified,
+      changeFrequency: 'weekly' as const,
+      priority: tool.featured ? 0.8 : 0.6,
+    }));
+
+  const blogRoutes: MetadataRoute.Sitemap = blogPosts.map((post) => ({
+    url: absoluteUrl(`/blog/${post.slug}`),
+    lastModified: new Date(`${post.date}T00:00:00Z`),
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }));
+
+  return [...staticRoutes, ...toolRoutes, ...blogRoutes];
+}

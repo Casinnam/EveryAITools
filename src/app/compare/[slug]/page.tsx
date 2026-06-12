@@ -17,7 +17,7 @@ interface StaticComparePageProps {
 
 export default function StaticComparePage({ params }: StaticComparePageProps) {
   const { slug } = use(params);
-  const { t, language } = useLanguage();
+  const { language } = useLanguage();
 
   // Find corresponding comparison record in comparisons database mock
   const comparison = comparisons.find((c) => c.slug === slug);

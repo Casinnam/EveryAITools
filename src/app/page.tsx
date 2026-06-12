@@ -22,12 +22,12 @@ import {
   Mail,
   PenTool,
   Play,
+  RefreshCw,
   Search,
   ShieldCheck,
   Sparkles,
   Star,
   Trophy,
-  Users,
   Video,
   WandSparkles,
   Zap,
@@ -72,7 +72,6 @@ export default function HomePage() {
   const visibleCategories = useMemo(() => categories.slice(0, 7), []);
   const statToolCount = tools.length;
   const statCategoryCount = categories.length;
-  const statReviewCount = tools.reduce((total, tool) => total + Math.round(tool.rating * 10), 0);
 
   const runSearch = (value: string) => {
     const nextQuery = value.trim();
@@ -186,8 +185,8 @@ export default function HomePage() {
                 {[
                   { label: t('statAiTools'), value: `${statToolCount}+`, icon: Bot, tone: 'text-violet-600 bg-violet-50' },
                   { label: t('statCategories'), value: `${statCategoryCount}`, icon: BarChart3, tone: 'text-sky-600 bg-sky-50' },
-                  { label: t('statUseCases'), value: '25+', icon: Users, tone: 'text-emerald-600 bg-emerald-50' },
-                  { label: t('statReviews'), value: `${statReviewCount}+`, icon: Star, tone: 'text-amber-600 bg-amber-50' },
+                  { label: t('statUpdatedLabel'), value: t('statUpdatedValue'), icon: RefreshCw, tone: 'text-emerald-600 bg-emerald-50' },
+                  { label: t('statCuratedLabel'), value: t('statCuratedValue'), icon: ShieldCheck, tone: 'text-amber-600 bg-amber-50' },
                 ].map((stat) => {
                   const StatIcon = stat.icon;
                   return (
@@ -276,7 +275,7 @@ export default function HomePage() {
                     <div className="mt-2 flex items-center gap-1.5 text-sm font-bold text-slate-600 dark:text-slate-300">
                       <Star className="h-4 w-4 fill-amber-400 text-amber-400" />
                       {tool.rating}
-                      <span className="text-xs text-slate-400">({Math.round(tool.rating * 4.8)}K)</span>
+                      <span className="text-xs text-slate-400">{t('ratingLabel')}</span>
                     </div>
                     <p className="mt-4 line-clamp-3 text-sm font-medium leading-relaxed text-slate-500 dark:text-slate-400">
                       {getToolText(

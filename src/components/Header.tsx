@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useLanguage } from '../context/LanguageContext';
 import type { Language } from '../data/translations';
-import { Menu, X, Compass, Globe, HelpCircle, ArrowRight } from 'lucide-react';
+import { Menu, X, Compass, Globe, HelpCircle } from 'lucide-react';
 
 export const Header: React.FC = () => {
   const { language, setLanguage, isBeginnerMode, setIsBeginnerMode, t } = useLanguage();
@@ -57,7 +57,7 @@ export const Header: React.FC = () => {
           ))}
         </nav>
 
-        {/* UTILITIES (Language Switcher, Beginner Mode Toggle, Desktop Admin Link) */}
+        {/* UTILITIES (Language Switcher, Beginner Mode Toggle) */}
         <div className="hidden lg:flex items-center space-x-4">
           
           {/* Beginner Mode Toggle */}
@@ -90,15 +90,6 @@ export const Header: React.FC = () => {
               <option value="ko" className="dark:bg-slate-900">한국어</option>
             </select>
           </div>
-
-          {/* Admin Dashboard Entry */}
-          <Link
-            href="/admin"
-            className="flex items-center space-x-1 px-3.5 py-1.5 rounded-lg bg-slate-900 text-white text-xs font-semibold hover:bg-indigo-600 transition-colors duration-200 dark:bg-white dark:text-slate-950 dark:hover:bg-indigo-400"
-          >
-            <span>{t('navAdmin')}</span>
-            <ArrowRight className="h-3 w-3" />
-          </Link>
         </div>
 
         {/* MOBILE MENU BUTTON */}
@@ -143,13 +134,6 @@ export const Header: React.FC = () => {
                 {item.name}
               </Link>
             ))}
-            <Link
-              href="/admin"
-              onClick={() => setMobileMenuOpen(false)}
-              className="px-3 py-2.5 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50 dark:text-slate-300 dark:hover:bg-slate-800 border-t border-slate-100 mt-2 pt-2"
-            >
-              {t('navAdmin')}
-            </Link>
           </nav>
 
           {/* Beginner Mode toggle in Mobile */}

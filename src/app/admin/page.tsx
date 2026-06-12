@@ -4,10 +4,10 @@ import React, { useState, useEffect } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { tools } from '@/data/tools';
 import { Submission, NewsletterSubscriber } from '@/types';
-import { ShieldCheck, Plus, Check, X, Users, Database, Layers, ArrowRight } from 'lucide-react';
+import { ShieldCheck, Plus, Check, X, Users, Database, Layers } from 'lucide-react';
 
 export default function AdminDashboardPage() {
-  const { t, language } = useLanguage();
+  const { t } = useLanguage();
 
   // State arrays synced with localStorage
   const [submissions, setSubmissions] = useState<Submission[]>([]);
@@ -107,7 +107,7 @@ export default function AdminDashboardPage() {
             return (
               <button
                 key={tab.id}
-                onClick={() => setActiveTab(tab.id as any)}
+                onClick={() => setActiveTab(tab.id as 'submissions' | 'tools' | 'subscribers')}
                 className={`flex items-center space-x-1.5 px-4 py-2 rounded-lg text-xs font-bold transition-all duration-200 cursor-pointer select-none ${
                   isSelected
                     ? 'bg-white text-indigo-600 shadow-sm dark:bg-slate-950 dark:text-indigo-400'

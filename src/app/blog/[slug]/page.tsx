@@ -15,7 +15,7 @@ interface BlogDetailPageProps {
 
 export default function BlogDetailPage({ params }: BlogDetailPageProps) {
   const { slug } = use(params);
-  const { t, language } = useLanguage();
+  const { language } = useLanguage();
 
   // Find corresponding blog post
   const post = blogPosts.find((p) => p.slug === slug);

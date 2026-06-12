@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { categories } from '@/data/categories';
-import { ArrowRight, CheckCircle, Send, Award, DollarSign, Calendar } from 'lucide-react';
+import { CheckCircle, Send, Award, DollarSign, Calendar } from 'lucide-react';
 
 export default function SubmitToolPage() {
   const { t, language } = useLanguage();

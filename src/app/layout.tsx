@@ -4,6 +4,8 @@ import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { JsonLd } from "@/components/JsonLd";
+import { organizationJsonLd, SITE_NAME, SITE_URL, websiteJsonLd } from "@/lib/seo";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -11,15 +13,33 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Every AI Tools - Find, Compare & Choose the Perfect AI Tools",
-  description: "Stop wasting time searching for random AI tools. Discover, compare, and choose the best AI tools for blogging, YouTube, coding, design, and business in under 3 minutes.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Every AI Tools - Find, Compare & Choose the Perfect AI Tools",
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: "Curated AI tool database with editor-tested recommendations. Discover, compare, and choose the best AI tools for blogging, YouTube, coding, design, and business in under 3 minutes.",
   keywords: ["best AI tools", "free AI tools", "AI tool directory", "compare AI tools", "AI tool finder", "ChatGPT alternatives"],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Every AI Tools - Find your perfect AI helper",
-    description: "Discover, compare, and choose the best AI tools in minutes.",
+    description: "Curated AI tool database, updated weekly. Discover, compare, and choose the best AI tools in minutes.",
     type: "website",
     locale: "en_US",
-  }
+    siteName: SITE_NAME,
+    url: SITE_URL,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Every AI Tools - Find your perfect AI helper",
+    description: "Curated AI tool database, updated weekly. Discover, compare, and choose the best AI tools in minutes.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export const viewport: Viewport = {
@@ -35,6 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
       <body className="font-sans min-h-full flex flex-col bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300">
+        <JsonLd data={[websiteJsonLd(), organizationJsonLd()]} />
         <LanguageProvider>
           <Header />
           <main className="flex-grow">{children}</main>

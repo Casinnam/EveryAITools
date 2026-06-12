@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useCallback, useContext, useSyncExternalStore } from 'react';
 import { Language, translations } from '../data/translations';
 
 interface LanguageContextProps {
@@ -13,31 +13,39 @@ interface LanguageContextProps {
 
 const LanguageContext = createContext<LanguageContextProps | undefined>(undefined);
 
-export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguageState] = useState<Language>('en');
-  const [isBeginnerMode, setIsBeginnerModeState] = useState<boolean>(false);
+const LANG_KEY = 'everyaitools_lang';
+const BEGINNER_KEY = 'everyaitools_beginner';
+const PREFS_EVENT = 'everyaitools_prefs_changed';
 
-  // Load preferences from localStorage on mount
-  useEffect(() => {
-    const savedLang = localStorage.getItem('everyaitools_lang') as Language;
-    if (savedLang && (savedLang === 'en' || savedLang === 'ko')) {
-      setLanguageState(savedLang);
-    }
-    const savedBeginner = localStorage.getItem('everyaitools_beginner');
-    if (savedBeginner) {
-      setIsBeginnerModeState(savedBeginner === 'true');
-    }
+function subscribeToPrefs(callback: () => void) {
+  window.addEventListener(PREFS_EVENT, callback);
+  window.addEventListener('storage', callback);
+  return () => {
+    window.removeEventListener(PREFS_EVENT, callback);
+    window.removeEventListener('storage', callback);
+  };
+}
+
+const getLanguageSnapshot = (): Language => (localStorage.getItem(LANG_KEY) === 'ko' ? 'ko' : 'en');
+const getLanguageServerSnapshot = (): Language => 'en';
+const getBeginnerSnapshot = (): boolean => localStorage.getItem(BEGINNER_KEY) === 'true';
+const getBeginnerServerSnapshot = (): boolean => false;
+
+export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  // Preferences live in localStorage; useSyncExternalStore keeps server render
+  // deterministic (English defaults) and re-syncs on the client after hydration.
+  const language = useSyncExternalStore(subscribeToPrefs, getLanguageSnapshot, getLanguageServerSnapshot);
+  const isBeginnerMode = useSyncExternalStore(subscribeToPrefs, getBeginnerSnapshot, getBeginnerServerSnapshot);
+
+  const setLanguage = useCallback((lang: Language) => {
+    localStorage.setItem(LANG_KEY, lang);
+    window.dispatchEvent(new Event(PREFS_EVENT));
   }, []);
 
-  const setLanguage = (lang: Language) => {
-    setLanguageState(lang);
-    localStorage.setItem('everyaitools_lang', lang);
-  };
-
-  const setIsBeginnerMode = (value: boolean) => {
-    setIsBeginnerModeState(value);
-    localStorage.setItem('everyaitools_beginner', String(value));
-  };
+  const setIsBeginnerMode = useCallback((value: boolean) => {
+    localStorage.setItem(BEGINNER_KEY, String(value));
+    window.dispatchEvent(new Event(PREFS_EVENT));
+  }, []);
 
   const t = (key: string): string => {
     const trans = translations[key];

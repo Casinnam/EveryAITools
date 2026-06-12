@@ -14,7 +14,7 @@ export const CategoryCard: React.FC<CategoryCardProps> = ({ category }) => {
   const { language } = useLanguage();
   
   // Dynamically resolve Lucide Icon component
-  const IconComponent = (Icons as any)[category.icon] || Icons.HelpCircle;
+  const IconComponent = (Icons as unknown as Record<string, React.ComponentType<{ className?: string }>>)[category.icon] || Icons.HelpCircle;
 
   return (
     <Link
