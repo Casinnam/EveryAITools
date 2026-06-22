@@ -48181,6 +48181,7505 @@ export const enrichedTools: Tool[] = [
       "ko": "Kaedim은 표준 라이선싱 약관에 따라 생성된 3D 모델의 상업적 사용을 허용합니다. 특정 상업 용도에 대한 사용 권리와 라이선싱 약관을 공식 웹사이트에서 확인하세요."
     },
     "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "meshy",
+    "name": "Meshy",
+    "slug": "meshy",
+    "description": {
+      "en": "Meshy is an AI-powered 3D model generation platform that creates 3D assets from text prompts, images, or sketches.",
+      "ko": "Meshy는 텍스트 프롬프트, 이미지, 스케치로부터 3D 모델을 생성하는 AI 기반 3D 자산 생성 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Meshy uses advanced AI algorithms to convert 2D inputs (text descriptions, images, or hand-drawn sketches) into production-ready 3D models. It supports multiple output formats and texturing options, making it suitable for game development, architectural visualization, product design, and metaverse content creation. The platform handles both organic and hard-surface modeling tasks.",
+      "ko": "Meshy는 고급 AI 알고리즘을 사용하여 텍스트 설명, 이미지, 손그림 스케치 등 2D 입력을 제작 가능한 3D 모델로 변환합니다. 다양한 출력 형식과 텍스처링 옵션을 지원하여 게임 개발, 건축 시각화, 제품 디자인, 메타버스 콘텐츠 제작에 적합합니다. 유기형 및 하드서피스 모델링 작업을 모두 처리할 수 있습니다."
+    },
+    "beginnerDescription": {
+      "en": "Meshy makes it easy to create 3D models by simply describing what you want in text or uploading an image—no 3D modeling experience needed.",
+      "ko": "Meshy는 원하는 것을 텍스트로 설명하거나 이미지를 업로드하는 것만으로 3D 모델을 만들 수 있어서, 3D 모델링 경험이 없어도 쉽게 시작할 수 있습니다."
+    },
+    "websiteUrl": "https://www.meshy.ai",
+    "categoryId": "3d-architecture",
+    "pricingType": "Freemium",
+    "startingPrice": "$12/mo",
+    "rating": 4.6,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": false,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "3d modeling",
+      "ai generation",
+      "text-to-3d"
+    ],
+    "features": [
+      {
+        "en": "Text-to-3D generation from detailed prompts",
+        "ko": "상세한 프롬프트로부터 텍스트 기반 3D 생성"
+      },
+      {
+        "en": "Image-to-3D conversion for rapid asset creation",
+        "ko": "빠른 자산 생성을 위한 이미지 기반 3D 변환"
+      },
+      {
+        "en": "Multiple output formats (GLTF, FBX, OBJ) with texture support",
+        "ko": "텍스처 지원이 포함된 다양한 출력 형식 (GLTF, FBX, OBJ)"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Intuitive interface requiring no prior 3D modeling skills—ideal for designers and artists new to 3D production",
+        "ko": "3D 모델링 경험이 없어도 직관적으로 사용할 수 있어서 3D 제작이 처음인 디자이너와 아티스트에게 이상적입니다."
+      },
+      {
+        "en": "Fast generation times and flexible export options for integration into game engines and design software",
+        "ko": "빠른 생성 속도와 게임 엔진 및 디자인 소프트웨어 통합을 위한 유연한 내보내기 옵션을 제공합니다."
+      }
+    ],
+    "cons": [
+      {
+        "en": "Output quality varies significantly depending on prompt clarity and input complexity—some models may require post-processing",
+        "ko": "프롬프트 명확도와 입력 복잡도에 따라 출력 품질이 크게 달라지며, 일부 모델은 후처리가 필요할 수 있습니다."
+      },
+      {
+        "en": "Limited control over fine details compared to traditional 3D modeling—best suited for rapid prototyping rather than high-precision work",
+        "ko": "기존 3D 모델링 대비 세부 사항에 대한 제어가 제한적이어서 고정밀 작업보다는 빠른 프로토타이핑에 적합합니다."
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Game developers generating quick placeholder assets or unique environmental elements",
+        "ko": "게임 개발자가 빠른 플레이스홀더 자산이나 독특한 환경 요소를 생성할 때"
+      },
+      {
+        "en": "Product designers and marketers creating 3D visualizations for e-commerce and presentations without dedicated 3D teams",
+        "ko": "전담 3D 팀 없이 전자상거래와 프레젠테이션용 3D 시각화를 만드는 제품 디자이너와 마케터"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Game developers and indie studios seeking rapid 3D asset production",
+        "ko": "빠른 3D 자산 제작을 원하는 게임 개발자와 인디 스튜디오"
+      },
+      {
+        "en": "Digital artists and designers exploring AI-assisted 3D workflows without traditional modeling training",
+        "ko": "전통적인 모델링 교육 없이 AI 보조 3D 워크플로우를 탐색하는 디지털 아티스트와 디자이너"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Professional studios requiring precise control and exact specification compliance for high-fidelity production models",
+        "ko": "높은 충실도의 제작 모델을 위해 정밀한 제어와 정확한 사양 준수가 필요한 전문 스튜디오"
+      },
+      {
+        "en": "Projects demanding extensive post-production editing or highly complex architectural models with strict dimensional requirements",
+        "ko": "광범위한 후제작 편집이나 엄격한 치수 요구사항이 있는 복잡한 건축 모델이 필요한 프로젝트"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "A free tier is available with limited monthly credits, allowing users to test the platform and generate a small number of models before committing to a paid plan.",
+      "ko": "월간 크레딧이 제한된 무료 플랜을 제공하여 사용자가 유료 플랜으로 전환하기 전에 플랫폼을 테스트하고 소수의 모델을 생성할 수 있습니다."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans unlock higher monthly generation limits, priority queue processing, and access to advanced features. Check the official website for current pricing and plan details.",
+      "ko": "유료 플랜은 월간 생성 한도 증대, 우선 처리 큐, 고급 기능에 대한 접근을 제공합니다. 최신 가격 및 플랜 세부사항은 공식 웹사이트에서 확인하시기 바랍니다."
+    },
+    "commercialNotes": {
+      "en": "Commercial use is permitted under Meshy's licensing terms, allowing businesses to generate and monetize 3D assets created through the platform. Verify current licensing restrictions and attribution requirements with official documentation.",
+      "ko": "Meshy의 라이선싱 약관에 따라 상업용 사용이 허용되며, 기업이 플랫폼으로 생성한 3D 자산을 수익화할 수 있습니다. 공식 문서에서 현재 라이선싱 제한사항 및 저작권 표시 요구사항을 확인하시기 바랍니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "luma-ai",
+    "name": "Luma AI",
+    "slug": "luma-ai",
+    "description": {
+      "en": "Luma AI is a generative AI platform that creates 3D models, textures, and animations from text, images, or video input.",
+      "ko": "루마 AI는 텍스트, 이미지, 영상 입력으로부터 3D 모델, 텍스처, 애니메이션을 생성하는 생성형 AI 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Luma AI specializes in converting 2D inputs into 3D assets using machine learning, enabling users to generate detailed 3D models and textures without traditional modeling software. The platform supports both web-based and API access for integration into creative workflows.",
+      "ko": "루마 AI는 머신러닝을 활용하여 2D 입력을 3D 자산으로 변환하는 데 전문화되어 있으며, 사용자가 기존 모델링 소프트웨어 없이도 상세한 3D 모델과 텍스처를 생성할 수 있게 합니다. 웹 기반 및 API 접근 방식으로 창작 워크플로우에 통합할 수 있습니다."
+    },
+    "beginnerDescription": {
+      "en": "Luma AI lets you create 3D models from photos or descriptions without needing complex 3D software—just upload an image or describe what you want, and the AI generates the 3D asset.",
+      "ko": "루마 AI는 복잡한 3D 소프트웨어 없이 사진이나 설명으로 3D 모델을 만들 수 있습니다. 이미지를 업로드하거나 원하는 것을 설명하면 AI가 3D 자산을 생성해줍니다."
+    },
+    "websiteUrl": "https://lumalabs.ai",
+    "categoryId": "3d-architecture",
+    "pricingType": "Freemium",
+    "startingPrice": "$9/mo",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "3d generation",
+      "ai modeling",
+      "creative assets"
+    ],
+    "features": [
+      {
+        "en": "Text-to-3D generation allowing users to describe an object and receive a generated 3D model",
+        "ko": "사용자가 물체를 설명하면 3D 모델이 생성되는 텍스트-3D 변환 기능"
+      },
+      {
+        "en": "Image-to-3D conversion that transforms 2D images into detailed 3D models and textures",
+        "ko": "2D 이미지를 상세한 3D 모델과 텍스처로 변환하는 이미지-3D 변환 기능"
+      },
+      {
+        "en": "Web-based editor and API access for integration into game engines and design tools",
+        "ko": "게임 엔진 및 디자인 도구와 통합하기 위한 웹 기반 에디터 및 API 접근"
+      }
+    ],
+    "pros": [
+      {
+        "en": "User-friendly interface that requires no 3D modeling expertise, making it accessible to non-technical creators",
+        "ko": "3D 모델링 경험이 없어도 사용할 수 있는 직관적인 인터페이스로, 비기술적 창작자도 쉽게 접근 가능"
+      },
+      {
+        "en": "Fast generation times and high-quality output suitable for game development, visualization, and commercial projects",
+        "ko": "게임 개발, 시각화, 상업 프로젝트에 적합한 빠른 생성 속도와 고품질 출력"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Limited control over fine details and customization compared to traditional 3D modeling software",
+        "ko": "기존 3D 모델링 소프트웨어에 비해 세부 사항 조정 및 커스터마이징이 제한적"
+      },
+      {
+        "en": "Quality and accuracy depend heavily on input quality and descriptiveness, with less predictable results for complex objects",
+        "ko": "입력 품질과 설명의 명확성에 따라 결과가 크게 달라지며, 복잡한 물체에서는 예측 가능성이 낮음"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Game developers quickly generating 3D assets and props without spending weeks on traditional modeling",
+        "ko": "게임 개발자가 기존 모델링에 소요되는 시간 없이 3D 자산과 소품을 빠르게 생성"
+      },
+      {
+        "en": "Product visualization and e-commerce applications creating 3D representations of items from product photos",
+        "ko": "제품 사진으로부터 상품 시각화 및 전자상거래용 3D 표현 생성"
+      },
+      {
+        "en": "Architectural and interior design mockups for presenting concepts to clients without full CAD work",
+        "ko": "전체 CAD 작업 없이 클라이언트에게 아이디어를 제시하기 위한 건축 및 인테리어 디자인 목업"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Indie game developers and small studios seeking rapid asset creation on limited budgets",
+        "ko": "빠른 자산 생성이 필요한 인디 게임 개발자 및 소규모 스튜디오"
+      },
+      {
+        "en": "Product designers and e-commerce teams needing quick 3D visualizations from existing imagery",
+        "ko": "기존 이미지로부터 빠른 3D 시각화가 필요한 제품 디자이너 및 전자상거래 팀"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Professional 3D artists requiring pixel-perfect control and highly detailed customization of models",
+        "ko": "픽셀 단위의 정밀한 제어와 세밀한 모델 커스터마이징이 필요한 전문 3D 아티스트"
+      },
+      {
+        "en": "Projects requiring ultra-realistic physics-based rendering or CAD-level precision for engineering work",
+        "ko": "초현실적인 물리 기반 렌더링이나 엔지니어링 작업용 CAD 수준의 정밀도가 필요한 프로젝트"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "The free tier allows limited monthly generation credits and basic features; credits reset monthly. Check the official site for current free plan quotas.",
+      "ko": "무료 계층은 제한된 월간 생성 크레딧과 기본 기능을 제공하며 매월 리셋됩니다. 현재 무료 계획 한도는 공식 웹사이트에서 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans unlock higher monthly credit allowances and priority processing. Pricing varies by subscription tier; consult the official pricing page for current rates and plan details.",
+      "ko": "유료 계획은 더 많은 월간 크레딧과 우선 처리를 제공합니다. 가격은 구독 계층에 따라 다르니 현재 요금과 계획 상세 내용은 공식 가격 페이지를 확인하세요."
+    },
+    "commercialNotes": {
+      "en": "Luma AI explicitly permits commercial use of generated assets under its terms, making it suitable for commercial projects, game releases, and product visualization. Verify current licensing terms on their official site.",
+      "ko": "루마 AI는 약관에 따라 생성된 자산의 상업적 사용을 명시적으로 허용하므로 상업 프로젝트, 게임 출시, 제품 시각화에 적합합니다. 공식 웹사이트에서 현재 라이선싱 약관을 확인하세요."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "spline-ai",
+    "name": "Spline AI",
+    "slug": "spline-ai",
+    "description": {
+      "en": "Spline AI is a web-based 3D design and collaboration platform that combines intuitive modeling tools with AI-assisted features for creating interactive 3D experiences.",
+      "ko": "Spline AI는 직관적인 모델링 도구와 AI 기반 기능을 결합하여 상호작용형 3D 경험을 만들 수 있는 웹 기반 3D 디자인 및 협업 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Spline AI is a browser-based 3D design tool that enables designers and developers to build interactive 3D graphics, animations, and experiences without deep technical expertise. The platform leverages AI capabilities to streamline the modeling and design workflow, while offering real-time collaboration features and easy export options for web, mobile, and other media formats.",
+      "ko": "Spline AI는 브라우저 기반의 3D 디자인 도구로, 디자이너와 개발자가 깊은 기술적 전문성 없이도 상호작용형 3D 그래픽, 애니메이션, 경험을 만들 수 있게 해줍니다. 이 플랫폼은 AI 기능을 활용하여 모델링과 디자인 워크플로우를 간소화하며, 실시간 협업 기능과 웹, 모바일 및 기타 미디어 형식으로의 쉬운 내보내기 옵션을 제공합니다."
+    },
+    "beginnerDescription": {
+      "en": "Spline AI makes 3D design accessible to everyone by letting you build beautiful 3D models and animations directly in your browser, with AI features helping you work faster.",
+      "ko": "Spline AI는 브라우저에서 직접 3D 모델과 애니메이션을 만들 수 있게 하며, AI 기능이 더 빠르게 작업하도록 도와줘서 누구나 3D 디자인에 쉽게 접근할 수 있습니다."
+    },
+    "websiteUrl": "https://spline.design",
+    "categoryId": "3d-architecture",
+    "pricingType": "Freemium",
+    "startingPrice": "$9/mo",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "3d design",
+      "web-based",
+      "ai-assisted",
+      "interactive",
+      "collaboration"
+    ],
+    "features": [
+      {
+        "en": "AI-powered 3D modeling and shape generation to accelerate design workflows",
+        "ko": "디자인 워크플로우를 가속화하는 AI 기반 3D 모델링 및 형태 생성"
+      },
+      {
+        "en": "Real-time multiplayer collaboration for teams working on the same 3D projects",
+        "ko": "동일 3D 프로젝트에서 작업하는 팀을 위한 실시간 다중 사용자 협업"
+      },
+      {
+        "en": "Export to web-ready formats (Three.js, WebGL, HTML) and integration with popular frameworks",
+        "ko": "웹 호환 형식(Three.js, WebGL, HTML)으로 내보내기 및 인기 프레임워크와의 통합"
+      }
+    ],
+    "pros": [
+      {
+        "en": "No installation required — design directly in your browser with a modern, intuitive interface",
+        "ko": "설치 불필요 — 현대적이고 직관적인 인터페이스에서 브라우저에서 바로 디자인할 수 있습니다"
+      },
+      {
+        "en": "AI features accelerate common modeling tasks and reduce the learning curve for newcomers",
+        "ko": "AI 기능이 일반적인 모델링 작업을 가속화하고 초보자의 학습 곡선을 줄입니다"
+      },
+      {
+        "en": "Strong community and extensive documentation make it easier to find help and tutorials",
+        "ko": "강력한 커뮤니티와 광범위한 문서가 도움과 튜토리얼을 찾기 쉽게 만듭니다"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Limited offline capabilities — the browser-based nature means consistent internet is required",
+        "ko": "제한된 오프라인 기능 — 브라우저 기반 특성상 안정적인 인터넷이 필요합니다"
+      },
+      {
+        "en": "Not a replacement for professional 3D software like Blender or Cinema 4D for advanced modeling tasks",
+        "ko": "고급 모델링 작업의 경우 Blender나 Cinema 4D 같은 전문 3D 소프트웨어를 완전히 대체할 수 없습니다"
+      },
+      {
+        "en": "Performance can degrade with very complex scenes or heavy collaboration sessions",
+        "ko": "매우 복잡한 장면이나 무거운 협업 세션에서는 성능이 저하될 수 있습니다"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Creating interactive product visualizations and 3D configurators for e-commerce websites",
+        "ko": "전자상거래 웹사이트를 위한 상호작용형 제품 시각화 및 3D 컨피규레이터 만들기"
+      },
+      {
+        "en": "Building animated backgrounds, UI elements, and interactive graphics for web and mobile apps",
+        "ko": "웹 및 모바일 앱을 위한 애니메이션 배경, UI 요소, 상호작용형 그래픽 구축"
+      },
+      {
+        "en": "Collaborating on 3D design concepts and prototypes in real time with distributed teams",
+        "ko": "분산된 팀과 함께 3D 디자인 개념 및 프로토타입을 실시간으로 협업"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Web and product designers who want to add interactive 3D elements without learning complex software",
+        "ko": "복잡한 소프트웨어를 배우지 않고 상호작용형 3D 요소를 추가하려는 웹 및 제품 디자이너"
+      },
+      {
+        "en": "Teams and startups seeking quick, collaborative 3D design workflows in the browser",
+        "ko": "브라우저에서 빠르고 협업적인 3D 디자인 워크플로우를 추구하는 팀과 스타트업"
+      },
+      {
+        "en": "Developers building 3D-enabled web applications and interactive experiences",
+        "ko": "3D 기능이 있는 웹 애플리케이션 및 상호작용형 경험을 구축하는 개발자"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Professional 3D artists and animators requiring advanced modeling, rigging, and animation tools",
+        "ko": "고급 모델링, 리깅, 애니메이션 도구가 필요한 전문 3D 아티스트 및 애니메이터"
+      },
+      {
+        "en": "Projects requiring offline work or guaranteed performance in large-scale enterprise environments",
+        "ko": "오프라인 작업이나 대규모 엔터프라이즈 환경에서 성능 보장이 필요한 프로젝트"
+      },
+      {
+        "en": "Users without reliable internet connectivity or those working in bandwidth-constrained environments",
+        "ko": "안정적인 인터넷 연결이 없거나 대역폭이 제한된 환경에서 작업하는 사용자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "The free plan includes basic 3D modeling and design capabilities with limitations on project storage and collaboration features. Check Spline's official website for current free tier quotas and restrictions.",
+      "ko": "무료 플랜에는 기본 3D 모델링 및 디자인 기능이 포함되지만 프로젝트 저장소 및 협업 기능에 제한이 있습니다. 최신 무료 계층 할당량 및 제한사항은 Spline 공식 웹사이트에서 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans unlock advanced features like increased storage, team collaboration tools, priority support, and enhanced export options. Visit the official pricing page for current plan details and feature comparisons.",
+      "ko": "유료 플랜은 증가된 저장소, 팀 협업 도구, 우선 지원 및 향상된 내보내기 옵션과 같은 고급 기능을 활성화합니다. 최신 플랜 세부사항 및 기능 비교는 공식 가격 책정 페이지를 방문하세요."
+    },
+    "commercialNotes": {
+      "en": "Spline's export capabilities and integrations support commercial use, allowing you to embed 3D experiences in production web applications and client projects. Verify licensing terms for your specific use case on their official site.",
+      "ko": "Spline의 내보내기 기능 및 통합은 상업적 사용을 지원하며, 프로덕션 웹 애플리케이션 및 클라이언트 프로젝트에 3D 경험을 임베드할 수 있습니다. 구체적인 사용 사례에 대한 라이선스 조건을 공식 사이트에서 확인하세요."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "masterpiece-x",
+    "name": "Masterpiece X",
+    "slug": "masterpiece-x",
+    "description": {
+      "en": "Masterpiece X is a 3D design and visualization platform tailored for architects and creative professionals to build immersive digital environments.",
+      "ko": "Masterpiece X는 건축가와 크리에이티브 전문가를 위한 3D 설계 및 시각화 플랫폼으로, 몰입감 있는 디지털 환경을 구축하도록 설계되었습니다."
+    },
+    "longDescription": {
+      "en": "Masterpiece X is a cloud-based 3D design tool that enables users to create, collaborate, and present architectural visualizations and digital environments. It combines intuitive modeling tools with real-time rendering capabilities, making it suitable for both professional architects and creative studios seeking to streamline their design workflows.",
+      "ko": "Masterpiece X는 클라우드 기반 3D 설계 도구로, 사용자가 건축 시각화 및 디지털 환경을 만들고 협업하며 발표할 수 있게 합니다. 직관적인 모델링 도구와 실시간 렌더링 기능을 결합하여 설계 워크플로우를 간소화하려는 전문 건축가와 크리에이티브 스튜디오에 적합합니다."
+    },
+    "beginnerDescription": {
+      "en": "Masterpiece X is a user-friendly 3D design platform where you can create and visualize architectural projects without needing advanced technical skills.",
+      "ko": "Masterpiece X는 고급 기술 지식이 없어도 건축 프로젝트를 만들고 시각화할 수 있는 사용하기 쉬운 3D 설계 플랫폼입니다."
+    },
+    "websiteUrl": "https://www.masterpiecex.com",
+    "categoryId": "3d-architecture",
+    "pricingType": "Freemium",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "3d design",
+      "architecture",
+      "visualization",
+      "collaboration",
+      "cloud-based"
+    ],
+    "features": [
+      {
+        "en": "Real-time 3D rendering and visualization with high-quality graphics output",
+        "ko": "고품질 그래픽 출력이 가능한 실시간 3D 렌더링 및 시각화"
+      },
+      {
+        "en": "Collaborative workspace enabling multiple team members to work simultaneously on the same project",
+        "ko": "여러 팀 멤버가 동일한 프로젝트에서 동시에 작업할 수 있는 협업 공간"
+      },
+      {
+        "en": "Comprehensive library of architectural assets, materials, and pre-built components",
+        "ko": "건축 자산, 재료 및 사전 구축된 컴포넌트의 포괄적인 라이브러리"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Intuitive interface makes it accessible to users with varying levels of 3D design experience",
+        "ko": "다양한 수준의 3D 설계 경험을 가진 사용자가 접근하기 쉬운 직관적인 인터페이스"
+      },
+      {
+        "en": "Cloud-based platform enables seamless collaboration and project sharing across teams and locations",
+        "ko": "클라우드 기반 플랫폼으로 팀 및 위치 간 원활한 협업 및 프로젝트 공유가 가능"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Performance may be limited when working with extremely large or complex architectural models",
+        "ko": "매우 크거나 복잡한 건축 모델로 작업할 때 성능이 제한될 수 있음"
+      },
+      {
+        "en": "Limited integration options with some industry-standard CAD software commonly used in professional architecture workflows",
+        "ko": "건축 전문 워크플로우에서 일반적으로 사용되는 일부 산업 표준 CAD 소프트웨어와의 통합 옵션이 제한적"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Interior design visualization and client presentation for residential or commercial projects",
+        "ko": "주거 또는 상업 프로젝트의 인테리어 디자인 시각화 및 클라이언트 프레젠테이션"
+      },
+      {
+        "en": "Real estate marketing materials creation with immersive 3D walkthroughs and virtual tours",
+        "ko": "3D 워크스루 및 가상 투어를 포함한 부동산 마케팅 자료 제작"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Architects and design studios seeking a modern, cloud-based alternative to traditional 3D software",
+        "ko": "기존 3D 소프트웨어의 현대적이고 클라우드 기반의 대안을 찾는 건축가 및 설계 스튜디오"
+      },
+      {
+        "en": "Real estate professionals and interior designers who need quick, professional visualization capabilities",
+        "ko": "빠르고 전문적인 시각화 기능이 필요한 부동산 전문가 및 인테리어 디자이너"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Complex engineering and construction-heavy projects requiring advanced technical CAD functionality",
+        "ko": "고급 기술 CAD 기능이 필요한 복잡한 엔지니어링 및 건설 중심 프로젝트"
+      },
+      {
+        "en": "Users heavily invested in legacy CAD software ecosystems requiring seamless file format compatibility",
+        "ko": "원활한 파일 형식 호환성이 필요한 기존 CAD 소프트웨어 에코시스템에 크게 투자한 사용자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "The free tier typically includes basic 3D modeling and rendering capabilities with storage limits; consult the official website for current quotas and feature restrictions.",
+      "ko": "무료 요금제는 일반적으로 저장소 제한이 있는 기본 3D 모델링 및 렌더링 기능을 포함하며, 최신 할당량 및 기능 제한 사항은 공식 웹사이트를 참조하시기 바랍니다."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans unlock advanced features such as unlimited storage, priority support, and enhanced collaboration tools; visit the pricing page for specific plan details and current rates.",
+      "ko": "유료 요금제는 무제한 저장소, 우선 지원 및 향상된 협업 도구와 같은 고급 기능을 제공하며, 특정 요금제 세부 사항 및 현재 가격은 가격 페이지를 참조하세요."
+    },
+    "commercialNotes": {
+      "en": "Masterpiece X supports commercial use across all plan tiers, making it suitable for professional studios and businesses; review the terms of service to confirm licensing requirements for your specific commercial application.",
+      "ko": "Masterpiece X는 모든 요금제에서 상업적 사용을 지원하므로 전문 스튜디오 및 비즈니스에 적합하며, 특정 상업 용도에 대한 라이선싱 요구 사항을 확인하려면 서비스 약관을 검토하시기 바랍니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "alpha3d",
+    "name": "Alpha3D",
+    "slug": "alpha3d",
+    "description": {
+      "en": "Alpha3D is an AI-powered platform for converting 2D images and sketches into 3D models with minimal manual effort.",
+      "ko": "Alpha3D는 2D 이미지와 스케치를 AI 기술로 3D 모델로 변환해주는 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Alpha3D uses artificial intelligence to automate the 3D modeling process, allowing users to upload 2D images or sketches and quickly generate 3D assets suitable for product visualization, e-commerce, gaming, and design workflows. The platform aims to reduce the time and expertise traditionally required for 3D asset creation.",
+      "ko": "Alpha3D는 AI 기술을 활용하여 2D 이미지나 스케치를 빠르게 3D 모델로 변환합니다. 제품 시각화, 전자상거래, 게임, 디자인 작업 등 다양한 분야에서 전문가 수준의 3D 자산을 손쉽게 만들 수 있습니다."
+    },
+    "beginnerDescription": {
+      "en": "Alpha3D turns your photos or drawings into 3D models using AI, so you don't need to learn complex 3D modeling software—just upload an image and the system does the work.",
+      "ko": "사진이나 그림을 AI로 3D 모델로 바꿔주는 간단한 도구입니다. 복잡한 3D 소프트웨어를 배울 필요 없이 이미지를 업로드하면 자동으로 3D 모델을 만들어줍니다."
+    },
+    "websiteUrl": "https://www.alpha3d.io",
+    "categoryId": "3d-architecture",
+    "pricingType": "Freemium",
+    "rating": 4.4,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "3d modeling",
+      "ai",
+      "image to 3d",
+      "automation"
+    ],
+    "features": [
+      {
+        "en": "AI-powered 2D to 3D conversion from images and sketches",
+        "ko": "이미지와 스케치를 3D로 자동 변환하는 AI 기술"
+      },
+      {
+        "en": "Multi-format export support for use in various 3D applications and game engines",
+        "ko": "게임 엔진과 3D 애플리케이션에 쓸 수 있는 다양한 파일 형식으로 내보내기"
+      },
+      {
+        "en": "Fast generation times with minimal user intervention required",
+        "ko": "빠른 처리 속도와 사용자 개입 최소화"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Dramatically reduces time needed to create 3D assets compared to traditional modeling",
+        "ko": "기존 3D 모델링에 비해 제작 시간을 대폭 단축"
+      },
+      {
+        "en": "Low barrier to entry—no specialized 3D modeling skills required to get started",
+        "ko": "3D 모델링 전문 지식 없이도 시작할 수 있음"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Output quality varies depending on input image clarity and complexity; some assets may need manual refinement",
+        "ko": "입력 이미지의 품질과 복잡도에 따라 결과물 품질이 달라질 수 있음"
+      },
+      {
+        "en": "Limited customization options within the platform for post-generation edits",
+        "ko": "생성 후 세부 조정 기능이 제한적임"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "E-commerce product visualization where merchants need 3D product images for catalogs and websites",
+        "ko": "온라인 쇼핑몰 제품 시각화—카탈로그나 웹사이트에 쓸 3D 이미지 빠르게 생성"
+      },
+      {
+        "en": "Game asset creation for indie developers who lack traditional 3D modeling expertise",
+        "ko": "게임 개발자가 빠르게 게임 에셋을 만들어야 할 때"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Small businesses and entrepreneurs looking for cost-effective product visualization solutions",
+        "ko": "비용 효율적인 상품 시각화를 원하는 소규모 사업가"
+      },
+      {
+        "en": "Designers and content creators who want to expand into 3D without steep learning curves",
+        "ko": "3D 작업을 시작하고 싶지만 복잡한 소프트웨어를 배우고 싶지 않은 크리에이터"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Projects requiring highly detailed, precision-engineered 3D models with complex geometry",
+        "ko": "정밀한 엔지니어링 3D 모델이 필요한 전문 프로젝트"
+      },
+      {
+        "en": "Users seeking full manual control over every aspect of 3D model creation and iteration",
+        "ko": "3D 모델의 모든 세부 사항을 직접 조정해야 하는 경우"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Alpha3D offers a free tier with limited generation credits and basic features, allowing users to try the service before committing to a paid plan. Check the official website for current free plan quotas.",
+      "ko": "무료 플랜으로 제한된 크레딧으로 기본 기능을 사용할 수 있습니다. 정확한 무료 플랜 한도는 공식 웹사이트에서 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans unlock higher generation quotas, faster processing, and additional export formats. Pricing and plan details are available on the official Alpha3D website.",
+      "ko": "유료 플랜은 더 많은 생성 횟수, 빠른 처리 속도, 추가 내보내기 형식을 제공합니다. 정확한 가격은 공식 웹사이트에서 확인하세요."
+    },
+    "commercialNotes": {
+      "en": "Alpha3D permits commercial use of generated 3D models under its standard terms. Users should review the official license agreement to confirm rights for their specific commercial applications.",
+      "ko": "생성된 3D 모델의 상업적 이용이 가능합니다. 정확한 라이선스 조건은 공식 이용약관을 확인하세요."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "tripo-ai",
+    "name": "Tripo AI",
+    "slug": "tripo-ai",
+    "description": {
+      "en": "Tripo AI is a fast 3D model generation tool that converts images or text prompts into detailed 3D assets using AI.",
+      "ko": "Tripo AI는 이미지나 텍스트 프롬프트를 입력하면 AI가 자동으로 상세한 3D 모델을 만들어주는 빠른 생성 도구입니다."
+    },
+    "longDescription": {
+      "en": "Tripo AI specializes in rapid 3D model generation from 2D images or text descriptions. It uses advanced AI algorithms to produce game-ready and production-quality 3D assets with minimal user input, making it accessible to both professionals and newcomers in game development, product design, and virtual content creation.",
+      "ko": "Tripo AI는 2D 이미지나 텍스트 설명으로부터 빠르게 3D 모델을 생성하는 데 특화되어 있습니다. 고급 AI 알고리즘을 사용하여 게임과 제작에 바로 쓸 수 있는 고품질의 3D 에셋을 최소한의 입력으로 만들어내므로, 게임 개발자와 제품 디자이너, 가상 콘텐츠 제작자 모두에게 접근성이 좋습니다."
+    },
+    "beginnerDescription": {
+      "en": "Tripo AI turns your ideas into 3D models instantly. Just describe what you want or upload an image, and the AI will automatically create a detailed 3D asset you can use right away.",
+      "ko": "Tripo AI는 당신의 아이디어를 순식간에 3D 모델로 바꿔줍니다. 원하는 것을 설명하거나 이미지를 업로드하면, AI가 자동으로 바로 쓸 수 있는 상세한 3D 모델을 만들어줍니다."
+    },
+    "websiteUrl": "https://www.tripo3d.ai",
+    "categoryId": "3d-architecture",
+    "pricingType": "Freemium",
+    "rating": 4.6,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": false,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "3d generation",
+      "ai modeling",
+      "game assets"
+    ],
+    "features": [
+      {
+        "en": "Image-to-3D conversion that generates full 3D models from single or multiple reference images",
+        "ko": "단일 또는 여러 장의 참고 이미지에서 완전한 3D 모델을 생성하는 이미지-to-3D 변환"
+      },
+      {
+        "en": "Text-prompt-based 3D generation allowing users to describe desired models in natural language",
+        "ko": "사용자가 자연어로 원하는 모델을 설명하여 3D를 생성할 수 있는 텍스트 프롬프트 기반 생성"
+      },
+      {
+        "en": "Rapid generation speed producing optimized, game-ready assets suitable for game engines and metaverse applications",
+        "ko": "게임 엔진과 메타버스 애플리케이션에 적합한 최적화된 게임용 에셋을 빠르게 생성"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Extremely fast generation times enable rapid iteration and quick prototyping for creative teams",
+        "ko": "매우 빠른 생성 속도로 창작팀이 신속하게 반복 작업하고 프로토타입을 만들 수 있습니다."
+      },
+      {
+        "en": "User-friendly interface requires no specialized 3D modeling knowledge, making it accessible to artists and non-technical users",
+        "ko": "특화된 3D 모델링 지식이 필요 없는 직관적인 인터페이스로 아티스트와 비기술 사용자도 쉽게 사용할 수 있습니다."
+      },
+      {
+        "en": "Output quality is generally suitable for game development, animation, and commercial projects without extensive post-processing",
+        "ko": "출력 품질이 게임 개발, 애니메이션, 상용 프로젝트에 최소한의 후처리로도 적합합니다."
+      }
+    ],
+    "cons": [
+      {
+        "en": "Generated models may lack fine anatomical or mechanical detail, requiring manual refinement for highly specialized uses",
+        "ko": "생성된 모델이 섬세한 해부학적 또는 기계적 세부사항이 부족할 수 있어 전문적 용도에는 수동 수정이 필요할 수 있습니다."
+      },
+      {
+        "en": "Limited control over specific style, proportions, or artistic direction compared to traditional 3D modeling workflows",
+        "ko": "기존 3D 모델링 워크플로우에 비해 특정 스타일, 비율, 미술적 방향에 대한 통제가 제한적입니다."
+      },
+      {
+        "en": "Free tier usage may be restricted in terms of generation credits or output resolution, requiring paid subscription for heavy use",
+        "ko": "무료 플랜의 생성 크레딧이나 출력 해상도가 제한될 수 있어 많은 양의 사용에는 유료 구독이 필요합니다."
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Game developers rapidly prototyping 3D assets and environmental objects for indie games and larger studio productions",
+        "ko": "인디 게임과 대형 스튜디오 제작을 위한 3D 에셋과 환경 객체를 빠르게 프로토타입하는 게임 개발자"
+      },
+      {
+        "en": "Product designers and marketers creating 3D visualizations for e-commerce, virtual try-ons, and digital product showcases",
+        "ko": "전자상거래, 가상 피팅, 디지털 제품 쇼케이스를 위해 3D 시각화를 만드는 제품 디자이너와 마케터"
+      },
+      {
+        "en": "Content creators and virtual world builders generating assets for metaverse environments, virtual reality, and digital fashion",
+        "ko": "메타버스 환경, 가상 현실, 디지털 패션을 위한 에셋을 생성하는 콘텐츠 크리에이터와 가상 세계 제작자"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Game developers and indie studios looking to accelerate asset creation without hiring dedicated 3D artists",
+        "ko": "전담 3D 아티스트를 고용하지 않고 에셋 제작을 가속화하고 싶은 게임 개발자와 인디 스튜디오"
+      },
+      {
+        "en": "Teams and creators working in fast-paced environments where iteration speed and rapid prototyping are critical",
+        "ko": "반복 속도와 빠른 프로토타입 제작이 중요한 빠르게 움직이는 환경에서 일하는 팀과 크리에이터"
+      },
+      {
+        "en": "Designers with limited or no 3D modeling experience who want to generate high-quality assets without steep learning curves",
+        "ko": "3D 모델링 경험이 적거나 없으면서 높은 학습 곡선 없이 고품질 에셋을 생성하고 싶은 디자이너"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Professionals requiring extreme precision in anatomical, mechanical, or highly detailed character modeling for film or visual effects",
+        "ko": "영화나 시각 효과를 위해 해부학적, 기계적, 매우 상세한 캐릭터 모델링의 극도의 정밀도가 필요한 전문가"
+      },
+      {
+        "en": "Users needing complete artistic control over every aspect of model design and stylistic direction",
+        "ko": "모델 디자인과 미술적 방향의 모든 측면에 대한 완전한 미술적 통제가 필요한 사용자"
+      },
+      {
+        "en": "Organizations with strict data privacy requirements, as cloud-based generation may raise concerns about model ownership and data handling",
+        "ko": "클라우드 기반 생성이 모델 소유권과 데이터 처리에 대한 우려를 일으킬 수 있어 엄격한 데이터 프라이버시 요구사항이 있는 조직"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "The free tier typically offers limited generation credits per month, allowing users to test the platform and create a modest number of 3D models at no cost.",
+      "ko": "무료 플랜은 보통 월간 제한된 생성 크레딧을 제공하여 사용자가 플랫폼을 테스트하고 적당한 수의 3D 모델을 무료로 만들 수 있게 합니다."
+    },
+    "paidPlanNotes": {
+      "en": "Paid subscription plans provide increased generation quotas, higher output resolution, and potentially priority processing speed. Check the official website for current pricing and tier details.",
+      "ko": "유료 구독 플랜은 더 많은 생성 할당량, 더 높은 출력 해상도, 그리고 잠재적으로 우선 처리 속도를 제공합니다. 현재 가격 책정과 플랜 상세는 공식 웹사이트에서 확인하세요."
+    },
+    "commercialNotes": {
+      "en": "Tripo AI permits commercial use of generated 3D models under its standard licensing, making it suitable for game releases, commercial products, and professional projects. Confirm commercial usage rights in the terms of service.",
+      "ko": "Tripo AI는 표준 라이선스에 따라 생성된 3D 모델의 상용 사용을 허용하므로 게임 출시, 상용 제품, 전문 프로젝트에 적합합니다. 서비스 약관에서 상용 사용 권한을 확인하세요."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "csm-ai",
+    "name": "CSM AI",
+    "slug": "csm-ai",
+    "description": {
+      "en": "CSM AI is an AI-powered platform for 3D modeling, rendering, and architectural visualization that streamlines the design workflow.",
+      "ko": "CSM AI는 3D 모델링, 렌더링, 건축 시각화를 위한 AI 기반 플랫폼으로 설계 작업 흐름을 간소화합니다."
+    },
+    "longDescription": {
+      "en": "CSM AI leverages artificial intelligence to accelerate 3D design and architectural visualization tasks. The platform enables users to generate, modify, and render 3D models more efficiently than traditional methods, making it valuable for architects, designers, and visualization professionals who need faster iteration cycles.",
+      "ko": "CSM AI는 인공지능을 활용하여 3D 설계 및 건축 시각화 작업을 가속화합니다. 사용자는 기존 방식보다 빠르게 3D 모델을 생성, 수정, 렌더링할 수 있어 빠른 반복 작업이 필요한 건축가, 디자이너, 시각화 전문가에게 유용합니다."
+    },
+    "beginnerDescription": {
+      "en": "CSM AI helps you create and visualize 3D designs faster using artificial intelligence, so you don't need to be an expert in complex 3D software right away.",
+      "ko": "CSM AI는 인공지능으로 3D 설계를 빠르게 만들고 시각화해주므로, 처음부터 복잡한 3D 소프트웨어 전문가가 아니어도 괜찮습니다."
+    },
+    "websiteUrl": "https://www.csm.ai",
+    "categoryId": "3d-architecture",
+    "pricingType": "Freemium",
+    "rating": 4.3,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": false,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "3d modeling",
+      "ai rendering",
+      "architecture"
+    ],
+    "features": [
+      {
+        "en": "AI-assisted 3D model generation and modification to speed up design workflows",
+        "ko": "설계 작업 흐름을 빠르게 하기 위한 AI 기반 3D 모델 생성 및 수정"
+      },
+      {
+        "en": "Rapid rendering and visualization of architectural concepts and designs",
+        "ko": "건축 개념 및 설계의 빠른 렌더링과 시각화"
+      },
+      {
+        "en": "Integration with common design and CAD workflows for seamless adoption",
+        "ko": "일반적인 설계 및 CAD 워크플로우와의 통합으로 원활한 도입"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Significantly reduces time spent on repetitive 3D modeling and rendering tasks",
+        "ko": "반복적인 3D 모델링 및 렌더링 작업에 소요되는 시간을 크게 단축합니다"
+      },
+      {
+        "en": "Makes 3D visualization more accessible to designers without deep CAD expertise",
+        "ko": "깊은 CAD 전문 지식이 없는 디자이너도 3D 시각화에 더 쉽게 접근할 수 있습니다"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Limited documentation and community support compared to established 3D software",
+        "ko": "확립된 3D 소프트웨어에 비해 문서와 커뮤니티 지원이 제한적입니다"
+      },
+      {
+        "en": "May require manual refinement for highly specialized or complex architectural projects",
+        "ko": "매우 전문적이거나 복잡한 건축 프로젝트의 경우 수동 조정이 필요할 수 있습니다"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Generating quick architectural concept visualizations for client presentations",
+        "ko": "클라이언트 프레젠테이션을 위한 빠른 건축 개념 시각화 생성"
+      },
+      {
+        "en": "Accelerating interior design iterations and room layout visualizations",
+        "ko": "인테리어 설계 반복 작업 및 공간 배치 시각화 가속화"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Architects and designers who need faster visualization and iteration cycles",
+        "ko": "빠른 시각화와 반복 작업이 필요한 건축가 및 디자이너"
+      },
+      {
+        "en": "Small to medium-sized design studios looking to increase productivity without large software investments",
+        "ko": "대규모 소프트웨어 투자 없이 생산성을 높이려는 소규모 및 중규모 설계 스튜디오"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Professionals requiring advanced parametric design or highly complex structural modeling",
+        "ko": "고급 파라메트릭 설계나 매우 복잡한 구조 모델링이 필요한 전문가"
+      },
+      {
+        "en": "Users who need deep Korean language support and localized documentation",
+        "ko": "심화된 한국어 지원과 현지화된 문서가 필요한 사용자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "A free tier is available for getting started with basic 3D visualization tasks. Check the official website for current free plan limits and features.",
+      "ko": "기본 3D 시각화 작업을 시작하기 위한 무료 플랜이 제공됩니다. 현재 무료 플랜의 제한 사항과 기능은 공식 웹사이트에서 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans unlock advanced features, higher output quality, and priority support. Visit the official site for current pricing tiers and specific plan details.",
+      "ko": "유료 플랜은 고급 기능, 높은 출력 품질, 우선 지원을 제공합니다. 현재 가격 정책 및 플랜 세부사항은 공식 웹사이트를 방문하세요."
+    },
+    "commercialNotes": {
+      "en": "CSM AI supports commercial use, allowing professionals and studios to use the platform for client projects and paid work. Verify licensing terms for your specific commercial use case on their official site.",
+      "ko": "CSM AI는 상업적 사용을 지원하여 전문가와 스튜디오가 클라이언트 프로젝트 및 유료 작업에 플랫폼을 사용할 수 있습니다. 구체적인 상업적 사용에 대한 라이선싱 약관은 공식 웹사이트에서 확인하세요."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "nvidia-omniverse",
+    "name": "NVIDIA Omniverse",
+    "slug": "nvidia-omniverse",
+    "description": {
+      "en": "NVIDIA Omniverse is a cloud-based platform for building and simulating 3D virtual worlds, enabling real-time collaboration between designers, engineers, and creators.",
+      "ko": "NVIDIA Omniverse는 3D 가상 세계를 구축하고 시뮬레이션할 수 있는 클라우드 기반 플랫폼으로, 디자이너, 엔지니어, 크리에이터 간의 실시간 협업을 지원합니다."
+    },
+    "longDescription": {
+      "en": "NVIDIA Omniverse is a powerful platform designed for professionals who need to create, simulate, and collaborate on complex 3D environments. Built on the USD (Universal Scene Description) standard, it enables teams to work together seamlessly across different software tools and locations. The platform supports physics simulation, ray tracing, AI integration, and photorealistic rendering for use cases ranging from architectural visualization to robotics simulation and digital twins.",
+      "ko": "NVIDIA Omniverse는 복잡한 3D 환경을 만들고, 시뮬레이션하며, 협업하려는 전문가를 위해 설계된 강력한 플랫폼입니다. USD(Universal Scene Description) 표준을 기반으로 구축되어 팀이 다양한 소프트웨어 도구와 위치에서 seamlessly 협업할 수 있습니다. 이 플랫폼은 물리 시뮬레이션, 레이 트레이싱, AI 통합, 그리고 포토리얼리스틱 렌더링을 지원하며, 건축 시각화부터 로봇공학 시뮬레이션, 디지털 트윈까지 다양한 용도로 사용됩니다."
+    },
+    "beginnerDescription": {
+      "en": "NVIDIA Omniverse is a 3D creation and simulation platform that lets teams collaborate on virtual worlds in real-time. While powerful, it's best suited for professionals rather than complete beginners.",
+      "ko": "NVIDIA Omniverse는 팀이 가상 세계에서 실시간으로 협업할 수 있는 3D 제작 및 시뮬레이션 플랫폼입니다. 매우 강력하지만, 완전한 초보자보다는 전문가에게 더 적합합니다."
+    },
+    "websiteUrl": "https://www.nvidia.com/en-us/omniverse/",
+    "categoryId": "3d-architecture",
+    "pricingType": "Freemium",
+    "rating": 4.6,
+    "beginnerFriendly": false,
+    "koreanSupport": false,
+    "mobileSupport": false,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "3d collaboration",
+      "simulation",
+      "digital twins",
+      "visualization"
+    ],
+    "features": [
+      {
+        "en": "Real-time multi-user collaboration across different software tools and geographic locations via USD-based interoperability",
+        "ko": "USD 기반 상호 운용성을 통해 다양한 소프트웨어 도구와 지역에서 실시간 다중 사용자 협업 지원"
+      },
+      {
+        "en": "Photorealistic rendering with ray tracing, material accuracy, and advanced lighting simulation capabilities",
+        "ko": "레이 트레이싱, 정확한 재질 표현, 고급 조명 시뮬레이션을 통한 포토리얼리스틱 렌더링"
+      },
+      {
+        "en": "Physics-based simulation engine supporting robotics, autonomous vehicle testing, and digital twin applications",
+        "ko": "로봇공학, 자율주행 차량 테스트, 디지털 트윈 애플리케이션을 지원하는 물리 기반 시뮬레이션 엔진"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Exceptional interoperability across industry-standard tools (Blender, Maya, Unreal Engine, etc.) through USD format support",
+        "ko": "USD 포맷 지원으로 Blender, Maya, Unreal Engine 등 업계 표준 도구와의 뛰어난 상호 운용성"
+      },
+      {
+        "en": "Enterprise-grade simulation and rendering capabilities suitable for high-stakes professional applications like autonomous vehicle development and architectural visualization",
+        "ko": "자율주행 차량 개발, 건축 시각화 같은 고도의 전문적 응용 분야에 적합한 엔터프라이즈급 시뮬레이션 및 렌더링 기능"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Steep learning curve and requires significant technical expertise; not practical for casual or beginner users without 3D experience",
+        "ko": "가파른 학습곡선을 가지고 있으며, 3D 경험이 없는 일반 사용자나 초보자에게는 실용적이지 않음"
+      },
+      {
+        "en": "Requires substantial computational resources and GPU infrastructure; implementation and infrastructure costs can be significant for smaller teams or organizations",
+        "ko": "상당한 계산 리소스와 GPU 인프라가 필요하며, 작은 팀이나 조직의 경우 구현 및 인프라 비용이 상당할 수 있음"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Architectural firms visualizing complex building designs in photorealistic detail and collaborating with engineering teams in real-time",
+        "ko": "건축 회사가 포토리얼리스틱한 수준으로 복잡한 건물 설계를 시각화하고 엔지니어링 팀과 실시간 협업"
+      },
+      {
+        "en": "Robotics and autonomous vehicle manufacturers simulating real-world scenarios and behavior before physical prototyping",
+        "ko": "로봇 및 자율주행 차량 제조업체가 물리적 프로토타입 제작 전에 실제 시나리오와 동작을 시뮬레이션"
+      },
+      {
+        "en": "Enterprise digital twin development for industrial facilities, supply chains, and smart city infrastructure planning",
+        "ko": "산업 시설, 공급망, 스마트시티 인프라 계획을 위한 엔터프라이즈 디지털 트윈 개발"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Professional 3D studios, engineering firms, and large enterprises with the technical expertise and resources to maximize its capabilities",
+        "ko": "기술적 전문성과 자원을 갖춘 전문 3D 스튜디오, 엔지니어링 회사, 대형 엔터프라이즈"
+      },
+      {
+        "en": "Organizations requiring high-fidelity simulation and photorealistic visualization for mission-critical decision-making",
+        "ko": "미션 크리티컬한 의사결정을 위해 고충실도 시뮬레이션과 포토리얼리스틱 시각화가 필요한 조직"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Small teams or freelance creators with limited budgets and computational infrastructure requirements",
+        "ko": "제한된 예산과 계산 인프라를 가진 소규모 팀이나 프리랜서 크리에이터"
+      },
+      {
+        "en": "Beginners exploring 3D creation without prior experience or need for enterprise-level simulation capabilities",
+        "ko": "사전 경험이 없거나 엔터프라이즈급 시뮬레이션 기능이 필요 없는 3D 제작 초보자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "NVIDIA Omniverse Cloud offers free access to basic features and collaborative capabilities; however, advanced simulation, rendering performance, and extended storage require paid upgrades or enterprise licensing.",
+      "ko": "NVIDIA Omniverse Cloud는 기본 기능과 협업 기능에 대한 무료 액세스를 제공하지만, 고급 시뮬레이션, 렌더링 성능, 확장된 스토리지는 유료 업그레이드 또는 엔터프라이즈 라이선싱이 필요합니다."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans include enhanced compute resources, priority support, and expanded collaboration features; exact pricing varies by use case and deployment model (cloud, on-premises, or hybrid). Organizations should consult NVIDIA's pricing page or contact sales for accurate quotes.",
+      "ko": "유료 플랜은 향상된 계산 리소스, 우선 지원, 확장된 협업 기능을 포함합니다. 정확한 가격은 사용 사례와 배포 모델(클라우드, 온프레미스, 하이브리드)에 따라 다르므로, NVIDIA의 공식 가격 페이지나 판매팀에 문의하여 정확한 견적을 받으시기 바랍니다."
+    },
+    "commercialNotes": {
+      "en": "NVIDIA Omniverse is fully licensed for commercial use and widely adopted in enterprise environments for product development, simulation, and visualization. Commercial deployment requires appropriate licensing agreements based on organizational size and usage patterns.",
+      "ko": "NVIDIA Omniverse는 상용 사용에 완전히 라이선스되어 있으며, 제품 개발, 시뮬레이션, 시각화를 위해 엔터프라이즈 환경에서 광범위하게 채택되고 있습니다. 상용 배포는 조직 규모 및 사용 패턴에 따른 적절한 라이선싱 계약이 필요합니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "scenario",
+    "name": "Scenario",
+    "slug": "scenario",
+    "description": {
+      "en": "Scenario is an AI-powered platform for generating and customizing 3D assets, textures, and architectural visualizations using generative AI.",
+      "ko": "Scenario는 생성형 AI를 활용하여 3D 자산, 텍스처, 건축 시각화를 생성하고 맞춤화할 수 있는 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Scenario enables creators and architects to rapidly generate 3D models, textures, and environmental assets using AI trained on custom datasets. The platform supports iterative refinement and allows users to train custom AI models on their own visual styles, making it suitable for game development, architectural visualization, and digital content creation.",
+      "ko": "Scenario는 창작자와 건축가가 맞춤형 데이터셋으로 학습된 AI를 사용하여 3D 모델, 텍스처, 환경 자산을 빠르게 생성할 수 있게 해줍니다. 사용자는 자신만의 시각 스타일로 맞춤 AI 모델을 학습시킬 수 있어 게임 개발, 건축 시각화, 디지털 콘텐츠 제작에 적합합니다."
+    },
+    "beginnerDescription": {
+      "en": "Scenario lets you create 3D models and textures using AI—just describe what you want and the tool generates options that you can refine.",
+      "ko": "Scenario는 원하는 것을 설명하기만 하면 AI가 3D 모델과 텍스처를 만들어주는 도구입니다. 생성된 결과를 쉽게 수정하고 개선할 수 있습니다."
+    },
+    "websiteUrl": "https://www.scenario.com",
+    "categoryId": "3d-architecture",
+    "pricingType": "Freemium",
+    "rating": 4.4,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": false,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "3d generation",
+      "ai textures",
+      "generative design"
+    ],
+    "features": [
+      {
+        "en": "AI-powered 3D model and texture generation from text prompts",
+        "ko": "텍스트 프롬프트로 3D 모델과 텍스처를 생성하는 AI 기반 도구"
+      },
+      {
+        "en": "Custom model training on user-provided datasets and artistic styles",
+        "ko": "사용자가 제공한 데이터셋과 미술 스타일로 맞춤형 AI 모델 학습"
+      },
+      {
+        "en": "Iterative refinement and variation generation for design exploration",
+        "ko": "설계 탐색을 위한 반복적 개선 및 다양한 결과물 생성"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Accelerates asset creation workflow, reducing time from concept to usable 3D models",
+        "ko": "자산 생성 워크플로우를 가속화하여 개념에서 사용 가능한 3D 모델까지의 시간을 단축합니다"
+      },
+      {
+        "en": "Custom model training enables brand-consistent and style-aligned asset generation",
+        "ko": "맞춤형 모델 학습으로 브랜드에 맞는 일관성 있는 스타일의 자산 생성이 가능합니다"
+      },
+      {
+        "en": "Web-based interface makes it accessible without requiring specialized 3D software installation",
+        "ko": "웹 기반 인터페이스로 특수 3D 소프트웨어 설치 없이도 접근할 수 있습니다"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Generated assets may require post-processing and manual refinement in professional 3D editors",
+        "ko": "생성된 자산은 전문 3D 편집기에서 후처리 및 수동 수정이 필요할 수 있습니다"
+      },
+      {
+        "en": "Quality and consistency depend heavily on prompt clarity and training data provided",
+        "ko": "결과물의 품질과 일관성은 프롬프트 명확성과 학습 데이터에 크게 의존합니다"
+      },
+      {
+        "en": "Learning curve for effective model training and achieving desired aesthetic results",
+        "ko": "효과적인 모델 학습과 원하는 미적 결과를 얻기 위해 학습 곡선이 있습니다"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Game developers creating varied environmental assets and props without manual 3D modeling",
+        "ko": "수동 3D 모델링 없이 다양한 환경 자산과 소품을 만드는 게임 개발자"
+      },
+      {
+        "en": "Architects and visualizers generating multiple design iterations and material variations quickly",
+        "ko": "설계 반복안과 재료 변형을 빠르게 생성하는 건축가 및 시각화 전문가"
+      },
+      {
+        "en": "Digital content creators and studios producing textures and models at scale for commercial projects",
+        "ko": "상업 프로젝트를 위해 대규모로 텍스처와 모델을 제작하는 디지털 콘텐츠 창작자"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Game developers and indie studios seeking faster asset production pipelines",
+        "ko": "더 빠른 자산 제작 파이프라인을 원하는 게임 개발자 및 인디 스튜디오"
+      },
+      {
+        "en": "Architectural visualization professionals wanting to experiment with multiple design options",
+        "ko": "다양한 설계 옵션을 실험하고 싶은 건축 시각화 전문가"
+      },
+      {
+        "en": "Teams with custom visual styles who can invest time in training specialized AI models",
+        "ko": "맞춤형 시각 스타일을 가지고 AI 모델 학습에 시간을 투자할 수 있는 팀"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Professionals requiring photorealistic 3D models without any post-processing needs",
+        "ko": "후처리 없이 사진처럼 사실적인 3D 모델이 필요한 전문가"
+      },
+      {
+        "en": "Users unfamiliar with 3D concepts or those seeking purely hands-off generation",
+        "ko": "3D 개념에 익숙하지 않거나 완전 자동 생성을 원하는 사용자"
+      },
+      {
+        "en": "Projects with strict technical specifications where AI-generated assets cannot be easily modified",
+        "ko": "AI 생성 자산을 쉽게 수정할 수 없는 엄격한 기술 사양의 프로젝트"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Scenario offers a free tier with limited monthly credits for generation and basic access to the platform, suitable for testing and small projects.",
+      "ko": "Scenario는 생성에 제한된 월간 크레딧과 기본 플랫폼 접근을 제공하는 무료 계층으로, 테스트와 소규모 프로젝트에 적합합니다."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans provide higher monthly credit allowances, priority processing, custom model training, and advanced features. Visit the official website for current pricing and feature comparisons.",
+      "ko": "유료 요금제는 더 높은 월간 크레딧, 우선 처리, 맞춤형 모델 학습, 고급 기능을 제공합니다. 현재 가격 및 기능 비교는 공식 웹사이트를 참고하세요."
+    },
+    "commercialNotes": {
+      "en": "Scenario permits commercial use of generated assets, though users should verify licensing terms for their specific use case and ensure proper attribution or licensing arrangements are in place.",
+      "ko": "Scenario는 생성된 자산의 상업적 사용을 허용하지만, 사용자는 자신의 용도에 맞는 라이선스 약관을 확인하고 적절한 저작권 표시 또는 라이선싱 계약이 있는지 확인해야 합니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "shopify-magic",
+    "name": "Shopify Magic",
+    "slug": "shopify-magic",
+    "description": {
+      "en": "Shopify Magic is an AI-powered suite of tools integrated into the Shopify platform that automates content creation, product descriptions, and marketing copy for e-commerce merchants.",
+      "ko": "Shopify Magic은 전자상거래 판매자를 위해 콘텐츠 생성, 상품 설명, 마케팅 카피 작성을 자동화하는 Shopify 플랫폼의 AI 기반 도구 모음입니다."
+    },
+    "longDescription": {
+      "en": "Shopify Magic leverages generative AI to help online store owners quickly create product descriptions, marketing emails, blog content, and social media posts. It is designed to integrate seamlessly within the Shopify admin dashboard, allowing merchants to generate, refine, and publish content without leaving their e-commerce platform. The tool is built specifically for Shopify users and aims to reduce the time and effort required to maintain compelling product and promotional content.",
+      "ko": "Shopify Magic은 생성형 AI를 활용하여 온라인 스토어 소유자들이 상품 설명, 마케팅 이메일, 블로그 콘텐츠, 소셜 미디어 포스트를 빠르게 작성할 수 있도록 지원합니다. Shopify 관리자 대시보드에 완벽하게 통합되어 판매자들이 자신의 이커머스 플랫폼을 떠나지 않고도 콘텐츠를 생성, 수정, 발행할 수 있습니다. 이 도구는 Shopify 사용자를 위해 특별히 설계되었으며, 매력적인 상품 및 프로모션 콘텐츠를 유지하는 데 필요한 시간과 노력을 줄이는 것을 목표로 합니다."
+    },
+    "beginnerDescription": {
+      "en": "Shopify Magic is an AI assistant built right into Shopify that helps store owners write product descriptions and marketing content automatically, saving time on writing tasks.",
+      "ko": "Shopify Magic은 Shopify에 내장된 AI 도우미로, 스토어 소유자들이 상품 설명과 마케팅 콘텐츠를 자동으로 작성하도록 도와 글쓰기 작업에 소요되는 시간을 절약할 수 있게 합니다."
+    },
+    "websiteUrl": "https://www.shopify.com/magic",
+    "categoryId": "ecommerce-business",
+    "pricingType": "Freemium",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "ai-content",
+      "e-commerce",
+      "shopify",
+      "automation",
+      "marketing"
+    ],
+    "features": [
+      {
+        "en": "AI-powered product description generation",
+        "ko": "AI 기반 상품 설명 자동 생성"
+      },
+      {
+        "en": "Marketing email and social media content creation",
+        "ko": "마케팅 이메일 및 소셜 미디어 콘텐츠 작성"
+      },
+      {
+        "en": "Native integration with Shopify admin dashboard",
+        "ko": "Shopify 관리자 대시보드와의 네이티브 통합"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Seamlessly integrated into Shopify, requiring no external tools or logins",
+        "ko": "Shopify에 완벽하게 통합되어 외부 도구나 별도 로그인이 필요 없음"
+      },
+      {
+        "en": "Designed specifically for e-commerce use cases, understanding product attributes and sales language",
+        "ko": "상품 속성과 판매 언어를 이해하는 전자상거래 특화 설계"
+      },
+      {
+        "en": "Reduces content creation time significantly for busy store owners",
+        "ko": "바쁜 스토어 운영자들의 콘텐츠 작성 시간을 대폭 단축"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Quality and tone of generated content may require manual editing or refinement",
+        "ko": "생성된 콘텐츠의 품질과 톤이 수동 편집이나 다듬기를 필요로 할 수 있음"
+      },
+      {
+        "en": "Limited customization options compared to dedicated AI writing tools",
+        "ko": "전문 AI 글쓰기 도구 대비 커스터마이제이션 옵션이 제한적"
+      },
+      {
+        "en": "Not available in all markets or Shopify plan tiers; feature availability may vary",
+        "ko": "모든 시장이나 Shopify 요금제에서 이용 가능하지 않으며, 기능 가용성이 다를 수 있음"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "A small online retailer needing to quickly populate descriptions for hundreds of new products",
+        "ko": "수백 개의 신상품 설명을 빠르게 작성해야 하는 소규모 온라인 소매업체"
+      },
+      {
+        "en": "E-commerce managers scaling content production without hiring additional copywriters",
+        "ko": "추가 카피라이터 고용 없이 콘텐츠 생산량을 확대하려는 전자상거래 관리자"
+      },
+      {
+        "en": "Dropshipping businesses automating repetitive product description and promotional tasks",
+        "ko": "반복적인 상품 설명 및 프로모션 작업을 자동화하려는 드롭셔핑 사업"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Shopify store owners and e-commerce entrepreneurs looking to save time on content creation",
+        "ko": "콘텐츠 작성 시간을 절약하려는 Shopify 스토어 소유자 및 전자상거래 사업가"
+      },
+      {
+        "en": "Small to mid-sized online businesses with limited marketing budgets",
+        "ko": "마케팅 예산이 제한적인 중소 온라인 비즈니스"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Brands requiring highly customized, premium-quality copy and unique brand voice",
+        "ko": "높은 수준의 커스터마이제이션과 고유한 브랜드 톤의 프리미엄 카피가 필요한 브랜드"
+      },
+      {
+        "en": "Non-Shopify e-commerce platforms; Magic is exclusive to the Shopify ecosystem",
+        "ko": "Shopify가 아닌 전자상거래 플랫폼(Magic은 Shopify 생태계 전용)"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Some Shopify Magic features may be available free or included with select Shopify plans, but full feature access typically requires a paid subscription or premium tier.",
+      "ko": "일부 Shopify Magic 기능은 무료이거나 특정 Shopify 요금제에 포함될 수 있지만, 전체 기능 이용은 일반적으로 유료 구독 또는 프리미엄 등급이 필요합니다."
+    },
+    "paidPlanNotes": {
+      "en": "Shopify Magic is available as an add-on or premium feature within select Shopify plans. Pricing and availability may depend on your store plan tier; check Shopify's official pricing page for current details.",
+      "ko": "Shopify Magic은 특정 Shopify 요금제 내의 추가 기능 또는 프리미염 기능으로 이용 가능합니다. 가격 및 이용 가능성은 스토어 요금제 등급에 따라 달라질 수 있으므로 Shopify의 공식 가격 페이지에서 최신 정보를 확인하세요."
+    },
+    "commercialNotes": {
+      "en": "Shopify Magic is designed for commercial use and is suitable for online retailers, dropshippers, and e-commerce businesses of various sizes looking to automate content production at scale.",
+      "ko": "Shopify Magic은 상업적 사용을 위해 설계되었으며, 콘텐츠 생산을 대규모로 자동화하려는 다양한 규모의 온라인 소매업체, 드롭셔퍼, 전자상거래 비즈니스에 적합합니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "shopify-sidekick",
+    "name": "Shopify Sidekick",
+    "slug": "shopify-sidekick",
+    "description": {
+      "en": "Shopify Sidekick is an AI assistant integrated into Shopify that helps store owners automate tasks, write product descriptions, and manage their e-commerce business.",
+      "ko": "Shopify Sidekick는 Shopify에 통합된 AI 어시스턴트로, 스토어 소유자가 작업을 자동화하고 상품 설명을 작성하며 전자상거래 비즈니스를 관리하도록 돕습니다."
+    },
+    "longDescription": {
+      "en": "Shopify Sidekick is an AI-powered assistant built directly into the Shopify platform, designed to streamline e-commerce operations for store owners of all sizes. It helps with product description generation, content creation, customer service responses, and routine business tasks. The tool leverages Shopify's ecosystem to provide contextual help and automation directly within the merchant experience.",
+      "ko": "Shopify Sidekick는 Shopify 플랫폼에 직접 통합된 AI 기반 어시스턴트로, 모든 규모의 스토어 소유자를 위해 전자상거래 운영을 간소화하도록 설계되었습니다. 상품 설명 생성, 콘텐츠 작성, 고객 서비스 응답 및 일상적인 비즈니스 작업을 지원합니다. 이 도구는 Shopify 생태계를 활용하여 판매자 경험 내에서 바로 문맥 기반 도움과 자동화를 제공합니다."
+    },
+    "beginnerDescription": {
+      "en": "Shopify Sidekick is an AI helper built into your Shopify store that writes product descriptions, answers customer questions, and automates routine tasks—no coding needed.",
+      "ko": "Shopify Sidekick는 Shopify 스토어에 내장된 AI 도우미로, 상품 설명을 작성하고 고객 질문에 답변하며 일상적인 작업을 자동화해 줍니다. 코딩 없이 사용할 수 있습니다."
+    },
+    "websiteUrl": "https://www.shopify.com/magic",
+    "categoryId": "ecommerce-business",
+    "pricingType": "Freemium",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "ai assistant",
+      "e-commerce",
+      "shopify",
+      "automation",
+      "content generation"
+    ],
+    "features": [
+      {
+        "en": "AI-powered product description and content generation",
+        "ko": "AI 기반 상품 설명 및 콘텐츠 자동 생성"
+      },
+      {
+        "en": "Customer service automation with AI-assisted responses",
+        "ko": "AI 지원 응답을 통한 고객 서비스 자동화"
+      },
+      {
+        "en": "Native integration within Shopify admin dashboard",
+        "ko": "Shopify 관리자 대시보드 내 자연스러운 통합"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Seamlessly integrated into Shopify—no separate tool to learn or switch between platforms",
+        "ko": "Shopify에 완벽히 통합되어 별도의 도구를 배울 필요가 없고 플랫폼 전환이 없습니다."
+      },
+      {
+        "en": "Fast content generation saves store owners significant time on repetitive writing tasks",
+        "ko": "빠른 콘텐츠 생성으로 스토어 소유자의 반복적인 작업 시간을 크게 절약합니다."
+      },
+      {
+        "en": "Freemium model means Shopify merchants can try it at no cost",
+        "ko": "Freemium 모델로 Shopify 판매자가 비용 없이 시도해볼 수 있습니다."
+      }
+    ],
+    "cons": [
+      {
+        "en": "Generated content may require significant editing to match brand voice and quality standards",
+        "ko": "생성된 콘텐츠가 브랜드 톤과 품질 기준에 맞도록 상당한 수정이 필요할 수 있습니다."
+      },
+      {
+        "en": "Limited to Shopify ecosystem—cannot be used with other e-commerce platforms",
+        "ko": "Shopify 생태계로만 제한되어 다른 전자상거래 플랫폼과 함께 사용할 수 없습니다."
+      },
+      {
+        "en": "Pricing details and exact quotas for free tier are not always transparent",
+        "ko": "프리 티어의 가격 세부사항과 정확한 할당량이 항상 명확하지 않습니다."
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Quickly drafting initial product descriptions for new inventory to accelerate catalog uploads",
+        "ko": "새로운 재고에 대한 초기 상품 설명을 빠르게 작성하여 카탈로그 업로드를 가속화합니다."
+      },
+      {
+        "en": "Generating response templates for common customer support questions to reduce response time",
+        "ko": "일반적인 고객 지원 질문에 대한 응답 템플릿을 생성하여 응답 시간을 줄입니다."
+      },
+      {
+        "en": "Automating repetitive administrative tasks so store owners can focus on strategy and growth",
+        "ko": "반복적인 관리 작업을 자동화하여 스토어 소유자가 전략과 성장에 집중하도록 합니다."
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Shopify store owners who want AI assistance without leaving their admin dashboard",
+        "ko": "관리자 대시보드를 떠나지 않고 AI 지원을 원하는 Shopify 스토어 소유자"
+      },
+      {
+        "en": "Small to mid-sized e-commerce businesses looking to save time on content creation",
+        "ko": "콘텐츠 작성 시간을 절약하려는 소규모 및 중간 규모의 전자상거래 비즈니스"
+      },
+      {
+        "en": "Merchants who value convenience and native integration over multi-tool workflows",
+        "ko": "다중 도구 워크플로우보다 편의성과 네이티브 통합을 중시하는 판매자"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Brands requiring highly specialized or bespoke product descriptions with strict brand guidelines",
+        "ko": "엄격한 브랜드 가이드라인과 고도로 특화된 상품 설명이 필요한 브랜드"
+      },
+      {
+        "en": "Users of competing e-commerce platforms (WooCommerce, BigCommerce, Magento, etc.)",
+        "ko": "WooCommerce, BigCommerce, Magento 등 경쟁 전자상거래 플랫폼 사용자"
+      },
+      {
+        "en": "Teams needing advanced AI customization or fine-tuning for niche industries",
+        "ko": "틈새 산업을 위한 고급 AI 사용자 정의 또는 미세 조정이 필요한 팀"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Shopify Sidekick offers a free tier for Shopify merchants to experiment with core features. Check Shopify's official documentation for current free tier limits and capabilities.",
+      "ko": "Shopify Sidekick는 Shopify 판매자가 핵심 기능을 시험해볼 수 있도록 무료 티어를 제공합니다. 현재 무료 티어의 제한 및 기능을 확인하려면 Shopify의 공식 문서를 참고하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans are available for merchants requiring higher usage limits or advanced features. Pricing is typically billed through Shopify's standard billing system; visit Shopify's Magic page for current plan details and costs.",
+      "ko": "더 높은 사용 제한이나 고급 기능이 필요한 판매자를 위해 유료 플랜을 제공합니다. 가격은 일반적으로 Shopify의 표준 청구 시스템을 통해 청구되므로 Shopify Magic 페이지에서 현재 플랜 세부사항과 비용을 확인하세요."
+    },
+    "commercialNotes": {
+      "en": "Shopify Sidekick is fully designed for commercial use and is intended to help merchants increase sales, efficiency, and customer satisfaction. All generated content can be used in live stores and marketing materials.",
+      "ko": "Shopify Sidekick는 상업적 사용을 위해 완전히 설계되었으며 판매자가 판매, 효율성 및 고객 만족도를 높이도록 돕기 위한 것입니다. 생성된 모든 콘텐츠는 라이브 스토어 및 마케팅 자료에 사용할 수 있습니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "claid-ai",
+    "name": "Claid.ai",
+    "slug": "claid-ai",
+    "description": {
+      "en": "Claid.ai is an AI-powered image enhancement and upscaling tool designed to improve photo quality, remove backgrounds, and enhance product images for e-commerce.",
+      "ko": "Claid.ai는 사진 품질을 개선하고 배경을 제거하며 전자상거래용 상품 이미지를 향상시키는 AI 기반 이미지 처리 도구입니다."
+    },
+    "longDescription": {
+      "en": "Claid.ai specializes in batch image processing and AI-driven enhancement for e-commerce businesses, offering capabilities like upscaling, background removal, and automated image improvement. It integrates with popular e-commerce platforms and is designed to help sellers quickly prepare product photos at scale. The platform uses machine learning to analyze and optimize images while maintaining quality and detail.",
+      "ko": "Claid.ai는 전자상거래 사업자를 위한 대량 이미지 처리와 AI 기반 이미지 향상에 특화되어 있으며, 업스케일링, 배경 제거, 자동화된 이미지 개선 기능을 제공합니다. 인기 있는 이커머스 플랫폼과 통합되어 판매자들이 상품 사진을 빠르게 준비할 수 있도록 설계되었습니다. 머신러닝을 사용하여 품질과 세부 사항을 유지하면서 이미지를 분석하고 최적화합니다."
+    },
+    "beginnerDescription": {
+      "en": "Claid.ai helps small business owners and online sellers improve their product photos automatically using AI, making them look more professional without needing design skills.",
+      "ko": "Claid.ai는 소상공인과 온라인 판매자들이 AI를 사용해 상품 사진을 자동으로 개선하여 디자인 지식 없이도 전문적으로 보이게 만들어줍니다."
+    },
+    "websiteUrl": "https://claid.ai",
+    "categoryId": "ecommerce-business",
+    "pricingType": "Freemium",
+    "startingPrice": "$9/mo",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "image-enhancement",
+      "e-commerce",
+      "ai-upscaling",
+      "background-removal",
+      "batch-processing"
+    ],
+    "features": [
+      {
+        "en": "AI image upscaling and quality enhancement",
+        "ko": "AI 기반 이미지 업스케일링 및 품질 향상"
+      },
+      {
+        "en": "Automated background removal and product image optimization",
+        "ko": "자동 배경 제거 및 상품 이미지 최적화"
+      },
+      {
+        "en": "Batch processing and e-commerce platform integrations",
+        "ko": "대량 처리 및 전자상거래 플랫폼 통합"
+      }
+    ],
+    "pros": [
+      {
+        "en": "User-friendly interface requires no technical skills or design experience",
+        "ko": "기술적 지식이나 디자인 경험 없이도 사용할 수 있는 직관적인 인터페이스"
+      },
+      {
+        "en": "Effective for improving multiple product images quickly at scale",
+        "ko": "여러 상품 이미지를 빠르게 대량으로 개선하는 데 효과적"
+      },
+      {
+        "en": "Affordable pricing suitable for small and medium e-commerce businesses",
+        "ko": "소규모 및 중규모 전자상거래 사업에 적합한 저렴한 가격"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Limited customization options compared to professional image editing software",
+        "ko": "전문 이미지 편집 소프트웨어에 비해 커스터마이징 옵션이 제한적"
+      },
+      {
+        "en": "Results vary depending on original image quality and subject matter",
+        "ko": "원본 이미지 품질과 피사체에 따라 결과의 품질이 달라질 수 있음"
+      },
+      {
+        "en": "No native Korean language support in the interface",
+        "ko": "인터페이스에 한국어 지원이 없음"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Online sellers preparing product photos for Shopify, Amazon, or other e-commerce marketplaces",
+        "ko": "Shopify, Amazon 및 기타 전자상거래 마켓플레이스용 상품 사진을 준비하는 온라인 판매자"
+      },
+      {
+        "en": "Small businesses needing to improve photo quality without hiring a professional photographer",
+        "ko": "전문 사진작가를 고용할 여유가 없는 소규모 사업의 사진 품질 개선"
+      },
+      {
+        "en": "Batch upscaling old or low-resolution product images to modern standards",
+        "ko": "오래된 또는 저해상도 상품 이미지를 현대적 기준으로 대량 업스케일링"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "E-commerce sellers and online shop owners seeking affordable image improvement",
+        "ko": "저렴한 이미지 개선을 원하는 전자상거래 판매자 및 온라인 매장 운영자"
+      },
+      {
+        "en": "Small to medium businesses without dedicated design or photography teams",
+        "ko": "전담 디자인 또는 사진팀이 없는 중소 규모 기업"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Professional photographers or agencies needing advanced manual editing control",
+        "ko": "고급 수동 편집 컨트롤이 필요한 전문 사진작가 또는 에이전시"
+      },
+      {
+        "en": "Users requiring Korean language support or locally-managed infrastructure",
+        "ko": "한국어 지원이나 국내 인프라 관리가 필요한 사용자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "A free tier is available with limited monthly credits for image processing; check the official site for current free plan quotas and limitations.",
+      "ko": "월간 이미지 처리 크레딧이 제한된 무료 플랜이 제공됩니다. 현재 무료 플랜의 할당량과 제한사항은 공식 웹사이트에서 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans start at an affordable entry level with tiered pricing based on monthly image allowance. Visit the official pricing page for exact current rates and feature comparisons.",
+      "ko": "유료 플랜은 월간 이미지 할당량을 기준으로 한 단계별 가격 책정으로 저렴한 수준에서 시작됩니다. 정확한 현재 요금과 기능 비교는 공식 가격 페이지를 방문하세요."
+    },
+    "commercialNotes": {
+      "en": "Claid.ai is fully suitable for commercial e-commerce use and is designed specifically for businesses selling products online. Ensure your plan includes rights for commercial image processing and product sales.",
+      "ko": "Claid.ai는 전자상거래 상업 용도에 완벽하게 적합하며 온라인에서 상품을 판매하는 사업을 위해 특별히 설계되었습니다. 사용 중인 플랜이 상업용 이미지 처리 및 상품 판매에 대한 권리를 포함하는지 확인하세요."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "prisync-ai",
+    "name": "Prisync AI",
+    "slug": "prisync-ai",
+    "description": {
+      "en": "Prisync is a price monitoring and dynamic pricing platform that helps e-commerce businesses track competitor prices and optimize their own pricing strategy in real time.",
+      "ko": "Prisync는 전자상거래 기업이 경쟁사의 가격을 추적하고 자신의 가격 책정 전략을 실시간으로 최적화할 수 있도록 돕는 가격 모니터링 및 동적 가격 책정 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Prisync enables online retailers to monitor competitor pricing across multiple channels and automatically adjust their own prices based on market conditions, inventory levels, and predefined rules. The platform integrates with major e-commerce platforms and marketplaces, providing real-time insights to help businesses stay competitive and maximize profit margins.",
+      "ko": "Prisync는 온라인 소매업체가 여러 채널의 경쟁사 가격을 모니터링하고 시장 상황, 재고 수준, 미리 정의된 규칙에 따라 자신의 가격을 자동으로 조정할 수 있게 합니다. 주요 전자상거래 플랫폼 및 마켓플레이스와 통합되어 비즈니스가 경쟁력을 유지하고 이윤을 최대화하는 데 필요한 실시간 인사이트를 제공합니다."
+    },
+    "beginnerDescription": {
+      "en": "Prisync automatically watches competitor prices and helps you adjust your prices to stay competitive without manually checking prices every day.",
+      "ko": "Prisync는 경쟁사의 가격을 자동으로 모니터링하여 매일 가격을 직접 확인할 필요 없이 경쟁력 있는 가격 유지를 도와줍니다."
+    },
+    "websiteUrl": "https://prisync.com",
+    "categoryId": "ecommerce-business",
+    "pricingType": "Freemium",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "price monitoring",
+      "dynamic pricing",
+      "e-commerce",
+      "competitor analysis",
+      "marketplace"
+    ],
+    "features": [
+      {
+        "en": "Real-time competitor price tracking across multiple channels and marketplaces",
+        "ko": "여러 채널 및 마켓플레이스에서 실시간 경쟁사 가격 추적"
+      },
+      {
+        "en": "Automated price adjustment rules based on competitor prices, inventory, and profit margins",
+        "ko": "경쟁사 가격, 재고, 이윤률에 따른 자동 가격 조정 규칙"
+      },
+      {
+        "en": "Integration with major e-commerce platforms including Amazon, eBay, Shopify, and WooCommerce",
+        "ko": "Amazon, eBay, Shopify, WooCommerce 등 주요 전자상거래 플랫폼과의 통합"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Saves time and effort by automating price monitoring and adjustment, allowing businesses to focus on other strategic tasks",
+        "ko": "가격 모니터링 및 조정을 자동화하여 시간과 노력을 절감하고 비즈니스는 다른 전략적 업무에 집중할 수 있습니다."
+      },
+      {
+        "en": "Helps maintain competitive pricing automatically and optimize profit margins based on market conditions",
+        "ko": "시장 상황에 따라 경쟁력 있는 가격을 자동으로 유지하고 이윤률을 최적화합니다."
+      },
+      {
+        "en": "Provides data-driven insights into pricing trends and competitor behavior to inform business decisions",
+        "ko": "가격 책정 추세 및 경쟁사 행동에 대한 데이터 기반 인사이트를 제공하여 비즈니스 의사결정을 지원합니다."
+      }
+    ],
+    "cons": [
+      {
+        "en": "Pricing structure and exact quotas for different tiers are not transparent, requiring contact with sales for detailed information",
+        "ko": "요금 체계 및 각 요금제별 정확한 한도가 명확하게 공개되지 않아 세부 정보를 위해 영업팀 연락이 필요합니다."
+      },
+      {
+        "en": "Limited or no dedicated support in Korean, which may be a barrier for Korean-speaking businesses without English proficiency",
+        "ko": "한국어 전담 지원이 제한적이거나 없어 영어에 능숙하지 않은 한국 비즈니스에는 장벽이 될 수 있습니다."
+      },
+      {
+        "en": "May require technical setup and rule configuration to fully leverage the platform's capabilities",
+        "ko": "플랫폼의 모든 기능을 최대한 활용하려면 기술적 설정 및 규칙 구성이 필요할 수 있습니다."
+      }
+    ],
+    "useCases": [
+      {
+        "en": "E-commerce sellers on Amazon, eBay, or Shopify wanting to stay competitive without manually updating prices daily",
+        "ko": "Amazon, eBay 또는 Shopify의 전자상거래 판매자가 매일 수동으로 가격을 업데이트하지 않고도 경쟁력을 유지하고 싶을 때"
+      },
+      {
+        "en": "Multi-channel retailers needing to synchronize and optimize pricing across different marketplaces and their own stores",
+        "ko": "여러 마켓플레이스와 자신의 스토어 전반에서 가격 책정을 동기화하고 최적화해야 하는 다중 채널 소매업체"
+      },
+      {
+        "en": "Businesses with high product volume where manual price adjustments are impractical or time-consuming",
+        "ko": "제품 수량이 많아 수동 가격 조정이 비현실적이거나 시간이 많이 걸리는 비즈니스"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Mid-to-large e-commerce businesses selling across multiple platforms with significant inventory and margins to protect",
+        "ko": "여러 플랫폼에서 판매하는 중견 규모 이상의 전자상거래 비즈니스, 특히 상당한 재고와 이윤을 보호해야 하는 경우"
+      },
+      {
+        "en": "Sellers focused on data-driven pricing strategies and competitive market positioning",
+        "ko": "데이터 기반 가격 책정 전략과 경쟁 시장 포지셔닝에 집중하는 판매자"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Businesses selling niche products with minimal competition where price monitoring is less critical",
+        "ko": "경쟁이 최소한이고 가격 모니터링이 덜 중요한 니치 제품을 판매하는 비즈니스"
+      },
+      {
+        "en": "Very small sellers or beginners with minimal technical knowledge and low tolerance for setup complexity",
+        "ko": "기술 지식이 거의 없고 설정 복잡성에 대한 허용도가 낮은 매우 소규모 판매자나 초보자"
+      },
+      {
+        "en": "Businesses operating exclusively offline or in highly regulated pricing environments where automatic adjustments are not feasible",
+        "ko": "오프라인에서만 운영하거나 자동 조정이 불가능한 엄격한 가격 규제 환경에 있는 비즈니스"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Prisync offers a free tier with limited functionality, typically allowing basic price monitoring on a small number of products to help businesses test the platform before committing to a paid plan.",
+      "ko": "Prisync는 기본 가격 모니터링을 제한된 수의 제품에서 사용할 수 있는 무료 요금제를 제공하므로 비즈니스가 유료 요금제에 가입하기 전에 플랫폼을 테스트할 수 있습니다."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans scale based on the number of products monitored and features required, with options for basic, advanced, and enterprise tiers; exact pricing is available upon consultation with the Prisync sales team.",
+      "ko": "유료 요금제는 모니터링되는 제품 수와 필요한 기능에 따라 확장되며 기본, 고급, 엔터프라이즈 계층 옵션이 있습니다. 정확한 요금은 Prisync 영업팀과의 상담을 통해 확인할 수 있습니다."
+    },
+    "commercialNotes": {
+      "en": "Prisync is fully designed for commercial use and is actively used by thousands of e-commerce businesses to automate pricing and improve profitability at scale.",
+      "ko": "Prisync는 상업적 사용을 완전히 지원하도록 설계되었으며 수천 개의 전자상거래 비즈니스에서 가격 책정을 자동화하고 규모 있게 수익성을 개선하는 데 활용됩니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "octane-ai",
+    "name": "Octane AI",
+    "slug": "octane-ai",
+    "description": {
+      "en": "Octane AI is a conversational AI platform designed to help e-commerce brands build and deploy chatbots for customer engagement, sales, and support on messaging channels.",
+      "ko": "Octane AI는 전자상거래 브랜드가 메시징 채널에서 고객 참여, 판매, 지원을 위한 챗봇을 구축하고 배포할 수 있도록 돕는 대화형 AI 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Octane AI specializes in enabling e-commerce businesses to create intelligent chatbots powered by natural language processing for customer interaction across channels like SMS, email, and messaging apps. The platform combines pre-built templates with customization options to help brands automate customer service, drive sales recovery, and personalize shopping experiences without extensive coding.",
+      "ko": "Octane AI는 전자상거래 기업이 SMS, 이메일, 메시징 앱 등 여러 채널에서 고객 상호작용을 위한 자연어 처리 기반의 지능형 챗봇을 만들 수 있도록 전문화되어 있습니다. 이 플랫폼은 미리 만들어진 템플릿과 커스터마이징 옵션을 결합하여 브랜드가 고객 서비스를 자동화하고, 판매 회수를 촉진하며, 광범위한 코딩 없이 쇼핑 경험을 개인화할 수 있도록 돕습니다."
+    },
+    "beginnerDescription": {
+      "en": "Octane AI makes it easy for online store owners to set up a chatbot that talks to customers, answers questions, and helps recover lost sales—no coding skills required.",
+      "ko": "Octane AI는 온라인 스토어 소유자가 고객과 대화하고, 질문에 답하며, 잃어버린 판매를 복구하는 챗봇을 쉽게 설정할 수 있게 해주며, 코딩 기술이 필요 없습니다."
+    },
+    "websiteUrl": "https://www.octaneai.com",
+    "categoryId": "ecommerce-business",
+    "pricingType": "Freemium",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "chatbot",
+      "e-commerce",
+      "conversational ai",
+      "automation",
+      "customer engagement"
+    ],
+    "features": [
+      {
+        "en": "Pre-built and customizable chatbot templates optimized for e-commerce use cases like abandoned cart recovery and product recommendations",
+        "ko": "장바구니 복구 및 상품 추천과 같은 전자상거래 사용 사례에 최적화된 미리 만들어진 그리고 커스터마이징 가능한 챗봇 템플릿"
+      },
+      {
+        "en": "Multi-channel deployment across SMS, email, Facebook Messenger, Instagram, and other messaging platforms from a single interface",
+        "ko": "단일 인터페이스에서 SMS, 이메일, Facebook Messenger, Instagram 및 기타 메시징 플랫폼에 걸쳐 다중 채널 배포"
+      },
+      {
+        "en": "Analytics and insights dashboard to track conversation metrics, conversion rates, and customer engagement performance",
+        "ko": "대화 메트릭, 전환율, 고객 참여 성과를 추적하기 위한 분석 및 인사이트 대시보드"
+      }
+    ],
+    "pros": [
+      {
+        "en": "User-friendly interface with drag-and-drop building and minimal technical barriers make setup fast for non-technical users",
+        "ko": "드래그 앤 드롭 구축 및 최소한의 기술적 장벽을 가진 사용자 친화적 인터페이스로 비기술 사용자도 빠르게 설정할 수 있습니다."
+      },
+      {
+        "en": "Strong focus on e-commerce-specific automations like cart recovery and inventory-based recommendations drive tangible ROI for online retailers",
+        "ko": "장바구니 복구 및 재고 기반 추천과 같은 전자상거래 특화 자동화에 강력한 초점을 맞춰 온라인 소매업체를 위한 실질적인 ROI를 창출합니다."
+      }
+    ],
+    "cons": [
+      {
+        "en": "Limited native integration with some smaller or regional e-commerce platforms; may require workarounds for specialized setups",
+        "ko": "일부 소규모 또는 지역 전자상거래 플랫폼과의 제한된 네이티브 통합; 특화된 설정의 경우 우회 방법이 필요할 수 있습니다."
+      },
+      {
+        "en": "Korean language support is not a primary feature, which may limit usability for Korean-speaking customer bases",
+        "ko": "한국어 지원이 주요 기능이 아니므로 한국어 사용 고객층에 대한 유용성을 제한할 수 있습니다."
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Automating responses to frequently asked questions about shipping, returns, and product specifications to reduce support workload",
+        "ko": "배송, 반품, 제품 사양에 대한 자주 묻는 질문에 대한 응답을 자동화하여 지원 업무 부담을 줄입니다."
+      },
+      {
+        "en": "Recovering abandoned shopping carts by triggering timely, personalized messages through SMS or messaging apps",
+        "ko": "SMS 또는 메시징 앱을 통해 적시에 개인화된 메시지를 트리거하여 포기된 쇼핑 카트를 복구합니다."
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "E-commerce merchants and online retailers looking to reduce customer service costs while improving response times",
+        "ko": "고객 서비스 비용을 줄이면서 응답 시간을 개선하려는 전자상거래 판매자 및 온라인 소매업체"
+      },
+      {
+        "en": "Small to mid-sized online businesses that want conversational AI without hiring a dedicated data science team",
+        "ko": "전담 데이터 과학 팀을 고용하지 않으면서 대화형 AI를 원하는 소규모 및 중간 규모 온라인 비즈니스"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Businesses with primarily Korean-speaking customer bases, as Korean language support is not a strong feature",
+        "ko": "한국어 지원이 강점이 아니므로 주로 한국어 사용 고객층을 가진 비즈니스"
+      },
+      {
+        "en": "Enterprise organizations with highly complex multi-language or custom compliance requirements may find the platform's capabilities limited",
+        "ko": "복잡한 다중 언어 또는 맞춤형 규정 준수 요구사항이 있는 대규모 조직은 플랫폼의 기능이 제한적일 수 있습니다."
+      }
+    ],
+    "freePlanNotes": {
+      "en": "A free tier is typically available with basic features and limited message capacity, suitable for testing and small-scale use. Exact quotas should be verified on the official website.",
+      "ko": "기본 기능과 제한된 메시지 용량으로 무료 티어가 일반적으로 제공되며, 테스트 및 소규모 사용에 적합합니다. 정확한 할당량은 공식 웹사이트에서 확인해야 합니다."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans unlock advanced features such as expanded message limits, priority support, and enhanced analytics. Pricing varies based on message volume and channel selection; contact sales for a custom quote.",
+      "ko": "유료 플랜은 확장된 메시지 제한, 우선 지원, 향상된 분석 등 고급 기능을 잠금 해제합니다. 가격은 메시지 볼륨 및 채널 선택에 따라 달라지므로 맞춤형 견적은 영업팀에 문의하세요."
+    },
+    "commercialNotes": {
+      "en": "Octane AI is fully designed for commercial e-commerce use and helps businesses directly increase revenue through cart recovery and sales automation. The platform supports scaling across multiple channels and locations.",
+      "ko": "Octane AI는 상업용 전자상거래 용도로 완전히 설계되었으며 장바구니 복구 및 판매 자동화를 통해 비즈니스가 수익을 직접 증가시킬 수 있도록 도와줍니다. 이 플랫폼은 여러 채널과 위치에 걸쳐 확장을 지원합니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "clerk-io",
+    "name": "Clerk.io",
+    "slug": "clerk-io",
+    "description": {
+      "en": "Clerk.io is an AI-powered site search and product discovery platform designed to improve e-commerce conversion through intelligent search and personalized recommendations.",
+      "ko": "Clerk.io는 지능형 사이트 검색과 개인화된 추천을 통해 전자상거래 전환율을 높이도록 설계된 AI 기반 검색 및 상품 발견 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Clerk.io offers AI-driven search functionality and recommendation engines tailored for e-commerce merchants. It integrates into online stores to deliver faster, more relevant search results and boost customer engagement through smart product suggestions based on browsing and purchase history.",
+      "ko": "Clerk.io는 전자상거래 판매자를 위해 맞춤형으로 설계된 AI 기반 검색 기능과 추천 엔진을 제공합니다. 온라인 스토어에 통합되어 더욱 빠르고 정확한 검색 결과를 제공하며, 고객의 열람 및 구매 이력을 바탕으로 스마트한 상품 제안을 통해 고객 참여도를 높입니다."
+    },
+    "beginnerDescription": {
+      "en": "Clerk.io helps online store owners improve their search experience and recommend products their customers will love, using AI to increase sales.",
+      "ko": "Clerk.io는 온라인 스토어 운영자들이 AI를 활용해 더 나은 검색 경험을 제공하고 고객이 원하는 상품을 추천함으로써 매출을 증대시킬 수 있도록 돕습니다."
+    },
+    "websiteUrl": "https://www.clerk.io",
+    "categoryId": "ecommerce-business",
+    "pricingType": "Freemium",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "ecommerce search",
+      "ai recommendations",
+      "product discovery",
+      "conversion optimization"
+    ],
+    "features": [
+      {
+        "en": "AI-powered site search with natural language understanding to help customers find products faster",
+        "ko": "고객이 상품을 빠르게 찾을 수 있도록 자연어 이해 기능을 갖춘 AI 기반 사이트 검색"
+      },
+      {
+        "en": "Personalized product recommendations based on user behavior, browsing history, and purchase patterns",
+        "ko": "사용자 행동, 열람 기록, 구매 패턴을 바탕으로 한 개인화된 상품 추천"
+      },
+      {
+        "en": "Easy integration with popular e-commerce platforms like Shopify, WooCommerce, and Magento",
+        "ko": "Shopify, WooCommerce, Magento 등 인기 있는 전자상거래 플랫폼과의 간편한 통합"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Improves search relevance and customer satisfaction, often leading to higher conversion rates and average order value",
+        "ko": "검색 정확도와 고객 만족도를 높여 전환율과 평균 주문 금액 증대로 이어지는 경향이 있습니다."
+      },
+      {
+        "en": "Quick setup and integration without requiring extensive technical knowledge from store owners",
+        "ko": "스토어 운영자가 광범위한 기술 지식 없이도 빠르게 설정하고 통합할 수 있습니다."
+      },
+      {
+        "en": "Provides actionable analytics and insights to understand customer search behavior and preferences",
+        "ko": "고객의 검색 행동과 선호도를 파악할 수 있는 실행 가능한 분석과 인사이트를 제공합니다."
+      }
+    ],
+    "cons": [
+      {
+        "en": "Pricing can become significant for high-traffic stores, potentially making it less accessible for very small merchants",
+        "ko": "트래픽이 많은 스토어의 경우 가격이 상당할 수 있어 매우 작은 규모의 판매자에게는 접근성이 낮을 수 있습니다."
+      },
+      {
+        "en": "Limited customization options compared to building a completely custom search solution from scratch",
+        "ko": "처음부터 완전히 커스텀 검색 솔루션을 구축하는 것에 비해 커스터마이징 옵션이 제한적입니다."
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Increasing product discoverability and sales for mid-sized online retailers struggling with native platform search limitations",
+        "ko": "기본 플랫폼 검색의 한계로 어려움을 겪고 있는 중소 규모 온라인 소매업체의 상품 발견성과 매출 증대"
+      },
+      {
+        "en": "Enhancing customer experience and reducing bounce rates by providing faster, more accurate search results and intelligent recommendations",
+        "ko": "더 빠르고 정확한 검색 결과와 지능형 추천을 제공하여 고객 경험을 개선하고 이탈률 감소"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Shopify store owners and WooCommerce merchants looking to boost conversion rates without deep technical expertise",
+        "ko": "기술적 전문성이 없어도 전환율을 높이고 싶은 Shopify 스토어 운영자와 WooCommerce 판매자"
+      },
+      {
+        "en": "Mid-market e-commerce businesses with sufficient traffic to justify the investment in advanced search and recommendation technology",
+        "ko": "고급 검색 및 추천 기술에 투자할 만한 충분한 트래픽을 갖춘 중견 전자상거래 기업"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Very small or startup online stores with minimal budgets and low monthly traffic volumes",
+        "ko": "예산이 매우 제한적이고 월간 트래픽이 적은 소규모 또는 초기 단계의 온라인 스토어"
+      },
+      {
+        "en": "Retailers requiring highly specialized or heavily customized search logic specific to niche product categories",
+        "ko": "틈새 상품 카테고리에 특화된 매우 특수한 또는 고도로 커스터마이즈된 검색 로직이 필요한 소매업체"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Clerk.io offers a free tier with limited features suitable for testing and small stores with modest traffic. Check the official site for current free plan specifications and limitations.",
+      "ko": "Clerk.io는 테스트와 적은 트래픽의 소규모 스토어에 적합한 제한된 기능의 무료 플랜을 제공합니다. 현재 무료 플랜의 사양과 제한사항은 공식 웹사이트에서 확인하시기 바랍니다."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans scale with your store's traffic and transaction volume. Contact Clerk.io directly or visit their site for current pricing details, as rates depend on your specific business needs.",
+      "ko": "유료 플랜은 스토어의 트래픽과 거래량에 따라 확장됩니다. 현재 가격 정보는 공식 웹사이트를 방문하거나 Clerk.io에 직접 문의하여 확인하시기 바랍니다."
+    },
+    "commercialNotes": {
+      "en": "Clerk.io is fully designed for commercial e-commerce use and is actively used by thousands of online retailers globally. It is a standard business solution, not for personal or non-commercial projects.",
+      "ko": "Clerk.io는 상업용 전자상거래를 위해 완전히 설계되었으며 전 세계 수천 개의 온라인 소매업체에서 활용 중입니다. 개인적 또는 비상업적 프로젝트가 아닌 표준 비즈니스 솔루션입니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "nosto",
+    "name": "Nosto",
+    "slug": "nosto",
+    "description": {
+      "en": "Nosto is a cloud-based personalization and commerce AI platform that helps e-commerce merchants deliver personalized shopping experiences and increase conversion rates.",
+      "ko": "Nosto는 전자상거래 판매자들이 맞춤형 쇼핑 경험을 제공하고 전환율을 높일 수 있도록 돕는 클라우드 기반 개인화 및 상거래 AI 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Nosto uses artificial intelligence and real-time behavioral data to create personalized product recommendations and targeted experiences for each customer. The platform integrates with e-commerce platforms and provides tools for dynamic product recommendation, personalization, and customer segmentation to drive sales and improve customer engagement.",
+      "ko": "Nosto는 실시간 행동 데이터와 인공지능을 활용하여 각 고객을 위한 맞춤형 상품 추천과 타겟팅된 경험을 만듭니다. 이 플랫폼은 전자상거래 플랫폼과 통합되며 동적 상품 추천, 개인화, 고객 세분화를 통해 판매를 늘리고 고객 참여를 개선하는 도구를 제공합니다."
+    },
+    "beginnerDescription": {
+      "en": "Nosto helps online store owners show the right products to the right customers at the right time, using smart AI-powered recommendations that boost sales without needing deep technical knowledge.",
+      "ko": "Nosto는 온라인 상점 운영자들이 똑똑한 AI 기반 추천 기능을 통해 고객에게 적절한 상품을 적절한 시간에 보여주고 판매를 증대할 수 있도록 돕습니다."
+    },
+    "websiteUrl": "https://www.nosto.com",
+    "categoryId": "ecommerce-business",
+    "pricingType": "Paid",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "personalization",
+      "e-commerce",
+      "ai-recommendations",
+      "conversion-optimization"
+    ],
+    "features": [
+      {
+        "en": "AI-powered product recommendations that adapt to customer behavior in real time",
+        "ko": "고객 행동에 실시간으로 적응하는 AI 기반 상품 추천"
+      },
+      {
+        "en": "Pre-built personalization experiences including banners, pop-ups, and email campaigns",
+        "ko": "배너, 팝업, 이메일 캠페인 등 사전 구성된 개인화 경험"
+      },
+      {
+        "en": "Integration with major e-commerce platforms like Shopify, Adobe Commerce, and custom implementations",
+        "ko": "Shopify, Adobe Commerce 등 주요 전자상거래 플랫폼과의 통합"
+      }
+    ],
+    "pros": [
+      {
+        "en": "No coding required to set up and launch personalization campaigns, making it accessible to non-technical users",
+        "ko": "개인화 캠페인을 설정하고 시작하는 데 코딩이 필요 없어 비기술적 사용자도 쉽게 사용 가능"
+      },
+      {
+        "en": "Real-time analytics and A/B testing capabilities help optimize performance and measure ROI effectively",
+        "ko": "실시간 분석 및 A/B 테스트 기능으로 성과를 최적화하고 ROI를 효과적으로 측정 가능"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Pricing can be significant for small e-commerce businesses with lower monthly revenue, requiring careful ROI evaluation",
+        "ko": "월간 매출이 낮은 소규모 전자상거래 사업자에게는 가격이 상당할 수 있어 신중한 ROI 평가 필요"
+      },
+      {
+        "en": "Limited customization for highly complex or unique personalization requirements compared to fully custom solutions",
+        "ko": "매우 복잡하거나 특이한 개인화 요구사항에 대해 완전 맞춤 솔루션에 비해 커스터마이징 제한이 있음"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "E-commerce retailers using product recommendations to increase average order value and customer lifetime value",
+        "ko": "상품 추천을 통해 평균 주문 금액과 고객 생애가치를 높이려는 전자상거래 소매업자"
+      },
+      {
+        "en": "Online marketplaces personalizing shopping experiences based on browsing and purchase history to reduce cart abandonment",
+        "ko": "브라우징 및 구매 기록을 바탕으로 쇼핑 경험을 개인화하여 장바구니 이탈을 줄이려는 온라인 마켓플레이스"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Mid to large-size e-commerce businesses with sufficient volume to justify personalization investment",
+        "ko": "개인화 투자를 정당화할 수 있는 충분한 거래량을 보유한 중견 및 대규모 전자상거래 사업"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Very small or early-stage online stores with limited budgets and lower transaction volumes",
+        "ko": "예산이 제한되고 거래량이 적은 매우 작은 규모의 또는 초기 단계의 온라인 상점"
+      },
+      {
+        "en": "Businesses requiring deep integration with custom legacy systems or highly specialized personalization logic",
+        "ko": "커스텀 레거시 시스템과의 깊은 통합이나 매우 전문화된 개인화 로직이 필요한 사업"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Nosto does not offer a free plan; however, the platform provides a trial period to test functionality before committing to a paid subscription.",
+      "ko": "Nosto는 무료 플랜을 제공하지 않지만, 유료 구독에 가입하기 전에 기능을 테스트할 수 있는 평가판 기간을 제공합니다."
+    },
+    "paidPlanNotes": {
+      "en": "Nosto's pricing is typically based on monthly e-commerce revenue or transaction volume. Exact pricing depends on your store size and required features; contacting their sales team for a custom quote is recommended.",
+      "ko": "Nosto의 가격책정은 일반적으로 월간 전자상거래 수익 또는 거래량을 기준으로 합니다. 정확한 가격은 스토어 규모 및 필요한 기능에 따라 다르므로 영업팀에 문의하여 맞춤형 견적을 받는 것이 좋습니다."
+    },
+    "commercialNotes": {
+      "en": "Nosto is fully designed for commercial use and is widely used by enterprise and mid-market e-commerce businesses to drive revenue growth and improve customer engagement.",
+      "ko": "Nosto는 상업적 사용을 완전히 지원하도록 설계되었으며, 매출 성장 및 고객 참여 개선을 위해 엔터프라이즈 및 중견 전자상거래 사업에서 널리 사용됩니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "zillow-ai",
+    "name": "Zillow AI",
+    "slug": "zillow-ai",
+    "description": {
+      "en": "Zillow is a real estate platform that integrates AI-powered tools to help users search, analyze, and estimate property values.",
+      "ko": "Zillow은 AI 기반 도구를 통합하여 사용자가 부동산을 검색하고 분석하며 가격을 추정하는 데 도움을 주는 부동산 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Zillow leverages machine learning to provide home valuations, market insights, and property recommendations across the United States. The platform helps buyers, sellers, and investors make informed real estate decisions by aggregating property listings, historical data, and predictive analytics.",
+      "ko": "Zillow은 머신러닝을 활용하여 미국 전역의 주택 평가, 시장 통찰, 부동산 추천을 제공합니다. 플랫폼은 구매자, 판매자, 투자자가 부동산 정보 제공, 역사 데이터, 예측 분석을 통합하여 정보에 기반한 부동산 의사결정을 하도록 돕습니다."
+    },
+    "beginnerDescription": {
+      "en": "Zillow helps you find homes and understand their value using AI. You can search properties, get instant estimates, and compare neighborhoods without needing real estate expertise.",
+      "ko": "Zillow은 AI를 활용하여 집을 찾고 가치를 파악하는 데 도움을 줍니다. 부동산 전문 지식이 없어도 부동산을 검색하고, 즉시 가격 추정을 받으며, 지역을 비교할 수 있습니다."
+    },
+    "websiteUrl": "https://www.zillow.com",
+    "categoryId": "ecommerce-business",
+    "pricingType": "Freemium",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "real estate",
+      "home valuation",
+      "market analysis",
+      "property search",
+      "ai-powered"
+    ],
+    "features": [
+      {
+        "en": "AI-powered Zestimate home valuations that estimate property values based on historical data and market trends",
+        "ko": "역사 데이터와 시장 트렌드를 기반으로 부동산 가치를 추정하는 AI 기반 Zestimate 주택 평가"
+      },
+      {
+        "en": "Comprehensive property listings with photos, details, and neighborhood insights to help compare homes",
+        "ko": "사진, 상세 정보, 지역 통찰을 포함한 종합 부동산 목록으로 주택 비교를 돕는 기능"
+      },
+      {
+        "en": "Market analytics and price trends that track property values and rental rates over time",
+        "ko": "시간에 따른 부동산 가치와 임대료를 추적하는 시장 분석 및 가격 트렌드"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Extensive property database and real-time listings make it easy to find available homes in most US markets",
+        "ko": "광범위한 부동산 데이터베이스와 실시간 목록으로 대부분의 미국 시장에서 주택을 쉽게 찾을 수 있습니다"
+      },
+      {
+        "en": "User-friendly interface accessible on desktop and mobile allows browsing and comparison on the go",
+        "ko": "데스크톱과 모바일에서 접근 가능한 사용자 친화적 인터페이스로 언제든지 검색하고 비교할 수 있습니다"
+      },
+      {
+        "en": "Free access to basic features including property search, Zestimate, and neighborhood information",
+        "ko": "부동산 검색, Zestimate, 지역 정보 등 기본 기능을 무료로 이용할 수 있습니다"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Zestimate valuations can vary significantly from actual market prices, especially in niche markets or rural areas",
+        "ko": "Zestimate 평가는 실제 시장 가격과 상당히 다를 수 있으며, 특히 틈새 시장이나 농촌 지역에서 그렇습니다"
+      },
+      {
+        "en": "Limited to United States properties; international users cannot access listings or valuations",
+        "ko": "미국 부동산에만 제한되어 있으므로 국제 사용자는 목록과 평가에 접근할 수 없습니다"
+      },
+      {
+        "en": "Premium features and agent services require paid subscriptions; core AI tools have limitations for serious investors",
+        "ko": "프리미엄 기능과 에이전트 서비스는 유료 구독이 필요하며, 핵심 AI 도구는 진지한 투자자에게 제한이 있습니다"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "First-time homebuyers researching neighborhoods and comparing home values before making an offer",
+        "ko": "처음 주택을 구매하는 사람들이 이웃을 조사하고 제안하기 전에 주택 가치를 비교하는 경우"
+      },
+      {
+        "en": "Real estate investors analyzing market trends and property appreciation potential to identify investment opportunities",
+        "ko": "부동산 투자자가 시장 트렌드와 부동산 가치 상승 가능성을 분석하여 투자 기회를 찾는 경우"
+      },
+      {
+        "en": "Home sellers preparing for market by understanding current valuations and comparable properties in their area",
+        "ko": "주택 판매자가 현재 평가와 자신의 지역의 유사 부동산을 이해하여 시장에 준비하는 경우"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Homebuyers and sellers in the United States looking for transparent property data and market insights",
+        "ko": "미국에서 투명한 부동산 데이터와 시장 통찰을 원하는 주택 구매자와 판매자"
+      },
+      {
+        "en": "Real estate investors seeking data-driven analysis of market trends and property valuations",
+        "ko": "시장 트렌드와 부동산 평가의 데이터 기반 분석을 추구하는 부동산 투자자"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "International users outside the United States, as Zillow operates exclusively in the US market",
+        "ko": "미국 시장에서만 운영되므로 미국 외 국제 사용자에게는 적합하지 않습니다"
+      },
+      {
+        "en": "Users seeking professional appraisals or certified valuations, as Zestimate is an estimate, not an official appraisal",
+        "ko": "Zestimate은 추정치이지 공식 감정평가가 아니므로 전문가 감정평가나 공식 평가를 원하는 사용자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "The free plan includes property search, Zestimate valuations, neighborhood information, and basic market data. Check Zillow's website for current free feature details and limitations.",
+      "ko": "무료 플랜은 부동산 검색, Zestimate 평가, 지역 정보, 기본 시장 데이터를 포함합니다. 현재 무료 기능 및 제한 사항은 Zillow 웹사이트를 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Zillow offers optional paid features such as premium advertising for agents, enhanced listing tools, and advanced analytics. Exact pricing and feature sets vary; visit Zillow.com to review current subscription options.",
+      "ko": "Zillow은 에이전트 프리미엄 광고, 고급 목록 도구, 심화 분석 등 선택적 유료 기능을 제공합니다. 정확한 가격과 기능 세트는 변동하므로 현재 구독 옵션을 검토하려면 Zillow.com을 방문하세요."
+    },
+    "commercialNotes": {
+      "en": "Real estate professionals and agents can use Zillow's agent tools and advertising services for commercial purposes, subject to Zillow's terms. Property data and Zestimate values can support business decisions but should be verified by licensed appraisers for official transactions.",
+      "ko": "부동산 전문가와 에이전트는 Zillow의 이용 약관에 따라 에이전트 도구 및 광고 서비스를 상업 목적으로 사용할 수 있습니다. 부동산 데이터와 Zestimate 값은 비즈니스 결정을 지원할 수 있지만 공식 거래를 위해서는 공인 감정인에 의해 검증되어야 합니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "redfin-ai",
+    "name": "Redfin AI",
+    "slug": "redfin-ai",
+    "description": {
+      "en": "Redfin AI is an artificial intelligence-powered real estate platform that helps buyers, sellers, and agents find properties, estimate home values, and make data-driven decisions in the housing market.",
+      "ko": "Redfin AI는 부동산 구매자, 판매자, 중개인이 물건을 찾고 주택 가치를 추정하며 데이터 기반의 거래 결정을 내리도록 돕는 인공지능 기반 부동산 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Redfin AI leverages machine learning to provide real-time property listings, accurate home value estimates (Zestimates), and predictive analytics for the real estate market. The platform integrates AI recommendations to help users navigate home buying, selling, and investing more efficiently. It serves as both a consumer tool and a resource for real estate professionals seeking competitive advantages.",
+      "ko": "Redfin AI는 머신러닝을 활용하여 실시간 물건 정보, 정확한 주택 가치 평가(Zestimate), 부동산 시장의 예측 분석을 제공합니다. AI 기반 추천 기능을 통해 사용자가 주택 구매, 판매, 투자 과정을 더 효율적으로 진행할 수 있도록 지원합니다. 일반 소비자와 부동산 전문가 모두를 위한 도구로 작동합니다."
+    },
+    "beginnerDescription": {
+      "en": "Redfin AI makes house hunting easier by showing you available homes, estimating what houses are worth, and giving you AI-powered suggestions to help you make smarter buying or selling decisions.",
+      "ko": "Redfin AI는 집을 찾을 때 이용할 수 있는 매물 정보를 보여주고, 주택 가격을 추정해주며, AI 기반의 제안으로 더 똑똑한 거래 결정을 돕습니다."
+    },
+    "websiteUrl": "https://www.redfin.com",
+    "categoryId": "ecommerce-business",
+    "pricingType": "Freemium",
+    "rating": 4.6,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "real estate",
+      "ai-powered",
+      "home valuation",
+      "property search",
+      "market insights"
+    ],
+    "features": [
+      {
+        "en": "AI-powered property search and recommendation engine that learns user preferences to surface relevant listings",
+        "ko": "사용자 선호도를 학습하여 관련 매물을 추천하는 AI 기반 물건 검색 및 추천 엔진"
+      },
+      {
+        "en": "Zestimate home value estimates powered by machine learning algorithms analyzing market data and property characteristics",
+        "ko": "시장 데이터와 물건 특성을 분석하는 머신러닝 알고리즘 기반의 Zestimate 주택 가치 추정"
+      },
+      {
+        "en": "Market analytics and predictive insights to identify buying and selling opportunities based on historical and current trends",
+        "ko": "과거 및 현재 추세를 기반으로 구매 및 판매 기회를 파악하는 시장 분석 및 예측 인사이트"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Comprehensive real estate platform with free access to property listings, valuations, and market data for consumers",
+        "ko": "소비자를 위해 물건 정보, 가치 평가, 시장 데이터에 무료로 접근할 수 있는 종합 부동산 플랫폼"
+      },
+      {
+        "en": "AI-driven recommendations and Zestimate provide data-backed insights that help users make informed decisions without hiring professionals",
+        "ko": "AI 기반 추천과 Zestimate이 전문가의 도움 없이도 정보에 기반한 결정을 내릴 수 있게 해줍니다"
+      },
+      {
+        "en": "Mobile app availability allows users to search properties, receive alerts, and monitor market trends on the go",
+        "ko": "모바일 앱을 통해 언제 어디서나 물건을 검색하고 알림을 받으며 시장 동향을 모니터링할 수 있습니다"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Zestimate accuracy varies by region and may not reflect actual sale prices in all markets, particularly in less liquid or unique property categories",
+        "ko": "Zestimate의 정확도는 지역별로 다르며 특히 유동성이 낮거나 특수한 물건의 경우 실제 판매가를 반영하지 못할 수 있습니다"
+      },
+      {
+        "en": "Limited international coverage; primarily focused on the United States market with minimal support for other countries",
+        "ko": "국제적 범위가 제한적이며 주로 미국 시장에 집중되어 있고 다른 국가 지원이 미미합니다"
+      },
+      {
+        "en": "While the free tier is robust, some advanced features and professional tools may require paid subscriptions or connections to Redfin agents",
+        "ko": "무료 버전은 충실하지만 일부 고급 기능과 전문가 도구는 유료 구독 또는 Redfin 중개인과의 연결이 필요할 수 있습니다"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "First-time homebuyers researching neighborhoods, comparing prices, and getting AI-powered recommendations before scheduling property tours",
+        "ko": "첫 주택 구매자가 동네를 조사하고 가격을 비교하며 물건 방문 전에 AI 기반의 추천을 받는 경우"
+      },
+      {
+        "en": "Home sellers evaluating competitive market conditions and listing prices using AI-generated Zestimates and comparable property analysis",
+        "ko": "주택 판매자가 AI 생성 Zestimate과 유사 물건 분석을 사용하여 경쟁 시장 상황과 가격을 평가하는 경우"
+      },
+      {
+        "en": "Real estate investors using predictive market analytics to identify emerging opportunities in specific geographic regions and property categories",
+        "ko": "부동산 투자자가 예측 시장 분석을 사용하여 특정 지역과 물건 카테고리의 신흥 기회를 식별하는 경우"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Consumers and homebuyers seeking a user-friendly, AI-assisted platform for discovering properties and understanding market values without paying agent fees",
+        "ko": "부동산 중개인 수수료를 내지 않고 물건을 발견하고 시장 가치를 이해하기 위해 사용자 친화적인 AI 지원 플랫폼을 원하는 소비자 및 주택 구매자"
+      },
+      {
+        "en": "Real estate professionals and agents wanting to leverage AI insights and market analytics to enhance their competitive positioning and client service",
+        "ko": "AI 인사이트와 시장 분석을 활용하여 경쟁력을 높이고 고객 서비스를 개선하고자 하는 부동산 전문가 및 중개인"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "International users or those seeking properties outside the United States, as Redfin AI's coverage is primarily US-focused",
+        "ko": "미국 이외의 부동산을 찾는 국제 사용자나 Redfin AI의 범위가 주로 미국에 집중되어 있기 때문에 적합하지 않습니다"
+      },
+      {
+        "en": "Users requiring highly specialized real estate services such as commercial property brokerage or luxury market expertise not yet fully developed in the platform",
+        "ko": "상업용 부동산 중개업 또는 플랫폼에서 아직 완전히 발전하지 않은 럭셔리 시장 전문성 같은 고도로 특화된 부동산 서비스가 필요한 사용자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Redfin's free tier provides access to property listings, Zestimate home values, market data, and AI-powered recommendations. Users can set alerts and follow properties without signing up for a paid subscription.",
+      "ko": "Redfin의 무료 버전은 물건 정보, Zestimate 주택 가치, 시장 데이터, AI 기반 추천에 접근할 수 있습니다. 사용자는 유료 구독 없이 알림을 설정하고 물건을 팔로우할 수 있습니다."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans and premium features may include deeper market analytics, professional agent services, and advanced tools for serious buyers, sellers, and investors. Consult the official Redfin website for current pricing and subscription details.",
+      "ko": "유료 플랜 및 프리미엄 기능에는 더 심화된 시장 분석, 전문 중개인 서비스, 진지한 구매자와 판매자, 투자자를 위한 고급 도구가 포함될 수 있습니다. 현재 가격과 구독 세부 사항은 공식 Redfin 웹사이트를 확인하세요."
+    },
+    "commercialNotes": {
+      "en": "Redfin AI supports commercial real estate applications and agents can use the platform to serve clients professionally. However, the platform is primarily optimized for residential properties.",
+      "ko": "Redfin AI는 상업용 부동산 활용과 중개인의 전문적 고객 서비스를 지원합니다. 다만 플랫폼은 주로 주택용 부동산에 최적화되어 있습니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "restb-ai",
+    "name": "Restb.ai",
+    "slug": "restb-ai",
+    "description": {
+      "en": "Restb.ai is an AI-powered backend platform that helps businesses build REST APIs and manage data without writing code.",
+      "ko": "Restb.ai는 코드 작성 없이 REST API를 구축하고 데이터를 관리할 수 있도록 돕는 AI 기반의 백엔드 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Restb.ai provides a low-code/no-code backend infrastructure designed to accelerate API development and deployment for e-commerce and business applications. It combines visual database design, automated API generation, and AI assistance to reduce development time and technical complexity. The platform targets entrepreneurs and teams who need scalable backends without extensive coding expertise.",
+      "ko": "Restb.ai는 이커머스와 비즈니스 애플리케이션을 위한 API 개발과 배포를 가속화하도록 설계된 로우코드/노코드 백엔드 인프라를 제공합니다. 시각적 데이터베이스 설계, 자동화된 API 생성, AI 지원을 결합하여 개발 시간과 기술적 복잡성을 줄입니다. 이 플랫폼은 광범위한 코딩 전문성 없이 확장 가능한 백엔드가 필요한 기업가와 팀을 대상으로 합니다."
+    },
+    "beginnerDescription": {
+      "en": "Restb.ai lets you create a working backend for your app without learning how to code—just design your data structure and AI generates the APIs for you.",
+      "ko": "Restb.ai를 사용하면 코딩을 배우지 않고도 앱을 위한 작동하는 백엔드를 만들 수 있습니다. 데이터 구조를 설계하면 AI가 API를 자동으로 생성해줍니다."
+    },
+    "websiteUrl": "https://restb.ai",
+    "categoryId": "ecommerce-business",
+    "pricingType": "Freemium",
+    "rating": 4.3,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": false,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "backend",
+      "api",
+      "no-code",
+      "e-commerce",
+      "database"
+    ],
+    "features": [
+      {
+        "en": "Visual database designer with drag-and-drop schema creation",
+        "ko": "드래그 앤 드롭으로 스키마를 생성할 수 있는 시각적 데이터베이스 디자이너"
+      },
+      {
+        "en": "Automatic REST API generation from database models",
+        "ko": "데이터베이스 모델에서 자동으로 REST API 생성"
+      },
+      {
+        "en": "AI-assisted backend configuration and optimization",
+        "ko": "AI 기반의 백엔드 설정 및 최적화 지원"
+      }
+    ],
+    "pros": [
+      {
+        "en": "No coding required—significantly lowers the barrier to building scalable backends",
+        "ko": "코딩이 필요 없어서 확장 가능한 백엔드 구축의 진입장벽이 매우 낮음"
+      },
+      {
+        "en": "Fast API deployment ideal for rapid prototyping and MVP development",
+        "ko": "빠른 API 배포로 빠른 프로토타이핑과 MVP 개발에 이상적"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Limited customization compared to traditional backend frameworks for complex business logic",
+        "ko": "복잡한 비즈니스 로직에 대해서는 전통적인 백엔드 프레임워크보다 커스터마이징이 제한적"
+      },
+      {
+        "en": "May require switching to custom code solutions as your application scales significantly",
+        "ko": "애플리케이션이 크게 확장될 때는 커스텀 코드 솔루션으로 전환해야 할 수 있음"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Building the backend for an e-commerce store without hiring backend engineers",
+        "ko": "백엔드 엔지니어를 고용하지 않고 이커머스 스토어의 백엔드 구축"
+      },
+      {
+        "en": "Creating APIs for mobile or web apps during the prototype and early-stage phases",
+        "ko": "프로토타입 및 초기 단계에서 모바일 또는 웹 앱용 API 생성"
+      },
+      {
+        "en": "Managing data storage and user authentication for small to medium business applications",
+        "ko": "소규모에서 중규모 비즈니스 애플리케이션을 위한 데이터 저장 및 사용자 인증 관리"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Startups and non-technical founders building initial MVPs on a tight timeline",
+        "ko": "타이트한 일정 내에 초기 MVP를 구축하려는 스타트업과 비기술 창업자"
+      },
+      {
+        "en": "E-commerce entrepreneurs who want to launch without DevOps or backend developer resources",
+        "ko": "DevOps나 백엔드 개발자 없이 출시하려는 이커머스 기업가"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Projects requiring highly complex custom logic or real-time data synchronization",
+        "ko": "매우 복잡한 커스텀 로직이나 실시간 데이터 동기화가 필요한 프로젝트"
+      },
+      {
+        "en": "Enterprise systems that demand extensive integration with legacy infrastructure",
+        "ko": "레거시 인프라와의 광범위한 통합이 필요한 엔터프라이즈 시스템"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Restb.ai offers a free tier with limited database storage and API requests, suitable for testing and small projects. Check the official website for current free plan quotas.",
+      "ko": "Restb.ai는 테스트 및 소규모 프로젝트에 적합한 제한된 데이터베이스 저장소와 API 요청이 포함된 무료 계획을 제공합니다. 최신 무료 계획 한도는 공식 웹사이트를 참고하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans typically offer increased API requests, storage, and advanced features like team collaboration. Consult the pricing page for detailed plan specifications and current rates.",
+      "ko": "유료 계획은 일반적으로 증가된 API 요청, 저장소, 팀 협업 같은 고급 기능을 제공합니다. 자세한 계획 사양과 현재 요금은 가격 책정 페이지를 참고하세요."
+    },
+    "commercialNotes": {
+      "en": "Restb.ai allows commercial use across all pricing tiers, making it suitable for building revenue-generating applications and business platforms. Review the terms of service to confirm compliance with your use case.",
+      "ko": "Restb.ai는 모든 가격 계층에서 상업적 사용을 허용하므로 수익을 창출하는 애플리케이션과 비즈니스 플랫폼 구축에 적합합니다. 이용약관을 검토하여 사용 사례가 준수하는지 확인하세요."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "epique-ai",
+    "name": "Epique AI",
+    "slug": "epique-ai",
+    "description": {
+      "en": "Epique AI is an e-commerce and local business platform that uses AI to help merchants create product listings, manage inventory, and optimize sales.",
+      "ko": "Epique AI는 AI를 활용하여 판매자들이 상품 리스팅을 만들고 재고를 관리하며 판매를 최적화하는 데 도움을 주는 이커머스 및 로컬 비즈니스 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Epique AI is designed for e-commerce merchants and local business owners who need to streamline their online operations. It combines AI-powered tools for product description generation, inventory management, and sales analytics to help small to medium-sized businesses operate more efficiently. The platform focuses on reducing manual work and improving customer experience through intelligent automation.",
+      "ko": "Epique AI는 온라인 사업을 효율적으로 운영하고자 하는 이커머스 판매자와 로컬 비즈니스 주인을 위해 설계되었습니다. 상품 설명 생성, 재고 관리, 판매 분석을 위한 AI 기반 도구를 결합하여 중소 규모 사업자들이 더 효율적으로 운영할 수 있도록 지원합니다. 이 플랫폼은 수동 작업을 줄이고 지능형 자동화를 통해 고객 경험을 개선하는 데 중점을 두고 있습니다."
+    },
+    "beginnerDescription": {
+      "en": "Epique AI helps small business owners and online sellers automate tedious tasks like writing product descriptions and managing their store, using simple AI tools.",
+      "ko": "Epique AI는 작은 비즈니스 주인과 온라인 판매자들이 상품 설명 작성이나 매장 관리 같은 반복적인 작업을 AI 도구로 자동화하도록 도와줍니다."
+    },
+    "websiteUrl": "https://epique.ai",
+    "categoryId": "ecommerce-business",
+    "pricingType": "Freemium",
+    "rating": 4.2,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "ecommerce",
+      "ai-automation",
+      "inventory-management",
+      "product-listing",
+      "small-business"
+    ],
+    "features": [
+      {
+        "en": "AI-powered product description and listing generation",
+        "ko": "AI 기반 상품 설명 및 리스팅 자동 생성"
+      },
+      {
+        "en": "Inventory and stock management tools",
+        "ko": "재고 및 판매 관리 도구"
+      },
+      {
+        "en": "Sales analytics and performance insights",
+        "ko": "판매 분석 및 성과 인사이트"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Reduces time spent on manual product listing creation",
+        "ko": "상품 리스팅 작성에 소요되는 시간 대폭 단축"
+      },
+      {
+        "en": "Helps small businesses automate repetitive e-commerce tasks",
+        "ko": "중소 비즈니스의 반복적인 이커머스 업무를 자동화"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Limited Korean language support for interface and documentation",
+        "ko": "인터페이스 및 문서의 한국어 지원 제한적"
+      },
+      {
+        "en": "May require integration setup with existing e-commerce platforms",
+        "ko": "기존 이커머스 플랫폼과의 통합 설정이 필요할 수 있음"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Online retailers creating bulk product listings across multiple channels",
+        "ko": "여러 채널에서 대량의 상품 리스팅을 작성하는 온라인 소매점"
+      },
+      {
+        "en": "Local shop owners automating their e-commerce store management",
+        "ko": "이커머스 매장 관리를 자동화하려는 로컬 상점 주인"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Small to medium-sized e-commerce businesses seeking automation",
+        "ko": "자동화를 원하는 소규모 및 중규모 이커머스 사업자"
+      },
+      {
+        "en": "Busy online sellers who want to save time on administrative tasks",
+        "ko": "관리 업무에 소요되는 시간을 줄이고 싶은 바쁜 온라인 판매자"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Enterprises with complex, custom business logic and workflows",
+        "ko": "복잡한 커스텀 비즈니스 로직이 필요한 대규모 기업"
+      },
+      {
+        "en": "Users requiring extensive Korean-language interface and support",
+        "ko": "포괄적인 한국어 인터페이스와 지원이 필요한 사용자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Epique AI likely offers a free tier or freemium model with basic features for getting started. Check the official site for current free plan limitations and feature availability.",
+      "ko": "Epique AI는 기본 기능을 갖춘 무료 계획이나 프리미엄 모델을 제공할 가능성이 높습니다. 현재의 무료 계획 제한 사항과 기능 가용성은 공식 웹사이트에서 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans likely include advanced features such as unlimited listings, priority support, and enhanced analytics. Pricing and specific plan details should be verified directly on the Epique AI website.",
+      "ko": "유료 요금제는 무제한 리스팅, 우선 지원, 고급 분석 등의 기능을 포함할 가능성이 높습니다. 정확한 가격과 요금제 상세 내용은 Epique AI 공식 웹사이트에서 확인하세요."
+    },
+    "commercialNotes": {
+      "en": "Epique AI is explicitly designed for commercial use by e-commerce and local business operators. The platform is intended to help businesses scale their operations and increase sales efficiency.",
+      "ko": "Epique AI는 이커머스 및 로컬 비즈니스 운영자들의 상업적 사용을 명시적으로 지원하도록 설계되었습니다. 이 플랫폼은 사업 규모 확대와 판매 효율 증대를 돕기 위해 만들어졌습니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "listingai",
+    "name": "ListingAI",
+    "slug": "listingai",
+    "description": {
+      "en": "ListingAI is an AI-powered tool that automates the creation and optimization of product listings for e-commerce platforms and local business directories.",
+      "ko": "ListingAI는 전자상거래 플랫폼과 로컬 비즈니스 디렉토리를 위해 상품 리스팅을 자동으로 생성하고 최적화하는 AI 도구입니다."
+    },
+    "longDescription": {
+      "en": "ListingAI uses artificial intelligence to generate high-quality product descriptions, titles, and metadata optimized for search visibility and conversion. The platform integrates with popular e-commerce channels and marketplace APIs to streamline bulk listing creation and updates. It helps sellers reduce time spent on manual content creation while improving SEO performance and listing quality across multiple sales channels.",
+      "ko": "ListingAI는 인공지능을 활용하여 검색 가시성과 전환율을 최적화한 상품 설명, 제목, 메타데이터를 생성합니다. 주요 전자상거래 채널과 마켓플레이스 API와 통합되어 대량 리스팅 생성 및 수정을 간소화합니다. 판매자들이 수동 콘텐츠 작성에 소비하는 시간을 줄이면서 여러 판매 채널에서 SEO 성능과 리스팅 품질을 개선할 수 있도록 돕습니다."
+    },
+    "beginnerDescription": {
+      "en": "ListingAI helps online sellers quickly create better product listings using AI. Instead of writing descriptions manually, the tool generates optimized content that helps customers find and buy your products.",
+      "ko": "ListingAI는 AI를 이용해 온라인 판매자가 더 좋은 상품 리스팅을 빠르게 만들 수 있게 도와줍니다. 설명을 직접 작성하는 대신 AI가 고객이 상품을 찾고 구매하도록 최적화된 콘텐츠를 만들어줍니다."
+    },
+    "websiteUrl": "https://listingai.co",
+    "categoryId": "ecommerce-business",
+    "pricingType": "Freemium",
+    "rating": 4.3,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "product listings",
+      "e-commerce automation",
+      "ai copywriting",
+      "marketplace integration"
+    ],
+    "features": [
+      {
+        "en": "Automated product description and title generation optimized for search engines and conversion",
+        "ko": "검색 엔진과 전환율 최적화된 자동 상품 설명 및 제목 생성"
+      },
+      {
+        "en": "Multi-channel marketplace integration allowing bulk listing creation and synchronization across platforms",
+        "ko": "여러 마켓플레이스와의 통합으로 플랫폼 간 일괄 리스팅 생성 및 동기화"
+      },
+      {
+        "en": "Metadata and keyword optimization to improve product discoverability and SEO ranking",
+        "ko": "상품 검색 가능성과 SEO 순위를 높이기 위한 메타데이터 및 키워드 최적화"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Significantly reduces manual content creation time for sellers managing multiple product listings",
+        "ko": "여러 상품 리스팅을 관리하는 판매자의 수동 콘텐츠 작성 시간을 크게 단축"
+      },
+      {
+        "en": "AI-generated content is optimized for both user experience and search algorithms, improving visibility",
+        "ko": "사용자 경험과 검색 알고리즘을 고려한 AI 생성 콘텐츠로 상품 노출도 향상"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Generated content may require human review and editing to match brand voice and capture product uniqueness",
+        "ko": "생성된 콘텐츠가 브랜드 목소리를 반영하고 상품의 고유성을 표현하기 위해 인간의 검수와 수정이 필요할 수 있음"
+      },
+      {
+        "en": "Integration capabilities depend on which e-commerce platforms are supported; not all marketplaces may be compatible",
+        "ko": "통합 기능은 지원되는 전자상거래 플랫폼에 따라 달라지므로 모든 마켓플레이스가 호환되지 않을 수 있음"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "E-commerce sellers managing hundreds of products across multiple platforms like Amazon, eBay, or Shopify seeking to automate listing updates",
+        "ko": "Amazon, eBay, Shopify 등 여러 플랫폼에서 수백 개의 상품을 관리하는 전자상거래 판매자가 리스팅 업데이트를 자동화하려는 경우"
+      },
+      {
+        "en": "Local business owners creating detailed service listings for directories and maps to improve local SEO visibility",
+        "ko": "지역 디렉토리와 지도에 상세한 서비스 리스팅을 만들어 로컬 SEO 가시성을 높이려는 지역 사업주"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "E-commerce sellers and resellers who need to maintain large product catalogs across multiple sales channels efficiently",
+        "ko": "여러 판매 채널에서 대규모 상품 카탈로그를 효율적으로 관리해야 하는 전자상거래 판매자와 재판매자"
+      },
+      {
+        "en": "Small to medium-sized businesses looking to improve their marketplace presence without hiring content writers",
+        "ko": "콘텐츠 작가를 고용하지 않고 마켓플레이스 존재감을 높이려는 중소 규모 사업"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "High-end luxury brands requiring highly customized, brand-specific product narratives that AI cannot capture",
+        "ko": "AI가 포착할 수 없는 높은 수준의 맞춤형 브랜드 스토리가 필요한 럭셔리 브랜드"
+      },
+      {
+        "en": "Sellers using niche or unsupported e-commerce platforms with limited API integration options",
+        "ko": "API 통합 옵션이 제한적인 틈새 또는 미지원 전자상거래 플랫폼을 사용하는 판매자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "A free tier likely exists to let users test core features, though exact quotas and limitations should be verified on the official site.",
+      "ko": "기본 기능을 테스트할 수 있는 무료 요금제가 있을 것으로 예상되지만, 정확한 한도와 제한사항은 공식 웹사이트에서 확인해야 합니다."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans typically scale based on listing volume, number of marketplace integrations, or monthly usage limits. Check the official pricing page for current rates and what each tier includes.",
+      "ko": "유료 요금제는 일반적으로 리스팅 볼륨, 마켓플레이스 통합 수, 월간 사용량 한도에 따라 결정됩니다. 최신 요금과 각 플랜에 포함된 내용은 공식 가격 책정 페이지를 확인하세요."
+    },
+    "commercialNotes": {
+      "en": "ListingAI is designed for commercial use and helps businesses generate revenue by improving product visibility and sales on e-commerce platforms. Suitable for resellers, vendors, and small businesses operating online stores.",
+      "ko": "ListingAI는 상품 가시성과 전자상거래 플랫폼 판매를 개선하여 사업이 수익을 창출하도록 설계되었습니다. 온라인 스토어를 운영하는 재판매자, 벤더, 소규모 사업에 적합합니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "write-homes",
+    "name": "Write.homes",
+    "slug": "write-homes",
+    "description": {
+      "en": "Write.homes is a content and marketing platform designed to help real estate professionals create compelling property listings and marketing materials.",
+      "ko": "Write.homes는 부동산 전문가들이 매력적인 매물 설명과 마케팅 자료를 만들도록 돕는 콘텐츠 및 마케팅 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Write.homes provides real estate agents and brokers with AI-powered tools to generate high-quality property descriptions, listing copy, and marketing content. The platform streamlines the content creation process, helping professionals save time while improving the presentation of their listings across multiple channels.",
+      "ko": "Write.homes는 부동산 중개인과 중개소를 위해 AI 기반의 매물 설명, 리스팅 카피, 마케팅 콘텐츠를 생성하는 도구를 제공합니다. 이 플랫폼은 콘텐츠 작성 과정을 간소화하여 전문가들이 시간을 절약하면서 여러 채널에서 매물을 더 잘 표현할 수 있게 합니다."
+    },
+    "beginnerDescription": {
+      "en": "Write.homes helps real estate agents quickly create professional property descriptions and marketing copy using AI, so you don't have to write everything from scratch.",
+      "ko": "Write.homes는 AI를 사용해 부동산 중개인들이 전문적인 매물 설명과 마케팅 문구를 빠르게 만들 수 있게 도와주므로 처음부터 모든 것을 쓸 필요가 없습니다."
+    },
+    "websiteUrl": "https://write.homes",
+    "categoryId": "ecommerce-business",
+    "pricingType": "Freemium",
+    "rating": 4.3,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "real estate",
+      "ai copywriting",
+      "property listings",
+      "marketing automation"
+    ],
+    "features": [
+      {
+        "en": "AI-generated property descriptions tailored to listing details",
+        "ko": "매물 정보에 맞춰 생성되는 AI 기반 매물 설명"
+      },
+      {
+        "en": "Multi-channel marketing content creation for web and social media",
+        "ko": "웹과 소셜 미디어를 위한 다채널 마케팅 콘텐츠 생성"
+      },
+      {
+        "en": "Customizable templates and tone adjustments for brand consistency",
+        "ko": "브랜드 일관성을 위한 커스터마이징 가능한 템플릿과 톤 조정"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Saves significant time on writing property descriptions and marketing copy",
+        "ko": "매물 설명과 마케팅 문구 작성에 소요되는 시간을 크게 단축"
+      },
+      {
+        "en": "Improves listing quality and appeal with professional-grade content",
+        "ko": "전문적인 수준의 콘텐츠로 리스팅 품질과 매력성 향상"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Limited to real estate industry focus; not suitable for general business copywriting",
+        "ko": "부동산 업계 중심으로 기능이 제한되어 있음"
+      },
+      {
+        "en": "May require manual editing and fact-checking to ensure accuracy for specific properties",
+        "ko": "특정 매물의 정확성을 보장하기 위해 수동 편집 및 검증 필요"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Real estate agents creating bulk listings for multiple properties quickly",
+        "ko": "부동산 중개인이 여러 매물을 빠르게 리스팅할 때"
+      },
+      {
+        "en": "Brokers standardizing listing quality across their entire portfolio",
+        "ko": "중개소가 전체 포트폴리오에서 리스팅 품질을 표준화할 때"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Real estate agents and brokers looking to streamline content creation",
+        "ko": "콘텐츠 작성을 효율화하려는 부동산 중개인과 중개소"
+      },
+      {
+        "en": "Teams managing high volumes of property listings",
+        "ko": "많은 양의 부동산 매물을 관리하는 팀"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Non-real estate businesses or general copywriting needs",
+        "ko": "부동산 관련이 아닌 사업이나 일반 카피라이팅 요구사항"
+      },
+      {
+        "en": "Users seeking completely hands-off, zero-editing-required content solutions",
+        "ko": "완전 자동화되고 편집이 필요 없는 콘텐츠 솔루션을 원하는 사용자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Write.homes likely offers a free tier with limited content generation or features; check the official website for current free plan details and restrictions.",
+      "ko": "Write.homes는 제한된 콘텐츠 생성이나 기능이 있는 무료 플랜을 제공할 가능성이 있습니다. 정확한 내용은 공식 웹사이트에서 확인하시기 바랍니다."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans likely include expanded content generation limits, advanced customization options, and priority support; visit write.homes for current pricing and plan details.",
+      "ko": "유료 플랜은 더 많은 콘텐츠 생성, 고급 커스터마이징 옵션, 우선 지원 등을 포함할 것으로 예상됩니다. 최신 가격과 플랜 정보는 write.homes를 방문해 확인하세요."
+    },
+    "commercialNotes": {
+      "en": "Write.homes is designed for professional real estate use and supports commercial real estate marketing. It is suitable for agents, brokers, and real estate teams generating professional listings for sale or lease.",
+      "ko": "Write.homes는 전문 부동산 용도로 설계되었으며 상업용 부동산 마케팅을 지원합니다. 판매 또는 임대 목적의 전문 리스팅을 생성하는 중개인, 중개소, 부동산 팀이 사용하기에 적합합니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "virtual-staging-ai",
+    "name": "Virtual Staging AI",
+    "slug": "virtual-staging-ai",
+    "description": {
+      "en": "AI-powered virtual staging tool that digitally furnishes empty real estate photos to help sellers showcase properties more effectively.",
+      "ko": "부동산 사진을 AI로 자동 가구배치해주는 도구로, 빈 방을 꾸민 모습으로 보여줘서 매물을 더 잘 팔 수 있게 돕습니다."
+    },
+    "longDescription": {
+      "en": "Virtual Staging AI uses artificial intelligence to automatically add furniture, decor, and design elements to photographs of empty rooms and properties. It enables real estate agents, home sellers, and property marketers to present vacant spaces in a furnished, appealing way without the cost and logistics of physical staging. The tool generates realistic interior renderings quickly, allowing multiple design variations to be tested and shared with buyers.",
+      "ko": "Virtual Staging AI는 인공지능을 이용해 빈 방 사진에 가구, 소품, 인테리어 요소를 자동으로 추가해줍니다. 부동산중개인이나 집 판매자들이 실제로 가구를 옮겨놓지 않아도 꾸민 방처럼 보이게 할 수 있어서 비용과 번거로움을 줄일 수 있습니다. 현실감 있는 실내 렌더링을 빠르게 만들 수 있어서 여러 스타일을 테스트하고 구매자들에게 보여줄 수 있습니다."
+    },
+    "beginnerDescription": {
+      "en": "An easy-to-use tool that lets you upload a photo of an empty room and instantly see what it looks like furnished with AI-generated furniture and decor.",
+      "ko": "빈 방 사진을 올리면 AI가 자동으로 가구를 배치해서 꾸민 모습으로 보여주는 간단한 도구입니다."
+    },
+    "websiteUrl": "https://www.virtualstagingai.app",
+    "categoryId": "ecommerce-business",
+    "pricingType": "Freemium",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "real-estate",
+      "virtual-staging",
+      "ai-design",
+      "property-marketing"
+    ],
+    "features": [
+      {
+        "en": "Automatic furniture placement and interior design suggestions using AI",
+        "ko": "AI를 이용한 자동 가구 배치 및 인테리어 디자인 제안"
+      },
+      {
+        "en": "Multiple design style variations for a single room image",
+        "ko": "한 방 사진에 여러 가지 스타일 변형안 제공"
+      },
+      {
+        "en": "Quick rendering and generation of staging variations",
+        "ko": "빠른 렌더링으로 여러 스타일을 빠르게 생성"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Significant cost savings compared to hiring professional staging services and physical furniture rental.",
+        "ko": "전문 스테이징 서비스나 가구 렌트보다 훨씬 저렴합니다."
+      },
+      {
+        "en": "User-friendly interface that requires no design experience or technical skills to operate.",
+        "ko": "디자인 경험이나 기술 지식 없이도 쉽게 사용할 수 있습니다."
+      },
+      {
+        "en": "Enables quick creation of multiple design options to appeal to different buyer preferences.",
+        "ko": "다양한 스타일의 이미지를 빠르게 만들어서 여러 구매자 취향에 대응할 수 있습니다."
+      }
+    ],
+    "cons": [
+      {
+        "en": "AI-generated furniture and layouts may sometimes appear unrealistic or poorly proportioned compared to actual design.",
+        "ko": "AI가 만드는 가구나 배치가 때때로 현실감이 없거나 비율이 맞지 않을 수 있습니다."
+      },
+      {
+        "en": "Limited customization options for specific design preferences or niche interior styles.",
+        "ko": "특정 디자인 취향이나 특수한 인테리어 스타일을 반영하는 데 제한이 있습니다."
+      },
+      {
+        "en": "Quality depends heavily on the input photo's clarity, lighting, and angle.",
+        "ko": "결과 품질이 입력된 사진의 선명도, 조명, 각도에 크게 좌우됩니다."
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Real estate agents creating listing photos that attract more buyer inquiries in competitive markets.",
+        "ko": "경쟁이 심한 부동산 시장에서 구매자 문의를 늘리기 위해 매물 사진을 만드는 중개인들."
+      },
+      {
+        "en": "Home sellers on a budget who want to showcase their empty property more appealingly without hiring a professional stager.",
+        "ko": "전문 스테이징 비용을 절약하면서 빈 집을 더 매력적으로 보이고 싶은 개인 판매자들."
+      },
+      {
+        "en": "Property developers and investors preparing multiple units or properties for market launch quickly.",
+        "ko": "여러 부동산을 빠르게 준비해야 하는 개발업체나 투자자들."
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Real estate professionals and agents looking to enhance listings affordably and quickly.",
+        "ko": "저렴하고 빠르게 매물을 개선하고 싶은 부동산 중개 전문가들."
+      },
+      {
+        "en": "Individual home sellers who want professional-looking photos without the cost of hiring a stager.",
+        "ko": "스테이징 비용 없이 전문가스러운 사진을 원하는 개인 집 판매자들."
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "High-end luxury properties requiring bespoke, realistic design that only professional interior designers can deliver.",
+        "ko": "고급스러운 럭셔리 부동산으로 전문 인테리어 디자이너만 할 수 있는 맞춤형 디자인이 필요한 경우."
+      },
+      {
+        "en": "Users expecting photorealistic results indistinguishable from actual photography or professional staging.",
+        "ko": "실사진이나 전문 스테이징과 구분할 수 없는 완벽한 결과를 원하는 사용자들."
+      }
+    ],
+    "freePlanNotes": {
+      "en": "A free tier typically allows limited staging generations or lower-resolution outputs. Check the official website for current free plan quotas and restrictions.",
+      "ko": "무료 요금제는 보통 제한된 횟수의 스테이징이나 낮은 해상도로 제공됩니다. 최신 무료 플랜 조건은 공식 웹사이트에서 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans generally offer higher resolution outputs, more staging variations per image, and priority processing. Specific pricing and features vary; visit the official site for detailed plan options.",
+      "ko": "유료 요금제는 보통 더 높은 해상도, 더 많은 스타일 변형안, 빠른 처리 속도를 제공합니다. 정확한 가격과 기능은 공식 웹사이트에서 확인하세요."
+    },
+    "commercialNotes": {
+      "en": "Virtual Staging AI is designed for commercial real estate use, including agent listings and property marketing. Terms of use for commercial purposes should be verified on the official website.",
+      "ko": "Virtual Staging AI는 부동산 중개 및 마케팅 등 상업적 용도로 설계되었습니다. 상업 이용 약관은 공식 웹사이트에서 확인하세요."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "styldod",
+    "name": "Styldod",
+    "slug": "styldod",
+    "description": {
+      "en": "Styldod is a fashion e-commerce platform that helps small businesses and boutiques create and manage online stores with styling tools.",
+      "ko": "Styldod는 소규모 패션 비즈니스와 부티크가 온라인 스토어를 만들고 관리할 수 있도록 돕는 패션 이커머스 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Styldod is a fashion-focused e-commerce solution designed for independent retailers and small clothing businesses to launch and grow their online presence. The platform provides styling tools, inventory management, and storefront customization features tailored to the fashion industry. It aims to lower barriers to entry for fashion entrepreneurs who want to sell online without extensive technical knowledge.",
+      "ko": "Styldod는 독립 소매업체와 소규모 의류 비즈니스가 온라인 판매를 시작하고 확대할 수 있도록 설계된 패션 전문 이커머스 솔루션입니다. 이 플랫폼은 스타일링 도구, 재고 관리, 패션 산업에 맞춘 스토어프론트 커스터마이제이션 기능을 제공합니다. 기술적 지식이 부족한 패션 창업자들이 온라인으로 판매할 수 있는 진입장벽을 낮추는 것을 목표로 합니다."
+    },
+    "beginnerDescription": {
+      "en": "Styldod makes it easy for fashion entrepreneurs to set up an online clothing store with built-in styling and product management tools, even if you're new to e-commerce.",
+      "ko": "Styldod는 이커머스 경험이 없는 패션 창업자도 스타일링과 상품 관리 도구를 활용해 온라인 의류 스토어를 쉽게 구축할 수 있도록 도와줍니다."
+    },
+    "websiteUrl": "https://www.styldod.com",
+    "categoryId": "ecommerce-business",
+    "pricingType": "Freemium",
+    "rating": 4.3,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "fashion e-commerce",
+      "online store",
+      "small business",
+      "styling tools",
+      "inventory management"
+    ],
+    "features": [
+      {
+        "en": "Fashion-focused storefront builder with styling and product showcase capabilities",
+        "ko": "스타일링 및 상품 전시 기능이 포함된 패션 중심의 스토어프론트 빌더"
+      },
+      {
+        "en": "Inventory and order management system for tracking products and sales",
+        "ko": "상품 추적 및 판매 관리를 위한 재고 및 주문 관리 시스템"
+      },
+      {
+        "en": "Mobile-responsive design to reach customers on all devices",
+        "ko": "모든 디바이스에서 고객에게 도달하기 위한 모바일 반응형 디자인"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Designed specifically for fashion businesses, making it more relevant than generic e-commerce platforms",
+        "ko": "일반적인 이커머스 플랫폼보다 패션 비즈니스를 위해 특화되어 있어 더 실용적입니다."
+      },
+      {
+        "en": "Beginner-friendly interface that doesn't require coding or advanced technical skills",
+        "ko": "코딩이나 고급 기술 지식 없이도 사용할 수 있는 초보자 친화적인 인터페이스"
+      }
+    ],
+    "cons": [
+      {
+        "en": "No clear Korean language support, which may limit adoption in Korean-speaking markets",
+        "ko": "명확한 한국어 지원이 없어 한국어 시장에서의 채택에 제한이 있을 수 있습니다."
+      },
+      {
+        "en": "Limited documentation or community resources compared to larger e-commerce platforms",
+        "ko": "대규모 이커머스 플랫폼에 비해 문서 및 커뮤니티 리소스가 제한적입니다."
+      }
+    ],
+    "useCases": [
+      {
+        "en": "A small fashion boutique owner launching their first online store to reach customers beyond their physical location",
+        "ko": "오프라인 매장을 넘어 더 많은 고객에게 도달하기 위해 첫 온라인 스토어를 개설하는 소규모 패션 부티크 주인"
+      },
+      {
+        "en": "Independent fashion designers selling their own clothing collections without managing complex backend systems",
+        "ko": "복잡한 백엔드 시스템 관리 없이 자신의 의류 컬렉션을 판매하는 독립 패션 디자이너"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Small fashion boutiques and independent clothing retailers looking for an affordable online presence",
+        "ko": "저렴한 온라인 입지를 찾는 소규모 패션 부티크 및 독립 의류 소매업체"
+      },
+      {
+        "en": "Fashion entrepreneurs with limited technical background who need straightforward styling and inventory tools",
+        "ko": "간단한 스타일링 및 재고 관리 도구가 필요한 기술 배경이 제한적인 패션 창업자"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Large-scale fashion retailers requiring advanced analytics, multichannel integration, and extensive customization",
+        "ko": "고급 분석, 다중 채널 통합, 광범위한 커스터마이제이션이 필요한 대규모 패션 소매업체"
+      },
+      {
+        "en": "Businesses that need native Korean language support or localized payment integration for Korean customers",
+        "ko": "한국 고객을 위한 원주민 수준의 한국어 지원이나 현지화된 결제 통합이 필요한 비즈니스"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Styldod offers a freemium model; check the official site for details on free tier features, store limitations, and any transaction fees that may apply.",
+      "ko": "Styldod는 프리미엄 모델을 제공합니다. 공식 웹사이트에서 무료 버전 기능, 스토어 제한 사항 및 적용 가능한 거래 수수료에 대한 세부 정보를 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans likely offer additional features such as advanced customization, higher product limits, and reduced or removed transaction fees; visit the website for current pricing and plan details.",
+      "ko": "유료 플랜은 고급 커스터마이제이션, 높은 상품 한도, 수수료 감소 또는 제거 등의 추가 기능을 제공할 가능성이 높습니다. 최신 가격과 플랜 세부 정보는 웹사이트를 방문하세요."
+    },
+    "commercialNotes": {
+      "en": "Styldod is fully designed for commercial use and allows businesses to sell fashion products and manage orders on the platform.",
+      "ko": "Styldod는 상업적 사용을 위해 완전히 설계되었으며 비즈니스가 패션 상품을 판매하고 주문을 관리할 수 있습니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "boxbrownie",
+    "name": "BoxBrownie",
+    "slug": "boxbrownie",
+    "description": {
+      "en": "BoxBrownie is an AI-powered photo editing and image enhancement service designed for e-commerce businesses to quickly improve product photos and marketing visuals.",
+      "ko": "BoxBrownie는 전자상거래 기업이 제품 사진과 마케팅 이미지를 빠르게 개선할 수 있도록 설계된 AI 기반 사진 편집 및 이미지 향상 서비스입니다."
+    },
+    "longDescription": {
+      "en": "BoxBrownie specializes in automated image editing and retouching for online sellers, featuring tools like background removal, color correction, and product photo enhancement. The platform combines AI automation with optional human retouching services to help e-commerce businesses maintain consistent, professional-looking product imagery at scale. It integrates with popular e-commerce platforms and supports batch processing for efficiency.",
+      "ko": "BoxBrownie는 배경 제거, 색상 보정, 제품 사진 향상 등의 기능을 제공하는 온라인 판매자를 위한 자동화된 이미지 편집 및 리터칭 서비스를 전문으로 합니다. 이 플랫폼은 AI 자동화와 선택적 인간 리터칭 서비스를 결합하여 전자상거래 기업이 대규모로 일관되고 전문적인 제품 이미지를 유지할 수 있도록 지원합니다. 인기 있는 전자상거래 플랫폼과 통합되며 효율성을 위해 일괄 처리를 지원합니다."
+    },
+    "beginnerDescription": {
+      "en": "BoxBrownie makes it easy to clean up and enhance product photos automatically—you can remove backgrounds, fix colors, and make images look more professional without learning complicated editing software.",
+      "ko": "BoxBrownie는 제품 사진을 자동으로 정리하고 개선할 수 있게 해주므로, 복잡한 편집 소프트웨어를 배울 필요 없이 배경을 제거하고 색상을 조정하며 이미지를 더 전문적으로 만들 수 있습니다."
+    },
+    "websiteUrl": "https://www.boxbrownie.com",
+    "categoryId": "ecommerce-business",
+    "pricingType": "Freemium",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "image-editing",
+      "e-commerce",
+      "ai-retouching",
+      "automation",
+      "background-removal"
+    ],
+    "features": [
+      {
+        "en": "Automated background removal and replacement for product photos",
+        "ko": "제품 사진의 자동 배경 제거 및 교체"
+      },
+      {
+        "en": "AI-powered color correction and image enhancement",
+        "ko": "AI 기반 색상 보정 및 이미지 향상"
+      },
+      {
+        "en": "Batch processing and integration with e-commerce platforms like Shopify and WooCommerce",
+        "ko": "Shopify, WooCommerce 등 전자상거래 플랫폼과의 일괄 처리 및 통합"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Saves significant time by automating repetitive editing tasks; especially valuable for sellers with large product catalogs",
+        "ko": "반복적인 편집 작업을 자동화하여 시간을 크게 절약하며, 특히 상품 수가 많은 판매자에게 유용합니다."
+      },
+      {
+        "en": "User-friendly interface requires no advanced photo editing skills or software experience",
+        "ko": "고급 사진 편집 기술이나 소프트웨어 경험이 필요 없는 사용자 친화적인 인터페이스"
+      }
+    ],
+    "cons": [
+      {
+        "en": "AI results can be inconsistent with highly complex or unusual product shapes; human retouching add-on increases costs",
+        "ko": "복잡하거나 특이한 제품 형태의 경우 AI 결과가 일관성이 없을 수 있으며, 인간 리터칭 추가 서비스는 비용을 증가시킵니다."
+      },
+      {
+        "en": "Limited free tier may require paid subscription for regular, high-volume use",
+        "ko": "제한된 무료 버전은 정기적이고 대량의 사용을 위해 유료 구독이 필요할 수 있습니다."
+      }
+    ],
+    "useCases": [
+      {
+        "en": "E-commerce sellers on Amazon, eBay, or Shopify enhancing product photos at scale without hiring a photo editor",
+        "ko": "Amazon, eBay, Shopify의 전자상거래 판매자가 사진 편집자를 고용하지 않고 대규모로 제품 사진을 개선"
+      },
+      {
+        "en": "Small business owners improving social media marketing images and website product listings quickly and affordably",
+        "ko": "소규모 비즈니스 주인이 소셜 미디어 마케팅 이미지와 웹사이트 제품 목록을 빠르고 저렴하게 개선"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "E-commerce entrepreneurs and online retailers who need to process many product images consistently",
+        "ko": "많은 제품 이미지를 일관되게 처리해야 하는 전자상거래 기업가 및 온라인 소매업체"
+      },
+      {
+        "en": "Small to medium businesses seeking affordable alternatives to professional photo editing services or retouchers",
+        "ko": "전문 사진 편집 서비스나 리터칭 전문가의 저렴한 대안을 찾는 소규모 및 중소 기업"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Professional photographers or designers who require pixel-perfect control and advanced editing capabilities",
+        "ko": "픽셀 단위의 정확한 제어와 고급 편집 기능이 필요한 전문 사진작가 또는 디자이너"
+      },
+      {
+        "en": "Users seeking comprehensive graphic design or creative suite features beyond image retouching",
+        "ko": "이미지 리터칭을 넘어 포괄적인 그래픽 디자인 또는 크리에이티브 도구 모음을 원하는 사용자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "A free tier is available with limited monthly credits and processing capacity, suitable for trying the service; upgrade to paid plans for higher volume and priority support.",
+      "ko": "무료 버전은 제한된 월간 크레딧과 처리 용량으로 이용 가능하며, 서비스를 시험해볼 수 있습니다. 더 많은 용량과 우선 지원을 원하면 유료 요금제로 업그레이드하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans offer higher processing limits, faster turnaround times, and access to human retouching services. Pricing varies based on monthly credit allowances; check the official website for current plan details.",
+      "ko": "유료 요금제는 더 높은 처리 한도, 빠른 처리 시간, 인간 리터칭 서비스 접근을 제공합니다. 가격은 월간 크레딧 허용량에 따라 다르므로 최신 요금제 정보는 공식 웹사이트를 확인하세요."
+    },
+    "commercialNotes": {
+      "en": "BoxBrownie is fully designed for commercial e-commerce use and is widely used by online retailers and sellers. Licensed images and edited photos can be used for product listings, marketing, and sales.",
+      "ko": "BoxBrownie는 상업적 전자상거래 용도로 완전히 설계되었으며 온라인 소매업체와 판매자에게 널리 사용됩니다. 편집된 사진은 제품 목록, 마케팅 및 판매에 사용할 수 있습니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "matterport",
+    "name": "Matterport",
+    "slug": "matterport",
+    "description": {
+      "en": "Matterport creates immersive 3D virtual tours and spatial data capture technology for real estate, hospitality, and commercial properties.",
+      "ko": "매터포트는 부동산, 호텔, 상업 시설 등을 위한 3D 가상 투어와 공간 데이터 캡처 기술을 제공합니다."
+    },
+    "longDescription": {
+      "en": "Matterport uses specialized camera hardware and software to capture properties in high-resolution 3D, creating interactive virtual walkthroughs that buyers and visitors can explore online. The platform serves real estate agents, property managers, hotels, and businesses seeking to showcase spaces digitally and improve customer engagement. Beyond tours, Matterport's spatial data technology enables floor plans, measurements, and analytics for various industries.",
+      "ko": "매터포트는 특수 카메라 하드웨어와 소프트웨어를 이용해 부동산과 시설을 고해상도 3D로 캡처하여 대화형 가상 투어를 제공합니다. 부동산 중개인, 자산 관리자, 호텔, 다양한 기업들이 공간을 디지털로 선보이고 고객 참여도를 높이기 위해 사용합니다. 투어 외에도 평면도 생성, 공간 측정, 분석 등의 기능을 통해 여러 산업 분야를 지원합니다."
+    },
+    "beginnerDescription": {
+      "en": "Matterport lets you create interactive 3D virtual tours of any property that you can share online—perfect for real estate listings, hotel showcases, or business spaces without needing technical expertise.",
+      "ko": "매터포트를 사용하면 부동산, 호텔, 매장 등 어떤 공간이든 3D 가상 투어를 만들어 온라인으로 공유할 수 있습니다. 기술 지식이 없어도 쉽게 활용할 수 있습니다."
+    },
+    "websiteUrl": "https://matterport.com",
+    "categoryId": "ecommerce-business",
+    "pricingType": "Freemium",
+    "startingPrice": "$99/month",
+    "rating": 4.6,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "virtual tours",
+      "3d visualization",
+      "real estate",
+      "property showcase"
+    ],
+    "features": [
+      {
+        "en": "Interactive 3D virtual tours with immersive walkthrough experiences",
+        "ko": "실제로 걸어다니는 것처럼 탐색 가능한 상호작용 3D 가상 투어"
+      },
+      {
+        "en": "Automated floor plan generation and spatial measurements from captured data",
+        "ko": "캡처된 데이터로부터 자동으로 생성되는 평면도 및 공간 측정"
+      },
+      {
+        "en": "Integration with real estate platforms, websites, and mobile apps for easy sharing",
+        "ko": "부동산 포털, 웹사이트, 모바일 앱과의 연동으로 쉬운 공유"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Creates professional, engaging property showcases that significantly increase customer interest and reduce viewing times",
+        "ko": "전문적이고 매력적인 공간 전시로 고객 관심도를 높이고 방문 시간을 단축시킵니다"
+      },
+      {
+        "en": "Reduces the need for in-person property showings, saving time and travel costs for agents and clients alike",
+        "ko": "실제 방문의 필요성을 줄여 중개인과 고객 모두의 시간과 비용을 절감합니다"
+      },
+      {
+        "en": "Mobile-friendly tours work seamlessly across devices, enabling remote property exploration",
+        "ko": "모든 기기에서 원활하게 작동하는 모바일 친화적 투어로 원격 탐색이 가능합니다"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Requires specialized Matterport camera hardware or professional capture service, creating upfront equipment or service costs",
+        "ko": "전문 촬영용 매터포트 카메라 또는 유료 촬영 서비스가 필요하여 초기 비용이 소요됩니다"
+      },
+      {
+        "en": "Monthly subscription fees can accumulate quickly for individual agents or small teams managing multiple properties",
+        "ko": "월구독료가 여러 물건을 관리하는 개별 중개인이나 소규모팀에게는 비용 부담이 될 수 있습니다"
+      },
+      {
+        "en": "Learning curve for camera operation and tour editing; professional-quality results often require training or outsourcing capture",
+        "ko": "카메라 조작과 투어 편집에 학습이 필요하며, 전문가 수준의 결과를 위해서는 교육이나 외부 촬영이 필수입니다"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Real estate agents and brokers showcasing residential and commercial properties to distant buyers and reducing property viewings",
+        "ko": "부동산 중개인이 멀리 있는 구매자에게 주거용·상업용 물건을 전시하고 방문 횟수를 줄이는 경우"
+      },
+      {
+        "en": "Hotels and hospitality businesses displaying rooms, amenities, and venue spaces to attract guests and event planners",
+        "ko": "호텔과 숙박업체가 객실, 편의시설, 행사장을 잠재 고객과 이벤트 기획자에게 보여주는 경우"
+      },
+      {
+        "en": "Facility management and insurance documentation, enabling precise spatial measurement and property condition recording for claims",
+        "ko": "시설 관리 및 보험 서류 작업에서 정확한 공간 측정과 재산 상태 기록이 필요한 경우"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Real estate professionals, property managers, and brokers seeking to modernize property marketing and reduce in-person viewings",
+        "ko": "부동산 전문가, 자산 관리자, 중개인들이 마케팅을 현대화하고 방문 수를 줄이고자 할 때"
+      },
+      {
+        "en": "Hospitality and tourism businesses that want to showcase rooms, venues, and experiences to remote customers before arrival",
+        "ko": "방문 전에 객실, 행사장, 경험을 잠재 고객에게 온라인으로 보여주길 원하는 숙박 및 관광 사업"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Small sole proprietors with very limited budgets; the recurring subscription and equipment costs may outweigh benefits for occasional use",
+        "ko": "예산이 매우 제한적인 개인 사업자; 월구독료와 장비 비용이 가끔씩의 사용으로는 수익성이 낮을 수 있습니다"
+      },
+      {
+        "en": "Users who prefer completely offline workflows or have no need for remote customer engagement",
+        "ko": "오프라인 업무를 선호하거나 원격 고객 참여가 필요 없는 사용자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "A limited free tier may be available for testing; check Matterport's official site for current free trial terms, storage limits, and feature access.",
+      "ko": "제한된 무료 체험판이 있을 수 있습니다. 매터포트 공식 사이트에서 현재 무료 체험 조건, 저장 공간 제한, 이용 가능 기능을 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Subscription plans typically start around $99/month and vary by property count, storage, and feature access; professional capture services add additional costs. Review the pricing page for current options and volume discounts.",
+      "ko": "구독 요금제는 월 약 $99부터 시작하며 물건 수, 저장 공간, 기능에 따라 다릅니다. 전문 촬영 서비스는 추가 비용이 발생합니다. 최신 요금제와 대량 할인을 공식 사이트에서 확인하세요."
+    },
+    "commercialNotes": {
+      "en": "Matterport is fully designed for commercial real estate, hospitality, and property business use. Paid plans allow full commercial licensing and resale of tours integrated into client websites and marketing materials.",
+      "ko": "매터포트는 상업용 부동산, 호텔, 부동산 사업용으로 완전히 설계되었습니다. 유료 요금제는 전체 상업용 라이선스를 제공하며, 고객의 웹사이트와 마케팅 자료에 투어를 통합하여 제공할 수 있습니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "placer-ai",
+    "name": "Placer.ai",
+    "slug": "placer-ai",
+    "description": {
+      "en": "Placer.ai is a location intelligence platform that uses foot traffic data and visitor analytics to help businesses understand customer behavior and optimize physical retail strategies.",
+      "ko": "Placer.ai는 발길 데이터와 방문자 분석을 활용하여 기업이 고객 행동을 이해하고 오프라인 매장 전략을 최적화하도록 돕는 위치 인텔리전스 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Placer.ai provides foot traffic analytics and visitor insights for retail, hospitality, and restaurant businesses. By analyzing anonymized location data, the platform reveals customer visit patterns, competitor benchmarking, and store performance metrics to inform site selection and marketing decisions.",
+      "ko": "Placer.ai는 소매, 숙박, 음식점 사업자를 위한 발길 분석 및 방문자 인사이트를 제공합니다. 익명화된 위치 데이터를 분석하여 고객 방문 패턴, 경쟁사 비교 분석, 매장 성과 지표를 파악함으로써 입지 선정과 마케팅 의사결정을 지원합니다."
+    },
+    "beginnerDescription": {
+      "en": "Placer.ai shows you how many customers visit a store, where they come from, and how your business compares to competitors—helping you make smarter decisions about retail locations and store operations.",
+      "ko": "Placer.ai는 매장에 몇 명의 고객이 방문했는지, 어디서 왔는지, 경쟁사와 어떻게 비교되는지를 보여주어 오프라인 매장 입지와 운영에 대한 더 현명한 의사결정을 돕습니다."
+    },
+    "websiteUrl": "https://www.placer.ai",
+    "categoryId": "ecommerce-business",
+    "pricingType": "Paid",
+    "rating": 4.6,
+    "beginnerFriendly": false,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "location intelligence",
+      "retail analytics",
+      "foot traffic",
+      "competitive analysis",
+      "site selection"
+    ],
+    "features": [
+      {
+        "en": "Foot traffic analytics and visitor volume trends across time periods and demographics",
+        "ko": "시간대별, 인구통계별 발길 분석 및 방문자 수 추이 추적"
+      },
+      {
+        "en": "Competitor benchmarking and market share insights to compare store performance",
+        "ko": "경쟁사 비교 분석 및 시장 점유율 인사이트로 매장 성과 비교"
+      },
+      {
+        "en": "Site selection and expansion planning tools to identify high-potential retail locations",
+        "ko": "유망 소매 입지 발굴을 위한 입지 선정 및 확장 계획 도구"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Provides actionable, real-world foot traffic data that is difficult to obtain through other means",
+        "ko": "다른 방법으로는 얻기 어려운 실제 발길 데이터를 기반으로 한 실행 가능한 인사이트 제공"
+      },
+      {
+        "en": "Helps businesses identify underperforming locations and benchmark against competitors objectively",
+        "ko": "부진 매장을 파악하고 경쟁사와의 객관적 비교를 통해 개선점 도출"
+      },
+      {
+        "en": "Supports strategic retail decisions like site selection, expansion, and store closure planning",
+        "ko": "입지 선정, 확장, 폐점 계획 등 전략적 소매 의사결정 지원"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Requires significant investment with pricing models designed for enterprise clients; no obvious free tier",
+        "ko": "엔터프라이즈 클라이언트를 대상으로 한 상당한 비용 투자 필요, 무료 옵션 없음"
+      },
+      {
+        "en": "Relies on mobile location data which may have accuracy and privacy coverage gaps in some regions",
+        "ko": "모바일 위치 데이터에 의존하므로 특정 지역에서 정확성 및 커버리지 문제 가능"
+      },
+      {
+        "en": "Steep learning curve for non-technical users; requires domain expertise to interpret complex analytics",
+        "ko": "기술적 배경이 없는 사용자에게 높은 진입 장벽, 복잡한 분석 해석에 전문성 필요"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Evaluating a new retail location before signing a lease by analyzing foot traffic potential and customer demographics",
+        "ko": "신규 매장 임차 전 발길 잠재력과 고객 인구통계를 분석하여 입지 검증"
+      },
+      {
+        "en": "Monitoring store performance relative to competitors and identifying underperforming branches for turnaround initiatives",
+        "ko": "경쟁사 대비 매장 성과 모니터링 및 부진 지점 발굴을 통한 회생 전략 수립"
+      },
+      {
+        "en": "Planning expansion strategies by identifying high-traffic markets and consumer behavior patterns",
+        "ko": "고객 유입 시장 및 행동 패턴 파악을 통한 확장 전략 수립"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Multi-location retail and restaurant chains seeking data-driven site selection and portfolio optimization",
+        "ko": "다점포 소매 및 음식점 체인으로 데이터 기반 입지 선정과 포트폴리오 최적화가 필요한 기업"
+      },
+      {
+        "en": "Commercial real estate professionals and franchisors evaluating property potential and lease negotiations",
+        "ko": "부동산 전문가 및 프랜차이즈 본사로 자산 잠재력 평가와 임차료 협상이 필요한 기관"
+      },
+      {
+        "en": "Retailers and hospitality brands competing in mature markets who need competitive intelligence",
+        "ko": "경쟁이 심한 시장에서 경쟁 정보가 필요한 소매 및 숙박 브랜드"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Small independent retailers with limited budgets; the platform's enterprise pricing may not justify ROI for single-location businesses",
+        "ko": "예산이 제한적인 소규모 개인 소매점, 1개 매장에는 엔터프라이즈 가격이 맞지 않을 수 있음"
+      },
+      {
+        "en": "Online-only businesses or e-commerce companies that do not operate physical retail locations",
+        "ko": "오프라인 매장이 없는 온라인 전문 업체 또는 이커머스 기업"
+      },
+      {
+        "en": "Users seeking granular, transaction-level customer data; Placer.ai provides aggregate trends rather than individual purchase behavior",
+        "ko": "개별 거래 수준의 고객 데이터를 원하는 사용자, Placer.ai는 집계 트렌드를 제공함"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Placer.ai does not offer a free plan. Prospective users are typically invited to a demo or trial to evaluate the platform's capabilities.",
+      "ko": "Placer.ai는 무료 플랜을 제공하지 않습니다. 관심 있는 사용자는 일반적으로 데모 또는 평가판을 통해 플랫폼을 검토하게 됩니다."
+    },
+    "paidPlanNotes": {
+      "en": "Pricing is customized based on usage, data scope, and feature access; check the official website or contact sales for specific quotes.",
+      "ko": "가격은 사용량, 데이터 범위, 기능 접근성에 따라 맞춤형으로 결정되므로 공식 웹사이트 또는 영업팀 문의를 통해 확인하시기 바랍니다."
+    },
+    "commercialNotes": {
+      "en": "Placer.ai is designed for commercial use and is widely adopted by enterprise retailers, restaurant chains, and real estate developers for operational and strategic decisions.",
+      "ko": "Placer.ai는 상업용으로 설계되었으며, 대규모 소매점, 음식점 체인, 부동산 개발업체에서 운영 및 전략 의사결정을 위해 널리 활용됩니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "localo",
+    "name": "Localo",
+    "slug": "localo",
+    "description": {
+      "en": "Localo is a local e-commerce platform that helps small businesses and independent sellers build online storefronts and manage inventory with location-based features.",
+      "ko": "Localo는 소규모 사업자와 독립적인 판매자들이 온라인 상점을 구축하고 지역 기반 기능으로 재고를 관리할 수 있도록 돕는 지역 전자상거래 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Localo is designed for local merchants and small business owners who want to sell online while maintaining strong community connections. The platform combines e-commerce capabilities with location-aware tools that help businesses attract nearby customers and manage orders efficiently. It emphasizes simplicity and affordability for independent retailers.",
+      "ko": "Localo는 지역 상인과 소규모 사업자들이 온라인 판매를 하면서도 지역사회와의 연결고리를 유지할 수 있도록 설계된 플랫폼입니다. 전자상거래 기능을 위치 기반 도구와 결합하여 사업자들이 인근 고객을 유치하고 주문을 효율적으로 관리할 수 있습니다. 독립 소매업자를 위한 단순성과 경제성을 강조합니다."
+    },
+    "beginnerDescription": {
+      "en": "Localo makes it easy for local shop owners to set up an online store and connect with customers in their area without needing technical skills.",
+      "ko": "Localo는 지역 가게 주인들이 기술적 지식 없이도 온라인 상점을 열고 주변 고객과 연결될 수 있도록 만들어진 서비스입니다."
+    },
+    "websiteUrl": "https://localo.com",
+    "categoryId": "ecommerce-business",
+    "pricingType": "Freemium",
+    "rating": 4.3,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "local commerce",
+      "small business",
+      "e-commerce",
+      "location-based"
+    ],
+    "features": [
+      {
+        "en": "Location-based storefront setup to help attract nearby customers",
+        "ko": "근처 고객을 유치할 수 있도록 지역 기반 상점 설정"
+      },
+      {
+        "en": "Inventory management and order processing tools",
+        "ko": "재고 관리 및 주문 처리 도구"
+      },
+      {
+        "en": "Mobile-responsive design for customers shopping on phones and tablets",
+        "ko": "휴대폰 및 태블릿에서 쇼핑하는 고객을 위한 반응형 디자인"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Straightforward setup process ideal for non-technical small business owners",
+        "ko": "기술적 지식이 없는 소규모 사업자도 쉽게 시작할 수 있는 간편한 설정 과정"
+      },
+      {
+        "en": "Strong focus on local and community-based commerce, helping businesses connect with nearby customers",
+        "ko": "지역 및 지역사회 중심 상거래에 초점을 맞춰 사업자들이 인근 고객과 연결되도록 지원"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Limited international payment options may restrict global sales potential",
+        "ko": "제한된 국제 결제 옵션으로 인해 전 세계 판매 가능성이 제한될 수 있음"
+      },
+      {
+        "en": "Smaller feature set compared to major e-commerce platforms like Shopify or WooCommerce",
+        "ko": "Shopify나 WooCommerce 같은 주요 전자상거래 플랫폼과 비교하면 기능이 제한적"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "A local bakery creating an online order system to serve customers in their neighborhood and nearby areas",
+        "ko": "지역 베이커리가 동네 및 인근 지역 고객을 서비스하기 위한 온라인 주문 시스템 구축"
+      },
+      {
+        "en": "An independent boutique expanding sales by selling online while maintaining local brand identity",
+        "ko": "독립 부티크가 지역 브랜드 정체성을 유지하면서 온라인 판매로 매출 확대"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Small independent retailers and local shop owners looking for an affordable, easy-to-use online sales channel",
+        "ko": "저렴하고 사용하기 쉬운 온라인 판매 채널을 찾는 소규모 독립 소매업자와 지역 가게 주인"
+      },
+      {
+        "en": "Community-focused businesses that prioritize building relationships with nearby customers over broad geographic reach",
+        "ko": "광범위한 지역 확대보다 인근 고객과의 관계 구축을 우선시하는 지역사회 중심 사업자"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Large enterprises or multi-channel retailers needing advanced logistics and complex integrations",
+        "ko": "고급 물류 및 복잡한 통합이 필요한 대규모 기업 또는 다중 채널 소매업자"
+      },
+      {
+        "en": "Businesses targeting international markets or requiring extensive payment and shipping options",
+        "ko": "국제 시장을 목표로 하거나 광범위한 결제 및 배송 옵션이 필요한 사업자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Localo offers a free tier that allows basic store setup and limited features; check the official site for current tier details and any restrictions.",
+      "ko": "Localo는 기본 상점 설정과 제한된 기능을 제공하는 무료 요금제를 제공합니다. 현재 요금제 세부사항과 제한 사항은 공식 웹사이트에서 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans unlock additional features such as advanced analytics, extended product listings, and enhanced support; visit the official website for current pricing and plan comparisons.",
+      "ko": "유료 요금제는 고급 분석, 확장된 상품 목록 및 향상된 지원과 같은 추가 기능을 제공합니다. 현재 가격과 요금제 비교는 공식 웹사이트를 참고하세요."
+    },
+    "commercialNotes": {
+      "en": "Localo is fully designed for commercial use and supports small businesses in selling products and services online. Verify the terms of service regarding reselling or multi-account usage.",
+      "ko": "Localo는 상업적 용도로 완벽하게 설계되었으며 소규모 사업자들의 온라인 상품 및 서비스 판매를 지원합니다. 재판매 또는 다중 계정 사용에 관한 이용약관을 확인하세요."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "brightlocal",
+    "name": "BrightLocal",
+    "slug": "brightlocal",
+    "description": {
+      "en": "BrightLocal is a local SEO and reputation management platform designed to help businesses improve their online visibility and manage customer reviews across multiple locations.",
+      "ko": "BrightLocal은 기업이 온라인 가시성을 높이고 여러 지점의 고객 리뷰를 관리할 수 있도록 지원하는 로컬 SEO 및 평판 관리 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "BrightLocal provides tools for local search optimization, review management, citation building, and rank tracking across Google, Bing, and other local search directories. The platform is built for agencies and multi-location businesses that need to maintain consistent local search presence and respond to customer feedback at scale. It combines SEO auditing, local listing management, and reputation monitoring in one dashboard.",
+      "ko": "BrightLocal은 Google, Bing 및 기타 로컬 검색 디렉토리에서 로컬 검색 최적화, 리뷰 관리, 인용 구축 및 순위 추적을 위한 도구를 제공합니다. 에이전시와 여러 지점을 운영하는 기업이 일관된 로컬 검색 존재감을 유지하고 고객 피드백에 대규모로 대응해야 할 때 사용하기에 적합합니다. SEO 감사, 로컬 목록 관리, 평판 모니터링을 하나의 대시보드에서 제공합니다."
+    },
+    "beginnerDescription": {
+      "en": "BrightLocal helps small and local businesses get found on Google Maps and local search results, while keeping track of customer reviews and ratings in one place.",
+      "ko": "BrightLocal은 작은 규모의 로컬 비즈니스가 Google 지도와 로컬 검색 결과에서 발견될 수 있도록 도와주며, 고객 리뷰와 평점을 한 곳에서 관리할 수 있게 합니다."
+    },
+    "websiteUrl": "https://www.brightlocal.com",
+    "categoryId": "ecommerce-business",
+    "pricingType": "Freemium",
+    "startingPrice": "$19/mo",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "local seo",
+      "review management",
+      "rank tracking",
+      "citation building"
+    ],
+    "features": [
+      {
+        "en": "Local rank tracking for keywords across Google, Bing, and other search engines",
+        "ko": "Google, Bing 및 기타 검색 엔진에서의 로컬 키워드 순위 추적"
+      },
+      {
+        "en": "Review monitoring and management dashboard for aggregating customer feedback from multiple platforms",
+        "ko": "여러 플랫폼에서 고객 피드백을 수집하고 관리하는 리뷰 모니터링 대시보드"
+      },
+      {
+        "en": "Local SEO audit and citation building to improve local listing consistency and visibility",
+        "ko": "로컬 목록 일관성과 가시성을 개선하기 위한 로컬 SEO 감사 및 인용 구축"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Comprehensive local SEO toolkit that covers rank tracking, reviews, and citations—ideal for agencies managing multiple clients",
+        "ko": "여러 클라이언트를 관리하는 에이전시에 이상적인 순위 추적, 리뷰, 인용을 포함한 포괄적인 로컬 SEO 도구"
+      },
+      {
+        "en": "User-friendly interface and good reporting features make it accessible even for small business owners without technical expertise",
+        "ko": "사용자 친화적인 인터페이스와 우수한 보고 기능으로 기술 지식이 없는 소규모 비즈니스 소유자도 쉽게 사용할 수 있음"
+      },
+      {
+        "en": "Mobile app support allows management of reviews and insights on the go",
+        "ko": "모바일 앱 지원으로 이동 중에도 리뷰와 인사이트를 관리할 수 있음"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Pricing can add up when managing many locations or campaigns, making it less cost-effective for solo entrepreneurs",
+        "ko": "많은 지점이나 캠페인을 관리할 때 비용이 누적되어 1인 창업가에게는 비용 효율적이지 않을 수 있음"
+      },
+      {
+        "en": "Learning curve exists for more advanced features like API integrations and custom reporting workflows",
+        "ko": "API 통합 및 사용자 정의 보고 워크플로우와 같은 고급 기능을 사용하려면 학습 기간이 필요함"
+      },
+      {
+        "en": "Limited international support; platform is primarily optimized for English-speaking markets",
+        "ko": "국제적 지원이 제한적이며, 플랫폼은 주로 영어권 시장에 최적화되어 있음"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "A digital marketing agency managing local SEO for 20+ small business clients across different cities",
+        "ko": "여러 도시의 20개 이상의 소규모 비즈니스 클라이언트에 대해 로컬 SEO를 관리하는 디지털 마케팅 에이전시"
+      },
+      {
+        "en": "A multi-location restaurant or retail chain monitoring review sentiment and managing their reputation across locations",
+        "ko": "여러 지점의 리뷰 감정을 모니터링하고 평판을 관리하는 다중 지점 음식점 또는 소매점"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Digital marketing agencies and SEO professionals managing local search for multiple clients",
+        "ko": "여러 클라이언트의 로컬 검색을 관리하는 디지털 마케팅 에이전시 및 SEO 전문가"
+      },
+      {
+        "en": "Multi-location businesses and franchises that need unified local SEO and reputation management across all sites",
+        "ko": "모든 지점에 걸쳐 통합된 로컬 SEO 및 평판 관리가 필요한 다중 지점 비즈니스 및 프랜차이즈"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Sole proprietors or very small local businesses with strict budget constraints looking for minimal tooling",
+        "ko": "예산이 매우 제한적이고 최소한의 도구만을 필요로 하는 1인 사업자 또는 극소규모 로컬 비즈니스"
+      },
+      {
+        "en": "Non-English speaking markets where the platform has minimal localization and customer support",
+        "ko": "플랫폼의 지역화 및 고객 지원이 미미한 비영어권 시장"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "BrightLocal offers a free plan with limited features suitable for trying out the platform. Check the official site for current free tier quotas and limitations.",
+      "ko": "BrightLocal은 플랫폼을 시험해볼 수 있는 제한된 기능의 무료 플랜을 제공합니다. 현재 무료 요금제의 할당량과 제한 사항은 공식 웹사이트에서 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans start around $19/month and scale based on the number of locations, campaigns, and features needed. Most agencies and multi-location businesses upgrade to higher tiers for full functionality and support. Visit the pricing page for exact details and customization options.",
+      "ko": "유료 플랜은 월 약 $19부터 시작하며 필요한 지점 수, 캠페인 수 및 기능에 따라 확장됩니다. 대부분의 에이전시와 다중 지점 비즈니스는 전체 기능과 지원을 위해 더 높은 요금제로 업그레이드합니다. 정확한 세부 사항과 사용자 정의 옵션은 가격 책정 페이지를 참고하세요."
+    },
+    "commercialNotes": {
+      "en": "BrightLocal is fully designed for commercial use and is widely adopted by agencies, marketing professionals, and businesses. It includes white-label options for agencies reselling the service to their own clients.",
+      "ko": "BrightLocal은 완전히 상업적 사용을 위해 설계되었으며 에이전시, 마케팅 전문가 및 비즈니스에서 널리 채택하고 있습니다. 에이전시가 자신의 클라이언트에게 서비스를 재판매할 수 있도록 하는 화이트라벨 옵션을 포함합니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "birdeye-ai",
+    "name": "Birdeye AI",
+    "slug": "birdeye-ai",
+    "description": {
+      "en": "Birdeye AI is a reputation and customer experience platform that helps local and e-commerce businesses manage reviews, customer feedback, and online presence across multiple channels.",
+      "ko": "Birdeye AI는 로컬 및 이커머스 비즈니스가 여러 플랫폼에서 리뷰, 고객 피드백, 온라인 평판을 통합 관리할 수 있도록 도와주는 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Birdeye AI provides a centralized dashboard for monitoring and responding to customer reviews, managing ratings across Google, Yelp, Facebook, and other platforms, and leveraging AI to generate insights from customer feedback. The platform is designed primarily for multi-location businesses, service providers, and e-commerce companies seeking to improve customer satisfaction and online visibility.",
+      "ko": "Birdeye AI는 고객 리뷰 모니터링 및 응답, Google과 Yelp, Facebook 등 다양한 플랫폼의 평가 관리, 그리고 고객 피드백에서 인사이트를 도출하는 AI 기능을 제공합니다. 멀티로케이션 비즈니스, 서비스 제공업체, 이커머스 기업이 고객 만족도를 높이고 온라인 가시성을 개선하기 위해 설계되었습니다."
+    },
+    "beginnerDescription": {
+      "en": "Birdeye AI helps you collect, monitor, and respond to customer reviews in one place, plus uses AI to understand what customers really think about your business.",
+      "ko": "Birdeye AI는 고객 리뷰를 한 곳에서 수집하고 모니터링하며 응답할 수 있게 해주며, AI를 활용해 고객들이 당신의 비즈니스를 어떻게 생각하는지 파악하도록 도와줍니다."
+    },
+    "websiteUrl": "https://birdeye.com",
+    "categoryId": "ecommerce-business",
+    "pricingType": "Paid",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "reputation management",
+      "review monitoring",
+      "customer experience",
+      "local business"
+    ],
+    "features": [
+      {
+        "en": "Multi-channel review monitoring and response from a unified dashboard",
+        "ko": "통합 대시보드에서 여러 채널의 리뷰 모니터링 및 응답"
+      },
+      {
+        "en": "AI-powered insights and sentiment analysis from customer feedback",
+        "ko": "고객 피드백에 대한 AI 기반 인사이트 및 감정 분석"
+      },
+      {
+        "en": "Automated review request campaigns and customer survey tools",
+        "ko": "자동화된 리뷰 요청 캠페인 및 고객 설문조사 도구"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Centralizes reviews from multiple platforms, saving time on manual tracking and response",
+        "ko": "여러 플랫폼의 리뷰를 한곳에서 관리하여 시간 절약"
+      },
+      {
+        "en": "AI-driven sentiment analysis helps identify trends and areas for improvement quickly",
+        "ko": "AI 감정분석으로 트렌드와 개선점을 빠르게 파악"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Pricing may be higher than simpler review management tools, making it less ideal for very small businesses",
+        "ko": "소규모 비즈니스에게는 가격이 높을 수 있음"
+      },
+      {
+        "en": "Korean language support is limited, which may pose challenges for Korean-speaking businesses",
+        "ko": "한국어 지원이 제한적이어서 한국어 비즈니스에는 불편할 수 있음"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Multi-location restaurant chains monitoring customer satisfaction across all branches",
+        "ko": "여러 지점의 음식점이 전체 매장의 고객 만족도를 모니터링"
+      },
+      {
+        "en": "E-commerce businesses automating review requests after purchase to build social proof",
+        "ko": "이커머스 기업이 구매 후 자동으로 리뷰 요청하여 신뢰도 구축"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Multi-location service businesses such as dental offices, salons, and healthcare providers",
+        "ko": "치과, 미용실, 의료 제공 업체 등 멀티로케이션 서비스 비즈니스"
+      },
+      {
+        "en": "E-commerce and online retailers seeking to boost customer reviews and ratings",
+        "ko": "고객 리뷰와 평가를 늘리려는 이커머스 및 온라인 소매업"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Very small solo businesses with minimal review volume or tight budgets",
+        "ko": "리뷰 양이 적거나 예산이 제한적인 소규모 개인 비즈니스"
+      },
+      {
+        "en": "Businesses requiring extensive Korean language support or localized payment systems",
+        "ko": "한국어 지원이나 로컬라이즈된 결제 시스템이 필수적인 한국 비즈니스"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Birdeye does not offer a free plan; it operates on a paid subscription model. Interested users should contact the company or check the website for pricing details.",
+      "ko": "Birdeye는 무료 플랜을 제공하지 않으며 유료 구독 모델을 운영합니다. 정확한 가격 정보는 공식 웹사이트에서 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Pricing is customized based on business size, number of locations, and required features. Contact Birdeye directly for a tailored quote.",
+      "ko": "가격은 비즈니스 규모, 로케이션 수, 필요한 기능에 따라 맞춤 책정됩니다. 정확한 견적은 Birdeye에 직접 문의하세요."
+    },
+    "commercialNotes": {
+      "en": "Birdeye is fully designed for commercial use and is widely adopted by businesses of all sizes to manage reputation and customer experience.",
+      "ko": "Birdeye는 상업적 사용을 목표로 설계되었으며, 다양한 규모의 비즈니스가 평판 및 고객 경험 관리를 위해 적극 활용 중입니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "podium-ai",
+    "name": "Podium AI",
+    "slug": "podium-ai",
+    "description": {
+      "en": "Podium AI is a customer communication and review management platform designed for local businesses and e-commerce to build reputation and drive customer engagement.",
+      "ko": "Podium AI는 로컬 비즈니스와 이커머스 업체를 위한 고객 소통 및 리뷰 관리 플랫폼으로, 평판 구축과 고객 참여를 촉진합니다."
+    },
+    "longDescription": {
+      "en": "Podium AI centralizes customer interactions across multiple channels including SMS, email, and review platforms, allowing businesses to manage reputation and collect feedback efficiently. It combines messaging, review management, and customer insights to help local businesses and e-commerce stores strengthen customer relationships and drive growth.",
+      "ko": "Podium AI는 SMS, 이메일, 리뷰 플랫폼 등 여러 채널의 고객 상호작용을 한 곳에서 관리하여 평판 관리와 피드백 수집을 효율화합니다. 메시징, 리뷰 관리, 고객 인사이트를 결합해 로컬 비즈니스와 이커머스 업체가 고객 관계를 강화하고 성장을 촉진할 수 있도록 지원합니다."
+    },
+    "beginnerDescription": {
+      "en": "Podium AI helps small business owners and online sellers manage customer messages and reviews in one place, making it easier to stay connected with customers and build trust.",
+      "ko": "Podium AI는 소상공인과 온라인 판매자가 고객 메시지와 리뷰를 한곳에서 관리할 수 있도록 도와, 고객과의 연결을 유지하고 신뢰를 쌓는 것을 간편하게 만듭니다."
+    },
+    "websiteUrl": "https://www.podium.com",
+    "categoryId": "ecommerce-business",
+    "pricingType": "Paid",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "reputation management",
+      "customer communication",
+      "review management",
+      "local business"
+    ],
+    "features": [
+      {
+        "en": "Multi-channel messaging (SMS, email, and chat) unified in a single inbox",
+        "ko": "여러 채널의 메시징(SMS, 이메일, 채팅)을 단일 수신함에서 통합 관리"
+      },
+      {
+        "en": "Automated review generation and management across major platforms",
+        "ko": "주요 플랫폼에서 자동화된 리뷰 생성 및 관리"
+      },
+      {
+        "en": "Customer insights and analytics dashboard for tracking engagement metrics",
+        "ko": "고객 참여 지표를 추적할 수 있는 인사이트 및 분석 대시보드"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Streamlines customer communication by consolidating multiple channels into one platform, reducing response time and improving customer satisfaction.",
+        "ko": "여러 채널의 고객 소통을 한 플랫폼으로 통합하여 응답 시간을 단축하고 고객 만족도를 향상시킵니다."
+      },
+      {
+        "en": "Automated review requests and management help businesses build and maintain positive online reputation with minimal manual effort.",
+        "ko": "자동화된 리뷰 요청 및 관리로 최소한의 수작업으로 긍정적인 온라인 평판을 구축하고 유지할 수 있습니다."
+      }
+    ],
+    "cons": [
+      {
+        "en": "Pricing can be steep for very small businesses or startups with limited budgets, requiring careful ROI assessment.",
+        "ko": "매우 작은 규모의 비즈니스나 예산이 제한된 스타트업에는 가격이 높을 수 있어 투자 수익을 신중히 검토해야 합니다."
+      },
+      {
+        "en": "No native Korean language support, which may limit adoption in Korean-speaking markets.",
+        "ko": "한국어 지원이 없어 한국어 사용자 시장에서의 도입이 제한될 수 있습니다."
+      }
+    ],
+    "useCases": [
+      {
+        "en": "A dental or salon practice using Podium to request patient reviews automatically and manage scheduling messages across SMS and email in one place.",
+        "ko": "치과나 미용실이 Podium을 사용하여 환자 리뷰를 자동으로 요청하고 SMS 및 이메일의 스케줄 메시지를 한곳에서 관리하는 경우."
+      },
+      {
+        "en": "An e-commerce seller leveraging the platform to gather product feedback from customers and respond quickly to inquiries across multiple channels.",
+        "ko": "이커머스 판매자가 플랫폼을 활용하여 고객의 상품 피드백을 수집하고 여러 채널의 문의에 빠르게 응답하는 경우."
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Small-to-medium local service businesses (salons, clinics, restaurants, contractors) that rely heavily on reputation and customer reviews.",
+        "ko": "평판과 고객 리뷰에 크게 의존하는 소규모~중규모 로컬 서비스 비즈니스(미용실, 의료기관, 음식점, 시공업체)."
+      },
+      {
+        "en": "E-commerce operators seeking to streamline customer communication and build trust through proactive review collection.",
+        "ko": "고객 소통을 간소화하고 적극적인 리뷰 수집을 통해 신뢰를 구축하려는 이커머스 운영자."
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Businesses with no existing customer base or those not yet concerned with reputation management.",
+        "ko": "기존 고객층이 없거나 평판 관리에 아직 관심이 없는 비즈니스."
+      },
+      {
+        "en": "Organizations requiring advanced customization or integration with complex legacy systems beyond standard API support.",
+        "ko": "표준 API 지원을 넘어 고급 커스터마이징이나 복잡한 레거시 시스템과의 통합이 필요한 조직."
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Podium AI operates on a paid subscription model with no free plan, though the company may offer trial periods; visit the official website to confirm current trial availability.",
+      "ko": "Podium AI는 유료 구독 모델을 운영하며 무료 플랜이 없습니다. 다만 무료 체험 기간을 제공할 수 있으니 공식 웹사이트에서 현재 혜택을 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Pricing varies by business type and required features; contact Podium directly or visit their site for custom quotes tailored to your needs.",
+      "ko": "가격은 비즈니스 유형과 필요한 기능에 따라 다르므로, 귀사에 맞는 정확한 가격을 확인하려면 Podium에 직접 문의하거나 웹사이트를 방문하세요."
+    },
+    "commercialNotes": {
+      "en": "Podium AI is purpose-built for commercial use and actively supports businesses of all sizes in managing customer relationships and reputation at scale.",
+      "ko": "Podium AI는 상업적 사용을 위해 설계되었으며, 모든 규모의 비즈니스가 고객 관계와 평판을 대규모로 관리할 수 있도록 적극 지원합니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "yext-ai",
+    "name": "Yext AI",
+    "slug": "yext-ai",
+    "description": {
+      "en": "Yext AI is a platform that helps businesses manage and optimize their digital presence across multiple online channels and locations.",
+      "ko": "Yext AI는 기업이 여러 온라인 채널과 지점에 걸쳐 디지털 존재감을 관리하고 최적화하는 데 도움을 주는 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Yext AI provides a centralized system for managing business information, local listings, and customer interactions across the web. It uses AI-powered features to ensure accurate and consistent information display across search engines, maps, social media, and review platforms. The platform helps businesses improve local search visibility, manage customer feedback, and enhance their overall digital footprint.",
+      "ko": "Yext AI는 웹 전체의 비즈니스 정보, 로컬 리스팅, 고객 상호작용을 한 곳에서 관리하는 중앙 집중식 시스템을 제공합니다. AI 기반 기능을 통해 검색 엔진, 지도, 소셜 미디어, 리뷰 플랫폼에서 정확하고 일관된 정보 표시를 보장합니다. 이 플랫폼은 기업이 로컬 검색 가시성을 개선하고 고객 피드백을 관리하며 전반적인 디지털 presence를 강화하는 데 도움을 줍니다."
+    },
+    "beginnerDescription": {
+      "en": "Yext AI helps small to medium-sized businesses keep their business information up-to-date and visible across Google, Yelp, and other popular platforms automatically.",
+      "ko": "Yext AI는 중소기업이 Google, Yelp 등 인기 플랫폼에서 비즈니스 정보를 최신 상태로 유지하고 자동으로 노출되도록 도와줍니다."
+    },
+    "websiteUrl": "https://www.yext.com",
+    "categoryId": "ecommerce-business",
+    "pricingType": "Paid",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "local seo",
+      "business listings",
+      "multi-location management",
+      "customer reviews"
+    ],
+    "features": [
+      {
+        "en": "Centralized management of business information across multiple online directories and platforms",
+        "ko": "여러 온라인 디렉토리 및 플랫폼에 걸친 비즈니스 정보의 중앙 집중식 관리"
+      },
+      {
+        "en": "AI-powered insights and recommendations for improving local search visibility and engagement",
+        "ko": "로컬 검색 가시성 및 고객 참여도 개선을 위한 AI 기반 인사이트 및 추천"
+      },
+      {
+        "en": "Review management and customer feedback monitoring across multiple review platforms",
+        "ko": "여러 리뷰 플랫폼에서의 리뷰 관리 및 고객 피드백 모니터링"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Saves significant time by synchronizing business data across dozens of platforms with a single update",
+        "ko": "한 번의 업데이트로 수십 개의 플랫폼에 비즈니스 데이터를 동기화하여 상당한 시간 절약"
+      },
+      {
+        "en": "Improves local SEO rankings and online visibility through consistent and accurate business information",
+        "ko": "일관되고 정확한 비즈니스 정보를 통해 로컬 SEO 순위와 온라인 가시성 향상"
+      },
+      {
+        "en": "Provides analytics and AI-driven recommendations to help optimize customer engagement and local search performance",
+        "ko": "고객 참여 및 로컬 검색 성과 최적화에 도움이 되는 분석 및 AI 기반 추천 제공"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Can be expensive for very small businesses with limited budgets, as pricing typically scales with features and locations",
+        "ko": "가격이 기능 및 지점 수에 따라 책정되므로 예산이 제한된 소규모 기업에는 비용이 클 수 있음"
+      },
+      {
+        "en": "Steep learning curve for users unfamiliar with digital marketing or local SEO concepts",
+        "ko": "디지털 마케팅 또는 로컬 SEO 개념에 익숙하지 않은 사용자의 경우 학습 곡선이 가파를 수 있음"
+      },
+      {
+        "en": "Requires active management and monitoring to fully leverage AI features and keep information current",
+        "ko": "AI 기능을 최대한 활용하고 정보를 최신 상태로 유지하려면 지속적인 관리 및 모니터링 필요"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Multi-location restaurant or retail chains managing consistent information across Google My Business, Yelp, and industry-specific directories",
+        "ko": "Google My Business, Yelp 및 업계별 디렉토리에서 일관된 정보를 관리하는 다중 지점 레스토랑 또는 소매 체인"
+      },
+      {
+        "en": "Real estate agencies tracking property listings and client reviews across multiple platforms simultaneously",
+        "ko": "여러 플랫폼에서 부동산 리스팅 및 고객 리뷰를 동시에 추적하는 부동산 중개 업체"
+      },
+      {
+        "en": "Healthcare providers and service-based businesses maintaining accurate information to improve patient or customer discovery",
+        "ko": "환자 또는 고객 발견을 개선하기 위해 정확한 정보를 유지하는 의료 서비스 제공자 및 서비스 기반 비즈니스"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Multi-location businesses with multiple branches or franchises that need centralized data management",
+        "ko": "중앙 집중식 데이터 관리가 필요한 여러 지점 또는 프랜차이즈를 보유한 다중 지점 기업"
+      },
+      {
+        "en": "E-commerce and retail companies focused on local search visibility and customer review management",
+        "ko": "로컬 검색 가시성 및 고객 리뷰 관리에 중점을 두는 전자상거래 및 소매 회사"
+      },
+      {
+        "en": "Businesses prioritizing SEO and digital presence optimization across search engines and local directories",
+        "ko": "검색 엔진 및 로컬 디렉토리에 걸친 SEO 및 디지털 존재감 최적화를 우선하는 기업"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Solo entrepreneurs or very small businesses with minimal online presence needs and tight budgets",
+        "ko": "온라인 존재감 요구 사항이 최소한이고 예산이 제한된 프리랜서 또는 초소형 비즈니스"
+      },
+      {
+        "en": "Businesses without a clear local search strategy or those primarily focused on national or international markets only",
+        "ko": "명확한 로컬 검색 전략이 없거나 주로 국가 또는 국제 시장에만 집중하는 기업"
+      },
+      {
+        "en": "Users seeking a completely hands-off solution, as the platform requires ongoing content and listing management",
+        "ko": "플랫폼이 지속적인 콘텐츠 및 리스팅 관리를 필요로 하므로 완전히 자동화된 솔루션을 원하는 사용자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Yext does not offer a free plan; all access requires a paid subscription. However, a trial or demo may be available by contacting their sales team.",
+      "ko": "Yext는 무료 요금제를 제공하지 않으며 모든 액세스는 유료 구독이 필요합니다. 다만 영업팀에 문의하여 평가판이나 데모를 이용할 수 있을 수 있습니다."
+    },
+    "paidPlanNotes": {
+      "en": "Pricing is typically custom based on business size, number of locations, and features required. Contact Yext directly for a quote tailored to your specific needs.",
+      "ko": "가격은 일반적으로 비즈니스 규모, 지점 수 및 필요한 기능에 따라 맞춤형으로 책정됩니다. 구체적인 요구 사항에 맞는 견적은 Yext에 직접 문의하세요."
+    },
+    "commercialNotes": {
+      "en": "Yext is fully designed for commercial use and is particularly valuable for businesses looking to increase revenue through improved local search visibility and customer engagement. The platform supports e-commerce and service-based businesses of all sizes.",
+      "ko": "Yext는 상업적 사용을 위해 완전히 설계되었으며 개선된 로컬 검색 가시성 및 고객 참여를 통해 매출을 증대하려는 기업에 특히 유용합니다. 이 플랫폼은 모든 규모의 전자상거래 및 서비스 기반 비즈니스를 지원합니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "obsidian-ai",
+    "name": "Obsidian AI 플러그인",
+    "slug": "obsidian-ai",
+    "description": {
+      "en": "Obsidian is a powerful note-taking app that stores your notes locally and lets you connect them together like a personal knowledge base.",
+      "ko": "Obsidian은 메모를 로컬에 저장하고 서로 연결하여 개인 지식 기반을 만들 수 있는 강력한 노트 앱입니다."
+    },
+    "longDescription": {
+      "en": "Obsidian is a privacy-focused note-taking and knowledge management tool that runs entirely on your device, allowing you to create linked notes and build a personal wiki. Its plugin ecosystem extends functionality significantly, though the core app focuses on markdown-based note organization and graph visualization of your connected ideas.",
+      "ko": "Obsidian은 개인정보 보호를 중시하는 노트 작성 및 지식 관리 도구로, 완전히 당신의 기기에서 실행되며 연결된 메모를 만들고 개인 위키를 구축할 수 있습니다. 플러그인 생태계가 기능을 크게 확장하지만, 핵심 앱은 마크다운 기반 노트 정리와 연결된 아이디어의 그래프 시각화에 중점을 둡니다."
+    },
+    "beginnerDescription": {
+      "en": "Obsidian is a note app where you write in plain text files and link notes together to build your own knowledge system—like creating your personal Wikipedia on your computer.",
+      "ko": "Obsidian은 평문 파일로 메모를 작성하고 서로 연결하여 개인 지식 시스템을 만들 수 있는 노트 앱입니다. 마치 당신의 컴퓨터에 개인 위키백과를 만드는 것과 같습니다."
+    },
+    "websiteUrl": "https://obsidian.md",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "startingPrice": "$50/year",
+    "rating": 4.7,
+    "beginnerFriendly": false,
+    "koreanSupport": true,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "note-taking",
+      "knowledge-base",
+      "markdown",
+      "local-first",
+      "productivity"
+    ],
+    "features": [
+      {
+        "en": "Link notes together and visualize connections as an interactive graph",
+        "ko": "메모를 서로 연결하고 대화형 그래프로 연결 관계를 시각화"
+      },
+      {
+        "en": "Plugin system to extend functionality with community-built or custom tools",
+        "ko": "커뮤니티가 만들거나 맞춤 제작한 도구로 기능을 확장하는 플러그인 시스템"
+      },
+      {
+        "en": "Store all notes locally on your device with optional cloud sync for backup",
+        "ko": "모든 메모를 기기에 로컬로 저장하고 선택적으로 클라우드 동기화로 백업"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Complete privacy and data ownership—your notes stay on your device unless you choose to sync",
+        "ko": "완전한 개인정보 보호와 데이터 소유권—동기화를 선택하지 않으면 메모가 당신의 기기에만 남음"
+      },
+      {
+        "en": "Highly extensible through plugins; the community has created hundreds of tools to customize your workflow",
+        "ko": "플러그인을 통해 높은 확장성을 제공하며, 커뮤니티가 워크플로우를 맞춤화할 수 있는 수백 개의 도구를 만들었음"
+      },
+      {
+        "en": "Works offline and syncs when reconnected; no forced cloud dependency",
+        "ko": "오프라인에서 작동하고 다시 연결될 때 동기화되며, 클라우드 종속성을 강요하지 않음"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Steep learning curve for beginners—requires understanding markdown syntax and graph concepts",
+        "ko": "초보자에게는 가파른 학습 곡선—마크다운 구문과 그래프 개념을 이해해야 함"
+      },
+      {
+        "en": "Cloud sync and mobile apps require paid Obsidian Sync subscription; free sync options are limited",
+        "ko": "클라우드 동기화 및 모바일 앱은 유료 Obsidian Sync 구독이 필요하며, 무료 동기화 옵션이 제한적"
+      },
+      {
+        "en": "Mobile app is less feature-rich than desktop; full plugin support is only on desktop",
+        "ko": "모바일 앱은 데스크톱보다 기능이 제한적이며, 플러그인 지원은 데스크톱에서만 완전함"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Build a personal wiki or second brain for researchers, writers, and knowledge workers",
+        "ko": "연구원, 작가, 지식 근로자를 위한 개인 위키 또는 제2의 뇌 구축"
+      },
+      {
+        "en": "Manage project notes with linked references, timelines, and progress tracking",
+        "ko": "연결된 참고자료, 타임라인, 진행 상황 추적으로 프로젝트 노트 관리"
+      },
+      {
+        "en": "Study and revision—organize lecture notes and create flashcard systems via plugins",
+        "ko": "공부 및 복습—강의 노트를 정리하고 플러그인을 통해 플래시카드 시스템 생성"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Tech-savvy note-takers who want full control over their data and enjoy customization",
+        "ko": "자신의 데이터를 완전히 관리하고 맞춤화를 즐기는 기술에 능숙한 노트 사용자"
+      },
+      {
+        "en": "Students and academics building long-term knowledge systems and research repositories",
+        "ko": "장기적인 지식 시스템과 연구 저장소를 구축하는 학생과 학자"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Absolute beginners who want zero setup—easier tools like Notion or Apple Notes have gentler onboarding",
+        "ko": "설정이 없는 것을 원하는 초보자—Notion이나 Apple Notes 같은 더 쉬운 도구가 더 부드러운 온보딩을 제공"
+      },
+      {
+        "en": "Teams requiring real-time collaborative editing; Obsidian is designed for individual or small-group use",
+        "ko": "실시간 협업 편집이 필요한 팀—Obsidian은 개인 또는 소규모 그룹 사용을 위해 설계됨"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "The free version includes the core note-taking and linking features, local storage, and access to the basic plugin library. Sync across devices and Publish require paid subscriptions.",
+      "ko": "무료 버전은 핵심 노트 작성 및 링크 기능, 로컬 저장, 기본 플러그인 라이브러리 접근을 포함합니다. 기기 간 동기화 및 게시는 유료 구독이 필요합니다."
+    },
+    "paidPlanNotes": {
+      "en": "Obsidian Sync ($50/year) enables cloud synchronization across devices, while Obsidian Publish ($96/year) lets you host your notes on the web. Both are optional; the app remains fully functional without them.",
+      "ko": "Obsidian Sync(연 $50)는 기기 간 클라우드 동기화를 활성화하고, Obsidian Publish(연 $96)는 웹에 메모를 호스팅할 수 있게 합니다. 둘 다 선택 사항이며, 없어도 앱은 완전히 작동합니다."
+    },
+    "commercialNotes": {
+      "en": "Obsidian is licensed for personal and commercial use; teams can purchase licenses for each member. The local-first approach makes it attractive for private company knowledge bases.",
+      "ko": "Obsidian은 개인 및 상업 사용에 라이선스되었으며, 팀은 각 멤버를 위해 라이선스를 구매할 수 있습니다. 로컬 우선 접근 방식은 비공개 회사 지식 기반에 매력적입니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "mem-ai",
+    "name": "Mem AI",
+    "slug": "mem-ai",
+    "description": {
+      "en": "Mem is an AI-powered note-taking and knowledge management platform that organizes your notes automatically and helps you discover connections between ideas.",
+      "ko": "Mem은 AI 기반의 노트 작성 및 지식 관리 플랫폼으로, 노트를 자동으로 정리하고 아이디어 간의 연결고리를 찾아주는 도구입니다."
+    },
+    "longDescription": {
+      "en": "Mem combines traditional note-taking with artificial intelligence to create a self-organizing knowledge base. The platform automatically tags, categorizes, and connects your notes, making it easier to surface relevant information when you need it. It's designed for anyone who wants their notes to become a searchable, discoverable personal knowledge system.",
+      "ko": "Mem은 전통적인 노트 작성 방식에 인공지능을 결합하여 자동으로 정리되는 지식 기반을 만들어줍니다. 노트를 자동으로 분류하고 태그하며 연결하여 필요할 때 관련 정보를 쉽게 찾을 수 있습니다. 개인 지식 시스템을 검색 가능하고 발견하기 쉬운 형태로 만들고 싶은 누구나를 위해 설계되었습니다."
+    },
+    "beginnerDescription": {
+      "en": "Mem is a smart note-taking app that uses AI to automatically organize your ideas and help you find connections you might have missed. Just write naturally, and Mem handles the organizing for you.",
+      "ko": "Mem은 AI를 활용해 노트를 자동으로 정리하고 아이디어 간 연결을 찾아주는 똑똑한 노트 앱입니다. 자연스럽게 쓰기만 하면 Mem이 정리를 알아서 해줍니다."
+    },
+    "websiteUrl": "https://mem.ai",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "startingPrice": "$20/mo",
+    "rating": 4.3,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "note-taking",
+      "ai",
+      "knowledge-management",
+      "productivity",
+      "personal-wiki"
+    ],
+    "features": [
+      {
+        "en": "Automatic tagging and categorization using AI",
+        "ko": "AI 기반 자동 태그 지정 및 분류"
+      },
+      {
+        "en": "Smart discovery of related notes and idea connections",
+        "ko": "관련 노트와 아이디어 연결의 스마트 발견"
+      },
+      {
+        "en": "Full-text search and cross-referenced knowledge base",
+        "ko": "전체 텍스트 검색 및 상호 참조되는 지식 기반"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Minimal friction in note creation; focus on content while AI handles organization",
+        "ko": "노트 작성 시 불필요한 과정을 줄이고, AI가 정리를 담당하므로 내용에만 집중 가능"
+      },
+      {
+        "en": "Strong emphasis on serendipitous discovery—often surfaces forgotten ideas when you need them",
+        "ko": "우연한 발견에 중점을 두어 필요할 때 잊혀진 아이디어를 자주 떠올리게 해줍니다"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Smaller ecosystem and fewer integrations compared to market leaders like Obsidian or Notion",
+        "ko": "Obsidian이나 Notion 같은 주요 경쟁사에 비해 연동 서비스와 생태계가 제한적입니다"
+      },
+      {
+        "en": "Korean language support is not available; interface and documentation are English-only",
+        "ko": "한국어 지원이 없어 인터페이스와 자료가 모두 영문입니다"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Collecting and organizing research notes for academic projects or professional work",
+        "ko": "학문 프로젝트나 업무 관련 자료 조사 및 정리"
+      },
+      {
+        "en": "Building a personal knowledge base that grows and evolves as you learn",
+        "ko": "학습하면서 점점 성장하는 개인 지식 기반 구축"
+      },
+      {
+        "en": "Quick daily journaling or idea capture without worrying about folder structure",
+        "ko": "폴더 구조를 신경 쓰지 않고 빠르게 일일 일지나 아이디어 기록"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Individuals who want powerful AI-assisted organization without manual categorization",
+        "ko": "수동 분류 없이 AI의 강력한 정리 지원을 원하는 개인"
+      },
+      {
+        "en": "Knowledge workers and researchers who value serendipitous idea discovery",
+        "ko": "우연한 발견을 통해 새로운 아이디어를 찾는 것을 중요시하는 지식 근로자 및 연구자"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Teams requiring heavy collaboration features or real-time multi-user editing",
+        "ko": "팀 협업 기능이나 실시간 다중 사용자 편집이 필요한 조직"
+      },
+      {
+        "en": "Users who need comprehensive Korean language support or extensive third-party integrations",
+        "ko": "한국어 지원이 필수적이거나 다양한 타사 서비스와의 연동이 필요한 사용자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "The free plan is available and lets you test core features, but has limitations on storage and some advanced AI capabilities. Check the official site for current tier details.",
+      "ko": "무료 플랜으로 기본 기능을 시험해볼 수 있지만 저장 용량과 고급 AI 기능에는 제한이 있습니다. 공식 사이트에서 최신 요금 정보를 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans unlock higher storage limits, advanced AI features, and priority support. Exact pricing and features vary; visit mem.ai for the most current information.",
+      "ko": "유료 플랜은 더 많은 저장 공간, 고급 AI 기능, 우선 지원을 제공합니다. 정확한 가격과 기능은 변할 수 있으므로 mem.ai를 방문하여 최신 정보를 확인하세요."
+    },
+    "commercialNotes": {
+      "en": "Mem supports commercial and business use; the terms and any restrictions depend on your chosen plan. Verify licensing terms with Mem directly for enterprise deployments.",
+      "ko": "Mem은 상업적, 비즈니스 용도 사용을 지원하며, 조건은 선택한 플랜에 따라 다릅니다. 기업 배포의 경우 Mem에 직접 라이선싱 조건을 확인하세요."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "reflect-ai",
+    "name": "Reflect AI",
+    "slug": "reflect-ai",
+    "description": {
+      "en": "Reflect AI is a note-taking and productivity app with AI-powered features designed to help organize thoughts, capture ideas, and enhance writing.",
+      "ko": "Reflect AI는 생각을 정리하고 아이디어를 캡처하며 글쓰기를 향상시키기 위해 AI 기능을 갖춘 노트 작성 및 생산성 앱입니다."
+    },
+    "longDescription": {
+      "en": "Reflect AI combines a modern note-taking interface with AI capabilities to help users capture, organize, and discover connections between ideas. It emphasizes accessibility and intuitive design, making it suitable for knowledge workers, students, and content creators who want smarter note management without complexity.",
+      "ko": "Reflect AI는 현대적인 노트 작성 인터페이스와 AI 기능을 결합하여 사용자들이 아이디어를 캡처하고 정리하며 그 사이의 연결고리를 발견할 수 있도록 도와줍니다. 복잡성 없이 더 똑똑한 노트 관리를 원하는 지식 근로자, 학생, 콘텐츠 크리에이터들에게 적합하도록 접근성과 직관적인 디자인을 강조합니다."
+    },
+    "beginnerDescription": {
+      "en": "Reflect is a friendly note-taking app that helps you write, organize, and understand your notes better with AI assistance.",
+      "ko": "Reflect는 AI의 도움을 받아 노트를 더 잘 쓰고, 정리하고, 이해할 수 있는 친근한 노트 작성 앱입니다."
+    },
+    "websiteUrl": "https://reflect.app",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "note-taking",
+      "ai-powered",
+      "productivity",
+      "knowledge-management"
+    ],
+    "features": [
+      {
+        "en": "AI-assisted writing and editing with smart suggestions for clarity and tone",
+        "ko": "명확성과 톤에 대한 스마트 제안이 포함된 AI 기반 글쓰기 및 편집 지원"
+      },
+      {
+        "en": "Automatic connection discovery between related notes and ideas",
+        "ko": "관련 노트와 아이디어 간의 자동 연결 발견"
+      },
+      {
+        "en": "Quick capture and organization of thoughts with flexible tagging and search",
+        "ko": "유연한 태그 지정 및 검색을 통한 빠른 생각 캡처 및 정리"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Clean, distraction-free interface that feels lightweight and fast",
+        "ko": "가볍고 빠르게 느껴지는 깔끔하고 방해 없는 인터페이스"
+      },
+      {
+        "en": "Good integration of AI features for practical writing assistance without overwhelming complexity",
+        "ko": "실용적인 글쓰기 지원을 위한 AI 기능의 좋은 통합으로 압도적인 복잡성 없음"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Limited language support—primarily English, which may not suit non-English writers well",
+        "ko": "제한된 언어 지원—주로 영어 중심이므로 영어 이외의 작성자에게는 적합하지 않을 수 있음"
+      },
+      {
+        "en": "Smaller ecosystem and user community compared to mainstream note-taking alternatives",
+        "ko": "주류 노트 작성 대안에 비해 더 작은 생태계와 사용자 커뮤니티"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Students capturing lecture notes and generating study summaries with AI help",
+        "ko": "학생들이 강의 노트를 캡처하고 AI의 도움으로 학습 요약을 생성하는 것"
+      },
+      {
+        "en": "Content creators drafting ideas and refining prose with built-in AI editing",
+        "ko": "콘텐츠 크리에이터들이 내장된 AI 편집으로 아이디어를 초안하고 산문을 다듬는 것"
+      },
+      {
+        "en": "Researchers and professionals organizing research notes and discovering thematic connections",
+        "ko": "연구자와 전문가들이 연구 노트를 정리하고 주제별 연결을 발견하는 것"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Students and academics who benefit from AI-assisted learning and note organization",
+        "ko": "AI 기반의 학습 및 노트 정리로 이득을 얻는 학생과 학자"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Teams requiring extensive collaboration features and real-time co-editing",
+        "ko": "광범위한 협업 기능과 실시간 공동 편집이 필요한 팀"
+      },
+      {
+        "en": "Users requiring support for languages other than English",
+        "ko": "영어 이외의 언어 지원이 필요한 사용자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "A free tier exists with core note-taking features. Check the official website for current limits on AI features and storage.",
+      "ko": "기본 노트 작성 기능이 포함된 무료 티어가 있습니다. AI 기능 및 저장소 제한에 대한 최신 정보는 공식 웹사이트를 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans unlock additional AI capabilities and storage. Visit reflect.app for current pricing and plan details.",
+      "ko": "유료 플랜은 추가 AI 기능과 저장소를 제공합니다. 최신 가격 및 플랜 세부 정보는 reflect.app을 방문하세요."
+    },
+    "commercialNotes": {
+      "en": "Reflect AI supports commercial use. Verify licensing terms on the official site for business deployments and team accounts.",
+      "ko": "Reflect AI는 상업적 사용을 지원합니다. 비즈니스 배포 및 팀 계정의 라이선스 약관은 공식 사이트에서 확인하세요."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "evernote-ai",
+    "name": "Evernote AI",
+    "slug": "evernote-ai",
+    "description": {
+      "en": "Evernote is a note-taking and digital organization platform that uses AI to help users capture, organize, and retrieve information across devices.",
+      "ko": "Evernote는 AI를 활용하여 사용자가 정보를 캡처, 정리하고 여러 기기에서 검색할 수 있도록 돕는 노트 작성 및 디지털 정리 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Evernote enables users to create notes, save web content, and organize information using notebooks and tags. The platform integrates AI-powered search and organization features to help users quickly find and manage their accumulated knowledge across desktop, web, and mobile applications.",
+      "ko": "Evernote는 사용자가 노트를 작성하고, 웹 콘텐츠를 저장하며, 노트북과 태그를 사용하여 정보를 정리할 수 있게 해줍니다. AI 기반 검색 및 정리 기능을 통합하여 데스크톱, 웹, 모바일 애플리케이션 전체에서 축적된 정보를 빠르게 찾고 관리할 수 있습니다."
+    },
+    "beginnerDescription": {
+      "en": "Evernote is an easy-to-use app that lets you write notes, save articles and images, and find everything later using smart search—all in one place across your phone, tablet, and computer.",
+      "ko": "Evernote는 노트를 작성하고, 기사나 이미지를 저장한 후 스마트 검색으로 쉽게 찾을 수 있는 간단한 앱으로, 휴대폰, 태블릿, 컴퓨터 어디서나 모든 것을 한곳에서 관리할 수 있습니다."
+    },
+    "websiteUrl": "https://evernote.com",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "startingPrice": "$12.99/mo",
+    "rating": 4.3,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "note-taking",
+      "organization",
+      "ai-search",
+      "productivity",
+      "cross-platform"
+    ],
+    "features": [
+      {
+        "en": "AI-powered search that understands context and finds notes even from vague descriptions",
+        "ko": "문맥을 이해하고 막연한 설명으로도 노트를 찾아주는 AI 기반 검색"
+      },
+      {
+        "en": "Notebook and tag-based organization system for categorizing and structuring information",
+        "ko": "정보를 분류하고 구조화하기 위한 노트북 및 태그 기반 정리 시스템"
+      },
+      {
+        "en": "Web clipper and note syncing across desktop, mobile, and web platforms",
+        "ko": "웹 클리퍼와 데스크톱, 모바일, 웹 플랫폼 전반에 걸친 노트 동기화"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Reliable cross-platform synchronization ensures your notes are accessible everywhere",
+        "ko": "신뢰할 수 있는 크로스 플랫폼 동기화로 어디서든 노트에 접근할 수 있습니다"
+      },
+      {
+        "en": "Intuitive interface makes it easy for beginners to start capturing and organizing information quickly",
+        "ko": "직관적인 인터페이스로 초보자도 빠르게 정보를 수집하고 정리할 수 있습니다"
+      },
+      {
+        "en": "Web clipper feature simplifies saving articles, images, and web content for later reference",
+        "ko": "웹 클리퍼 기능으로 기사, 이미지, 웹 콘텐츠를 쉽게 저장하여 나중에 참고할 수 있습니다"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Offline functionality is limited on some platforms, requiring a paid subscription for offline access",
+        "ko": "일부 플랫폼에서 오프라인 기능이 제한적이며, 오프라인 접근을 위해서는 유료 구독이 필요합니다"
+      },
+      {
+        "en": "No native Korean language support, which may limit usability for Korean-speaking users",
+        "ko": "기본 한국어 지원이 없어 한국어 사용자의 이용성이 제한될 수 있습니다"
+      },
+      {
+        "en": "Rich formatting options are not as extensive as some specialized note-taking competitors",
+        "ko": "풍부한 서식 옵션이 일부 전문 노트 작성 도구에 비해 제한적입니다"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Students and researchers using notes, articles, and research materials for study and project planning",
+        "ko": "학생과 연구자가 학습 및 프로젝트 계획을 위해 노트, 기사, 연구 자료를 정리하고 참고"
+      },
+      {
+        "en": "Professionals maintaining meeting notes, project documentation, and business references in a centralized system",
+        "ko": "전문가가 회의 노트, 프로젝트 문서, 업무 참고 자료를 한곳에 중앙집중식으로 관리"
+      },
+      {
+        "en": "Content creators and writers collecting ideas, reference material, and inspiration from various web sources",
+        "ko": "콘텐츠 제작자와 작가가 다양한 웹 소스에서 아이디어, 참고 자료, 영감을 수집"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "People who need a simple, reliable way to capture and retrieve information across multiple devices",
+        "ko": "여러 기기에서 정보를 간단하고 안정적으로 캡처하고 검색해야 하는 사람들"
+      },
+      {
+        "en": "Professionals and students looking for a well-established note-taking system with broad platform support",
+        "ko": "광범위한 플랫폼 지원을 갖춘 잘 정립된 노트 작성 시스템을 찾는 전문가와 학생"
+      },
+      {
+        "en": "Users who want to save and organize web content alongside their personal notes",
+        "ko": "개인 노트와 함께 웹 콘텐츠를 저장하고 정리하고 싶은 사용자"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Users who require advanced markdown or code-focused note editing capabilities",
+        "ko": "고급 마크다운이나 코드 중심의 노트 편집 기능이 필요한 사용자"
+      },
+      {
+        "en": "Korean-speaking users who need native Korean language interface and support",
+        "ko": "기본 한국어 인터페이스와 지원이 필요한 한국어 사용자"
+      },
+      {
+        "en": "Those seeking a free tier with unrestricted offline access and no feature limitations",
+        "ko": "제한 없는 오프라인 접근과 기능 제한이 없는 무료 플랜을 원하는 사용자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "The free plan includes basic note-taking, one notebook, and limited monthly uploads. For full offline access and additional features, a paid subscription is required.",
+      "ko": "무료 플랜은 기본 노트 작성, 하나의 노트북, 제한된 월간 업로드를 포함합니다. 완전한 오프라인 접근과 추가 기능을 위해서는 유료 구독이 필요합니다."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans unlock features like offline access, increased upload limits, advanced search, and priority customer support. Check Evernote's official website for current pricing and plan details.",
+      "ko": "유료 플랜은 오프라인 접근, 증가된 업로드 제한, 고급 검색, 우선 고객 지원 등의 기능을 제공합니다. 현재 가격 및 플랜 세부사항은 Evernote 공식 웹사이트를 확인하세요."
+    },
+    "commercialNotes": {
+      "en": "Evernote supports commercial use and is suitable for business teams and professionals managing work-related notes and documentation. Team collaboration features are available in higher-tier plans.",
+      "ko": "Evernote는 상업용 사용을 지원하며 업무 관련 노트와 문서를 관리하는 비즈니스 팀과 전문가에게 적합합니다. 팀 협업 기능은 상위 플랜에서 제공됩니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "coda-ai",
+    "name": "Coda AI",
+    "slug": "coda-ai",
+    "description": {
+      "en": "Coda is an all-in-one workspace that combines documents, spreadsheets, and apps to streamline team collaboration and project management.",
+      "ko": "Coda는 문서, 스프레드시트, 앱을 하나의 플랫폼에서 통합하여 팀 협업과 프로젝트 관리를 효율화하는 올인원 워크스페이스입니다."
+    },
+    "longDescription": {
+      "en": "Coda brings together the functionality of documents, tables, and databases in a single integrated workspace. It enables teams to create interactive documents, manage workflows, and build custom apps without coding, making it a flexible alternative to traditional productivity suites. The platform emphasizes real-time collaboration and automation to help teams work more efficiently.",
+      "ko": "Coda는 문서, 테이블, 데이터베이스의 기능을 하나의 통합된 워크스페이스로 모아줍니다. 팀이 대화형 문서를 작성하고, 워크플로우를 관리하며, 코딩 없이 커스텀 앱을 만들 수 있게 해줍니다. 실시간 협업과 자동화를 중심으로 팀의 효율성을 높이는 데 초점을 맞추고 있습니다."
+    },
+    "beginnerDescription": {
+      "en": "Coda is like a smart notebook that lets you organize information, work together with others in real time, and automate routine tasks—all in one place.",
+      "ko": "Coda는 정보를 정리하고, 다른 사람들과 실시간으로 함께 작업하며, 반복되는 작업을 자동화할 수 있는 똑똑한 노트북 같은 도구입니다."
+    },
+    "websiteUrl": "https://coda.io",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "startingPrice": "$10/mo",
+    "rating": 4.6,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "document-collaboration",
+      "workflow-automation",
+      "productivity"
+    ],
+    "features": [
+      {
+        "en": "Create interactive documents that combine text, tables, and live data in a single canvas",
+        "ko": "텍스트, 표, 라이브 데이터를 하나의 캔버스에 통합한 대화형 문서 작성"
+      },
+      {
+        "en": "Build custom workflows and automation rules to reduce repetitive manual tasks",
+        "ko": "반복적인 수작업을 줄이기 위해 커스텀 워크플로우와 자동화 규칙 구축"
+      },
+      {
+        "en": "Real-time collaboration with team members, commenting, and version history",
+        "ko": "팀원들과 실시간 협업, 댓글 달기, 버전 기록 관리"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Highly flexible and intuitive interface that reduces reliance on multiple tools and integrations",
+        "ko": "여러 도구를 조합할 필요 없이 직관적이고 유연한 단일 플랫폼 환경"
+      },
+      {
+        "en": "No-code automation and customization make it accessible to non-technical users",
+        "ko": "코딩 없이 자동화와 커스터마이징이 가능해 비기술 사용자도 쉽게 사용 가능"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Steeper learning curve compared to simple note-taking apps; full potential requires some exploration",
+        "ko": "간단한 노트 앱보다 학습 곡선이 가파르며, 모든 기능을 활용하려면 탐색 시간이 필요"
+      },
+      {
+        "en": "Can become expensive at scale if teams require many advanced features and seats",
+        "ko": "대규모 팀이 고급 기능과 여러 사용자를 필요로 할 경우 비용이 상당할 수 있음"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Project teams creating living documents that track status, timelines, and dependencies in one place",
+        "ko": "프로젝트 상태, 일정, 의존성을 한 곳에서 추적하는 동적 문서를 팀이 함께 만들 때"
+      },
+      {
+        "en": "Operations teams automating repetitive processes like data entry, approvals, and reporting",
+        "ko": "데이터 입력, 승인, 보고와 같은 반복 업무를 자동화해야 하는 운영팀"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Growing teams and startups that want to consolidate multiple tools into one collaborative workspace",
+        "ko": "여러 도구를 하나의 협업 플랫폼으로 통합하고 싶은 성장 중인 스타트업과 팀"
+      },
+      {
+        "en": "Project and product managers seeking a flexible hub for planning, tracking, and cross-functional communication",
+        "ko": "계획, 추적, 부서 간 커뮤니케이션을 위한 유연한 중심지가 필요한 프로젝트 및 제품 관리자"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Users who need a simple, lightweight note-taking app without extensive customization options",
+        "ko": "복잡한 커스터마이징 없이 단순하고 가벼운 노트 앱만 필요한 사용자"
+      },
+      {
+        "en": "Organizations with strict offline-first requirements or those working in environments with limited internet connectivity",
+        "ko": "오프라인 우선 정책이 있거나 인터넷 연결이 제한된 환경에서 작업하는 조직"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "The free plan includes basic document creation and collaboration features, suitable for individuals and small teams getting started. Check the official site for current free tier limits and capacity.",
+      "ko": "무료 플랜은 기본 문서 작성 및 협업 기능을 포함하며, 개인과 소규모 팀이 시작하기에 적합합니다. 최신 무료 플랜의 제한 사항과 용량은 공식 웹사이트를 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans unlock advanced features like form creation, API access, and higher collaboration limits. Pricing scales with team size and feature requirements; contact Coda for enterprise quotes.",
+      "ko": "유료 플랜은 양식 작성, API 접근, 더 높은 협업 한도 등의 고급 기능을 제공합니다. 팀 규모와 기능 요구사항에 따라 가격이 조정되므로, 엔터프라이즈 요금은 Coda에 문의하세요."
+    },
+    "commercialNotes": {
+      "en": "Coda is fully suitable for commercial use and widely adopted by businesses for internal operations, client-facing documentation, and workflow automation. Team and enterprise plans are designed for business deployments.",
+      "ko": "Coda는 상업용으로 완전히 적합하며, 내부 운영, 고객 대면 문서화, 워크플로우 자동화를 위해 많은 기업에서 사용하고 있습니다. 팀 및 엔터프라이즈 플랜은 비즈니스 배포를 위해 설계되었습니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "clickup-ai",
+    "name": "ClickUp AI",
+    "slug": "clickup-ai",
+    "description": {
+      "en": "ClickUp AI is an integrated artificial intelligence assistant within the ClickUp productivity platform that automates task creation, summarization, and content generation to streamline workflow management.",
+      "ko": "ClickUp AI는 ClickUp 생산성 플랫폼에 통합된 AI 어시스턴트로, 작업 생성, 요약, 콘텐츠 생성을 자동화하여 업무 흐름을 간소화합니다."
+    },
+    "longDescription": {
+      "en": "ClickUp AI enhances the ClickUp project management suite by offering AI-powered features such as instant task summarization, automated content writing, and intelligent task breakdowns. It integrates seamlessly within the ClickUp workspace to help teams reduce manual overhead and focus on high-value work. The tool learns from your workspace structure and communication style to provide contextually relevant suggestions.",
+      "ko": "ClickUp AI는 ClickUp 프로젝트 관리 스위트를 강화하여 작업 자동 요약, 콘텐츠 자동 작성, 지능형 작업 분해 등의 AI 기반 기능을 제공합니다. ClickUp 워크스페이스에 완벽하게 통합되어 팀이 수동 작업을 줄이고 중요한 업무에 집중하도록 돕습니다. 워크스페이스 구조와 커뮤니케이션 스타일을 학습하여 상황에 맞는 제안을 제공합니다."
+    },
+    "beginnerDescription": {
+      "en": "ClickUp AI is an AI assistant built into ClickUp that helps you write descriptions, summarize conversations, and break down tasks automatically—making project management easier and faster.",
+      "ko": "ClickUp AI는 ClickUp에 내장된 AI 어시스턴트로, 설명 작성, 대화 요약, 작업 분해를 자동화하여 프로젝트 관리를 더 쉽고 빠르게 만들어줍니다."
+    },
+    "websiteUrl": "https://clickup.com",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "ai productivity",
+      "project management",
+      "automation",
+      "team collaboration"
+    ],
+    "features": [
+      {
+        "en": "AI-powered task summarization and brief generation from lengthy discussions or documents",
+        "ko": "긴 대화나 문서에서 작업을 자동으로 요약하고 요점을 생성"
+      },
+      {
+        "en": "Intelligent task creation and breakdown that suggests subtasks and dependencies based on context",
+        "ko": "상황에 맞춰 세부 작업과 의존성을 제안하는 지능형 작업 생성 및 분해"
+      },
+      {
+        "en": "Content writing assistance for descriptions, comments, and documentation within the workspace",
+        "ko": "워크스페이스 내 설명, 댓글, 문서 작성을 지원하는 콘텐츠 라이팅 보조"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Seamlessly integrated into ClickUp's interface, reducing the need to switch between tools or platforms",
+        "ko": "ClickUp 인터페이스에 완벽하게 통합되어 다른 도구 간 전환의 필요성을 줄임"
+      },
+      {
+        "en": "Learns from your team's workflow patterns and communication style to provide increasingly personalized suggestions",
+        "ko": "팀의 업무 패턴과 커뮤니케이션 스타일을 학습하여 점점 더 개인화된 제안 제공"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Effectiveness depends on the quality and clarity of input data; vague or poorly written source material can produce mediocre results",
+        "ko": "입력 데이터의 품질과 명확성에 따라 결과가 좌우되므로, 불분명한 자료는 평범한 결과를 만들 수 있음"
+      },
+      {
+        "en": "Requires ClickUp subscription and AI credits, which may introduce additional per-query costs beyond the base plan",
+        "ko": "ClickUp 구독과 AI 크레딧이 필요하여 기본 플랜 이외의 추가 비용이 발생할 수 있음"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Quickly summarizing long team discussions, meeting notes, or client feedback into actionable task descriptions",
+        "ko": "긴 팀 논의, 회의 기록, 고객 피드백을 실행 가능한 작업 설명으로 빠르게 요약"
+      },
+      {
+        "en": "Automating routine documentation and status updates to keep projects moving without manual overhead",
+        "ko": "루틴 문서화 및 상태 업데이트를 자동화하여 수동 작업 없이 프로젝트 진행"
+      },
+      {
+        "en": "Breaking down complex projects into granular subtasks and identifying dependencies automatically",
+        "ko": "복잡한 프로젝트를 세부 작업으로 분해하고 의존성을 자동으로 파악"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Teams and organizations already using ClickUp who want to amplify productivity without learning new platforms",
+        "ko": "이미 ClickUp을 사용 중인 팀과 조직이 새 플랫폼을 배우지 않고 생산성을 높이려 할 때"
+      },
+      {
+        "en": "Project managers and team leads handling high-volume task management who need to reduce administrative burden",
+        "ko": "많은 양의 작업 관리를 담당하는 프로젝트 매니저와 팀 리더가 행정 부담을 줄이고 싶을 때"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Users seeking a standalone AI writing or task management tool independent of ClickUp's ecosystem",
+        "ko": "ClickUp 생태계와 독립적인 독립형 AI 라이팅이나 작업 관리 도구를 찾는 사용자"
+      },
+      {
+        "en": "Teams with very low budgets who cannot afford ClickUp subscription plus additional AI credit costs",
+        "ko": "ClickUp 구독료와 추가 AI 크레딧을 감당할 수 없는 예산이 적은 팀"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "ClickUp offers a free tier with basic project management features, though AI capabilities typically require an active paid subscription or AI credits. Check the official ClickUp site for current free plan limitations.",
+      "ko": "ClickUp은 기본 프로젝트 관리 기능이 포함된 무료 플랜을 제공하지만, AI 기능은 일반적으로 유료 구독이나 AI 크레딧이 필요합니다. 현재 무료 플랜 제한 사항은 공식 ClickUp 웹사이트를 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "ClickUp AI is typically available as an add-on to paid ClickUp plans or through consumption of AI credits. Pricing varies by subscription tier and usage level. Visit ClickUp's pricing page for the most current and detailed pricing information.",
+      "ko": "ClickUp AI는 일반적으로 유료 ClickUp 플랜의 부가 기능이거나 AI 크레딧 소비 방식으로 제공됩니다. 요금은 구독 등급과 사용량에 따라 달라집니다. 가장 최신의 자세한 요금 정보는 ClickUp 가격 페이지를 방문하세요."
+    },
+    "commercialNotes": {
+      "en": "ClickUp AI is fully supported for commercial and business use within paid plans. Organizations can deploy it across teams to reduce operational costs and improve efficiency in client-facing or internal project work.",
+      "ko": "ClickUp AI는 유료 플랜 내에서 상업적 및 사업용 사용을 완전히 지원합니다. 조직은 이를 팀 전체에 배포하여 고객 대면 또는 내부 프로젝트 작업의 운영 비용을 줄이고 효율성을 개선할 수 있습니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "asana-ai",
+    "name": "Asana AI",
+    "slug": "asana-ai",
+    "description": {
+      "en": "Asana is a work management platform that integrates AI capabilities to help teams organize, track, and execute projects collaboratively.",
+      "ko": "Asana는 AI 기능을 통합하여 팀이 프로젝트를 체계적으로 관리하고 추적할 수 있도록 돕는 업무 관리 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Asana combines task management, project planning, and team collaboration tools with AI-powered features like smart task suggestions and automated workflows. It serves as a central hub where teams can visualize work across different views (list, board, timeline) and stay aligned on priorities and deadlines. The AI layer enhances productivity by automating routine work and providing intelligent insights into project progress.",
+      "ko": "Asana는 작업 관리, 프로젝트 계획, 팀 협업 기능을 제공하며 스마트 작업 제안과 자동화된 워크플로우 같은 AI 기반 기능을 포함하고 있습니다. 다양한 뷰(목록, 보드, 타임라인)에서 작업을 시각화하고 팀원들이 우선순위와 마감일을 명확히 인식할 수 있도록 하는 중앙 허브 역할을 합니다. AI 기능은 반복적인 업무를 자동화하고 프로젝트 진행 상황에 대한 지능형 통찰력을 제공하여 생산성을 향상시킵니다."
+    },
+    "beginnerDescription": {
+      "en": "Asana helps teams organize and track projects in one place, with AI features that automatically suggest tasks and help manage workflows. It's designed to keep everyone on the same page about what needs to be done and when.",
+      "ko": "Asana는 팀이 프로젝트를 한 곳에서 관리하고 추적할 수 있도록 돕는 도구이며, AI가 작업을 자동으로 제안하고 업무 흐름을 관리하는 것을 지원합니다. 누구나 해야 할 일과 마감일을 명확하게 이해할 수 있도록 설계되었습니다."
+    },
+    "websiteUrl": "https://asana.com",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "startingPrice": "$10.99/mo",
+    "rating": 4.6,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "project management",
+      "team collaboration",
+      "ai automation",
+      "productivity"
+    ],
+    "features": [
+      {
+        "en": "AI-powered task creation and workflow automation that suggests next steps and streamlines repetitive work",
+        "ko": "다음 단계를 제안하고 반복적인 업무를 간소화하는 AI 기반 작업 생성 및 워크플로우 자동화"
+      },
+      {
+        "en": "Multiple project views (list, board, timeline, calendar) for flexible work visualization",
+        "ko": "작업을 유연하게 시각화할 수 있는 다양한 프로젝트 보기(목록, 보드, 타임라인, 캘린더)"
+      },
+      {
+        "en": "Real-time team collaboration with comments, attachments, and shared project updates",
+        "ko": "댓글, 첨부 파일, 프로젝트 업데이트 공유를 통한 실시간 팀 협업"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Intuitive interface makes it easy for teams of all skill levels to adopt and start organizing work immediately",
+        "ko": "직관적인 인터페이스로 모든 수준의 팀이 쉽게 채택하고 즉시 업무를 정리할 수 있습니다."
+      },
+      {
+        "en": "Flexible views and customizable workflows adapt to various project management methodologies and team preferences",
+        "ko": "유연한 보기와 사용자 정의 가능한 워크플로우가 다양한 프로젝트 관리 방식과 팀의 선호도에 적응합니다."
+      },
+      {
+        "en": "Strong mobile app support enables teams to stay productive while working remotely or on the go",
+        "ko": "강력한 모바일 앱 지원으로 원격 또는 외출 중에도 팀이 생산성을 유지할 수 있습니다."
+      }
+    ],
+    "cons": [
+      {
+        "en": "Pricing can escalate quickly for large teams, and some advanced features are locked behind higher-tier plans",
+        "ko": "대규모 팀의 경우 비용이 빠르게 증가하며, 일부 고급 기능은 상위 요금제에서만 사용 가능합니다."
+      },
+      {
+        "en": "AI features, while helpful, are not as advanced as dedicated AI tools and require proper setup to be effective",
+        "ko": "AI 기능은 유용하지만 전문 AI 도구만큼 고도화되지 않았으며 효과적인 사용을 위해 적절한 설정이 필요합니다."
+      },
+      {
+        "en": "Learning curve increases with complex dependencies and large-scale project structures",
+        "ko": "복잡한 작업 의존성과 대규모 프로젝트 구조에서는 학습 곡선이 증가합니다."
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Marketing teams coordinating campaigns with timelines, asset management, and cross-functional approvals",
+        "ko": "타임라인, 자산 관리, 부서 간 승인을 통해 캠페인을 조율하는 마케팅 팀"
+      },
+      {
+        "en": "Product development teams tracking features, bugs, and sprints across distributed teams",
+        "ko": "분산된 팀에서 기능, 버그, 스프린트를 추적하는 제품 개발 팀"
+      },
+      {
+        "en": "Non-profit organizations managing volunteer schedules, donor relations, and event coordination",
+        "ko": "자원봉사자 일정, 기부자 관계, 이벤트 조율을 관리하는 비영리 단체"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Mid-sized to large teams needing a centralized hub to coordinate complex, cross-functional projects",
+        "ko": "복잡한 크로스펑셔널 프로젝트를 조율하기 위해 중앙 집중식 플랫폼이 필요한 중규모에서 대규모 팀"
+      },
+      {
+        "en": "Organizations seeking to reduce meeting time and manual status updates through automation and visibility",
+        "ko": "자동화와 가시성을 통해 회의 시간과 수동 상태 업데이트를 줄이려는 조직"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Solo freelancers or very small teams that may find the interface and feature set overwhelming for simple task lists",
+        "ko": "간단한 작업 목록에는 인터페이스와 기능이 과할 수 있는 개별 프리랜서나 소규모 팀"
+      },
+      {
+        "en": "Organizations primarily needing advanced data analytics or AI-driven predictive insights beyond basic automation",
+        "ko": "기본 자동화를 넘어 고급 데이터 분석이나 AI 기반 예측 통찰력이 필요한 조직"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Asana's free tier includes basic task and project management for small teams, though storage and integrations are limited. Advanced AI features are typically available only on paid plans.",
+      "ko": "Asana 무료 계획은 소규모 팀을 위한 기본 작업 및 프로젝트 관리 기능을 포함하지만 저장소와 통합이 제한적입니다. 고급 AI 기능은 일반적으로 유료 계획에서만 사용 가능합니다."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans unlock advanced collaboration features, additional storage, enhanced integrations, and more sophisticated AI-assisted workflows. Pricing scales with team size and features; consult Asana's official site for current rates.",
+      "ko": "유료 계획은 고급 협업 기능, 추가 저장소, 향상된 통합 및 더 정교한 AI 지원 워크플로우를 제공합니다. 가격은 팀 규모와 기능에 따라 다르므로 최신 요금은 Asana 공식 사이트를 확인하세요."
+    },
+    "commercialNotes": {
+      "en": "Asana is fully supported for commercial use across all plan tiers and is widely trusted by enterprise organizations. Companies of all sizes rely on it for business-critical project management and team coordination.",
+      "ko": "Asana는 모든 요금제에서 상업적 사용을 완전히 지원하며 많은 엔터프라이즈 조직이 신뢰합니다. 모든 규모의 기업이 비즈니스 필수 프로젝트 관리 및 팀 조율에 이를 사용하고 있습니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "monday-ai",
+    "name": "Monday AI",
+    "slug": "monday-ai",
+    "description": {
+      "en": "Monday AI is a work operating system with AI capabilities that helps teams manage projects, tasks, and workflows in a visual, collaborative environment.",
+      "ko": "Monday AI는 AI 기능이 탑재된 업무 관리 플랫폼으로, 팀이 프로젝트와 업무를 시각적이고 협업 친화적으로 관리할 수 있게 해줍니다."
+    },
+    "longDescription": {
+      "en": "Monday AI combines project management and workflow automation with AI-powered features to streamline team collaboration. It offers customizable boards, automation rules, and integration capabilities that allow teams of all sizes to organize work visually and reduce manual tasks. The AI component assists with task prioritization, status updates, and insights to help teams work more efficiently.",
+      "ko": "Monday AI는 프로젝트 관리와 업무 자동화를 AI 기능과 결합하여 팀 협업을 간소화합니다. 커스터마이징 가능한 보드, 자동화 규칙, 통합 기능을 제공하여 모든 규모의 팀이 시각적으로 업무를 정리하고 반복 작업을 줄일 수 있습니다. AI 기능은 업무 우선순위 결정, 상태 업데이트, 인사이트 제공을 통해 팀의 효율성을 높입니다."
+    },
+    "beginnerDescription": {
+      "en": "Monday AI is an easy-to-use project management tool that helps teams organize tasks and track progress on a visual board, with AI assistance to make work easier.",
+      "ko": "Monday AI는 시각적인 보드에서 팀이 쉽게 업무를 정리하고 진행 상황을 추적할 수 있는 프로젝트 관리 도구이며, AI가 업무를 더 편하게 만들어줍니다."
+    },
+    "websiteUrl": "https://monday.com",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "startingPrice": "$99/mo",
+    "rating": 4.6,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "project management",
+      "workflow automation",
+      "team collaboration",
+      "productivity"
+    ],
+    "features": [
+      {
+        "en": "Customizable visual boards (kanban, timeline, calendar views) to organize and track work",
+        "ko": "칸반, 타임라인, 캘린더 등 다양한 보드 뷰를 통한 시각적 업무 관리"
+      },
+      {
+        "en": "Automation rules and workflows to reduce manual tasks and keep teams synchronized",
+        "ko": "자동화 규칙과 워크플로우로 반복 작업을 줄이고 팀 동기화 유지"
+      },
+      {
+        "en": "AI-assisted task management, summaries, and intelligent insights for better prioritization",
+        "ko": "AI 기반 업무 관리, 요약 생성, 우선순위 결정을 위한 인텔리전트 인사이트"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Highly intuitive and visually organized interface that teams can adopt quickly without extensive training",
+        "ko": "직관적이고 시각적으로 잘 정리된 인터페이스로 팀이 빠르게 도입할 수 있음"
+      },
+      {
+        "en": "Powerful automation and integration ecosystem that connects with many third-party tools and reduces manual work",
+        "ko": "강력한 자동화와 통합 기능으로 외부 도구와 연결하여 수작업 최소화"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Pricing can become expensive as teams grow and require more advanced features or increased user seats",
+        "ko": "팀 규모가 커지고 고급 기능이나 사용자가 증가하면 비용이 크게 증가할 수 있음"
+      },
+      {
+        "en": "Steep learning curve for advanced customizations and workflow automation setup despite overall simplicity",
+        "ko": "기본적으로는 사용하기 쉽지만 고급 커스터마이징과 자동화 설정은 학습이 필요"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Marketing teams coordinating campaigns, deadlines, and asset approval workflows across multiple projects",
+        "ko": "마케팅 팀이 캠페인, 마감일, 자산 승인 프로세스를 여러 프로젝트에서 관리"
+      },
+      {
+        "en": "Software development teams managing sprints, bugs, and feature releases with real-time visibility",
+        "ko": "소프트웨어 개발 팀이 스프린트, 버그, 기능 릴리스를 실시간으로 추적 및 관리"
+      },
+      {
+        "en": "HR and administrative teams handling onboarding, recruitment, and compliance workflows",
+        "ko": "HR 팀이 온보딩, 채용, 규정 준수 워크플로우를 체계적으로 관리"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Growing teams and mid-sized organizations that need scalable project management without complex enterprise software",
+        "ko": "복잡한 엔터프라이즈 소프트웨어 없이 확장 가능한 프로젝트 관리가 필요한 중소 규모 팀"
+      },
+      {
+        "en": "Teams that work across multiple departments or projects and benefit from visual organization and collaboration",
+        "ko": "부서와 프로젝트를 넘나드는 팀이 시각적 조직화와 협업으로 이점을 얻을 수 있음"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Very small teams or solo users where the cost-to-benefit ratio may not justify paid plans compared to simpler alternatives",
+        "ko": "매우 작은 팀이나 개인 사용자는 비용 대비 효과가 떨어질 수 있음"
+      },
+      {
+        "en": "Organizations with extremely tight budgets, as the platform's pricing increases notably with additional users and features",
+        "ko": "사용자 증가에 따라 가격이 크게 올라가므로 매우 제한된 예산의 조직에 부담스러울 수 있음"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Monday offers a free plan with basic features suitable for small teams to try the platform, though it has limits on automations and integrations. Check the official site for current free plan quotas and capabilities.",
+      "ko": "Monday는 소규모 팀이 플랫폼을 시험해볼 수 있는 기본 기능의 무료 플랜을 제공하지만, 자동화와 통합 기능에는 제한이 있습니다. 최신 무료 플랜 사양은 공식 사이트에서 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans include additional team members, advanced automation, priority support, and extended integrations. Pricing scales with the number of users and selected features; visit monday.com for current pricing details and plan comparisons.",
+      "ko": "유료 플랜은 추가 팀원, 고급 자동화, 우선 지원, 확장된 통합을 포함합니다. 사용자 수와 선택한 기능에 따라 가격이 달라지므로 공식 사이트에서 최신 요금과 플랜을 비교하세요."
+    },
+    "commercialNotes": {
+      "en": "Monday AI is fully designed for commercial use and is widely adopted by businesses across industries for managing client projects, internal operations, and revenue-generating workflows.",
+      "ko": "Monday AI는 상용 목적으로 완전히 설계되었으며, 클라이언트 프로젝트, 내부 운영, 수익 창출 워크플로우 관리에 다양한 산업의 기업들이 널리 사용합니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "trello-ai",
+    "name": "Trello AI",
+    "slug": "trello-ai",
+    "description": {
+      "en": "A visual project management platform that integrates AI features to automate task organization, summarization, and workflow optimization within card-based boards.",
+      "ko": "카드 기반 보드 내에서 작업 자동화, 요약, 워크플로우 최적화를 위해 AI 기능이 통합된 시각적 프로젝트 관리 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Trello AI enhances the popular Trello board system with artificial intelligence capabilities designed to streamline task management and team collaboration. Users can leverage AI to automatically generate task descriptions, summarize board activity, suggest task assignments, and accelerate workflow efficiency. The tool maintains Trello's intuitive drag-and-drop interface while adding intelligent features that reduce manual work and improve decision-making.",
+      "ko": "Trello AI는 널리 사용되는 Trello 보드 시스템에 인공지능 기능을 추가하여 작업 관리와 팀 협업을 효율화합니다. 사용자는 AI를 활용해 자동으로 작업 설명을 생성하고, 보드 활동을 요약하며, 작업 할당을 제안받고, 워크플로우 효율성을 높일 수 있습니다. Trello의 직관적인 드래그 앤 드롭 인터페이스를 유지하면서 수동 작업을 줄이고 의사결정을 개선하는 지능형 기능이 추가됩니다."
+    },
+    "beginnerDescription": {
+      "en": "Trello AI makes organizing projects easier by adding smart features that automatically help you write descriptions, summarize work, and suggest next steps without learning complex software.",
+      "ko": "Trello AI는 설명 작성, 작업 요약, 다음 단계 제안을 자동으로 도와주는 똑똑한 기능을 추가하여 복잡한 소프트웨어를 배울 필요 없이 프로젝트 정리를 더 쉽게 만들어줍니다."
+    },
+    "websiteUrl": "https://trello.com",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "startingPrice": "$5/mo",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "project management",
+      "collaboration",
+      "ai automation",
+      "task tracking",
+      "productivity"
+    ],
+    "features": [
+      {
+        "en": "AI-powered task description and title generation to quickly create detailed card content",
+        "ko": "카드 내용을 빠르게 작성하기 위한 AI 기반 작업 설명 및 제목 생성"
+      },
+      {
+        "en": "Automated board summarization and activity digests to keep teams informed on progress",
+        "ko": "팀이 진행 상황을 파악하도록 보드 요약 및 활동 요약 자동화"
+      },
+      {
+        "en": "Smart task suggestions and workflow optimization recommendations based on board patterns",
+        "ko": "보드 패턴을 기반으로 한 스마트 작업 제안 및 워크플로우 최적화 추천"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Seamlessly integrates with Trello's familiar, user-friendly interface that requires minimal learning curve",
+        "ko": "최소한의 학습곡선으로 Trello의 친숙하고 사용자 친화적인 인터페이스와 완벽하게 통합됩니다"
+      },
+      {
+        "en": "Reduces manual work by automating routine task creation, documentation, and status updates",
+        "ko": "루틴 작업 생성, 문서화, 상태 업데이트 자동화로 수동 작업을 줄입니다"
+      },
+      {
+        "en": "Available across desktop and mobile platforms with consistent functionality",
+        "ko": "데스크톱 및 모바일 플랫폼에서 일관된 기능으로 사용 가능합니다"
+      }
+    ],
+    "cons": [
+      {
+        "en": "AI accuracy depends on initial board setup quality and context; unclear or poorly structured cards may produce less useful suggestions",
+        "ko": "AI의 정확도는 초기 보드 설정 품질과 맥락에 따라 달라지며, 불명확하거나 구조가 나쁜 카드는 덜 유용한 제안을 생성할 수 있습니다"
+      },
+      {
+        "en": "Korean language support is limited; interface and AI outputs are primarily in English",
+        "ko": "한국어 지원이 제한적이며 인터페이스와 AI 출력물은 주로 영어입니다"
+      },
+      {
+        "en": "Advanced AI features may require paid plans; free tier offers basic functionality only",
+        "ko": "고급 AI 기능은 유료 플랜이 필요할 수 있으며 무료 버전은 기본 기능만 제공합니다"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Marketing teams coordinating campaigns, content calendars, and asset approvals with automated status summaries",
+        "ko": "마케팅 팀이 캠페인, 콘텐츠 달력, 자산 승인을 자동화된 상태 요약으로 조정"
+      },
+      {
+        "en": "Software development teams managing sprints and task backlogs where AI suggests prioritization and task breakdown",
+        "ko": "AI가 우선순위 지정과 작업 분해를 제안하는 스프린트 및 작업 백로그 관리 소프트웨어 개발 팀"
+      },
+      {
+        "en": "Educational project groups where AI assistance accelerates assignment tracking and deadline reminders",
+        "ko": "AI 지원이 과제 추적 및 마감일 알림을 가속화하는 교육 프로젝트 그룹"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Small to medium-sized teams and individuals who want simple project management without abandoning Trello's core functionality",
+        "ko": "Trello의 핵심 기능을 버리지 않으면서 간단한 프로젝트 관리를 원하는 소규모 및 중규모 팀과 개인"
+      },
+      {
+        "en": "Users who value time savings through automation and find Trello's drag-and-drop interface intuitive",
+        "ko": "자동화를 통한 시간 절약을 중시하고 Trello의 드래그 앤 드롭 인터페이스가 직관적이라고 생각하는 사용자"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Organizations requiring advanced resource allocation, budget tracking, or Gantt chart visualization—standard Trello is limited in these areas",
+        "ko": "고급 리소스 할당, 예산 추적 또는 간트 차트 시각화가 필요한 조직(표준 Trello는 이 영역에서 제한적)"
+      },
+      {
+        "en": "Teams working primarily in Korean and requiring native-language AI outputs and support",
+        "ko": "주로 한국어로 작업하고 기본 언어 AI 출력 및 지원이 필요한 팀"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Trello's free plan includes basic board and card management with limited AI features; more advanced AI-powered suggestions typically require a paid subscription. Check Trello's official pricing page for current free tier capabilities and any usage limits.",
+      "ko": "Trello의 무료 플랜에는 기본 보드 및 카드 관리가 포함되어 있으며 AI 기능은 제한적입니다. 더 고급 AI 기반 제안은 일반적으로 유료 구독이 필요합니다. 현재 무료 티어 기능 및 사용 제한에 대해 Trello 공식 가격 책정 페이지를 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans unlock full access to AI-driven features including enhanced task generation, board analytics, and advanced automation. Pricing varies by plan level; visit trello.com for the most up-to-date details and monthly/annual billing options.",
+      "ko": "유료 플랜은 향상된 작업 생성, 보드 분석 및 고급 자동화를 포함한 AI 기반 기능에 대한 전체 액세스를 제공합니다. 요금은 플랜 수준에 따라 다르며 최신 세부 정보 및 월간/연간 청구 옵션은 trello.com을 방문하세요."
+    },
+    "commercialNotes": {
+      "en": "Trello AI is fully suitable for commercial and business use across teams, agencies, and enterprises. Pricing and licensing are designed to accommodate teams of all sizes; check Trello's business and enterprise plans for volume licensing and administrative controls.",
+      "ko": "Trello AI는 팀, 에이전시 및 엔터프라이즈 전반에 걸쳐 상업적 및 비즈니스 용도에 완벽하게 적합합니다. 가격 책정 및 라이선싱은 모든 규모의 팀을 수용하도록 설계되어 있습니다. 볼륨 라이선싱 및 관리 제어를 위해 Trello의 비즈니스 및 엔터프라이즈 플랜을 확인하세요."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "slack-ai",
+    "name": "Slack AI",
+    "slug": "slack-ai",
+    "description": {
+      "en": "Slack AI integrates artificial intelligence capabilities directly into Slack's workspace to help teams automate tasks, search information, and enhance collaboration.",
+      "ko": "Slack AI는 팀의 작업 자동화, 정보 검색, 협업 향상을 돕기 위해 Slack 워크스페이스에 인공지능 기능을 통합합니다."
+    },
+    "longDescription": {
+      "en": "Slack AI leverages machine learning to help teams work smarter by automating routine tasks, improving search across conversations and documents, and providing intelligent suggestions within the platform. It's designed to reduce friction in team communication and help users find information quickly without leaving their workspace.",
+      "ko": "Slack AI는 머신러닝을 활용하여 일상적인 작업을 자동화하고, 대화와 문서 검색을 개선하며, 플랫폼 내에서 지능형 제안을 제공함으로써 팀이 더 효율적으로 일할 수 있도록 돕습니다. 팀 커뮤니케이션의 마찰을 줄이고 워크스페이스를 떠나지 않고도 정보를 빠르게 찾을 수 있도록 설계되었습니다."
+    },
+    "beginnerDescription": {
+      "en": "Slack AI adds smart features to your Slack workspace, like better search and automated helpers, so your team can focus on important work instead of routine tasks.",
+      "ko": "Slack AI는 더 나은 검색과 자동화된 도우미 같은 똑똑한 기능을 여러분의 Slack 워크스페이스에 추가하여, 팀이 일상적인 작업보다 중요한 일에 집중할 수 있게 해줍니다."
+    },
+    "websiteUrl": "https://slack.com",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "ai assistant",
+      "workplace productivity",
+      "team automation",
+      "search intelligence",
+      "collaboration"
+    ],
+    "features": [
+      {
+        "en": "AI-powered search that understands context across conversations, files, and team history",
+        "ko": "대화, 파일 및 팀 히스토리 전반의 맥락을 이해하는 AI 기반 검색"
+      },
+      {
+        "en": "Automated workflow suggestions and task automation to reduce repetitive work",
+        "ko": "반복적인 업무를 줄이기 위한 자동화된 워크플로우 제안 및 작업 자동화"
+      },
+      {
+        "en": "Intelligent summaries and insights from conversations and channels",
+        "ko": "대화 및 채널의 내용을 요약하고 인사이트를 제공하는 지능형 기능"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Seamlessly integrated into Slack's existing interface, making it immediately accessible to teams already using the platform",
+        "ko": "이미 Slack을 사용 중인 팀들이 즉시 활용할 수 있도록 기존 인터페이스에 매끄럽게 통합되어 있습니다."
+      },
+      {
+        "en": "Helps teams save time by automating routine inquiries and reducing time spent searching for information",
+        "ko": "루틴 질문을 자동화하고 정보 검색에 소요되는 시간을 줄여 팀이 시간을 절약할 수 있게 도와줍니다."
+      },
+      {
+        "en": "Works across different devices and platforms where Slack is available, supporting distributed teams",
+        "ko": "Slack이 지원되는 다양한 기기와 플랫폼에서 작동하여 분산된 팀을 지원합니다."
+      }
+    ],
+    "cons": [
+      {
+        "en": "Pricing and exact feature availability for AI capabilities may vary by workspace plan, requiring review of current offerings",
+        "ko": "AI 기능의 정확한 가격 및 가용성은 워크스페이스 플랜에 따라 다를 수 있으므로 최신 정보 확인이 필요합니다."
+      },
+      {
+        "en": "Effectiveness depends on how well teams set up workflows and integrate AI into their existing processes",
+        "ko": "AI의 효과는 팀이 워크플로우를 얼마나 잘 설정하고 기존 프로세스에 통합하느냐에 따라 달라집니다."
+      },
+      {
+        "en": "Limited to the Slack ecosystem; teams using other communication platforms cannot access these features",
+        "ko": "Slack 생태계로 제한되어 있어 다른 커뮤니케이션 플랫폼을 사용하는 팀은 이 기능을 활용할 수 없습니다."
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Quickly summarize long threads and catch up on channel discussions without reading every message",
+        "ko": "긴 스레드를 빠르게 요약하고 모든 메시지를 읽지 않고도 채널 논의 내용을 파악합니다."
+      },
+      {
+        "en": "Automate responses to frequently asked questions and routine administrative requests",
+        "ko": "자주 묻는 질문과 일상적인 관리 요청에 대한 응답을 자동화합니다."
+      },
+      {
+        "en": "Find specific information from past conversations and documents without manual searching through archives",
+        "ko": "아카이브를 수동으로 검색하지 않고 과거 대화와 문서에서 특정 정보를 찾습니다."
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Larger teams and enterprises that need to streamline communication and reduce time spent on routine tasks",
+        "ko": "커뮤니케이션을 효율화하고 일상 업무에 소요되는 시간을 줄일 필요가 있는 대규모 팀 및 엔터프라이즈"
+      },
+      {
+        "en": "Organizations that heavily rely on Slack for internal communication and want to maximize workplace productivity",
+        "ko": "내부 커뮤니케이션을 위해 Slack에 크게 의존하면서 업무 생산성을 극대화하고 싶은 조직"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Very small teams with minimal communication volume that may not see significant benefit from AI automation",
+        "ko": "커뮤니케이션량이 적은 소규모 팀으로 AI 자동화의 이점이 크지 않을 수 있습니다."
+      },
+      {
+        "en": "Organizations not using Slack or those requiring AI features across multiple communication platforms",
+        "ko": "Slack을 사용하지 않거나 여러 커뮤니케이션 플랫폼에서 AI 기능이 필요한 조직"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Free Slack workspaces include basic features, but AI-powered capabilities may require a paid plan or Slack+ subscription. Check Slack's current offerings for feature availability.",
+      "ko": "무료 Slack 워크스페이스에는 기본 기능이 포함되지만, AI 기반 기능은 유료 플랜이나 Slack+ 구독이 필요할 수 있습니다. 현재 기능 가용성은 Slack의 공식 사이트에서 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "AI features are typically available to Slack Pro, Business+, and Enterprise customers. Additional features or enhanced AI capabilities may be part of premium add-ons. Review Slack's pricing page for the most current details.",
+      "ko": "AI 기능은 일반적으로 Slack Pro, Business+, Enterprise 고객을 위해 제공됩니다. 추가 기능이나 향상된 AI 기능은 프리미엄 추가 옵션의 일부일 수 있습니다. 최신 정보는 Slack의 가격 페이지에서 확인하세요."
+    },
+    "commercialNotes": {
+      "en": "Slack AI is fully supported for commercial use within all Slack workspace plans. Organizations can leverage AI features to improve team productivity and workflow automation as part of their standard business operations.",
+      "ko": "Slack AI는 모든 Slack 워크스페이스 플랜 내에서 상용 목적으로 완전히 지원됩니다. 조직은 팀 생산성 향상 및 워크플로우 자동화를 위해 AI 기능을 표준 비즈니스 운영의 일부로 활용할 수 있습니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "google-gemini-workspace",
+    "name": "Google Gemini Workspace",
+    "slug": "google-gemini-workspace",
+    "description": {
+      "en": "Google Gemini integrated into Google Workspace apps (Docs, Sheets, Gmail, Meet) to assist with writing, analysis, and productivity tasks.",
+      "ko": "Google 문서, 시트, Gmail, Meet 등 Google Workspace 앱에 통합된 Gemini AI로 글쓰기, 분석, 생산성 작업을 지원합니다."
+    },
+    "longDescription": {
+      "en": "Google Gemini Workspace brings generative AI capabilities directly into familiar productivity tools like Google Docs, Sheets, Gmail, and Google Meet. It helps users draft content, analyze data, summarize conversations, and automate routine tasks without leaving their workspace. The integration aims to streamline workflows for teams and individuals using Google's ecosystem.",
+      "ko": "Google Gemini은 Google 문서, 시트, Gmail, Meet 등 익숙한 생산성 도구에 직접 통합되어 있습니다. 콘텐츠 작성, 데이터 분석, 회의 요약, 일상적인 작업 자동화를 지원하며, 사용자가 Google Workspace를 벗어나지 않고도 모든 작업을 수행할 수 있습니다. 팀과 개인의 업무 흐름을 간소화하는 것을 목표로 합니다."
+    },
+    "beginnerDescription": {
+      "en": "An AI assistant built into Google Docs, Sheets, and Gmail that helps you write emails, create documents, and organize information more quickly.",
+      "ko": "Google 문서, 시트, Gmail에 내장된 AI 도우미로, 이메일 작성, 문서 생성, 정보 정리를 더 빠르게 도와줍니다."
+    },
+    "websiteUrl": "https://workspace.google.com/solutions/ai/",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "rating": 4.6,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "ai assistant",
+      "productivity",
+      "workspace integration",
+      "writing",
+      "collaboration"
+    ],
+    "features": [
+      {
+        "en": "AI-powered writing assistance in Google Docs for drafting, editing, and brainstorming",
+        "ko": "Google 문서에서 초안 작성, 편집, 아이디어 도출을 위한 AI 기반 글쓰기 지원"
+      },
+      {
+        "en": "Email composition and response suggestions in Gmail",
+        "ko": "Gmail에서 이메일 작성 및 회신 제안"
+      },
+      {
+        "en": "Data analysis and spreadsheet formula suggestions in Google Sheets",
+        "ko": "Google Sheets에서 데이터 분석 및 수식 제안"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Seamlessly integrated into Google Workspace—no need to switch applications",
+        "ko": "Google Workspace에 완벽히 통합되어 있어 다른 도구로 전환할 필요가 없습니다."
+      },
+      {
+        "en": "Free tier available for basic AI features, accessible to all Workspace users",
+        "ko": "기본 AI 기능을 무료로 사용할 수 있어 모든 Workspace 사용자가 접근 가능합니다."
+      },
+      {
+        "en": "Works across multiple apps (Docs, Sheets, Gmail, Meet) with consistent experience",
+        "ko": "여러 앱(문서, 시트, Gmail, Meet)에서 일관된 경험을 제공합니다."
+      }
+    ],
+    "cons": [
+      {
+        "en": "Korean language support is limited; interface and prompts are primarily in English",
+        "ko": "한국어 지원이 제한적이며, 인터페이스와 프롬프트는 주로 영어입니다."
+      },
+      {
+        "en": "Advanced AI features require a paid Google One subscription or Workspace plan upgrade",
+        "ko": "고급 AI 기능을 사용하려면 유료 Google One 구독 또는 Workspace 플랜 업그레이드가 필요합니다."
+      },
+      {
+        "en": "Limited customization compared to standalone AI writing tools; relies on Google's model",
+        "ko": "독립형 AI 작성 도구에 비해 커스터마이제이션이 제한적이며 Google의 모델에만 의존합니다."
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Professionals drafting emails and reports quickly within Gmail and Google Docs",
+        "ko": "Gmail과 Google 문서에서 이메일과 보고서를 빠르게 작성하는 전문가"
+      },
+      {
+        "en": "Teams analyzing spreadsheet data and creating insights without leaving Sheets",
+        "ko": "시트를 벗어나지 않고 스프레드시트 데이터를 분석하고 인사이트를 생성하는 팀"
+      },
+      {
+        "en": "Students writing essays and organizing research notes in Google Docs with AI suggestions",
+        "ko": "Google 문서에서 AI 제안을 활용해 에세이를 작성하고 연구 노트를 정리하는 학생"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Google Workspace users who want AI assistance without changing their existing tools",
+        "ko": "기존 도구를 바꾸지 않고 AI 지원을 원하는 Google Workspace 사용자"
+      },
+      {
+        "en": "Teams and organizations already invested in Google's productivity ecosystem",
+        "ko": "Google의 생산성 생태계에 이미 투자한 팀과 조직"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Users needing advanced AI customization or fine-tuning beyond standard templates",
+        "ko": "표준 템플릿 이상의 고급 AI 커스터마이제이션이 필요한 사용자"
+      },
+      {
+        "en": "Non-English speakers without Korean or other language interface support",
+        "ko": "한국어 등 다른 언어 인터페이스를 지원받지 못하는 비영어 사용자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Basic Gemini features are included with Google Workspace free tier, though usage may be limited. Check Google's official site for current tier definitions and feature availability.",
+      "ko": "기본 Gemini 기능은 Google Workspace 무료 플랜에 포함되지만 사용량에 제한이 있을 수 있습니다. 현재 플랜 정의 및 기능 가용성은 Google 공식 웹사이트를 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Premium AI features and higher usage limits are available through Google One subscription (for personal) or Workspace paid plans (for teams). Exact pricing and features vary by region and subscription tier.",
+      "ko": "프리미엄 AI 기능과 더 높은 사용량 한도는 Google One 구독(개인용) 또는 Workspace 유료 플랜(팀용)을 통해 제공됩니다. 정확한 가격과 기능은 지역 및 구독 플랜에 따라 다릅니다."
+    },
+    "commercialNotes": {
+      "en": "Commercial use is permitted under Google Workspace terms; content generated can be used for business purposes. Review your specific Google Workspace or Google One agreement for commercial usage rights and limitations.",
+      "ko": "상업적 사용은 Google Workspace 약관에 따라 허용되며, 생성된 콘텐츠는 비즈니스 목적으로 사용할 수 있습니다. 상업적 사용 권리와 제한 사항은 해당 Google Workspace 또는 Google One 계약을 검토하세요."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "superhuman-ai",
+    "name": "Superhuman AI",
+    "slug": "superhuman-ai",
+    "description": {
+      "en": "Superhuman is an AI-powered email client designed to help professionals manage their inbox more efficiently with smart features and keyboard shortcuts.",
+      "ko": "Superhuman은 스마트 기능과 키보드 단축키를 활용하여 전문가들이 이메일을 더 효율적으로 관리하도록 돕는 AI 기반 이메일 클라이언트입니다."
+    },
+    "longDescription": {
+      "en": "Superhuman is a premium email management platform that combines artificial intelligence with a fast, keyboard-first interface to help users achieve inbox zero and handle email more productively. It offers features like AI-powered email summarization, smart search, and automated workflows designed for busy professionals who want to spend less time on email.",
+      "ko": "Superhuman은 AI와 빠른 키보드 중심 인터페이스를 결합하여 사용자가 받은메일을 정리하고 이메일을 더 생산적으로 처리하도록 돕는 프리미엄 이메일 관리 플랫폼입니다. AI 기반 이메일 요약, 스마트 검색, 자동화된 워크플로우 등의 기능을 제공하며, 이메일에 소요되는 시간을 줄이고 싶은 바쁜 전문가들을 위해 설계되었습니다."
+    },
+    "beginnerDescription": {
+      "en": "Superhuman is a smart email app that uses AI to help you organize and speed up your email workflow. It's designed to make managing your inbox easier and faster through automation and intelligent features.",
+      "ko": "Superhuman은 AI를 활용해 이메일 정리와 처리를 빠르게 도와주는 똑똑한 메일 앱입니다. 자동화와 지능형 기능을 통해 받은메일 관리를 더 쉽고 빠르게 만들어 줍니다."
+    },
+    "websiteUrl": "https://superhuman.com",
+    "categoryId": "productivity-education",
+    "pricingType": "Paid",
+    "startingPrice": "$30/mo",
+    "rating": 4.6,
+    "beginnerFriendly": false,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "email management",
+      "ai assistant",
+      "productivity"
+    ],
+    "features": [
+      {
+        "en": "AI-powered email summarization and smart replies to save time on composing messages",
+        "ko": "메시지 작성 시간을 줄이기 위한 AI 기반 이메일 요약 및 스마트 회신 기능"
+      },
+      {
+        "en": "Keyboard-first interface and shortcuts designed for power users to maximize efficiency",
+        "ko": "전문가 사용자의 효율성을 극대화하도록 설계된 키보드 우선 인터페이스 및 단축키"
+      },
+      {
+        "en": "Advanced search, email tracking, and automated workflow features to organize and prioritize messages",
+        "ko": "메시지 정렬 및 우선순위 지정을 위한 고급 검색, 이메일 추적, 자동화된 워크플로우 기능"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Significantly speeds up email processing for power users with intuitive keyboard shortcuts and AI assistance",
+        "ko": "직관적인 키보드 단축키와 AI 지원으로 전문가 사용자의 이메일 처리 속도를 크게 향상시킵니다"
+      },
+      {
+        "en": "Reduces time spent in email through intelligent automation and summarization features",
+        "ko": "지능형 자동화 및 요약 기능을 통해 이메일에 소요되는 시간을 줄입니다"
+      },
+      {
+        "en": "Works seamlessly with major email providers and integrates with popular productivity tools",
+        "ko": "주요 이메일 제공자와 원활하게 연동되며 인기 있는 생산성 도구와 통합됩니다"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Premium pricing may be prohibitive for casual users or small teams with limited budgets",
+        "ko": "프리미엄 가격 책정이 casual 사용자나 예산이 제한된 소규모 팀에게는 부담스러울 수 있습니다"
+      },
+      {
+        "en": "Requires a learning curve to master keyboard shortcuts and full feature set, not ideal for non-technical users",
+        "ko": "키보드 단축키와 전체 기능을 마스터하기 위해 학습 곡선이 필요하며, 비기술 사용자에게는 이상적이지 않습니다"
+      },
+      {
+        "en": "No Korean language interface or localization support currently available",
+        "ko": "현재 한국어 인터페이스나 현지화 지원이 제공되지 않습니다"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Sales professionals and executives who receive high volumes of email and need rapid triage and response capabilities",
+        "ko": "대량의 이메일을 받으며 빠른 분류 및 응답 기능이 필요한 영업 전문가 및 경영진"
+      },
+      {
+        "en": "Remote teams and distributed workers who rely heavily on email communication and want to maintain focus on core tasks",
+        "ko": "이메일 소통에 크게 의존하고 핵심 업무에 집중하고 싶은 원격 팀과 분산 근무 직원"
+      },
+      {
+        "en": "Knowledge workers seeking to achieve inbox zero and reduce administrative overhead from email management",
+        "ko": "받은메일 정리를 추구하고 이메일 관리의 행정 부담을 줄이려는 지식 근로자"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Busy professionals and executives handling high email volumes who value efficiency and are willing to invest in productivity tools",
+        "ko": "높은 이메일 양을 처리하는 바쁜 전문가 및 경영진으로, 효율성을 중시하고 생산성 도구에 투자할 의향이 있는 사람"
+      },
+      {
+        "en": "Power users and keyboard enthusiasts who want to maximize email workflow speed and automation",
+        "ko": "이메일 워크플로우 속도와 자동화를 극대화하고 싶은 파워 사용자 및 키보드 애호가"
+      },
+      {
+        "en": "Teams focused on sales, recruitment, or customer communication where rapid email response is critical",
+        "ko": "빠른 이메일 응답이 중요한 판매, 채용, 고객 소통에 집중하는 팀"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Casual email users or individuals who send and receive only occasional messages",
+        "ko": "이메일을 가끔 주고받는 casual 사용자 또는 개인"
+      },
+      {
+        "en": "Organizations seeking free or low-cost email solutions without budget for premium tools",
+        "ko": "무료 또는 저렴한 이메일 솔루션을 찾는 조직 또는 프리미었 도구 예산이 없는 기업"
+      },
+      {
+        "en": "Users who prefer simple, minimalist tools and want to avoid a steep learning curve for keyboard shortcuts",
+        "ko": "단순하고 미니멀한 도구를 선호하고 키보드 단축키 학습 곡선을 피하고 싶은 사용자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Superhuman does not offer a free plan; however, they may provide a trial period for new users to evaluate the platform before committing to a paid subscription.",
+      "ko": "Superhuman은 무료 플랜을 제공하지 않지만, 신규 사용자가 유료 구독에 약정하기 전에 플랫폼을 평가할 수 있도록 체험 기간을 제공할 수 있습니다. 자세한 내용은 공식 웹사이트를 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Superhuman operates on a subscription model with a single paid tier. Pricing details are available on their website, and they typically offer monthly billing options. Contact their sales team for enterprise or team pricing.",
+      "ko": "Superhuman은 단일 유료 요금제 구독 모델을 운영합니다. 가격 세부 정보는 웹사이트에서 확인할 수 있으며, 일반적으로 월간 청구 옵션을 제공합니다. 기업 또는 팀 가격은 영업팀에 문의하세요."
+    },
+    "commercialNotes": {
+      "en": "Superhuman is fully designed for commercial and professional use, making it ideal for businesses and individual professionals seeking to optimize their email productivity and team collaboration.",
+      "ko": "Superhuman은 이메일 생산성과 팀 협업을 최적화하려는 사업 및 개인 전문가에게 이상적으로, 상업 및 전문가 용도로 완벽하게 설계되었습니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "shortwave-ai",
+    "name": "Shortwave AI",
+    "slug": "shortwave-ai",
+    "description": {
+      "en": "Shortwave is an AI-powered email client designed to streamline inbox management and automate routine email tasks.",
+      "ko": "Shortwave는 이메일 관리를 효율화하고 반복적인 이메일 작업을 자동화하는 AI 기반 이메일 클라이언트입니다."
+    },
+    "longDescription": {
+      "en": "Shortwave leverages artificial intelligence to help users organize, prioritize, and respond to emails more efficiently. It combines smart categorization, automated drafting, and intelligent summarization to reduce email overload and save time on routine communications.",
+      "ko": "Shortwave는 AI 기술을 활용하여 사용자가 이메일을 더 효율적으로 정리, 우선순위 지정, 대응할 수 있도록 돕습니다. 스마트 분류, 자동 작성, 지능형 요약 기능을 결합하여 이메일 과부하를 줄이고 반복적인 업무에 소요되는 시간을 절약합니다."
+    },
+    "beginnerDescription": {
+      "en": "Shortwave is an easy-to-use email app that uses AI to automatically organize your inbox and help you write replies faster.",
+      "ko": "Shortwave는 AI를 활용해 받은 메일함을 자동으로 정리하고 답장 작성을 더 빠르게 도와주는 사용하기 쉬운 이메일 앱입니다."
+    },
+    "websiteUrl": "https://www.shortwave.com",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "startingPrice": "$99/mo",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "email",
+      "ai",
+      "productivity",
+      "automation",
+      "inbox management"
+    ],
+    "features": [
+      {
+        "en": "AI-powered email drafting and reply suggestions",
+        "ko": "AI 기반 이메일 초안 작성 및 답장 제안"
+      },
+      {
+        "en": "Smart inbox categorization and prioritization",
+        "ko": "스마트 받은편지함 분류 및 우선순위 지정"
+      },
+      {
+        "en": "Email summarization and quick insights",
+        "ko": "이메일 요약 및 빠른 통찰력 제공"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Significantly reduces time spent on email management through intelligent automation and AI assistance.",
+        "ko": "지능형 자동화와 AI 지원을 통해 이메일 관리에 소요되는 시간을 크게 단축합니다."
+      },
+      {
+        "en": "Intuitive interface that requires minimal learning curve for new users.",
+        "ko": "새로운 사용자도 쉽게 배울 수 있는 직관적인 인터페이스를 제공합니다."
+      }
+    ],
+    "cons": [
+      {
+        "en": "Pricing is relatively high compared to traditional email clients, which may not suit all budgets.",
+        "ko": "기존 이메일 클라이언트에 비해 가격이 상대적으로 높아 모든 사용자의 예산에 맞지 않을 수 있습니다."
+      },
+      {
+        "en": "Limited support for non-English languages and workflows, restricting global usability.",
+        "ko": "영어 이외의 언어 지원이 제한적이어서 전 지구적 사용성이 제약될 수 있습니다."
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Busy professionals seeking to reduce email overload and reclaim time for strategic work.",
+        "ko": "이메일 과부하를 줄이고 전략적 업무에 시간을 할애하려는 바쁜 직장인"
+      },
+      {
+        "en": "Sales and customer service teams that handle high email volumes and need faster response workflows.",
+        "ko": "높은 이메일 볼륨을 처리하고 빠른 응답 워크플로우가 필요한 영업 및 고객서비스 팀"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Professionals and teams managing high email volumes who value time savings and productivity.",
+        "ko": "많은 이메일을 관리하고 시간 절약과 생산성을 중요시하는 전문가 및 팀"
+      },
+      {
+        "en": "Businesses seeking to improve team collaboration and standardize email communication practices.",
+        "ko": "팀 협업을 개선하고 이메일 커뮤니케이션 관행을 표준화하려는 기업"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Users on a tight budget or those preferring traditional email clients without AI features.",
+        "ko": "예산이 제한적이거나 AI 기능이 없는 전통적인 이메일 클라이언트를 선호하는 사용자"
+      },
+      {
+        "en": "Organizations requiring extensive customization or integration with niche enterprise systems.",
+        "ko": "광범위한 커스터마이제이션이 필요하거나 틈새 기업 시스템과의 통합이 필요한 조직"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Shortwave offers a free trial to evaluate the platform, though specific quotas and features available in the free tier should be verified on their official website.",
+      "ko": "Shortwave는 플랫폼을 평가해볼 수 있는 무료 체험을 제공하지만, 무료 플랜의 구체적인 기능과 제약 사항은 공식 웹사이트에서 확인해야 합니다."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans provide full access to AI features, advanced automation, and team collaboration tools; specific pricing and plan details are available on Shortwave's website.",
+      "ko": "유료 플랜은 AI 기능, 고급 자동화, 팀 협업 도구에 대한 전체 접근을 제공하며, 구체적인 가격과 플랜 세부 사항은 Shortwave 웹사이트에서 확인할 수 있습니다."
+    },
+    "commercialNotes": {
+      "en": "Shortwave is fully suitable for commercial and business use, with team collaboration features designed for enterprise workflows and multiple user accounts.",
+      "ko": "Shortwave는 엔터프라이즈 워크플로우와 여러 사용자 계정을 위해 설계된 팀 협업 기능으로 상업적 비즈니스 사용에 완벽하게 적합합니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "motion",
+    "name": "Motion",
+    "slug": "motion",
+    "description": {
+      "en": "Motion is an AI-powered productivity platform that combines task management, calendar scheduling, and project planning into a unified workspace.",
+      "ko": "Motion은 작업 관리, 일정 조율, 프로젝트 계획을 하나의 플랫폼으로 통합한 AI 기반 생산성 도구입니다."
+    },
+    "longDescription": {
+      "en": "Motion uses artificial intelligence to automatically organize your tasks, schedule meetings, and manage your calendar without manual input. It helps teams and individuals reduce context-switching by intelligently distributing work and aligning priorities across projects. The platform emphasizes automation to free up time typically spent on administrative planning.",
+      "ko": "Motion은 인공지능을 활용해 작업을 자동으로 정리하고 일정을 조율하며 캘린더를 관리합니다. 팀과 개인이 작업을 효율적으로 배분하고 우선순위를 맞춤으로써 집중력 분산을 줄일 수 있게 돕습니다. 반복적인 계획 작업을 자동화해 더 중요한 일에 집중할 수 있는 환경을 제공합니다."
+    },
+    "beginnerDescription": {
+      "en": "Motion is an easy-to-use AI assistant that automatically organizes your to-do list and calendar so you don't have to manually shuffle everything around.",
+      "ko": "Motion은 당신의 할 일 목록과 일정을 자동으로 정리해주는 AI 어시스턴트로, 복잡한 일정 관리를 걱정할 필요가 없습니다."
+    },
+    "websiteUrl": "https://www.usemotion.com",
+    "categoryId": "productivity-education",
+    "pricingType": "Paid",
+    "startingPrice": "$19/mo",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "productivity",
+      "ai-scheduling",
+      "task-management",
+      "automation"
+    ],
+    "features": [
+      {
+        "en": "AI-powered automatic task scheduling and calendar management",
+        "ko": "AI 기반 자동 작업 스케줄링 및 캘린더 관리"
+      },
+      {
+        "en": "Project planning with intelligent work distribution across team members",
+        "ko": "팀원들 간의 지능형 작업 배분을 통한 프로젝트 계획"
+      },
+      {
+        "en": "Real-time synchronization with popular calendar and productivity tools",
+        "ko": "Google Calendar, Slack 등 주요 도구와의 실시간 동기화"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Significantly reduces manual scheduling and planning time with AI automation",
+        "ko": "AI 자동화로 수작업 스케줄링 시간을 대폭 단축"
+      },
+      {
+        "en": "Intelligent priority management helps teams focus on high-impact work",
+        "ko": "우선순위 자동 설정으로 팀이 중요한 업무에 집중할 수 있음"
+      },
+      {
+        "en": "Seamless integration with existing calendar and communication tools",
+        "ko": "기존 캘린더 및 소통 도구와 자연스러운 연동"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Learning curve for organizations new to AI-driven scheduling and planning",
+        "ko": "AI 기반 일정 관리에 익숙하지 않은 사용자들의 적응 시간 필요"
+      },
+      {
+        "en": "Pricing may be prohibitive for solo freelancers or very small teams",
+        "ko": "개인 프리랜서나 소규모 팀에는 비용이 부담스러울 수 있음"
+      },
+      {
+        "en": "Limited offline functionality; heavily dependent on cloud connectivity and integrations",
+        "ko": "오프라인 기능이 제한적이며 인터넷 연결과 통합 도구 의존도가 높음"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Project managers coordinating multiple team members' schedules and deadlines across departments",
+        "ko": "여러 부서의 팀원 일정과 마감일을 조율하는 프로젝트 매니저"
+      },
+      {
+        "en": "Knowledge workers and executives looking to reclaim time spent on administrative scheduling",
+        "ko": "일정 관리에 쓰는 시간을 줄이고 싶은 경영진 및 지식 근로자"
+      },
+      {
+        "en": "Agile teams wanting to optimize sprint planning and task distribution",
+        "ko": "스프린트 계획과 작업 배분을 최적화하려는 애자일 팀"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Mid-size to large teams that value automation and want to eliminate scheduling overhead",
+        "ko": "팀 규모가 있고 자동화를 중시하는 조직"
+      },
+      {
+        "en": "Busy professionals managing complex calendars and multiple projects simultaneously",
+        "ko": "복잡한 일정과 여러 프로젝트를 동시에 관리하는 바쁜 전문가"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Solo freelancers or one-person businesses with simple scheduling needs and tight budgets",
+        "ko": "일정 관리가 단순하고 예산이 제한적인 개인 프리랜서"
+      },
+      {
+        "en": "Organizations requiring offline-first solutions or with limited cloud/integration infrastructure",
+        "ko": "오프라인 작업 중심이거나 클라우드 인프라가 부족한 조직"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Motion does not offer a free plan; all users must subscribe to a paid tier. However, the company may occasionally provide a trial period for new users to evaluate the platform.",
+      "ko": "Motion은 무료 요금제를 제공하지 않으며 모든 사용자가 유료 요금제에 가입해야 합니다. 신규 사용자 대상 평가판이 있을 수 있으니 공식 웹사이트를 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Motion offers subscription plans starting at approximately $19 per month, with higher tiers providing additional team members and advanced features. Visit the official website for the most current pricing and plan details.",
+      "ko": "Motion의 기본 요금제는 월 약 $19부터 시작하며, 상위 요금제일수록 팀원 추가 및 고급 기능을 제공합니다. 최신 가격 정보는 공식 사이트에서 확인하시기 바랍니다."
+    },
+    "commercialNotes": {
+      "en": "Motion is designed for professional and commercial use, supporting team collaboration and enterprise-level integrations. Commercial licensing and volume pricing are available for larger organizations.",
+      "ko": "Motion은 상업적 사용을 완벽히 지원하며 팀 협업과 엔터프라이즈 통합을 제공합니다. 대규모 조직을 위한 맞춤형 라이선스와 단체 할인은 공식 영업팀에 문의하세요."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "reclaim-ai",
+    "name": "Reclaim AI",
+    "slug": "reclaim-ai",
+    "description": {
+      "en": "An AI-powered scheduling assistant that automatically blocks time on your calendar for focus work, meetings, and personal tasks based on your preferences and availability.",
+      "ko": "당신의 선호도와 일정을 바탕으로 업무, 회의, 개인 시간을 자동으로 달력에 배치해주는 AI 스케줄링 도우미입니다."
+    },
+    "longDescription": {
+      "en": "Reclaim AI intelligently manages your calendar by automatically scheduling focus time, meetings, and tasks while learning your preferences and habits. It integrates with your existing calendar apps and helps reduce context-switching and meeting overload. The tool uses machine learning to optimize your schedule for productivity while respecting your team's availability.",
+      "ko": "Reclaim AI는 당신의 선호도와 습관을 학습하면서 집중 시간, 회의, 업무를 자동으로 조정해주는 스마트한 일정 관리 도구입니다. 기존 캘린더 앱과 연동되어 업무 중단과 회의 과다를 줄이는 데 도움이 됩니다. 머신러닝을 통해 팀의 일정을 존중하면서도 당신의 생산성을 최적화합니다."
+    },
+    "beginnerDescription": {
+      "en": "Reclaim AI automatically organizes your calendar to protect your focus time and reduce meeting chaos. It learns what matters to you and makes smart scheduling decisions so you don't have to.",
+      "ko": "Reclaim AI는 자동으로 당신의 달력을 정리해서 집중할 시간을 지키고 회의 일정을 체계적으로 관리합니다. 당신의 업무 방식을 학습해서 똑똑한 일정 조정을 자동으로 해줍니다."
+    },
+    "websiteUrl": "https://reclaim.ai",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "startingPrice": "$15/mo",
+    "rating": 4.6,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "calendar",
+      "scheduling",
+      "productivity",
+      "time management",
+      "ai"
+    ],
+    "features": [
+      {
+        "en": "Automatic time blocking for focus work, meetings, and personal tasks",
+        "ko": "집중 작업, 회의, 개인 시간을 자동으로 달력에 배치"
+      },
+      {
+        "en": "Smart scheduling that learns your preferences and team availability",
+        "ko": "당신의 선호도와 팀 일정을 학습하는 지능형 스케줄링"
+      },
+      {
+        "en": "Integration with Google Calendar and Microsoft Outlook",
+        "ko": "Google Calendar 및 Microsoft Outlook과 연동"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Significantly reduces calendar fragmentation and meeting overload by protecting focus time",
+        "ko": "달력이 산산조각나는 것을 줄이고 회의로 가득 찬 일정을 개선해 집중 시간을 지켜줌"
+      },
+      {
+        "en": "Learns your working patterns and preferences over time to make increasingly smarter suggestions",
+        "ko": "시간이 지나면서 당신의 업무 패턴을 학습해 점점 더 똑똑한 제안을 제공"
+      },
+      {
+        "en": "Seamlessly integrates with popular calendar apps without requiring manual intervention",
+        "ko": "수동으로 개입할 필요 없이 인기 있는 캘린더 앱과 자연스럽게 연동"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Requires trust in AI-driven scheduling decisions which may not always match personal preferences initially",
+        "ko": "처음에는 AI 기반 일정 조정이 개인 선호도와 완전히 일치하지 않을 수 있음"
+      },
+      {
+        "en": "Limited customization options for specific workflow needs compared to manual scheduling",
+        "ko": "특정 업무 방식에 맞춘 커스터마이징 옵션이 수동 일정 관리에 비해 제한적"
+      },
+      {
+        "en": "May struggle with highly irregular schedules or non-standard working patterns",
+        "ko": "불규칙한 일정이나 비표준적인 업무 패턴에는 어려움을 겪을 수 있음"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Protecting deep work time for developers, designers, and writers who need uninterrupted focus",
+        "ko": "개발자, 디자이너, 작가 등이 방해받지 않고 집중해야 할 때 업무 시간 보호"
+      },
+      {
+        "en": "Reducing meeting fatigue and calendar chaos for busy managers and team leads",
+        "ko": "바쁜 관리자와 팀 리더가 회의 피로와 일정 혼란을 줄일 때"
+      },
+      {
+        "en": "Coordinating schedules across distributed teams while maintaining individual productivity",
+        "ko": "팀의 개인 생산성을 유지하면서 분산된 팀원들의 일정을 조율할 때"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Knowledge workers, developers, and creatives who need protected focus time in their schedules",
+        "ko": "달력에 집중 시간을 확보해야 하는 지식 근로자, 개발자, 창작자"
+      },
+      {
+        "en": "Teams and organizations using Google Workspace or Microsoft 365 seeking to improve scheduling efficiency",
+        "ko": "Google Workspace나 Microsoft 365를 사용하면서 일정 효율을 높이고 싶은 팀과 조직"
+      },
+      {
+        "en": "Remote and distributed teams struggling with excessive meetings and context switching",
+        "ko": "회의 과다와 업무 전환으로 어려움을 겪는 원격 근무 팀"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Teams with highly complex manual scheduling requirements that demand full human control",
+        "ko": "완전한 인간적 제어가 필요한 복잡한 수동 일정 관리가 필요한 팀"
+      },
+      {
+        "en": "Organizations without Google Calendar or Outlook integration needs",
+        "ko": "Google Calendar나 Outlook 연동이 필요 없는 조직"
+      },
+      {
+        "en": "Users who prefer complete manual control over every calendar decision",
+        "ko": "모든 달력 결정을 완전히 수동으로 관리하고 싶은 사용자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "The free plan offers basic calendar synchronization and limited AI scheduling features. Check the official website for current free tier capabilities and any usage limits.",
+      "ko": "무료 플랜은 기본적인 달력 동기화와 제한된 AI 스케줄링 기능을 제공합니다. 최신 무료 플랜 내용과 사용 제한은 공식 웹사이트에서 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans unlock advanced AI scheduling, priority support, and advanced integrations. Visit reclaim.ai for current pricing details and plan comparisons.",
+      "ko": "유료 플랜은 고급 AI 스케줄링, 우선 지원, 고급 통합 기능을 제공합니다. 최신 요금과 플랜 비교는 reclaim.ai를 방문하세요."
+    },
+    "commercialNotes": {
+      "en": "Reclaim AI is suitable for commercial use and is widely adopted by teams and enterprises. Licensing typically scales based on team size and requirements.",
+      "ko": "Reclaim AI는 상업적 사용에 적합하며 많은 팀과 기업에서 사용하고 있습니다. 라이선스는 팀 규모와 요구 사항에 따라 확장됩니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "sunsama",
+    "name": "Sunsama",
+    "slug": "sunsama",
+    "description": {
+      "en": "Sunsama is a daily planning and task management tool designed to help teams and individuals organize their work and integrate tasks from multiple sources into a focused daily schedule.",
+      "ko": "Sunsama는 팀과 개인이 여러 소스의 작업을 하나의 집중된 일일 일정으로 통합하여 업무를 정리할 수 있도록 돕는 일일 계획 및 작업 관리 도구입니다."
+    },
+    "longDescription": {
+      "en": "Sunsama connects with popular tools like Slack, Asana, Jira, and Todoist to aggregate your tasks and help you build a realistic daily plan. Its core philosophy is reducing decision fatigue by having you plan your day each morning, review progress, and focus on what matters most rather than managing an overwhelming task list.",
+      "ko": "Sunsama는 Slack, Asana, Jira, Todoist 같은 인기 있는 도구들과 연동하여 작업을 한곳으로 모으고 현실적인 일일 계획을 세우도록 돕습니다. 아침마다 하루를 계획하고 진행 상황을 검토하며 과도한 작업 목록 관리 대신 중요한 것에 집중하도록 하여 의사결정 피로를 줄이는 것이 핵심 철학입니다."
+    },
+    "beginnerDescription": {
+      "en": "Sunsama helps you plan your day by gathering all your tasks from different tools into one place, so you can focus on what's truly important each morning.",
+      "ko": "Sunsama는 여러 도구에 흩어져 있는 작업들을 한곳으로 모아서 매일 아침 정말 중요한 일에 집중할 수 있도록 도와줍니다."
+    },
+    "websiteUrl": "https://www.sunsama.com",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "daily planning",
+      "task management",
+      "productivity",
+      "focus"
+    ],
+    "features": [
+      {
+        "en": "Integration with popular work tools (Slack, Asana, Jira, Todoist, Google Calendar) to centralize tasks and communications",
+        "ko": "인기 있는 업무 도구들(Slack, Asana, Jira, Todoist, Google Calendar)과의 연동으로 작업과 커뮤니케이션을 한곳으로 통합"
+      },
+      {
+        "en": "Daily planning ritual that guides you through prioritizing and time-blocking your most important tasks each morning",
+        "ko": "매일 아침 가장 중요한 작업을 우선순위 지정하고 시간을 할당하도록 안내하는 일일 계획 의식"
+      },
+      {
+        "en": "End-of-day review and progress tracking to capture wins and understand what you accomplished versus planned",
+        "ko": "하루를 마치며 진행 상황을 검토하고 성과를 추적하여 계획 대비 실제 달성한 것을 파악"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Exceptionally focused approach to daily planning that reduces cognitive overload and decision fatigue",
+        "ko": "인지적 과부하와 의사결정 피로를 크게 줄이는 매우 집중된 일일 계획 접근 방식"
+      },
+      {
+        "en": "Seamless integration with multiple work tools makes it a natural hub for task management without recreating work elsewhere",
+        "ko": "여러 업무 도구와의 원활한 연동으로 자연스러운 작업 관리 허브 역할을 하며 중복 작업이 없음"
+      },
+      {
+        "en": "Mobile support allows you to maintain your daily plan and review progress on the go",
+        "ko": "모바일 지원으로 이동 중에도 일일 계획을 유지하고 진행 상황을 검토할 수 있음"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Requires consistent daily engagement with the morning planning ritual to be effective; less suitable for users who prefer ad-hoc task management",
+        "ko": "효과적이려면 매일 아침 계획 의식에 꾸준히 참여해야 하므로 즉흥적인 작업 관리를 선호하는 사용자에게는 덜 적합함"
+      },
+      {
+        "en": "Limited offline functionality and relies on active internet connection and integration setup",
+        "ko": "오프라인 기능이 제한적이며 활발한 인터넷 연결과 통합 설정이 필요함"
+      },
+      {
+        "en": "No native Korean language support, which may be a barrier for Korean-speaking teams",
+        "ko": "한국어 지원이 없어서 한국어를 사용하는 팀에게는 장벽이 될 수 있음"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Knowledge workers and project managers who want to reduce daily decision fatigue and focus on their top priorities",
+        "ko": "일일 의사결정 피로를 줄이고 최우선 과제에 집중하고 싶은 지식근로자와 프로젝트 관리자"
+      },
+      {
+        "en": "Teams using multiple task management and communication tools who need a single daily planning interface",
+        "ko": "여러 작업 관리 및 커뮤니케이션 도구를 사용하는 팀이 하나의 일일 계획 인터페이스가 필요한 경우"
+      },
+      {
+        "en": "Individuals looking to build a consistent morning planning routine and track daily accomplishments",
+        "ko": "일관된 아침 계획 습관을 들이고 일일 성과를 추적하고 싶은 개인"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Remote and hybrid teams who need to synchronize priorities across distributed members",
+        "ko": "분산된 팀원 간 우선순위를 동기화해야 하는 원격 및 하이브리드 팀"
+      },
+      {
+        "en": "Professionals managing complex workflows across multiple tools who value time-blocking and focus",
+        "ko": "시간 할당과 집중력을 중시하며 여러 도구 간 복잡한 워크플로우를 관리하는 전문가"
+      },
+      {
+        "en": "Individuals seeking to improve productivity through structured daily planning and self-reflection",
+        "ko": "구조화된 일일 계획과 자기성찰을 통해 생산성을 향상시키고 싶은 개인"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Teams or individuals who prefer spontaneous task management without daily planning rituals",
+        "ko": "일일 계획 의식 없이 즉흥적인 작업 관리를 선호하는 팀이나 개인"
+      },
+      {
+        "en": "Organizations primarily operating in Korean or requiring Korean language interfaces and support",
+        "ko": "주로 한국어로 운영되거나 한국어 인터페이스와 지원이 필요한 조직"
+      },
+      {
+        "en": "Users with very simple task needs who don't need tool integration or daily review ceremonies",
+        "ko": "도구 통합이나 일일 검토 의식이 필요 없는 단순한 작업 관리만 필요한 사용자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Sunsama offers a free trial to experience the core daily planning features; check their website for current free plan availability and any limitations.",
+      "ko": "Sunsama는 핵심 일일 계획 기능을 경험할 수 있는 무료 평가판을 제공하고 있으며, 현재 무료 플랜 가용성과 제한 사항에 대해서는 공식 웹사이트를 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans unlock full integration capabilities with external tools, advanced features, and team collaboration. Visit Sunsama's pricing page for current plan details and pricing.",
+      "ko": "유료 플랜은 외부 도구와의 완전한 통합, 고급 기능 및 팀 협업을 지원합니다. 현재 플랜 세부 사항과 가격은 Sunsama의 가격 페이지를 방문하여 확인하세요."
+    },
+    "commercialNotes": {
+      "en": "Sunsama is designed for professional and commercial use with team collaboration features; commercial licensing is supported through standard paid plans.",
+      "ko": "Sunsama는 팀 협업 기능이 포함된 전문적이고 상업적 사용을 위해 설계되었으며, 표준 유료 플랜을 통해 상업 라이선싱을 지원합니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "akiflow",
+    "name": "Akiflow",
+    "slug": "akiflow",
+    "description": {
+      "en": "Akiflow is a productivity platform that unifies task management, note-taking, and calendar integration in a single interface.",
+      "ko": "Akiflow는 작업 관리, 메모 작성, 캘린더 통합을 하나의 인터페이스로 통합한 생산성 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Akiflow combines task management, notes, and calendar features to help users organize work in one centralized place. It focuses on capturing ideas quickly and connecting them to your daily schedule, reducing the need to switch between multiple tools. The platform emphasizes a streamlined workflow for professionals who want integrated productivity without unnecessary complexity.",
+      "ko": "Akiflow는 작업 관리, 메모, 캘린더 기능을 결합하여 사용자가 하나의 중앙 공간에서 업무를 정리할 수 있도록 합니다. 빠른 아이디어 캡처와 일일 스케줄 연동에 중점을 두어 여러 도구를 전환할 필요를 줄입니다. 이 플랫폼은 불필요한 복잡성 없이 통합된 생산성을 원하는 전문가들을 위한 간결한 워크플로우를 강조합니다."
+    },
+    "beginnerDescription": {
+      "en": "Akiflow helps you keep your tasks, notes, and calendar in one place so you don't have to jump between different apps. It's designed to be straightforward and quick to use.",
+      "ko": "Akiflow는 작업, 메모, 캘린더를 한 곳에서 관리할 수 있게 해주므로 여러 앱을 오갈 필요가 없습니다. 직관적이고 빠르게 사용할 수 있도록 설계되었습니다."
+    },
+    "websiteUrl": "https://akiflow.com",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "startingPrice": "$11/mo",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "productivity",
+      "task management",
+      "notes",
+      "calendar",
+      "all-in-one"
+    ],
+    "features": [
+      {
+        "en": "Unified inbox combining tasks, notes, and calendar events",
+        "ko": "작업, 메모, 캘린더 이벤트를 결합한 통합 받은편지함"
+      },
+      {
+        "en": "Quick capture with keyboard shortcuts and voice input",
+        "ko": "키보드 단축키와 음성 입력을 통한 빠른 캡처"
+      },
+      {
+        "en": "Integration with popular apps like Google Calendar, Gmail, and Slack",
+        "ko": "Google Calendar, Gmail, Slack 등 주요 앱과의 통합"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Streamlined interface reduces context switching and keeps everything in one view",
+        "ko": "간결한 인터페이스로 컨텍스트 전환을 줄이고 모든 것을 한 화면에 유지"
+      },
+      {
+        "en": "Fast capture and processing of ideas and tasks without friction",
+        "ko": "번거로움 없이 아이디어와 작업을 빠르게 캡처하고 처리"
+      },
+      {
+        "en": "Cross-device synchronization allows seamless workflow between desktop and mobile",
+        "ko": "기기 간 동기화로 데스크톱과 모바일 간 원활한 워크플로우 제공"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Limited customization options compared to more specialized tools like Notion or Todoist",
+        "ko": "Notion이나 Todoist 같은 전문 도구에 비해 커스터마이징 옵션이 제한적"
+      },
+      {
+        "en": "Smaller user community means fewer templates and third-party integrations available",
+        "ko": "소규모 사용자 커뮤니티로 인해 사용 가능한 템플릿과 제3자 통합이 적음"
+      },
+      {
+        "en": "Learning curve for optimizing keyboard shortcuts and workflow automation",
+        "ko": "키보드 단축키와 워크플로우 자동화를 최적화하는 학습 곡선 존재"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Professionals juggling multiple projects who need a single source of truth for tasks and notes",
+        "ko": "여러 프로젝트를 관리하는 전문가들이 작업과 메모의 단일 소스를 필요로 할 때"
+      },
+      {
+        "en": "Knowledge workers capturing ideas throughout the day and syncing them to their calendar",
+        "ko": "하루 종일 아이디어를 캡처하고 캘린더와 동기화해야 하는 지식 근로자"
+      },
+      {
+        "en": "Teams wanting a lightweight alternative to heavier project management tools",
+        "ko": "무거운 프로젝트 관리 도구의 가벼운 대안을 원하는 팀"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Busy professionals and knowledge workers seeking unified task and calendar management",
+        "ko": "통합된 작업 및 캘린더 관리를 원하는 바쁜 전문가 및 지식 근로자"
+      },
+      {
+        "en": "Users who value speed and efficiency over extensive customization",
+        "ko": "광범위한 커스터마이징보다 속도와 효율성을 중시하는 사용자"
+      },
+      {
+        "en": "Small teams and solopreneurs needing integrated productivity without complexity",
+        "ko": "복잡함 없이 통합된 생산성이 필요한 소규모 팀 및 솔로프레너"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Users requiring extensive customization, templates, or complex workflow automation",
+        "ko": "광범위한 커스터마이징, 템플릿, 복잡한 워크플로우 자동화가 필요한 사용자"
+      },
+      {
+        "en": "Large enterprises with complex hierarchical project management needs",
+        "ko": "복잡한 계층 구조의 프로젝트 관리가 필요한 대규모 기업"
+      },
+      {
+        "en": "Users who need robust document collaboration features or version control",
+        "ko": "강력한 문서 협업 기능이나 버전 관리가 필요한 사용자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Akiflow offers a free plan with core features; consult the official website for current limits on tasks, notes, or integrations.",
+      "ko": "Akiflow는 핵심 기능이 포함된 무료 요금제를 제공합니다. 작업, 메모, 통합의 제한사항에 대해서는 공식 웹사이트를 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans unlock additional features and higher limits; check Akiflow's pricing page for the latest plan details and pricing.",
+      "ko": "유료 요금제는 추가 기능과 더 높은 한도를 제공합니다. 최신 요금제 상세 정보는 Akiflow의 가격 책정 페이지를 확인하세요."
+    },
+    "commercialNotes": {
+      "en": "Akiflow can be used commercially and is suitable for small teams and businesses; verify licensing terms for your specific use case on the official site.",
+      "ko": "Akiflow는 상업적으로 사용할 수 있으며 소규모 팀과 비즈니스에 적합합니다. 구체적인 사용 사례에 대한 라이선스 조건은 공식 사이트에서 확인하세요."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "khanmigo",
+    "name": "Khanmigo",
+    "slug": "khanmigo",
+    "description": {
+      "en": "An AI tutor integrated with Khan Academy that helps students learn math, science, and other subjects through personalized guidance and Socratic questioning.",
+      "ko": "칸아카데미와 통합된 AI 튜터로, 학생들이 맞춤형 안내와 소크라테스식 질문을 통해 수학, 과학 등의 과목을 배우도록 돕습니다."
+    },
+    "longDescription": {
+      "en": "Khanmigo is an AI companion built by Khan Academy that combines video lessons with intelligent tutoring to support student learning. It uses conversational AI to guide students through problem-solving using the Socratic method, encouraging critical thinking rather than simply providing answers. The tool is integrated with Khan Academy's curriculum and resources, making it a natural extension for existing Khan Academy users.",
+      "ko": "칸아카데미에서 만든 AI 튜터로, 동영상 강의와 지능형 개인 튜터링을 결합하여 학생 학습을 지원합니다. 대화형 AI를 통해 소크라테스식 방법으로 학생을 문제 해결 과정으로 안내하며, 단순히 답을 제공하기보다는 비판적 사고를 장려합니다. 칸아카데미의 커리큘럼 및 자료와 통합되어 있어 기존 사용자들에게 자연스러운 확장입니다."
+    },
+    "beginnerDescription": {
+      "en": "Khanmigo is an AI tutor that helps you learn by asking guiding questions instead of just giving you answers—like having a patient teacher who pushes you to think for yourself.",
+      "ko": "칸미고는 답을 그냥 알려주는 대신 생각을 유도하는 질문을 던지는 AI 튜터입니다. 학생이 스스로 생각하도록 이끄는 인내심 있는 선생님을 곁에 두는 것 같은 경험입니다."
+    },
+    "websiteUrl": "https://www.khanmigo.ai",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": false,
+    "featured": false,
+    "tags": [
+      "ai tutor",
+      "education",
+      "learning"
+    ],
+    "features": [
+      {
+        "en": "Socratic tutoring via conversational AI that guides students to solutions rather than providing direct answers",
+        "ko": "학생이 답을 직접 얻기보다 해결책으로 나아가도록 유도하는 대화형 AI 소크라테스식 튜터링"
+      },
+      {
+        "en": "Integration with Khan Academy's full curriculum of videos, exercises, and learning materials",
+        "ko": "칸아카데미의 동영상, 연습 문제, 학습 자료 등 전체 커리큘럼과의 통합"
+      },
+      {
+        "en": "Multi-subject support including math, science, and humanities with grade-appropriate content",
+        "ko": "수학, 과학, 인문학 등 여러 과목을 학년별 난이도에 맞게 지원"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Encourages deep learning and critical thinking by using Socratic questioning rather than immediately providing answers",
+        "ko": "즉각적인 답변 대신 소크라테스식 질문을 통해 깊이 있는 학습과 비판적 사고를 장려합니다"
+      },
+      {
+        "en": "Seamlessly integrated with Khan Academy's trusted educational content and structure",
+        "ko": "신뢰할 수 있는 칸아카데미의 교육 콘텐츠 및 구조와 완벽하게 통합됩니다"
+      },
+      {
+        "en": "Available on mobile devices, allowing learning on the go",
+        "ko": "모바일 기기에서 사용 가능하여 언제 어디서나 학습할 수 있습니다"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Limited to Khan Academy's curriculum scope; may not cover specialized or advanced topics beyond the platform's materials",
+        "ko": "칸아카데미 커리큘럼의 범위로 제한되어 있어 플랫폼 밖의 전문화된 또는 고급 주제는 다루지 못할 수 있습니다"
+      },
+      {
+        "en": "Primarily designed for English-speaking learners; no native Korean language support",
+        "ko": "영어 사용자를 중심으로 설계되어 있어 한국어 지원이 없습니다"
+      },
+      {
+        "en": "Less suitable for real-time classroom use or collaborative group learning scenarios",
+        "ko": "실시간 수업 환경이나 협력 학습에는 덜 적합합니다"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "High school students reinforcing their understanding of algebra, geometry, or biology concepts after lectures",
+        "ko": "고등학생이 대수학, 기하학, 생물학 등의 개념을 강의 후 심화 학습할 때"
+      },
+      {
+        "en": "Homeschooling families using Khan Academy who need personalized one-on-one guidance for individual subjects",
+        "ko": "칸아카데미를 사용 중인 홈스쿨링 가족이 특정 과목에서 맞춤형 일대일 지도가 필요할 때"
+      },
+      {
+        "en": "Students preparing for standardized tests who want to review topics with AI-guided practice",
+        "ko": "표준화 시험을 준비 중인 학생이 AI의 안내를 받으며 주제를 복습하고 연습할 때"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Students who learn best through questioning and Socratic dialogue rather than passive instruction",
+        "ko": "질문과 소크라테스식 대화를 통해 배우는 것을 선호하는 학생"
+      },
+      {
+        "en": "Khan Academy users seeking enhanced personalized tutoring alongside the platform's video content",
+        "ko": "칸아카데미의 동영상 콘텐츠와 함께 향상된 맞춤형 튜터링을 원하는 사용자"
+      },
+      {
+        "en": "Learners who need flexible, on-demand academic support without the cost of traditional private tutoring",
+        "ko": "전통적인 개인 과외의 비용 부담 없이 유연한 학습 지원이 필요한 학생"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Non-English speakers without access to translation tools, as the interface and tutoring are English-only",
+        "ko": "번역 도구에 접근할 수 없는 비영어 사용자"
+      },
+      {
+        "en": "Learners seeking instruction in highly specialized, advanced, or niche academic subjects outside Khan Academy's scope",
+        "ko": "칸아카데미 범위 밖의 매우 전문화되고 고급이거나 틈새 학문을 찾는 학습자"
+      },
+      {
+        "en": "Institutions or organizations requiring commercial licensing for school-wide or enterprise deployment",
+        "ko": "학교 전체 배포 또는 기업급 이용을 위한 상업 라이선스가 필요한 기관"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Khan Academy offers free access to its core content and lessons; Khanmigo's free tier availability may vary by region. Check the official site for current free tier details.",
+      "ko": "칸아카데미는 핵심 콘텐츠와 강의에 무료 접근을 제공합니다. 칸미고의 무료 티어 이용 가능성은 지역에 따라 다를 수 있으므로 공식 사이트에서 최신 정보를 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Khan Academy Plus offers enhanced features including Khanmigo access; exact pricing and features are available on the official Khan Academy website. Pricing may vary by region and subscription tier.",
+      "ko": "칸아카데미 플러스는 칸미고 접근을 포함한 향상된 기능을 제공합니다. 정확한 가격과 기능은 칸아카데미 공식 웹사이트에서 확인하세요. 지역 및 구독 플랜에 따라 가격이 다를 수 있습니다."
+    },
+    "commercialNotes": {
+      "en": "Khanmigo is designed for individual student learning and is not intended for commercial use or institutional reselling. Organizations interested in school-wide deployment should contact Khan Academy directly.",
+      "ko": "칸미고는 개별 학생 학습을 위해 설계되었으며 상업적 용도나 기관 차원의 재판매는 의도하지 않습니다. 학교 전체 배포에 관심 있는 기관은 칸아카데미에 직접 문의해야 합니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "duolingo-max",
+    "name": "Duolingo Max",
+    "slug": "duolingo-max",
+    "description": {
+      "en": "Duolingo Max is a premium subscription tier that adds AI-powered features and advanced learning tools to the popular language-learning app Duolingo.",
+      "ko": "Duolingo Max는 인기 있는 언어 학습 앱 Duolingo에 AI 기반 기능과 고급 학습 도구를 추가하는 프리미엄 구독 서비스입니다."
+    },
+    "longDescription": {
+      "en": "Duolingo Max enhances the core language-learning experience with AI tutoring, advanced explanations, and priority access to new features. It targets learners who want personalized guidance beyond the standard app's gamified lessons, offering deeper language understanding and faster progression.",
+      "ko": "Duolingo Max는 AI 튜터링, 심화된 설명, 신기능에 대한 우선 접근 권한으로 핵심 언어 학습 경험을 강화합니다. 표준 앱의 게임화된 레슨을 넘어 개인화된 지도를 원하는 학습자들을 대상으로 하며, 더 깊이 있는 언어 이해와 빠른 진도를 제공합니다."
+    },
+    "beginnerDescription": {
+      "en": "Duolingo Max is an upgraded version of Duolingo that uses AI to give you personalized language tutoring and clearer explanations as you learn.",
+      "ko": "Duolingo Max는 AI를 활용하여 개인 맞춤형 언어 튜터링과 더 명확한 설명을 제공하는 Duolingo의 업그레이드 버전입니다."
+    },
+    "websiteUrl": "https://www.duolingo.com",
+    "categoryId": "productivity-education",
+    "pricingType": "Paid",
+    "startingPrice": "$13.99/mo",
+    "rating": 4.6,
+    "beginnerFriendly": true,
+    "koreanSupport": true,
+    "mobileSupport": true,
+    "commercialUse": false,
+    "featured": false,
+    "tags": [
+      "language learning",
+      "ai tutoring",
+      "education",
+      "mobile learning",
+      "productivity"
+    ],
+    "features": [
+      {
+        "en": "AI Tutor that answers questions about grammar, pronunciation, and language nuances in real time",
+        "ko": "문법, 발음, 언어 뉘앙스에 대한 질문에 실시간으로 답변하는 AI 튜터"
+      },
+      {
+        "en": "Advanced explanations for grammar and vocabulary lessons with deeper context and examples",
+        "ko": "더 깊은 문맥과 예시를 담은 문법 및 어휘 레슨에 대한 심화 설명"
+      },
+      {
+        "en": "Priority access to new Duolingo features and experimental learning tools before general release",
+        "ko": "일반 공개 전에 새로운 Duolingo 기능 및 실험적 학습 도구에 대한 우선 접근"
+      }
+    ],
+    "pros": [
+      {
+        "en": "The AI tutor provides immediate, personalized help that adapts to your learning gaps and questions",
+        "ko": "AI 튜터는 학습 공백과 질문에 맞게 즉시 개인화된 도움을 제공합니다"
+      },
+      {
+        "en": "Maintains Duolingo's strength: engaging, game-like interface that makes daily learning habit easy to maintain",
+        "ko": "Duolingo의 강점인 매력적이고 게임 같은 인터페이스로 일일 학습 습관을 쉽게 유지할 수 있습니다"
+      },
+      {
+        "en": "Works seamlessly across mobile and web, allowing flexible learning anywhere",
+        "ko": "모바일과 웹에서 원활하게 작동하여 어디서나 유연한 학습이 가능합니다"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Premium subscription required for AI features, while the free version remains fairly limited for serious learners",
+        "ko": "AI 기능을 사용하려면 프리미엄 구독이 필요하며, 무료 버전은 진지한 학습자에게는 다소 제한적입니다"
+      },
+      {
+        "en": "Duolingo's bite-sized lesson format, while engaging, may not provide the depth needed for advanced fluency or professional proficiency",
+        "ko": "Duolingo의 짧은 레슨 형식은 흥미롭지만 고급 유창함이나 전문적 능력을 위한 충분한 깊이를 제공하지 못할 수 있습니다"
+      },
+      {
+        "en": "AI explanations, while helpful, sometimes require follow-up clarification and may not replace structured grammar instruction",
+        "ko": "AI 설명은 도움이 되지만 때때로 추가 설명이 필요하며 체계적인 문법 교육을 완전히 대체하지 못할 수 있습니다"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Casual daily practice for someone maintaining basic conversational skills in a foreign language",
+        "ko": "외국어의 기본 회화 능력을 유지하고자 하는 사람의 일일 캐주얼 연습"
+      },
+      {
+        "en": "A learner seeking real-time grammar clarification and pronunciation feedback while using the app",
+        "ko": "앱 사용 중 실시간 문법 설명과 발음 피드백을 원하는 학습자"
+      },
+      {
+        "en": "Someone preparing for a travel trip and wanting quick, structured language fundamentals with AI guidance",
+        "ko": "여행을 준비하면서 AI 지도하에 빠르고 체계적인 언어 기초를 원하는 사람"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Busy professionals and casual learners who want bite-sized, engaging lessons integrated into a daily routine",
+        "ko": "바쁜 전문가와 일일 일과에 포함될 수 있는 짧고 매력적인 레슨을 원하는 캐주얼 학습자"
+      },
+      {
+        "en": "Language beginners who benefit from immediate AI feedback on grammar and pronunciation questions",
+        "ko": "문법과 발음 질문에 대한 즉각적인 AI 피드백으로 도움을 받는 언어 초보자"
+      },
+      {
+        "en": "Learners who need a supplement to classroom or formal instruction with on-demand AI tutoring support",
+        "ko": "교실이나 공식 교육에 대한 보충으로 요청 시 AI 튜터링 지원이 필요한 학습자"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Advanced learners or professionals aiming for fluency-level proficiency or business-critical language skills",
+        "ko": "유창한 수준의 능력이나 업무상 필수적인 언어 능력을 목표로 하는 고급 학습자 또는 전문가"
+      },
+      {
+        "en": "Those who prefer structured, traditional grammar-first instruction or require textbook-based comprehensive curricula",
+        "ko": "체계적이고 전통적인 문법 중심 교육을 선호하거나 교과서 기반의 종합 커리큘럼이 필요한 사람"
+      },
+      {
+        "en": "Users seeking immersion-based or conversation-heavy instruction with native speakers",
+        "ko": "원어민과의 몰입형 또는 회화 중심 교육을 원하는 사용자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Duolingo's free tier offers core lessons with ads and limited daily streaks, but AI tutor and advanced explanations are exclusive to Max subscribers. Check the official site for current free-tier features.",
+      "ko": "Duolingo의 무료 버전은 광고가 있는 기본 레슨과 제한된 일일 연속 학습을 제공하지만, AI 튜터와 심화 설명은 Max 구독자 전용입니다. 최신 무료 기능은 공식 사이트를 참고하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Max is a paid tier priced around $13.99 monthly (prices may vary by region and promotion). It removes ads, unlocks the AI tutor, and provides advanced grammar explanations. Verify exact pricing and billing options on Duolingo's official subscription page.",
+      "ko": "Max는 월 약 $13.99로 책정된 유료 티어입니다(지역과 프로모션에 따라 가격이 다를 수 있음). 광고를 제거하고 AI 튜터를 활성화하며 심화 문법 설명을 제공합니다. 정확한 가격과 결제 옵션은 Duolingo 공식 구독 페이지에서 확인하세요."
+    },
+    "commercialNotes": {
+      "en": "Duolingo Max is designed for personal language learning and is not intended for commercial or resale purposes. Organizations seeking bulk licensing or custom language programs should contact Duolingo's business team directly.",
+      "ko": "Duolingo Max는 개인 언어 학습을 위해 설계되었으며 상업적 또는 재판매 목적으로 의도되지 않았습니다. 대량 라이선싱 또는 맞춤형 언어 프로그램이 필요한 조직은 Duolingo의 비즈니스 팀에 직접 문의하세요."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "quizlet-ai",
+    "name": "Quizlet AI",
+    "slug": "quizlet-ai",
+    "description": {
+      "en": "Quizlet is an AI-powered study platform that helps students create, share, and master learning materials through interactive flashcards and adaptive quizzes.",
+      "ko": "Quizlet은 학생들이 대화형 플래시카드와 적응형 퀴즈를 통해 학습 자료를 만들고 공유하며 습득할 수 있도록 돕는 AI 기반 학습 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Quizlet combines traditional flashcard study methods with modern AI capabilities to help learners of all levels retain information more effectively. The platform offers interactive study modes, spaced repetition algorithms, and personalized learning paths that adapt to individual progress. Users can create custom study sets or access millions of pre-made sets created by other learners and educators worldwide.",
+      "ko": "Quizlet은 전통적인 플래시카드 학습법을 현대적인 AI 기능과 결합하여 모든 수준의 학습자가 더 효과적으로 정보를 습득하도록 돕습니다. 플랫폼은 대화형 학습 모드, 간격을 둔 반복 알고리즘, 개별 진도에 맞춰 조정되는 맞춤형 학습 경로를 제공합니다. 사용자는 맞춤형 학습 세트를 만들거나 전 세계 학습자와 교육자가 만든 수백만 개의 미리 만들어진 세트에 접근할 수 있습니다."
+    },
+    "beginnerDescription": {
+      "en": "Quizlet makes studying easier by turning your notes into interactive flashcards that you can study on any device. The app uses smart repetition and game-like features to help information stick in your memory.",
+      "ko": "Quizlet은 당신의 노트를 언제든지 학습할 수 있는 대화형 플래시카드로 변환하여 공부를 쉽게 만들어줍니다. 이 앱은 똑똑한 반복 학습과 게임 같은 기능을 사용하여 정보가 기억에 남도록 합니다."
+    },
+    "websiteUrl": "https://quizlet.com",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "startingPrice": "$12/mo",
+    "rating": 4.6,
+    "beginnerFriendly": true,
+    "koreanSupport": true,
+    "mobileSupport": true,
+    "commercialUse": false,
+    "featured": false,
+    "tags": [
+      "flashcards",
+      "study",
+      "ai-learning",
+      "spaced-repetition",
+      "education"
+    ],
+    "features": [
+      {
+        "en": "AI-powered flashcard generation that automatically creates study sets from text, images, or definitions",
+        "ko": "텍스트, 이미지 또는 정의에서 학습 세트를 자동으로 생성하는 AI 기반 플래시카드 생성"
+      },
+      {
+        "en": "Multiple interactive study modes including Learn, Flashcards, Match, Test, and Gravity games for varied learning styles",
+        "ko": "학습 스타일에 따라 다양한 방식으로 제공되는 Learn, Flashcards, Match, Test, Gravity 게임 등 여러 대화형 학습 모드"
+      },
+      {
+        "en": "Spaced repetition algorithm that intelligently schedules review sessions based on memory retention patterns",
+        "ko": "기억 유지 패턴을 기반으로 복습 세션을 지능적으로 예약하는 간격을 둔 반복 알고리즘"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Highly intuitive interface that requires no technical knowledge; students can create study sets in minutes and immediately start learning.",
+        "ko": "기술적 지식이 필요 없는 직관적 인터페이스로, 학생들이 몇 분 안에 학습 세트를 만들고 바로 공부를 시작할 수 있습니다."
+      },
+      {
+        "en": "Massive library of user-generated and educator-created study sets covering virtually every subject and standardized test, saving users preparation time.",
+        "ko": "거의 모든 과목과 표준화된 시험을 다루는 사용자 생성 및 교육자 제작 학습 세트의 방대한 라이브러리로 사용자의 준비 시간을 절약합니다."
+      },
+      {
+        "en": "Excellent mobile app experience with offline study capabilities, making learning accessible anywhere without internet connection.",
+        "ko": "오프라인 학습 기능이 있는 우수한 모바일 앱 경험으로 인터넷 연결 없이 어디서나 학습 가능합니다."
+      }
+    ],
+    "cons": [
+      {
+        "en": "Free version has limited features and displays ads; premium features like advanced analytics and offline access require paid subscription.",
+        "ko": "무료 버전은 기능이 제한되어 있고 광고가 표시되며, 고급 분석 및 오프라인 접근 같은 프리미엄 기능은 유료 구독이 필요합니다."
+      },
+      {
+        "en": "Effectiveness depends heavily on user discipline and consistency; the platform is a tool but cannot guarantee retention without regular practice.",
+        "ko": "효과는 사용자의 규율과 일관성에 크게 좌우되므로, 플랫폼은 도구일 뿐 정기적인 연습 없이는 정보 습득을 보장할 수 없습니다."
+      },
+      {
+        "en": "Some users report that study sets created by peers may contain errors or incomplete information that could mislead learners.",
+        "ko": "일부 사용자들은 동료가 만든 학습 세트에 학습자를 혼동시킬 수 있는 오류나 불완전한 정보가 포함될 수 있다고 보고합니다."
+      }
+    ],
+    "useCases": [
+      {
+        "en": "High school and college students preparing for exams such as SAT, ACT, AP tests, or foreign language proficiency exams.",
+        "ko": "SAT, ACT, AP 시험 또는 외국어 능력 시험과 같은 시험을 준비하는 고등학교 및 대학생들."
+      },
+      {
+        "en": "Language learners acquiring vocabulary and phrases in new languages through interactive flashcards and native speaker audio.",
+        "ko": "대화형 플래시카드와 원어민 음성을 통해 새로운 언어의 어휘와 표현을 학습하는 언어 학습자들."
+      },
+      {
+        "en": "Educators creating shared study materials for classrooms, enabling students to study collaboratively and reinforcing curriculum concepts.",
+        "ko": "교실용 공유 학습 자료를 만드는 교육자들로, 학생들이 협력적으로 학습하고 교육과정 개념을 강화할 수 있게 합니다."
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Students of all ages who prefer visual, interactive learning and need structured study tools with built-in gamification elements.",
+        "ko": "시각적이고 대화형의 학습을 선호하며 게임화 요소가 내장된 체계적인 학습 도구가 필요한 모든 연령대의 학생들."
+      },
+      {
+        "en": "Busy professionals and adult learners looking for flexible, bite-sized learning sessions that fit into limited daily schedules.",
+        "ko": "제한된 일일 일정에 맞는 유연한 단위별 학습 세션을 원하는 바쁜 전문가 및 성인 학습자들."
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Learners seeking deep conceptual understanding and critical thinking development, as Quizlet is primarily memory-focused rather than analytical.",
+        "ko": "Quizlet이 주로 기억 중심이지 분석적이지 않기 때문에 깊은 개념적 이해와 비판적 사고 발전을 추구하는 학습자들."
+      },
+      {
+        "en": "Users without consistent study habits or those expecting passive learning; the tool requires active engagement and regular practice to be effective.",
+        "ko": "일관된 학습 습관이 없거나 수동적 학습을 기대하는 사용자들로, 이 도구는 효과적이려면 능동적인 참여와 정기적인 연습이 필요합니다."
+      },
+      {
+        "en": "Professional certification preparation where accuracy of source material is critical and peer-generated content could introduce risks.",
+        "ko": "원본 자료의 정확성이 중요하며 동료 생성 콘텐츠가 위험을 초래할 수 있는 전문 자격증 준비."
+      }
+    ],
+    "freePlanNotes": {
+      "en": "The free plan allows creating and studying flashcards with basic study modes and access to the full library of public sets. However, study sessions include ads, and advanced features like detailed analytics and premium study modes are behind the paywall.",
+      "ko": "무료 플랜은 기본 학습 모드로 플래시카드를 만들고 공부할 수 있으며 공개 세트의 전체 라이브러리에 접근할 수 있습니다. 다만 학습 세션에는 광고가 포함되며, 상세 분석 및 프리미엄 학습 모드 같은 고급 기능은 유료 구독 뒤에 있습니다."
+    },
+    "paidPlanNotes": {
+      "en": "Quizlet+ Premium removes ads, unlocks advanced study features, provides detailed progress analytics, and enables offline access to study sets. Check the official website for current pricing and subscription options, which may vary by region and plan tier.",
+      "ko": "Quizlet+ 프리미엄은 광고를 제거하고 고급 학습 기능을 잠금 해제하며 상세한 진도 분석을 제공하고 학습 세트에 대한 오프라인 접근을 가능하게 합니다. 현재 가격 및 구독 옵션은 공식 웹사이트를 확인하세요. 지역 및 요금제에 따라 다를 수 있습니다."
+    },
+    "commercialNotes": {
+      "en": "Quizlet is designed primarily for personal and educational use. Commercial use rights are limited, and businesses interested in using Quizlet for corporate training should contact Quizlet directly for licensing and enterprise solutions.",
+      "ko": "Quizlet은 주로 개인 및 교육용으로 설계되었습니다. 상업적 사용 권리는 제한적이며, 기업 교육을 위해 Quizlet을 사용하려는 기업은 라이선싱 및 엔터프라이즈 솔루션에 대해 Quizlet에 직접 문의해야 합니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "magicschool-ai",
+    "name": "MagicSchool AI",
+    "slug": "magicschool-ai",
+    "description": {
+      "en": "MagicSchool AI is an AI-powered platform designed to help teachers create lesson plans, generate assignments, and manage classroom tasks more efficiently.",
+      "ko": "MagicSchool AI는 교사들이 수업 계획, 과제 생성, 수업 관리 업무를 더 효율적으로 처리할 수 있도록 돕는 AI 기반 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "MagicSchool AI provides educators with a suite of AI tools specifically designed for classroom use, including lesson plan generation, assignment creation, student feedback tools, and content differentiation. The platform focuses on making teaching more efficient while maintaining educational best practices and supporting diverse learning needs.",
+      "ko": "MagicSchool AI는 수업 계획 생성, 과제 작성, 학생 피드백 도구, 학습 내용 차별화 등 교실에서 사용하기 위해 특별히 설계된 AI 도구 모음을 제공합니다. 플랫폼은 교육 모범 사례를 유지하면서 다양한 학습 요구를 지원하여 교사의 업무 효율성을 높이는 데 중점을 둡니다."
+    },
+    "beginnerDescription": {
+      "en": "MagicSchool AI helps teachers save time by using AI to automatically create lesson plans, assignments, and other classroom materials—no advanced tech skills needed.",
+      "ko": "MagicSchool AI는 AI를 활용하여 수업 계획, 과제, 수업 자료를 자동으로 만들어주므로 교사가 시간을 절약할 수 있으며, 특별한 기술 지식이 필요하지 않습니다."
+    },
+    "websiteUrl": "https://www.magicschool.ai",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": false,
+    "commercialUse": false,
+    "featured": false,
+    "tags": [
+      "ai education",
+      "lesson planning",
+      "teacher tools",
+      "classroom productivity"
+    ],
+    "features": [
+      {
+        "en": "Lesson plan and curriculum generation with customizable standards alignment",
+        "ko": "교육 기준에 맞춘 맞춤형 수업 계획 및 교육과정 생성"
+      },
+      {
+        "en": "Assignment and worksheet creation tailored to student grade level and learning objectives",
+        "ko": "학년대 맞춤형 과제 및 워크시트 자동 생성"
+      },
+      {
+        "en": "Student differentiation tools to adapt content for diverse learning needs and accessibility requirements",
+        "ko": "다양한 학습 요구와 접근성 요구에 맞춰 학습 내용을 조정하는 도구"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Significantly reduces the time teachers spend on administrative and content preparation tasks",
+        "ko": "교사가 행정 및 학습 자료 준비에 소비하는 시간을 크게 줄여줍니다"
+      },
+      {
+        "en": "Specifically designed for educators, making it more relevant to classroom needs than general-purpose AI tools",
+        "ko": "교육자를 위해 특별히 설계되어 일반용 AI 도구보다 교실 요구에 더 적합합니다"
+      },
+      {
+        "en": "User-friendly interface that doesn't require technical expertise to operate",
+        "ko": "기술 지식 없이도 쉽게 사용할 수 있는 직관적인 인터페이스"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Limited to education sector; not suitable for other professional or commercial applications",
+        "ko": "교육 분야로 제한되어 있어 다른 전문 분야나 상업적 용도에는 적합하지 않습니다"
+      },
+      {
+        "en": "May require review and customization of AI-generated content to ensure quality and alignment with specific classroom needs",
+        "ko": "AI가 생성한 내용의 질 보증 및 특정 교실 요구사항과의 일치 확인을 위해 검토 및 수정이 필요할 수 있습니다"
+      },
+      {
+        "en": "No native Korean language interface or support currently available",
+        "ko": "현재 한국어 인터페이스나 지원이 없습니다"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Teachers creating differentiated lesson plans for mixed-ability classrooms in minutes rather than hours",
+        "ko": "능력이 다양한 학급을 위해 몇 분 안에 맞춤형 수업 계획을 만드는 교사"
+      },
+      {
+        "en": "Educators generating accessible assignments for students with different learning needs or language backgrounds",
+        "ko": "다양한 학습 요구사항과 언어 배경을 가진 학생을 위해 접근하기 쉬운 과제를 생성하는 교사"
+      },
+      {
+        "en": "Teachers seeking to automate repetitive content creation while maintaining instructional quality",
+        "ko": "교육 질을 유지하면서 반복적인 학습 자료 작성을 자동화하려는 교사"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "K-12 teachers looking for classroom efficiency and who want to reduce time spent on lesson planning and content creation",
+        "ko": "수업 계획 및 학습 자료 작성에 드는 시간을 줄이고 교실 효율성을 높이려는 초중고등 교사"
+      },
+      {
+        "en": "Educators in diverse classrooms who need to differentiate content for students with varying abilities and needs",
+        "ko": "능력과 필요가 다양한 학생들을 위해 학습 내용을 맞춤화해야 하는 다양성 높은 교실의 교사"
+      },
+      {
+        "en": "Schools and districts wanting AI tools specifically built for education rather than generic productivity software",
+        "ko": "일반적인 생산성 소프트웨어 대신 교육을 위해 특별히 설계된 AI 도구를 원하는 학교 및 교육청"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Non-educators or professionals outside the K-12 education sector seeking general-purpose AI productivity tools",
+        "ko": "K-12 교육 분야 밖의 비교육자나 전문가로서 일반용 생산성 AI 도구를 찾는 사람"
+      },
+      {
+        "en": "Users requiring deep Korean language support and Korean-language interface",
+        "ko": "깊이 있는 한국어 지원 및 한국어 인터페이스가 필요한 사용자"
+      },
+      {
+        "en": "Organizations with strict data privacy regulations requiring on-premise or fully controlled deployment",
+        "ko": "엄격한 데이터 프라이버시 규정이 있는 조직으로 온프레미스 또는 완전히 통제된 배포가 필요한 경우"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "MagicSchool AI offers a free tier that provides access to core AI classroom tools with limited usage. Check the official website for current free plan limits and features.",
+      "ko": "MagicSchool AI는 제한된 사용량으로 기본 AI 교실 도구에 접근할 수 있는 무료 플랜을 제공합니다. 현재 무료 플랜의 제한사항 및 기능은 공식 웹사이트를 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans unlock expanded usage limits, additional tools, and priority support. Visit the official pricing page for current plans, features, and subscription costs.",
+      "ko": "유료 플랜은 확장된 사용 제한, 추가 도구 및 우선 지원을 제공합니다. 현재 요금제, 기능 및 구독 비용은 공식 웹사이트의 가격 페이지를 참고하세요."
+    },
+    "commercialNotes": {
+      "en": "MagicSchool AI is designed for educational use within schools and classrooms. Commercial use outside of educational settings is not the primary intended use case. Check licensing terms for specifics.",
+      "ko": "MagicSchool AI는 학교와 교실 내 교육용으로 설계되었습니다. 교육 설정 외의 상업적 용도는 주된 사용 목적이 아닙니다. 구체적인 사항은 라이선스 약관을 확인하세요."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "eduaide-ai",
+    "name": "Eduaide.AI",
+    "slug": "eduaide-ai",
+    "description": {
+      "en": "Eduaide.AI is an intelligent educational assistant that helps teachers and students create personalized learning content, lesson plans, and assessments using AI-powered tools.",
+      "ko": "Eduaide.AI는 교사와 학생들이 AI 기반 도구를 활용하여 맞춤형 학습 콘텐츠, 수업 계획, 평가 문제를 만들도록 돕는 지능형 교육 보조 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Eduaide.AI is designed for educators who want to streamline lesson planning, content creation, and assessment design. The platform uses artificial intelligence to generate customized educational materials, quizzes, and learning resources tailored to specific student needs and curricula. It aims to reduce preparation time for teachers while improving the quality and personalization of educational content.",
+      "ko": "Eduaide.AI는 수업 계획 수립, 콘텐츠 제작, 평가 설계 업무를 효율화하려는 교육자들을 위해 설계되었습니다. 이 플랫폼은 인공지능을 활용하여 특정 학생의 요구사항과 교과과정에 맞춘 맞춤형 교육 자료, 퀴즈, 학습 리소스를 생성합니다. 교사의 준비 시간을 단축하면서 동시에 교육 콘텐츠의 질과 개인화 수준을 향상시키는 것을 목표로 합니다."
+    },
+    "beginnerDescription": {
+      "en": "Eduaide.AI helps teachers quickly create lesson plans, quizzes, and learning materials powered by AI, saving time on preparation work.",
+      "ko": "Eduaide.AI는 AI 기술을 활용하여 교사들이 수업 계획, 퀴즈, 학습 자료를 빠르게 만들 수 있도록 도와주는 도구로, 준비 시간을 절약할 수 있습니다."
+    },
+    "websiteUrl": "https://www.eduaide.ai",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "rating": 4.3,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "ai-education",
+      "lesson-planning",
+      "assessment-tools",
+      "teacher-assistant",
+      "personalized-learning"
+    ],
+    "features": [
+      {
+        "en": "Automated lesson plan generation based on subject and grade level",
+        "ko": "교과목과 학년 수준에 따른 자동 수업 계획 생성"
+      },
+      {
+        "en": "Quiz and assessment creation with instant feedback and answer keys",
+        "ko": "즉각적인 피드백 및 답안지를 포함한 퀴즈 및 평가 문제 자동 생성"
+      },
+      {
+        "en": "Content customization and differentiation for diverse learning needs",
+        "ko": "다양한 학습 필요에 맞춘 콘텐츠 커스터마이징 및 차별화된 학습 자료 제공"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Significantly reduces teacher preparation time by automating routine content creation tasks",
+        "ko": "일상적인 콘텐츠 제작 업무를 자동화하여 교사의 준비 시간을 크게 단축"
+      },
+      {
+        "en": "Generates personalized learning materials that adapt to individual student needs and learning styles",
+        "ko": "개별 학생의 요구사항과 학습 스타일에 맞춘 맞춤형 학습 자료 생성"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Limited Korean language support, which may restrict adoption in Korean educational institutions",
+        "ko": "한국어 지원이 제한적이어서 한국 교육기관의 채택에 어려움이 있을 수 있음"
+      },
+      {
+        "en": "Quality of AI-generated content may vary and require educator review and refinement before classroom use",
+        "ko": "AI가 생성한 콘텐츠의 품질이 들쑥날쭉할 수 있으므로 교실 사용 전에 교육자의 검토 및 수정이 필요"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Creating differentiated math worksheets and practice problems for students at different ability levels",
+        "ko": "다양한 능력대의 학생들을 위한 차별화된 수학 워크시트 및 연습 문제 생성"
+      },
+      {
+        "en": "Generating quiz questions and assessments for formative and summative evaluation throughout the academic term",
+        "ko": "학기 동안 진행성 및 총괄 평가를 위한 퀴즈 문제 및 평가 자료 생성"
+      },
+      {
+        "en": "Developing lesson plans quickly when unexpected schedule changes or new topics need to be covered",
+        "ko": "예상 외의 일정 변경이나 새로운 주제를 다루어야 할 때 신속하게 수업 계획 개발"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Teachers and educators seeking to reduce administrative workload and focus more on student interaction",
+        "ko": "행정 업무를 줄이고 학생 상호작용에 더 집중하고 싶은 교사 및 교육자"
+      },
+      {
+        "en": "Schools and educational institutions looking to implement personalized learning at scale",
+        "ko": "대규모로 맞춤형 학습을 도입하려는 학교 및 교육기관"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Educators requiring robust Korean language support and culturally specific educational content",
+        "ko": "한국어 지원과 한국 문화에 맞춘 교육 콘텐츠가 필요한 교육자"
+      },
+      {
+        "en": "Institutions with highly specialized or niche subjects that require human expert knowledge rather than general AI generation",
+        "ko": "일반적인 AI 생성보다 인간 전문가의 지식이 필요한 특수하거나 틈새 과목을 다루는 기관"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "The free plan provides basic access to lesson planning and content generation features with limited usage. Check the official website for current free plan limits and available features.",
+      "ko": "무료 플랜은 제한된 사용량 범위 내에서 기본적인 수업 계획 및 콘텐츠 생성 기능에 접근할 수 있습니다. 현재 무료 플랜의 제한사항과 이용 가능한 기능은 공식 웹사이트에서 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans unlock additional features such as unlimited content generation, advanced customization options, and priority support. Visit the official pricing page for detailed plan information and current rates.",
+      "ko": "유료 플랜은 무제한 콘텐츠 생성, 고급 커스터마이징 옵션, 우선 지원 등의 추가 기능을 제공합니다. 자세한 요금제 정보와 현재 가격은 공식 가격 페이지를 참조하세요."
+    },
+    "commercialNotes": {
+      "en": "Eduaide.AI permits commercial use by schools and educational organizations, making it suitable for institutional deployment and for-profit educational services.",
+      "ko": "Eduaide.AI는 학교 및 교육 기관의 상업적 사용을 허용하므로 기관 차원의 도입 및 영리 교육 서비스에 적합합니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "curipod",
+    "name": "Curipod",
+    "slug": "curipod",
+    "description": {
+      "en": "Curipod is an AI-powered interactive lesson platform designed to help teachers create engaging, classroom-ready presentations with built-in student interaction and real-time feedback.",
+      "ko": "Curipod는 교사들이 학생 참여와 실시간 피드백을 포함한 상호작용형 수업 자료를 쉽게 만들 수 있도록 설계된 AI 기반 수업 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Curipod combines lesson planning with interactive elements—such as polls, quizzes, drawing activities, and open-ended questions—to help teachers deliver dynamic classroom experiences. The platform integrates AI tools to suggest content and accelerate lesson preparation, while teachers can present directly to students' devices for real-time engagement and assessment. It's particularly useful for educators seeking to blend traditional instruction with modern, tech-enabled interactivity.",
+      "ko": "Curipod는 수업 계획 기능과 투표, 퀴즈, 그림 그리기, 개방형 질문 등의 상호작용 요소를 결합하여 교사들이 역동적인 수업을 진행할 수 있도록 지원합니다. AI 도구를 활용해 수업 자료를 제안하고 준비 시간을 단축하며, 교사는 학생 기기에 직접 화면을 공유해 실시간 참여와 평가가 가능합니다. 전통적인 강의와 현대적인 기술을 결합하려는 교육자에게 특히 유용합니다."
+    },
+    "beginnerDescription": {
+      "en": "Curipod helps teachers quickly create interactive classroom lessons with polls and quizzes, and share them directly to student tablets or computers for real-time engagement.",
+      "ko": "Curipod는 교사가 쉽게 투표와 퀴즈를 포함한 상호작용형 수업을 만들고 학생들의 태블릿이나 컴퓨터에 바로 보여주어 실시간으로 참여하게 할 수 있습니다."
+    },
+    "websiteUrl": "https://curipod.com",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": false,
+    "featured": false,
+    "tags": [
+      "interactive lessons",
+      "teacher tools",
+      "classroom engagement",
+      "ai-powered"
+    ],
+    "features": [
+      {
+        "en": "AI-powered lesson content suggestions and creation tools to accelerate preparation",
+        "ko": "수업 자료 준비를 빠르게 하도록 도와주는 AI 기반 콘텐츠 추천 및 생성 기능"
+      },
+      {
+        "en": "Real-time interactive activities including polls, quizzes, drawing tasks, and open-ended questions",
+        "ko": "투표, 퀴즈, 그림 그리기, 개방형 질문 등 실시간 상호작용형 활동"
+      },
+      {
+        "en": "Direct presentation to student devices with live feedback and response tracking",
+        "ko": "학생 기기에 직접 공유하고 실시간 응답 추적 및 피드백 수집"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Significantly reduces lesson preparation time with AI-assisted content generation",
+        "ko": "AI를 활용한 콘텐츠 생성으로 수업 준비 시간을 크게 단축"
+      },
+      {
+        "en": "Intuitive interface makes it accessible to teachers with varying levels of technical experience",
+        "ko": "직관적인 인터페이스로 기술적 수준에 관계없이 모든 교사가 쉽게 사용할 수 있음"
+      },
+      {
+        "en": "Strong emphasis on classroom engagement and real-time formative assessment",
+        "ko": "수업 중 학생 참여와 실시간 형성평가에 중점을 두고 설계됨"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Limited to English-language content and interface, which restricts use in non-English classrooms",
+        "ko": "영어 중심의 콘텐츠와 인터페이스로 다국어 학급에서의 활용이 제한적"
+      },
+      {
+        "en": "Requires student devices for full interactivity, which may not be available in all educational settings",
+        "ko": "완전한 상호작용을 위해 학생 기기가 필요하므로 모든 학교 환경에 적합하지 않을 수 있음"
+      },
+      {
+        "en": "Premium features and advanced customization options are locked behind paid plans",
+        "ko": "고급 기능과 맞춤 옵션은 유료 요금제에서만 이용 가능"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Elementary and secondary teachers preparing interactive lessons to boost student engagement during whole-class instruction",
+        "ko": "전체 학급 수업 중 학생 참여를 높이기 위해 상호작용형 수업을 준비하는 초등 및 중등 교사"
+      },
+      {
+        "en": "Educators using real-time polls and quizzes to assess student understanding and adjust instruction on the fly",
+        "ko": "실시간 투표와 퀴즈로 학생의 이해도를 파악하고 수업을 즉시 조정하려는 교육자"
+      },
+      {
+        "en": "Teachers seeking to reduce content creation workload while maintaining interactive, modern classroom practices",
+        "ko": "콘텐츠 제작 시간을 줄이면서도 현대적이고 상호작용형 수업을 유지하려는 교사"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "K–12 classroom teachers looking to enhance student engagement with minimal extra preparation effort",
+        "ko": "학생 참여도를 높이면서도 준비 시간을 최소화하려는 초중고 교사"
+      },
+      {
+        "en": "Educators who want immediate, formative assessment data to inform instructional decisions",
+        "ko": "실시간 형성평가 데이터를 바탕으로 수업 방향을 결정하려는 교육자"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Teachers in non-English-speaking regions or multilingual classrooms requiring robust native-language support",
+        "ko": "다국어 학급이나 영어가 아닌 언어로의 강력한 지원이 필요한 지역의 교사"
+      },
+      {
+        "en": "Schools or districts without reliable device access or digital infrastructure for all students",
+        "ko": "모든 학생이 사용할 수 있는 디지털 기기와 인프라가 부족한 학교나 지역"
+      },
+      {
+        "en": "Educators primarily focused on asynchronous or self-paced learning rather than real-time classroom interaction",
+        "ko": "실시간 수업 상호작용보다 비동기식 또는 자기주도 학습에 중점을 두는 교육자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "The free tier offers basic lesson creation and limited interactive features, allowing teachers to try the platform with a restricted feature set. Check the official site for current free plan limitations.",
+      "ko": "무료 요금제는 기본 수업 제작 및 제한된 상호작용 기능을 제공하여 교사들이 제한된 기능으로 플랫폼을 시험해볼 수 있습니다. 현재 무료 요금제의 정확한 제한 사항은 공식 웹사이트를 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans unlock additional features such as advanced customization, expanded storage, priority support, and access to premium AI-generated content. Refer to the Curipod website for current pricing and plan details.",
+      "ko": "유료 요금제는 고급 맞춤 설정, 확장된 저장 공간, 우선 지원, 프리미엄 AI 생성 콘텐츠 접근 등의 추가 기능을 제공합니다. 현재 가격 및 요금제 상세 정보는 Curipod 공식 웹사이트를 참조하세요."
+    },
+    "commercialNotes": {
+      "en": "Curipod is designed primarily for educational and classroom use. Commercial or enterprise licensing may be available—contact the company directly for specific commercial deployment or licensing inquiries.",
+      "ko": "Curipod는 교육 및 수업 환경을 위해 주로 설계되었습니다. 상업용 또는 엔터프라이즈 라이선싱 필요 시 회사에 직접 문의하세요."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "socratic",
+    "name": "Socratic",
+    "slug": "socratic",
+    "description": {
+      "en": "Socratic is a free AI learning assistant that helps students understand homework and concepts through step-by-step explanations and visual aids.",
+      "ko": "소크라테스는 학생들이 숙제와 개념을 단계별 설명과 시각 자료를 통해 이해하도록 돕는 무료 AI 학습 보조 도구입니다."
+    },
+    "longDescription": {
+      "en": "Socratic is a free mobile-first learning platform developed by Google that uses AI to provide explanations for homework questions across math, science, and humanities. Users can photograph homework problems or type questions, and the app delivers visual explanations, step-by-step solutions, and relevant learning resources. It is designed to support independent learning and conceptual understanding rather than simply providing answers.",
+      "ko": "소크라테스는 구글이 개발한 무료 모바일 중심 학습 플랫폼으로, AI를 활용하여 수학, 과학, 인문학 등의 숙제 문제에 대한 설명을 제공합니다. 사용자는 숙제 문제를 사진으로 찍거나 질문을 입력하면 시각적 설명, 단계별 풀이, 관련 학습 자료를 받을 수 있습니다. 단순히 답을 제공하기보다는 독립적인 학습과 개념 이해를 지원하도록 설계되었습니다."
+    },
+    "beginnerDescription": {
+      "en": "Socratic is a free mobile app that helps you understand your homework by taking a photo of a problem and getting clear explanations back, like having a tutor in your pocket.",
+      "ko": "소크라테스는 숙제 문제를 사진으로 찍으면 명확한 설명을 받을 수 있는 무료 모바일 앱으로, 주머니 속의 튜터를 가지고 있는 것처럼 도움을 줍니다."
+    },
+    "websiteUrl": "https://socratic.org",
+    "categoryId": "productivity-education",
+    "pricingType": "Free",
+    "rating": 4.3,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": false,
+    "featured": false,
+    "tags": [
+      "homework helper",
+      "ai tutor",
+      "learning app",
+      "education"
+    ],
+    "features": [
+      {
+        "en": "Photo-based problem solving: capture homework questions with your camera and receive AI-powered explanations",
+        "ko": "카메라 기반 문제 풀이: 카메라로 숙제 문제를 촬영하면 AI 기반 설명을 받을 수 있음"
+      },
+      {
+        "en": "Step-by-step visual explanations: view detailed breakdowns with diagrams, graphs, and written solutions",
+        "ko": "단계별 시각 설명: 다이어그램, 그래프, 문제풀이를 통한 상세한 설명을 볼 수 있음"
+      },
+      {
+        "en": "Multi-subject coverage: supports math, science, literature, history, and social studies across K-12 and early college",
+        "ko": "다양한 과목 지원: K-12 및 초기 대학 수준의 수학, 과학, 문학, 역사, 사회과학을 포함"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Completely free with no premium tier or paywalls, making quality homework help accessible to all students",
+        "ko": "프리미엄 버전이나 비용 없이 완전히 무료라 모든 학생이 양질의 숙제 도움을 받을 수 있음"
+      },
+      {
+        "en": "Mobile-optimized and easy to use: just point your camera at a problem and get instant results in seconds",
+        "ko": "모바일 최적화되고 사용하기 쉬움: 카메라로 문제를 찍으면 몇 초 내에 결과를 얻을 수 있음"
+      },
+      {
+        "en": "Promotes understanding over memorization by showing conceptual explanations rather than just final answers",
+        "ko": "최종 답안만 제공하는 것이 아니라 개념적 설명을 통해 이해를 장려함"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Camera recognition sometimes struggles with handwritten problems, complex notation, or unclear photos",
+        "ko": "카메라 인식이 손으로 쓴 문제나 복잡한 표기, 불분명한 사진에서 때때로 어려움을 겪음"
+      },
+      {
+        "en": "Limited to English language, which restricts usability for non-English speaking students or bilingual learning",
+        "ko": "영어로만 지원되어 영어 이외의 언어를 사용하는 학생이나 이중언어 학습자의 이용이 제한됨"
+      },
+      {
+        "en": "May not cover very advanced or specialized topics, particularly at advanced college or graduate levels",
+        "ko": "특히 대학 고급 또는 대학원 수준의 매우 고급이거나 특화된 주제는 다루지 않을 수 있음"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "A middle school student uses Socratic to photograph a geometry problem they don't understand and receives a visual walkthrough of the concept",
+        "ko": "중학생이 이해하지 못하는 기하 문제를 소크라테스로 촬영하면 개념에 대한 시각적 설명을 받음"
+      },
+      {
+        "en": "A high school chemistry student quickly checks their understanding of a reaction mechanism by photographing a textbook problem",
+        "ko": "고등학교 화학 학생이 교과서 문제를 촬영하여 화학 반응 메커니즘에 대한 이해를 빠르게 확인함"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "K-12 students seeking quick, visual explanations for homework across math, science, and other core subjects",
+        "ko": "수학, 과학 및 기타 기본 과목의 숙제에 대한 빠른 시각적 설명을 원하는 K-12 학생"
+      },
+      {
+        "en": "Parents who want to support their children's learning but need clear explanations to help them tutor effectively",
+        "ko": "자녀의 학습을 지원하고 싶지만 효과적으로 튜터링하기 위한 명확한 설명이 필요한 부모"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Students with non-English primary languages or those needing instruction in languages other than English",
+        "ko": "영어가 아닌 다른 언어로 지도를 받아야 하거나 주요 언어가 영어가 아닌 학생"
+      },
+      {
+        "en": "Advanced college or graduate-level students working on specialized or research-level topics beyond the app's scope",
+        "ko": "앱의 범위를 벗어나는 특화되거나 연구 수준의 주제를 다루는 대학 고급 또는 대학원 학생"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Socratic is entirely free with no hidden charges or premium subscriptions. All core features—photo recognition, explanations, and learning resources—are available to every user.",
+      "ko": "소크라테스는 숨겨진 비용이나 프리미엄 구독 없이 완전히 무료입니다. 사진 인식, 설명, 학습 자료 등 모든 핵심 기능이 모든 사용자에게 제공됩니다."
+    },
+    "paidPlanNotes": {
+      "en": "There is no paid plan. Socratic operates on a completely free model supported by Google, with no upsell or premium tier.",
+      "ko": "유료 요금제가 없습니다. 소크라테스는 구글의 지원을 받아 완전히 무료로 운영되며, 판매 확대나 프리미엄 버전이 없습니다."
+    },
+    "commercialNotes": {
+      "en": "Socratic is designed for educational use by students and is not intended for commercial applications, tutoring businesses, or content creation for profit.",
+      "ko": "소크라테스는 학생의 교육용으로 설계되었으며 상업용 애플리케이션, 튜터링 사업, 또는 영리 목적의 콘텐츠 제작에는 적합하지 않습니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "photomath",
+    "name": "Photomath",
+    "slug": "photomath",
+    "description": {
+      "en": "Photomath is an AI-powered math problem solver that uses your phone's camera to recognize mathematical equations and provide step-by-step solutions with detailed explanations.",
+      "ko": "Photomath는 스마트폰 카메라로 수학 문제를 인식하여 단계별 풀이와 상세한 설명을 제공하는 AI 기반 수학 문제 해결 앱입니다."
+    },
+    "longDescription": {
+      "en": "Photomath helps students and learners understand mathematics by capturing photos of handwritten or printed math problems and instantly displaying detailed solutions. The app covers a wide range of topics from basic arithmetic through calculus and offers interactive graphs, alternative solving methods, and audio explanations to support different learning styles.",
+      "ko": "Photomath는 손으로 쓴 수학 문제나 인쇄된 문제를 사진으로 찍으면 즉시 상세한 풀이를 보여주어 학생들이 수학을 이해하도록 돕습니다. 기본 산술부터 미적분학까지 다양한 주제를 다루며, 대화형 그래프, 다양한 풀이 방법, 음성 설명 등을 제공하여 여러 학습 스타일을 지원합니다."
+    },
+    "beginnerDescription": {
+      "en": "Photomath is like having a math tutor in your pocket—just point your phone's camera at a math problem and it shows you how to solve it step by step.",
+      "ko": "Photomath는 주머니 속의 수학 과외 선생님처럼, 스마트폰 카메라를 수학 문제에 향하기만 하면 단계별로 풀어주는 앱입니다."
+    },
+    "websiteUrl": "https://photomath.com",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "startingPrice": "$9.99/mo",
+    "rating": 4.6,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": false,
+    "featured": false,
+    "tags": [
+      "math solver",
+      "education",
+      "ai tutor",
+      "homework help"
+    ],
+    "features": [
+      {
+        "en": "Camera-based problem recognition: Point your phone at any handwritten or printed math problem and the app instantly identifies and solves it",
+        "ko": "카메라 기반 문제 인식: 스마트폰으로 손글씨나 인쇄된 수학 문제를 비추면 앱이 즉시 인식하고 풀이합니다"
+      },
+      {
+        "en": "Step-by-step detailed solutions: Every problem includes multiple solving methods and in-depth explanations for each step",
+        "ko": "단계별 상세 풀이: 모든 문제에 대해 여러 풀이 방법과 각 단계별 상세 설명을 제공합니다"
+      },
+      {
+        "en": "Wide math curriculum coverage: Supports arithmetic, pre-algebra, algebra, trigonometry, calculus, and more, with interactive graphs and visual aids",
+        "ko": "광범위한 수학 교과 과정: 산술, 기초대수, 대수, 삼각함수, 미적분학 등을 지원하며 대화형 그래프와 시각 자료를 제공합니다"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Extremely user-friendly interface that requires no setup—beginners can start solving problems immediately by taking a photo",
+        "ko": "매우 직관적인 인터페이스로 복잡한 설정 없이 사진만 찍으면 바로 문제를 풀 수 있습니다"
+      },
+      {
+        "en": "Excellent for visual and kinesthetic learners with animated step-by-step solutions and interactive graphs that help conceptual understanding",
+        "ko": "애니메이션 풀이 과정과 대화형 그래프로 시각적, 운동감각적 학습자에게 개념 이해를 돕습니다"
+      },
+      {
+        "en": "Free tier provides meaningful functionality, making it accessible to students without immediate paid subscription requirements",
+        "ko": "무료 버전으로도 의미 있는 기능을 사용할 수 있어 유료 구독 없이도 충분히 접근 가능합니다"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Recognition accuracy can struggle with complex or messy handwriting, sometimes requiring manual equation input instead of camera capture",
+        "ko": "복잡하거나 지저분한 손글씨 인식은 정확도가 떨어질 수 있어 때때로 직접 문제를 입력해야 합니다"
+      },
+      {
+        "en": "Premium subscription is required for many intermediate and advanced features, with free tier limitations that may frustrate regular users",
+        "ko": "많은 중급 및 고급 기능이 프리미엄 구독을 필요로 하며, 무료 버전의 기능 제한이 자주 사용하는 학생에게는 불편할 수 있습니다"
+      },
+      {
+        "en": "Best results with standardized or printed problems; real-world application problems and word problems may require additional manual setup or clarification",
+        "ko": "표준화되거나 인쇄된 문제에 최고의 성능을 발휘하며, 실제 상황 문제나 문장형 문제는 추가 설정이나 명확화가 필요할 수 있습니다"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "High school and college students checking homework answers and reviewing problem-solving techniques the night before an exam",
+        "ko": "고등학생과 대학생이 숙제 답을 확인하고 시험 전날 문제 풀이 기법을 복습할 때"
+      },
+      {
+        "en": "Parents helping children with math homework when they are unsure of the solution method themselves",
+        "ko": "부모가 자신도 풀이 방법을 확실하지 않은 수학 숙제를 자녀를 도울 때"
+      },
+      {
+        "en": "Self-learners and adult learners reviewing algebra or calculus concepts on their own schedule without classroom instruction",
+        "ko": "자기주도 학습자나 성인 학습자가 강의실 수업 없이 자신의 일정에 맞춰 대수학이나 미적분학 개념을 복습할 때"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Students in grades 6–12 and early undergraduate students seeking quick homework help and explanation of unfamiliar concepts",
+        "ko": "6학년부터 고등학생과 저학년 대학생으로 빠른 숙제 도움과 낯선 개념의 설명이 필요한 학생"
+      },
+      {
+        "en": "Visual learners who benefit from animated, step-by-step breakdowns and interactive graphs rather than text-only explanations",
+        "ko": "텍스트만으로는 이해하기 어렵고 애니메이션, 단계별 시각화, 대화형 그래프로 배우는 시각적 학습자"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Students aiming to develop deep problem-solving intuition without external aids—over-reliance may hinder independent mathematical thinking",
+        "ko": "외부 도움 없이 깊이 있는 문제 해결 능력을 키우려는 학생—과도한 의존은 독립적 수학적 사고를 방해할 수 있습니다"
+      },
+      {
+        "en": "Users needing support for specialized, non-standard, or very advanced mathematics beyond typical classroom curricula",
+        "ko": "교실 교과과정을 벗어난 특화된, 비표준, 매우 고급 수학을 필요로 하는 사용자"
+      },
+      {
+        "en": "Professionals and commercial users seeking integration with business software or advanced computational tools",
+        "ko": "사업 소프트웨어와의 통합이나 고급 계산 도구가 필요한 전문가나 상업용 사용자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "The free version allows limited daily usage and solves basic to intermediate problems. For full access to advanced topics and unlimited solutions, users are directed toward the paid subscription model. Check Photomath's official site for current free tier specifics.",
+      "ko": "무료 버전은 매일 제한된 횟수만 사용할 수 있으며 기본부터 중급 문제까지 풉니다. 고급 주제와 무제한 풀이를 원하면 유료 구독으로 업그레이드해야 합니다. 현재 무료 버전의 정확한 스펙은 Photomath 공식 사이트를 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Premium subscription unlocks unlimited problem-solving, access to all advanced topics including calculus, animated explanations, and ad-free experience. Pricing varies by region and billing cycle; visit Photomath's official website to confirm current rates and available plans.",
+      "ko": "프리미엄 구독으로 무제한 문제 풀이, 미적분학을 포함한 모든 고급 주제 접근, 애니메이션 설명, 광고 없는 환경을 이용할 수 있습니다. 가격은 지역과 청구 주기에 따라 다르니 Photomath 공식 웹사이트에서 현재 요금과 플랜을 확인하세요."
+    },
+    "commercialNotes": {
+      "en": "Photomath is designed for individual student learning and is not intended for commercial, institutional resale, or large-scale business deployment. Educational institutions may have special licensing options available through direct contact with the company.",
+      "ko": "Photomath는 개별 학생 학습용으로 설계되었으며 상업적 재판매나 기관 대규모 배포용이 아닙니다. 교육기관은 회사와의 직접 연락을 통해 특별 라이선싱 옵션이 있을 수 있습니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "wolfram-alpha",
+    "name": "Wolfram Alpha",
+    "slug": "wolfram-alpha",
+    "description": {
+      "en": "Wolfram Alpha is a computational knowledge engine that answers factual questions and solves problems by computing answers rather than retrieving pre-existing information.",
+      "ko": "Wolfram Alpha는 사전 정보를 검색하는 대신 계산을 통해 사실 기반 질문에 답하고 문제를 풀어주는 계산 지식 엔진입니다."
+    },
+    "longDescription": {
+      "en": "Wolfram Alpha uses its own computational engine and curated data to instantly solve equations, analyze data, visualize concepts, and provide detailed step-by-step solutions across mathematics, science, and everyday topics. Unlike search engines, it computes real-time answers and can handle complex queries spanning calculus, physics, chemistry, statistics, finance, and more.",
+      "ko": "Wolfram Alpha는 자체 계산 엔진과 정선된 데이터를 이용해 방정식을 풀고, 데이터를 분석하며, 개념을 시각화하고, 수학, 과학, 일상적인 주제에 대해 단계별 상세 풀이를 제공합니다. 검색 엔진과 달리 실시간 답변을 계산할 수 있으며 미분적분학, 물리학, 화학, 통계학, 재무 등을 포함한 복잡한 질문을 다룰 수 있습니다."
+    },
+    "beginnerDescription": {
+      "en": "Wolfram Alpha is like having a smart calculator and knowledge assistant that can solve math problems, answer science questions, and show you how the answer works step by step.",
+      "ko": "Wolfram Alpha는 수학 문제를 풀고, 과학 질문에 답하며, 답을 단계별로 설명해주는 똑똑한 계산기이자 지식 보조원이라고 생각하면 됩니다."
+    },
+    "websiteUrl": "https://www.wolframalpha.com",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "startingPrice": "$5.49/mo",
+    "rating": 4.6,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": false,
+    "featured": false,
+    "tags": [
+      "computational engine",
+      "math solver",
+      "knowledge base",
+      "education",
+      "problem-solving"
+    ],
+    "features": [
+      {
+        "en": "Solves mathematical equations and shows step-by-step solutions for algebra, calculus, differential equations, and more",
+        "ko": "대수학, 미분적분학, 미분방정식 등의 수학 방정식을 풀고 단계별 풀이를 제시합니다"
+      },
+      {
+        "en": "Visualizes data and mathematical concepts with graphs, plots, and interactive diagrams",
+        "ko": "그래프, 플롯, 대화형 다이어그램으로 데이터와 수학 개념을 시각화합니다"
+      },
+      {
+        "en": "Provides real-time computations for science, engineering, finance, and everyday practical questions",
+        "ko": "과학, 공학, 재무, 일상적인 실용 질문에 대한 실시간 계산을 제공합니다"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Extremely accurate computational results backed by extensive curated data and sophisticated algorithms",
+        "ko": "광범위하게 정선된 데이터와 정교한 알고리즘으로 뒷받침된 매우 정확한 계산 결과"
+      },
+      {
+        "en": "Step-by-step solutions are invaluable for learning and understanding how answers are derived",
+        "ko": "단계별 풀이는 학습과 답이 어떻게 도출되는지 이해하는 데 매우 유용합니다"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Free version has significant limitations; most advanced features and ad-free experience require a paid subscription",
+        "ko": "무료 버전의 기능이 제한적이며, 대부분의 고급 기능과 광고 제거 기능은 유료 구독이 필요합니다"
+      },
+      {
+        "en": "Requires precise mathematical or factual queries—conversational or vague questions often yield less useful results",
+        "ko": "정확한 수학이나 사실 기반 질문이 필요하며, 일상적이거나 모호한 질문은 덜 유용한 결과를 제공합니다"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "High school and university students checking homework answers and understanding mathematical problem-solving steps",
+        "ko": "고등학생과 대학생이 숙제 답을 확인하고 수학 문제 풀이 과정을 이해하는 데 사용"
+      },
+      {
+        "en": "Engineers and scientists performing quick calculations, unit conversions, and data analysis",
+        "ko": "엔지니어와 과학자가 빠른 계산, 단위 변환, 데이터 분석을 수행하는 데 활용"
+      },
+      {
+        "en": "General knowledge queries—sports statistics, geography facts, historical data, financial calculations",
+        "ko": "스포츠 통계, 지리 정보, 역사 데이터, 금융 계산 등 일반 지식 조회"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Students and educators who need detailed explanations of mathematical and scientific concepts",
+        "ko": "수학 및 과학 개념의 상세한 설명이 필요한 학생과 교사"
+      },
+      {
+        "en": "Professionals and researchers requiring accurate computational results and data visualization",
+        "ko": "정확한 계산 결과와 데이터 시각화가 필요한 전문가와 연구자"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Users seeking broad conversational answers or general-purpose information retrieval—use a search engine instead",
+        "ko": "광범위한 대화형 답변이나 일반적인 정보 검색을 원하는 사용자 (검색 엔진을 사용하는 것이 나음)"
+      },
+      {
+        "en": "Those unable or unwilling to phrase questions in precise mathematical or technical language",
+        "ko": "정확한 수학적 또는 기술적 언어로 질문을 표현하기 어렵거나 원하지 않는 사용자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "The free version allows basic queries and some problem-solving, but includes ads and limited access to advanced features. Check the official site for current free-tier specifics.",
+      "ko": "무료 버전은 기본 쿼리와 간단한 문제 풀이를 지원하지만 광고가 포함되고 고급 기능 접근이 제한됩니다. 현재 무료 요금제 세부 사항은 공식 웹사이트를 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid subscriptions remove ads, unlock step-by-step solutions, provide API access, and enable offline capabilities. Visit wolframalpha.com for current pricing and plan details.",
+      "ko": "유료 구독은 광고를 제거하고, 단계별 풀이를 활성화하며, API 접근 권한을 제공하고, 오프라인 기능을 활성화합니다. 현재 가격 및 요금제 세부 정보는 wolframalpha.com을 방문하세요."
+    },
+    "commercialNotes": {
+      "en": "Wolfram Alpha is designed for educational and personal use. Commercial and enterprise applications require a separate license; contact Wolfram for details.",
+      "ko": "Wolfram Alpha는 교육 및 개인용으로 설계되었습니다. 상업 및 기업 용도는 별도의 라이선스가 필요하며, Wolfram에 문의하시기 바랍니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "elsa-speak",
+    "name": "Elsa Speak",
+    "slug": "elsa-speak",
+    "description": {
+      "en": "AI-powered English speaking practice app that uses voice recognition and personalized feedback to help users improve pronunciation and conversational skills.",
+      "ko": "음성 인식과 맞춤형 피드백을 활용하여 영어 발음과 회화 능력을 향상시키는 AI 기반 영어 스피킹 앱입니다."
+    },
+    "longDescription": {
+      "en": "Elsa Speak is an AI-driven language learning platform designed specifically for English pronunciation and speaking fluency. It uses advanced speech recognition technology to analyze user pronunciation in real-time, providing detailed feedback on individual words and overall speech patterns. The app offers interactive lessons, conversation simulations, and progress tracking to help learners at various proficiency levels become more confident English speakers.",
+      "ko": "Elsa Speak는 영어 발음과 회화 유창성을 중심으로 설계된 AI 기반 언어 학습 플랫폼입니다. 고급 음성 인식 기술을 사용하여 사용자의 발음을 실시간으로 분석하고 개별 단어 및 전체 음성 패턴에 대한 상세한 피드백을 제공합니다. 대화형 레슨, 회화 시뮬레이션, 진도 추적 기능으로 다양한 수준의 학습자가 영어에 더 자신감을 가지고 말할 수 있도록 돕습니다."
+    },
+    "beginnerDescription": {
+      "en": "Elsa Speak is a friendly app that listens to you speak English and tells you exactly how to improve your pronunciation—no teacher required.",
+      "ko": "Elsa Speak는 당신의 영어 발음을 들어주고 어떻게 개선할지 정확히 알려주는 친근한 앱입니다."
+    },
+    "websiteUrl": "https://elsaspeak.com",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "startingPrice": "$9.99/mo",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": false,
+    "featured": false,
+    "tags": [
+      "english learning",
+      "pronunciation",
+      "speaking practice",
+      "voice ai",
+      "language app"
+    ],
+    "features": [
+      {
+        "en": "Real-time speech recognition with detailed pronunciation feedback on individual phonemes and words",
+        "ko": "개별 음소와 단어에 대한 상세한 발음 피드백을 제공하는 실시간 음성 인식 기술"
+      },
+      {
+        "en": "Interactive lessons and conversation scenarios tailored to different proficiency levels",
+        "ko": "다양한 수준에 맞춘 대화형 레슨 및 회화 시나리오"
+      },
+      {
+        "en": "Progress tracking and personalized learning paths based on your speaking patterns",
+        "ko": "당신의 음성 패턴을 기반으로 한 진도 추적 및 맞춤형 학습 경로"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Excellent for non-native speakers who want to perfect their English accent and natural intonation without human instruction",
+        "ko": "영어 악센트와 자연스러운 억양을 인간 강사의 도움 없이 완벽하게 개선하고 싶은 비원어민 학습자에게 최적입니다"
+      },
+      {
+        "en": "Mobile app makes it convenient to practice speaking anywhere and anytime with instant feedback",
+        "ko": "모바일 앱으로 언제 어디서나 편리하게 발음을 연습하고 즉각적인 피드백을 받을 수 있습니다"
+      },
+      {
+        "en": "Gamified learning experience keeps users engaged and motivated through achievements and progress milestones",
+        "ko": "성과 달성과 진도 마일스톤을 통한 게임화된 학습 경험으로 사용자의 참여와 동기 부여가 높습니다"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Limited to English only—does not support other languages, making it unsuitable for multilingual learners",
+        "ko": "영어만 지원되므로 여러 언어를 배우려는 학습자에게는 적합하지 않습니다"
+      },
+      {
+        "en": "Cannot fully replace human interaction and real conversation practice; better as a supplement to actual speaking with native speakers",
+        "ko": "실제 원어민과의 회화를 완전히 대체할 수 없으며 보충 학습 도구로 가장 효과적입니다"
+      },
+      {
+        "en": "Free tier is limited and most advanced features require a paid subscription",
+        "ko": "무료 요금제가 제한적이며 고급 기능을 사용하려면 유료 구독이 필요합니다"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Non-native professionals preparing for English-language job interviews or client presentations",
+        "ko": "영어 면접 준비나 국제 비즈니스 미팅을 준비하는 비원어민 직장인"
+      },
+      {
+        "en": "International students looking to reduce their accent and improve spoken English before studying abroad",
+        "ko": "해외 유학 전에 발음을 개선하고 자신감 있는 영어 회화를 원하는 유학생"
+      },
+      {
+        "en": "Adults learning English as a second language who prefer self-paced, tech-enabled learning over traditional classes",
+        "ko": "전통적인 학원 수업보다 자기 속도의 기술 기반 학습을 선호하는 성인 영어 학습자"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Non-native English speakers serious about improving their pronunciation and speaking confidence",
+        "ko": "발음 개선과 영어 스피킹 자신감을 갖고자 하는 비원어민 영어 학습자"
+      },
+      {
+        "en": "Self-directed learners who appreciate AI feedback and want to track measurable progress on their own schedule",
+        "ko": "AI 피드백을 선호하고 자신의 일정에 맞춰 측정 가능한 진도를 추적하고 싶은 자기 주도형 학습자"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Beginners with zero English foundation—requires at least basic English understanding to start",
+        "ko": "영어 기초가 전혀 없는 초급자—최소한의 기본 영어 이해가 필요합니다"
+      },
+      {
+        "en": "Learners seeking comprehensive grammar and vocabulary instruction; Elsa focuses primarily on speaking and pronunciation",
+        "ko": "종합적인 문법 및 어휘 학습을 원하는 학습자—Elsa는 주로 스피킹과 발음에 중점을 둡니다"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "The free plan offers limited access to lessons and feedback. Check the official website for current free tier details and any usage limits.",
+      "ko": "무료 요금제는 제한된 레슨과 피드백을 제공합니다. 현재 무료 플랜의 상세 내용은 공식 웹사이트를 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid subscriptions unlock full access to lessons, advanced feedback features, and personalized learning paths. Visit elsaspeak.com for current pricing and subscription options.",
+      "ko": "유료 구독으로 모든 레슨, 고급 피드백 기능, 맞춤형 학습 경로에 대한 전체 접근이 가능합니다. 최신 요금제는 elsaspeak.com에서 확인하세요."
+    },
+    "commercialNotes": {
+      "en": "Elsa Speak is designed for personal language learning and is not intended for commercial resale or business licensing. Educational institutions may have special licensing options—contact Elsa directly for details.",
+      "ko": "Elsa Speak는 개인의 언어 학습을 목적으로 설계되었으며 상업적 재판매나 비즈니스 라이선싱용이 아닙니다. 교육 기관을 위한 특별 라이선싱에 대해서는 Elsa에 직접 문의하세요."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "speak",
+    "name": "Speak",
+    "slug": "speak",
+    "description": {
+      "en": "Speak is an AI-powered language learning platform that specializes in conversational English practice through interactive lessons and real-time feedback.",
+      "ko": "Speak은 실시간 피드백과 인터랙티브 수업을 통해 영어 회화 연습에 특화한 AI 기반 언어 학습 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Speak uses artificial intelligence to provide personalized English conversation practice, allowing learners to engage in realistic dialogues with AI tutors that adapt to their proficiency level. The platform focuses on speaking and listening skills through immersive, conversation-based lessons rather than traditional grammar drills. It offers immediate feedback and corrections to help users improve their pronunciation and conversational fluency.",
+      "ko": "Speak은 인공지능을 활용하여 개인별 맞춤형 영어 회화 연습을 제공하며, 학습자들이 자신의 수준에 맞는 AI 튜터와 실제 대화를 나눌 수 있습니다. 이 플랫폼은 기존의 문법 중심 학습이 아닌 몰입형 회화 기반 수업을 통해 말하기와 듣기 능력 향상에 초점을 맞춥니다. 즉시 피드백과 교정을 통해 발음과 회화 유창성을 개선할 수 있습니다."
+    },
+    "beginnerDescription": {
+      "en": "Speak is a friendly AI language tutor that lets you practice English conversations anytime, with instant feedback to help you improve your speaking skills.",
+      "ko": "Speak은 친근한 AI 언어 튜터로, 언제든지 영어 회화를 연습하고 즉각적인 피드백을 받아 말하기 능력을 향상할 수 있습니다."
+    },
+    "websiteUrl": "https://www.speak.com",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": false,
+    "featured": false,
+    "tags": [
+      "english learning",
+      "conversational AI",
+      "language practice",
+      "speaking skills"
+    ],
+    "features": [
+      {
+        "en": "AI-powered conversational practice with adaptive difficulty levels that adjust to the learner's proficiency",
+        "ko": "학습자의 수준에 맞게 조정되는 적응형 난이도의 AI 기반 회화 연습"
+      },
+      {
+        "en": "Real-time pronunciation feedback and corrections with explanations to improve accent and fluency",
+        "ko": "발음 개선과 유창성 향상을 위한 실시간 발음 피드백 및 설명 제공"
+      },
+      {
+        "en": "Mobile app and web interface for flexible learning on-the-go or at a desk",
+        "ko": "이동 중이나 책상에서 유연한 학습이 가능한 모바일 앱과 웹 인터페이스"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Engaging conversational format makes learning feel natural and practical rather than repetitive drills",
+        "ko": "자연스럽고 실용적인 회화 형식으로 반복적인 연습보다 학습이 흥미로움"
+      },
+      {
+        "en": "Available on mobile devices, allowing learners to practice English anywhere and anytime without scheduling constraints",
+        "ko": "모바일 기기에서 이용 가능하여 일정 제약 없이 언제 어디서나 영어 연습이 가능"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Limited to English language learning; does not support other languages for users seeking multilingual practice",
+        "ko": "영어 학습에만 국한되어 있어 다국어 학습을 원하는 사용자에게는 부적합"
+      },
+      {
+        "en": "Free plan likely has restrictions on lesson duration, lesson frequency, or advanced features, requiring paid subscription for full access",
+        "ko": "무료 요금제는 수업 시간, 빈도 또는 고급 기능에 제한이 있을 가능성이 높으며 전체 기능 이용을 위해 유료 구독이 필요"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Daily conversational practice for professionals preparing for English-language job interviews or client meetings",
+        "ko": "영어 면접이나 고객 미팅을 준비하는 직장인들의 일일 회화 연습"
+      },
+      {
+        "en": "Improving spoken English fluency and confidence for non-native speakers who want to communicate more naturally in professional or social settings",
+        "ko": "직업이나 사회적 상황에서 더 자연스럽게 의사소통하고자 하는 영어 비모국어 사용자들의 유창성 및 자신감 향상"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "English learners at intermediate levels who want practical, conversation-focused practice with immediate AI feedback",
+        "ko": "즉각적인 AI 피드백을 받으며 실용적인 회화 중심 연습을 원하는 중급 영어 학습자"
+      },
+      {
+        "en": "Busy professionals and remote workers who need flexible English conversation practice that fits into irregular schedules",
+        "ko": "불규칙한 일정에 맞는 유연한 영어 회화 연습이 필요한 바쁜 직장인과 원격근무자"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Absolute beginners with little to no English foundation, who may struggle without grammar instruction or structured vocabulary building",
+        "ko": "문법 지도나 체계적인 어휘 학습 없이는 어려움을 겪을 수 있는 초급 영어 학습자"
+      },
+      {
+        "en": "Learners seeking to study languages other than English, or those needing comprehensive grammar and writing skill development",
+        "ko": "영어 이외의 다른 언어를 배우거나 포괄적인 문법 및 작문 능력 개발이 필요한 학습자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "A free tier is available to get started with basic conversational practice, though access to premium lessons and extended practice sessions likely requires a paid subscription. Check the official website for current limitations.",
+      "ko": "기본적인 회화 연습을 시작할 수 있는 무료 요금제가 있지만, 프리미엄 수업과 확장된 연습 세션은 유료 구독이 필요할 가능성이 높습니다. 현재 제한사항은 공식 웹사이트에서 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans unlock access to more lessons, longer conversation sessions, and advanced features. For specific pricing details and plan options, visit the official Speak website.",
+      "ko": "유료 요금제는 더 많은 수업, 더 긴 회화 세션 및 고급 기능에 대한 접근을 제공합니다. 구체적인 가격 정보와 요금제 옵션은 공식 Speak 웹사이트에서 확인하세요."
+    },
+    "commercialNotes": {
+      "en": "Speak is designed primarily for individual language learners rather than commercial or organizational use. Corporate or bulk licensing inquiries should be directed to the company directly.",
+      "ko": "Speak은 주로 개인 언어 학습자를 위해 설계되었으며 상업적 또는 조직적 용도에는 적합하지 않습니다. 기업용 또는 대량 라이선싱 문의는 회사에 직접 연락하시기 바랍니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "tutorai",
+    "name": "TutorAI",
+    "slug": "tutorai",
+    "description": {
+      "en": "TutorAI is an AI-powered tutoring platform designed to provide personalized learning assistance and educational support across various subjects.",
+      "ko": "TutorAI는 다양한 과목에서 개인맞춤형 학습 지원을 제공하는 AI 기반 튜터링 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "TutorAI leverages artificial intelligence to deliver interactive tutoring experiences tailored to individual learning styles and paces. The platform aims to make quality educational support more accessible by offering explanations, practice problems, and real-time feedback across multiple subjects. It combines conversational AI with pedagogical principles to help students grasp complex concepts more effectively.",
+      "ko": "TutorAI는 인공지능을 활용하여 학습자의 스타일과 속도에 맞춘 대화형 튜터링 경험을 제공합니다. 이 플랫폼은 설명, 연습 문제, 실시간 피드백을 여러 과목에 걸쳐 제공함으로써 양질의 교육 지원을 더 많은 사람이 접할 수 있도록 하는 것을 목표로 합니다. 대화형 AI와 교육학적 원리를 결합하여 학생들이 복잡한 개념을 더 효과적으로 이해하도록 돕습니다."
+    },
+    "beginnerDescription": {
+      "en": "TutorAI is an AI chatbot that acts like a personal tutor, answering your questions and helping you learn subjects more easily. Simply ask it anything you're studying, and it explains concepts in a way that's easy to understand.",
+      "ko": "TutorAI는 개인 튜터처럼 행동하는 AI 챗봇으로, 질문에 답하고 과목을 더 쉽게 배우도록 도와줍니다. 공부 중인 내용을 물어보면 개념을 이해하기 쉽게 설명해줍니다."
+    },
+    "websiteUrl": "https://www.tutorai.me",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "rating": 4.4,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": false,
+    "featured": false,
+    "tags": [
+      "ai tutoring",
+      "education",
+      "learning assistant",
+      "personalized learning"
+    ],
+    "features": [
+      {
+        "en": "Conversational AI tutoring that responds to questions across multiple subjects in real-time",
+        "ko": "여러 과목에 걸쳐 실시간으로 질문에 답하는 대화형 AI 튜터링"
+      },
+      {
+        "en": "Adaptive learning that adjusts explanations and difficulty based on student performance",
+        "ko": "학생의 성과에 따라 설명과 난이도를 조정하는 적응형 학습"
+      },
+      {
+        "en": "Practice problems and instant feedback to reinforce understanding",
+        "ko": "이해도 강화를 위한 연습 문제와 즉시 피드백"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Accessible 24/7 tutoring support without scheduling constraints or geographic limitations",
+        "ko": "시간 제약이나 지역 제한 없이 24시간 언제든지 이용 가능한 튜터링 지원"
+      },
+      {
+        "en": "Personalized learning paths that adapt to individual student needs and learning pace",
+        "ko": "학생 개개인의 필요와 학습 속도에 맞는 맞춤형 학습 경로"
+      },
+      {
+        "en": "Cost-effective alternative to traditional one-on-one tutoring services",
+        "ko": "일반적인 개인 튜터링 서비스에 비해 비용 효율적"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Lacks the human connection and emotional support that traditional tutors can provide",
+        "ko": "전통적인 튜터가 제공할 수 있는 인간관계와 정서적 지원 부족"
+      },
+      {
+        "en": "May struggle with highly specialized or domain-specific subjects requiring expert knowledge",
+        "ko": "전문가 지식이 필요한 매우 전문화된 과목에서는 어려움이 있을 수 있음"
+      },
+      {
+        "en": "Limited ability to provide hands-on or practical learning experiences",
+        "ko": "실습 또는 실제 학습 경험을 제공하는 능력 제한"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "High school and college students seeking supplemental help with homework, test prep, and concept clarification",
+        "ko": "숙제 도움, 시험 준비, 개념 설명이 필요한 고등학생 및 대학생"
+      },
+      {
+        "en": "Self-learners and professionals pursuing skill development in new subject areas at their own pace",
+        "ko": "자신의 속도에 맞춰 새로운 분야를 배우고 싶은 자기 주도 학습자 및 직업인"
+      },
+      {
+        "en": "Students in regions with limited access to quality tutoring resources seeking alternative support",
+        "ko": "양질의 튜터링 자원에 접근하기 어려운 지역의 학생들"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Students who prefer on-demand learning and flexible scheduling over traditional tutoring sessions",
+        "ko": "전통적인 튜터링보다 요청 시 학습과 유연한 일정을 선호하는 학생"
+      },
+      {
+        "en": "Learners seeking to supplement classroom education with personalized question-answering support",
+        "ko": "교실 교육을 개인화된 질문-답변 지원으로 보완하고 싶은 학습자"
+      },
+      {
+        "en": "Budget-conscious students looking for affordable educational support alternatives",
+        "ko": "저렴한 교육 지원 대안을 찾는 예산 제약이 있는 학생"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Learners who benefit from one-on-one mentorship, motivation, and accountability from a human instructor",
+        "ko": "인간 강사와의 일대일 멘토십, 동기 부여, 책임감으로부터 이득을 얻는 학습자"
+      },
+      {
+        "en": "Students pursuing highly specialized professional certifications or advanced research guidance",
+        "ko": "고도로 전문화된 전문 자격증이나 고급 연구 지도가 필요한 학생"
+      },
+      {
+        "en": "Those requiring hands-on laboratory work, practical demonstrations, or in-person skills training",
+        "ko": "실험실 작업, 실습 시연, 대면 기술 교육이 필요한 사람"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "TutorAI offers a freemium model with limited access to core tutoring features. Check the official site for current free plan quotas and restrictions.",
+      "ko": "TutorAI는 핵심 튜터링 기능에 제한된 접근을 제공하는 프리미엄 모델을 제공합니다. 현재 무료 플랜 한도 및 제한 사항은 공식 웹사이트에서 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans unlock expanded features, higher usage limits, and priority support. Visit the official website for current pricing and plan details.",
+      "ko": "유료 플랜은 확장된 기능, 높은 사용 한도, 우선 지원을 제공합니다. 최신 가격 및 플랜 세부사항은 공식 웹사이트를 방문하세요."
+    },
+    "commercialNotes": {
+      "en": "TutorAI is designed for individual learning rather than commercial institutional use. Terms of service should be reviewed for any restrictions on bulk or organizational deployment.",
+      "ko": "TutorAI는 상용 기관 사용보다는 개별 학습을 위해 설계되었습니다. 대량 또는 조직적 배포 제한 사항은 서비스 약관을 검토하시기 바랍니다."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "coursebox-ai",
+    "name": "Coursebox AI",
+    "slug": "coursebox-ai",
+    "description": {
+      "en": "Coursebox AI is an AI-powered learning platform that helps create, organize, and deliver online courses and educational content.",
+      "ko": "Coursebox AI는 온라인 강좌를 만들고 정리하며 전달하는 것을 돕는 AI 기반 학습 플랫폼입니다."
+    },
+    "longDescription": {
+      "en": "Coursebox AI combines course creation tools with artificial intelligence to streamline the process of building and managing educational content. It is designed to help educators, trainers, and subject matter experts convert their knowledge into structured online courses with minimal technical friction.",
+      "ko": "Coursebox AI는 강좌 제작 도구와 인공지능을 결합하여 교육 콘텐츠를 만들고 관리하는 과정을 간소화합니다. 강사, 트레이너, 전문가가 자신의 지식을 최소한의 기술적 복잡성으로 체계적인 온라인 강좌로 전환할 수 있도록 설계되었습니다."
+    },
+    "beginnerDescription": {
+      "en": "Coursebox AI helps you turn your knowledge into online courses using AI assistance, making course creation faster and easier even if you've never built one before.",
+      "ko": "Coursebox AI는 AI의 도움을 받아 당신의 지식을 온라인 강좌로 만들어주므로, 처음이어도 빠르고 쉽게 강좌를 만들 수 있습니다."
+    },
+    "websiteUrl": "https://www.coursebox.ai",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "rating": 4.5,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "course creation",
+      "ai learning",
+      "online education",
+      "content management"
+    ],
+    "features": [
+      {
+        "en": "AI-assisted course content generation and structuring",
+        "ko": "AI 기반 강좌 콘텐츠 생성 및 구조화"
+      },
+      {
+        "en": "Drag-and-drop course builder interface",
+        "ko": "드래그 앤 드롭 방식의 강좌 제작 인터페이스"
+      },
+      {
+        "en": "Student engagement and progress tracking tools",
+        "ko": "학생 참여도 및 진도 추적 도구"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Significantly reduces time needed to build and launch courses thanks to AI assistance",
+        "ko": "AI 지원으로 강좌 제작 및 출시 시간을 크게 단축"
+      },
+      {
+        "en": "User-friendly interface makes it accessible to non-technical educators",
+        "ko": "사용자 친화적인 인터페이스로 기술적 배경이 없는 강사도 쉽게 사용 가능"
+      }
+    ],
+    "cons": [
+      {
+        "en": "Limited customization options compared to enterprise-grade LMS platforms",
+        "ko": "기업용 LMS 플랫폼에 비해 커스터마이징 옵션이 제한적"
+      },
+      {
+        "en": "No native Korean language support, which may hinder accessibility for Korean-speaking audiences",
+        "ko": "한국어 지원이 없어 한국어권 학습자 확보에 어려움"
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Corporate training programs and employee onboarding courses",
+        "ko": "기업 교육 프로그램 및 직원 온보딩 강좌"
+      },
+      {
+        "en": "Independent educators and subject matter experts launching their first online courses",
+        "ko": "첫 온라인 강좌를 만드는 개인 강사 및 전문가"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Educators and trainers looking to quickly launch online courses without extensive technical expertise",
+        "ko": "빠르게 온라인 강좌를 시작하고 싶으면서 기술 전문성이 부족한 강사와 트레이너"
+      },
+      {
+        "en": "Small to medium-sized educational organizations seeking an affordable course management solution",
+        "ko": "저렴한 강좌 관리 솔루션을 찾는 중소 교육 기관"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Organizations requiring extensive SCORM or LTI integration with complex enterprise systems",
+        "ko": "복잡한 기업 시스템과의 SCORM 또는 LTI 통합이 필요한 조직"
+      },
+      {
+        "en": "Multi-language course creators targeting primarily Korean or other non-English speaking markets",
+        "ko": "한국어 또는 다른 비영어권 시장을 주요 대상으로 하는 다국어 강좌 제작자"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "Coursebox AI offers a free plan with basic course creation and hosting features, suitable for testing the platform and building starter courses. Check the official website for current free plan limits and capabilities.",
+      "ko": "Coursebox AI는 기본적인 강좌 제작 및 호스팅 기능이 포함된 무료 요금제를 제공하므로 플랫폼을 시험해보고 초급 강좌를 만들 수 있습니다. 현재 무료 요금제의 제한사항과 기능은 공식 웹사이트에서 확인하시기 바랍니다."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans unlock advanced features such as enhanced analytics, premium integrations, and higher course limits. For current pricing and specific plan details, visit the official Coursebox AI website.",
+      "ko": "유료 요금제는 고급 분석, 프리미엄 통합, 높은 강좌 제한 등 고급 기능을 제공합니다. 현재 가격 및 구체적인 요금제 상세 정보는 Coursebox AI 공식 웹사이트를 참고하세요."
+    },
+    "commercialNotes": {
+      "en": "Coursebox AI supports commercial use and allows educators to monetize their courses, making it suitable for those creating paid online courses or educational products. Ensure compliance with the platform's terms regarding course monetization.",
+      "ko": "Coursebox AI는 상업용 이용을 지원하며 강사가 자신의 강좌로 수익을 창출할 수 있어 유료 온라인 강좌나 교육 상품을 만드는 사람들에게 적합합니다. 강좌 수익화와 관련된 플랫폼의 이용약관 준수를 확인하세요."
+    },
+    "lastUpdated": "2026-06-22"
+  },
+  {
+    "id": "learnworlds-ai",
+    "name": "LearnWorlds AI",
+    "slug": "learnworlds-ai",
+    "description": {
+      "en": "LearnWorlds AI is a comprehensive learning platform that combines course creation tools with AI-powered features to help educators and content creators build and deliver engaging online courses.",
+      "ko": "LearnWorlds AI는 강좌 제작 도구와 AI 기반 기능을 결합한 포괄적인 학습 플랫폼으로, 교육자와 콘텐츠 크리에이터가 매력적인 온라인 강좌를 구축하고 제공하도록 돕습니다."
+    },
+    "longDescription": {
+      "en": "LearnWorlds AI is a platform designed for educators, trainers, and content creators to build, deliver, and monetize online courses. The platform integrates AI capabilities to streamline course creation, enhance student engagement, and provide insights into learning outcomes. It combines tools for video hosting, interactive content, assessments, and student management in a single environment.",
+      "ko": "LearnWorlds AI는 교육자, 강사, 콘텐츠 크리에이터가 온라인 강좌를 구축하고 제공하며 수익화할 수 있도록 설계된 플랫폼입니다. 강좌 제작을 간소화하고 학생 참여도를 높이며 학습 성과를 분석하는 데 AI 기능을 통합합니다. 동영상 호스팅, 상호작용식 콘텐츠, 평가 및 학생 관리 도구를 하나의 환경에서 제공합니다."
+    },
+    "beginnerDescription": {
+      "en": "LearnWorlds AI makes it easy to create and sell online courses without needing technical expertise—think of it as a user-friendly platform that handles the heavy lifting so you can focus on teaching.",
+      "ko": "LearnWorlds AI는 기술 지식이 없어도 온라인 강좌를 만들고 판매할 수 있는 사용하기 쉬운 플랫폼입니다. 복잡한 부분은 자동으로 처리해주므로 강의 내용에만 집중할 수 있습니다."
+    },
+    "websiteUrl": "https://www.learnworlds.com",
+    "categoryId": "productivity-education",
+    "pricingType": "Freemium",
+    "rating": 4.3,
+    "beginnerFriendly": true,
+    "koreanSupport": false,
+    "mobileSupport": true,
+    "commercialUse": true,
+    "featured": false,
+    "tags": [
+      "online courses",
+      "course creation",
+      "ai learning",
+      "education platform",
+      "content delivery"
+    ],
+    "features": [
+      {
+        "en": "AI-assisted course creation and content generation to help instructors develop course materials faster",
+        "ko": "강사가 강좌 자료를 더 빠르게 개발할 수 있도록 도와주는 AI 기반 강좌 제작 및 콘텐츠 생성"
+      },
+      {
+        "en": "Interactive course authoring with multimedia support including video, quizzes, assignments, and discussion forums",
+        "ko": "동영상, 퀴즈, 과제, 토론 포럼 등 멀티미디어를 지원하는 상호작용식 강좌 제작 도구"
+      },
+      {
+        "en": "Built-in student management, progress tracking, and analytics to monitor learning outcomes and engagement metrics",
+        "ko": "학습 성과와 참여도 지표를 모니터링하는 학생 관리, 진행 상황 추적 및 분석 기능"
+      }
+    ],
+    "pros": [
+      {
+        "en": "Comprehensive all-in-one platform eliminates the need to integrate multiple third-party tools for course hosting and management.",
+        "ko": "강좌 호스팅과 관리를 위해 여러 도구를 통합할 필요 없는 포괄적인 올인원 플랫폼입니다."
+      },
+      {
+        "en": "AI features help accelerate course creation and content development, making it faster for new instructors to get started.",
+        "ko": "AI 기능이 강좌 제작과 콘텐츠 개발을 가속화하여 신규 강사도 빠르게 시작할 수 있습니다."
+      },
+      {
+        "en": "Supports monetization and e-commerce features, allowing creators to sell courses and generate revenue directly.",
+        "ko": "강좌 판매와 수익 창출을 가능하게 하는 수익화 및 전자상거래 기능을 지원합니다."
+      }
+    ],
+    "cons": [
+      {
+        "en": "Lacks native Korean language support, which may limit accessibility for Korean-speaking instructors and students.",
+        "ko": "한국어 지원이 부족하여 한국인 강사와 학생의 접근성이 제한될 수 있습니다."
+      },
+      {
+        "en": "Pricing can become expensive as you scale up courses and student numbers; exact pricing structure should be verified on the official site.",
+        "ko": "강좌와 학생 수가 늘어나면서 비용이 상승할 수 있으며, 정확한 가격 체계는 공식 사이트에서 확인해야 합니다."
+      },
+      {
+        "en": "Steeper learning curve compared to some competitors when customizing advanced features and course branding.",
+        "ko": "고급 기능과 강좌 브랜딩을 커스터마이징할 때 일부 경쟁사보다 학습 곡선이 가파를 수 있습니다."
+      }
+    ],
+    "useCases": [
+      {
+        "en": "Corporate training programs and employee development courses where companies need to deliver consistent, trackable learning experiences.",
+        "ko": "기업이 일관되고 추적 가능한 학습 경험을 제공해야 하는 기업 교육 프로그램 및 직원 개발 강좌"
+      },
+      {
+        "en": "Individual instructors and course creators who want to build and sell online courses while maintaining full branding and student relationships.",
+        "ko": "강좌를 구축하고 판매하면서 완전한 브랜딩과 학생 관계를 유지하고 싶은 개별 강사 및 콘텐츠 크리에이터"
+      },
+      {
+        "en": "Educational institutions looking to supplement traditional learning with online course offerings and hybrid learning models.",
+        "ko": "전통적인 학습을 온라인 강좌 제공 및 하이브리드 학습 모델로 보완하려는 교육기관"
+      }
+    ],
+    "bestFor": [
+      {
+        "en": "Course creators and online instructors who want an integrated platform with monetization capabilities and don't need extensive third-party integrations.",
+        "ko": "통합 플랫폼과 수익화 기능을 원하면서 광범위한 타사 통합이 필요 없는 강좌 제작자 및 온라인 강사"
+      },
+      {
+        "en": "Organizations seeking to professionalize their training delivery with structured course management, progress tracking, and scalable infrastructure.",
+        "ko": "강좌 관리, 진행 상황 추적 및 확장 가능한 인프라를 갖춘 전문적인 교육 제공을 원하는 조직"
+      },
+      {
+        "en": "Teams that benefit from AI-assisted content creation and want to reduce the time spent on course development and material preparation.",
+        "ko": "AI 기반 콘텐츠 제작으로 혜택을 받으며 강좌 개발 및 자료 준비에 소요되는 시간을 줄이고 싶은 팀"
+      }
+    ],
+    "notIdealFor": [
+      {
+        "en": "Users who require extensive Korean language support or localization for a primarily Korean-speaking audience.",
+        "ko": "한국인 사용자를 위한 광범위한 한국어 지원이나 현지화가 필요한 사용자"
+      },
+      {
+        "en": "Organizations with very tight budgets that cannot scale beyond the free tier, as premium features require paid plans.",
+        "ko": "프리미엄 기능이 유료 요금제를 필요로 하므로 프리 티어를 벗어나 확장할 수 없는 매우 제한된 예산의 조직"
+      },
+      {
+        "en": "Instructors seeking highly specialized, niche tools for specific subject domains without needing a general-purpose course platform.",
+        "ko": "범용 강좌 플랫폼이 필요 없고 특정 주제 분야를 위한 매우 특화된 틈새 도구를 찾는 강사"
+      }
+    ],
+    "freePlanNotes": {
+      "en": "LearnWorlds offers a free plan that allows users to create and host courses with basic features, though it may include limitations on student numbers, customization, or advanced AI capabilities. Check the official website for current free plan details and restrictions.",
+      "ko": "LearnWorlds는 기본 기능으로 강좌를 제작하고 호스팅할 수 있는 무료 플랜을 제공하지만, 학생 수, 커스터마이징 또는 고급 AI 기능에 제한이 있을 수 있습니다. 현재 무료 플랜의 세부 사항과 제한 사항은 공식 웹사이트에서 확인하세요."
+    },
+    "paidPlanNotes": {
+      "en": "Paid plans unlock premium features including advanced analytics, expanded AI tools, enhanced customization, increased student capacity, and full monetization options. Specific pricing tiers and feature details should be reviewed on LearnWorlds' official pricing page to find the right fit for your needs.",
+      "ko": "유료 플랜은 고급 분석, 확장된 AI 도구, 향상된 커스터마이징, 증가된 학생 수용량 및 완전한 수익화 옵션을 포함한 프리미엄 기능을 제공합니다. 자신의 필요에 맞는 플랜을 찾기 위해 LearnWorlds의 공식 가격 페이지에서 특정 요금제 및 기능 세부 사항을 검토하세요."
+    },
+    "commercialNotes": {
+      "en": "LearnWorlds is designed to support commercial use and course monetization; creators can set their own pricing, manage subscriptions, and retain control over their student relationships. Review the platform's terms of service to understand any revenue-sharing or licensing provisions.",
+      "ko": "LearnWorlds는 상용 사용 및 강좌 수익화를 지원하도록 설계되어 있으며, 제작자는 자신의 가격을 설정하고 구독을 관리하며 학생 관계를 유지할 수 있습니다. 수익 분배 또는 라이선싱 규정을 이해하기 위해 플랫폼의 이용약관을 검토하세요."
+    },
+    "lastUpdated": "2026-06-22"
   }
 ];
 
