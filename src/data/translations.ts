@@ -69,6 +69,22 @@ export const translations: TranslationDict = {
   trustCuratedDb: { en: 'Curated AI tool database', ko: '직접 선별한 AI 도구 데이터베이스' },
   trustUpdatedWeekly: { en: 'Updated weekly', ko: '매주 업데이트' },
   trustEditorTested: { en: 'Editor-tested recommendations', ko: '에디터가 직접 검증한 추천' },
+  toolVerifiedBadge: { en: 'Editor-verified', ko: '에디터 검증' },
+
+  // Homepage "why us" differentiator strip (positioning vs broad directories)
+  whyEditorTitle: { en: 'Editor-verified', ko: '에디터 검증' },
+  whyEditorDesc: { en: 'Hand-reviewed entries, not auto-scraped blurbs.', ko: '자동 수집 소개글이 아닌, 직접 검토한 항목.' },
+  whyCompareTitle: { en: 'Compare side-by-side', ko: '나란히 비교' },
+  whyCompareDesc: { en: 'Real comparison tables, not just a list.', ko: '단순 목록이 아닌 실제 비교표.' },
+  whyFinderTitle: { en: 'Find your match', ko: '맞춤 추천' },
+  whyFinderDesc: { en: 'A quiz that matches tools to your job.', ko: '내 작업에 맞는 도구를 찾아주는 퀴즈.' },
+  whyKoreanTitle: { en: 'Korean-native', ko: '한국어 네이티브' },
+  whyKoreanDesc: { en: 'Written for Korean users, not machine-translated.', ko: '기계번역이 아닌 한국 사용자용 콘텐츠.' },
+
+  // Social share
+  shareLabel: { en: 'Share', ko: '공유' },
+  shareCopyLink: { en: 'Copy link', ko: '링크 복사' },
+  shareCopied: { en: 'Copied!', ko: '복사됨!' },
   homeBrowseCategories: { en: 'Browse AI Tools By Category', ko: '카테고리별 AI 도구 둘러보기' },
   homeBrowseCategoriesSubtitle: { en: 'Start from a job, then narrow down the right tool.', ko: '하고 싶은 작업에서 시작해 알맞은 도구를 좁혀 보세요.' },
   homeViewAllCategories: { en: 'View all categories', ko: '전체 카테고리 보기' },

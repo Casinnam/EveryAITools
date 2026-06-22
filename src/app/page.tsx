@@ -8,8 +8,10 @@ import { categories } from '@/data/categories';
 import { tools } from '@/data/tools';
 import { blogPosts } from '@/data/blogPosts';
 import { getToolText } from '@/lib/localizedToolText';
+import { getFeaturedTools } from '@/lib/curation';
 import {
   ArrowRight,
+  BadgeCheck,
   BarChart3,
   BookOpen,
   Bot,
@@ -18,11 +20,13 @@ import {
   Code,
   Crown,
   FileText,
+  Globe,
   Image as ImageIcon,
   Mail,
   PenTool,
   Play,
   RefreshCw,
+  Scale,
   Search,
   ShieldCheck,
   Sparkles,
@@ -68,7 +72,7 @@ export default function HomePage() {
   const [newsletterEmail, setNewsletterEmail] = useState('');
   const [newsletterSubmitted, setNewsletterSubmitted] = useState(false);
 
-  const featuredTools = useMemo(() => tools.filter((tool) => tool.featured).slice(0, 5), []);
+  const featuredTools = useMemo(() => getFeaturedTools(10), []);
   const visibleCategories = useMemo(() => categories.slice(0, 7), []);
   const statToolCount = tools.length;
   const statCategoryCount = categories.length;
@@ -206,6 +210,26 @@ export default function HomePage() {
       </section>
 
       <main className="mx-auto max-w-7xl space-y-8 px-4 py-8 sm:px-6 lg:px-8">
+        <section className="grid grid-cols-2 gap-3 lg:grid-cols-4">
+          {[
+            { icon: BadgeCheck, title: t('whyEditorTitle'), desc: t('whyEditorDesc'), tone: 'text-emerald-600 bg-emerald-50 dark:bg-emerald-500/10' },
+            { icon: Scale, title: t('whyCompareTitle'), desc: t('whyCompareDesc'), tone: 'text-cyan-600 bg-cyan-50 dark:bg-cyan-500/10' },
+            { icon: Sparkles, title: t('whyFinderTitle'), desc: t('whyFinderDesc'), tone: 'text-violet-600 bg-violet-50 dark:bg-violet-500/10' },
+            { icon: Globe, title: t('whyKoreanTitle'), desc: t('whyKoreanDesc'), tone: 'text-indigo-600 bg-indigo-50 dark:bg-indigo-500/10' },
+          ].map((item) => {
+            const Icon = item.icon;
+            return (
+              <div key={item.title} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+                <div className={`mb-3 flex h-9 w-9 items-center justify-center rounded-xl ${item.tone}`}>
+                  <Icon className="h-4.5 w-4.5" />
+                </div>
+                <p className="text-sm font-black text-slate-950 dark:text-white">{item.title}</p>
+                <p className="mt-1 text-xs font-medium leading-relaxed text-slate-500 dark:text-slate-400">{item.desc}</p>
+              </div>
+            );
+          })}
+        </section>
+
         <section className="rounded-[28px] border border-slate-200 bg-white p-5 shadow-sm sm:p-8 dark:border-slate-800 dark:bg-slate-900">
           <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div>
@@ -267,9 +291,16 @@ export default function HomePage() {
                       <div className="flex h-13 w-13 items-center justify-center rounded-2xl border border-slate-100 bg-slate-50 text-2xl font-black text-slate-900 dark:border-slate-800 dark:bg-slate-900 dark:text-white">
                         {tool.name.charAt(0)}
                       </div>
-                      <span className="rounded-full bg-indigo-50 px-2.5 py-1 text-[10px] font-black text-indigo-700 dark:bg-indigo-500/10 dark:text-indigo-200">
-                        {t('homeFeaturedBadge')}
-                      </span>
+                      {tool.verified ? (
+                        <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2.5 py-1 text-[10px] font-black text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-200">
+                          <BadgeCheck className="h-3 w-3" />
+                          {t('toolVerifiedBadge')}
+                        </span>
+                      ) : (
+                        <span className="rounded-full bg-indigo-50 px-2.5 py-1 text-[10px] font-black text-indigo-700 dark:bg-indigo-500/10 dark:text-indigo-200">
+                          {t('homeFeaturedBadge')}
+                        </span>
+                      )}
                     </div>
                     <h3 className="text-lg font-black text-slate-950 group-hover:text-indigo-700 dark:text-white dark:group-hover:text-indigo-200">{tool.name}</h3>
                     <div className="mt-2 flex items-center gap-1.5 text-sm font-bold text-slate-600 dark:text-slate-300">

@@ -666,10 +666,14 @@ const normalizeTool = (tool: Tool): Tool => ({
 
 const toolsById = new Map<string, Tool>();
 
+// baseTools are hand-written and human-reviewed, so they carry the
+// "Editor-verified" mark; enriched/generated entries do not.
+const markVerified = (tool: Tool): Tool => ({ ...tool, verified: true });
+
 // Priority (first wins): hand-written baseTools → AI-enriched entries →
 // raw generated placeholders. Enriched entries share ids with generatedTools,
 // so they override the shallow placeholders; baseTools still win over both.
-for (const tool of [...baseTools, ...enrichedTools, ...generatedTools].map(normalizeTool)) {
+for (const tool of [...baseTools.map(markVerified), ...enrichedTools, ...generatedTools].map(normalizeTool)) {
   if (!toolsById.has(tool.id)) {
     toolsById.set(tool.id, tool);
   }

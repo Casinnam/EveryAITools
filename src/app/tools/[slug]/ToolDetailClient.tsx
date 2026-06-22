@@ -7,6 +7,7 @@ import { tools } from '@/data/tools';
 import { categories } from '@/data/categories';
 import { getToolFaqs, getToolList, getToolText } from '@/lib/localizedToolText';
 import { getToolInsights } from '@/lib/toolInsights';
+import { ShareButtons } from '@/components/ShareButtons';
 import {
   AlertTriangle,
   ArrowLeft,
@@ -370,6 +371,10 @@ export function ToolDetailClient({ slug }: { slug: string }) {
             </div>
           </section>
         )}
+
+        <div className="flex justify-center">
+          <ShareButtons title={`${tool.name} — ${shortDescription}`} />
+        </div>
 
         <div className="rounded-2xl border border-slate-200 bg-white p-4 text-center shadow-sm dark:border-slate-800 dark:bg-slate-900">
           <p className="mx-auto max-w-3xl text-xs font-medium leading-relaxed text-slate-500 dark:text-slate-400">

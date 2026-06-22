@@ -25,6 +25,9 @@ export interface Tool {
   mobileSupport: boolean;
   commercialUse: boolean;
   featured: boolean;
+  // True only for hand-written, human-reviewed entries (the "Editor-verified"
+  // core). AI-enriched entries leave this false — see src/lib/curation.ts.
+  verified?: boolean;
   tags: string[];
   features: MultilingualString[];
   pros: MultilingualString[];

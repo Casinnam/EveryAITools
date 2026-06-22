@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { useLanguage } from '@/context/LanguageContext';
 import { blogPosts } from '@/data/blogPosts';
-import { ArrowLeft, Calendar, User, Clock, Share2, Send } from 'lucide-react';
+import { ArrowLeft, Calendar, User, Clock } from 'lucide-react';
+import { ShareButtons } from '@/components/ShareButtons';
 
 export const runtime = 'edge';
 
@@ -109,16 +110,8 @@ export default function BlogDetailPage({ params }: BlogDetailPageProps) {
         </div>
 
         {/* Sharing Widget Footer */}
-        <div className="flex items-center justify-between text-xs font-bold text-slate-400">
-          <span>Liked this article? Share it</span>
-          <div className="flex space-x-2.5">
-            <button className="p-2 rounded-lg bg-slate-50 hover:bg-indigo-50 hover:text-indigo-600 border border-slate-100 dark:bg-slate-900 dark:border-slate-800" title="Share via Messenger">
-              <Send className="h-4 w-4" />
-            </button>
-            <button className="p-2 rounded-lg bg-slate-50 hover:bg-indigo-50 hover:text-indigo-600 border border-slate-100 dark:bg-slate-900 dark:border-slate-800" title="Copy article link">
-              <Share2 className="h-4 w-4" />
-            </button>
-          </div>
+        <div className="border-t border-slate-100 pt-6 dark:border-slate-800">
+          <ShareButtons title={post.title[language] || post.title['en']} />
         </div>
 
       </article>
