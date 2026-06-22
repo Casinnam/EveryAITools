@@ -44,3 +44,6 @@ next-env.d.ts
 # local scratch/generated project copies
 /every-ai-tools/
 /everyaitools plan.txt
+
+# enrichment pipeline resume checkpoint (regenerated per run)
+/scripts/.enrich-checkpoint.json

@@ -1,6 +1,7 @@
 import { Tool } from '../types';
 import { additionalTools } from './additionalTools';
 import { generatedTools } from './generatedTools';
+import { enrichedTools } from './enrichedTools';
 
 const baseTools: Tool[] = [
   // --- Writing & Content ---
@@ -665,7 +666,10 @@ const normalizeTool = (tool: Tool): Tool => ({
 
 const toolsById = new Map<string, Tool>();
 
-for (const tool of [...baseTools, ...generatedTools].map(normalizeTool)) {
+// Priority (first wins): hand-written baseTools → AI-enriched entries →
+// raw generated placeholders. Enriched entries share ids with generatedTools,
+// so they override the shallow placeholders; baseTools still win over both.
+for (const tool of [...baseTools, ...enrichedTools, ...generatedTools].map(normalizeTool)) {
   if (!toolsById.has(tool.id)) {
     toolsById.set(tool.id, tool);
   }

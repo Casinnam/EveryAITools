@@ -9,7 +9,7 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://everyaitoo
 export const SITE_NAME = 'Every AI Tools';
 
 /** Last editorial refresh of the curated tool database (updated with each data release). */
-export const DATA_LAST_UPDATED = '2026-06-08';
+export const DATA_LAST_UPDATED = '2026-06-22';
 
 export function absoluteUrl(path: string): string {
   return `${SITE_URL}${path.startsWith('/') ? path : `/${path}`}`;
