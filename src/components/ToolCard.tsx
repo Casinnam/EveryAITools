@@ -103,6 +103,11 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
                     {t('toolVerifiedBadge')}
                   </span>
                 )}
+                {tool.korea?.domestic && (
+                  <span className="rounded bg-rose-50 px-1.5 py-0.5 text-[10px] font-black text-rose-600 dark:bg-rose-500/10 dark:text-rose-300">
+                    {t('koreaDomestic')}
+                  </span>
+                )}
               </div>
             </div>
           </div>
@@ -128,6 +133,11 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
           {tool.koreanSupport && (
             <span className="rounded-md bg-indigo-50/50 px-2 py-0.5 text-[10px] font-semibold text-indigo-600 dark:bg-indigo-950/20 dark:text-indigo-400">
               {t('koSupport')}
+            </span>
+          )}
+          {tool.korea?.status === 'discontinued' && (
+            <span className="rounded-md bg-rose-100 px-2 py-0.5 text-[10px] font-bold text-rose-700 dark:bg-rose-500/20 dark:text-rose-300">
+              {t('koreaStatusDiscontinued')}
             </span>
           )}
         </div>

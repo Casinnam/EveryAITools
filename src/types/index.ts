@@ -6,6 +6,24 @@ export interface MultilingualString {
 
 export type PricingType = 'Free' | 'Freemium' | 'Paid';
 
+export type KoreanQuality = 'native' | 'good' | 'limited';
+export type KoreaStatus = 'live' | 'discontinued' | 'b2b-only';
+
+/**
+ * Hand-verified Korea-market overlay for a tool (see src/data/koreaProfiles.ts).
+ * Only filled for tools an editor has actually checked — the `verifiedOn` date
+ * is the proof of that check and the trust differentiator vs broad directories.
+ */
+export interface KoreaProfile {
+  domestic?: boolean; // 국산 (Korean-made)
+  koreanQuality?: KoreanQuality; // Korean input/output quality
+  pricingKRW?: string; // e.g. "월 14,900원"
+  foreignCardNeeded?: boolean; // paid plan requires an overseas/USD card
+  status?: KoreaStatus; // live / discontinued (e.g. CLOVA X) / b2b-only
+  verifiedOn?: string; // ISO date the editor verified liveness + pricing
+  koreanNote?: MultilingualString; // short note for Korean users
+}
+
 export interface Tool {
   id: string;
   name: string;
@@ -41,6 +59,7 @@ export interface Tool {
   paidPlanNotes?: MultilingualString;
   commercialNotes?: MultilingualString;
   lastUpdated?: string; // ISO date of the last editorial review
+  korea?: KoreaProfile; // attached at merge time from src/data/koreaProfiles.ts
 }
 
 export interface Category {

@@ -2,6 +2,7 @@ import { Tool } from '../types';
 import { additionalTools } from './additionalTools';
 import { generatedTools } from './generatedTools';
 import { enrichedTools } from './enrichedTools';
+import { koreaProfiles } from './koreaProfiles';
 
 const baseTools: Tool[] = [
   // --- Writing & Content ---
@@ -659,10 +660,14 @@ const legacyCategoryMap: Record<string, string> = {
   'design-ai': 'design-ui',
 };
 
-const normalizeTool = (tool: Tool): Tool => ({
-  ...tool,
-  categoryId: legacyCategoryMap[tool.categoryId] ?? tool.categoryId,
-});
+const normalizeTool = (tool: Tool): Tool => {
+  const korea = koreaProfiles[tool.id];
+  return {
+    ...tool,
+    categoryId: legacyCategoryMap[tool.categoryId] ?? tool.categoryId,
+    ...(korea ? { korea } : {}),
+  };
+};
 
 const toolsById = new Map<string, Tool>();
 

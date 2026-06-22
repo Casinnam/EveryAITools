@@ -19,6 +19,7 @@ import {
   CheckCircle2,
   CircleDollarSign,
   ExternalLink,
+  Globe,
   Lightbulb,
   Plus,
   ShieldCheck,
@@ -61,6 +62,19 @@ export function ToolDetailClient({ slug }: { slug: string }) {
   const lastUpdatedLabel = new Intl.DateTimeFormat(language === 'ko' ? 'ko-KR' : 'en-US', { dateStyle: 'long' })
     .format(new Date(`${insights.lastUpdated}T00:00:00Z`));
   const pricingLabel = tool.pricingType === 'Free' ? t('pricingFree') : tool.pricingType === 'Freemium' ? t('pricingFreemium') : t('pricingPaid');
+
+  // Korea-market overlay (only present for editor-verified Korean profiles)
+  const korea = tool.korea;
+  const koreaVerifiedLabel = korea?.verifiedOn
+    ? new Intl.DateTimeFormat(language === 'ko' ? 'ko-KR' : 'en-US', { dateStyle: 'long' }).format(new Date(`${korea.verifiedOn}T00:00:00Z`))
+    : '';
+  const koreaQualityLabel = korea?.koreanQuality === 'native' ? t('koreaQualityNative')
+    : korea?.koreanQuality === 'good' ? t('koreaQualityGood')
+    : korea?.koreanQuality === 'limited' ? t('koreaQualityLimited') : '';
+  const koreaStatusLabel = korea?.status === 'discontinued' ? t('koreaStatusDiscontinued')
+    : korea?.status === 'b2b-only' ? t('koreaStatusB2bOnly')
+    : korea?.status === 'live' ? t('koreaStatusLive') : '';
+  const koreanNoteText = korea?.koreanNote ? (korea.koreanNote[language] || korea.koreanNote.en) : '';
   const bestForTitle = language === 'ko'
     ? `${tool.name} ${t('detailBestForSuffix')}`
     : `${t('detailBestForPrefix')} ${tool.name} ${t('detailBestForSuffix')}`;
@@ -227,6 +241,45 @@ export function ToolDetailClient({ slug }: { slug: string }) {
           })}
         </section>
 
+        {korea && (
+          <section className="rounded-[28px] border border-rose-100 bg-rose-50/40 p-6 shadow-sm sm:p-8 dark:border-rose-500/20 dark:bg-rose-500/5">
+            <div className="mb-5 flex flex-wrap items-center gap-2">
+              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-rose-600 shadow-sm dark:bg-slate-950 dark:text-rose-300">
+                <Globe className="h-5 w-5" />
+              </span>
+              <h2 className="text-lg font-black text-slate-950 dark:text-white">{t('koreaPanelTitle')}</h2>
+              {korea.domestic && (
+                <span className="rounded-full bg-rose-100 px-2.5 py-1 text-[11px] font-black text-rose-700 dark:bg-rose-500/20 dark:text-rose-200">
+                  {t('koreaDomestic')}
+                </span>
+              )}
+              {koreaVerifiedLabel && (
+                <span className="ml-auto inline-flex items-center gap-1 text-xs font-bold text-slate-500 dark:text-slate-400">
+                  <CalendarCheck className="h-3.5 w-3.5 text-emerald-600" />
+                  {t('koreaVerifiedOn')}: {koreaVerifiedLabel}
+                </span>
+              )}
+            </div>
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+              {koreaQualityLabel && (
+                <KoreaRow label={t('koreaQualityLabel')} value={koreaQualityLabel} />
+              )}
+              {koreaStatusLabel && (
+                <KoreaRow label={t('koreaStatusRow')} value={koreaStatusLabel} tone={korea.status === 'discontinued' ? 'warn' : 'normal'} />
+              )}
+              {korea.pricingKRW && (
+                <KoreaRow label={t('koreaPricingKRW')} value={korea.pricingKRW} />
+              )}
+              {typeof korea.foreignCardNeeded === 'boolean' && (
+                <KoreaRow label={t('koreaForeignCardLabel')} value={korea.foreignCardNeeded ? t('koreaForeignCardYes') : t('koreaForeignCardNo')} />
+              )}
+            </div>
+            {koreanNoteText && (
+              <p className="mt-4 text-sm font-medium leading-relaxed text-slate-600 dark:text-slate-300">{koreanNoteText}</p>
+            )}
+          </section>
+        )}
+
         {/* Quick decision guide: best for / not ideal for */}
         <section className="rounded-[28px] border border-slate-200 bg-white p-6 shadow-sm sm:p-8 dark:border-slate-800 dark:bg-slate-900">
           <div className="mb-6 flex items-center gap-2 text-lg font-black text-slate-950 dark:text-white">
@@ -382,6 +435,15 @@ export function ToolDetailClient({ slug }: { slug: string }) {
           </p>
         </div>
       </main>
+    </div>
+  );
+}
+
+function KoreaRow({ label, value, tone = 'normal' }: { label: string; value: string; tone?: 'normal' | 'warn' }) {
+  return (
+    <div className="flex items-center justify-between gap-3 rounded-2xl border border-rose-100/70 bg-white px-4 py-3 dark:border-rose-500/10 dark:bg-slate-950">
+      <span className="text-xs font-bold uppercase text-slate-400">{label}</span>
+      <span className={`text-sm font-black ${tone === 'warn' ? 'text-rose-600 dark:text-rose-300' : 'text-slate-900 dark:text-white'}`}>{value}</span>
     </div>
   );
 }
