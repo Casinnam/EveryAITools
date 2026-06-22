@@ -2,6 +2,7 @@ import { Tool } from '../types';
 import { additionalTools } from './additionalTools';
 import { generatedTools } from './generatedTools';
 import { enrichedTools } from './enrichedTools';
+import { koreanTools } from './koreanTools';
 import { koreaProfiles } from './koreaProfiles';
 
 const baseTools: Tool[] = [
@@ -675,10 +676,11 @@ const toolsById = new Map<string, Tool>();
 // "Editor-verified" mark; enriched/generated entries do not.
 const markVerified = (tool: Tool): Tool => ({ ...tool, verified: true });
 
-// Priority (first wins): hand-written baseTools → AI-enriched entries →
-// raw generated placeholders. Enriched entries share ids with generatedTools,
-// so they override the shallow placeholders; baseTools still win over both.
-for (const tool of [...baseTools.map(markVerified), ...enrichedTools, ...generatedTools].map(normalizeTool)) {
+// Priority (first wins): hand-written baseTools + verified domestic Korean tools
+// → AI-enriched entries → raw generated placeholders. Enriched entries share ids
+// with generatedTools, so they override the shallow placeholders; the verified
+// hand-written sets win over both.
+for (const tool of [...baseTools.map(markVerified), ...koreanTools.map(markVerified), ...enrichedTools, ...generatedTools].map(normalizeTool)) {
   if (!toolsById.has(tool.id)) {
     toolsById.set(tool.id, tool);
   }

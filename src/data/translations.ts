@@ -222,8 +222,12 @@ export const translations: TranslationDict = {
   detailPaidPlan: { en: 'Paid plans', ko: '유료 플랜' },
   detailLastUpdated: { en: 'Last updated', ko: '최근 업데이트' },
   detailEditorVerified: {
-    en: 'Editor-tested entry from our curated AI tool database, updated weekly.',
-    ko: '에디터가 직접 검증해 매주 업데이트하는 AI 도구 데이터베이스 항목입니다.',
+    en: 'Editor-verified — hand-checked by our team',
+    ko: '에디터 검증 — 직접 확인한 항목',
+  },
+  detailAiCurated: {
+    en: 'AI-curated entry — verify the latest details on the official site',
+    ko: 'AI 정리 항목 — 최신 정보는 공식 사이트에서 확인하세요',
   },
   detailFeaturedPick: { en: 'Featured pick', ko: '추천 도구' },
   detailAddToCompare: { en: 'Add to compare', ko: '비교에 추가' },

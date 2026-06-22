@@ -152,10 +152,17 @@ export function ToolDetailClient({ slug }: { slug: string }) {
                   <p className="mt-4 max-w-3xl text-base font-medium leading-relaxed text-slate-600 dark:text-slate-300">
                     {shortDescription}
                   </p>
-                  <p className="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 dark:text-slate-400">
-                    <ShieldCheck className="h-4 w-4 text-emerald-600" />
-                    {t('detailEditorVerified')}
-                  </p>
+                  {tool.verified ? (
+                    <p className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-black text-emerald-700 dark:bg-emerald-500/10 dark:text-emerald-300">
+                      <BadgeCheck className="h-4 w-4" />
+                      {t('detailEditorVerified')}
+                    </p>
+                  ) : (
+                    <p className="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 dark:text-slate-400">
+                      <ShieldCheck className="h-4 w-4 text-slate-400" />
+                      {t('detailAiCurated')}
+                    </p>
+                  )}
                 </div>
               </div>
 
