@@ -432,6 +432,268 @@ export const koreaProfiles: Record<string, KoreaProfile> = {
     verifiedOn: '2026-06-22', sourceUrl: 'https://pika.art',
     koreanNote: { en: 'Short AI video generation; English prompts best. Billed in USD.', ko: '짧은 AI 영상 생성 도구로 영어 프롬프트가 가장 좋습니다. USD 청구.' },
   },
+
+  // --- Global tools — Korea labels (Step 3, batch 2) ---
+  poe: {
+    koreanQuality: 'high', status: 'live', maker: 'Quora', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://poe.com',
+    koreanNote: { en: 'One app to chat with many models; Korean works via Claude/GPT. Billed in USD.', ko: '여러 모델을 한 앱에서 쓰며 Claude·GPT로 한국어가 잘 됩니다. USD 청구.' },
+  },
+  'mistral-ai': {
+    koreanQuality: 'high', status: 'live', maker: 'Mistral AI', makerCountry: 'FR',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://mistral.ai',
+    koreanNote: { en: 'European open-weight models; handles Korean well. Billed in EUR/USD.', ko: '유럽 오픈웨이트 모델로 한국어를 잘 처리합니다. EUR·USD 청구.' },
+  },
+  'you-com': {
+    koreanQuality: 'high', status: 'live', maker: 'You.com', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://you.com',
+    koreanNote: { en: 'AI search with Korean queries and answers. Billed in USD.', ko: '한국어 질의·답변이 되는 AI 검색입니다. USD 청구.' },
+  },
+  phind: {
+    koreanQuality: 'high', status: 'live', maker: 'Phind', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.phind.com',
+    koreanNote: { en: 'Developer-focused AI search; code is language-agnostic. Billed in USD.', ko: '개발자용 AI 검색으로 코드는 언어 무관합니다. USD 청구.' },
+  },
+  writesonic: {
+    koreanQuality: 'medium', status: 'live', maker: 'Writesonic', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://writesonic.com',
+    koreanNote: { en: 'Marketing copy is English-first; Korean output is workable. Billed in USD.', ko: '영어 마케팅 카피 중심이며 한국어 출력은 보통입니다. USD 청구.' },
+  },
+  rytr: {
+    koreanQuality: 'medium', status: 'live', maker: 'Rytr', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://rytr.me',
+    koreanNote: { en: 'Budget AI writer; Korean output is workable, English-first. Billed in USD.', ko: '저가 AI 라이터로 한국어 출력은 보통, 영어 중심입니다. USD 청구.' },
+  },
+  wordtune: {
+    koreanQuality: 'medium', status: 'live', maker: 'AI21 Labs', makerCountry: 'IL',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.wordtune.com',
+    koreanNote: { en: 'Rewriting is tuned for English; limited Korean support. Billed in USD.', ko: '영어 문장 다듬기에 최적화되어 한국어 지원은 제한적입니다. USD 청구.' },
+  },
+  sudowrite: {
+    koreanQuality: 'low', status: 'live', maker: 'Sudowrite', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.sudowrite.com',
+    koreanNote: { en: 'Fiction writing aid tuned for English; little Korean help. Billed in USD.', ko: '영어 소설 창작 보조에 특화되어 한국어 도움은 적습니다. USD 청구.' },
+  },
+  hyperwrite: {
+    koreanQuality: 'medium', status: 'live', maker: 'OthersideAI', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.hyperwriteai.com',
+    koreanNote: { en: 'AI writing and agents; English-first, Korean workable. Billed in USD.', ko: 'AI 글쓰기·에이전트로 영어 중심이며 한국어는 보통입니다. USD 청구.' },
+  },
+  anyword: {
+    koreanQuality: 'medium', status: 'live', maker: 'Anyword', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://anyword.com',
+    koreanNote: { en: 'Performance marketing copy; English-first. Billed in USD.', ko: '성과 마케팅 카피 도구로 영어 중심입니다. USD 청구.' },
+  },
+  murf: {
+    koreanQuality: 'high', status: 'live', maker: 'Murf AI', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://murf.ai',
+    koreanNote: { en: 'AI voiceover with Korean voices available. Billed in USD.', ko: '한국어 음성을 제공하는 AI 보이스오버입니다. USD 청구.' },
+  },
+  'lovo-ai': {
+    koreanQuality: 'high', status: 'live', maker: 'LOVO', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://lovo.ai',
+    koreanNote: { en: 'AI voice (Genny) with natural Korean voices. Billed in USD.', ko: '자연스러운 한국어 음성을 제공하는 AI 보이스(Genny)입니다. USD 청구.' },
+  },
+  'resemble-ai': {
+    koreanQuality: 'medium', status: 'live', maker: 'Resemble AI', makerCountry: 'CA',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.resemble.ai',
+    koreanNote: { en: 'Voice cloning; multilingual, Korean support is workable. Billed in USD.', ko: '음성 복제 도구로 다국어를 지원하며 한국어는 보통입니다. USD 청구.' },
+  },
+  aiva: {
+    koreanQuality: 'medium', status: 'live', maker: 'AIVA Technologies', makerCountry: 'LU',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.aiva.ai',
+    koreanNote: { en: 'AI music composition; language-agnostic, English UI. Billed in EUR/USD.', ko: 'AI 작곡 도구로 언어 무관하며 UI는 영어입니다. EUR·USD 청구.' },
+  },
+  soundraw: {
+    koreanQuality: 'medium', status: 'live', maker: 'SOUNDRAW', makerCountry: 'JP',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://soundraw.io',
+    koreanNote: { en: 'Royalty-free AI music; language-agnostic. Billed in USD.', ko: '저작권 free AI 음악 생성으로 언어 무관합니다. USD 청구.' },
+  },
+  udio: {
+    koreanQuality: 'medium', status: 'live', maker: 'Udio', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.udio.com',
+    koreanNote: { en: 'Generates songs; Korean lyrics work but English prompts best. Billed in USD.', ko: '곡 생성 도구로 한국어 가사는 되나 프롬프트는 영어가 좋습니다. USD 청구.' },
+  },
+  fliki: {
+    koreanQuality: 'high', status: 'live', maker: 'Fliki', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://fliki.ai',
+    koreanNote: { en: 'Text-to-video with Korean TTS voices. Billed in USD.', ko: '한국어 TTS 음성을 지원하는 텍스트-투-비디오입니다. USD 청구.' },
+  },
+  pictory: {
+    koreanQuality: 'medium', status: 'live', maker: 'Pictory', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://pictory.ai',
+    koreanNote: { en: 'Script-to-video; English-first, Korean workable. Billed in USD.', ko: '대본-투-비디오로 영어 중심이며 한국어는 보통입니다. USD 청구.' },
+  },
+  'luma-ai': {
+    koreanQuality: 'medium', status: 'live', maker: 'Luma AI', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://lumalabs.ai',
+    koreanNote: { en: 'AI video (Dream Machine); English prompts best. Billed in USD.', ko: 'AI 영상(Dream Machine)으로 영어 프롬프트가 가장 좋습니다. USD 청구.' },
+  },
+  'd-id': {
+    koreanQuality: 'high', status: 'live', maker: 'D-ID', makerCountry: 'IL',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.d-id.com',
+    koreanNote: { en: 'Talking-avatar videos with Korean text-to-speech. Billed in USD.', ko: '한국어 음성 합성을 지원하는 말하는 아바타 영상입니다. USD 청구.' },
+  },
+  'veed-io': {
+    koreanQuality: 'medium', status: 'live', maker: 'VEED', makerCountry: 'UK',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.veed.io',
+    koreanNote: { en: 'Online video editor with Korean auto-subtitles. Billed in USD.', ko: '한국어 자동 자막을 지원하는 온라인 영상 편집기입니다. USD 청구.' },
+  },
+  'kling-ai': {
+    koreanQuality: 'medium', status: 'live', maker: 'Kuaishou', makerCountry: 'CN',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://klingai.com',
+    koreanNote: { en: 'High-quality AI video from China; English/Chinese prompts best. Billed in USD.', ko: '중국발 고품질 AI 영상으로 영어·중국어 프롬프트가 좋습니다. USD 청구.' },
+  },
+  'rask-ai': {
+    koreanQuality: 'high', status: 'live', maker: 'Rask AI', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.rask.ai',
+    koreanNote: { en: 'Video translation and dubbing into Korean. Billed in USD.', ko: '영상을 한국어로 번역·더빙해 줍니다. USD 청구.' },
+  },
+  vidiq: {
+    koreanQuality: 'medium', status: 'live', maker: 'vidIQ', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://vidiq.com',
+    koreanNote: { en: 'YouTube growth/SEO; English-first UI. Billed in USD.', ko: '유튜브 성장·SEO 도구로 UI는 영어 중심입니다. USD 청구.' },
+  },
+  photoroom: {
+    koreanQuality: 'medium', status: 'live', maker: 'PhotoRoom', makerCountry: 'FR',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.photoroom.com',
+    koreanNote: { en: 'Product/background photo editing; mostly visual. Billed in USD.', ko: '상품·배경 사진 편집으로 대부분 시각 작업입니다. USD 청구.' },
+  },
+  clipdrop: {
+    koreanQuality: 'medium', status: 'live', maker: 'Clipdrop (Jasper)', makerCountry: 'FR',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://clipdrop.co',
+    koreanNote: { en: 'Image editing suite; mostly visual, English UI. Billed in USD.', ko: '이미지 편집 모음으로 대부분 시각 작업이며 UI는 영어입니다. USD 청구.' },
+  },
+  'remove-bg': {
+    koreanQuality: 'high', status: 'live', maker: 'remove.bg (Kaleido)', makerCountry: 'AT',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.remove.bg',
+    koreanNote: { en: 'One-click background removal; language-agnostic. Billed in USD.', ko: '원클릭 배경 제거로 언어와 무관합니다. USD 청구.' },
+  },
+  flux: {
+    koreanQuality: 'medium', status: 'live', maker: 'Black Forest Labs', makerCountry: 'DE',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://blackforestlabs.ai',
+    koreanNote: { en: 'Open image model; English prompts best, via APIs/apps.', ko: '오픈 이미지 모델로 영어 프롬프트가 좋고 API·앱으로 사용합니다.' },
+  },
+  recraft: {
+    koreanQuality: 'medium', status: 'live', maker: 'Recraft', makerCountry: 'UK',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.recraft.ai',
+    koreanNote: { en: 'Design-grade image gen with brand styles; English prompts best. Billed in USD.', ko: '브랜드 스타일 디자인 이미지 생성으로 영어 프롬프트가 좋습니다. USD 청구.' },
+  },
+  'playground-ai': {
+    koreanQuality: 'medium', status: 'live', maker: 'Playground', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://playground.com',
+    koreanNote: { en: 'Image generation/editing; English prompts best. Billed in USD.', ko: '이미지 생성·편집으로 영어 프롬프트가 좋습니다. USD 청구.' },
+  },
+  replit: {
+    koreanQuality: 'high', status: 'live', maker: 'Replit', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://replit.com',
+    koreanNote: { en: 'Browser IDE with AI agent; Korean chat works, code is universal. Billed in USD.', ko: '브라우저 IDE+AI 에이전트로 한국어 대화가 되고 코드는 보편적입니다. USD 청구.' },
+  },
+  windsurf: {
+    koreanQuality: 'high', status: 'live', maker: 'Windsurf', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://windsurf.com',
+    koreanNote: { en: 'Agentic AI code editor; Korean instructions work. Billed in USD.', ko: '에이전트형 AI 코드 에디터로 한국어 지시가 잘 됩니다. USD 청구.' },
+  },
+  tabnine: {
+    koreanQuality: 'high', status: 'live', maker: 'Tabnine', makerCountry: 'IL',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.tabnine.com',
+    koreanNote: { en: 'Code completion; language-agnostic, privacy-focused. Billed in USD.', ko: '코드 자동완성으로 언어 무관하며 프라이버시 중심입니다. USD 청구.' },
+  },
+  uizard: {
+    koreanQuality: 'medium', status: 'live', maker: 'Uizard', makerCountry: 'DK',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://uizard.io',
+    koreanNote: { en: 'UI design from prompts/sketches; English UI. Billed in USD.', ko: '프롬프트·스케치로 UI 디자인을 만들며 UI는 영어입니다. USD 청구.' },
+  },
+  'framer-ai': {
+    koreanQuality: 'medium', status: 'live', maker: 'Framer', makerCountry: 'NL',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.framer.com',
+    koreanNote: { en: 'AI website builder; Korean content supported, English UI. Billed in USD.', ko: 'AI 웹사이트 빌더로 한국어 콘텐츠는 지원되고 UI는 영어입니다. USD 청구.' },
+  },
+  'galileo-ai': {
+    koreanQuality: 'medium', status: 'live', maker: 'Google (Galileo AI)', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.usegalileo.ai',
+    koreanNote: { en: 'Generates UI designs from text; English-first. Billed in USD.', ko: '텍스트로 UI 디자인을 생성하며 영어 중심입니다. USD 청구.' },
+  },
+  relume: {
+    koreanQuality: 'medium', status: 'live', maker: 'Relume', makerCountry: 'AU',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.relume.io',
+    koreanNote: { en: 'AI sitemaps/wireframes for web design; English UI. Billed in USD.', ko: '웹 디자인용 AI 사이트맵·와이어프레임으로 UI는 영어입니다. USD 청구.' },
+  },
+  looka: {
+    koreanQuality: 'high', status: 'live', maker: 'Looka', makerCountry: 'CA',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://looka.com',
+    koreanNote: { en: 'AI logo and brand kit maker; mostly visual. Billed in USD.', ko: 'AI 로고·브랜드 키트 제작으로 대부분 시각 작업입니다. USD 청구.' },
+  },
+  durable: {
+    koreanQuality: 'medium', status: 'live', maker: 'Durable', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://durable.co',
+    koreanNote: { en: 'Builds a business website in seconds; English-first. Billed in USD.', ko: '비즈니스 웹사이트를 순식간에 만들며 영어 중심입니다. USD 청구.' },
+  },
+  tome: {
+    koreanQuality: 'medium', status: 'live', maker: 'Tome', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://tome.app',
+    koreanNote: { en: 'AI presentations/decks; Korean content workable, English UI. Billed in USD.', ko: 'AI 프레젠테이션·덱으로 한국어 콘텐츠는 보통, UI는 영어입니다. USD 청구.' },
+  },
+  'beautiful-ai': {
+    koreanQuality: 'medium', status: 'live', maker: 'Beautiful.ai', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.beautiful.ai',
+    koreanNote: { en: 'Smart slide design; Korean text supported, English UI. Billed in USD.', ko: '스마트 슬라이드 디자인으로 한국어 텍스트는 지원, UI는 영어입니다. USD 청구.' },
+  },
+  'otter-ai': {
+    koreanQuality: 'low', status: 'live', maker: 'Otter.ai', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://otter.ai',
+    koreanNote: { en: 'Meeting transcription is English-only; not for Korean audio. Billed in USD.', ko: '회의 받아쓰기가 영어 전용이라 한국어 음성에는 부적합합니다. USD 청구.' },
+  },
+  fathom: {
+    koreanQuality: 'medium', status: 'live', maker: 'Fathom', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://fathom.video',
+    koreanNote: { en: 'AI meeting notes; best for English calls. Free tier, paid in USD.', ko: 'AI 회의록으로 영어 통화에 가장 적합합니다. 무료 등급, 유료는 USD.' },
+  },
+  'fireflies-ai': {
+    koreanQuality: 'medium', status: 'live', maker: 'Fireflies.ai', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://fireflies.ai',
+    koreanNote: { en: 'Meeting recorder/notes; some Korean transcription, English-first. Billed in USD.', ko: '회의 녹음·노트로 한국어 받아쓰기를 일부 지원하나 영어 중심입니다. USD 청구.' },
+  },
+  motion: {
+    koreanQuality: 'medium', status: 'live', maker: 'Motion', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.usemotion.com',
+    koreanNote: { en: 'AI calendar/task planner; English UI. Billed in USD.', ko: 'AI 캘린더·일정 플래너로 UI는 영어입니다. USD 청구.' },
+  },
+  'mem-ai': {
+    koreanQuality: 'medium', status: 'live', maker: 'Mem', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://get.mem.ai',
+    koreanNote: { en: 'AI note-taking; Korean notes workable, English UI. Billed in USD.', ko: 'AI 노트 작성으로 한국어 노트는 보통, UI는 영어입니다. USD 청구.' },
+  },
+  'surfer-seo': {
+    koreanQuality: 'medium', status: 'live', maker: 'Surfer', makerCountry: 'PL',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://surferseo.com',
+    koreanNote: { en: 'Content SEO optimization tuned for English. Billed in USD.', ko: '영어에 최적화된 콘텐츠 SEO 도구입니다. USD 청구.' },
+  },
+  frase: {
+    koreanQuality: 'medium', status: 'live', maker: 'Frase', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.frase.io',
+    koreanNote: { en: 'SEO content briefs/writing tuned for English. Billed in USD.', ko: '영어에 최적화된 SEO 콘텐츠 브리프·작성 도구입니다. USD 청구.' },
+  },
+  zapier: {
+    koreanQuality: 'high', status: 'live', maker: 'Zapier', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://zapier.com',
+    koreanNote: { en: 'Automation across 6,000+ apps; language-agnostic. Billed in USD.', ko: '6,000+ 앱을 잇는 자동화로 언어와 무관합니다. USD 청구.' },
+  },
+  make: {
+    koreanQuality: 'high', status: 'live', maker: 'Make (Celonis)', makerCountry: 'CZ',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.make.com',
+    koreanNote: { en: 'Visual automation/workflows; language-agnostic. Billed in USD.', ko: '비주얼 자동화·워크플로로 언어와 무관합니다. USD 청구.' },
+  },
+  chatpdf: {
+    koreanQuality: 'high', status: 'live', maker: 'ChatPDF', makerCountry: 'DE',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.chatpdf.com',
+    koreanNote: { en: 'Chat with PDFs; handles Korean documents well. Billed in USD.', ko: 'PDF와 대화하며 한국어 문서를 잘 처리합니다. USD 청구.' },
+  },
+  'julius-ai': {
+    koreanQuality: 'high', status: 'live', maker: 'Julius AI', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://julius.ai',
+    koreanNote: { en: 'AI data analysis; Korean questions on your data work. Billed in USD.', ko: 'AI 데이터 분석으로 내 데이터에 한국어 질문이 됩니다. USD 청구.' },
+  },
 };
 
 export default koreaProfiles;
