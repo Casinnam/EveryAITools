@@ -24,12 +24,18 @@ export interface KoreaProfile {
   koreanNote?: MultilingualString; // short note for Korean users
 }
 
-export interface Tool {
+/**
+ * Lightweight tool shape with only the fields needed for cards, lists, filters,
+ * and the finder quiz. Generated into src/data/toolsLite.ts so list/edge routes
+ * don't bundle the heavy per-tool content (longDescription, pros/cons, etc.) and
+ * the Cloudflare edge worker stays small. The full content lives in `Tool`,
+ * which only the statically-generated detail pages import at build time.
+ */
+export interface ToolLite {
   id: string;
   name: string;
   slug: string;
   description: MultilingualString;
-  longDescription: MultilingualString;
   beginnerDescription?: MultilingualString; // Beginner Mode에서 노출될 초보자 눈높이 설명
   websiteUrl: string;
   affiliateUrl?: string;
@@ -47,6 +53,12 @@ export interface Tool {
   // core). AI-enriched entries leave this false — see src/lib/curation.ts.
   verified?: boolean;
   tags: string[];
+  korea?: KoreaProfile; // attached at merge time from src/data/koreaProfiles.ts
+}
+
+/** Full tool record (lite fields + heavy editorial content). */
+export interface Tool extends ToolLite {
+  longDescription: MultilingualString;
   features: MultilingualString[];
   pros: MultilingualString[];
   cons: MultilingualString[];
@@ -59,7 +71,6 @@ export interface Tool {
   paidPlanNotes?: MultilingualString;
   commercialNotes?: MultilingualString;
   lastUpdated?: string; // ISO date of the last editorial review
-  korea?: KoreaProfile; // attached at merge time from src/data/koreaProfiles.ts
 }
 
 export interface Category {

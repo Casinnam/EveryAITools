@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { useLanguage } from '@/context/LanguageContext';
 import { comparisons } from '@/data/comparisons';
-import { tools } from '@/data/tools';
+import { toolsLite as tools } from '@/data/toolsLite';
 import { ComparisonTable } from '@/components/ComparisonTable';
 import { ArrowLeft, Scale, Sparkles } from 'lucide-react';
 

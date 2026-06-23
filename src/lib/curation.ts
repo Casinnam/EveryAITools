@@ -1,5 +1,5 @@
-import type { Tool } from '@/types';
-import { tools } from '@/data/tools';
+import type { ToolLite as Tool } from '@/types';
+import { toolsLite as tools } from '@/data/toolsLite';
 
 // Curation helpers powering the homepage showcase sections. These encode the
 // product's "decision assistant, quality over quantity" positioning: we surface

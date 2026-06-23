@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
-import { tools } from '@/data/tools';
+import { toolsLite as tools } from '@/data/toolsLite';
 import { Submission, NewsletterSubscriber } from '@/types';
 import { ShieldCheck, Plus, Check, X, Users, Database, Layers } from 'lucide-react';
 

@@ -1,13 +1,13 @@
 'use client';
 
 import React from 'react';
-import { Comparison, Tool } from '../types';
+import { Comparison, ToolLite } from '../types';
 import { useLanguage } from '../context/LanguageContext';
 import { Star, Check, X, ShieldAlert, Sparkles } from 'lucide-react';
 
 interface ComparisonTableProps {
   comparison: Comparison;
-  matchedTools: Tool[];
+  matchedTools: ToolLite[];
 }
 
 export const ComparisonTable: React.FC<ComparisonTableProps> = ({ comparison, matchedTools }) => {

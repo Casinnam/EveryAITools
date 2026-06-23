@@ -1,12 +1,16 @@
 import type { Metadata } from 'next';
 import { blogPosts } from '@/data/blogPosts';
-import { tools } from '@/data/tools';
+import { toolsLite as tools } from '@/data/toolsLite';
 import { rankingFaqs } from '@/data/rankingContent';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbJsonLd, faqJsonLd, toolItemListJsonLd } from '@/lib/seo';
 import { RankingsClient } from './RankingsClient';
 
-export const runtime = 'edge';
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return [{ slug: 'best-ai-tools-for-bloggers' }];
+}
 
 interface RankingsDetailPageProps {
   params: Promise<{ slug: string }>;

@@ -3,7 +3,8 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
-import { tools } from '@/data/tools';
+import type { Tool } from '@/types';
+import { toolsLite } from '@/data/toolsLite';
 import { categories } from '@/data/categories';
 import { getToolFaqs, getToolList, getToolText } from '@/lib/localizedToolText';
 import { getToolInsights } from '@/lib/toolInsights';
@@ -39,15 +40,12 @@ const capabilityItems = [
   { key: 'commercialUse', labelKey: 'filterCommercialUse' },
 ] as const;
 
-export function ToolDetailClient({ slug }: { slug: string }) {
+// The full tool is passed in as a prop from the statically-generated server
+// page, so this client component never imports the heavy `tools` array (it uses
+// the lightweight list only for the alternatives section).
+export function ToolDetailClient({ tool }: { tool: Tool }) {
   const { language, isBeginnerMode, t } = useLanguage();
   const [isInCompare, setIsInCompare] = useState(false);
-
-  const tool = tools.find((item) => item.slug === slug);
-  if (!tool) {
-    // The server page already 404s for unknown slugs; this is a type guard.
-    return null;
-  }
 
   const category = categories.find((item) => item.id === tool.categoryId);
   const categoryName = category ? category.name[language] || category.name.en : 'AI Tool';
@@ -78,7 +76,7 @@ export function ToolDetailClient({ slug }: { slug: string }) {
   const bestForTitle = language === 'ko'
     ? `${tool.name} ${t('detailBestForSuffix')}`
     : `${t('detailBestForPrefix')} ${tool.name} ${t('detailBestForSuffix')}`;
-  const alternatives = tools
+  const alternatives = toolsLite
     .filter((item) => item.categoryId === tool.categoryId && item.id !== tool.id)
     .sort((a, b) => b.rating - a.rating)
     .slice(0, 3);

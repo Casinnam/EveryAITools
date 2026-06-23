@@ -4,6 +4,15 @@ import type { MultilingualString, Tool } from '../types';
 type ToolTextField = 'description' | 'longDescription' | 'beginnerDescription';
 type ToolListField = 'features' | 'pros' | 'cons' | 'useCases';
 
+// Accepts both full Tool and lightweight ToolLite — getToolText only reads the
+// text fields below, all optional so a lite tool (no longDescription) is valid.
+type ToolTextInput = {
+  name: string;
+  description?: MultilingualString;
+  longDescription?: MultilingualString;
+  beginnerDescription?: MultilingualString;
+};
+
 const mojibakePattern = /[�]|[?]{2,}|[媛-熙]/;
 const hangulPattern = /[가-힣]/g;
 const latinPattern = /[A-Za-z]/g;
@@ -31,7 +40,7 @@ function readLocalizedText(value: MultilingualString | undefined, language: Lang
   return isUsableLocalizedText(localized, language, value.en) ? localized : undefined;
 }
 
-function koreanFieldFallback(tool: Tool, field: ToolTextField, categoryName: string): string {
+function koreanFieldFallback(tool: ToolTextInput, field: ToolTextField, categoryName: string): string {
   switch (field) {
     case 'description':
       return `${tool.name}은 ${categoryName} 분야에서 활용할 수 있는 AI 도구입니다. 기능, 가격, 사용 목적을 비교해 내 작업에 맞는지 판단할 수 있도록 정리했습니다.`;
@@ -73,7 +82,7 @@ const englishListFallbacks: Record<ToolListField, string[]> = {
   useCases: ['Drafting first-pass work quickly', 'Shortlisting similar AI tools', 'Testing practical workflow automation'],
 };
 
-export function getToolText(tool: Tool, field: ToolTextField, language: Language, categoryName: string): string {
+export function getToolText(tool: ToolTextInput, field: ToolTextField, language: Language, categoryName: string): string {
   const value = readLocalizedText(tool[field], language);
   if (value) return value;
   if (language === 'ko') return koreanFieldFallback(tool, field, categoryName);

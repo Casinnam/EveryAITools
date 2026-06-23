@@ -2,14 +2,14 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Tool } from '../types';
+import { ToolLite } from '../types';
 import { useLanguage } from '../context/LanguageContext';
 import { categories } from '../data/categories';
 import { getToolText } from '../lib/localizedToolText';
 import { Star, ExternalLink, ArrowRight, CheckCircle2, Plus, BadgeCheck } from 'lucide-react';
 
 interface ToolCardProps {
-  tool: Tool;
+  tool: ToolLite;
 }
 
 export const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {

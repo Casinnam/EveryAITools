@@ -4,7 +4,7 @@ import React, { useMemo, useSyncExternalStore } from 'react';
 import Link from 'next/link';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { useLanguage } from '@/context/LanguageContext';
-import { tools } from '@/data/tools';
+import { toolsLite as tools } from '@/data/toolsLite';
 import { comparisons } from '@/data/comparisons';
 import { categories } from '@/data/categories';
 import { ComparisonTable } from '@/components/ComparisonTable';
@@ -150,13 +150,10 @@ function CompareContent() {
           }, {} as Record<string, boolean>)
         }
       ],
-      prosAndCons: matchedTools.reduce((acc, t) => {
-        acc[t.id] = {
-          pros: t.pros,
-          cons: t.cons
-        };
-        return acc;
-      }, {} as (typeof comparisons)[0]['prosAndCons']),
+      // Dynamic comparisons use the lightweight tool data, which omits pros/cons
+      // (those live only in the full per-tool content). Hand-authored static
+      // comparisons in comparisons.ts still carry their own pros/cons.
+      prosAndCons: {} as (typeof comparisons)[0]['prosAndCons'],
       recommendation: {
         en: `For general-purpose ease of use, we suggest starting with ${matchedTools.find(t => t.beginnerFriendly)?.name || matchedTools[0]?.name}. If custom enterprise-grade results are your target, pick ${matchedTools[0]?.name}.`,
         ko: `전반적인 범용성과 사용상 쉬운 난이도를 최우선으로 하신다면 **${matchedTools.find(t => t.beginnerFriendly)?.name || matchedTools[0]?.name}** 도구를 적극 추천합니다. 특정 직군에 부합하는 고급 가치를 원하신다면 **${matchedTools[0]?.name}**을(를) 활용해 보세요.`

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useLanguage } from '@/context/LanguageContext';
 import { categories } from '@/data/categories';
-import { tools } from '@/data/tools';
+import { toolsLite as tools } from '@/data/toolsLite';
 import { blogPosts } from '@/data/blogPosts';
 import { getToolText } from '@/lib/localizedToolText';
 import { getFeaturedTools } from '@/lib/curation';

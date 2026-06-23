@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
-import { tools } from '@/data/tools';
+import { toolsLite as tools } from '@/data/toolsLite';
 import { categories } from '@/data/categories';
 import { ToolCard } from '@/components/ToolCard';
 import { Sparkles, ArrowLeft, ArrowRight, RotateCcw, AlertCircle, CheckCircle2 } from 'lucide-react';

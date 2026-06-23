@@ -7,7 +7,13 @@ import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbJsonLd, faqJsonLd, toolJsonLd } from '@/lib/seo';
 import { ToolDetailClient } from './ToolDetailClient';
 
-export const runtime = 'edge';
+// Statically generated at build time so the full (heavy) tool data is baked into
+// prerendered HTML instead of bundled into the Cloudflare edge worker.
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return tools.map((tool) => ({ slug: tool.slug }));
+}
 
 interface ToolDetailPageProps {
   params: Promise<{ slug: string }>;
@@ -71,7 +77,7 @@ export default async function ToolDetailPage({ params }: ToolDetailPageProps) {
           ]),
         ]}
       />
-      <ToolDetailClient slug={slug} />
+      <ToolDetailClient tool={tool} />
     </>
   );
 }

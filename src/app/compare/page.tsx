@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { tools } from '@/data/tools';
+import { toolsLite as tools } from '@/data/toolsLite';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbJsonLd, toolItemListJsonLd } from '@/lib/seo';
 import { POPULAR_TOOL_IDS } from '@/data/compareDefaults';

@@ -1,4 +1,4 @@
-import type { BlogPost, Tool } from '@/types';
+import type { BlogPost, ToolLite } from '@/types';
 
 /**
  * Canonical site origin. Override with NEXT_PUBLIC_SITE_URL when a custom
@@ -15,7 +15,7 @@ export function absoluteUrl(path: string): string {
   return `${SITE_URL}${path.startsWith('/') ? path : `/${path}`}`;
 }
 
-function toolOffer(tool: Tool) {
+function toolOffer(tool: ToolLite) {
   if (tool.pricingType === 'Free') {
     return { '@type': 'Offer', price: '0', priceCurrency: 'USD' };
   }
@@ -27,7 +27,7 @@ function toolOffer(tool: Tool) {
 }
 
 /** SoftwareApplication structured data for a tool detail page. */
-export function toolJsonLd(tool: Tool, categoryName: string) {
+export function toolJsonLd(tool: ToolLite, categoryName: string) {
   const offer = toolOffer(tool);
   return {
     '@context': 'https://schema.org',
@@ -43,7 +43,7 @@ export function toolJsonLd(tool: Tool, categoryName: string) {
 }
 
 /** ItemList structured data for tool listing / ranking pages. */
-export function toolItemListJsonLd(tools: Tool[], listName: string) {
+export function toolItemListJsonLd(tools: ToolLite[], listName: string) {
   return {
     '@context': 'https://schema.org',
     '@type': 'ItemList',

@@ -1,4 +1,4 @@
-import type { PricingType, Tool } from '@/types';
+import type { PricingType, ToolLite } from '@/types';
 
 export type ToolPricingFilter = PricingType | 'all';
 
@@ -54,17 +54,15 @@ export function toolFiltersToSearchParams(filters: ToolFilters): URLSearchParams
   return params;
 }
 
-export function filterTools(allTools: Tool[], filters: ToolFilters, language: string): Tool[] {
+export function filterTools<T extends ToolLite>(allTools: T[], filters: ToolFilters, language: string): T[] {
   const query = filters.query.toLowerCase().trim();
 
   return allTools.filter((tool) => {
     if (query) {
       const description = tool.description[language] || tool.description.en;
-      const longDescription = tool.longDescription[language] || tool.longDescription.en;
       const matchesText =
         tool.name.toLowerCase().includes(query) ||
         description.toLowerCase().includes(query) ||
-        longDescription.toLowerCase().includes(query) ||
         tool.tags.some((tag) => tag.toLowerCase().includes(query));
 
       if (!matchesText) return false;

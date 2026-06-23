@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import { blogPosts } from '@/data/blogPosts';
-import { tools } from '@/data/tools';
+import { toolsLite as tools } from '@/data/toolsLite';
 import { rankingFaqs } from '@/data/rankingContent';
 import { DATA_LAST_UPDATED } from '@/lib/seo';
 import { Star, Award, ChevronRight, HelpCircle, ArrowLeft, ScrollText, HelpCircleIcon, CheckCircle2, CalendarCheck } from 'lucide-react';
