@@ -24,13 +24,43 @@ export default function BlogDetailPage({ params }: BlogDetailPageProps) {
     notFound();
   }
 
-  // Pre-process body paragraphs (splits by Markdown-like tags manually for styling)
+  // Inline renderer: supports **bold** and [label](url) links (internal links
+  // use next/link; external open in a new tab).
+  const renderInline = (text: string): React.ReactNode => {
+    const nodes: React.ReactNode[] = [];
+    const regex = /\*\*(.+?)\*\*|\[([^\]]+)\]\(([^)]+)\)/g;
+    let last = 0;
+    let key = 0;
+    let m: RegExpExecArray | null;
+    while ((m = regex.exec(text)) !== null) {
+      if (m.index > last) nodes.push(text.slice(last, m.index));
+      if (m[1] !== undefined) {
+        nodes.push(<strong key={key++} className="font-black text-slate-900 dark:text-white">{m[1]}</strong>);
+      } else {
+        const label = m[2];
+        const href = m[3];
+        nodes.push(
+          href.startsWith('/') ? (
+            <Link key={key++} href={href} className="font-bold text-indigo-600 hover:underline dark:text-indigo-400">{label}</Link>
+          ) : (
+            <a key={key++} href={href} target="_blank" rel="noopener noreferrer" className="font-bold text-indigo-600 hover:underline dark:text-indigo-400">{label}</a>
+          ),
+        );
+      }
+      last = regex.lastIndex;
+    }
+    if (last < text.length) nodes.push(text.slice(last));
+    return nodes;
+  };
+
+  // Pre-process body paragraphs (splits by Markdown-like tags manually for styling).
+  // Supports ## / ### headings, "- " bullet lists, and **bold** inline.
   const renderParagraphs = (text: string) => {
     return text.split('\n\n').map((para, i) => {
       const trimmed = para.trim();
       if (!trimmed) return null;
-      
-      // Handle Heading 3
+
+      // Heading 3
       if (trimmed.startsWith('### ')) {
         return (
           <h3 key={i} className="text-lg font-black text-slate-950 dark:text-white mt-8 mb-4 border-l-4 border-indigo-600 pl-3 leading-tight">
@@ -38,7 +68,7 @@ export default function BlogDetailPage({ params }: BlogDetailPageProps) {
           </h3>
         );
       }
-      // Handle Heading 2
+      // Heading 2
       if (trimmed.startsWith('## ')) {
         return (
           <h2 key={i} className="text-xl font-extrabold text-slate-950 dark:text-white mt-10 mb-4">
@@ -46,11 +76,25 @@ export default function BlogDetailPage({ params }: BlogDetailPageProps) {
           </h2>
         );
       }
-      
-      // Default Paragraph
+      // Bullet list — a block whose lines all start with "- "
+      const lines = trimmed.split('\n');
+      if (lines.every((line) => line.trim().startsWith('- '))) {
+        return (
+          <ul key={i} className="mb-4 space-y-2 pl-1">
+            {lines.map((line, j) => (
+              <li key={j} className="flex items-start gap-2 text-sm sm:text-base leading-relaxed text-slate-700 dark:text-slate-300 font-medium">
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-indigo-500" />
+                <span>{renderInline(line.trim().replace(/^- /, ''))}</span>
+              </li>
+            ))}
+          </ul>
+        );
+      }
+
+      // Default paragraph
       return (
         <p key={i} className="text-sm sm:text-base leading-relaxed text-slate-700 dark:text-slate-300 font-medium mb-4">
-          {trimmed}
+          {renderInline(trimmed)}
         </p>
       );
     });
