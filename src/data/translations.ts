@@ -17,6 +17,7 @@ export const translations: TranslationDict = {
   navBlog: { en: 'Blog', ko: '블로그' },
   navSubmit: { en: 'Submit Tool', ko: '도구 등록' },
   navAdmin: { en: 'Admin', ko: '관리자' },
+  navKorean: { en: 'Korean AI', ko: '한국 AI' },
   beginnerMode: { en: 'Beginner Mode', ko: '쉬운 설명 모드' },
   language: { en: 'Language', ko: '언어' },
   allRightsReserved: { en: '© 2026 Every AI Tools. All rights reserved.', ko: '© 2026 Every AI Tools. 모든 권리 보유.' },
@@ -102,6 +103,24 @@ export const translations: TranslationDict = {
   koreaStatusDiscontinued: { en: 'Service discontinued', ko: '서비스 종료' },
   koreaStatusB2bOnly: { en: 'Business/API only', ko: '기업·API 전용' },
   koreaVerifiedOn: { en: 'Verified', ko: '확인일' },
+
+  // Korea landing page
+  koreanLandingEyebrow: { en: 'Korea-focused AI directory', ko: '한국 특화 AI 도구 디렉터리' },
+  koreanLandingTitle: { en: 'Korean AI Tools, verified for 2026', ko: '2026 한국 AI 도구, 확인하고 정리했습니다' },
+  koreanLandingSubtitle: {
+    en: 'Made-in-Korea AI tools and the global tools that handle Korean best — each checked for liveness and pricing before listing, with the date we verified it.',
+    ko: '국산 AI 도구와 한국어를 가장 잘 다루는 글로벌 도구를 모았습니다. 모든 도구는 등재 전 생존·가격을 직접 확인하고 확인 날짜를 표기합니다.',
+  },
+  koreanDomesticSection: { en: 'Made in Korea (국산)', ko: '국산 AI 도구' },
+  koreanDomesticDesc: { en: 'Built by Korean companies, with native Korean support.', ko: '한국 기업이 만든, 한국어 네이티브 지원 도구입니다.' },
+  koreanGlobalSection: { en: 'Global tools, strong in Korean', ko: '한국어가 강한 글로벌 도구' },
+  koreanGlobalDesc: { en: 'International tools that handle Korean well, labeled for local use.', ko: '한국어를 잘 처리하는 해외 도구를 한국 사용 기준으로 라벨링했습니다.' },
+  koreanTrustTitle: { en: 'Verified before listing', ko: '확인 후 등재' },
+  koreanTrustDesc: {
+    en: 'Korean services change fast — CLOVA X and Karlo both shut down recently. We check each tool against the live service and stamp the date, so you are not sent to a dead product.',
+    ko: '한국 서비스는 부침이 빠릅니다 — CLOVA X·칼로도 최근 종료됐습니다. 그래서 각 도구를 실제 서비스로 확인하고 확인 날짜를 표기해, 사라진 서비스로 보내지 않습니다.',
+  },
+  koreanCountSuffix: { en: 'made-in-Korea tools', ko: '개 국산 도구' },
   homeBrowseCategories: { en: 'Browse AI Tools By Category', ko: '카테고리별 AI 도구 둘러보기' },
   homeBrowseCategoriesSubtitle: { en: 'Start from a job, then narrow down the right tool.', ko: '하고 싶은 작업에서 시작해 알맞은 도구를 좁혀 보세요.' },
   homeViewAllCategories: { en: 'View all categories', ko: '전체 카테고리 보기' },

@@ -15,6 +15,7 @@ export const Header: React.FC = () => {
   const navItems = [
     { name: t('navHome'), path: '/' },
     { name: t('navTools'), path: '/tools' },
+    { name: t('navKorean'), path: '/korean' },
     { name: t('navCompare'), path: '/compare' },
     { name: t('navRankings'), path: '/rankings/best-ai-tools-for-bloggers' },
     { name: t('navBlog'), path: '/blog' },

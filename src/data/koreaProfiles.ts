@@ -124,6 +124,108 @@ export const koreaProfiles: Record<string, KoreaProfile> = {
       ko: '국산 기업(AI Studios)으로 한국어 음성 합성 기반 AI 아바타 영상을 제공하며 글로벌로 판매됩니다.',
     },
   },
+
+  // --- Domestic (국산) tools — Step 2 batch 2 (image/voice/design/edu) ---
+  supertone: {
+    domestic: true,
+    koreanQuality: 'native',
+    foreignCardNeeded: false,
+    status: 'live',
+    verifiedOn: '2026-06-22',
+    koreanNote: {
+      en: 'Korean voice-AI (HYBE company); free web TTS and voice changer, paid/API via sales.',
+      ko: '국산 음성 AI(HYBE 계열)로 웹 TTS·보이스 체인저가 무료이며 유료·API는 영업 문의입니다.',
+    },
+  },
+  miricanvas: {
+    domestic: true,
+    koreanQuality: 'native',
+    foreignCardNeeded: false,
+    status: 'live',
+    verifiedOn: '2026-06-22',
+    koreanNote: {
+      en: 'Korean design tool with a huge Korean template library; free plan with KRW paid tiers.',
+      ko: '방대한 한국어 템플릿을 갖춘 국산 디자인 툴로 무료 플랜과 원화 유료 플랜을 제공합니다.',
+    },
+  },
+  qanda: {
+    domestic: true,
+    koreanQuality: 'native',
+    foreignCardNeeded: false,
+    status: 'live',
+    verifiedOn: '2026-06-22',
+    koreanNote: {
+      en: 'Korean AI study app (Mathpresso); free core features with paid tutoring/premium.',
+      ko: '국산 AI 학습 앱(매쓰프레소)으로 핵심 기능은 무료이며 튜터링·프리미엄은 유료입니다.',
+    },
+  },
+  mangoboard: {
+    domestic: true,
+    koreanQuality: 'native',
+    foreignCardNeeded: false,
+    status: 'live',
+    verifiedOn: '2026-06-22',
+    koreanNote: {
+      en: 'Korean design platform with 16+ AI tools; fully Korean UI, free and KRW paid plans.',
+      ko: '16종+ AI 도구를 갖춘 국산 디자인 플랫폼으로 한국어 UI에 무료·원화 유료 플랜을 제공합니다.',
+    },
+  },
+  santa: {
+    domestic: true,
+    koreanQuality: 'native',
+    foreignCardNeeded: false,
+    status: 'live',
+    verifiedOn: '2026-06-22',
+    koreanNote: {
+      en: 'Korean AI TOEIC/TOEFL app (Riiid/Socra.ai); free diagnostic, paid subscription for full study.',
+      ko: '국산 AI 토익·토플 앱(Riiid/Socra.ai)으로 진단은 무료, 전체 학습은 유료 구독입니다.',
+    },
+  },
+
+  // --- Existing tools that are domestic / Korea-strong: profile only ---
+  typecast: {
+    domestic: true,
+    koreanQuality: 'native',
+    foreignCardNeeded: false,
+    status: 'live',
+    verifiedOn: '2026-06-22',
+    koreanNote: {
+      en: 'Korean AI voice/TTS service with a rich set of natural Korean voices.',
+      ko: '자연스러운 한국어 음성이 풍부한 국산 AI 음성·TTS 서비스입니다.',
+    },
+  },
+  'naver-clova-dubbing': {
+    domestic: true,
+    koreanQuality: 'native',
+    foreignCardNeeded: false,
+    status: 'live',
+    verifiedOn: '2026-06-22',
+    koreanNote: {
+      en: 'Naver dubbing service; natural Korean voices for video narration.',
+      ko: '네이버 더빙 서비스로 영상 내레이션에 자연스러운 한국어 음성을 제공합니다.',
+    },
+  },
+  papago: {
+    domestic: true,
+    koreanQuality: 'native',
+    foreignCardNeeded: false,
+    status: 'live',
+    verifiedOn: '2026-06-22',
+    koreanNote: {
+      en: 'Naver translation optimized for Korean, with image, voice, and conversation translation.',
+      ko: '한국어에 최적화된 네이버 번역으로 이미지·음성·대화 번역을 지원합니다.',
+    },
+  },
+  speak: {
+    koreanQuality: 'good',
+    foreignCardNeeded: false,
+    status: 'live',
+    verifiedOn: '2026-06-22',
+    koreanNote: {
+      en: 'AI English-speaking tutor that is #1 in Korea; Korean UI, though the company is US-based.',
+      ko: '한국 1위 AI 영어 회화 튜터로 한국어 UI를 지원합니다(회사는 미국 기반).',
+    },
+  },
 };
 
 export default koreaProfiles;

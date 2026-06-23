@@ -1,0 +1,45 @@
+import type { Metadata } from 'next';
+import { JsonLd } from '@/components/JsonLd';
+import { breadcrumbJsonLd, toolItemListJsonLd } from '@/lib/seo';
+import { getDomesticTools, getKoreaStrongTools } from '@/lib/curation';
+import { KoreanClient } from './KoreanClient';
+
+// Edge runtime so the full showcase is in the initial HTML for SEO.
+export const runtime = 'edge';
+
+const domesticCount = getDomesticTools().length;
+
+export const metadata: Metadata = {
+  title: `Korean AI Tools 2026 — ${domesticCount}+ Made-in-Korea & Korea-Strong AI Tools`,
+  description: `Verified directory of made-in-Korea (국산) AI tools and the global tools that handle Korean best — Wrtn, Vrew, CLOVA Note, Lilys, Liner, Miricanvas, QANDA and more. Each checked for liveness and pricing, with the verification date shown.`,
+  alternates: {
+    canonical: '/korean',
+  },
+  openGraph: {
+    title: 'Korean AI Tools 2026 | Every AI Tools',
+    description: 'Verified made-in-Korea AI tools and Korea-strong global tools, checked for liveness and pricing.',
+    type: 'website',
+    url: '/korean',
+    locale: 'ko_KR',
+  },
+};
+
+export default function KoreanPage() {
+  const domestic = getDomesticTools();
+  const koreaStrong = getKoreaStrongTools();
+
+  return (
+    <>
+      <JsonLd
+        data={[
+          toolItemListJsonLd([...domestic, ...koreaStrong], 'Korean AI Tools 2026'),
+          breadcrumbJsonLd([
+            { name: 'Home', path: '/' },
+            { name: 'Korean AI', path: '/korean' },
+          ]),
+        ]}
+      />
+      <KoreanClient />
+    </>
+  );
+}

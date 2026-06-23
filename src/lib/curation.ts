@@ -64,3 +64,15 @@ export function getEditorPicks(count = 8): Tool[] {
 }
 
 export const verifiedCount = tools.filter(isVerified).length;
+
+/** Made-in-Korea (국산) tools, highest-rated first. */
+export function getDomesticTools(): Tool[] {
+  return tools.filter((tool) => tool.korea?.domestic).sort(byRatingThenName);
+}
+
+/** Non-domestic tools with a verified Korea profile (global tools strong in Korean). */
+export function getKoreaStrongTools(): Tool[] {
+  return tools.filter((tool) => tool.korea && !tool.korea.domestic).sort(byRatingThenName);
+}
+
+export const domesticCount = tools.filter((tool) => tool.korea?.domestic).length;
