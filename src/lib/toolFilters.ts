@@ -10,6 +10,10 @@ export interface ToolFilters {
   korean: boolean;
   mobile: boolean;
   commercial: boolean;
+  // Korea-market filters (match only tools with a verified Korea profile)
+  domestic: boolean; // 국산 only
+  noForeignCard: boolean; // no overseas card required
+  koQuality: boolean; // Korean quality native or high
 }
 
 export const defaultToolFilters: ToolFilters = {
@@ -20,6 +24,9 @@ export const defaultToolFilters: ToolFilters = {
   korean: false,
   mobile: false,
   commercial: false,
+  domestic: false,
+  noForeignCard: false,
+  koQuality: false,
 };
 
 const pricingValues = new Set<ToolPricingFilter>(['all', 'Free', 'Freemium', 'Paid']);
@@ -37,6 +44,9 @@ export function parseToolFilters(params: URLSearchParams): ToolFilters {
     korean: isEnabled(params.get('korean')),
     mobile: isEnabled(params.get('mobile')),
     commercial: isEnabled(params.get('commercial')),
+    domestic: isEnabled(params.get('domestic')),
+    noForeignCard: isEnabled(params.get('noForeignCard')),
+    koQuality: isEnabled(params.get('koQuality')),
   };
 }
 
@@ -50,6 +60,9 @@ export function toolFiltersToSearchParams(filters: ToolFilters): URLSearchParams
   if (filters.korean) params.set('korean', 'true');
   if (filters.mobile) params.set('mobile', 'true');
   if (filters.commercial) params.set('commercial', 'true');
+  if (filters.domestic) params.set('domestic', 'true');
+  if (filters.noForeignCard) params.set('noForeignCard', 'true');
+  if (filters.koQuality) params.set('koQuality', 'true');
 
   return params;
 }
@@ -79,6 +92,11 @@ export function filterTools<T extends ToolLite>(allTools: T[], filters: ToolFilt
     if (filters.korean && !tool.koreanSupport) return false;
     if (filters.mobile && !tool.mobileSupport) return false;
     if (filters.commercial && !tool.commercialUse) return false;
+
+    // Korea filters require a verified Korea profile
+    if (filters.domestic && !tool.korea?.domestic) return false;
+    if (filters.noForeignCard && !(tool.korea && tool.korea.foreignCardNeeded !== true)) return false;
+    if (filters.koQuality && !(tool.korea?.koreanQuality === 'native' || tool.korea?.koreanQuality === 'high')) return false;
 
     return true;
   });

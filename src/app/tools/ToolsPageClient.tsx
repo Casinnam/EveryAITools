@@ -36,11 +36,20 @@ const pricingOptions: Array<{ value: ToolPricingFilter; labelKey: string }> = [
   { value: 'Paid', labelKey: 'pricingPaid' },
 ];
 
-const quickFilters: Array<{ key: keyof Pick<ToolFilters, 'beginner' | 'korean' | 'mobile' | 'commercial'>; labelKey: string }> = [
+type QuickFilterKey = keyof Pick<ToolFilters, 'beginner' | 'korean' | 'mobile' | 'commercial' | 'domestic' | 'noForeignCard' | 'koQuality'>;
+
+const quickFilters: Array<{ key: QuickFilterKey; labelKey: string }> = [
   { key: 'beginner', labelKey: 'filterBeginnerFriendly' },
   { key: 'korean', labelKey: 'filterKoreanSupport' },
   { key: 'mobile', labelKey: 'filterMobileSupport' },
   { key: 'commercial', labelKey: 'filterCommercialUse' },
+];
+
+// Korea-market filters (match only tools with a verified Korea profile)
+const koreaFilters: Array<{ key: QuickFilterKey; labelKey: string }> = [
+  { key: 'domestic', labelKey: 'filterDomestic' },
+  { key: 'koQuality', labelKey: 'filterKoreanQuality' },
+  { key: 'noForeignCard', labelKey: 'filterNoForeignCard' },
 ];
 
 function ToolsListContent() {
@@ -66,6 +75,9 @@ function ToolsListContent() {
     filters.korean,
     filters.mobile,
     filters.commercial,
+    filters.domestic,
+    filters.noForeignCard,
+    filters.koQuality,
   ].filter(Boolean).length;
 
   const updateFilters = (nextPartial: Partial<ToolFilters>, mode: 'push' | 'replace' = 'replace') => {
@@ -231,6 +243,29 @@ function ToolsListContent() {
                   })}
                 </div>
               </div>
+
+              <div>
+                <label className="mb-2 block text-xs font-black uppercase text-rose-500 dark:text-rose-300">{t('filterKoreaGroup')}</label>
+                <div className="space-y-2">
+                  {koreaFilters.map((item) => {
+                    const active = filters[item.key];
+                    return (
+                      <button
+                        key={item.key}
+                        onClick={() => updateFilters({ [item.key]: !active }, 'push')}
+                        className={`flex w-full items-center justify-between rounded-xl border px-3 py-2.5 text-left text-xs font-black transition ${
+                          active
+                            ? 'border-rose-200 bg-rose-50 text-rose-700 dark:border-rose-500/20 dark:bg-rose-500/10 dark:text-rose-200'
+                            : 'border-slate-200 bg-white text-slate-600 hover:border-rose-200 hover:text-rose-700 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-300'
+                        }`}
+                      >
+                        {t(item.labelKey)}
+                        {active ? <Check className="h-4 w-4" /> : <span className="h-4 w-4 rounded-full border border-slate-300 dark:border-slate-600" />}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
             </div>
           </div>
 
@@ -274,7 +309,7 @@ function ToolsListContent() {
                       <FilterChip label={selectedCategory?.name[language] || selectedCategory?.name.en || filters.category} onClear={() => updateFilters({ category: 'all' }, 'push')} />
                     )}
                     {filters.pricing !== 'all' && <FilterChip label={t(pricingOptions.find((option) => option.value === filters.pricing)?.labelKey || 'filterAnyPricing')} onClear={() => updateFilters({ pricing: 'all' }, 'push')} />}
-                    {quickFilters.map((item) =>
+                    {[...quickFilters, ...koreaFilters].map((item) =>
                       filters[item.key] ? <FilterChip key={item.key} label={t(item.labelKey)} onClear={() => updateFilters({ [item.key]: false }, 'push')} /> : null,
                     )}
                   </>

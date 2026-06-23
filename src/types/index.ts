@@ -6,22 +6,41 @@ export interface MultilingualString {
 
 export type PricingType = 'Free' | 'Freemium' | 'Paid';
 
-export type KoreanQuality = 'native' | 'good' | 'limited';
-export type KoreaStatus = 'live' | 'discontinued' | 'b2b-only';
+// 5-level Korean input/output quality (v2): native (Korean-first), high (global
+// tool that handles Korean very well), medium, low, none.
+export type KoreanQuality = 'native' | 'high' | 'medium' | 'low' | 'none';
+// Korea service status (v2): live, limited (e.g. B2B/enterprise-only), beta,
+// discontinued (e.g. CLOVA X), blocked (unavailable in Korea).
+export type KoreaStatus = 'live' | 'limited' | 'beta' | 'discontinued' | 'blocked';
+export type PaymentMethod =
+  | 'domestic_card' | 'overseas_card' | 'kakao_pay' | 'naver_pay'
+  | 'toss' | 'phone_billing' | 'app_store' | 'play_store'
+  | 'paypal' | 'bank_transfer' | 'free';
 
 /**
  * Hand-verified Korea-market overlay for a tool (see src/data/koreaProfiles.ts).
  * Only filled for tools an editor has actually checked — the `verifiedOn` date
  * is the proof of that check and the trust differentiator vs broad directories.
+ * A profile's mere presence means it's editor-verified (we never auto-seed),
+ * so there is no separate `verified` flag.
  */
 export interface KoreaProfile {
+  // Core (drive badges + filters)
   domestic?: boolean; // 국산 (Korean-made)
   koreanQuality?: KoreanQuality; // Korean input/output quality
-  pricingKRW?: string; // e.g. "월 14,900원"
-  foreignCardNeeded?: boolean; // paid plan requires an overseas/USD card
-  status?: KoreaStatus; // live / discontinued (e.g. CLOVA X) / b2b-only
+  status?: KoreaStatus;
   verifiedOn?: string; // ISO date the editor verified liveness + pricing
+  // Optional (shown when present)
+  foreignCardNeeded?: boolean; // paid plan requires an overseas/USD card
+  krwBilling?: boolean; // billed in KRW (not just USD auto-conversion)
+  pricingKRW?: string; // e.g. "월 14,900원"
+  maker?: string; // company/maker, e.g. "뤼튼테크놀로지스"
+  makerCountry?: string; // ISO country code: "KR", "US", ...
+  paymentMethods?: PaymentMethod[];
+  signupMethods?: ('kakao' | 'naver' | 'google' | 'apple' | 'email' | 'phone')[];
+  bestForKo?: string[]; // Korea-context recommended uses
   koreanNote?: MultilingualString; // short note for Korean users
+  sourceUrl?: string; // verification source URL (detail footnote)
 }
 
 /**

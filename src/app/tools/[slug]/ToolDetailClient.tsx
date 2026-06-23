@@ -66,12 +66,22 @@ export function ToolDetailClient({ tool }: { tool: Tool }) {
   const koreaVerifiedLabel = korea?.verifiedOn
     ? new Intl.DateTimeFormat(language === 'ko' ? 'ko-KR' : 'en-US', { dateStyle: 'long' }).format(new Date(`${korea.verifiedOn}T00:00:00Z`))
     : '';
-  const koreaQualityLabel = korea?.koreanQuality === 'native' ? t('koreaQualityNative')
-    : korea?.koreanQuality === 'good' ? t('koreaQualityGood')
-    : korea?.koreanQuality === 'limited' ? t('koreaQualityLimited') : '';
-  const koreaStatusLabel = korea?.status === 'discontinued' ? t('koreaStatusDiscontinued')
-    : korea?.status === 'b2b-only' ? t('koreaStatusB2bOnly')
-    : korea?.status === 'live' ? t('koreaStatusLive') : '';
+  const koreaQualityLabelMap: Record<string, string> = {
+    native: t('koreaQualityNative'),
+    high: t('koreaQualityHigh'),
+    medium: t('koreaQualityMedium'),
+    low: t('koreaQualityLow'),
+    none: t('koreaQualityNone'),
+  };
+  const koreaStatusLabelMap: Record<string, string> = {
+    live: t('koreaStatusLive'),
+    limited: t('koreaStatusLimited'),
+    beta: t('koreaStatusBeta'),
+    discontinued: t('koreaStatusDiscontinued'),
+    blocked: t('koreaStatusBlocked'),
+  };
+  const koreaQualityLabel = korea?.koreanQuality ? koreaQualityLabelMap[korea.koreanQuality] : '';
+  const koreaStatusLabel = korea?.status ? koreaStatusLabelMap[korea.status] : '';
   const koreanNoteText = korea?.koreanNote ? (korea.koreanNote[language] || korea.koreanNote.en) : '';
   const bestForTitle = language === 'ko'
     ? `${tool.name} ${t('detailBestForSuffix')}`
@@ -270,7 +280,10 @@ export function ToolDetailClient({ tool }: { tool: Tool }) {
                 <KoreaRow label={t('koreaQualityLabel')} value={koreaQualityLabel} />
               )}
               {koreaStatusLabel && (
-                <KoreaRow label={t('koreaStatusRow')} value={koreaStatusLabel} tone={korea.status === 'discontinued' ? 'warn' : 'normal'} />
+                <KoreaRow label={t('koreaStatusRow')} value={koreaStatusLabel} tone={korea.status === 'discontinued' || korea.status === 'blocked' ? 'warn' : 'normal'} />
+              )}
+              {korea.maker && (
+                <KoreaRow label={t('koreaMakerLabel')} value={korea.maker} />
               )}
               {korea.pricingKRW && (
                 <KoreaRow label={t('koreaPricingKRW')} value={korea.pricingKRW} />
@@ -281,6 +294,14 @@ export function ToolDetailClient({ tool }: { tool: Tool }) {
             </div>
             {koreanNoteText && (
               <p className="mt-4 text-sm font-medium leading-relaxed text-slate-600 dark:text-slate-300">{koreanNoteText}</p>
+            )}
+            {korea.sourceUrl && (
+              <p className="mt-3 text-xs font-medium text-slate-400">
+                {t('koreaVerifiedOn')}: {koreaVerifiedLabel} ·{' '}
+                <a href={korea.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-indigo-500">
+                  {new URL(korea.sourceUrl).hostname}
+                </a>
+              </p>
             )}
           </section>
         )}

@@ -10,7 +10,7 @@ import type { KoreaProfile } from '../types';
 // and only assert facts that are stable and well-known.
 export const koreaProfiles: Record<string, KoreaProfile> = {
   chatgpt: {
-    koreanQuality: 'good',
+    koreanQuality: 'high',
     status: 'live',
     verifiedOn: '2026-06-22',
     koreanNote: {
@@ -19,7 +19,7 @@ export const koreaProfiles: Record<string, KoreaProfile> = {
     },
   },
   claude: {
-    koreanQuality: 'good',
+    koreanQuality: 'high',
     status: 'live',
     verifiedOn: '2026-06-22',
     koreanNote: {
@@ -28,7 +28,7 @@ export const koreaProfiles: Record<string, KoreaProfile> = {
     },
   },
   gemini: {
-    koreanQuality: 'good',
+    koreanQuality: 'high',
     status: 'live',
     verifiedOn: '2026-06-22',
     koreanNote: {
@@ -107,7 +107,7 @@ export const koreaProfiles: Record<string, KoreaProfile> = {
   klleon: {
     domestic: true,
     koreanQuality: 'native',
-    status: 'b2b-only',
+    status: 'limited',
     verifiedOn: '2026-06-22',
     koreanNote: {
       en: 'Korean AI digital-human company; enterprise/B2B only, pricing via consultation.',
@@ -116,7 +116,7 @@ export const koreaProfiles: Record<string, KoreaProfile> = {
   },
   'deepbrain-ai': {
     domestic: true,
-    koreanQuality: 'good',
+    koreanQuality: 'high',
     status: 'live',
     verifiedOn: '2026-06-22',
     koreanNote: {
@@ -217,7 +217,7 @@ export const koreaProfiles: Record<string, KoreaProfile> = {
     },
   },
   speak: {
-    koreanQuality: 'good',
+    koreanQuality: 'high',
     foreignCardNeeded: false,
     status: 'live',
     verifiedOn: '2026-06-22',
