@@ -1,6 +1,8 @@
 import type { MetadataRoute } from 'next';
 import { tools } from '@/data/tools';
 import { blogPosts } from '@/data/blogPosts';
+import { rankings } from '@/data/rankings';
+import { comparisons } from '@/data/comparisons';
 import { absoluteUrl, DATA_LAST_UPDATED } from '@/lib/seo';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -13,9 +15,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: absoluteUrl('/compare'), lastModified, changeFrequency: 'weekly', priority: 0.8 },
     { url: absoluteUrl('/finder'), lastModified, changeFrequency: 'monthly', priority: 0.7 },
     { url: absoluteUrl('/blog'), lastModified, changeFrequency: 'weekly', priority: 0.7 },
-    { url: absoluteUrl('/rankings/best-ai-tools-for-bloggers'), lastModified, changeFrequency: 'weekly', priority: 0.8 },
     { url: absoluteUrl('/submit'), lastModified, changeFrequency: 'monthly', priority: 0.4 },
   ];
+
+  const rankingRoutes: MetadataRoute.Sitemap = rankings.map((ranking) => ({
+    url: absoluteUrl(`/rankings/${ranking.slug}`),
+    lastModified,
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
+  }));
+
+  const comparisonRoutes: MetadataRoute.Sitemap = comparisons.map((comparison) => ({
+    url: absoluteUrl(`/compare/${comparison.slug}`),
+    lastModified,
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }));
 
   const seenSlugs = new Set<string>();
   const toolRoutes: MetadataRoute.Sitemap = tools
@@ -38,5 +53,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...toolRoutes, ...blogRoutes];
+  return [...staticRoutes, ...rankingRoutes, ...comparisonRoutes, ...toolRoutes, ...blogRoutes];
 }

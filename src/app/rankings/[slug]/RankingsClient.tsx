@@ -3,11 +3,11 @@
 import React from 'react';
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
-import { blogPosts } from '@/data/blogPosts';
 import { toolsLite as tools } from '@/data/toolsLite';
 import { rankingFaqs } from '@/data/rankingContent';
+import { rankings, getRanking } from '@/data/rankings';
 import { DATA_LAST_UPDATED } from '@/lib/seo';
-import { Star, Award, ChevronRight, HelpCircle, ArrowLeft, ScrollText, HelpCircleIcon, CheckCircle2, CalendarCheck } from 'lucide-react';
+import { Star, Award, ChevronRight, HelpCircle, ArrowLeft, ScrollText, HelpCircleIcon, CheckCircle2, CalendarCheck, ArrowRight } from 'lucide-react';
 
 const methodologyCriteriaKeys = [
   'methodologyCriteria1',
@@ -20,17 +20,15 @@ const methodologyCriteriaKeys = [
 export function RankingsClient({ slug }: { slug: string }) {
   const { t, language } = useLanguage();
 
-  // For this MVP, we map static rankings slug such as 'best-ai-tools-for-bloggers' to our rich content blog posts
-  const post = blogPosts.find(p => p.slug === slug) || blogPosts.find(p => p.slug === 'best-ai-tools-for-bloggers');
-  if (!post) {
-    return null;
-  }
+  const config = getRanking(slug) ?? rankings[0];
 
-  // Pick top tools that fit this ranking category (writing & marketing in the tools database)
+  // Top-rated tools across this ranking's categories.
   const rankedTools = tools
-    .filter(t => t.categoryId === 'writing' || t.categoryId === 'marketing-seo')
+    .filter((t) => config.categoryIds.includes(t.categoryId))
     .sort((a, b) => b.rating - a.rating)
-    .slice(0, 5);
+    .slice(0, config.count);
+
+  const otherRankings = rankings.filter((r) => r.slug !== config.slug);
 
   const lastUpdatedLabel = new Intl.DateTimeFormat(language === 'ko' ? 'ko-KR' : 'en-US', { dateStyle: 'long' })
     .format(new Date(`${DATA_LAST_UPDATED}T00:00:00Z`));
@@ -58,10 +56,10 @@ export function RankingsClient({ slug }: { slug: string }) {
           <Award className="h-5 w-5" />
         </div>
         <h1 className="text-3xl font-extrabold tracking-tight text-slate-950 dark:text-white sm:text-4xl leading-tight">
-          {post.title[language] || post.title['en']}
+          {config.title[language] || config.title['en']}
         </h1>
         <p className="text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-400 max-w-3xl">
-          {post.excerpt[language] || post.excerpt['en']}
+          {config.excerpt[language] || config.excerpt['en']}
         </p>
         <div className="inline-flex items-center gap-1.5 rounded-full border border-emerald-100 bg-emerald-50 px-3 py-1.5 text-xs font-black text-emerald-700 dark:border-emerald-500/20 dark:bg-emerald-500/10 dark:text-emerald-200">
           <CalendarCheck className="h-3.5 w-3.5" />
@@ -71,14 +69,7 @@ export function RankingsClient({ slug }: { slug: string }) {
 
       {/* Main Content Body */}
       <article className="prose prose-indigo dark:prose-invert max-w-none rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 shadow-sm dark:border-slate-800 dark:bg-slate-900 leading-relaxed text-sm text-slate-700 dark:text-slate-300 space-y-6">
-        <h2 className="text-base font-extrabold text-slate-950 border-l-4 border-indigo-600 pl-3 leading-none dark:text-white">
-          Why Leverage AI for content creation in 2026?
-        </h2>
-        <p>
-          {language === 'ko'
-            ? '인공지능 도구를 사용하는 목적은 단순히 글을 공장처럼 찍어내기 위함이 아닙니다. 아이디어 브레인스토밍의 지체 시간을 없애고, SEO 정밀 키워드 배치를 신속히 도출하기 위한 전략적 무기입니다.'
-            : 'Integrating AI tools into your daily workflow is not about flooding the internet with low-quality generic articles. It is about removing the friction of a blank page, pacing research, and organizing search-engine optimized structural layouts.'}
-        </p>
+        <p>{config.intro[language] || config.intro['en']}</p>
       </article>
 
       {/* RANKING METHODOLOGY */}
@@ -197,6 +188,23 @@ export function RankingsClient({ slug }: { slug: string }) {
                 {faq.a[language] || faq.a['en']}
               </p>
             </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Other rankings — internal links */}
+      <section className="space-y-4 pt-6 border-t border-slate-200 dark:border-slate-800">
+        <h2 className="text-xl font-extrabold text-slate-950 dark:text-white">{t('rankingsMoreTitle')}</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {otherRankings.map((r) => (
+            <Link
+              key={r.slug}
+              href={`/rankings/${r.slug}`}
+              className="group flex items-center justify-between rounded-2xl border border-slate-200 bg-white px-5 py-4 text-sm font-extrabold text-slate-800 transition hover:border-indigo-200 hover:text-indigo-700 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-200"
+            >
+              <span>{r.title[language] || r.title['en']}</span>
+              <ArrowRight className="h-4 w-4 text-slate-300 transition group-hover:translate-x-1 group-hover:text-indigo-500" />
+            </Link>
           ))}
         </div>
       </section>

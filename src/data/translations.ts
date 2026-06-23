@@ -308,6 +308,7 @@ export const translations: TranslationDict = {
     ko: '직업, 작업, 예산에 맞춰 전문가 관점으로 선별한 AI 도구 순위입니다.',
   },
   rankingsRank: { en: 'Rank', ko: '순위' },
+  rankingsMoreTitle: { en: 'More AI tool rankings', ko: '다른 AI 도구 랭킹' },
   methodologyTitle: { en: 'How we rank these tools', ko: '랭킹 선정 기준' },
   methodologyIntro: {
     en: 'Rankings come from our curated AI tool database. Editors test each tool hands-on and score it against transparent, repeatable criteria — never against advertising spend.',
