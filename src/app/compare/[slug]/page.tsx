@@ -9,8 +9,6 @@ import { toolsLite as tools } from '@/data/toolsLite';
 import { ComparisonTable } from '@/components/ComparisonTable';
 import { ArrowLeft, Scale, Sparkles } from 'lucide-react';
 
-export const runtime = 'edge';
-
 interface StaticComparePageProps {
   params: Promise<{ slug: string }>;
 }

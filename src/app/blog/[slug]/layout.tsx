@@ -3,6 +3,12 @@ import { blogPosts } from '@/data/blogPosts';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostJsonLd, breadcrumbJsonLd } from '@/lib/seo';
 
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return blogPosts.map((post) => ({ slug: post.slug }));
+}
+
 interface BlogDetailLayoutProps {
   children: React.ReactNode;
   params: Promise<{ slug: string }>;

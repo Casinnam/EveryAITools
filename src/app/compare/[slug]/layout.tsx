@@ -4,6 +4,12 @@ import { toolsLite as tools } from '@/data/toolsLite';
 import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbJsonLd, toolItemListJsonLd } from '@/lib/seo';
 
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return comparisons.map((comparison) => ({ slug: comparison.slug }));
+}
+
 interface CompareDetailLayoutProps {
   children: React.ReactNode;
   params: Promise<{ slug: string }>;

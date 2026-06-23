@@ -4,9 +4,8 @@ import { breadcrumbJsonLd, toolItemListJsonLd } from '@/lib/seo';
 import { getDomesticTools, getKoreaStrongTools } from '@/lib/curation';
 import { KoreanClient } from './KoreanClient';
 
-// Edge runtime so the full showcase is in the initial HTML for SEO.
-export const runtime = 'edge';
-
+// Statically prerendered (no search params) — full showcase in the HTML at build
+// time, and no edge worker function (keeps the Cloudflare worker under its size limit).
 const domesticCount = getDomesticTools().length;
 
 export const metadata: Metadata = {

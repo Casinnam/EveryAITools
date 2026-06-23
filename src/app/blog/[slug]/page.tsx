@@ -8,8 +8,6 @@ import { blogPosts } from '@/data/blogPosts';
 import { ArrowLeft, Calendar, User, Clock } from 'lucide-react';
 import { ShareButtons } from '@/components/ShareButtons';
 
-export const runtime = 'edge';
-
 interface BlogDetailPageProps {
   params: Promise<{ slug: string }>;
 }
