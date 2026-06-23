@@ -350,7 +350,7 @@ export default function HomePage() {
           </Link>
 
           <Link
-            href="/rankings/best-ai-tools-for-bloggers"
+            href="/rankings"
             className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-indigo-200 hover:shadow-md dark:border-slate-800 dark:bg-slate-900"
           >
             <div className="flex items-start justify-between gap-4">

@@ -283,6 +283,155 @@ export const koreaProfiles: Record<string, KoreaProfile> = {
       ko: '한국 1위 AI 영어 회화 튜터로 한국어 UI를 지원합니다(회사는 미국 기반).',
     },
   },
+
+  // --- Global tools — Korea labels (Step 3) ---
+  // koreanQuality is the Korean input/output quality; payment specifics are
+  // omitted unless verified. Most are billed in USD.
+  perplexity: {
+    koreanQuality: 'high', status: 'live', maker: 'Perplexity AI', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.perplexity.ai',
+    koreanNote: { en: 'Korean questions and source-cited answers work well; paid plan billed in USD.', ko: '한국어 질문·출처 기반 답변이 잘 됩니다. 유료 플랜은 USD 청구.' },
+  },
+  'microsoft-copilot': {
+    koreanQuality: 'high', status: 'live', maker: 'Microsoft', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://copilot.microsoft.com',
+    koreanNote: { en: 'Good Korean support, integrated with Windows and Microsoft 365.', ko: '한국어 지원이 우수하며 윈도우·M365와 연동됩니다.' },
+  },
+  grok: {
+    koreanQuality: 'high', status: 'live', maker: 'xAI', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://grok.com',
+    koreanNote: { en: 'Handles Korean well; tied to X (Twitter) for real-time info.', ko: '한국어를 잘 처리하며 X(트위터) 기반 실시간 정보에 강합니다.' },
+  },
+  'notion-ai': {
+    koreanQuality: 'high', status: 'live', maker: 'Notion', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.notion.com/product/ai',
+    koreanNote: { en: 'Korean writing and summaries work well inside Notion docs.', ko: '노션 문서 안에서 한국어 글쓰기·요약이 잘 됩니다.' },
+  },
+  canva: {
+    koreanQuality: 'high', status: 'live', maker: 'Canva', makerCountry: 'AU',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.canva.com',
+    koreanNote: { en: 'Full Korean UI and templates; AI features support Korean text.', ko: '한국어 UI·템플릿을 제공하며 AI 기능도 한국어를 지원합니다.' },
+  },
+  grammarly: {
+    koreanQuality: 'low', status: 'live', maker: 'Grammarly', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.grammarly.com',
+    koreanNote: { en: 'Focused on English writing; little help for Korean text.', ko: '영어 글쓰기 전용으로 한국어 교정에는 거의 도움이 안 됩니다.' },
+  },
+  quillbot: {
+    koreanQuality: 'medium', status: 'live', maker: 'QuillBot (Learneo)', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://quillbot.com',
+    koreanNote: { en: 'Paraphrasing is strongest in English; Korean support is limited.', ko: '영어 패러프레이징이 강점이며 한국어 지원은 제한적입니다.' },
+  },
+  jasper: {
+    koreanQuality: 'medium', status: 'live', maker: 'Jasper', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.jasper.ai',
+    koreanNote: { en: 'Marketing copy is English-first; Korean output is workable but not its focus.', ko: '영어 마케팅 카피 중심으로 한국어 출력은 가능하나 주력은 아닙니다.' },
+  },
+  'copy-ai': {
+    koreanQuality: 'medium', status: 'live', maker: 'Copy.ai', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.copy.ai',
+    koreanNote: { en: 'English-first marketing copy; Korean output is workable.', ko: '영어 마케팅 카피 중심이며 한국어 출력은 보통 수준입니다.' },
+  },
+  cursor: {
+    koreanQuality: 'high', status: 'live', maker: 'Anysphere', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://cursor.com',
+    koreanNote: { en: 'Code is language-agnostic; Korean chat/instructions work well. Billed in USD.', ko: '코드는 언어 무관하며 한국어 지시·대화가 잘 됩니다. USD 청구.' },
+  },
+  'github-copilot': {
+    koreanQuality: 'high', status: 'live', maker: 'GitHub (Microsoft)', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://github.com/features/copilot',
+    koreanNote: { en: 'Code completion is language-agnostic; Korean chat supported. Billed in USD.', ko: '코드 자동완성은 언어 무관, 한국어 채팅 지원. USD 청구.' },
+  },
+  elevenlabs: {
+    koreanQuality: 'high', status: 'live', maker: 'ElevenLabs', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://elevenlabs.io',
+    koreanNote: { en: 'Natural Korean text-to-speech and dubbing. Billed in USD.', ko: '자연스러운 한국어 TTS·더빙을 지원합니다. USD 청구.' },
+  },
+  heygen: {
+    koreanQuality: 'high', status: 'live', maker: 'HeyGen', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.heygen.com',
+    koreanNote: { en: 'Korean avatar narration and video translation supported. Billed in USD.', ko: '한국어 아바타 내레이션·영상 번역을 지원합니다. USD 청구.' },
+  },
+  synthesia: {
+    koreanQuality: 'high', status: 'live', maker: 'Synthesia', makerCountry: 'UK',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.synthesia.io',
+    koreanNote: { en: 'Korean text-to-speech avatars supported; English UI. Billed in USD.', ko: '한국어 음성 아바타를 지원하며 UI는 영어입니다. USD 청구.' },
+  },
+  'capcut-ai': {
+    koreanQuality: 'high', status: 'live', maker: 'CapCut (ByteDance)', makerCountry: 'SG',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.capcut.com',
+    koreanNote: { en: 'Korean UI and auto-captions; popular with Korean short-form creators.', ko: '한국어 UI·자동 자막을 제공하며 국내 숏폼 크리에이터에게 인기입니다.' },
+  },
+  descript: {
+    koreanQuality: 'medium', status: 'live', maker: 'Descript', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.descript.com',
+    koreanNote: { en: 'English-centric editing; Korean transcription is workable. Billed in USD.', ko: '영어 중심 편집 도구로 한국어 받아쓰기는 보통 수준입니다. USD 청구.' },
+  },
+  opusclip: {
+    koreanQuality: 'medium', status: 'live', maker: 'OpusClip', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.opus.pro',
+    koreanNote: { en: 'Auto-clips long videos into shorts; Korean caption support is improving. Billed in USD.', ko: '긴 영상을 쇼츠로 자동 변환하며 한국어 자막 지원이 개선 중입니다. USD 청구.' },
+  },
+  suno: {
+    koreanQuality: 'medium', status: 'live', maker: 'Suno', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://suno.com',
+    koreanNote: { en: 'Generates songs with Korean lyrics; prompts work in Korean. Billed in USD.', ko: '한국어 가사 곡 생성이 가능하고 프롬프트도 한국어로 됩니다. USD 청구.' },
+  },
+  gamma: {
+    koreanQuality: 'medium', status: 'live', maker: 'Gamma', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://gamma.app',
+    koreanNote: { en: 'Generates Korean slides/docs; UI is English. Billed in USD.', ko: '한국어 슬라이드·문서 생성이 되며 UI는 영어입니다. USD 청구.' },
+  },
+  'figma-ai': {
+    koreanQuality: 'medium', status: 'live', maker: 'Figma', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.figma.com/ai/',
+    koreanNote: { en: 'Design tool with AI features; English UI, Korean content supported. Billed in USD.', ko: 'AI 기능을 갖춘 디자인 툴로 UI는 영어, 한국어 콘텐츠는 지원됩니다. USD 청구.' },
+  },
+  midjourney: {
+    koreanQuality: 'medium', status: 'live', maker: 'Midjourney', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.midjourney.com',
+    koreanNote: { en: 'Top image quality; prompts work best in English. Billed in USD.', ko: '이미지 품질 최상이나 프롬프트는 영어가 가장 잘 먹힙니다. USD 청구.' },
+  },
+  'dall-e': {
+    koreanQuality: 'high', status: 'live', maker: 'OpenAI', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://openai.com/index/dall-e-3/',
+    koreanNote: { en: 'Built into ChatGPT; Korean prompts work well. Billed in USD.', ko: 'ChatGPT에 내장되어 한국어 프롬프트가 잘 됩니다. USD 청구.' },
+  },
+  'adobe-firefly': {
+    koreanQuality: 'medium', status: 'live', maker: 'Adobe', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://www.adobe.com/products/firefly.html',
+    koreanNote: { en: 'Commercially-safe image generation; Korean prompts workable. Billed in USD.', ko: '상업적으로 안전한 이미지 생성이 강점이며 한국어 프롬프트도 가능합니다. USD 청구.' },
+  },
+  'leonardo-ai': {
+    koreanQuality: 'medium', status: 'live', maker: 'Leonardo.Ai', makerCountry: 'AU',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://leonardo.ai',
+    koreanNote: { en: 'Image generation with fine control; English prompts best. Billed in USD.', ko: '세밀한 제어가 가능한 이미지 생성 도구로 영어 프롬프트가 가장 좋습니다. USD 청구.' },
+  },
+  ideogram: {
+    koreanQuality: 'medium', status: 'live', maker: 'Ideogram', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://ideogram.ai',
+    koreanNote: { en: 'Strong at text-in-image (mostly English). Billed in USD.', ko: '이미지 속 텍스트(주로 영어) 생성에 강합니다. USD 청구.' },
+  },
+  'stable-diffusion': {
+    koreanQuality: 'medium', status: 'live', maker: 'Stability AI', makerCountry: 'UK',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://stability.ai',
+    koreanNote: { en: 'Open image model; English prompts best, runs locally or via APIs.', ko: '오픈 이미지 모델로 영어 프롬프트가 가장 좋고 로컬·API로 실행합니다.' },
+  },
+  runway: {
+    koreanQuality: 'medium', status: 'live', maker: 'Runway', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://runwayml.com',
+    koreanNote: { en: 'Pro AI video generation/editing; English UI. Billed in USD.', ko: '전문가급 AI 영상 생성·편집 도구로 UI는 영어입니다. USD 청구.' },
+  },
+  sora: {
+    koreanQuality: 'medium', status: 'live', maker: 'OpenAI', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://sora.com',
+    koreanNote: { en: 'Text-to-video by OpenAI; prompts work best in English. Billed in USD.', ko: 'OpenAI의 텍스트-투-비디오로 프롬프트는 영어가 가장 좋습니다. USD 청구.' },
+  },
+  pika: {
+    koreanQuality: 'medium', status: 'live', maker: 'Pika', makerCountry: 'US',
+    verifiedOn: '2026-06-22', sourceUrl: 'https://pika.art',
+    koreanNote: { en: 'Short AI video generation; English prompts best. Billed in USD.', ko: '짧은 AI 영상 생성 도구로 영어 프롬프트가 가장 좋습니다. USD 청구.' },
+  },
 };
 
 export default koreaProfiles;

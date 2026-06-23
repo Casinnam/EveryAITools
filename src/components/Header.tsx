@@ -17,7 +17,7 @@ export const Header: React.FC = () => {
     { name: t('navTools'), path: '/tools' },
     { name: t('navKorean'), path: '/korean' },
     { name: t('navCompare'), path: '/compare' },
-    { name: t('navRankings'), path: '/rankings/best-ai-tools-for-bloggers' },
+    { name: t('navRankings'), path: '/rankings' },
     { name: t('navBlog'), path: '/blog' },
     { name: t('navSubmit'), path: '/submit' },
   ];

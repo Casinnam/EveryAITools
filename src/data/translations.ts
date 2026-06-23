@@ -309,6 +309,9 @@ export const translations: TranslationDict = {
   },
   rankingsRank: { en: 'Rank', ko: '순위' },
   rankingsMoreTitle: { en: 'More AI tool rankings', ko: '다른 AI 도구 랭킹' },
+  rankingsHubTitle: { en: 'AI Tool Rankings', ko: 'AI 도구 랭킹' },
+  rankingsHubSubtitle: { en: 'Editor-ranked best-of lists by category — each with a transparent methodology and FAQ.', ko: '카테고리별 에디터 선정 베스트 목록 — 각 페이지에 투명한 평가 방법론과 FAQ를 담았습니다.' },
+  rankingsHubView: { en: 'View ranking', ko: '랭킹 보기' },
   methodologyTitle: { en: 'How we rank these tools', ko: '랭킹 선정 기준' },
   methodologyIntro: {
     en: 'Rankings come from our curated AI tool database. Editors test each tool hands-on and score it against transparent, repeatable criteria — never against advertising spend.',

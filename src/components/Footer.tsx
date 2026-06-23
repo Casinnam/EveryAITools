@@ -62,7 +62,7 @@ export const Footer: React.FC = () => {
                   <li><Link href="/blog" className="hover:text-white transition-colors">{t('navBlog')}</Link></li>
                   <li><Link href="/submit" className="hover:text-white transition-colors">{t('navSubmit')}</Link></li>
                   <li><Link href="/finder" className="hover:text-white transition-colors">{t('footerQuizFinder')}</Link></li>
-                  <li><Link href="/rankings/best-ai-tools-for-bloggers" className="hover:text-white transition-colors">{t('navRankings')}</Link></li>
+                  <li><Link href="/rankings" className="hover:text-white transition-colors">{t('navRankings')}</Link></li>
                 </ul>
               </div>
             </div>
