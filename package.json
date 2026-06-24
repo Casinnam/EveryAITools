@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "data": "tsx scripts/build_tools_lite.mts",
     "dev": "next dev",
+    "prebuild": "tsx scripts/build_tools_lite.mts",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"

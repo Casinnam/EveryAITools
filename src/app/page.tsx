@@ -9,6 +9,7 @@ import { toolsLite as tools } from '@/data/toolsLite';
 import { blogPosts } from '@/data/blogPosts';
 import { getToolText } from '@/lib/localizedToolText';
 import { getFeaturedTools } from '@/lib/curation';
+import { RollingNumber } from '@/components/RollingNumber';
 import {
   ArrowRight,
   BadgeCheck,
@@ -186,19 +187,21 @@ export default function HomePage() {
               </div>
 
               <div className="grid grid-cols-2 gap-3 border-t border-slate-100 pt-5 sm:grid-cols-4 dark:border-slate-800">
-                {[
-                  { label: t('statAiTools'), value: `${statToolCount}+`, icon: Bot, tone: 'text-violet-600 bg-violet-50' },
+                {([
+                  { label: t('statAiTools'), value: `${statToolCount}+`, icon: Bot, tone: 'text-violet-600 bg-violet-50', count: statToolCount },
                   { label: t('statCategories'), value: `${statCategoryCount}`, icon: BarChart3, tone: 'text-sky-600 bg-sky-50' },
                   { label: t('statUpdatedLabel'), value: t('statUpdatedValue'), icon: RefreshCw, tone: 'text-emerald-600 bg-emerald-50' },
                   { label: t('statCuratedLabel'), value: t('statCuratedValue'), icon: ShieldCheck, tone: 'text-amber-600 bg-amber-50' },
-                ].map((stat) => {
+                ] as { label: string; value: string; icon: typeof Bot; tone: string; count?: number }[]).map((stat) => {
                   const StatIcon = stat.icon;
                   return (
                     <div key={stat.label} className="rounded-2xl border border-slate-100 bg-white p-4 text-center shadow-sm dark:border-slate-800 dark:bg-slate-950">
                       <div className={`mx-auto mb-3 flex h-9 w-9 items-center justify-center rounded-xl ${stat.tone}`}>
                         <StatIcon className="h-4.5 w-4.5" />
                       </div>
-                      <div className="text-xl font-black text-slate-950 dark:text-white">{stat.value}</div>
+                      <div className="text-xl font-black text-slate-950 dark:text-white">
+                        {stat.count !== undefined ? (<><RollingNumber value={stat.count} />+</>) : stat.value}
+                      </div>
                       <div className="mt-1 text-xs font-bold text-slate-500 dark:text-slate-400">{stat.label}</div>
                     </div>
                   );
