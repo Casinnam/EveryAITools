@@ -3,7 +3,8 @@
 import React from 'react';
 import { Comparison, ToolLite } from '../types';
 import { useLanguage } from '../context/LanguageContext';
-import { Star, Check, X, ShieldAlert, Sparkles } from 'lucide-react';
+import { StarRating } from './StarRating';
+import { Check, X, ShieldAlert, Sparkles } from 'lucide-react';
 
 interface ComparisonTableProps {
   comparison: Comparison;
@@ -36,8 +37,8 @@ export const ComparisonTable: React.FC<ComparisonTableProps> = ({ comparison, ma
                 <th key={tool.id} className="p-4 sm:p-5 font-extrabold text-slate-900 dark:text-white w-1/4 text-center">
                   <div className="flex flex-col items-center space-y-1">
                     <span className="text-base text-indigo-600 dark:text-indigo-400">{tool.name}</span>
-                    <div className="flex items-center space-x-1 justify-center">
-                      <Star className="h-3.5 w-3.5 fill-amber-400 text-amber-400" />
+                    <div className="flex items-center space-x-1.5 justify-center">
+                      <StarRating rating={tool.rating} size={13} />
                       <span className="text-xs font-semibold text-slate-600 dark:text-slate-400">{tool.rating}</span>
                     </div>
                   </div>

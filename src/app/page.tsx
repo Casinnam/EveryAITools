@@ -10,6 +10,7 @@ import { blogPosts } from '@/data/blogPosts';
 import { getToolText } from '@/lib/localizedToolText';
 import { getFeaturedTools } from '@/lib/curation';
 import { RollingNumber } from '@/components/RollingNumber';
+import { StarRating } from '@/components/StarRating';
 import {
   ArrowRight,
   BadgeCheck,
@@ -31,7 +32,6 @@ import {
   Search,
   ShieldCheck,
   Sparkles,
-  Star,
   Trophy,
   Video,
   WandSparkles,
@@ -307,7 +307,7 @@ export default function HomePage() {
                     </div>
                     <h3 className="text-lg font-black text-slate-950 group-hover:text-indigo-700 dark:text-white dark:group-hover:text-indigo-200">{tool.name}</h3>
                     <div className="mt-2 flex items-center gap-1.5 text-sm font-bold text-slate-600 dark:text-slate-300">
-                      <Star className="h-4 w-4 fill-amber-400 text-amber-400" />
+                      <StarRating rating={tool.rating} size={15} />
                       {tool.rating}
                       <span className="text-xs text-slate-400">{t('ratingLabel')}</span>
                     </div>
