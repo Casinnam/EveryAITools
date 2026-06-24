@@ -191,7 +191,17 @@ export function ToolDetailClient({ tool }: { tool: Tool }) {
 
             <aside className="rounded-[28px] border border-white/70 bg-white/90 p-5 shadow-2xl shadow-indigo-950/10 backdrop-blur dark:border-white/10 dark:bg-slate-900/90">
               <div className="grid grid-cols-2 gap-3">
-                <Metric label={t('ratingLabel')} value={`${tool.rating}`} icon={<Star className="h-4.5 w-4.5 fill-amber-400 text-amber-400" />} />
+                <Metric
+                  label={t('ratingLabel')}
+                  value={`${tool.rating}`}
+                  valueNode={(
+                    <span className="flex flex-col gap-1">
+                      <StarRating rating={tool.rating} size={15} />
+                      <span>{tool.rating}</span>
+                    </span>
+                  )}
+                  icon={<Star className="h-4.5 w-4.5 fill-amber-400 text-amber-400" />}
+                />
                 <Metric label={t('pricingLabel')} value={pricingLabel} icon={<BadgeCheck className="h-4.5 w-4.5 text-indigo-600" />} />
                 <Metric label={t('pricingStartingFrom')} value={tool.startingPrice || t('pricingFree')} icon={<Zap className="h-4.5 w-4.5 text-violet-600" />} />
                 <Metric label={t('categoryLabel')} value={categoryName} icon={<Target className="h-4.5 w-4.5 text-emerald-600" />} />
@@ -482,14 +492,14 @@ function KoreaRow({ label, value, tone = 'normal' }: { label: string; value: str
   );
 }
 
-function Metric({ label, value, icon }: { label: string; value: string; icon: React.ReactNode }) {
+function Metric({ label, value, valueNode, icon }: { label: string; value: string; valueNode?: React.ReactNode; icon: React.ReactNode }) {
   return (
     <div className="rounded-2xl border border-slate-100 bg-white p-4 dark:border-slate-800 dark:bg-slate-950">
       <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-xl bg-slate-50 dark:bg-slate-900">
         {icon}
       </div>
       <div className="min-h-10 break-words text-base font-black leading-tight text-slate-950 dark:text-white">
-        {value}
+        {valueNode ?? value}
       </div>
       <div className="mt-1 text-xs font-bold uppercase text-slate-400">{label}</div>
     </div>
