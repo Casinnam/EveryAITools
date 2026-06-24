@@ -6,6 +6,7 @@ import { ToolLite } from '../types';
 import { useLanguage } from '../context/LanguageContext';
 import { categories } from '../data/categories';
 import { getToolText } from '../lib/localizedToolText';
+import { getOutboundLink } from '../lib/affiliate';
 import { Star, ExternalLink, ArrowRight, CheckCircle2, Plus, BadgeCheck } from 'lucide-react';
 
 interface ToolCardProps {
@@ -177,11 +178,11 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
             <ArrowRight className="h-3.5 w-3.5" />
           </Link>
 
-          {/* Official website affiliate link */}
+          {/* Official website link (UTM-tagged; sponsored when an affiliate link exists) */}
           <a
-            href={tool.affiliateUrl || tool.websiteUrl}
+            href={getOutboundLink(tool, 'card').href}
             target="_blank"
-            rel="noopener noreferrer"
+            rel={getOutboundLink(tool, 'card').rel}
             className="p-2 rounded-lg bg-indigo-600 text-white hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 shadow-sm shadow-indigo-600/10 transition-colors duration-200"
             title={t('visitWebsite')}
           >

@@ -26,6 +26,12 @@ export const translations: TranslationDict = {
     en: 'Discover, compare, and choose the smartest AI tools to boost your daily workflow and content creation. Find the right AI in under 3 minutes.',
     ko: '일상 업무와 콘텐츠 제작에 맞는 AI 도구를 발견하고 비교해 보세요. 3분 안에 나에게 맞는 AI를 찾을 수 있습니다.',
   },
+  footerDisclosure: { en: 'Affiliate Disclosure', ko: '제휴 고지' },
+  affiliateNote: {
+    en: 'Some links may be affiliate links; we may earn a commission at no extra cost to you.',
+    ko: '일부 링크는 제휴 링크일 수 있으며, 추가 비용 없이 수수료를 받을 수 있습니다.',
+  },
+  affiliateNoteLink: { en: 'Learn more', ko: '자세히' },
   footerAllTools: { en: 'All AI Tools', ko: '전체 AI 도구' },
   footerFreeTools: { en: 'Free AI Tools', ko: '무료 AI 도구' },
   footerBeginnerFriendly: { en: 'Beginner Friendly', ko: '초보자 친화 도구' },

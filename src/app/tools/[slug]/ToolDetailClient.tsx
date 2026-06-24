@@ -8,6 +8,7 @@ import { toolsLite } from '@/data/toolsLite';
 import { categories } from '@/data/categories';
 import { getToolFaqs, getToolList, getToolText } from '@/lib/localizedToolText';
 import { getToolInsights } from '@/lib/toolInsights';
+import { getOutboundLink } from '@/lib/affiliate';
 import { ShareButtons } from '@/components/ShareButtons';
 import {
   AlertTriangle,
@@ -197,9 +198,9 @@ export function ToolDetailClient({ tool }: { tool: Tool }) {
 
               <div className="mt-5 space-y-3">
                 <a
-                  href={tool.affiliateUrl || tool.websiteUrl}
+                  href={getOutboundLink(tool, 'detail').href}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel={getOutboundLink(tool, 'detail').rel}
                   className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-indigo-600 px-5 py-3.5 text-sm font-black text-white transition hover:bg-indigo-700"
                 >
                   {t('visitOfficialSite')}
@@ -223,6 +224,12 @@ export function ToolDetailClient({ tool }: { tool: Tool }) {
                   {t('detailOpenComparison')}
                   <ArrowRight className="h-4 w-4" />
                 </Link>
+                <p className="pt-1 text-center text-[11px] font-medium leading-relaxed text-slate-400 dark:text-slate-500">
+                  {t('affiliateNote')}{' '}
+                  <Link href="/disclosure" className="underline hover:text-indigo-500">
+                    {t('affiliateNoteLink')}
+                  </Link>
+                </p>
               </div>
             </aside>
           </div>

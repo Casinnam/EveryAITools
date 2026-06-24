@@ -82,7 +82,7 @@ export const Footer: React.FC = () => {
           <div className="order-1 md:order-2 flex space-x-6">
             <a href="#" className="hover:text-white">{t('footerPrivacyPolicy')}</a>
             <a href="#" className="hover:text-white">{t('footerTerms')}</a>
-            <a href="#" className="hover:text-white">{t('footerAffiliateLink')}</a>
+            <Link href="/disclosure" className="hover:text-white">{t('footerAffiliateLink')}</Link>
           </div>
         </div>
 

@@ -6,6 +6,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import { toolsLite as tools } from '@/data/toolsLite';
 import { rankingFaqs } from '@/data/rankingContent';
 import { rankings, getRanking } from '@/data/rankings';
+import { getOutboundLink } from '@/lib/affiliate';
 import { DATA_LAST_UPDATED } from '@/lib/seo';
 import { Star, Award, ChevronRight, HelpCircle, ArrowLeft, ScrollText, HelpCircleIcon, CheckCircle2, CalendarCheck, ArrowRight } from 'lucide-react';
 
@@ -154,9 +155,9 @@ export function RankingsClient({ slug }: { slug: string }) {
                 </Link>
 
                 <a
-                  href={tool.affiliateUrl || tool.websiteUrl}
+                  href={getOutboundLink(tool, 'ranking').href}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel={getOutboundLink(tool, 'ranking').rel}
                   className="w-full text-center inline-flex items-center justify-center space-x-1 rounded-xl border border-slate-200 bg-white px-4 py-3 text-xs font-bold text-slate-700 hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300"
                 >
                   <span>Visit Website</span>

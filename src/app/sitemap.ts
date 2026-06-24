@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: absoluteUrl('/finder'), lastModified, changeFrequency: 'monthly', priority: 0.7 },
     { url: absoluteUrl('/blog'), lastModified, changeFrequency: 'weekly', priority: 0.7 },
     { url: absoluteUrl('/submit'), lastModified, changeFrequency: 'monthly', priority: 0.4 },
+    { url: absoluteUrl('/disclosure'), lastModified, changeFrequency: 'yearly', priority: 0.2 },
   ];
 
   const rankingRoutes: MetadataRoute.Sitemap = rankings.map((ranking) => ({
