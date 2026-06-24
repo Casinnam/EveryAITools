@@ -47,3 +47,6 @@ next-env.d.ts
 
 # enrichment pipeline resume checkpoint (regenerated per run)
 /scripts/.enrich-checkpoint.json
+
+# tooling-generated temp attachments
+/.codex-remote-attachments/
