@@ -7,7 +7,8 @@ import { useLanguage } from '../context/LanguageContext';
 import { categories } from '../data/categories';
 import { getToolText } from '../lib/localizedToolText';
 import { getOutboundLink } from '../lib/affiliate';
-import { Star, ExternalLink, ArrowRight, CheckCircle2, Plus, BadgeCheck } from 'lucide-react';
+import { StarRating } from './StarRating';
+import { ExternalLink, ArrowRight, CheckCircle2, Plus, BadgeCheck } from 'lucide-react';
 
 interface ToolCardProps {
   tool: ToolLite;
@@ -96,7 +97,7 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool }) => {
                 {tool.name}
               </h3>
               <div className="flex items-center space-x-1.5 mt-0.5">
-                <Star className="h-3.5 w-3.5 fill-amber-400 text-amber-400" />
+                <StarRating rating={tool.rating} size={13} />
                 <span className="text-xs font-semibold text-slate-600 dark:text-slate-400">{tool.rating}</span>
                 {tool.verified && (
                   <span className="inline-flex items-center gap-0.5 text-[10px] font-bold text-emerald-600 dark:text-emerald-400" title={t('toolVerifiedBadge')}>

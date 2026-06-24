@@ -7,8 +7,9 @@ import { toolsLite as tools } from '@/data/toolsLite';
 import { rankingFaqs } from '@/data/rankingContent';
 import { rankings, getRanking } from '@/data/rankings';
 import { getOutboundLink } from '@/lib/affiliate';
+import { StarRating } from '@/components/StarRating';
 import { DATA_LAST_UPDATED } from '@/lib/seo';
-import { Star, Award, ChevronRight, HelpCircle, ArrowLeft, ScrollText, HelpCircleIcon, CheckCircle2, CalendarCheck, ArrowRight } from 'lucide-react';
+import { Award, ChevronRight, HelpCircle, ArrowLeft, ScrollText, HelpCircleIcon, CheckCircle2, CalendarCheck, ArrowRight } from 'lucide-react';
 
 const methodologyCriteriaKeys = [
   'methodologyCriteria1',
@@ -131,8 +132,8 @@ export function RankingsClient({ slug }: { slug: string }) {
                   </p>
 
                   <div className="flex items-center space-x-1.5 text-xs text-amber-500 font-bold">
-                    <Star className="h-4 w-4 fill-amber-400 text-amber-400" />
-                    <span>{t('ratingLabel')}: {tool.rating} / 5.0</span>
+                    <StarRating rating={tool.rating} size={15} />
+                    <span>{tool.rating} / 5.0</span>
                   </div>
                 </div>
 

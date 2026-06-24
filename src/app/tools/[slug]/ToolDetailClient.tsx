@@ -9,6 +9,7 @@ import { categories } from '@/data/categories';
 import { getToolFaqs, getToolList, getToolText } from '@/lib/localizedToolText';
 import { getToolInsights } from '@/lib/toolInsights';
 import { getOutboundLink } from '@/lib/affiliate';
+import { StarRating } from '@/components/StarRating';
 import { ShareButtons } from '@/components/ShareButtons';
 import {
   AlertTriangle,
@@ -437,8 +438,8 @@ export function ToolDetailClient({ tool }: { tool: Tool }) {
                     <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-50 text-xl font-black text-indigo-600 dark:bg-slate-900 dark:text-indigo-200">
                       {alternative.name.charAt(0)}
                     </div>
-                    <div className="flex items-center gap-1 text-sm font-black text-slate-600 dark:text-slate-300">
-                      <Star className="h-4 w-4 fill-amber-400 text-amber-400" />
+                    <div className="flex items-center gap-1.5 text-sm font-black text-slate-600 dark:text-slate-300">
+                      <StarRating rating={alternative.rating} size={14} />
                       {alternative.rating}
                     </div>
                   </div>
