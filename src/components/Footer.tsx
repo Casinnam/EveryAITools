@@ -20,7 +20,7 @@ export const Footer: React.FC = () => {
                 <Compass className="h-5 w-5" />
               </div>
               <span className="text-lg font-bold tracking-tight text-white">
-                Every AI Tools
+                Every AI Finder
               </span>
             </Link>
             <p className="text-sm max-w-md">

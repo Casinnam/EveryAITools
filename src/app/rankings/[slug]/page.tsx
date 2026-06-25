@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: RankingsDetailPageProps): Pro
       canonical: `/rankings/${slug}`,
     },
     openGraph: {
-      title: `${config.title.en} | Every AI Tools`,
+      title: `${config.title.en} | Every AI Finder`,
       description: config.excerpt.en,
       type: 'article',
       url: `/rankings/${slug}`,

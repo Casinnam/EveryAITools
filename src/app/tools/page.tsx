@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     canonical: '/tools',
   },
   openGraph: {
-    title: `Browse ${tools.length}+ AI Tools | Every AI Tools`,
+    title: `Browse ${tools.length}+ AI Tools | Every AI Finder`,
     description: `Curated AI tool database with category, pricing, and beginner-friendly filters. Updated weekly.`,
     type: 'website',
     url: '/tools',

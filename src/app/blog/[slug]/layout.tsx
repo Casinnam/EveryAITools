@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Pick<BlogDetailLayoutProps, '
       canonical: `/blog/${post.slug}`,
     },
     openGraph: {
-      title: `${post.title.en} | Every AI Tools`,
+      title: `${post.title.en} | Every AI Finder`,
       description: post.excerpt.en,
       type: 'article',
       url: `/blog/${post.slug}`,

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     canonical: '/compare',
   },
   openGraph: {
-    title: 'Compare AI Tools Side by Side | Every AI Tools',
+    title: 'Compare AI Tools Side by Side | Every AI Finder',
     description: 'Head-to-head comparison of popular AI tools: pricing, features, pros and cons, and practical fit.',
     type: 'website',
     url: '/compare',

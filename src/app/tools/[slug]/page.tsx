@@ -40,14 +40,14 @@ export async function generateMetadata({ params }: ToolDetailPageProps): Promise
       canonical: `/tools/${tool.slug}`,
     },
     openGraph: {
-      title: `${tool.name} Review | Every AI Tools`,
+      title: `${tool.name} Review | Every AI Finder`,
       description: tool.description.en,
       type: 'article',
       url: `/tools/${tool.slug}`,
     },
     twitter: {
       card: 'summary',
-      title: `${tool.name} Review | Every AI Tools`,
+      title: `${tool.name} Review | Every AI Finder`,
       description: tool.description.en,
     },
   };

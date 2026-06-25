@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Pick<CompareDetailLayoutProps
       canonical: `/compare/${comparison.slug}`,
     },
     openGraph: {
-      title: `${comparison.title.en} | Every AI Tools`,
+      title: `${comparison.title.en} | Every AI Finder`,
       description: comparison.summary.en,
       type: 'article',
       url: `/compare/${comparison.slug}`,

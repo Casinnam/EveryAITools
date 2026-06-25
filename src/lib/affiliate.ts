@@ -8,7 +8,7 @@
 // Filling `affiliateUrl` in the data later automatically switches that tool to
 // a disclosed, sponsored link — no component changes needed.
 
-const UTM_SOURCE = 'everyaitools';
+const UTM_SOURCE = 'everyaifinder';
 
 export type LinkPlacement = 'card' | 'detail' | 'ranking' | 'compare';
 

@@ -4,9 +4,9 @@ import type { BlogPost, ToolLite } from '@/types';
  * Canonical site origin. Override with NEXT_PUBLIC_SITE_URL when a custom
  * domain is attached to the Cloudflare Pages project.
  */
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://everyaitools.pages.dev').replace(/\/$/, '');
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://everyaifinder.com').replace(/\/$/, '');
 
-export const SITE_NAME = 'Every AI Tools';
+export const SITE_NAME = 'Every AI Finder';
 
 /** Last editorial refresh of the curated tool database (updated with each data release). */
 export const DATA_LAST_UPDATED = '2026-06-22';

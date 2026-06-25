@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: '/finder',
   },
   openGraph: {
-    title: 'AI Tool Finder Quiz | Every AI Tools',
+    title: 'AI Tool Finder Quiz | Every AI Finder',
     description: 'Answer 5 quick questions and get personalized AI tool recommendations with match percentages.',
     type: 'website',
     url: '/finder',

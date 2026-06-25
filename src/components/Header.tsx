@@ -37,7 +37,7 @@ export const Header: React.FC = () => {
             <Compass className="h-5 w-5 animate-pulse" />
           </div>
           <span className="whitespace-nowrap text-lg font-bold tracking-tight bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 bg-clip-text text-transparent dark:from-white dark:to-slate-200 sm:text-xl">
-            Every AI Tools
+            Every AI Finder
           </span>
         </Link>
 

@@ -17,7 +17,7 @@ export function DisclosureClient() {
     ? [
         {
           h: '제휴 링크에 대하여',
-          p: 'Every AI Tools(이하 "본 사이트")의 일부 외부 링크는 제휴(어필리에이트) 링크일 수 있습니다. 이런 링크를 통해 도구에 가입하거나 결제하시면, 본 사이트는 추가 비용 없이 소정의 수수료를 받을 수 있습니다. 이 수수료는 사이트 운영과 데이터 검증 작업을 지속하는 데 사용됩니다.',
+          p: 'Every AI Finder(이하 "본 사이트")의 일부 외부 링크는 제휴(어필리에이트) 링크일 수 있습니다. 이런 링크를 통해 도구에 가입하거나 결제하시면, 본 사이트는 추가 비용 없이 소정의 수수료를 받을 수 있습니다. 이 수수료는 사이트 운영과 데이터 검증 작업을 지속하는 데 사용됩니다.',
         },
         {
           h: '추천의 독립성',
@@ -35,7 +35,7 @@ export function DisclosureClient() {
     : [
         {
           h: 'About affiliate links',
-          p: 'Some outbound links on Every AI Tools ("this site") may be affiliate links. If you sign up for or purchase a tool through one of these links, this site may earn a small commission at no extra cost to you. These commissions help fund the site and our ongoing data-verification work.',
+          p: 'Some outbound links on Every AI Finder ("this site") may be affiliate links. If you sign up for or purchase a tool through one of these links, this site may earn a small commission at no extra cost to you. These commissions help fund the site and our ongoing data-verification work.',
         },
         {
           h: 'Independence of recommendations',

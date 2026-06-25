@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     canonical: '/korean',
   },
   openGraph: {
-    title: 'Korean AI Tools 2026 | Every AI Tools',
+    title: 'Korean AI Tools 2026 | Every AI Finder',
     description: 'Verified made-in-Korea AI tools and Korea-strong global tools, checked for liveness and pricing.',
     type: 'website',
     url: '/korean',

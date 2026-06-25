@@ -15,7 +15,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Every AI Tools - Find, Compare & Choose the Perfect AI Tools",
+    default: "Every AI Finder - Find, Compare & Choose the Perfect AI Tools",
     template: `%s | ${SITE_NAME}`,
   },
   description: "Curated AI tool database with editor-tested recommendations. Discover, compare, and choose the best AI tools for blogging, YouTube, coding, design, and business in under 3 minutes.",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Every AI Tools - Find your perfect AI helper",
+    title: "Every AI Finder - Find your perfect AI helper",
     description: "Curated AI tool database, updated weekly. Discover, compare, and choose the best AI tools in minutes.",
     type: "website",
     locale: "en_US",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Every AI Tools - Find your perfect AI helper",
+    title: "Every AI Finder - Find your perfect AI helper",
     description: "Curated AI tool database, updated weekly. Discover, compare, and choose the best AI tools in minutes.",
   },
   robots: {

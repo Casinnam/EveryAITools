@@ -20,7 +20,7 @@ export const translations: TranslationDict = {
   navKorean: { en: 'Korean AI', ko: '한국 AI' },
   beginnerMode: { en: 'Beginner Mode', ko: '쉬운 설명 모드' },
   language: { en: 'Language', ko: '언어' },
-  allRightsReserved: { en: '© 2026 Every AI Tools. All rights reserved.', ko: '© 2026 Every AI Tools. 모든 권리 보유.' },
+  allRightsReserved: { en: '© 2026 Every AI Finder. All rights reserved.', ko: '© 2026 Every AI Finder. 모든 권리 보유.' },
 
   footerDescription: {
     en: 'Discover, compare, and choose the smartest AI tools to boost your daily workflow and content creation. Find the right AI in under 3 minutes.',
@@ -361,10 +361,10 @@ export const translations: TranslationDict = {
   newsletterBtn: { en: 'Subscribe Now', ko: '구독하기' },
   newsletterSuccess: {
     en: 'Awesome! You have subscribed successfully. Welcome aboard!',
-    ko: '구독이 완료되었습니다. Every AI Tools에 오신 것을 환영합니다.',
+    ko: '구독이 완료되었습니다. Every AI Finder에 오신 것을 환영합니다.',
   },
 
-  adminTitle: { en: 'Every AI Tools Admin Center', ko: 'Every AI Tools 관리 센터' },
+  adminTitle: { en: 'Every AI Finder Admin Center', ko: 'Every AI Finder 관리 센터' },
   adminSubmissions: { en: 'Pending Submissions', ko: '대기 중인 등록 요청' },
   adminTotalTools: { en: 'Total Live Tools', ko: '공개 중인 도구' },
   adminSubscribers: { en: 'Newsletter Subscribers', ko: '뉴스레터 구독자' },

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     canonical: '/blog',
   },
   openGraph: {
-    title: 'AI Tool Guides & Tutorials | Every AI Tools',
+    title: 'AI Tool Guides & Tutorials | Every AI Finder',
     description: 'Editor-written guides, workflow tutorials, and AI tool comparison articles.',
     type: 'website',
     url: '/blog',
