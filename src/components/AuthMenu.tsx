@@ -64,7 +64,9 @@ export const AuthMenu: React.FC<{ variant?: 'desktop' | 'mobile' }> = ({ variant
   }
 
   const email = profile?.email || user.email || '';
-  const name = profile?.username || email.split('@')[0] || 'User';
+  // Prefer the clean email local-part. The shared hub auto-generates usernames
+  // like "hijacker05_2b29f1" whose random suffix is just noise in the UI.
+  const name = email.split('@')[0] || profile?.username || 'User';
   const planLabel = isPro ? 'Pro' : 'Free';
 
   if (variant === 'mobile') {
@@ -101,14 +103,15 @@ export const AuthMenu: React.FC<{ variant?: 'desktop' | 'mobile' }> = ({ variant
     <div className="relative" ref={ref}>
       <button
         onClick={() => setOpen((v) => !v)}
-        className="flex items-center gap-2 rounded-full border border-slate-200 py-1 pl-1 pr-2.5 transition hover:border-indigo-300 dark:border-slate-700"
+        className="flex items-center rounded-full border border-slate-200 p-1 transition hover:border-indigo-300 dark:border-slate-700"
         aria-haspopup="menu"
         aria-expanded={open}
+        aria-label={name}
+        title={name}
       >
         <span className="flex h-7 w-7 items-center justify-center rounded-full bg-indigo-600 text-[11px] font-black text-white">
           {initialsFrom(name)}
         </span>
-        <span className="max-w-[7rem] truncate text-xs font-bold text-slate-700 dark:text-slate-200">{name}</span>
       </button>
 
       {open && (
