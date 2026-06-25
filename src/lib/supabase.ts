@@ -7,8 +7,15 @@ import { createClient, type SupabaseClient } from '@supabase/supabase-js';
  * "Everything Pro" everywhere. Override per-environment with
  * NEXT_PUBLIC_SUPABASE_URL / NEXT_PUBLIC_SUPABASE_ANON_KEY.
  */
-const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
-const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '';
+// Public fallbacks for the shared identity hub. The anon/publishable key is
+// designed to be exposed to the browser (RLS protects the data) — everythingconvert
+// already ships the same key client-side — so baking it in keeps auth working even
+// when the host injects NEXT_PUBLIC_* only at runtime. Override per-env if needed.
+const DEFAULT_SUPABASE_URL = 'https://tuwhuftbjqkgduukvbfv.supabase.co';
+const DEFAULT_SUPABASE_ANON_KEY = 'sb_publishable_Y6tx3YNPVh56QruGfVkEnw_gfissksf';
+
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || DEFAULT_SUPABASE_URL;
+const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || DEFAULT_SUPABASE_ANON_KEY;
 
 /** True when the hub credentials are present; auth UI degrades gracefully otherwise. */
 export const supabaseConfigured = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
