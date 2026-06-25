@@ -26,7 +26,14 @@ function subscribeToPrefs(callback: () => void) {
   };
 }
 
-const getLanguageSnapshot = (): Language => (localStorage.getItem(LANG_KEY) === 'ko' ? 'ko' : 'en');
+const getLanguageSnapshot = (): Language => {
+  const stored = localStorage.getItem(LANG_KEY);
+  if (stored === 'ko' || stored === 'en') return stored;
+  // No saved choice yet (first visit): fall back to the browser's language.
+  // A Korean browser opens in Korean; everything else opens in English.
+  const browserLang = navigator.language || navigator.languages?.[0] || '';
+  return browserLang.toLowerCase().startsWith('ko') ? 'ko' : 'en';
+};
 const getLanguageServerSnapshot = (): Language => 'en';
 const getBeginnerSnapshot = (): boolean => localStorage.getItem(BEGINNER_KEY) === 'true';
 const getBeginnerServerSnapshot = (): boolean => false;
