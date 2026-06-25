@@ -131,11 +131,17 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const signOut = useCallback(async () => {
     const supabase = getSupabase();
-    if (!supabase) return;
-    await supabase.auth.signOut({ scope: 'local' });
-    setSession(null);
-    setUser(null);
-    setProfile(null);
+    // Always clear local auth state, even if the network/token revocation call
+    // fails — otherwise a rejected signOut leaves the UI stuck "logged in".
+    try {
+      await supabase?.auth.signOut({ scope: 'local' });
+    } catch (err) {
+      console.warn('Sign-out call failed; clearing local session anyway:', err);
+    } finally {
+      setSession(null);
+      setUser(null);
+      setProfile(null);
+    }
   }, []);
 
   const refreshProfile = useCallback(async () => {
