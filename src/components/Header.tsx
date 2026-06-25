@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useLanguage } from '../context/LanguageContext';
 import type { Language } from '../data/translations';
+import { AuthMenu } from './AuthMenu';
 import { Menu, X, Compass, Globe, HelpCircle } from 'lucide-react';
 
 export const Header: React.FC = () => {
@@ -91,6 +92,11 @@ export const Header: React.FC = () => {
               <option value="ko" className="dark:bg-slate-900">한국어</option>
             </select>
           </div>
+
+          {/* Account */}
+          <div className="border-l border-slate-200 pl-4 dark:border-slate-800">
+            <AuthMenu variant="desktop" />
+          </div>
         </div>
 
         {/* MOBILE MENU BUTTON */}
@@ -155,6 +161,11 @@ export const Header: React.FC = () => {
                 }`}
               />
             </button>
+          </div>
+
+          {/* Account (mobile) */}
+          <div onClick={() => setMobileMenuOpen(false)}>
+            <AuthMenu variant="mobile" />
           </div>
         </div>
       )}

@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
+import { AuthProvider } from "@/context/AuthContext";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
@@ -57,9 +58,11 @@ export default function RootLayout({
       <body className="font-sans min-h-full flex flex-col bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300">
         <JsonLd data={[websiteJsonLd(), organizationJsonLd()]} />
         <LanguageProvider>
-          <Header />
-          <main className="flex-grow">{children}</main>
-          <Footer />
+          <AuthProvider>
+            <Header />
+            <main className="flex-grow">{children}</main>
+            <Footer />
+          </AuthProvider>
         </LanguageProvider>
       </body>
     </html>
