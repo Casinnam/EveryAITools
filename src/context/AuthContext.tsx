@@ -2,7 +2,7 @@
 
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import type { Session, User } from '@supabase/supabase-js';
-import { getSupabase, supabaseConfigured } from '@/lib/supabase';
+import { getSupabase, supabaseConfigured, SUPABASE_STORAGE_KEY } from '@/lib/supabase';
 
 /**
  * Shape of the shared `profiles` row in the identity hub. Mirrors the columns
@@ -131,16 +131,30 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const signOut = useCallback(async () => {
     const supabase = getSupabase();
-    // Always clear local auth state, even if the network/token revocation call
-    // fails — otherwise a rejected signOut leaves the UI stuck "logged in".
+    // Clear local state and the persisted token FIRST so sign-out always takes
+    // effect immediately — even if the network revocation call is slow, hangs,
+    // or fails, and so a page refresh can't silently restore the session.
+    setSession(null);
+    setUser(null);
+    setProfile(null);
+    if (typeof window !== 'undefined') {
+      try {
+        window.localStorage.removeItem(SUPABASE_STORAGE_KEY);
+        // Defensively drop any other Supabase auth keys for this project too.
+        for (let i = window.localStorage.length - 1; i >= 0; i--) {
+          const key = window.localStorage.key(i);
+          if (key && (key.startsWith('sb-') || key.includes('-auth-token'))) {
+            window.localStorage.removeItem(key);
+          }
+        }
+      } catch {
+        /* ignore storage access errors */
+      }
+    }
     try {
       await supabase?.auth.signOut({ scope: 'local' });
     } catch (err) {
-      console.warn('Sign-out call failed; clearing local session anyway:', err);
-    } finally {
-      setSession(null);
-      setUser(null);
-      setProfile(null);
+      console.warn('Sign-out network call failed (already cleared locally):', err);
     }
   }, []);
 

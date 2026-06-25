@@ -20,6 +20,9 @@ const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || DEFAULT_S
 /** True when the hub credentials are present; auth UI degrades gracefully otherwise. */
 export const supabaseConfigured = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
 
+/** localStorage key the browser client persists the session under. */
+export const SUPABASE_STORAGE_KEY = 'everyaifinder_auth';
+
 let client: SupabaseClient | null = null;
 
 /**
@@ -36,7 +39,7 @@ export function getSupabase(): SupabaseClient | null {
         persistSession: true,
         autoRefreshToken: true,
         detectSessionInUrl: true,
-        storageKey: 'everyaifinder_auth',
+        storageKey: SUPABASE_STORAGE_KEY,
       },
     });
   }
