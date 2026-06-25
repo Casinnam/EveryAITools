@@ -155,7 +155,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       user,
       session,
       profile,
-      isPro: profile?.plan === 'pro',
+      // Admins get Pro entitlements ecosystem-wide — everythingconvert gates
+      // features on `plan === 'pro' || role === 'admin'`, so match that here.
+      isPro: profile?.plan === 'pro' || profile?.role === 'admin',
       isAdmin: profile?.role === 'admin',
       signInWithGoogle,
       signInWithEmail,
