@@ -16,6 +16,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: absoluteUrl('/finder'), lastModified, changeFrequency: 'monthly', priority: 0.7 },
     { url: absoluteUrl('/blog'), lastModified, changeFrequency: 'weekly', priority: 0.7 },
     { url: absoluteUrl('/submit'), lastModified, changeFrequency: 'monthly', priority: 0.4 },
+    { url: absoluteUrl('/privacy'), lastModified, changeFrequency: 'yearly', priority: 0.3 },
+    { url: absoluteUrl('/terms'), lastModified, changeFrequency: 'yearly', priority: 0.3 },
+    { url: absoluteUrl('/about'), lastModified, changeFrequency: 'yearly', priority: 0.4 },
+    { url: absoluteUrl('/contact'), lastModified, changeFrequency: 'yearly', priority: 0.3 },
     { url: absoluteUrl('/disclosure'), lastModified, changeFrequency: 'yearly', priority: 0.2 },
   ];
 

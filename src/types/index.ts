@@ -5,6 +5,7 @@ export interface MultilingualString {
 }
 
 export type PricingType = 'Free' | 'Freemium' | 'Paid';
+export type ToolStatus = 'active' | 'discontinued' | 'pivoted' | 'absorbed';
 
 // 5-level Korean input/output quality (v2): native (Korean-first), high (global
 // tool that handles Korean very well), medium, low, none.
@@ -68,6 +69,10 @@ export interface ToolLite {
   mobileSupport: boolean;
   commercialUse: boolean;
   featured: boolean;
+  status?: ToolStatus;
+  statusNote?: string;
+  successorSlug?: string;
+  lastVerifiedAt?: string;
   // True only for hand-written, human-reviewed entries (the "Editor-verified"
   // core). AI-enriched entries leave this false — see src/lib/curation.ts.
   verified?: boolean;

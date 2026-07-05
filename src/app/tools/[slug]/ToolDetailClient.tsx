@@ -88,8 +88,10 @@ export function ToolDetailClient({ tool }: { tool: Tool }) {
   const bestForTitle = language === 'ko'
     ? `${tool.name} ${t('detailBestForSuffix')}`
     : `${t('detailBestForPrefix')} ${tool.name} ${t('detailBestForSuffix')}`;
-  const alternatives = toolsLite
-    .filter((item) => item.categoryId === tool.categoryId && item.id !== tool.id)
+  const isInactive = Boolean(tool.status && tool.status !== 'active');
+  const successorTool = tool.successorSlug ? toolsLite.find((item) => item.slug === tool.successorSlug) : undefined;
+  const alternativeTools = toolsLite
+    .filter((item) => item.categoryId === tool.categoryId && item.id !== tool.id && (!item.status || item.status === 'active'))
     .sort((a, b) => b.rating - a.rating)
     .slice(0, 3);
 
@@ -248,6 +250,45 @@ export function ToolDetailClient({ tool }: { tool: Tool }) {
       </section>
 
       <main className="mx-auto max-w-7xl space-y-8 px-4 py-8 sm:px-6 lg:px-8">
+        {isInactive && (
+          <section className="rounded-[28px] border border-amber-200 bg-amber-50 p-6 shadow-sm dark:border-amber-500/20 dark:bg-amber-500/10">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white text-amber-700 shadow-sm dark:bg-slate-950 dark:text-amber-200">
+                <AlertTriangle className="h-6 w-6" />
+              </span>
+              <div>
+                <h2 className="text-xl font-black text-slate-950 dark:text-white">
+                  {tool.name} is no longer listed as an active standalone tool.
+                </h2>
+                <p className="mt-2 text-sm font-semibold leading-relaxed text-slate-700 dark:text-slate-300">
+                  {tool.statusNote}
+                </p>
+                <p className="mt-2 text-xs font-bold text-slate-500 dark:text-slate-400">
+                  Last verified: {tool.lastVerifiedAt}
+                </p>
+                <div className="mt-4 flex flex-wrap gap-3">
+                  {successorTool && (
+                    <Link
+                      href={`/tools/${successorTool.slug}`}
+                      className="inline-flex items-center gap-2 rounded-xl bg-amber-600 px-4 py-2.5 text-sm font-black text-white transition hover:bg-amber-700"
+                    >
+                      View successor: {successorTool.name}
+                      <ArrowRight className="h-4 w-4" />
+                    </Link>
+                  )}
+                  <Link
+                    href={`/tools?category=${tool.categoryId}`}
+                    className="inline-flex items-center gap-2 rounded-xl border border-amber-200 bg-white px-4 py-2.5 text-sm font-black text-amber-800 transition hover:border-amber-300 dark:border-amber-500/20 dark:bg-slate-950 dark:text-amber-200"
+                  >
+                    Browse active alternatives
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
         <section className="grid grid-cols-2 gap-3 md:grid-cols-4">
           {capabilityItems.map((item) => {
             const enabled = Boolean(tool[item.key]);
@@ -424,7 +465,7 @@ export function ToolDetailClient({ tool }: { tool: Tool }) {
           </div>
         </section>
 
-        {alternatives.length > 0 && (
+        {alternativeTools.length > 0 && (
           <section className="rounded-[28px] border border-slate-200 bg-white p-6 shadow-sm sm:p-8 dark:border-slate-800 dark:bg-slate-900">
             <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <div>
@@ -438,7 +479,7 @@ export function ToolDetailClient({ tool }: { tool: Tool }) {
             </div>
 
             <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-              {alternatives.map((alternative) => (
+              {alternativeTools.map((alternative) => (
                 <Link
                   key={alternative.id}
                   href={`/tools/${alternative.slug}`}

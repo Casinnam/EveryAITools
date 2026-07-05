@@ -34,6 +34,10 @@ const slim = (t: Tool): ToolLite => {
   if (t.startingPrice) lite.startingPrice = t.startingPrice;
   if (t.verified) lite.verified = t.verified;
   if (t.korea) lite.korea = t.korea;
+  if (t.status) lite.status = t.status;
+  if (t.statusNote) lite.statusNote = t.statusNote;
+  if (t.successorSlug) lite.successorSlug = t.successorSlug;
+  if (t.lastVerifiedAt) lite.lastVerifiedAt = t.lastVerifiedAt;
   return lite;
 };
 

@@ -33,12 +33,23 @@ const pricingValues = new Set<ToolPricingFilter>(['all', 'Free', 'Freemium', 'Pa
 
 const isEnabled = (value: string | null) => value === 'true';
 
+const categoryAliases: Record<string, string> = {
+  'blog-writing': 'writing',
+  'youtube-tools': 'video-generation',
+  'coding-ai': 'coding-dev',
+};
+
+export function normalizeCategoryId(category: string | null): string {
+  const value = category || 'all';
+  return categoryAliases[value] || value;
+}
+
 export function parseToolFilters(params: URLSearchParams): ToolFilters {
   const pricing = params.get('pricing') || 'all';
 
   return {
     query: params.get('q')?.trim() || '',
-    category: params.get('category') || 'all',
+    category: normalizeCategoryId(params.get('category')),
     pricing: pricingValues.has(pricing as ToolPricingFilter) ? (pricing as ToolPricingFilter) : 'all',
     beginner: isEnabled(params.get('beginner')) || isEnabled(params.get('friendly')),
     korean: isEnabled(params.get('korean')),
@@ -71,6 +82,8 @@ export function filterTools<T extends ToolLite>(allTools: T[], filters: ToolFilt
   const query = filters.query.toLowerCase().trim();
 
   return allTools.filter((tool) => {
+    if (tool.status && tool.status !== 'active') return false;
+
     if (query) {
       const description = tool.description[language] || tool.description.en;
       const matchesText =

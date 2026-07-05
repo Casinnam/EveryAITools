@@ -40,7 +40,7 @@ function redirectUrl(): string {
 }
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [ready, setReady] = useState(false);
+  const [ready, setReady] = useState(!supabaseConfigured);
   const [user, setUser] = useState<User | null>(null);
   const [session, setSession] = useState<Session | null>(null);
   const [profile, setProfile] = useState<Profile | null>(null);
@@ -71,7 +71,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   useEffect(() => {
     const supabase = getSupabase();
     if (!supabase) {
-      setReady(true);
       return;
     }
 

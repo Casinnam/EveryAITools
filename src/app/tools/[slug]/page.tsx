@@ -30,7 +30,9 @@ export async function generateMetadata({ params }: ToolDetailPageProps): Promise
     return { title: 'Tool not found' };
   }
 
-  const title = `${tool.name} Review: Pricing, Pros & Cons, and Alternatives`;
+  const title = tool.status && tool.status !== 'active'
+    ? `${tool.name} ${tool.status === 'discontinued' ? 'Discontinued' : 'Status Update'}: Best Alternatives`
+    : `${tool.name} Review: Pricing, Pros & Cons, and Alternatives`;
   const description = `${tool.description.en} See ${tool.name}'s free and paid plans, Korean and mobile support, commercial-use terms, and the best alternatives.`;
 
   return {

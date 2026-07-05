@@ -4,6 +4,7 @@ import { generatedTools } from './generatedTools';
 import { enrichedTools } from './enrichedTools';
 import { koreanTools } from './koreanTools';
 import { koreaProfiles } from './koreaProfiles';
+import { toolStatusOverrides } from './toolStatus';
 
 const baseTools: Tool[] = [
   // --- Writing & Content ---
@@ -663,14 +664,20 @@ const legacyCategoryMap: Record<string, string> = {
 
 const normalizeTool = (tool: Tool): Tool => {
   const korea = koreaProfiles[tool.id];
+  const statusOverride = toolStatusOverrides[tool.slug];
   return {
     ...tool,
     categoryId: legacyCategoryMap[tool.categoryId] ?? tool.categoryId,
     ...(korea ? { korea } : {}),
+    ...(statusOverride ? statusOverride : { status: tool.status ?? 'active' }),
   };
 };
 
 const toolsById = new Map<string, Tool>();
+const duplicateToolRedirects: Record<string, string> = {
+  'capcut-ai': 'capcut',
+  'zapier-ai': 'zapier',
+};
 
 // baseTools are hand-written and human-reviewed, so they carry the
 // "Editor-verified" mark; enriched/generated entries do not.
@@ -681,6 +688,9 @@ const markVerified = (tool: Tool): Tool => ({ ...tool, verified: true });
 // with generatedTools, so they override the shallow placeholders; the verified
 // hand-written sets win over both.
 for (const tool of [...baseTools.map(markVerified), ...koreanTools.map(markVerified), ...enrichedTools, ...generatedTools].map(normalizeTool)) {
+  if (duplicateToolRedirects[tool.slug]) {
+    continue;
+  }
   if (!toolsById.has(tool.id)) {
     toolsById.set(tool.id, tool);
   }

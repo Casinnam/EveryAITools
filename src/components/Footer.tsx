@@ -3,10 +3,18 @@
 import React from 'react';
 import Link from 'next/link';
 import { useLanguage } from '../context/LanguageContext';
+import { categories } from '@/data/categories';
+import type { Category } from '@/types';
 import { Compass, Mail, Shield, BookOpen } from 'lucide-react';
 
+const footerCategoryIds = ['writing', 'video-generation', 'coding-dev', 'image-generation'];
+const isCategory = (category: Category | undefined): category is Category => Boolean(category);
+
 export const Footer: React.FC = () => {
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
+  const footerCategories = footerCategoryIds
+    .map((id) => categories.find((category) => category.id === id))
+    .filter(isCategory);
 
   return (
     <footer className="w-full bg-slate-900 text-slate-400 border-t border-slate-800 transition-colors duration-300">
@@ -27,9 +35,9 @@ export const Footer: React.FC = () => {
               {t('footerDescription')}
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-indigo-400"><Mail className="h-5 w-5" /></a>
-              <a href="#" className="hover:text-indigo-400"><BookOpen className="h-5 w-5" /></a>
-              <a href="#" className="hover:text-indigo-400"><Shield className="h-5 w-5" /></a>
+              <a href="mailto:contact@everyaifinder.com" className="hover:text-indigo-400" aria-label="Email Every AI Finder"><Mail className="h-5 w-5" /></a>
+              <Link href="/blog" className="hover:text-indigo-400" aria-label="Read the Every AI Finder blog"><BookOpen className="h-5 w-5" /></Link>
+              <Link href="/privacy" className="hover:text-indigo-400" aria-label="Read the privacy policy"><Shield className="h-5 w-5" /></Link>
             </div>
           </div>
 
@@ -48,10 +56,13 @@ export const Footer: React.FC = () => {
               <div className="mt-12 md:mt-0">
                 <h3 className="text-sm font-bold tracking-wider text-white uppercase">{t('navCategories')}</h3>
                 <ul className="mt-4 space-y-2.5 text-sm">
-                  <li><Link href="/tools?category=blog-writing" className="hover:text-white transition-colors">{t('footerBlogWriting')}</Link></li>
-                  <li><Link href="/tools?category=youtube-tools" className="hover:text-white transition-colors">{t('footerYoutubeVideo')}</Link></li>
-                  <li><Link href="/tools?category=coding-ai" className="hover:text-white transition-colors">{t('footerCodingAssistant')}</Link></li>
-                  <li><Link href="/tools?category=image-generation" className="hover:text-white transition-colors">{t('footerImageArtGen')}</Link></li>
+                  {footerCategories.map((category) => (
+                    <li key={category.id}>
+                      <Link href={`/tools?category=${category.slug}`} className="hover:text-white transition-colors">
+                        {category.name[language] || category.name.en}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -80,8 +91,10 @@ export const Footer: React.FC = () => {
         <div className="mt-8 border-t border-slate-800 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-slate-500">
           <p className="order-2 md:order-1 mt-4 md:mt-0">{t('allRightsReserved')}</p>
           <div className="order-1 md:order-2 flex space-x-6">
-            <a href="#" className="hover:text-white">{t('footerPrivacyPolicy')}</a>
-            <a href="#" className="hover:text-white">{t('footerTerms')}</a>
+            <Link href="/privacy" className="hover:text-white">{t('footerPrivacyPolicy')}</Link>
+            <Link href="/terms" className="hover:text-white">{t('footerTerms')}</Link>
+            <Link href="/about" className="hover:text-white">About</Link>
+            <Link href="/contact" className="hover:text-white">Contact</Link>
             <Link href="/disclosure" className="hover:text-white">{t('footerAffiliateLink')}</Link>
           </div>
         </div>
