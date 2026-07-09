@@ -63,7 +63,7 @@ export function SitewideSponsorRail() {
   if (shouldHideSponsors(pathname) || !fixedSponsor) return null;
 
   return (
-    <aside className="fixed right-6 top-28 z-30 hidden w-48 space-y-3 [@media(min-width:1720px)]:block" aria-label="Sitewide sponsored partners">
+    <aside className="fixed right-3 top-24 z-30 hidden w-40 space-y-3 xl:block 2xl:right-6 2xl:w-48" aria-label="Sitewide sponsored partners">
       <p className="px-1 text-[10px] font-black uppercase tracking-wide text-slate-400">Sitewide Sponsors</p>
       <SponsorCard sponsor={fixedSponsor} />
       {rotatingSponsor && <SponsorCard sponsor={rotatingSponsor} />}
@@ -80,7 +80,7 @@ export function MobileSponsorStrip({ position }: { position: 'top' | 'bottom' })
   if (shouldHideSponsors(pathname) || !sponsor) return null;
 
   return (
-    <div className="mx-auto w-full max-w-7xl px-4 py-4 sm:px-6 lg:px-8 [@media(min-width:1720px)]:hidden">
+    <div className="mx-auto w-full max-w-7xl px-4 py-4 sm:px-6 lg:px-8 xl:hidden">
       <SponsorCard sponsor={sponsor} compact />
     </div>
   );

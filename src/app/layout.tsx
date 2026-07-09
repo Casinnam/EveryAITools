@@ -70,7 +70,6 @@ export default function RootLayout({
             <Header />
             <SitewideSponsorRail />
             <main className="flex-grow">
-              <MobileSponsorStrip position="top" />
               {children}
               <MobileSponsorStrip position="bottom" />
             </main>
