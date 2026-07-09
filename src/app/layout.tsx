@@ -6,6 +6,7 @@ import { AuthProvider } from "@/context/AuthContext";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { organizationJsonLd, SITE_NAME, SITE_URL, websiteJsonLd } from "@/lib/seo";
 
 const inter = Inter({
@@ -62,6 +63,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
       <body className="font-sans min-h-full flex flex-col bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300">
         <JsonLd data={[websiteJsonLd(), organizationJsonLd()]} />
+        <GoogleAnalytics />
         <LanguageProvider>
           <AuthProvider>
             <Header />
