@@ -2,19 +2,19 @@
 
 import React, { useMemo } from 'react';
 import { usePathname } from 'next/navigation';
-import { ExternalLink } from 'lucide-react';
-import { getFixedSponsor, getRotatingSponsor, type SiteSponsor } from '@/data/siteSponsors';
+import { ArrowRight, ExternalLink } from 'lucide-react';
+import { getFixedSponsor, getRotatingSponsor, siteSponsors, type SiteSponsor } from '@/data/siteSponsors';
 
 type SponsorCardProps = {
   sponsor: SiteSponsor;
-  compact?: boolean;
+  featured?: boolean;
 };
 
 function pathToIndex(pathname: string) {
   return pathname.split('').reduce((sum, char) => sum + char.charCodeAt(0), 0);
 }
 
-function SponsorCard({ sponsor, compact = false }: SponsorCardProps) {
+function SponsorCard({ sponsor, featured = false }: SponsorCardProps) {
   const SponsorIcon = sponsor.Icon;
 
   return (
@@ -22,30 +22,30 @@ function SponsorCard({ sponsor, compact = false }: SponsorCardProps) {
       href={sponsor.href}
       target="_blank"
       rel="sponsored nofollow noopener noreferrer"
-      className={`group block overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:border-indigo-200 hover:shadow-md dark:border-slate-800 dark:bg-slate-900 ${
-        compact ? 'p-4' : 'p-4'
-      }`}
+      className="group flex min-h-40 flex-col justify-between overflow-hidden rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:border-indigo-200 hover:shadow-md dark:border-slate-800 dark:bg-slate-900"
     >
       <div className="mb-3 flex items-center justify-between gap-2">
         <span className="rounded-full border border-amber-200 bg-amber-50 px-2 py-0.5 text-[10px] font-black uppercase tracking-wide text-amber-700 dark:border-amber-500/20 dark:bg-amber-500/10 dark:text-amber-200">
-          {sponsor.disclosure}
+          {featured ? 'Top Sponsor' : 'Sponsored Partner'}
         </span>
         <ExternalLink className="h-3.5 w-3.5 text-slate-300 transition group-hover:text-indigo-500" />
       </div>
 
-      <div className={compact ? 'flex items-center gap-3' : 'space-y-3'}>
+      <div className="space-y-3">
         <div className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br ${sponsor.accent} text-white shadow-sm`}>
           <SponsorIcon className="h-5 w-5" />
         </div>
         <div className="min-w-0">
           <p className="text-sm font-black text-slate-950 dark:text-white">{sponsor.name}</p>
           <h3 className="mt-1 text-sm font-extrabold leading-snug text-slate-800 dark:text-slate-100">{sponsor.title}</h3>
-          {!compact && (
-            <p className="mt-2 text-xs font-medium leading-relaxed text-slate-500 dark:text-slate-400">{sponsor.description}</p>
-          )}
-          <span className="mt-3 inline-flex text-xs font-black text-indigo-600 dark:text-indigo-300">{sponsor.cta}</span>
+          <p className="mt-2 text-xs font-medium leading-relaxed text-slate-500 dark:text-slate-400">{sponsor.description}</p>
         </div>
       </div>
+
+      <span className="mt-4 inline-flex items-center gap-1 text-xs font-black text-indigo-600 dark:text-indigo-300">
+        {sponsor.cta}
+        <ArrowRight className="h-3.5 w-3.5 transition group-hover:translate-x-0.5" />
+      </span>
     </a>
   );
 }
@@ -54,34 +54,44 @@ function shouldHideSponsors(pathname: string) {
   return pathname.startsWith('/admin') || pathname.startsWith('/login') || pathname.startsWith('/auth');
 }
 
-export function SitewideSponsorRail() {
+export function SponsoredPartners({ variant = 'default' }: { variant?: 'default' | 'compact' }) {
   const pathname = usePathname() || '/';
   const fixedSponsor = getFixedSponsor();
   const rotationIndex = useMemo(() => pathToIndex(pathname), [pathname]);
   const rotatingSponsor = getRotatingSponsor(rotationIndex);
+  const sponsors = [fixedSponsor, rotatingSponsor]
+    .filter((sponsor): sponsor is SiteSponsor => Boolean(sponsor))
+    .filter((sponsor, index, list) => list.findIndex((item) => item.id === sponsor.id) === index);
 
-  if (shouldHideSponsors(pathname) || !fixedSponsor) return null;
-
-  return (
-    <aside className="fixed right-3 top-24 z-30 hidden w-40 space-y-3 xl:block 2xl:right-6 2xl:w-48" aria-label="Sitewide sponsored partners">
-      <p className="px-1 text-[10px] font-black uppercase tracking-wide text-slate-400">Sitewide Sponsors</p>
-      <SponsorCard sponsor={fixedSponsor} />
-      {rotatingSponsor && <SponsorCard sponsor={rotatingSponsor} />}
-    </aside>
-  );
-}
-
-export function MobileSponsorStrip({ position }: { position: 'top' | 'bottom' }) {
-  const pathname = usePathname() || '/';
-  const fixedSponsor = getFixedSponsor();
-  const rotatingSponsor = getRotatingSponsor(pathToIndex(pathname));
-  const sponsor = position === 'top' ? fixedSponsor : rotatingSponsor;
-
-  if (shouldHideSponsors(pathname) || !sponsor) return null;
+  if (shouldHideSponsors(pathname) || sponsors.length === 0) return null;
 
   return (
-    <div className="mx-auto w-full max-w-7xl px-4 py-4 sm:px-6 lg:px-8 xl:hidden">
-      <SponsorCard sponsor={sponsor} compact />
-    </div>
+    <section
+      className={`rounded-[28px] border border-slate-200 bg-white p-5 shadow-sm sm:p-6 dark:border-slate-800 dark:bg-slate-900 ${
+        variant === 'compact' ? '' : ''
+      }`}
+      aria-label="Sponsored partners"
+    >
+      <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <p className="text-xs font-black uppercase tracking-wide text-amber-600 dark:text-amber-300">Sponsored Partners</p>
+          <h2 className="mt-1 text-xl font-black text-slate-950 dark:text-white">Tools from our partners</h2>
+        </div>
+        <p className="max-w-md text-xs font-medium leading-relaxed text-slate-500 dark:text-slate-400">
+          Paid placements are clearly labeled and kept separate from editorial rankings.
+        </p>
+      </div>
+
+      <div className={`grid grid-cols-1 gap-4 ${variant === 'compact' ? 'lg:grid-cols-1' : 'md:grid-cols-2'}`}>
+        {sponsors.map((sponsor) => (
+          <SponsorCard key={sponsor.id} sponsor={sponsor} featured={sponsor.slot === 'fixed'} />
+        ))}
+        {sponsors.length === 1 &&
+          siteSponsors
+            .filter((sponsor) => sponsor.id !== sponsors[0].id)
+            .slice(0, 1)
+            .map((sponsor) => <SponsorCard key={sponsor.id} sponsor={sponsor} featured={sponsor.slot === 'fixed'} />)}
+      </div>
+    </section>
   );
 }

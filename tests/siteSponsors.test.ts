@@ -1,4 +1,6 @@
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
 import { describe, it } from 'node:test';
 import { getFixedSponsor, getRotatingSponsor, siteSponsors } from '../src/data/siteSponsors';
 
@@ -14,5 +16,17 @@ describe('sitewide sponsors', () => {
 
   it('marks every sponsor as paid advertising for disclosure', () => {
     assert.equal(siteSponsors.every((sponsor) => sponsor.disclosure === 'Sponsored'), true);
+  });
+
+  it('uses in-content sponsored partner placements instead of the global rail', () => {
+    const root = process.cwd();
+    const layoutSource = readFileSync(join(root, 'src', 'app', 'layout.tsx'), 'utf8');
+    const homeSource = readFileSync(join(root, 'src', 'app', 'page.tsx'), 'utf8');
+    const toolsSource = readFileSync(join(root, 'src', 'app', 'tools', 'ToolsPageClient.tsx'), 'utf8');
+
+    assert.equal(layoutSource.includes('SitewideSponsorRail'), false);
+    assert.equal(layoutSource.includes('MobileSponsorStrip'), false);
+    assert.match(homeSource, /SponsoredPartners/);
+    assert.match(toolsSource, /SponsoredPartners/);
   });
 });

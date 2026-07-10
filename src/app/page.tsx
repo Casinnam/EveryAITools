@@ -11,6 +11,7 @@ import { getToolText } from '@/lib/localizedToolText';
 import { getFeaturedTools } from '@/lib/curation';
 import { RollingNumber } from '@/components/RollingNumber';
 import { StarRating } from '@/components/StarRating';
+import { SponsoredPartners } from '@/components/SitewideSponsors';
 import {
   ArrowRight,
   BadgeCheck,
@@ -213,6 +214,8 @@ export default function HomePage() {
       </section>
 
       <main className="mx-auto max-w-7xl space-y-8 px-4 py-8 sm:px-6 lg:px-8">
+        <SponsoredPartners />
+
         <section className="grid grid-cols-2 gap-3 lg:grid-cols-4">
           {[
             { icon: BadgeCheck, title: t('whyEditorTitle'), desc: t('whyEditorDesc'), tone: 'text-emerald-600 bg-emerald-50 dark:bg-emerald-500/10' },

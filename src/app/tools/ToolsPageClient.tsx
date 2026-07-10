@@ -7,6 +7,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import { toolsLite as tools } from '@/data/toolsLite';
 import { categories } from '@/data/categories';
 import { ToolCard } from '@/components/ToolCard';
+import { SponsoredPartners } from '@/components/SitewideSponsors';
 import {
   ArrowRight,
   Bot,
@@ -321,6 +322,8 @@ function ToolsListContent() {
               </div>
             </div>
           </div>
+
+          <SponsoredPartners />
 
           {filteredTools.length > 0 ? (
             <>
