@@ -9,7 +9,7 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://everyaifin
 export const SITE_NAME = 'Every AI Finder';
 
 /** Last editorial refresh of the curated tool database (updated with each data release). */
-export const DATA_LAST_UPDATED = '2026-06-22';
+export const DATA_LAST_UPDATED = '2026-07-11';
 
 export function absoluteUrl(path: string): string {
   return `${SITE_URL}${path.startsWith('/') ? path : `/${path}`}`;

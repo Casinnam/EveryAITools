@@ -694,6 +694,83 @@ export const koreaProfiles: Record<string, KoreaProfile> = {
     verifiedOn: '2026-06-22', sourceUrl: 'https://julius.ai',
     koreanNote: { en: 'AI data analysis; Korean questions on your data work. Billed in USD.', ko: 'AI 데이터 분석으로 내 데이터에 한국어 질문이 됩니다. USD 청구.' },
   },
+
+  // --- Domestic (국산) tools — Step 2 batch 2 (image/ecommerce/document/marketing) ---
+  carat: {
+    domestic: true,
+    koreanQuality: 'native',
+    pricingKRW: '무료(프리미엄 유료)',
+    foreignCardNeeded: false,
+    status: 'live',
+    maker: '캐럿 (Carat)',
+    makerCountry: 'KR',
+    verifiedOn: '2026-07-11',
+    sourceUrl: 'https://carat.im',
+    koreanNote: {
+      en: 'Korean all-in-one AI platform bundling 30+ models; free image generation, no overseas card needed.',
+      ko: '30여 개 모델을 묶은 국산 올인원 AI 플랫폼으로, 무료 이미지 생성이 되고 해외 카드가 필요 없습니다.',
+    },
+  },
+  'draph-art': {
+    domestic: true,
+    koreanQuality: 'native',
+    pricingKRW: '무료 체험 후 월 23,900원~',
+    foreignCardNeeded: false,
+    krwBilling: true,
+    status: 'live',
+    maker: '드랩 (Draph Inc.)',
+    makerCountry: 'KR',
+    verifiedOn: '2026-07-11',
+    sourceUrl: 'https://draph.art',
+    koreanNote: {
+      en: 'Korean e-commerce AI that builds full detail pages from one product photo; KRW billing, free trial.',
+      ko: '상품 사진 한 장으로 상세페이지를 만드는 국산 이커머스 AI로, 원화 결제·무료 체험을 제공합니다.',
+    },
+  },
+  upstage: {
+    domestic: true,
+    koreanQuality: 'native',
+    foreignCardNeeded: false,
+    status: 'live',
+    maker: '업스테이지 (Upstage)',
+    makerCountry: 'KR',
+    verifiedOn: '2026-07-11',
+    sourceUrl: 'https://www.upstage.ai',
+    koreanNote: {
+      en: 'Korean foundation-model company (Solar LLM, Document AI); developer/enterprise, API and on-prem.',
+      ko: 'Solar LLM·Document AI를 만든 국산 파운데이션 모델 기업으로, 개발자·기업용 API·온프레미스를 제공합니다.',
+    },
+  },
+  gentoo: {
+    domestic: true,
+    koreanQuality: 'native',
+    pricingKRW: '문의(B2B)',
+    foreignCardNeeded: false,
+    status: 'limited',
+    maker: '와들 (Waddle Lab)',
+    makerCountry: 'KR',
+    verifiedOn: '2026-07-11',
+    sourceUrl: 'https://www.gentooai.com',
+    koreanNote: {
+      en: 'Korean generative-AI shopping agent for e-commerce; B2B, embedded into online stores.',
+      ko: '이커머스용 국산 생성형 AI 쇼핑 에이전트로, 자사몰에 탑재되는 B2B 솔루션입니다.',
+    },
+  },
+  vcat: {
+    domestic: true,
+    koreanQuality: 'native',
+    pricingKRW: '무료 플랜 후 유료',
+    foreignCardNeeded: false,
+    status: 'live',
+    maker: '파이온코퍼레이션 (Pion Corporation)',
+    makerCountry: 'KR',
+    verifiedOn: '2026-07-11',
+    sourceUrl: 'https://vcat.ai',
+    koreanNote: {
+      en: 'Korean AI that turns a product URL into bulk short-form ad videos and image creatives.',
+      ko: '상품 URL로 숏폼 광고 영상·이미지 소재를 대량 제작하는 국산 AI입니다.',
+    },
+  },
 };
 
 export default koreaProfiles;
