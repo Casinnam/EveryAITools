@@ -13,12 +13,14 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.108.2",
     "lucide-react": "^1.17.0",
-    "next": "16.2.7",
+    "next": "15.5.2",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
   "devDependencies": {
     "@anthropic-ai/sdk": "^0.105.0",
+    "@cloudflare/next-on-pages": "1.13.16",
+    "@cloudflare/workers-types": "4.20250604.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -27,6 +29,8 @@
     "eslint-config-next": "16.2.7",
     "tailwindcss": "^4",
     "tsx": "^4.22.4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vercel": "47.0.4",
+    "wrangler": "4.20.0"
   }
 }
