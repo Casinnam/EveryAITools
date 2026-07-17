@@ -5,16 +5,17 @@ import { useLanguage } from '@/context/LanguageContext';
 import { toolsLite as tools } from '@/data/toolsLite';
 import { Submission, NewsletterSubscriber } from '@/types';
 import { ShieldCheck, Plus, Check, X, Users, Database, Layers } from 'lucide-react';
+import { MembersPanel } from './MembersPanel';
 
 export default function AdminDashboardPage() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   // State arrays synced with localStorage
   const [submissions, setSubmissions] = useState<Submission[]>([]);
   const [subscribers, setSubscribers] = useState<NewsletterSubscriber[]>([]);
   
   // Modal toggle state
-  const [activeTab, setActiveTab] = useState<'submissions' | 'tools' | 'subscribers'>('submissions');
+  const [activeTab, setActiveTab] = useState<'members' | 'submissions' | 'tools' | 'subscribers'>('members');
 
   // Sync state with localStorage on mount
   useEffect(() => {
@@ -98,6 +99,7 @@ export default function AdminDashboardPage() {
         {/* Tab Buttons */}
         <div className="flex items-center space-x-2 bg-slate-100 p-1.5 rounded-xl dark:bg-slate-900">
           {[
+            { id: 'members', label: language === 'ko' ? '회원' : 'Members', icon: Users },
             { id: 'submissions', label: t('adminSubmissions'), icon: Layers },
             { id: 'tools', label: t('adminTotalTools'), icon: Database },
             { id: 'subscribers', label: t('adminSubscribers'), icon: Users }
@@ -107,7 +109,7 @@ export default function AdminDashboardPage() {
             return (
               <button
                 key={tab.id}
-                onClick={() => setActiveTab(tab.id as 'submissions' | 'tools' | 'subscribers')}
+                onClick={() => setActiveTab(tab.id as 'members' | 'submissions' | 'tools' | 'subscribers')}
                 className={`flex items-center space-x-1.5 px-4 py-2 rounded-lg text-xs font-bold transition-all duration-200 cursor-pointer select-none ${
                   isSelected
                     ? 'bg-white text-indigo-600 shadow-sm dark:bg-slate-950 dark:text-indigo-400'
@@ -121,6 +123,8 @@ export default function AdminDashboardPage() {
           })}
         </div>
       </div>
+
+      {activeTab === 'members' && <MembersPanel />}
 
       {/* 2. TAB CONTENTS: SUBMISSIONS REVIEW */}
       {activeTab === 'submissions' && (

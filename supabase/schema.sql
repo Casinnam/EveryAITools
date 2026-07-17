@@ -26,6 +26,26 @@ create policy "Users can read their own profile" on public.profiles
 revoke insert, update, delete on table public.profiles from anon, authenticated;
 grant select on table public.profiles to authenticated;
 
+-- Avoid recursive RLS checks while determining whether the current user is an
+-- administrator. The function runs as its owner and exposes only a boolean.
+create or replace function public.is_admin()
+returns boolean
+language sql
+stable
+security definer set search_path = ''
+as $$
+    select exists (
+        select 1 from public.profiles
+        where id = (select auth.uid()) and role = 'admin'
+    );
+$$;
+
+revoke all on function public.is_admin() from public;
+grant execute on function public.is_admin() to authenticated;
+
+create policy "Admins can read all profiles" on public.profiles
+    for select to authenticated using ((select public.is_admin()));
+
 create or replace function public.handle_new_user()
 returns trigger
 language plpgsql
@@ -157,19 +177,21 @@ create policy "Allow public read access for tools" on tools
 create policy "Allow public read access for comparisons" on comparisons
     for select using (true);
 
--- Submission writing is public (anyone can submit) but reading is admin-only (authenticated users)
+-- Submission writing is public, while reading and moderation are admin-only.
 create policy "Allow public to submit tools" on submissions
     for insert with check (true);
 
 create policy "Allow authenticated admin to read submissions" on submissions
-    for select using (auth.role() = 'authenticated');
+    for select to authenticated using ((select public.is_admin()));
 
 create policy "Allow authenticated admin to update submissions" on submissions
-    for update using (auth.role() = 'authenticated');
+    for update to authenticated
+    using ((select public.is_admin()))
+    with check ((select public.is_admin()));
 
 -- Newsletter signups are public
 create policy "Allow public to subscribe to newsletter" on newsletter_subscribers
     for insert with check (true);
 
 create policy "Allow authenticated admin to view subscribers" on newsletter_subscribers
-    for select using (auth.role() = 'authenticated');
+    for select to authenticated using ((select public.is_admin()));
