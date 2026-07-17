@@ -6,11 +6,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import { useAuth } from '@/context/AuthContext';
 import { ArrowLeft, Loader2, Lock, ShieldAlert } from 'lucide-react';
 
-/**
- * Gates the admin dashboard behind the shared identity hub. Access requires a
- * signed-in user whose `profiles.role = 'admin'` — the same admin flag used by
- * everythingconvert, so one admin account governs both sites.
- */
+/** Access requires this project's `profiles.role = 'admin'`. */
 export function AdminAuthGate({ children }: { children: React.ReactNode }) {
   const { language } = useLanguage();
   const { configured, ready, user, isAdmin } = useAuth();
@@ -29,8 +25,8 @@ export function AdminAuthGate({ children }: { children: React.ReactNode }) {
     icon = <ShieldAlert className="h-6 w-6" />;
     title = ko ? '로그인 미설정' : 'Sign-in not configured';
     message = ko
-      ? '관리자 인증을 사용하려면 NEXT_PUBLIC_SUPABASE_URL과 NEXT_PUBLIC_SUPABASE_ANON_KEY를 설정해야 합니다.'
-      : 'Set NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY to enable admin authentication.';
+      ? '관리자 인증을 사용하려면 Supabase 공개 환경 변수를 설정해야 합니다.'
+      : 'Set the public Supabase environment variables to enable admin authentication.';
   } else if (!ready) {
     return (
       <div className="mx-auto flex min-h-[60vh] items-center justify-center">

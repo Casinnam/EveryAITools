@@ -1,7 +1,52 @@
--- EVERY AI TOOLS - DATABASE SCHEMA (SUPABASE READY)
+우리-- EVERY AI TOOLS - DATABASE SCHEMA (SUPABASE READY)
 
 -- Enable uuid extension
 create extension if not exists "uuid-ossp";
+
+-- INDEPENDENT AUTH PROFILES
+-- Run this schema in the Supabase project used by this app. A profile is
+-- created automatically whenever a user signs up through Supabase Auth.
+create table if not exists public.profiles (
+    id uuid primary key references auth.users(id) on delete cascade,
+    email text,
+    username text,
+    plan text not null default 'free' check (plan in ('free', 'pro')),
+    role text not null default 'user' check (role in ('user', 'admin')),
+    created_at timestamp with time zone default timezone('utc'::text, now()) not null,
+    updated_at timestamp with time zone default timezone('utc'::text, now()) not null
+);
+
+alter table public.profiles enable row level security;
+
+create policy "Users can read their own profile" on public.profiles
+    for select to authenticated using ((select auth.uid()) = id);
+
+-- Profile entitlements are server-managed. Browser clients may read their own
+-- row but cannot promote themselves to Pro or admin.
+revoke insert, update, delete on table public.profiles from anon, authenticated;
+grant select on table public.profiles to authenticated;
+
+create or replace function public.handle_new_user()
+returns trigger
+language plpgsql
+security definer set search_path = ''
+as $$
+begin
+    insert into public.profiles (id, email, username)
+    values (
+        new.id,
+        new.email,
+        coalesce(new.raw_user_meta_data ->> 'user_name', new.raw_user_meta_data ->> 'name')
+    )
+    on conflict (id) do nothing;
+    return new;
+end;
+$$;
+
+drop trigger if exists on_auth_user_created on auth.users;
+create trigger on_auth_user_created
+    after insert on auth.users
+    for each row execute procedure public.handle_new_user();
 
 -- 1. CATEGORIES TABLE
 create table if not exists categories (

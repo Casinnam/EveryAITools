@@ -64,8 +64,7 @@ export const AuthMenu: React.FC<{ variant?: 'desktop' | 'mobile' }> = ({ variant
   }
 
   const email = profile?.email || user.email || '';
-  // Prefer the clean email local-part. The shared hub auto-generates usernames
-  // like "hijacker05_2b29f1" whose random suffix is just noise in the UI.
+  // Prefer the clean email local-part for a compact account label.
   const name = email.split('@')[0] || profile?.username || 'User';
   const planLabel = isPro ? 'Pro' : 'Free';
 

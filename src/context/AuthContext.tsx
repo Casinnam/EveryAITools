@@ -4,11 +4,7 @@ import React, { createContext, useCallback, useContext, useEffect, useMemo, useS
 import type { Session, User } from '@supabase/supabase-js';
 import { getSupabase, supabaseConfigured, SUPABASE_STORAGE_KEY } from '@/lib/supabase';
 
-/**
- * Shape of the shared `profiles` row in the identity hub. Mirrors the columns
- * everythingconvert reads (id, email, plan, role) so the unified Pro/admin
- * checks behave identically across both sites.
- */
+/** Profile data stored only in Every AI Finder's Supabase project. */
 export interface Profile {
   id: string;
   email: string | null;
@@ -25,7 +21,7 @@ interface AuthContextProps {
   profile: Profile | null;
   isPro: boolean;
   isAdmin: boolean;
-  signInWithGoogle: () => Promise<void>;
+  signInWithGoogle: (next?: string) => Promise<void>;
   signInWithEmail: (email: string, password: string) => Promise<void>;
   signUpWithEmail: (email: string, password: string) => Promise<{ needsConfirmation: boolean }>;
   signOut: () => Promise<void>;
@@ -34,9 +30,12 @@ interface AuthContextProps {
 
 const AuthContext = createContext<AuthContextProps | undefined>(undefined);
 
-function redirectUrl(): string {
+function redirectUrl(next = '/'): string {
   const origin = typeof window !== 'undefined' ? window.location.origin : '';
-  return `${origin}/auth/callback`;
+  const callback = new URL('/auth/callback', origin);
+  const safeNext = next.startsWith('/') && !next.startsWith('//') ? next : '/';
+  callback.searchParams.set('next', safeNext);
+  return callback.toString();
 }
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -98,12 +97,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     };
   }, [loadProfile]);
 
-  const signInWithGoogle = useCallback(async () => {
+  const signInWithGoogle = useCallback(async (next = '/') => {
     const supabase = getSupabase();
     if (!supabase) throw new Error('Supabase is not configured.');
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'google',
-      options: { redirectTo: redirectUrl(), queryParams: { prompt: 'select_account' } },
+      options: { redirectTo: redirectUrl(next), queryParams: { prompt: 'select_account' } },
     });
     if (error) throw error;
   }, []);
@@ -130,22 +129,14 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const signOut = useCallback(async () => {
     const supabase = getSupabase();
-    // Clear local state and the persisted token FIRST so sign-out always takes
-    // effect immediately — even if the network revocation call is slow, hangs,
-    // or fails, and so a page refresh can't silently restore the session.
+    // Clear this project's local state first so sign-out takes effect even if
+    // the network revocation call is slow or fails.
     setSession(null);
     setUser(null);
     setProfile(null);
     if (typeof window !== 'undefined') {
       try {
         window.localStorage.removeItem(SUPABASE_STORAGE_KEY);
-        // Defensively drop any other Supabase auth keys for this project too.
-        for (let i = window.localStorage.length - 1; i >= 0; i--) {
-          const key = window.localStorage.key(i);
-          if (key && (key.startsWith('sb-') || key.includes('-auth-token'))) {
-            window.localStorage.removeItem(key);
-          }
-        }
       } catch {
         /* ignore storage access errors */
       }
@@ -168,8 +159,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       user,
       session,
       profile,
-      // Admins get Pro entitlements ecosystem-wide — everythingconvert gates
-      // features on `plan === 'pro' || role === 'admin'`, so match that here.
+      // Administrators also receive this app's Pro entitlements.
       isPro: profile?.plan === 'pro' || profile?.role === 'admin',
       isAdmin: profile?.role === 'admin',
       signInWithGoogle,

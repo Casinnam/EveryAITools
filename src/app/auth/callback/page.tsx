@@ -33,7 +33,8 @@ function AuthCallbackInner() {
   const searchParams = useSearchParams();
   const ko = language === 'ko';
 
-  const next = searchParams.get('next') || '/';
+  const requestedNext = searchParams.get('next');
+  const next = requestedNext?.startsWith('/') && !requestedNext.startsWith('//') ? requestedNext : '/';
   const oauthError = searchParams.get('error_description') || searchParams.get('error');
   const [waited, setWaited] = useState(false);
 

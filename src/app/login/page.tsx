@@ -27,6 +27,7 @@ function LoginInner() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const ko = language === 'ko';
+  const googleAuthEnabled = process.env.NEXT_PUBLIC_SUPABASE_GOOGLE_AUTH_ENABLED !== 'false';
 
   const [mode, setMode] = useState<'signin' | 'signup'>('signin');
   const [email, setEmail] = useState('');
@@ -35,7 +36,8 @@ function LoginInner() {
   const [error, setError] = useState('');
   const [notice, setNotice] = useState('');
 
-  const next = searchParams.get('next') || '/';
+  const requestedNext = searchParams.get('next');
+  const next = requestedNext?.startsWith('/') && !requestedNext.startsWith('//') ? requestedNext : '/';
 
   // Already signed in → bounce to destination.
   useEffect(() => {
@@ -46,7 +48,7 @@ function LoginInner() {
     setError('');
     setBusy(true);
     try {
-      await signInWithGoogle();
+      await signInWithGoogle(next);
       // Redirects away to Google; nothing else to do here.
     } catch (err) {
       setError(err instanceof Error ? err.message : String(err));
@@ -92,8 +94,8 @@ function LoginInner() {
         </h1>
         <p className="mt-2 text-center text-sm font-medium text-slate-500 dark:text-slate-400">
           {ko
-            ? 'Every AI Finder · Everything Convert 통합 계정'
-            : 'One account across Every AI Finder & Everything Convert'}
+            ? 'Every AI Finder 전용 계정'
+            : 'Your independent Every AI Finder account'}
         </p>
 
         {!configured ? (
@@ -101,31 +103,35 @@ function LoginInner() {
             <ShieldAlert className="mt-0.5 h-4 w-4 shrink-0" />
             <span>
               {ko
-                ? '로그인이 아직 설정되지 않았습니다. NEXT_PUBLIC_SUPABASE_URL과 NEXT_PUBLIC_SUPABASE_ANON_KEY 환경 변수를 설정해 주세요.'
-                : 'Sign-in is not configured yet. Set NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY.'}
+                ? '로그인이 아직 설정되지 않았습니다. Supabase 공개 환경 변수를 설정해 주세요.'
+                : 'Sign-in is not configured yet. Set the public Supabase environment variables.'}
             </span>
           </div>
         ) : (
           <>
-            {/* Google */}
-            <button
-              type="button"
-              onClick={handleGoogle}
-              disabled={busy}
-              className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-bold text-slate-700 transition hover:bg-slate-50 disabled:opacity-60 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-200 dark:hover:bg-slate-800"
-            >
-              <GoogleIcon />
-              {ko ? 'Google로 계속하기' : 'Continue with Google'}
-            </button>
+            {googleAuthEnabled && (
+              <>
+                {/* Google */}
+                <button
+                  type="button"
+                  onClick={handleGoogle}
+                  disabled={busy}
+                  className="mt-6 flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-bold text-slate-700 transition hover:bg-slate-50 disabled:opacity-60 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-200 dark:hover:bg-slate-800"
+                >
+                  <GoogleIcon />
+                  {ko ? 'Google로 계속하기' : 'Continue with Google'}
+                </button>
 
-            <div className="my-6 flex items-center gap-3">
-              <div className="h-px flex-1 bg-slate-200 dark:bg-slate-800" />
-              <span className="text-xs font-bold uppercase text-slate-400">{ko ? '또는' : 'or'}</span>
-              <div className="h-px flex-1 bg-slate-200 dark:bg-slate-800" />
-            </div>
+                <div className="my-6 flex items-center gap-3">
+                  <div className="h-px flex-1 bg-slate-200 dark:bg-slate-800" />
+                  <span className="text-xs font-bold uppercase text-slate-400">{ko ? '또는' : 'or'}</span>
+                  <div className="h-px flex-1 bg-slate-200 dark:bg-slate-800" />
+                </div>
+              </>
+            )}
 
             {/* Email / password */}
-            <form onSubmit={handleEmail} className="space-y-3">
+            <form onSubmit={handleEmail} className={`${googleAuthEnabled ? '' : 'mt-6'} space-y-3`}>
               <div className="relative">
                 <Mail className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
                 <input
