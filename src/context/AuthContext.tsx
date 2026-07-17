@@ -74,25 +74,49 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
 
     let active = true;
+    const pendingTimers = new Set<number>();
 
-    supabase.auth.getSession().then(async ({ data }) => {
-      if (!active) return;
-      setSession(data.session ?? null);
-      setUser(data.session?.user ?? null);
-      await loadProfile(data.session?.user ?? null);
-      if (active) setReady(true);
-    });
+    void (async () => {
+      try {
+        const { data } = await supabase.auth.getSession();
+        if (!active) return;
+        setSession(data.session ?? null);
+        setUser(data.session?.user ?? null);
+        await loadProfile(data.session?.user ?? null);
+      } catch (error) {
+        console.warn('Could not restore auth session:', error);
+      } finally {
+        if (active) setReady(true);
+      }
+    })();
 
-    const { data: sub } = supabase.auth.onAuthStateChange(async (_event, nextSession) => {
+    // Keep this callback synchronous. Supabase holds an auth lock while it runs;
+    // awaiting another Supabase request here can deadlock session initialization.
+    const { data: sub } = supabase.auth.onAuthStateChange((_event, nextSession) => {
       if (!active) return;
       setSession(nextSession ?? null);
       setUser(nextSession?.user ?? null);
-      await loadProfile(nextSession?.user ?? null);
-      setReady(true);
+
+      if (!nextSession?.user) {
+        setProfile(null);
+        setReady(true);
+        return;
+      }
+
+      setReady(false);
+      const timer = window.setTimeout(() => {
+        pendingTimers.delete(timer);
+        void loadProfile(nextSession.user).finally(() => {
+          if (active) setReady(true);
+        });
+      }, 0);
+      pendingTimers.add(timer);
     });
 
     return () => {
       active = false;
+      pendingTimers.forEach((timer) => window.clearTimeout(timer));
+      pendingTimers.clear();
       sub.subscription.unsubscribe();
     };
   }, [loadProfile]);
