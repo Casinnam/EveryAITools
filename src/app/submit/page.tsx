@@ -3,11 +3,13 @@
 import React, { useState } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { categories } from '@/data/categories';
-import { CheckCircle, Send, Award, DollarSign, Calendar } from 'lucide-react';
+import { CheckCircle, Send, Award, DollarSign, Calendar, LoaderCircle } from 'lucide-react';
 
 export default function SubmitToolPage() {
   const { t, language } = useLanguage();
   const [submitted, setSubmitted] = useState(false);
+  const [isRedirecting, setIsRedirecting] = useState(false);
+  const [checkoutError, setCheckoutError] = useState('');
 
   // Form states
   const [toolName, setToolName] = useState('');
@@ -55,8 +57,9 @@ export default function SubmitToolPage() {
     }
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setCheckoutError('');
 
     // Validate inputs
     if (!toolName || !websiteUrl || !selectedCat || !shortDesc || !submitterName || !email) {
@@ -68,7 +71,7 @@ export default function SubmitToolPage() {
     const saved = localStorage.getItem('everyaitools_submissions');
     const list = saved ? JSON.parse(saved) : [];
     
-    list.push({
+    const submission = {
       id: Math.random().toString(36).substr(2, 9),
       toolName,
       websiteUrl,
@@ -78,12 +81,43 @@ export default function SubmitToolPage() {
       submitterName,
       email,
       listingType: listingPlan,
-      status: 'pending',
+      status: listingPlan === 'Free' ? 'pending' : 'payment_pending',
       createdAt: new Date().toISOString()
-    });
+    };
+
+    list.push(submission);
 
     localStorage.setItem('everyaitools_submissions', JSON.stringify(list));
-    setSubmitted(true);
+
+    if (listingPlan === 'Free') {
+      setSubmitted(true);
+      return;
+    }
+
+    setIsRedirecting(true);
+
+    try {
+      const response = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          plan: listingPlan,
+          email,
+          toolName,
+          websiteUrl,
+        }),
+      });
+      const result = (await response.json()) as { url?: string; error?: string };
+
+      if (!response.ok || !result.url) {
+        throw new Error(result.error || 'Unable to start checkout.');
+      }
+
+      window.location.assign(result.url);
+    } catch (error) {
+      setCheckoutError(error instanceof Error ? error.message : 'Unable to start checkout.');
+      setIsRedirecting(false);
+    }
   };
 
   return (
@@ -297,12 +331,25 @@ export default function SubmitToolPage() {
               })}
             </div>
 
+            {checkoutError && (
+              <p role="alert" className="rounded-xl bg-rose-50 px-4 py-3 text-xs font-semibold text-rose-700 dark:bg-rose-950/30 dark:text-rose-300">
+                {checkoutError}
+              </p>
+            )}
+
             <button
               type="submit"
-              className="w-full flex items-center justify-center space-x-2 rounded-xl bg-indigo-600 py-4 text-sm font-extrabold text-white hover:bg-indigo-700 shadow-lg shadow-indigo-600/15 active:scale-98 transition-all"
+              disabled={isRedirecting}
+              className="w-full flex items-center justify-center space-x-2 rounded-xl bg-indigo-600 py-4 text-sm font-extrabold text-white hover:bg-indigo-700 disabled:cursor-wait disabled:opacity-70 shadow-lg shadow-indigo-600/15 active:scale-98 transition-all"
             >
-              <span>{t('submitBtn')}</span>
-              <Send className="h-4 w-4" />
+              <span>
+                {isRedirecting
+                  ? 'Opening secure checkout...'
+                  : listingPlan === 'Free'
+                    ? t('submitBtn')
+                    : `Continue to payment — ${plans.find((plan) => plan.id === listingPlan)?.price}`}
+              </span>
+              {isRedirecting ? <LoaderCircle className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}
             </button>
           </div>
 

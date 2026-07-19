@@ -33,6 +33,19 @@ provider in Supabase. It is shown by default; set
 `NEXT_PUBLIC_SUPABASE_GOOGLE_AUTH_ENABLED=false` only when it needs to be
 temporarily hidden. Email/password sign-in uses the Email provider.
 
+## Stripe payments
+
+Paid tool submissions use Stripe Checkout. Add the Stripe secret key to the
+server environment (locally and in production):
+
+```bash
+STRIPE_SECRET_KEY=sk_live_...
+```
+
+The Featured Listing is a one-time Checkout payment and Premium Placement is a
+monthly subscription. Their Stripe Price IDs are allowlisted in the checkout
+API route so a browser cannot substitute a different price.
+
 ## Data
 
 The lightweight tool list is generated from the full tool data:
