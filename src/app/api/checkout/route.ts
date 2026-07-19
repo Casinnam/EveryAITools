@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
 
+export const runtime = 'edge';
+
 type PaidPlan = 'Featured' | 'Premium';
 
 const paidPlans: Record<PaidPlan, { priceId: string; mode: 'payment' | 'subscription' }> = {
