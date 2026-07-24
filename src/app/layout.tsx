@@ -7,6 +7,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
+import { GoogleOneTap } from "@/components/GoogleOneTap";
 import { organizationJsonLd, SITE_NAME, SITE_URL, websiteJsonLd } from "@/lib/seo";
 
 const inter = Inter({
@@ -66,6 +67,7 @@ export default function RootLayout({
         <GoogleAnalytics />
         <LanguageProvider>
           <AuthProvider>
+            <GoogleOneTap />
             <Header />
             <main className="flex-grow">{children}</main>
             <Footer />

@@ -31,7 +31,16 @@ set the Site URL to `https://everyaifinder.com` and add these allowed redirect U
 Google sign-in additionally requires enabling and configuring the Google
 provider in Supabase. It is shown by default; set
 `NEXT_PUBLIC_SUPABASE_GOOGLE_AUTH_ENABLED=false` only when it needs to be
-temporarily hidden. Email/password sign-in uses the Email provider.
+temporarily hidden. Google One Tap uses the same OAuth client configured in
+Supabase. If that client changes, set its public web client ID explicitly:
+
+```bash
+NEXT_PUBLIC_GOOGLE_CLIENT_ID=1234567890-....apps.googleusercontent.com
+```
+
+Add each production and local site origin to the OAuth client's **Authorized
+JavaScript origins** in Google Cloud Console. Email/password sign-in uses the
+Email provider.
 
 ## Stripe payments
 

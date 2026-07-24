@@ -22,6 +22,7 @@ interface AuthContextProps {
   isPro: boolean;
   isAdmin: boolean;
   signInWithGoogle: (next?: string) => Promise<void>;
+  signInWithGoogleIdToken: (token: string) => Promise<void>;
   signInWithEmail: (email: string, password: string) => Promise<void>;
   signUpWithEmail: (email: string, password: string) => Promise<{ needsConfirmation: boolean }>;
   signOut: () => Promise<void>;
@@ -131,6 +132,16 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     if (error) throw error;
   }, []);
 
+  const signInWithGoogleIdToken = useCallback(async (token: string) => {
+    const supabase = getSupabase();
+    if (!supabase) throw new Error('Supabase is not configured.');
+    const { error } = await supabase.auth.signInWithIdToken({
+      provider: 'google',
+      token,
+    });
+    if (error) throw error;
+  }, []);
+
   const signInWithEmail = useCallback(async (email: string, password: string) => {
     const supabase = getSupabase();
     if (!supabase) throw new Error('Supabase is not configured.');
@@ -187,12 +198,24 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       isPro: profile?.plan === 'pro' || profile?.role === 'admin',
       isAdmin: profile?.role === 'admin',
       signInWithGoogle,
+      signInWithGoogleIdToken,
       signInWithEmail,
       signUpWithEmail,
       signOut,
       refreshProfile,
     }),
-    [ready, user, session, profile, signInWithGoogle, signInWithEmail, signUpWithEmail, signOut, refreshProfile],
+    [
+      ready,
+      user,
+      session,
+      profile,
+      signInWithGoogle,
+      signInWithGoogleIdToken,
+      signInWithEmail,
+      signUpWithEmail,
+      signOut,
+      refreshProfile,
+    ],
   );
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
